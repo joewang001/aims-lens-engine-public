@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aims-lens-engine.local/schemas/question_bank.schema.json",
+  "title": "Interview Question Bank",
+  "type": "object",
+  "required": ["bank_id", "lens_id", "version", "questions"],
+  "properties": {
+    "bank_id": { "type": "string" },
+    "lens_id": { "type": "string" },
+    "version": { "type": "string" },
+    "source_cutoff": { "type": "string", "format": "date" },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "question_id",
+          "question_type",
+          "role_families",
+          "aims_dimensions",
+          "question_summary",
+          "generated_question",
+          "difficulty",
+          "evidence_ids"
+        ],
+        "properties": {
+          "question_id": { "type": "string" },
+          "question_type": {
+            "type": "string",
+            "enum": [
+              "behavioral",
+              "case",
+              "technical",
+              "role_knowledge",
+              "motivation",
+              "culture_fit",
+              "situational",
+              "leadership",
+              "communication",
+              "candidate_questions"
+            ]
+          },
+          "role_families": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "aims_dimensions": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "question_summary": {
+            "type": "string",
+            "description": "Short fair-use summary of public question pattern."
+          },
+          "generated_question": {
+            "type": "string",
+            "description": "Original generated variant for product use."
+          },
+          "follow_up_strategy": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "difficulty": {
+            "type": "string",
+            "enum": ["beginner", "intermediate", "advanced"]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "copyright_note": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

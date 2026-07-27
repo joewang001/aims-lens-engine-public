@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aims-lens-engine.local/schemas/jobace_adapter_contract.schema.json",
+  "title": "Jobace AIMS Lens Adapter Contract",
+  "type": "object",
+  "required": [
+    "tenant_id",
+    "user_id",
+    "conversation_id",
+    "message_id",
+    "company",
+    "role",
+    "question",
+    "answer"
+  ],
+  "properties": {
+    "tenant_id": { "type": "string" },
+    "user_id": { "type": ["string", "integer"] },
+    "conversation_id": { "type": ["string", "integer"] },
+    "message_id": { "type": ["string", "integer"] },
+    "company": { "type": "string" },
+    "role": { "type": "string" },
+    "question": { "type": "string" },
+    "answer": { "type": "string" },
+    "job_description": { "type": "string" },
+    "resume_summary": { "type": "string" },
+    "jobace_mode": { "type": "string" },
+    "jobace_sub_mode": { "type": ["string", "null"] }
+  }
+}

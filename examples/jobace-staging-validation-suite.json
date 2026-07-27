@@ -1,0 +1,58 @@
+{
+  "suite_id": "jobace_staging_integration_validation_v0_1",
+  "environment": "staging",
+  "required_flags": {
+    "AIMS_LENS_ENGINE_ENABLED": "true",
+    "AIMS_LENS_ENGINE_URL": "http://127.0.0.1:8092 or deployed AIMS Lens Engine internal pilot API URL",
+    "AIMS_LENS_ENGINE_TIMEOUT_SECONDS": "20",
+    "AIMS_LENS_ENGINE_FAIL_OPEN": "true",
+    "AIMS_LENS_ENGINE_SHADOW_MODE": "true"
+  },
+  "screening_case": {
+    "tenant_id": "jobace_staging",
+    "user_id": 101,
+    "conversation_id": 2026051301,
+    "message_id": 9101,
+    "company": "RBC",
+    "role": "Operational Risk Analyst",
+    "question": "Tell me how you would handle a control gap.",
+    "answer": "I would document the control gap, estimate exposure, identify impacted customers and processes, escalate through the risk channel, implement a temporary control, and monitor recurrence after the root cause fix.",
+    "job_description": "Operational risk role focused on controls, escalation, governance, and process improvement."
+  },
+  "free_improvement_plan_case": {
+    "target_company": "amazon",
+    "interview_type": "behavioral",
+    "role_family": "marketing_growth",
+    "plan_tier": "free",
+    "days_until_interview": 7,
+    "aims_scores": {
+      "structured_thinking": 6.2,
+      "analytical_problem_solving": 5.4,
+      "ownership_execution": 5.8,
+      "impact_results": 5.2,
+      "collaboration_communication": 6.8,
+      "growth_mindset": 7.1
+    },
+    "job_description_signals": [
+      "data-driven campaign optimization",
+      "cross-channel marketing execution",
+      "ownership of measurable growth outcomes"
+    ]
+  },
+  "paid_improvement_plan_case": {
+    "target_company": "mckinsey",
+    "interview_type": "case",
+    "role_family": "consulting_case",
+    "plan_tier": "paid",
+    "days_until_interview": 30,
+    "aims_scores": {
+      "structured_thinking": 5.5,
+      "analytical_problem_solving": 6.0,
+      "ownership_execution": 6.5,
+      "impact_results": 5.0,
+      "collaboration_communication": 6.0,
+      "growth_mindset": 7.0
+    }
+  },
+  "dual_layer_example": "examples/dual-layer-evaluation-example.json"
+}

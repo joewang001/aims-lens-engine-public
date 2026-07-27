@@ -1,0 +1,9 @@
+{
+  "label": "acme-intake-review-key",
+  "scopes": [
+    "source_materials:write",
+    "source_materials:read",
+    "review:read",
+    "distillation_jobs:write"
+  ]
+}

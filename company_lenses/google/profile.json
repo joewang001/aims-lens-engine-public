@@ -1,0 +1,264 @@
+{
+  "lens_id": "google_public_v0_1",
+  "company": "Google",
+  "canonical_company_name": "Google",
+  "lens_status": "FULLY_DISTILLED",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "version": "0.2.0-evidence-audited-draft",
+  "source_cutoff": "2026-05-04",
+  "industries": [
+    "technology",
+    "search",
+    "advertising",
+    "cloud",
+    "ai"
+  ],
+  "regions": [
+    "global",
+    "north_america"
+  ],
+  "company_stage": "large global technology company",
+  "culture_principles": [
+    {
+      "name": "Helpful technology for everyone",
+      "description": "Google-style impact should connect technical work to user usefulness, broad accessibility, and products that help many kinds of users.",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "GOOG-OFFICIAL-002",
+        "GOOG-OFFICIAL-003",
+        "GOOG-AI-001"
+      ]
+    },
+    {
+      "name": "Structured problem solving with clarity",
+      "description": "Strong candidates clarify assumptions, decompose problems, reason through alternatives, explain trade-offs, test edge cases, and communicate while solving.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "GOOG-PRIV-001",
+        "GOOG-PRIV-002"
+      ]
+    },
+    {
+      "name": "Googleyness and leadership through evidence",
+      "description": "Behavioral strength is shown through collaboration, humility, ambiguity handling, influence without authority, conflict resolution, and learning.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "GOOG-PRIV-003",
+        "GOOG-OFFICIAL-002"
+      ]
+    },
+    {
+      "name": "Bold and responsible innovation",
+      "description": "AI/product answers should combine ambition with safeguards, testing, monitoring, privacy, fairness, safety, and user trust.",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "GOOG-AI-001",
+        "GOOG-AI-002",
+        "GOOG-RISK-002"
+      ]
+    },
+    {
+      "name": "Role-specific depth",
+      "description": "Google lens should adapt by role: SWE coding, SRE reliability, Data Analyst metric validation, UI/frontend user experience, AI/ML evaluation and deployment.",
+      "confidence": 0.62,
+      "evidence_ids": [
+        "GOOG-PRIV-002",
+        "GOOG-PRIV-004"
+      ]
+    }
+  ],
+  "aims_weighting": {
+    "structured_thinking": 0.18,
+    "analytical_problem_solving": 0.27,
+    "ownership_execution": 0.13,
+    "impact_results": 0.17,
+    "collaboration_communication": 0.13,
+    "growth_mindset": 0.12
+  },
+  "hiring_signals": [
+    {
+      "signal": "Clarifies ambiguous problems before solving and explains assumptions, constraints, complexity, and edge cases.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "GOOG-PRIV-002"
+      ]
+    },
+    {
+      "signal": "Shows collaboration, humility, conflict handling, and influence without relying on formal authority.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "GOOG-PRIV-003",
+        "GOOG-OFFICIAL-002"
+      ]
+    },
+    {
+      "signal": "For AI/product work, balances bold innovation with rigorous responsible-development controls.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.92,
+      "evidence_ids": [
+        "GOOG-AI-001",
+        "GOOG-AI-002"
+      ]
+    },
+    {
+      "signal": "Connects technical work to useful, inclusive, safe, and measurable user outcomes.",
+      "aims_dimensions": [
+        "impact_results",
+        "analytical_problem_solving",
+        "collaboration_communication"
+      ],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "GOOG-OFFICIAL-002",
+        "GOOG-OFFICIAL-003",
+        "GOOG-AI-001"
+      ]
+    },
+    {
+      "signal": "Adapts preparation and answers to role-specific expectations for SWE, SRE, Data Analyst, UI, Android, and AI/ML.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "impact_results"
+      ],
+      "confidence": 0.62,
+      "evidence_ids": [
+        "GOOG-PRIV-004"
+      ]
+    }
+  ],
+  "anti_signals": [
+    {
+      "anti_signal": "Jumping into implementation or code without clarifying the problem.",
+      "risk_reason": "Google-style technical evaluation strongly rewards problem decomposition, assumptions, and communication while solving.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "GOOG-PRIV-002"
+      ]
+    },
+    {
+      "anti_signal": "Memorized Googleyness language without concrete examples of collaboration, humility, conflict handling, or ambiguity.",
+      "risk_reason": "Behavioral fit should be evidence-based, not personality polish.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "GOOG-PRIV-003"
+      ]
+    },
+    {
+      "anti_signal": "AI/product answers that optimize model or product metrics while ignoring safety, privacy, fairness, monitoring, or user trust.",
+      "risk_reason": "Google's AI principles make responsibility part of product quality.",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "GOOG-AI-001",
+        "GOOG-AI-002",
+        "GOOG-RISK-002"
+      ]
+    },
+    {
+      "anti_signal": "Assuming interview performance alone guarantees offer or team match.",
+      "risk_reason": "Candidate accounts describe hiring committee and team matching uncertainty; outputs should preserve process humility.",
+      "confidence": 0.56,
+      "evidence_ids": [
+        "GOOG-PRIV-005",
+        "GOOG-RISK-001"
+      ]
+    }
+  ],
+  "interview_patterns": [
+    {
+      "pattern": "SWE interviews should test DSA/problem solving, clarifying questions, complexity, tests, code quality, and narrated reasoning.",
+      "role_families": [
+        "swe",
+        "software_engineering"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "confidence": 0.66
+    },
+    {
+      "pattern": "G&L / Googleyness interviews should test collaboration, leadership without authority, ambiguity, humility, conflict, and learning.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "confidence": 0.65
+    },
+    {
+      "pattern": "SRE interviews should test reliability thinking, debugging, automation, systems knowledge, communication, and user impact under incidents.",
+      "role_families": [
+        "sre",
+        "infrastructure"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.58
+    },
+    {
+      "pattern": "Data roles should test metric definition, data quality, analytical reasoning, stakeholder interpretation, and product/user impact.",
+      "role_families": [
+        "data_analytics",
+        "business_intelligence"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "impact_results"
+      ],
+      "confidence": 0.58
+    },
+    {
+      "pattern": "AI/ML roles should test evaluation design, error analysis, responsible deployment, and user-facing quality beyond offline metrics.",
+      "role_families": [
+        "ai_ml",
+        "applied_science",
+        "machine_learning"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.68
+    }
+  ],
+  "evidence_summary": {
+    "source_count": 13,
+    "official_source_count": 6,
+    "interview_source_count": 6,
+    "employee_voice_source_count": 5,
+    "last_reviewed": "2026-05-04"
+  },
+  "honest_limits": [
+    "This is a public-source and private-distillation draft lens and does not represent an official Google hiring standard.",
+    "Google Careers public pages exposed limited process detail in accessible HTML, so candidate-process patterns remain lower-confidence.",
+    "Private materials authorized by the project owner are included only as distilled aggregate patterns, not raw article text or copied questions.",
+    "Role, level, region, recruiter, hiring committee, and team matching can materially change candidate experience.",
+    "This v0.1 lens has static validation cases but is not approved for production screening until live answer backtesting and reviewer approval are complete.",
+    "This v0.2 lens has structured evidence records and an evidence audit, but is still not approved for production screening.",
+    "Public source URLs and private-material provenance must be reviewed before v1.0 approval."
+  ]
+}

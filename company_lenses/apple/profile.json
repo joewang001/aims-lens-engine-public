@@ -1,0 +1,223 @@
+{
+  "lens_id": "apple_public_v0_1",
+  "company": "Apple",
+  "canonical_company_name": "Apple",
+  "lens_status": "FULLY_DISTILLED",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "version": "0.2.0-evidence-audited-draft",
+  "source_cutoff": "2026-05-04",
+  "industries": [
+    "technology",
+    "consumer electronics",
+    "software",
+    "services",
+    "ai"
+  ],
+  "regions": [
+    "global",
+    "north_america"
+  ],
+  "company_stage": "large global product and platform company",
+  "culture_principles": [
+    {
+      "name": "Product craft and user experience",
+      "description": "Apple-style strength connects technical choices to elegant, accessible, privacy-aware, and high-quality user experiences.",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "APL-OFFICIAL-001",
+        "APL-HIG-001",
+        "APL-HIG-002"
+      ]
+    },
+    {
+      "name": "Values embedded in products and work",
+      "description": "Apple frames values such as accessibility, privacy, inclusion, environment, and education as part of what it builds and how people work.",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "APL-OFFICIAL-001",
+        "APL-VALUES-001",
+        "APL-VALUES-002"
+      ]
+    },
+    {
+      "name": "Deep role-specific excellence",
+      "description": "Candidate accounts suggest Apple interviews are team and role specific, rewarding deep domain knowledge, product judgment, and practical implementation quality.",
+      "confidence": 0.64,
+      "evidence_ids": [
+        "APL-PRIV-001",
+        "APL-PRIV-002",
+        "APL-PRIV-003"
+      ]
+    },
+    {
+      "name": "Privacy, accessibility, and trust as design constraints",
+      "description": "Strong answers treat privacy, accessibility, and user trust as core product requirements, not late-stage compliance items.",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "APL-VALUES-001",
+        "APL-HIG-001",
+        "APL-ACCESS-001"
+      ]
+    },
+    {
+      "name": "Cross-functional craft",
+      "description": "Apple-style work often requires collaboration across design, hardware, software, product, operations, and customer experience while protecting quality.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "APL-OFFICIAL-001",
+        "APL-PRIV-004"
+      ]
+    }
+  ],
+  "aims_weighting": {
+    "structured_thinking": 0.17,
+    "analytical_problem_solving": 0.2,
+    "ownership_execution": 0.16,
+    "impact_results": 0.19,
+    "collaboration_communication": 0.14,
+    "growth_mindset": 0.14
+  },
+  "hiring_signals": [
+    {
+      "signal": "Explains product and engineering trade-offs through user experience, quality, privacy, accessibility, and performance.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.86,
+      "evidence_ids": [
+        "APL-HIG-001",
+        "APL-VALUES-001",
+        "APL-PRIV-002"
+      ]
+    },
+    {
+      "signal": "Shows deep role-specific competence for iOS/frontend, product design, ML/AI, silicon/hardware-adjacent, or customer-facing product roles.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.64,
+      "evidence_ids": [
+        "APL-PRIV-001",
+        "APL-PRIV-002",
+        "APL-PRIV-003"
+      ]
+    },
+    {
+      "signal": "Can collaborate across disciplines without lowering product-quality standards.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "APL-OFFICIAL-001",
+        "APL-PRIV-004"
+      ]
+    },
+    {
+      "signal": "Treats values as product and operating constraints, especially privacy, accessibility, inclusion, and environment.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking",
+        "growth_mindset"
+      ],
+      "confidence": 0.86,
+      "evidence_ids": [
+        "APL-VALUES-001",
+        "APL-VALUES-002",
+        "APL-ACCESS-001"
+      ]
+    }
+  ],
+  "anti_signals": [
+    {
+      "anti_signal": "Optimizing only for technical novelty while ignoring user experience, privacy, accessibility, or product polish.",
+      "risk_reason": "Apple's public values and HIG make user-centered quality and trust central to product judgment.",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "APL-HIG-001",
+        "APL-VALUES-001"
+      ]
+    },
+    {
+      "anti_signal": "Generic admiration for Apple products without role-specific depth.",
+      "risk_reason": "Candidate accounts suggest Apple interviews are team-specific and domain-depth-heavy.",
+      "confidence": 0.62,
+      "evidence_ids": [
+        "APL-PRIV-001",
+        "APL-PRIV-002"
+      ]
+    },
+    {
+      "anti_signal": "Treating secrecy or perfection as a reason to avoid communication, testing, or stakeholder alignment.",
+      "risk_reason": "Apple-style craft still requires clear cross-functional collaboration and quality mechanisms.",
+      "confidence": 0.62,
+      "evidence_ids": [
+        "APL-PRIV-004"
+      ]
+    }
+  ],
+  "interview_patterns": [
+    {
+      "pattern": "Software and iOS/frontend interviews should test implementation depth plus UX, performance, accessibility, and platform judgment.",
+      "role_families": [
+        "ios",
+        "frontend",
+        "software_engineering"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.64
+    },
+    {
+      "pattern": "Product design interviews should test user problem framing, critique, portfolio/story clarity, iteration, and design trade-offs.",
+      "role_families": [
+        "product_design",
+        "ux",
+        "ui"
+      ],
+      "aims_dimensions": [
+        "structured_thinking",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "confidence": 0.62
+    },
+    {
+      "pattern": "AI/ML roles should test evaluation quality, privacy, on-device constraints, product usefulness, and responsible deployment.",
+      "role_families": [
+        "ai_ml",
+        "machine_learning"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.6
+    }
+  ],
+  "evidence_summary": {
+    "source_count": 12,
+    "official_source_count": 6,
+    "interview_source_count": 4,
+    "employee_voice_source_count": 4,
+    "last_reviewed": "2026-05-04"
+  },
+  "honest_limits": [
+    "This is a public-source and private-distillation draft lens and does not represent an official Apple hiring standard.",
+    "Private materials authorized by the project owner are included only as distilled aggregate patterns, not raw article text or copied questions.",
+    "Apple interview process appears highly role/team-specific; role, level, region, and team can materially change interview emphasis.",
+    "This v0.1 lens has static validation cases but is not approved for production screening until live answer backtesting and reviewer approval are complete.",
+    "This v0.2 lens has structured evidence records and an evidence audit, but is still not approved for production screening.",
+    "Public source URLs and private-material provenance must be reviewed before v1.0 approval."
+  ]
+}

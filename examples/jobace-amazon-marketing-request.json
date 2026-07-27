@@ -1,0 +1,10 @@
+{
+  "tenant_id": "jobace_staging",
+  "candidate_id": "jobace-user-13",
+  "report_id": "jobace-amazon-marketing-smoke",
+  "company": "Amazon",
+  "role": "marketing manager",
+  "question": "Tell me how you would integrate several acquired brands into one digital marketing operating model.",
+  "answer": "I would segment customers, define the funnel stage, set CAC, ROAS, conversion rate and pipeline metrics, align product, sales, finance, creative and analytics, launch in phases, inspect post-launch performance weekly, and scale only after attribution and customer trust checks pass.",
+  "job_description": "Digital Marketing Manager role with Amazon Canada."
+}

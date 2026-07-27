@@ -1,0 +1,149 @@
+{
+  "evaluation_id": "eval-synthetic-marketing-001",
+  "tenant_id": "internal_pilot",
+  "candidate_id": "synthetic-candidate-marketing-001",
+  "conversation_id": "synthetic-conversation-001",
+  "role": "Digital Marketing Specialist",
+  "company": "Generic Retail Brand",
+  "lens_id": "generic_marketing_growth_v0_1",
+  "core_evaluation": {
+    "aims_scores": {
+      "structured_thinking": 6.2,
+      "analytical_problem_solving": 5.8,
+      "ownership_execution": 7.4,
+      "impact_results": 7.8,
+      "collaboration_communication": 7.0,
+      "growth_mindset": 7.2
+    },
+    "average_score": 6.9,
+    "strength_evidence": [
+      {
+        "id": "str_001",
+        "dimension": "impact_results",
+        "claim": "The candidate gave credible campaign growth and launch impact evidence.",
+        "evidence": "The answer referenced follower growth, multi-channel launch activity, community engagement, and campaign reach.",
+        "confidence": 0.78
+      },
+      {
+        "id": "str_002",
+        "dimension": "ownership_execution",
+        "claim": "The candidate showed hands-on execution across content, influencer coordination, and campaign operations.",
+        "evidence": "The answer described creating campaign assets, coordinating influencer activity, and managing customer engagement channels.",
+        "confidence": 0.74
+      }
+    ],
+    "weakness_evidence": [
+      {
+        "id": "weak_001",
+        "dimension": "analytical_problem_solving",
+        "claim": "The candidate did not fully explain how data drove channel prioritization or budget trade-offs.",
+        "evidence": "The answer mentioned metrics but did not connect them to a specific decision rule, baseline, or alternative strategy.",
+        "confidence": 0.81
+      },
+      {
+        "id": "weak_002",
+        "dimension": "structured_thinking",
+        "claim": "The answer would be stronger with clearer situation-action-result sequencing.",
+        "evidence": "The candidate moved from campaign context to outcomes without clearly separating personal actions and measurable attribution.",
+        "confidence": 0.72
+      }
+    ],
+    "risk_signals": [
+      "Impact attribution needs verification.",
+      "Analytical decision logic is partially unverified.",
+      "Personal ownership level should be clarified for large campaign outcomes."
+    ],
+    "follow_up_questions": [
+      "What was the baseline before the campaign, and how did you measure incremental impact?",
+      "Which channel or budget trade-off did you personally recommend, and why?",
+      "What part of the launch result was directly owned by you versus the broader team?"
+    ],
+    "improvement_priorities": [
+      {
+        "dimension": "analytical_problem_solving",
+        "priority": "high",
+        "issue": "Metrics were referenced but not tied to decision logic.",
+        "practice_action": "Practice one answer that explains metric, decision, trade-off, and result in 60 seconds."
+      },
+      {
+        "dimension": "structured_thinking",
+        "priority": "medium",
+        "issue": "Personal action and outcome attribution were not clearly separated.",
+        "practice_action": "Use a simple context, action, result, lesson structure for campaign examples."
+      }
+    ],
+    "language_feedback": {
+      "clarity_issues": [
+        "Some phrasing was broad and campaign-oriented rather than decision-specific."
+      ],
+      "wording_issues": [
+        "Replace generic phrases such as drive engagement with a concrete metric and action."
+      ],
+      "spoken_english_notes": [
+        "Expression was understandable and professional, but could be more concise and idiomatic."
+      ],
+      "fairness_note": "Assess communication effectiveness and business clarity only; do not infer ability from accent, immigration background, or identity."
+    },
+    "confidence": 0.76,
+    "human_review_required": true,
+    "evidence_notice": "Synthetic example. The same core evaluation must drive both candidate-facing and B2B reviewer-facing renderings."
+  },
+  "candidate_final_assessment": {
+    "summary": "You showed strong hands-on marketing execution and campaign impact. Your examples were practical and credible, especially around content, social channels, influencer work, and launch activity. To make your answers stronger, explain your exact decision process and personal ownership more clearly.",
+    "strengths": [
+      "You communicated strong campaign execution experience with concrete marketing channels and outcomes.",
+      "You showed good ownership of content creation, community engagement, and influencer coordination.",
+      "You used metrics to show campaign scale and business impact."
+    ],
+    "priority_improvement_points": [
+      "Explain how you used data to choose one channel, message, or campaign strategy over another.",
+      "Separate your personal contribution from the broader team result.",
+      "Use a clearer story structure so the interviewer can follow the situation, action, result, and lesson."
+    ],
+    "practice_plan": [
+      "Prepare one 60-second campaign story that includes baseline, action, metric, and result.",
+      "Prepare one example of a trade-off, such as budget, channel priority, or audience segment.",
+      "Practice ending each answer with the business lesson you would apply next time."
+    ],
+    "language_coaching": [
+      "Keep sentences shorter when explaining campaign results.",
+      "Replace broad marketing phrases with specific actions and numbers."
+    ]
+  },
+  "b2b_reviewer_report": {
+    "summary": "The candidate demonstrated credible hands-on digital marketing execution, particularly in campaign operations, content, social media, influencer coordination, and community engagement. The transcript did not fully establish analytical decision logic, impact attribution, or the candidate's exact ownership level for larger outcomes.",
+    "verified_strengths": [
+      "Hands-on campaign execution evidence was present.",
+      "The candidate referenced relevant multi-channel marketing and community engagement experience.",
+      "The candidate communicated measurable campaign impact, although attribution needs verification."
+    ],
+    "unverified_or_weak_areas": [
+      "Analytical decision-making remains partially unverified.",
+      "Direct personal ownership for large campaign outcomes requires follow-up.",
+      "Impact measurement methodology and baseline were not clearly established."
+    ],
+    "recommended_verification_questions": [
+      "What data did the candidate personally analyze before changing campaign strategy?",
+      "Which result was directly attributable to the candidate's action?",
+      "How did the candidate validate incremental impact versus existing demand or brand momentum?"
+    ],
+    "role_fit_notes": [
+      "Likely stronger fit for digital marketing, social media, content, and campaign execution roles.",
+      "Requires further verification for analytics-heavy growth marketing or senior strategy roles.",
+      "Human review is recommended before using this report in any screening decision."
+    ],
+    "human_review_required": true,
+    "decision_boundary_notice": "This report supports reviewer judgment only. It must not be used as an automated hiring, rejection, or protected-class inference mechanism."
+  },
+  "rendering_policy": {
+    "same_core_evaluation_required": true,
+    "candidate_layer_purpose": "Practice feedback and improvement guidance for the candidate.",
+    "b2b_layer_purpose": "Evidence-based reviewer support for employers, recruiters, coaches, or partner organizations.",
+    "blocked_uses": [
+      "automated rejection",
+      "final hiring decision without human review",
+      "protected-class inference",
+      "separate hidden scoring logic for B2B customers"
+    ]
+  }
+}

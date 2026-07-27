@@ -1,0 +1,115 @@
+{
+  "bank_id": "bmo_public_questions_v0_1",
+  "lens_id": "bmo_public_v0_1",
+  "version": "0.1.0-draft",
+  "source_cutoff": "2026-05-04",
+  "questions": [
+    {
+      "question_id": "BMO-Q-001",
+      "question_type": "behavioral",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "impact_results",
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "Tell me about a time your work helped a client, colleague, business, or community outcome grow in a responsible way.",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "BMO-OFFICIAL-001",
+        "BMO-CULTURE-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    },
+    {
+      "question_id": "BMO-Q-002",
+      "question_type": "situational",
+      "role_families": [
+        "retail_banking",
+        "contact_center"
+      ],
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "A client is upset and wants a quick answer, but you need to verify risk or policy details. How would you respond?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "BMO-CODE-001",
+        "BMO-PRIV-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    },
+    {
+      "question_id": "BMO-Q-003",
+      "question_type": "case",
+      "role_families": [
+        "risk",
+        "operations",
+        "corporate"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "You identify a control gap in a process that has been accepted as normal. How would you assess, communicate, and fix it?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": [
+        "BMO-CODE-001",
+        "BMO-RISK-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    },
+    {
+      "question_id": "BMO-Q-004",
+      "question_type": "motivation",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "Why BMO, and how would your values and skills contribute to its purpose and culture?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "BMO-OFFICIAL-001",
+        "BMO-CULTURE-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    }
+  ]
+}

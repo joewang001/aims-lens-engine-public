@@ -1,0 +1,216 @@
+{
+  "lens_id": "mckinsey_public_v0_1",
+  "company": "McKinsey & Company",
+  "canonical_company_name": "McKinsey & Company",
+  "lens_status": "FULLY_DISTILLED",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "version": "0.2.0-evidence-audited-draft",
+  "source_cutoff": "2026-05-07",
+  "industries": [
+    "management consulting",
+    "strategy consulting",
+    "operations consulting",
+    "digital consulting"
+  ],
+  "regions": [
+    "global",
+    "north_america"
+  ],
+  "company_stage": "large global professional services firm",
+  "culture_principles": [
+    {
+      "name": "Structured client problem solving",
+      "description": "McKinsey-style strength starts with objective clarification, tailored issue trees, hypotheses, data requests, quantitative reasoning, synthesis, and a practical recommendation.",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "MCK-HIRE-001",
+        "MCK-HIRE-002",
+        "MCK-PRIV-002",
+        "MCK-BOOK-001",
+        "MCK-BOOK-002"
+      ]
+    },
+    {
+      "name": "Personal impact and leadership stories",
+      "description": "The PEI-style lens requires deep evidence of leadership, personal impact, conflict, challenge, and drive, not generic fit answers.",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "MCK-HIRE-001",
+        "MCK-PRIV-003"
+      ]
+    },
+    {
+      "name": "Client service with ethical judgment",
+      "description": "Strong answers should improve client or organizational outcomes while preserving integrity, dissent, and duty to speak up.",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "MCK-VALUES-001",
+        "MCK-RISK-001"
+      ]
+    },
+    {
+      "name": "Top-down communication",
+      "description": "Consulting answers should lead with the answer, then support it with structured reasoning, numbers, caveats, and next steps.",
+      "confidence": 0.75,
+      "evidence_ids": [
+        "MCK-PRIV-001",
+        "MCK-PRIV-002",
+        "MCK-BOOK-001",
+        "MCK-BOOK-002"
+      ]
+    }
+  ],
+  "aims_weighting": {
+    "structured_thinking": 0.28,
+    "analytical_problem_solving": 0.25,
+    "ownership_execution": 0.12,
+    "impact_results": 0.15,
+    "collaboration_communication": 0.15,
+    "growth_mindset": 0.05
+  },
+  "hiring_signals": [
+    {
+      "signal": "Builds a structured case approach with hypotheses, prioritized analysis, quantitative logic, and a clear recommendation.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "collaboration_communication"
+      ],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "MCK-HIRE-001",
+        "MCK-PRIV-002",
+        "MCK-BOOK-001",
+        "MCK-BOOK-002"
+      ]
+    },
+    {
+      "signal": "Uses PEI stories with specific personal action, stakes, conflict, leadership, and result.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "confidence": 0.86,
+      "evidence_ids": [
+        "MCK-HIRE-001",
+        "MCK-PRIV-003"
+      ]
+    },
+    {
+      "signal": "Communicates top-down with concise recommendation, supporting logic, and risks.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "MCK-PRIV-001",
+        "MCK-PRIV-002",
+        "MCK-BOOK-001"
+      ]
+    },
+    {
+      "signal": "Balances client impact with dissent, integrity, and willingness to speak up.",
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "MCK-VALUES-001",
+        "MCK-RISK-001"
+      ]
+    }
+  ],
+  "anti_signals": [
+    {
+      "anti_signal": "Unstructured case response with random analyses and no hypothesis or recommendation.",
+      "risk_reason": "McKinsey interviews explicitly test problem-solving through client scenarios.",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "MCK-HIRE-001"
+      ]
+    },
+    {
+      "anti_signal": "PEI story that is a resume summary rather than one deep personal-impact episode.",
+      "risk_reason": "Candidate and official interview materials emphasize personal experience depth.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "MCK-HIRE-001",
+        "MCK-PRIV-003"
+      ]
+    },
+    {
+      "anti_signal": "Client service interpreted as telling the client what they want to hear.",
+      "risk_reason": "McKinsey values include obligation to dissent/speak up and professional conduct boundaries.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "MCK-VALUES-001",
+        "MCK-RISK-001"
+      ]
+    }
+  ],
+  "interview_patterns": [
+    {
+      "pattern": "Consulting roles commonly combine Solve, PEI/personal experience, and problem-solving/case interviews.",
+      "role_families": [
+        "consulting",
+        "strategy",
+        "operations",
+        "digital"
+      ],
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "collaboration_communication"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "pattern": "Case interviews should test issue trees, math, synthesis, recommendation, and client pragmatism.",
+      "role_families": [
+        "consulting",
+        "strategy",
+        "operations"
+      ],
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "pattern": "Digital/technology consulting should combine business problem solving with technical/product feasibility and change adoption.",
+      "role_families": [
+        "digital",
+        "technology_consulting",
+        "analytics"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "confidence": 0.6
+    }
+  ],
+  "evidence_summary": {
+    "source_count": 16,
+    "official_source_count": 5,
+    "interview_source_count": 7,
+    "employee_voice_source_count": 3,
+    "last_reviewed": "2026-05-07"
+  },
+  "honest_limits": [
+    "This is a public-source and private-distillation draft lens and does not represent an official McKinsey hiring standard.",
+    "Private materials authorized by the project owner are included only as distilled aggregate patterns, not raw article text or copied questions.",
+    "Interview format can vary by office, role, seniority, region, and recruiting channel.",
+    "This v0.1 lens has static validation cases but is not approved for production screening until live answer backtesting and reviewer approval are complete.",
+    "This v0.2 lens has structured evidence records and an evidence audit, but is still not approved for production screening.",
+    "Public source URLs and private-material provenance must be reviewed before v1.0 approval.",
+    "Manual case-book distillation notes are included only as aggregate training and scoring heuristics; raw book text, copied frameworks, and copyrighted examples must not be committed or surfaced."
+  ]
+}

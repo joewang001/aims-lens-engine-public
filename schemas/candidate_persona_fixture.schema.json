@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aims-lens-engine.local/schemas/candidate_persona_fixture.schema.json",
+  "title": "Candidate Persona Fixture Set",
+  "type": "object",
+  "required": ["fixture_set_id", "status", "interview_type", "source_policy", "personas"],
+  "properties": {
+    "fixture_set_id": { "type": "string" },
+    "status": { "type": "string" },
+    "interview_type": { "type": "string" },
+    "source_policy": {
+      "type": "object",
+      "required": ["synthetic", "contains_private_candidate_data", "intended_use"],
+      "properties": {
+        "synthetic": { "type": "boolean" },
+        "contains_private_candidate_data": { "type": "boolean" },
+        "intended_use": { "type": "string" }
+      }
+    },
+    "personas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "persona_id",
+          "display_name",
+          "resume_summary",
+          "company_fit",
+          "capability_profile",
+          "interview_behavior",
+          "mock_prompt",
+          "expected_outcomes"
+        ],
+        "properties": {
+          "persona_id": { "type": "string" },
+          "display_name": { "type": "string" },
+          "resume_summary": { "type": "object" },
+          "company_fit": { "type": "object" },
+          "capability_profile": {
+            "type": "object",
+            "required": [
+              "structured_thinking",
+              "analytical_problem_solving",
+              "ownership_execution",
+              "impact_results",
+              "collaboration_communication",
+              "growth_mindset"
+            ],
+            "properties": {
+              "structured_thinking": { "type": "number", "minimum": 0, "maximum": 10 },
+              "analytical_problem_solving": { "type": "number", "minimum": 0, "maximum": 10 },
+              "ownership_execution": { "type": "number", "minimum": 0, "maximum": 10 },
+              "impact_results": { "type": "number", "minimum": 0, "maximum": 10 },
+              "collaboration_communication": { "type": "number", "minimum": 0, "maximum": 10 },
+              "growth_mindset": { "type": "number", "minimum": 0, "maximum": 10 }
+            }
+          },
+          "interview_behavior": { "type": "object" },
+          "mock_prompt": { "type": "string" },
+          "expected_outcomes": { "type": "object" }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,147 @@
+{
+  "lens_id": "shopify_public_v0_1",
+  "company": "Shopify",
+  "canonical_company_name": "Shopify Inc.",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "version": "0.1.0-public-release-candidate",
+  "source_cutoff": "2026-07-26",
+  "industries": [
+    "technology",
+    "ecommerce",
+    "commerce infrastructure",
+    "payments",
+    "retail software"
+  ],
+  "regions": [
+    "canada",
+    "north_america",
+    "global"
+  ],
+  "company_stage": "large public commerce platform",
+  "culture_principles": [
+    {
+      "name": "Merchant and entrepreneurship focus",
+      "description": "Shopify-style fit should connect work to making commerce easier for entrepreneurs and merchants.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "SHOPIFY-OFFICIAL-001",
+        "SHOPIFY-IR-001"
+      ]
+    },
+    {
+      "name": "Builder craft and fast shipping",
+      "description": "Strong candidates show builder judgment, high craft, clear communication, and the ability to ship useful work under changing conditions.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "SHOPIFY-CAREERS-001"
+      ]
+    },
+    {
+      "name": "Growth through challenge",
+      "description": "The public careers signal rewards curiosity, learning orientation, and comfort with difficult problems rather than comfort-seeking.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "SHOPIFY-CAREERS-001"
+      ]
+    }
+  ],
+  "aims_weighting": {
+    "structured_thinking": 0.16,
+    "analytical_problem_solving": 0.18,
+    "ownership_execution": 0.2,
+    "impact_results": 0.18,
+    "collaboration_communication": 0.14,
+    "growth_mindset": 0.14
+  },
+  "hiring_signals": [
+    {
+      "signal": "Frames decisions around merchant or entrepreneur outcomes rather than internal activity.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "SHOPIFY-OFFICIAL-001",
+        "SHOPIFY-IR-001"
+      ]
+    },
+    {
+      "signal": "Shows builder ownership: identifies the problem, ships a concrete solution, learns from feedback, and improves the system.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "SHOPIFY-CAREERS-001"
+      ]
+    },
+    {
+      "signal": "Communicates tradeoffs clearly and keeps identity lightweight when evidence changes.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "confidence": 0.68,
+      "evidence_ids": [
+        "SHOPIFY-CAREERS-001"
+      ]
+    }
+  ],
+  "anti_signals": [
+    {
+      "anti_signal": "Generic enthusiasm for ecommerce without a merchant-impact mechanism.",
+      "risk_reason": "Shopify fit requires connecting work to merchant success and practical commerce outcomes.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "SHOPIFY-OFFICIAL-001",
+        "SHOPIFY-IR-001"
+      ]
+    },
+    {
+      "anti_signal": "Slow, process-heavy answer that does not show ownership, craft, or shipping discipline.",
+      "risk_reason": "The public careers signal emphasizes builders, craft, clear communication, and fast shipping.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "SHOPIFY-CAREERS-001"
+      ]
+    }
+  ],
+  "interview_patterns": [
+    {
+      "pattern": "Behavioral and product judgment questions should test merchant empathy, builder ownership, shipping discipline, and learning from ambiguity.",
+      "role_families": [
+        "all",
+        "product",
+        "engineering",
+        "sales",
+        "operations",
+        "marketing"
+      ],
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results",
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "confidence": 0.7
+    }
+  ],
+  "evidence_summary": {
+    "source_count": 3,
+    "official_source_count": 3,
+    "interview_source_count": 0,
+    "employee_voice_source_count": 0,
+    "last_reviewed": "2026-07-26"
+  },
+  "honest_limits": [
+    "This is a lightweight public-source lens and does not represent an official Shopify hiring standard.",
+    "It uses official public sources only and does not include private interview reports or paid-member materials.",
+    "Role, team, seniority, location, and hiring manager can materially change interview emphasis.",
+    "This lens requires deeper multi-source validation before being promoted to FULLY_DISTILLED."
+  ]
+}

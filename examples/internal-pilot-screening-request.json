@@ -1,0 +1,9 @@
+{
+  "tenant_id": "internal_pilot",
+  "candidate_id": "demo-candidate-001",
+  "report_id": "sr-demo-candidate-001",
+  "company": "RBC",
+  "role": "Operational Risk Analyst",
+  "question": "Tell me how you would handle a control gap.",
+  "answer": "I would document the control gap, estimate exposure, identify impacted customers and processes, escalate through the risk channel, implement a temporary control, and monitor recurrence after the root cause fix."
+}

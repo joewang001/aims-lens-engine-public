@@ -1,0 +1,24 @@
+{
+  "target_company": "amazon",
+  "interview_type": "behavioral",
+  "role_family": "marketing_growth",
+  "plan_tier": "free",
+  "days_until_interview": 7,
+  "aims_scores": {
+    "structured_thinking": 6.2,
+    "analytical_problem_solving": 5.4,
+    "ownership_execution": 5.8,
+    "impact_results": 5.2,
+    "collaboration_communication": 6.8,
+    "growth_mindset": 7.1
+  },
+  "job_description_signals": [
+    "data-driven campaign optimization",
+    "cross-channel marketing execution",
+    "ownership of measurable growth outcomes"
+  ],
+  "recent_feedback": [
+    "The candidate mentioned campaign metrics but did not explain the trade-off behind channel selection.",
+    "The candidate needs to clarify personal ownership and attribution for larger campaign outcomes."
+  ]
+}

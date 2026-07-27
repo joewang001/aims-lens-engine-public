@@ -1,0 +1,110 @@
+{
+  "bank_id": "td_public_questions_v0_1",
+  "lens_id": "td_public_v0_1",
+  "version": "0.1.0-draft",
+  "source_cutoff": "2026-05-04",
+  "questions": [
+    {
+      "question_id": "TD-Q-001",
+      "question_type": "behavioral",
+      "role_families": ["all"],
+      "aims_dimensions": ["impact_results", "structured_thinking", "growth_mindset"],
+      "question_summary": "TD interview tips ask candidates to connect experiences and skills to the role and contribution to Be the Better Bank.",
+      "generated_question": "Tell me about a career success story that shows how you would contribute to TD's goal of being a better bank for clients, colleagues, or communities.",
+      "follow_up_strategy": [
+        "Ask how the story connects to the specific role.",
+        "Probe client, colleague, or community impact.",
+        "Ask what the candidate personally did and what changed.",
+        "Check whether the answer goes beyond generic banking interest."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["TD-HIRE-001", "TD-OFFICIAL-001"],
+      "copyright_note": "Original generated question from TD careers guidance."
+    },
+    {
+      "question_id": "TD-Q-002",
+      "question_type": "situational",
+      "role_families": ["retail_banking", "personal_banking", "contact_center"],
+      "aims_dimensions": ["collaboration_communication", "ownership_execution", "impact_results"],
+      "question_summary": "Retail and customer-facing banking roles should test human service, simplicity, suitability, and customer trust.",
+      "generated_question": "A customer is upset, financially stressed, and asking for a product that may not be suitable for their situation. How would you handle the conversation?",
+      "follow_up_strategy": [
+        "Ask how the candidate listens and de-escalates.",
+        "Probe suitability, disclosure, escalation, and customer trust.",
+        "Ask what information is needed before recommending anything.",
+        "Check whether the candidate balances care, compliance, and business goals."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["TD-OFFICIAL-002", "TD-RISK-002", "TD-PRIV-003"],
+      "copyright_note": "Original generated customer banking question."
+    },
+    {
+      "question_id": "TD-Q-003",
+      "question_type": "case",
+      "role_families": ["risk", "operations", "technology", "corporate"],
+      "aims_dimensions": ["analytical_problem_solving", "ownership_execution", "structured_thinking"],
+      "question_summary": "TD risk culture emphasizes Own it, Raise it, Know it and doing the right thing within risk appetite.",
+      "generated_question": "You notice a process shortcut that helps the team move faster but may create operational or customer risk. How would you decide what to do?",
+      "follow_up_strategy": [
+        "Ask how the candidate assesses severity and risk appetite.",
+        "Probe ownership, escalation, and documentation.",
+        "Ask how they would communicate with a manager or stakeholder.",
+        "Check whether they propose a better process, not only a warning."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["TD-RISK-001", "TD-CODE-001"],
+      "copyright_note": "Original generated risk culture case."
+    },
+    {
+      "question_id": "TD-Q-004",
+      "question_type": "leadership",
+      "role_families": ["all", "manager", "corporate"],
+      "aims_dimensions": ["collaboration_communication", "growth_mindset", "impact_results"],
+      "question_summary": "TD culture and private material emphasize care, inclusion, mentorship, colleague support, and community impact.",
+      "generated_question": "Describe a time you helped create a more inclusive or supportive environment for colleagues or customers. What did you do and how did you know it mattered?",
+      "follow_up_strategy": [
+        "Ask for a specific action, not a general belief.",
+        "Probe who benefited and how the candidate measured impact.",
+        "Ask what resistance or constraints existed.",
+        "Check whether the behavior was sustained or scaled."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["TD-DI-001", "TD-PRIV-001", "TD-PRIV-002"],
+      "copyright_note": "Original generated inclusion/care question."
+    },
+    {
+      "question_id": "TD-Q-005",
+      "question_type": "communication",
+      "role_families": ["all", "retail_banking", "corporate", "technology"],
+      "aims_dimensions": ["collaboration_communication", "structured_thinking", "impact_results"],
+      "question_summary": "TD promise of remarkably human and refreshingly simple suggests clear, empathetic communication.",
+      "generated_question": "Tell me about a time you had to make a complex policy, product, or technical issue simple for someone else without losing accuracy.",
+      "follow_up_strategy": [
+        "Ask what made the issue complex.",
+        "Probe how the candidate adapted to the audience.",
+        "Ask how they preserved accuracy and trust.",
+        "Check what outcome improved because of the communication."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["TD-OFFICIAL-002", "TD-CULTURE-001"],
+      "copyright_note": "Original generated communication question."
+    },
+    {
+      "question_id": "TD-Q-006",
+      "question_type": "motivation",
+      "role_families": ["all"],
+      "aims_dimensions": ["impact_results", "growth_mindset", "collaboration_communication"],
+      "question_summary": "TD motivation should connect to role alignment, better banking, care, growth, and community/client impact.",
+      "generated_question": "Why is TD the right environment for the kind of banking, customer, community, or career impact you want to create?",
+      "follow_up_strategy": [
+        "Ask for a role-specific reason.",
+        "Probe understanding of TD's purpose and shared commitments.",
+        "Ask what past evidence predicts success.",
+        "Check whether motivation includes client, colleague, or community impact."
+      ],
+      "difficulty": "beginner",
+      "evidence_ids": ["TD-HIRE-001", "TD-OFFICIAL-001", "TD-CULTURE-001"],
+      "copyright_note": "Original generated motivation question."
+    }
+  ]
+}

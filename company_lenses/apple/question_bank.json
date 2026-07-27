@@ -1,0 +1,110 @@
+{
+  "bank_id": "apple_public_questions_v0_1",
+  "lens_id": "apple_public_v0_1",
+  "version": "0.1.0-draft",
+  "source_cutoff": "2026-05-04",
+  "questions": [
+    {
+      "question_id": "APL-Q-001",
+      "question_type": "case",
+      "role_families": ["product", "software_engineering", "ios", "frontend"],
+      "aims_dimensions": ["analytical_problem_solving", "impact_results", "structured_thinking"],
+      "question_summary": "Apple-style product judgment should balance user experience, accessibility, privacy, performance, and implementation quality.",
+      "generated_question": "A feature improves engagement but makes the interface more complex and may reduce accessibility for some users. How would you evaluate whether to ship, redesign, or delay it?",
+      "follow_up_strategy": [
+        "Ask how the candidate defines product quality beyond engagement.",
+        "Probe accessibility, privacy, performance, and user trust trade-offs.",
+        "Ask what prototype, test, or user signal would change the decision.",
+        "Check whether the candidate can protect craft while still making a decision."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["APL-HIG-001", "APL-HIG-002", "APL-VALUES-001"],
+      "copyright_note": "Original generated question from official Apple values and HIG patterns."
+    },
+    {
+      "question_id": "APL-Q-002",
+      "question_type": "technical",
+      "role_families": ["ios", "frontend", "software_engineering"],
+      "aims_dimensions": ["analytical_problem_solving", "structured_thinking", "impact_results"],
+      "question_summary": "Apple iOS/frontend signals emphasize platform depth, implementation quality, performance, and user-facing polish.",
+      "generated_question": "You are improving a mobile screen that feels slow and inconsistent across device sizes. Walk me through how you would diagnose the issue, improve implementation quality, and verify the user experience.",
+      "follow_up_strategy": [
+        "Ask how the candidate separates layout, rendering, network, and state-management causes.",
+        "Probe performance measurement and platform constraints.",
+        "Ask how they test accessibility and device variation.",
+        "Check whether code quality and user perception are both considered."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["APL-PRIV-002", "APL-HIG-001"],
+      "copyright_note": "Original generated question from distilled private aggregate signals; no copied source question."
+    },
+    {
+      "question_id": "APL-Q-003",
+      "question_type": "behavioral",
+      "role_families": ["all"],
+      "aims_dimensions": ["ownership_execution", "collaboration_communication", "impact_results"],
+      "question_summary": "Apple-style craft often requires cross-functional collaboration without lowering quality standards.",
+      "generated_question": "Tell me about a time you had to protect product quality while working with partners who had different priorities. What did you do and what changed?",
+      "follow_up_strategy": [
+        "Ask what quality bar was at risk.",
+        "Probe how the candidate aligned design, engineering, product, or operations partners.",
+        "Ask what trade-off was accepted and why.",
+        "Check whether the result improved user experience or product reliability."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["APL-OFFICIAL-001", "APL-PRIV-004"],
+      "copyright_note": "Original generated behavioral question from distilled Apple work patterns."
+    },
+    {
+      "question_id": "APL-Q-004",
+      "question_type": "role_knowledge",
+      "role_families": ["product_design", "ux", "ui"],
+      "aims_dimensions": ["structured_thinking", "impact_results", "collaboration_communication"],
+      "question_summary": "Apple product design patterns should test user problem framing, critique, iteration, and platform-quality trade-offs.",
+      "generated_question": "Choose a product experience you would redesign for clarity and accessibility. How would you identify the core user problem, explore alternatives, and decide the final direction?",
+      "follow_up_strategy": [
+        "Ask what evidence shows the current experience fails users.",
+        "Probe design alternatives and trade-offs.",
+        "Ask how accessibility and platform consistency are evaluated.",
+        "Check how feedback from engineering and users changes the design."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["APL-HIG-001", "APL-ACCESS-001", "APL-PRIV-003"],
+      "copyright_note": "Original generated product design prompt."
+    },
+    {
+      "question_id": "APL-Q-005",
+      "question_type": "technical",
+      "role_families": ["ai_ml", "machine_learning"],
+      "aims_dimensions": ["analytical_problem_solving", "impact_results", "structured_thinking"],
+      "question_summary": "Apple AI/ML role signals should test evaluation quality, privacy, on-device constraints, and user usefulness.",
+      "generated_question": "A model performs well in offline tests but requires more personal data and device resources than expected. How would you evaluate whether the model belongs in the product?",
+      "follow_up_strategy": [
+        "Ask how the candidate defines user value and acceptable resource cost.",
+        "Probe privacy-preserving alternatives and on-device constraints.",
+        "Ask how offline evaluation maps to real product quality.",
+        "Check whether the candidate proposes monitoring or fallback behavior."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["APL-VALUES-001", "APL-PRIV-003", "APL-RISK-002"],
+      "copyright_note": "Original generated AI/ML question from Apple values and private aggregate signals."
+    },
+    {
+      "question_id": "APL-Q-006",
+      "question_type": "motivation",
+      "role_families": ["all"],
+      "aims_dimensions": ["impact_results", "growth_mindset", "collaboration_communication"],
+      "question_summary": "Apple fit should connect motivation to product craft, values, and role-specific contribution, not brand admiration alone.",
+      "generated_question": "What specific kind of product problem or craft standard makes Apple the right environment for you, and what evidence from your past work shows you can contribute to that standard?",
+      "follow_up_strategy": [
+        "Ask for a specific product or user problem rather than general Apple admiration.",
+        "Probe role-specific depth and past evidence.",
+        "Ask how the candidate handles feedback and high quality bars.",
+        "Check whether values like privacy or accessibility are naturally connected where relevant."
+      ],
+      "difficulty": "beginner",
+      "evidence_ids": ["APL-OFFICIAL-001", "APL-VALUES-001", "APL-PRIV-001"],
+      "copyright_note": "Original generated motivation question."
+    }
+  ]
+}

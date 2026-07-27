@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aims-lens-engine.local/schemas/company_lens.schema.json",
+  "title": "Company Lens",
+  "type": "object",
+  "required": [
+    "lens_id",
+    "company",
+    "lens_status",
+    "version",
+    "source_cutoff",
+    "aims_weighting",
+    "hiring_signals",
+    "anti_signals",
+    "evidence_summary",
+    "honest_limits"
+  ],
+  "properties": {
+    "lens_id": { "type": "string" },
+    "company": { "type": "string" },
+    "canonical_company_name": { "type": "string" },
+    "lens_status": {
+      "type": "string",
+      "enum": ["FULLY_DISTILLED", "DERIVED_LENS", "LIGHTWEIGHT_SCAN", "GENERIC_AIMS"]
+    },
+    "visibility": {
+      "type": "string",
+      "enum": ["PUBLIC_COMPANY_LENS", "PRIVATE_COMPANY_LENS", "HYBRID_COMPANY_LENS"]
+    },
+    "tenant_id": { "type": ["string", "null"] },
+    "version": { "type": "string" },
+    "source_cutoff": { "type": "string", "format": "date" },
+    "industries": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "regions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "company_stage": { "type": "string" },
+    "culture_principles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "description", "confidence"],
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "evidence_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "aims_weighting": {
+      "type": "object",
+      "required": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "ownership_execution",
+        "impact_results",
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "properties": {
+        "structured_thinking": { "type": "number", "minimum": 0, "maximum": 1 },
+        "analytical_problem_solving": { "type": "number", "minimum": 0, "maximum": 1 },
+        "ownership_execution": { "type": "number", "minimum": 0, "maximum": 1 },
+        "impact_results": { "type": "number", "minimum": 0, "maximum": 1 },
+        "collaboration_communication": { "type": "number", "minimum": 0, "maximum": 1 },
+        "growth_mindset": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "hiring_signals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["signal", "aims_dimensions", "confidence"],
+        "properties": {
+          "signal": { "type": "string" },
+          "aims_dimensions": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "evidence_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "anti_signals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["anti_signal", "risk_reason", "confidence"],
+        "properties": {
+          "anti_signal": { "type": "string" },
+          "risk_reason": { "type": "string" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "evidence_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "interview_patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pattern": { "type": "string" },
+          "role_families": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "aims_dimensions": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "evidence_summary": {
+      "type": "object",
+      "properties": {
+        "source_count": { "type": "integer", "minimum": 0 },
+        "official_source_count": { "type": "integer", "minimum": 0 },
+        "interview_source_count": { "type": "integer", "minimum": 0 },
+        "employee_voice_source_count": { "type": "integer", "minimum": 0 },
+        "last_reviewed": { "type": "string", "format": "date" }
+      }
+    },
+    "honest_limits": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

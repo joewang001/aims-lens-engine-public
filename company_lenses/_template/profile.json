@@ -1,0 +1,34 @@
+{
+  "lens_id": "company_slug_public_v0_1",
+  "company": "Company Name",
+  "canonical_company_name": "Company Name",
+  "lens_status": "FULLY_DISTILLED",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "version": "0.1.0",
+  "source_cutoff": "2026-05-03",
+  "industries": [],
+  "regions": [],
+  "company_stage": "",
+  "culture_principles": [],
+  "aims_weighting": {
+    "structured_thinking": 0.1667,
+    "analytical_problem_solving": 0.1667,
+    "ownership_execution": 0.1667,
+    "impact_results": 0.1667,
+    "collaboration_communication": 0.1667,
+    "growth_mindset": 0.1665
+  },
+  "hiring_signals": [],
+  "anti_signals": [],
+  "interview_patterns": [],
+  "evidence_summary": {
+    "source_count": 0,
+    "official_source_count": 0,
+    "interview_source_count": 0,
+    "employee_voice_source_count": 0,
+    "last_reviewed": "2026-05-03"
+  },
+  "honest_limits": [
+    "This lens is inferred from public sources and does not represent an official company hiring standard."
+  ]
+}

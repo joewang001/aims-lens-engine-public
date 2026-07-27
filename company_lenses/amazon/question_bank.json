@@ -1,0 +1,263 @@
+{
+  "bank_id": "amazon_public_questions_v0_1",
+  "lens_id": "amazon_public_v0_1",
+  "version": "0.1.0-draft",
+  "source_cutoff": "2026-05-04",
+  "questions": [
+    {
+      "question_id": "AMZ-Q-001",
+      "question_type": "behavioral",
+      "role_families": ["all"],
+      "aims_dimensions": ["ownership_execution", "impact_results", "structured_thinking"],
+      "question_summary": "Amazon-style behavioral questions emphasize concrete ownership, action, result, and data-backed detail.",
+      "generated_question": "Tell me about a time you personally took ownership of an important problem that was not fully assigned to you. What did you do, what trade-offs did you make, and what changed because of your work?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact individual contribution rather than the team's broad work.",
+        "Ask what metric, customer signal, operational result, or technical outcome proved the action mattered.",
+        "Probe what constraints made the decision difficult and how the candidate handled them.",
+        "If the answer is vague, ask for timeline, stakeholders, risks, and the final measurable result."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["AMZ-HIRE-001", "AMZ-HIRE-002", "AMZ-MED-001"],
+      "copyright_note": "Original generated question derived from summarized public patterns; do not copy source interview wording."
+    },
+    {
+      "question_id": "AMZ-Q-002",
+      "question_type": "behavioral",
+      "role_families": ["all"],
+      "aims_dimensions": ["growth_mindset", "ownership_execution", "structured_thinking"],
+      "question_summary": "Amazon recruiter guidance and candidate accounts reward clear learning from failure, not polished success-only stories.",
+      "generated_question": "Describe a failure or missed goal where your judgment or execution contributed to the outcome. How did you diagnose the issue, and what did you do differently afterward?",
+      "follow_up_strategy": [
+        "Check whether the candidate accepts personal responsibility without excessive blame shifting.",
+        "Ask what evidence showed the original approach was not working.",
+        "Ask how the lesson changed a later decision, process, or standard.",
+        "Probe whether the candidate can name both the business/customer effect and the personal behavior change."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["AMZ-HIRE-002", "AMZ-HIRE-003", "AMZ-MED-001"],
+      "copyright_note": "Original generated question derived from summarized public patterns; do not copy source interview wording."
+    },
+    {
+      "question_id": "AMZ-Q-003",
+      "question_type": "case",
+      "role_families": ["all", "product", "business", "operations"],
+      "aims_dimensions": ["analytical_problem_solving", "impact_results", "ownership_execution"],
+      "question_summary": "Amazon decision culture emphasizes working backwards from customer needs and making high-quality decisions quickly.",
+      "generated_question": "A team wants to launch a feature quickly because it may improve a key business metric, but the customer problem is not clearly proven. How would you decide whether to launch, delay, or redesign the plan?",
+      "follow_up_strategy": [
+        "Ask the candidate to define the customer problem before discussing implementation.",
+        "Probe what data would be enough to move forward and what uncertainty would remain.",
+        "Ask whether this is a reversible or hard-to-reverse decision and how that changes speed.",
+        "Probe how the candidate would communicate the decision to stakeholders who want speed."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["AMZ-CASE-001", "AMZ-CASE-002", "AMZ-CASE-003"],
+      "copyright_note": "Original generated case based on public decision-culture summaries."
+    },
+    {
+      "question_id": "AMZ-Q-004",
+      "question_type": "case",
+      "role_families": ["all", "product", "business", "engineering", "operations"],
+      "aims_dimensions": ["analytical_problem_solving", "structured_thinking", "ownership_execution"],
+      "question_summary": "Amazon materials distinguish reversible and hard-to-reverse decisions, with speed expected when risk is manageable.",
+      "generated_question": "Give an example of a decision you would treat as a two-way door and one you would treat as a one-way door in your role. How would your analysis, approval path, and speed differ?",
+      "follow_up_strategy": [
+        "Ask what would make the decision reversible in practice, not only in theory.",
+        "Probe the cost of being wrong and how the candidate would detect it early.",
+        "Ask what information the candidate would gather before acting and what they would deliberately skip.",
+        "Check whether the candidate can balance bias for action with risk control."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["AMZ-CASE-001", "AMZ-CASE-003"],
+      "copyright_note": "Original generated question based on summarized public decision-culture patterns."
+    },
+    {
+      "question_id": "AMZ-Q-005",
+      "question_type": "technical",
+      "role_families": ["sde", "software_engineering"],
+      "aims_dimensions": ["analytical_problem_solving", "structured_thinking", "growth_mindset"],
+      "question_summary": "SDE candidate accounts commonly combine coding/DSA depth with explanation of trade-offs and improvement.",
+      "generated_question": "Describe a technical problem where your first solution worked on simple cases but was not good enough for production or scale. How did you find the weakness, and how did you improve the solution?",
+      "follow_up_strategy": [
+        "Ask for the initial complexity, failure mode, or production constraint.",
+        "Probe how the candidate tested or measured the weakness.",
+        "Ask what alternative designs were considered and why one was chosen.",
+        "Check whether the answer explains maintainability and operational impact, not only code correctness."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["AMZ-MED-003", "AMZ-INT-001", "AMZ-HIRE-002"],
+      "copyright_note": "Original generated question derived from summarized public SDE interview patterns."
+    },
+    {
+      "question_id": "AMZ-Q-006",
+      "question_type": "technical",
+      "role_families": ["senior_sde", "software_engineering", "engineering_leadership"],
+      "aims_dimensions": ["analytical_problem_solving", "ownership_execution", "impact_results"],
+      "question_summary": "Senior technical accounts emphasize system design, scale, ownership, and production consequences.",
+      "generated_question": "Design a service that must handle sudden traffic spikes while protecting customer experience and downstream systems. What architecture would you choose, and what trade-offs would you revisit after launch?",
+      "follow_up_strategy": [
+        "Ask for bottlenecks, failure modes, and fallback behavior.",
+        "Probe how the candidate protects customer experience under degraded conditions.",
+        "Ask what metrics and alarms would prove the design is working.",
+        "Ask how ownership changes after launch: operations, iteration, incident response, and cost control."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["AMZ-MED-003", "AMZ-MED-004", "AMZ-MED-005"],
+      "copyright_note": "Original generated system-design prompt; do not copy source interview wording."
+    },
+    {
+      "question_id": "AMZ-Q-007",
+      "question_type": "role_knowledge",
+      "role_families": ["bie", "data_analytics", "business_intelligence"],
+      "aims_dimensions": ["analytical_problem_solving", "impact_results", "collaboration_communication"],
+      "question_summary": "BIE interview accounts emphasize SQL, metrics, dashboards, stakeholder communication, and business/customer interpretation.",
+      "generated_question": "A business stakeholder asks for a dashboard to explain why a customer-facing metric declined last week. How would you define the metric, validate the data, and turn the analysis into a decision?",
+      "follow_up_strategy": [
+        "Ask how the candidate would define the numerator, denominator, time window, and segmentation.",
+        "Probe data quality checks, joins, missing data, and metric ownership.",
+        "Ask what SQL or analysis approach would isolate likely drivers.",
+        "Check whether the candidate turns findings into a business/customer recommendation rather than only a report."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["AMZ-MED-002", "AMZ-HIRE-003"],
+      "copyright_note": "Original generated BIE prompt based on summarized public patterns."
+    },
+    {
+      "question_id": "AMZ-Q-008",
+      "question_type": "role_knowledge",
+      "role_families": ["bie", "data_analytics", "business_intelligence"],
+      "aims_dimensions": ["structured_thinking", "analytical_problem_solving", "impact_results"],
+      "question_summary": "BIE lens should test metric quality, business meaning, and decision usefulness, not SQL syntax alone.",
+      "generated_question": "You discover that two teams report different numbers for the same key business metric. Walk me through how you would investigate the discrepancy and rebuild trust in the metric.",
+      "follow_up_strategy": [
+        "Ask which definitions, filters, data sources, and refresh schedules the candidate would compare first.",
+        "Probe how the candidate would identify whether the issue is technical, semantic, or process-related.",
+        "Ask how they would communicate uncertainty before the metric is fixed.",
+        "Check whether they create a durable prevention mechanism, not only a one-time correction."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["AMZ-MED-002", "AMZ-CASE-001"],
+      "copyright_note": "Original generated question based on summarized BIE and decision-culture patterns."
+    },
+    {
+      "question_id": "AMZ-Q-009",
+      "question_type": "communication",
+      "role_families": ["product", "program_management", "business", "bie", "senior_sde"],
+      "aims_dimensions": ["structured_thinking", "collaboration_communication", "analytical_problem_solving"],
+      "question_summary": "Amazon's narrative culture rewards structured written reasoning and clear decision communication.",
+      "generated_question": "Imagine you need to write a short narrative recommending a controversial product or operational decision. What sections would you include, and how would you make the reasoning clear enough for leaders to challenge it?",
+      "follow_up_strategy": [
+        "Ask for the opening customer problem and decision request.",
+        "Probe what data, alternatives, risks, and counterarguments belong in the narrative.",
+        "Ask how the candidate would separate facts, assumptions, and recommendations.",
+        "Check whether the candidate invites useful disagreement rather than selling a predetermined answer."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["AMZ-CASE-001", "AMZ-CASE-003", "AMZ-HIRE-003"],
+      "copyright_note": "Original generated question based on public narrative-writing culture summaries."
+    },
+    {
+      "question_id": "AMZ-Q-010",
+      "question_type": "situational",
+      "role_families": ["operations", "product", "business", "program_management"],
+      "aims_dimensions": ["ownership_execution", "impact_results", "collaboration_communication"],
+      "question_summary": "Critic/risk sources show that speed and productivity should be balanced with safety, consent, and trust.",
+      "generated_question": "Your team can improve a productivity or growth metric quickly, but the approach may create safety, trust, or transparency concerns. How would you evaluate whether to proceed?",
+      "follow_up_strategy": [
+        "Ask which stakeholders could be harmed and how the candidate would know.",
+        "Probe what guardrails, review steps, or customer/worker signals are required before launch.",
+        "Ask how the candidate would explain a slower but safer path to leaders.",
+        "Check whether the candidate treats trust and safety as part of impact, not as external blockers."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["AMZ-RISK-001", "AMZ-RISK-002", "AMZ-CASE-002"],
+      "copyright_note": "Original generated situational question based on public risk/counter-evidence summaries."
+    },
+    {
+      "question_id": "AMZ-Q-011",
+      "question_type": "leadership",
+      "role_families": ["manager", "senior_sde", "program_management", "operations", "business"],
+      "aims_dimensions": ["ownership_execution", "collaboration_communication", "growth_mindset"],
+      "question_summary": "Amazon-style senior evaluation should test whether the candidate raises standards through mechanisms and team behavior, not only personal effort.",
+      "generated_question": "Tell me about a time you raised the operating standard for a team. What mechanism did you create or change, and how did you know the standard continued after your direct involvement?",
+      "follow_up_strategy": [
+        "Ask what standard was low or inconsistent before the candidate acted.",
+        "Probe the mechanism: process, review, automation, coaching, metric, or decision rule.",
+        "Ask how the candidate handled resistance or competing priorities.",
+        "Check whether the result was durable and measurable."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["AMZ-HIRE-002", "AMZ-MED-004", "AMZ-CASE-002"],
+      "copyright_note": "Original generated question derived from summarized leadership and candidate voice patterns."
+    },
+    {
+      "question_id": "AMZ-Q-012",
+      "question_type": "motivation",
+      "role_families": ["all"],
+      "aims_dimensions": ["impact_results", "growth_mindset", "collaboration_communication"],
+      "question_summary": "Amazon fit should be tested through customer impact, learning orientation, and comfort with high standards, not generic admiration.",
+      "generated_question": "What kind of customer or business problem would make Amazon the right environment for your next role, and what evidence from your past work shows you can operate well under that kind of pressure?",
+      "follow_up_strategy": [
+        "Ask for a specific problem domain rather than general brand interest.",
+        "Probe how the candidate handles ambiguity, pace, and high standards.",
+        "Ask which past result best predicts success in this environment.",
+        "Check whether the answer connects motivation to customer/business impact and personal operating style."
+      ],
+      "difficulty": "beginner",
+      "evidence_ids": ["AMZ-HIRE-001", "AMZ-CASE-001", "AMZ-MED-001"],
+      "copyright_note": "Original generated motivation question based on summarized public fit signals."
+    },
+    {
+      "question_id": "AMZ-Q-013",
+      "question_type": "technical",
+      "role_families": ["applied_science", "machine_learning", "nlp"],
+      "aims_dimensions": ["analytical_problem_solving", "structured_thinking", "impact_results"],
+      "question_summary": "Private distilled Applied Science signals suggest role-adaptive evaluation of scientific reasoning, model choice, evaluation quality, and impact.",
+      "generated_question": "You are asked to improve an NLP system where offline model metrics improve but user-facing quality does not. How would you diagnose the gap, redesign the evaluation, and decide whether the model should ship?",
+      "follow_up_strategy": [
+        "Ask how the candidate defines user-facing quality and maps it to offline metrics.",
+        "Probe data quality, label quality, bias, error slices, and baseline comparison.",
+        "Ask what experiment or ablation would identify the real failure mode.",
+        "Check whether the candidate connects scientific judgment to customer or product impact before launch."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["AMZ-PRIV-004", "AMZ-CASE-001", "AMZ-CASE-002"],
+      "copyright_note": "Original generated question from authorized private-material aggregate signals; no copied source text or source question."
+    },
+    {
+      "question_id": "AMZ-Q-014",
+      "question_type": "situational",
+      "role_families": ["data_center", "operations", "infrastructure"],
+      "aims_dimensions": ["ownership_execution", "analytical_problem_solving", "collaboration_communication"],
+      "question_summary": "Private distilled Data Center and operations-adjacent signals suggest evaluating safe troubleshooting, escalation judgment, and operational reliability.",
+      "generated_question": "During a shift, a recurring infrastructure alarm appears low severity, but the pattern is unusual and could affect customer-facing reliability. How would you troubleshoot, communicate, and decide whether to escalate?",
+      "follow_up_strategy": [
+        "Ask what information the candidate checks before touching the system.",
+        "Probe safety, customer impact, escalation threshold, and documentation.",
+        "Ask how the candidate distinguishes a known noisy alarm from an emerging incident.",
+        "Check whether the candidate balances speed with operational safety and handoff quality."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["AMZ-PRIV-004", "AMZ-RISK-002", "AMZ-CASE-002"],
+      "copyright_note": "Original generated question from authorized private-material aggregate signals; no copied source text or source question."
+    },
+    {
+      "question_id": "AMZ-Q-015",
+      "question_type": "communication",
+      "role_families": ["developer_advocate", "technical_communication", "solutions_architecture"],
+      "aims_dimensions": ["collaboration_communication", "structured_thinking", "analytical_problem_solving"],
+      "question_summary": "Private distilled Developer Advocate and technical communication signals suggest testing whether candidates can explain technical trade-offs while preserving accuracy and customer usefulness.",
+      "generated_question": "A customer-facing developer audience misunderstands an important technical trade-off in your product. How would you explain it clearly, correct the misunderstanding, and turn the feedback into a better technical asset or product signal?",
+      "follow_up_strategy": [
+        "Ask how the candidate identifies what the audience misunderstood.",
+        "Probe how they simplify without making the explanation technically false.",
+        "Ask what asset, example, demo, or documentation change they would create.",
+        "Check whether feedback becomes a product or engineering signal, not only a communication fix."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["AMZ-PRIV-004", "AMZ-HIRE-002", "AMZ-CASE-001"],
+      "copyright_note": "Original generated question from authorized private-material aggregate signals; no copied source text or source question."
+    }
+  ]
+}

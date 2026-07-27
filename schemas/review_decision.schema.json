@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aims-lens-engine.local/schemas/review_decision.schema.json",
+  "title": "Human Review Decision",
+  "type": "object",
+  "required": [
+    "review_id",
+    "report_id",
+    "tenant_id",
+    "candidate_id",
+    "reviewer_id",
+    "decision",
+    "reviewed_at",
+    "limited_pilot_notice"
+  ],
+  "properties": {
+    "review_id": { "type": "string" },
+    "report_id": { "type": "string" },
+    "tenant_id": { "type": "string" },
+    "candidate_id": { "type": "string" },
+    "reviewer_id": { "type": "string" },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "advance_after_human_review",
+        "hold_after_human_review",
+        "reject_after_human_review",
+        "needs_more_interview",
+        "needs_more_evidence"
+      ]
+    },
+    "decision_reason": { "type": ["string", "null"] },
+    "reviewed_at": { "type": "string" },
+    "source_recommendation": {
+      "type": ["string", "null"],
+      "enum": ["advance", "hold", "reject", "human_review_required", null]
+    },
+    "source_confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "follow_up_required": { "type": "boolean" },
+    "follow_up_notes": { "type": ["string", "null"] },
+    "limited_pilot_notice": { "type": "string" }
+  }
+}

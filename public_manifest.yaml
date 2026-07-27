@@ -1,0 +1,305 @@
+# Public export allowlist for AIMS Lens Engine.
+#
+# This manifest defines what may be copied into a public release tree.
+# It is intentionally conservative: export tooling should copy only paths
+# listed here, then apply private_manifest.yaml as a hard denylist.
+
+version: 1
+status: approved_for_public_release_preparation
+release_name: aims-lens-engine-public-core
+export_root: dist/public/aims-lens-engine
+
+policy:
+  default_action: deny
+  copy_only_allowlisted_paths: true
+  apply_private_manifest_after_allowlist: true
+  require_manual_review_before_public_push: true
+  raw_private_materials_allowed: false
+  private_distillation_public_safe_allowed: true
+  reject_private_only_evidence: true
+
+licenses:
+  code: Apache-2.0
+  content: CC-BY-4.0-pending-final-legal-review
+  private: proprietary-jobace-internal
+
+public_evidence_visibility:
+  allowed:
+    - public_source
+    - public_community_aggregate
+    - private_distillation_public_safe
+  blocked:
+    - private_only
+
+initial_public_release:
+  minimum_company_lens_count: 12
+  replacement_policy: replace_blocked_candidates_rather_than_shrink_below_10
+  company_lenses:
+    - slug: amazon
+      path: company_lenses/amazon/
+      status: existing_candidate
+    - slug: google
+      path: company_lenses/google/
+      status: existing_candidate
+    - slug: mckinsey
+      path: company_lenses/mckinsey/
+      status: existing_candidate
+    - slug: microsoft
+      path: company_lenses/microsoft/
+      status: existing_candidate
+    - slug: apple
+      path: company_lenses/apple/
+      status: existing_candidate
+    - slug: jpmorgan
+      path: company_lenses/jpmorgan/
+      status: existing_candidate
+    - slug: rbc
+      path: company_lenses/rbc/
+      status: existing_candidate
+    - slug: td
+      path: company_lenses/td/
+      status: existing_candidate
+    - slug: bmo
+      path: company_lenses/bmo/
+      status: existing_candidate
+    - slug: cibc
+      path: company_lenses/cibc/
+      status: existing_candidate
+    - slug: scotiabank
+      path: company_lenses/scotiabank/
+      status: existing_candidate
+    - slug: shopify
+      path: company_lenses/shopify/
+      status: existing_candidate
+
+allow_paths:
+  root_files:
+    - README.md
+    - README_ZH.md
+    - LICENSE
+    - NOTICE
+    - CONTENT_LICENSE.md
+    - CONTRIBUTING.md
+    - public_manifest.yaml
+    - private_manifest.yaml
+    - CHANGELOG.md
+    - VERSION
+
+  api_contracts:
+    - api/openapi.yaml
+
+  architecture:
+    - architecture/lens-router.md
+    - architecture/system-design.md
+
+  agents:
+    - agents/templates/
+
+  docs:
+    - docs/aims-lens-distillation-strategy-zh.md
+    - docs/candidate-persona-fixtures.md
+    - docs/distillation-playbook.md
+    - docs/implementation-plan.md
+    - docs/limited-pilot-policy.md
+    - docs/public-private-split-strategy.md
+    - docs/public-private-split-strategy-zh.md
+    - docs/project-charter.md
+    - docs/role-routing-and-validation.md
+    - docs/validation-checklist.md
+
+  governance:
+    - governance/evidence-standard.md
+    - governance/privacy-and-fairness.md
+
+  schemas:
+    - schemas/agent_artifact.schema.json
+    - schemas/candidate_persona_fixture.schema.json
+    - schemas/company_lens.schema.json
+    - schemas/derived_lens.schema.json
+    - schemas/dual_layer_evaluation.schema.json
+    - schemas/evidence.schema.json
+    - schemas/interview_prep_plan.schema.json
+    - schemas/jobace_adapter_contract.schema.json
+    - schemas/question_bank.schema.json
+    - schemas/review_decision.schema.json
+    - schemas/role_lens.schema.json
+    - schemas/screening_report.schema.json
+
+  examples:
+    - examples/b2c-amazon-marketing-improvement-plan-request.json
+    - examples/b2c-mckinsey-improvement-plan-request.json
+    - examples/dual-layer-evaluation-example.json
+    - examples/evaluation-request.json
+    - examples/human-review-decision-request.json
+    - examples/internal-pilot-screening-request.json
+    - examples/jobace-amazon-marketing-request.json
+    - examples/jobace-review-decision-request.json
+    - examples/jobace-staging-screening-request.json
+    - examples/jobace-staging-validation-suite.json
+    - examples/lens-workspace-create-api-key-request.json
+    - examples/lens-workspace-create-tenant-request.json
+    - examples/lens-workspace-source-material-request.json
+
+  routing:
+    - routing/role_router.json
+
+  public_company_lenses:
+    - company_lenses/_template/profile.json
+    - company_lenses/amazon/README.md
+    - company_lenses/amazon/profile.json
+    - company_lenses/amazon/evidence.md
+    - company_lenses/amazon/rubric.md
+    - company_lenses/amazon/question_bank.json
+    - company_lenses/amazon/rewrite_rules.md
+    - company_lenses/amazon/limits.md
+    - company_lenses/amazon/validation_report.md
+    - company_lenses/amazon/role_overlays/
+    - company_lenses/amazon/validation_cases/
+    - company_lenses/google/README.md
+    - company_lenses/google/profile.json
+    - company_lenses/google/evidence.md
+    - company_lenses/google/rubric.md
+    - company_lenses/google/question_bank.json
+    - company_lenses/google/rewrite_rules.md
+    - company_lenses/google/limits.md
+    - company_lenses/google/validation_report.md
+    - company_lenses/google/role_overlays/
+    - company_lenses/google/validation_cases/
+    - company_lenses/mckinsey/README.md
+    - company_lenses/mckinsey/profile.json
+    - company_lenses/mckinsey/evidence.md
+    - company_lenses/mckinsey/rubric.md
+    - company_lenses/mckinsey/question_bank.json
+    - company_lenses/mckinsey/rewrite_rules.md
+    - company_lenses/mckinsey/limits.md
+    - company_lenses/mckinsey/validation_report.md
+    - company_lenses/mckinsey/role_overlays/
+    - company_lenses/mckinsey/validation_cases/
+    - company_lenses/microsoft/README.md
+    - company_lenses/microsoft/profile.json
+    - company_lenses/microsoft/evidence.md
+    - company_lenses/microsoft/rubric.md
+    - company_lenses/microsoft/question_bank.json
+    - company_lenses/microsoft/rewrite_rules.md
+    - company_lenses/microsoft/limits.md
+    - company_lenses/microsoft/validation_report.md
+    - company_lenses/microsoft/role_overlays/
+    - company_lenses/microsoft/validation_cases/
+    - company_lenses/apple/README.md
+    - company_lenses/apple/profile.json
+    - company_lenses/apple/evidence.md
+    - company_lenses/apple/rubric.md
+    - company_lenses/apple/question_bank.json
+    - company_lenses/apple/rewrite_rules.md
+    - company_lenses/apple/limits.md
+    - company_lenses/apple/validation_report.md
+    - company_lenses/apple/role_overlays/
+    - company_lenses/apple/validation_cases/
+    - company_lenses/jpmorgan/README.md
+    - company_lenses/jpmorgan/profile.json
+    - company_lenses/jpmorgan/evidence.md
+    - company_lenses/jpmorgan/rubric.md
+    - company_lenses/jpmorgan/question_bank.json
+    - company_lenses/jpmorgan/rewrite_rules.md
+    - company_lenses/jpmorgan/limits.md
+    - company_lenses/jpmorgan/validation_report.md
+    - company_lenses/jpmorgan/role_overlays/
+    - company_lenses/jpmorgan/validation_cases/
+    - company_lenses/rbc/README.md
+    - company_lenses/rbc/profile.json
+    - company_lenses/rbc/evidence.md
+    - company_lenses/rbc/rubric.md
+    - company_lenses/rbc/question_bank.json
+    - company_lenses/rbc/rewrite_rules.md
+    - company_lenses/rbc/limits.md
+    - company_lenses/rbc/validation_report.md
+    - company_lenses/rbc/role_overlays/
+    - company_lenses/rbc/validation_cases/
+    - company_lenses/td/README.md
+    - company_lenses/td/profile.json
+    - company_lenses/td/evidence.md
+    - company_lenses/td/rubric.md
+    - company_lenses/td/question_bank.json
+    - company_lenses/td/rewrite_rules.md
+    - company_lenses/td/limits.md
+    - company_lenses/td/validation_report.md
+    - company_lenses/td/role_overlays/
+    - company_lenses/td/validation_cases/
+    - company_lenses/bmo/README.md
+    - company_lenses/bmo/profile.json
+    - company_lenses/bmo/evidence.md
+    - company_lenses/bmo/rubric.md
+    - company_lenses/bmo/question_bank.json
+    - company_lenses/bmo/rewrite_rules.md
+    - company_lenses/bmo/limits.md
+    - company_lenses/bmo/validation_report.md
+    - company_lenses/bmo/role_overlays/
+    - company_lenses/bmo/validation_cases/
+    - company_lenses/cibc/README.md
+    - company_lenses/cibc/profile.json
+    - company_lenses/cibc/evidence.md
+    - company_lenses/cibc/rubric.md
+    - company_lenses/cibc/question_bank.json
+    - company_lenses/cibc/rewrite_rules.md
+    - company_lenses/cibc/limits.md
+    - company_lenses/cibc/validation_report.md
+    - company_lenses/cibc/role_overlays/
+    - company_lenses/cibc/validation_cases/
+    - company_lenses/scotiabank/README.md
+    - company_lenses/scotiabank/profile.json
+    - company_lenses/scotiabank/evidence.md
+    - company_lenses/scotiabank/rubric.md
+    - company_lenses/scotiabank/question_bank.json
+    - company_lenses/scotiabank/rewrite_rules.md
+    - company_lenses/scotiabank/limits.md
+    - company_lenses/scotiabank/validation_report.md
+    - company_lenses/scotiabank/role_overlays/
+    - company_lenses/scotiabank/validation_cases/
+    - company_lenses/shopify/README.md
+    - company_lenses/shopify/profile.json
+    - company_lenses/shopify/evidence.md
+    - company_lenses/shopify/rubric.md
+    - company_lenses/shopify/question_bank.json
+    - company_lenses/shopify/rewrite_rules.md
+    - company_lenses/shopify/limits.md
+    - company_lenses/shopify/validation_report.md
+    - company_lenses/shopify/validation_cases/
+
+  public_tools:
+    - tools/export_public_release.py
+    - tools/scan_public_export.py
+    - tools/generate_public_release_audit_report.py
+    - tools/generate_phase2c_validation_cases.py
+    - tools/interview_prep_planner.py
+    - tools/llm_scorer.py
+    - tools/run_scoring_harness.py
+    - tools/validate_b2c2_improvement_plan.py
+    - tools/validate_candidate_personas.py
+    - tools/validate_cross_company_fit_matrix.py
+    - tools/validate_dual_layer_evaluation.py
+    - tools/validate_role_routing.py
+
+allowed_service_public_surface:
+  include_contracts_only_by_default: true
+  allowed_now:
+    - api/openapi.yaml
+    - schemas/jobace_adapter_contract.schema.json
+    - examples/lens-workspace-create-api-key-request.json
+    - examples/lens-workspace-create-tenant-request.json
+    - examples/lens-workspace-source-material-request.json
+  deferred_until_mock_adapter_review:
+    - services/lens_workspace_api/
+    - services/lens_workspace_ui/
+
+required_pre_export_checks:
+  - path_exists_for_all_existing_candidates
+  - no_private_manifest_path_in_export
+  - no_private_only_evidence
+  - no_raw_private_source_text
+  - no_candidate_or_resume_data
+  - no_user_submitted_job_posting_bodies
+  - no_api_keys_or_tokens
+  - no_local_database_paths
+  - no_production_deployment_config
+  - schema_validation_for_exported_lenses
+  - manual_company_lens_audit

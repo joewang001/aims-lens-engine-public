@@ -1,0 +1,86 @@
+{
+  "role_lens_id": "mckinsey_consulting_case_pei_v0_1",
+  "role_family": "consulting_case_pei",
+  "seniority": "mixed",
+  "version": "0.1.0-role-overlay-draft",
+  "aims_weighting": {
+    "structured_thinking": 0.29,
+    "analytical_problem_solving": 0.26,
+    "ownership_execution": 0.12,
+    "impact_results": 0.15,
+    "collaboration_communication": 0.14,
+    "growth_mindset": 0.04
+  },
+  "core_competencies": [
+    {
+      "name": "Case structure",
+      "description": "Builds a tailored issue tree, hypotheses, prioritized analyses, and synthesis.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving"
+      ]
+    },
+    {
+      "name": "Quantitative reasoning",
+      "description": "Uses math, estimates, segmentation, and sensitivity to support judgment.",
+      "aims_dimensions": [
+        "analytical_problem_solving"
+      ]
+    },
+    {
+      "name": "Client-ready recommendation",
+      "description": "Communicates top-down recommendation, risks, and next steps.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "impact_results"
+      ]
+    },
+    {
+      "name": "Personal impact story",
+      "description": "Gives one deep PEI story with stakes, personal action, conflict, and measurable result.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results",
+        "collaboration_communication"
+      ]
+    }
+  ],
+  "screening_rubric": [
+    {
+      "criterion": "Case opening",
+      "strong_signal": "Defines objective and structures the problem before analysis.",
+      "weak_signal": "Starts with random analyses or generic framework.",
+      "follow_up_question": "What is your issue tree and first hypothesis?"
+    },
+    {
+      "criterion": "Math and insight",
+      "strong_signal": "Uses numbers to generate insight and update the recommendation.",
+      "weak_signal": "Does math mechanically with no implication.",
+      "follow_up_question": "What does this number mean for the client?"
+    },
+    {
+      "criterion": "Synthesis",
+      "strong_signal": "Leads with answer, evidence, caveat, and next step.",
+      "weak_signal": "Summarizes facts without recommendation.",
+      "follow_up_question": "What would you tell the client now?"
+    },
+    {
+      "criterion": "PEI depth",
+      "strong_signal": "Uses one specific high-stakes story with personal role and result.",
+      "weak_signal": "Gives a broad resume summary.",
+      "follow_up_question": "What exactly did you do when resistance appeared?"
+    }
+  ],
+  "production_status": "not_approved",
+  "allowed_use": [
+    "internal_validation",
+    "question_generation_review",
+    "role_routing_design"
+  ],
+  "blocked_use": [
+    "automated_rejection",
+    "production_screening_without_human_review"
+  ],
+  "company_lens_id": "mckinsey_public_v0_1"
+}

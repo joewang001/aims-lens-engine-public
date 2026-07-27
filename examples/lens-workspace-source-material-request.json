@@ -1,0 +1,10 @@
+{
+  "tenant_id": "internal_pilot",
+  "company": "RBC",
+  "source_type": "company_careers",
+  "source_url": "https://jobs.rbc.com/ca/en/job/example",
+  "title": "Operational Risk Analyst",
+  "role_family": "risk_compliance",
+  "created_by": "internal_tester",
+  "raw_text": "Operational Risk Analyst\nTORONTO, Ontario, Canada\nEmployment Type: Full time\nJob Type: Regular\nPosted Date: 2026-05-11\nJob Description\nThis role supports risk identification, control evidence, stakeholder communication, regulatory awareness, escalation judgment, process ownership, and client trust in a banking operations environment."
+}

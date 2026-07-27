@@ -1,0 +1,9 @@
+{
+  "tenant_id": "demo",
+  "company": "Amazon",
+  "role": "Product Manager",
+  "job_description": "Optional JD text.",
+  "question": "Tell me about a time you handled a difficult trade-off.",
+  "answer": "Candidate answer text.",
+  "lens_id": "amazon_public_v0_1"
+}

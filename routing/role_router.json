@@ -1,0 +1,266 @@
+{
+  "version": "0.1.0-routing-validation-draft",
+  "status": "internal_validation_only",
+  "production_status": "approved_for_limited_pilot",
+  "routing_order": [
+    "company_alias",
+    "role_title_keywords",
+    "job_description_keywords",
+    "industry_context",
+    "fallback_confidence_state"
+  ],
+  "company_aliases": {
+    "amazon": [
+      "amazon",
+      "aws",
+      "audible"
+    ],
+    "google": [
+      "google",
+      "alphabet",
+      "youtube",
+      "gcp"
+    ],
+    "apple": [
+      "apple"
+    ],
+    "microsoft": [
+      "microsoft",
+      "azure",
+      "xbox",
+      "github"
+    ],
+    "mckinsey": [
+      "mckinsey",
+      "mckinsey & company",
+      "mckinsey digital"
+    ],
+    "td": [
+      "td",
+      "td bank",
+      "toronto-dominion"
+    ],
+    "rbc": [
+      "rbc",
+      "royal bank of canada"
+    ],
+    "cibc": [
+      "cibc",
+      "canadian imperial bank of commerce"
+    ],
+    "bmo": [
+      "bmo",
+      "bank of montreal"
+    ],
+    "scotiabank": [
+      "scotiabank",
+      "bank of nova scotia",
+      "scotia"
+    ],
+    "jpmorgan": [
+      "jpmorgan",
+      "jp morgan",
+      "jpmorgan chase",
+      "jpmc",
+      "chase"
+    ]
+  },
+  "role_routes": [
+    {
+      "route_id": "route_swe",
+      "overlay": "swe",
+      "role_family": "software_engineering",
+      "keywords": [
+        "software engineer",
+        "software development engineer",
+        "swe",
+        "sde",
+        "developer",
+        "backend",
+        "frontend",
+        "full stack",
+        "java",
+        "ios",
+        "android",
+        "cloud engineer"
+      ],
+      "companies": [
+        "amazon",
+        "google",
+        "apple",
+        "microsoft",
+        "jpmorgan"
+      ],
+      "fallback": "GENERIC_AIMS_WITH_TECHNICAL_OVERLAY"
+    },
+    {
+      "route_id": "route_data_analytics",
+      "overlay": "data_analytics",
+      "role_family": "data_analytics",
+      "keywords": [
+        "data analyst",
+        "business intelligence",
+        "bie",
+        "analytics",
+        "data engineer",
+        "dashboard",
+        "sql",
+        "metrics",
+        "reporting"
+      ],
+      "companies": [
+        "amazon",
+        "google",
+        "microsoft",
+        "mckinsey",
+        "td",
+        "rbc"
+      ],
+      "fallback": "GENERIC_AIMS_WITH_DATA_OVERLAY"
+    },
+    {
+      "route_id": "route_marketing_growth",
+      "overlay": "marketing_growth",
+      "role_family": "marketing_growth",
+      "keywords": [
+        "marketing manager",
+        "digital marketing",
+        "growth marketing",
+        "performance marketing",
+        "demand generation",
+        "brand marketing",
+        "campaign",
+        "paid media",
+        "seo",
+        "sem",
+        "crm",
+        "lifecycle marketing",
+        "conversion",
+        "attribution",
+        "roas",
+        "cac",
+        "pipeline",
+        "go-to-market",
+        "gtm"
+      ],
+      "companies": [
+        "amazon",
+        "google",
+        "apple",
+        "microsoft"
+      ],
+      "fallback": "GENERIC_AIMS_WITH_MARKETING_GROWTH_OVERLAY"
+    },
+    {
+      "route_id": "route_retail_banking",
+      "overlay": "retail_banking",
+      "role_family": "retail_banking",
+      "keywords": [
+        "customer service",
+        "csr",
+        "teller",
+        "personal banker",
+        "banking advisor",
+        "branch",
+        "contact center",
+        "client advisor"
+      ],
+      "companies": [
+        "td",
+        "rbc",
+        "cibc",
+        "bmo",
+        "scotiabank",
+        "jpmorgan"
+      ],
+      "fallback": "GENERIC_AIMS_WITH_BANKING_CUSTOMER_OVERLAY"
+    },
+    {
+      "route_id": "route_risk_compliance",
+      "overlay": "risk_compliance",
+      "role_family": "risk_compliance",
+      "keywords": [
+        "risk",
+        "compliance",
+        "audit",
+        "controls",
+        "aml",
+        "kyc",
+        "fraud",
+        "governance",
+        "operational risk"
+      ],
+      "companies": [
+        "td",
+        "rbc",
+        "cibc",
+        "bmo",
+        "scotiabank",
+        "jpmorgan"
+      ],
+      "fallback": "GENERIC_AIMS_WITH_RISK_OVERLAY"
+    },
+    {
+      "route_id": "route_consulting_case_pei",
+      "overlay": "consulting_case_pei",
+      "role_family": "consulting_case_pei",
+      "keywords": [
+        "consultant",
+        "associate",
+        "business analyst",
+        "engagement manager",
+        "case interview",
+        "strategy",
+        "pei",
+        "implementation consultant"
+      ],
+      "companies": [
+        "mckinsey"
+      ],
+      "fallback": "GENERIC_AIMS_WITH_CONSULTING_OVERLAY"
+    }
+  ],
+  "confidence_rules": [
+    {
+      "condition": "company and role overlay exact match",
+      "confidence": 0.86
+    },
+    {
+      "condition": "company exact match but no role overlay",
+      "confidence": 0.7
+    },
+    {
+      "condition": "role overlay exact match but company missing or unsupported",
+      "confidence": 0.62
+    },
+    {
+      "condition": "ambiguous role keywords across multiple overlays",
+      "confidence": 0.55
+    },
+    {
+      "condition": "unknown company and unknown role",
+      "confidence": 0.4
+    }
+  ],
+  "source_acquisition_policy": {
+    "allowed_public_sources": [
+      "company career pages",
+      "official reports",
+      "public community posts",
+      "Reddit public threads",
+      "Glassdoor public pages where accessible",
+      "Indeed public interview pages",
+      "public blogs",
+      "public forums"
+    ],
+    "blocked_collection": [
+      "paywall bypass",
+      "login bypass",
+      "scraping disallowed private pages",
+      "copying full posts/articles",
+      "copying long question lists verbatim"
+    ],
+    "distillation_rule": "Use aggregate patterns, role signals, confidence, and original generated questions only.",
+    "source_labeling": "Archive source origin as official_public, public_community, public_interview_experience, private_archive_aggregate, or risk_context."
+  }
+}

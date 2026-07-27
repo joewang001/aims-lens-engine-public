@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aims-lens-engine.local/schemas/dual_layer_evaluation.schema.json",
+  "title": "Dual Layer Evaluation Rendering",
+  "type": "object",
+  "required": [
+    "evaluation_id",
+    "tenant_id",
+    "candidate_id",
+    "role",
+    "core_evaluation",
+    "candidate_final_assessment",
+    "b2b_reviewer_report",
+    "rendering_policy"
+  ],
+  "properties": {
+    "evaluation_id": { "type": "string" },
+    "tenant_id": { "type": "string" },
+    "candidate_id": { "type": "string" },
+    "conversation_id": { "type": "string" },
+    "role": { "type": "string" },
+    "company": { "type": "string" },
+    "lens_id": { "type": "string" },
+    "core_evaluation": {
+      "type": "object",
+      "required": [
+        "aims_scores",
+        "average_score",
+        "strength_evidence",
+        "weakness_evidence",
+        "risk_signals",
+        "follow_up_questions",
+        "improvement_priorities",
+        "confidence",
+        "evidence_notice"
+      ],
+      "properties": {
+        "aims_scores": {
+          "type": "object",
+          "required": [
+            "structured_thinking",
+            "analytical_problem_solving",
+            "ownership_execution",
+            "impact_results",
+            "collaboration_communication",
+            "growth_mindset"
+          ],
+          "properties": {
+            "structured_thinking": { "type": "number", "minimum": 0, "maximum": 10 },
+            "analytical_problem_solving": { "type": "number", "minimum": 0, "maximum": 10 },
+            "ownership_execution": { "type": "number", "minimum": 0, "maximum": 10 },
+            "impact_results": { "type": "number", "minimum": 0, "maximum": 10 },
+            "collaboration_communication": { "type": "number", "minimum": 0, "maximum": 10 },
+            "growth_mindset": { "type": "number", "minimum": 0, "maximum": 10 }
+          }
+        },
+        "average_score": { "type": "number", "minimum": 0, "maximum": 10 },
+        "strength_evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "dimension", "claim", "evidence", "confidence"],
+            "properties": {
+              "id": { "type": "string" },
+              "dimension": { "type": "string" },
+              "claim": { "type": "string" },
+              "evidence": { "type": "string" },
+              "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+            }
+          }
+        },
+        "weakness_evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "dimension", "claim", "evidence", "confidence"],
+            "properties": {
+              "id": { "type": "string" },
+              "dimension": { "type": "string" },
+              "claim": { "type": "string" },
+              "evidence": { "type": "string" },
+              "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+            }
+          }
+        },
+        "risk_signals": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "follow_up_questions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "improvement_priorities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["dimension", "priority", "issue", "practice_action"],
+            "properties": {
+              "dimension": { "type": "string" },
+              "priority": { "type": "string", "enum": ["high", "medium", "low"] },
+              "issue": { "type": "string" },
+              "practice_action": { "type": "string" }
+            }
+          }
+        },
+        "language_feedback": {
+          "type": "object",
+          "properties": {
+            "clarity_issues": { "type": "array", "items": { "type": "string" } },
+            "wording_issues": { "type": "array", "items": { "type": "string" } },
+            "spoken_english_notes": { "type": "array", "items": { "type": "string" } },
+            "fairness_note": { "type": "string" }
+          }
+        },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "human_review_required": { "type": "boolean" },
+        "evidence_notice": { "type": "string" }
+      }
+    },
+    "candidate_final_assessment": {
+      "type": "object",
+      "required": ["summary", "strengths", "priority_improvement_points", "practice_plan", "language_coaching"],
+      "properties": {
+        "summary": { "type": "string" },
+        "strengths": { "type": "array", "items": { "type": "string" } },
+        "priority_improvement_points": { "type": "array", "items": { "type": "string" } },
+        "practice_plan": { "type": "array", "items": { "type": "string" } },
+        "language_coaching": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "b2b_reviewer_report": {
+      "type": "object",
+      "required": [
+        "summary",
+        "verified_strengths",
+        "unverified_or_weak_areas",
+        "recommended_verification_questions",
+        "role_fit_notes",
+        "human_review_required",
+        "decision_boundary_notice"
+      ],
+      "properties": {
+        "summary": { "type": "string" },
+        "verified_strengths": { "type": "array", "items": { "type": "string" } },
+        "unverified_or_weak_areas": { "type": "array", "items": { "type": "string" } },
+        "recommended_verification_questions": { "type": "array", "items": { "type": "string" } },
+        "role_fit_notes": { "type": "array", "items": { "type": "string" } },
+        "human_review_required": { "type": "boolean" },
+        "decision_boundary_notice": { "type": "string" }
+      }
+    },
+    "rendering_policy": {
+      "type": "object",
+      "required": [
+        "same_core_evaluation_required",
+        "candidate_layer_purpose",
+        "b2b_layer_purpose",
+        "blocked_uses"
+      ],
+      "properties": {
+        "same_core_evaluation_required": { "type": "boolean" },
+        "candidate_layer_purpose": { "type": "string" },
+        "b2b_layer_purpose": { "type": "string" },
+        "blocked_uses": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

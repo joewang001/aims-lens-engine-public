@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aims-lens-engine.local/schemas/interview_prep_plan.schema.json",
+  "title": "Interview Prep Improvement Plan",
+  "type": "object",
+  "required": [
+    "plan_id",
+    "target_company",
+    "interview_type",
+    "selected_plan",
+    "entitlement",
+    "priority_improvement_points",
+    "daily_drills",
+    "reflection_template",
+    "next_mock_recommendation",
+    "product_notice"
+  ],
+  "properties": {
+    "plan_id": { "type": "string" },
+    "template_status": { "type": "string" },
+    "target_company": { "type": "string" },
+    "interview_type": { "type": "string" },
+    "role_family": { "type": "string" },
+    "selected_plan": {
+      "type": "object",
+      "required": ["plan_key", "template_file", "required_time_per_day_minutes", "selection_reason"],
+      "properties": {
+        "plan_key": { "type": "string" },
+        "template_file": { "type": "string" },
+        "required_time_per_day_minutes": { "type": "number" },
+        "selection_reason": { "type": "string" }
+      }
+    },
+    "entitlement": {
+      "type": "object",
+      "required": ["plan_tier", "mock_allowance", "diagnosis_depth", "included_features", "gated_features"],
+      "properties": {
+        "plan_tier": { "type": "string", "enum": ["free", "paid"] },
+        "mock_allowance": { "type": "string" },
+        "diagnosis_depth": { "type": "string" },
+        "included_features": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "gated_features": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "upsell_trigger": { "type": "string" }
+      }
+    },
+    "average_aims_score": { "type": "number" },
+    "priority_improvement_points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["dimension", "label", "current_score", "issue", "recommended_drills", "next_action", "success_standard"],
+        "properties": {
+          "dimension": { "type": "string" },
+          "label": { "type": "string" },
+          "current_score": { "type": "number" },
+          "issue": { "type": "string" },
+          "recommended_drills": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "next_action": { "type": "string" },
+          "success_standard": { "type": "string" }
+        }
+      }
+    },
+    "company_specific_drills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["drill_id", "label", "aims_dimensions", "instruction"],
+        "properties": {
+          "drill_id": { "type": "string" },
+          "label": { "type": "string" },
+          "aims_dimensions": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "instruction": { "type": "string" }
+        }
+      }
+    },
+    "role_specific_drills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["drill_id", "label", "aims_dimensions", "instruction"],
+        "properties": {
+          "drill_id": { "type": "string" },
+          "label": { "type": "string" },
+          "aims_dimensions": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "instruction": { "type": "string" }
+        }
+      }
+    },
+    "daily_drills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["day_range", "focus_dimension", "drills", "output"],
+        "properties": {
+          "day_range": { "type": "string" },
+          "focus_dimension": { "type": "string" },
+          "drills": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "output": { "type": "string" }
+        }
+      }
+    },
+    "reflection_template": { "type": "string" },
+    "next_mock_recommendation": {
+      "type": "object",
+      "required": ["target_company", "interview_type", "mock_mode", "focus_dimensions", "interviewer_instruction", "stop_condition"],
+      "properties": {
+        "target_company": { "type": "string" },
+        "interview_type": { "type": "string" },
+        "mock_mode": { "type": "string" },
+        "role_family": { "type": "string" },
+        "focus_dimensions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "interviewer_instruction": { "type": "string" },
+        "stop_condition": { "type": "string" }
+      }
+    },
+    "plan_generation_signals": {
+      "type": "object",
+      "properties": {
+        "weakest_aims_dimensions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "company_lens_used": { "type": "string" },
+        "role_family_used": { "type": "string" },
+        "job_description_signals": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "recent_feedback": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "product_notice": { "type": "string" }
+  }
+}

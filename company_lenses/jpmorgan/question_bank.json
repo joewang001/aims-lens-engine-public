@@ -1,0 +1,145 @@
+{
+  "bank_id": "jpmorgan_public_questions_v0_1",
+  "lens_id": "jpmorgan_public_v0_1",
+  "version": "0.1.0-draft",
+  "source_cutoff": "2026-05-04",
+  "questions": [
+    {
+      "question_id": "JPMC-Q-001",
+      "question_type": "technical",
+      "role_families": [
+        "software_engineering",
+        "technology"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "A high-volume banking service has intermittent failures after a release. How would you diagnose, mitigate, and prevent recurrence?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "JPMC-TECH-001",
+        "JPMC-PRIV-002"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    },
+    {
+      "question_id": "JPMC-Q-002",
+      "question_type": "role_knowledge",
+      "role_families": [
+        "private_banking",
+        "wealth",
+        "consumer_banking"
+      ],
+      "aims_dimensions": [
+        "collaboration_communication",
+        "impact_results",
+        "analytical_problem_solving"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "A client wants a solution that may not fit their risk profile or financial objective. How would you handle the discussion?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "JPMC-PRIV-003",
+        "JPMC-CODE-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    },
+    {
+      "question_id": "JPMC-Q-003",
+      "question_type": "case",
+      "role_families": [
+        "risk",
+        "operations",
+        "technology",
+        "banking"
+      ],
+      "aims_dimensions": [
+        "ownership_execution",
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "You discover a control weakness that has not yet caused a loss but could affect customers or reporting. What do you do?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": [
+        "JPMC-OFFICIAL-001",
+        "JPMC-CODE-001",
+        "JPMC-RISK-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    },
+    {
+      "question_id": "JPMC-Q-004",
+      "question_type": "behavioral",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "Tell me about a time you delivered impact in a high-standard, highly controlled environment. What did you personally do?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "JPMC-HIRE-001",
+        "JPMC-OFFICIAL-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    },
+    {
+      "question_id": "JPMC-Q-005",
+      "question_type": "motivation",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "impact_results",
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "Why JPMorgan Chase, and how does this role connect to the kind of client, technology, or business impact you want to create?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "JPMC-HIRE-001",
+        "JPMC-OFFICIAL-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    }
+  ]
+}

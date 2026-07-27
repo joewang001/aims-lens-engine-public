@@ -1,0 +1,14 @@
+{
+  "tenant_id": "jobace_staging",
+  "user_id": 101,
+  "conversation_id": 2026050501,
+  "message_id": 9001,
+  "company": "RBC",
+  "role": "Operational Risk Analyst",
+  "question": "Tell me how you would handle a control gap.",
+  "answer": "I would document the control gap, estimate exposure, identify impacted customers and processes, escalate through the risk channel, implement a temporary control, and monitor recurrence after the root cause fix.",
+  "job_description": "Operational risk role focused on controls, escalation, governance, and process improvement.",
+  "resume_summary": "Candidate has banking operations and risk-control experience.",
+  "jobace_mode": "mock",
+  "jobace_sub_mode": "company_lens"
+}

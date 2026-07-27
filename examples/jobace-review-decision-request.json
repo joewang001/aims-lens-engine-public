@@ -1,0 +1,12 @@
+{
+  "report_id": "jobace-conv-2026050501-msg-9001",
+  "tenant_id": "jobace_staging",
+  "candidate_id": "jobace-user-101",
+  "reviewer_id": "jobace-reviewer-1",
+  "decision": "needs_more_interview",
+  "decision_reason": "The answer shows adequate control process awareness, but staging reviewer wants a concrete incident example and clearer stakeholder escalation timing.",
+  "source_recommendation": "hold",
+  "source_confidence": 0.59,
+  "follow_up_required": true,
+  "follow_up_notes": "Ask about risk severity, impacted customers, escalation timing, and measurable control outcome."
+}

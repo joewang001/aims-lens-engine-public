@@ -1,0 +1,116 @@
+{
+  "bank_id": "cibc_public_questions_v0_1",
+  "lens_id": "cibc_public_v0_1",
+  "version": "0.1.0-draft",
+  "source_cutoff": "2026-05-04",
+  "questions": [
+    {
+      "question_id": "CIBC-Q-001",
+      "question_type": "behavioral",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication",
+        "structured_thinking"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "Tell me about a time you helped a client or colleague make progress toward an important goal. What was your role and what changed?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "CIBC-OFFICIAL-001",
+        "CIBC-CULTURE-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    },
+    {
+      "question_id": "CIBC-Q-002",
+      "question_type": "situational",
+      "role_families": [
+        "csr",
+        "retail_banking",
+        "contact_center"
+      ],
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "A customer is frustrated and needs help quickly, but the right answer requires careful policy or product explanation. How would you handle it?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "CIBC-PRIV-002",
+        "CIBC-CODE-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    },
+    {
+      "question_id": "CIBC-Q-003",
+      "question_type": "case",
+      "role_families": [
+        "risk",
+        "operations",
+        "corporate"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "You notice a team practice that gets work done faster but may not meet professional standards. How would you respond?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": [
+        "CIBC-CODE-001",
+        "CIBC-RISK-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    },
+    {
+      "question_id": "CIBC-Q-004",
+      "question_type": "motivation",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "Why CIBC, and how do your skills and perspective align with this role and CIBC's culture?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "CIBC-HIRE-001",
+        "CIBC-CULTURE-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    }
+  ]
+}

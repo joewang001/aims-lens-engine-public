@@ -1,0 +1,164 @@
+{
+  "lens_id": "cibc_public_v0_1",
+  "company": "CIBC",
+  "canonical_company_name": "Canadian Imperial Bank of Commerce",
+  "lens_status": "FULLY_DISTILLED",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "version": "0.2.0-evidence-audited-draft",
+  "source_cutoff": "2026-05-04",
+  "industries": [
+    "banking",
+    "financial services",
+    "retail banking",
+    "wealth",
+    "capital markets",
+    "technology"
+  ],
+  "regions": [
+    "canada",
+    "united_states",
+    "north_america"
+  ],
+  "company_stage": "large financial institution",
+  "culture_principles": [
+    {
+      "name": "Client/customer trust and impact",
+      "description": "CIBC-style fit connects role skills and perspective to client progress, ambition, inclusion, and professional standards.",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "CIBC-OFFICIAL-001",
+        "CIBC-CULTURE-001"
+      ]
+    },
+    {
+      "name": "Risk, conduct, and integrity",
+      "description": "Strong answers protect trust, conduct, controls, and risk boundaries while delivering outcomes.",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "CIBC-RISK-001",
+        "CIBC-CODE-001"
+      ]
+    },
+    {
+      "name": "Role-specific banking judgment",
+      "description": "CIBC answers should show role alignment, client service, inclusion, and ethical professionalism.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "CIBC-PRIV-001",
+        "CIBC-OFFICIAL-001"
+      ]
+    }
+  ],
+  "aims_weighting": {
+    "structured_thinking": 0.16,
+    "analytical_problem_solving": 0.18,
+    "ownership_execution": 0.19,
+    "impact_results": 0.2,
+    "collaboration_communication": 0.15,
+    "growth_mindset": 0.12
+  },
+  "hiring_signals": [
+    {
+      "signal": "Connects role-specific work to client/customer, colleague, community, or business impact.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "confidence": 0.82,
+      "evidence_ids": [
+        "CIBC-OFFICIAL-001",
+        "CIBC-CULTURE-001"
+      ]
+    },
+    {
+      "signal": "Shows conduct, risk, escalation, and trust judgment in banking situations.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "CIBC-RISK-001",
+        "CIBC-CODE-001"
+      ]
+    },
+    {
+      "signal": "Uses concrete behavioral evidence rather than generic banking or brand interest.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "CIBC-PRIV-001",
+        "CIBC-OFFICIAL-001"
+      ]
+    }
+  ],
+  "anti_signals": [
+    {
+      "anti_signal": "Sales, speed, or delivery story that ignores suitability, risk, conduct, or client/customer trust.",
+      "risk_reason": "Financial-services lens requires trust and conduct boundaries.",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "CIBC-RISK-001"
+      ]
+    },
+    {
+      "anti_signal": "Generic bank or brand admiration without role-specific evidence.",
+      "risk_reason": "Hiring evidence should connect candidate skills to role, client/customer impact, and culture.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "CIBC-OFFICIAL-001",
+        "CIBC-PRIV-001"
+      ]
+    }
+  ],
+  "interview_patterns": [
+    {
+      "pattern": "Behavioral interviews should test client/customer impact, conduct judgment, teamwork, and role alignment.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "confidence": 0.74
+    },
+    {
+      "pattern": "Risk, operations, technology, and corporate roles should test risk ownership, escalation, process improvement, and stakeholder communication.",
+      "role_families": [
+        "risk",
+        "operations",
+        "technology",
+        "corporate"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "confidence": 0.68
+    }
+  ],
+  "evidence_summary": {
+    "source_count": 8,
+    "official_source_count": 4,
+    "interview_source_count": 2,
+    "employee_voice_source_count": 2,
+    "last_reviewed": "2026-05-04"
+  },
+  "honest_limits": [
+    "This is a public-source and private-distillation draft lens and does not represent an official CIBC hiring standard.",
+    "Private materials authorized by the project owner are included only as distilled aggregate patterns, not raw article text or copied questions.",
+    "Role, level, region, line of business, recruiter, and hiring manager can materially change interview emphasis.",
+    "This v0.1 lens has static validation cases but is not approved for production screening until live answer backtesting and reviewer approval are complete.",
+    "This v0.2 lens has structured evidence records and an evidence audit, but is still not approved for production screening.",
+    "Public source URLs and private-material provenance must be reviewed before v1.0 approval."
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "lens_id": "amazon_public_v0_1",
+  "company": "Amazon",
+  "canonical_company_name": "Amazon",
+  "lens_status": "FULLY_DISTILLED",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "version": "0.2.0-evidence-audited-draft",
+  "source_cutoff": "2026-05-04",
+  "industries": [
+    "technology",
+    "ecommerce",
+    "cloud",
+    "logistics"
+  ],
+  "regions": [
+    "global",
+    "north_america"
+  ],
+  "company_stage": "large global operator",
+  "culture_principles": [
+    {
+      "name": "Customer-backwards judgment",
+      "description": "Strong Amazon-style reasoning starts from the customer problem, then connects the decision, mechanism, and result back to customer or business impact.",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "AMZ-OFFICIAL-001",
+        "AMZ-OFFICIAL-002",
+        "AMZ-CASE-001",
+        "AMZ-CASE-002"
+      ]
+    },
+    {
+      "name": "Ownership with measurable execution",
+      "description": "Candidates should show personal accountability, concrete action, measurable results, and follow-through beyond narrow task assignment.",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "AMZ-OFFICIAL-003",
+        "AMZ-HIRE-001",
+        "AMZ-HIRE-002",
+        "AMZ-MED-001"
+      ]
+    },
+    {
+      "name": "High-velocity decision discipline",
+      "description": "The lens rewards fast but reasoned action, especially when a decision is reversible, while still requiring risk awareness and correction mechanisms.",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "AMZ-CASE-001",
+        "AMZ-CASE-002",
+        "AMZ-CASE-003"
+      ]
+    },
+    {
+      "name": "Narrative clarity and structured reasoning",
+      "description": "Amazon-style communication should frame the customer problem, evidence, alternatives, assumptions, risks, and recommendation clearly enough for challenge.",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "AMZ-CASE-001",
+        "AMZ-CASE-003",
+        "AMZ-HIRE-003"
+      ]
+    },
+    {
+      "name": "Raise standards through mechanisms",
+      "description": "Senior answers should show durable mechanisms, operating standards, production thinking, and team-level improvement rather than only heroic effort.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "AMZ-HIRE-002",
+        "AMZ-MED-004",
+        "AMZ-CASE-002"
+      ]
+    },
+    {
+      "name": "Trust, safety, and consent as impact boundaries",
+      "description": "Growth, productivity, and speed should not be credited as strong impact if they create unresolved safety, transparency, consent, or customer-trust risks.",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "AMZ-RISK-001",
+        "AMZ-RISK-002",
+        "AMZ-RISK-003"
+      ]
+    }
+  ],
+  "aims_weighting": {
+    "structured_thinking": 0.15,
+    "analytical_problem_solving": 0.17,
+    "ownership_execution": 0.24,
+    "impact_results": 0.22,
+    "collaboration_communication": 0.09,
+    "growth_mindset": 0.13
+  },
+  "hiring_signals": [
+    {
+      "signal": "Uses STAR-like structure with specific situation, personal action, trade-offs, and quantified result.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.91,
+      "evidence_ids": [
+        "AMZ-OFFICIAL-003",
+        "AMZ-HIRE-001",
+        "AMZ-HIRE-002"
+      ]
+    },
+    {
+      "signal": "Connects technical, product, analytics, or operations work to customer and business outcomes.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "AMZ-OFFICIAL-002",
+        "AMZ-CASE-001",
+        "AMZ-HIRE-003"
+      ]
+    },
+    {
+      "signal": "Explains decision reversibility, risk, speed, and correction mechanisms.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "confidence": 0.86,
+      "evidence_ids": [
+        "AMZ-CASE-001",
+        "AMZ-CASE-002",
+        "AMZ-CASE-003"
+      ]
+    },
+    {
+      "signal": "For SDE and senior SDE roles, combines coding or system design depth with scale, production ownership, and operational consequences.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.66,
+      "evidence_ids": [
+        "AMZ-MED-003",
+        "AMZ-MED-004",
+        "AMZ-MED-005",
+        "AMZ-PRIV-002"
+      ]
+    },
+    {
+      "signal": "For BIE and analytics roles, defines metrics clearly, validates data, communicates uncertainty, and converts analysis into a decision.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "confidence": 0.68,
+      "evidence_ids": [
+        "AMZ-MED-002",
+        "AMZ-HIRE-003",
+        "AMZ-PRIV-003"
+      ]
+    },
+    {
+      "signal": "For non-SDE technical roles, adapt the Amazon lens to the role evidence: Applied Science should test scientific/ML reasoning, Data Center should test safe operational troubleshooting, and Developer Advocate should test technical communication.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.57,
+      "evidence_ids": [
+        "AMZ-PRIV-004"
+      ]
+    },
+    {
+      "signal": "Acknowledges trust, safety, consent, and transparency risks when optimizing growth, speed, or productivity.",
+      "aims_dimensions": [
+        "impact_results",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.86,
+      "evidence_ids": [
+        "AMZ-RISK-001",
+        "AMZ-RISK-002"
+      ]
+    }
+  ],
+  "anti_signals": [
+    {
+      "anti_signal": "Generic claims of teamwork or leadership without individual action, mechanism, or measurable result.",
+      "risk_reason": "Amazon hiring guidance emphasizes detailed examples, personal contribution, and data-backed impact.",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "AMZ-OFFICIAL-003",
+        "AMZ-HIRE-001",
+        "AMZ-HIRE-002"
+      ]
+    },
+    {
+      "anti_signal": "Treating Amazon preparation as coding-only or culture-only.",
+      "risk_reason": "Candidate accounts and official materials point to both role capability and Leadership Principle evidence.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "AMZ-INT-001",
+        "AMZ-MED-001",
+        "AMZ-MED-003",
+        "AMZ-PRIV-001"
+      ]
+    },
+    {
+      "anti_signal": "Optimizing for internal convenience, vanity metrics, or speed without customer problem clarity.",
+      "risk_reason": "Customer-backwards reasoning and Day 1 decision culture require customer impact and disciplined judgment.",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "AMZ-OFFICIAL-002",
+        "AMZ-CASE-001",
+        "AMZ-CASE-002"
+      ]
+    },
+    {
+      "anti_signal": "Using Bias for Action to justify ignoring safety, consent, compliance, transparency, or trust.",
+      "risk_reason": "External risk evidence shows these are material boundaries for credible customer and operational impact.",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "AMZ-RISK-001",
+        "AMZ-RISK-002",
+        "AMZ-RISK-003"
+      ]
+    },
+    {
+      "anti_signal": "For senior roles, giving only task execution detail without scale, ambiguity, operating mechanism, or post-launch ownership.",
+      "risk_reason": "Senior candidate voice and Day 1 operating sources emphasize ownership, scale, mechanisms, and high-quality decisions.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "AMZ-MED-004",
+        "AMZ-MED-005",
+        "AMZ-CASE-002"
+      ]
+    }
+  ],
+  "interview_patterns": [
+    {
+      "pattern": "Behavioral answers should be probed for STAR structure, personal action, quantified result, and Leadership Principle fit.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "pattern": "Interview loops use multiple interviewers and should be modeled as multi-signal evidence collection rather than one global impression.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "pattern": "SDE practice should include coding/problem solving plus follow-ups on trade-offs, scale, maintainability, and production impact.",
+      "role_families": [
+        "sde",
+        "software_engineering"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "confidence": 0.66
+    },
+    {
+      "pattern": "Senior SDE practice should include system design, customer experience under failure, operational metrics, and post-launch ownership.",
+      "role_families": [
+        "senior_sde",
+        "engineering_leadership"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.6
+    },
+    {
+      "pattern": "BIE practice should include SQL or analytical reasoning plus metric definition, data validation, stakeholder communication, and business decision impact.",
+      "role_families": [
+        "bie",
+        "data_analytics",
+        "business_intelligence"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "confidence": 0.68
+    },
+    {
+      "pattern": "Applied Science practice should test scientific framing, model or NLP reasoning, experimental design, evaluation quality, and ownership of research-to-impact trade-offs.",
+      "role_families": [
+        "applied_science",
+        "machine_learning",
+        "nlp"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "impact_results"
+      ],
+      "confidence": 0.55
+    },
+    {
+      "pattern": "Data Center and operations-adjacent technical practice should probe safe troubleshooting, escalation judgment, root cause analysis, and operational reliability.",
+      "role_families": [
+        "data_center",
+        "operations",
+        "infrastructure"
+      ],
+      "aims_dimensions": [
+        "ownership_execution",
+        "analytical_problem_solving",
+        "collaboration_communication"
+      ],
+      "confidence": 0.56
+    },
+    {
+      "pattern": "Product, program, and business roles should include customer-backwards cases, narrative reasoning, trade-offs, and decision reversibility.",
+      "role_families": [
+        "product",
+        "program_management",
+        "business"
+      ],
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "confidence": 0.86
+    }
+  ],
+  "evidence_summary": {
+    "source_count": 25,
+    "official_source_count": 8,
+    "interview_source_count": 13,
+    "employee_voice_source_count": 6,
+    "last_reviewed": "2026-05-04"
+  },
+  "honest_limits": [
+    "This is a public-source draft lens and does not represent an official Amazon hiring standard.",
+    "Medium-derived candidate voice is summarized and lower-confidence until URL/provenance review is complete.",
+    "Private materials authorized by the project owner are included only as distilled aggregate patterns, not as raw article text or copied questions.",
+    "Role, level, country, interviewer, and year can materially change interview process and emphasis.",
+    "This v0.1 lens has static validation cases but is not approved for production screening until live answer backtesting and reviewer approval are complete.",
+    "Legal and regulatory sources are used as risk context and should not be overstated as a complete view of Amazon culture.",
+    "This v0.2 lens has structured evidence records and an evidence audit, but is still not approved for production screening.",
+    "Public source URLs and private-material provenance must be reviewed before v1.0 approval."
+  ]
+}

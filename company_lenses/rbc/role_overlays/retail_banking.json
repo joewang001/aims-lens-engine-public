@@ -1,0 +1,83 @@
+{
+  "role_lens_id": "rbc_retail_banking_v0_1",
+  "role_family": "retail_banking",
+  "seniority": "mixed",
+  "version": "0.1.0-role-overlay-draft",
+  "aims_weighting": {
+    "structured_thinking": 0.14,
+    "analytical_problem_solving": 0.16,
+    "ownership_execution": 0.2,
+    "impact_results": 0.21,
+    "collaboration_communication": 0.19,
+    "growth_mindset": 0.1
+  },
+  "core_competencies": [
+    {
+      "name": "Customer empathy",
+      "description": "Listens, de-escalates, and communicates clearly with customers under stress.",
+      "aims_dimensions": [
+        "collaboration_communication"
+      ]
+    },
+    {
+      "name": "Suitability and trust",
+      "description": "Balances customer needs, product fit, disclosure, compliance, and long-term trust.",
+      "aims_dimensions": [
+        "impact_results",
+        "analytical_problem_solving"
+      ]
+    },
+    {
+      "name": "Ownership and escalation",
+      "description": "Owns customer issues, knows when to escalate, and follows through.",
+      "aims_dimensions": [
+        "ownership_execution"
+      ]
+    },
+    {
+      "name": "Service-to-sales judgment",
+      "description": "Identifies opportunities without pressuring or mis-selling.",
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication"
+      ]
+    }
+  ],
+  "screening_rubric": [
+    {
+      "criterion": "Customer handling",
+      "strong_signal": "Shows empathy, clarity, and calm problem solving.",
+      "weak_signal": "Rushes or dismisses customer concerns.",
+      "follow_up_question": "How would you respond if the customer remains upset?"
+    },
+    {
+      "criterion": "Product suitability",
+      "strong_signal": "Explains fit, alternatives, risks, and disclosure.",
+      "weak_signal": "Focuses on closing a sale because the customer asked.",
+      "follow_up_question": "What would make this product unsuitable?"
+    },
+    {
+      "criterion": "Risk and compliance",
+      "strong_signal": "Names policy, escalation, documentation, or risk boundaries.",
+      "weak_signal": "Ignores compliance or treats it as a blocker.",
+      "follow_up_question": "When would you escalate?"
+    },
+    {
+      "criterion": "Outcome",
+      "strong_signal": "Improves customer trust and solves the real need.",
+      "weak_signal": "Measures success only by speed or volume.",
+      "follow_up_question": "How would you know the customer was helped appropriately?"
+    }
+  ],
+  "production_status": "not_approved",
+  "allowed_use": [
+    "internal_validation",
+    "question_generation_review",
+    "role_routing_design"
+  ],
+  "blocked_use": [
+    "automated_rejection",
+    "production_screening_without_human_review"
+  ],
+  "company_lens_id": "rbc_public_v0_1"
+}

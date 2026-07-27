@@ -1,0 +1,116 @@
+{
+  "bank_id": "scotiabank_public_questions_v0_1",
+  "lens_id": "scotiabank_public_v0_1",
+  "version": "0.1.0-draft",
+  "source_cutoff": "2026-05-04",
+  "questions": [
+    {
+      "question_id": "BNS-Q-001",
+      "question_type": "behavioral",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "impact_results",
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "Tell me about a time you helped a client, team, or community move toward a better future. What was your role and result?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "BNS-OFFICIAL-001",
+        "BNS-CULTURE-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    },
+    {
+      "question_id": "BNS-Q-002",
+      "question_type": "role_knowledge",
+      "role_families": [
+        "capital_markets",
+        "wealth",
+        "corporate_banking"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "impact_results"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "A market or client situation changes quickly and affects a banking recommendation. How would you update your analysis and communicate risk?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "BNS-PRIV-002",
+        "BNS-CODE-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    },
+    {
+      "question_id": "BNS-Q-003",
+      "question_type": "situational",
+      "role_families": [
+        "retail_banking",
+        "contact_center",
+        "all"
+      ],
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "A customer wants a fast answer, but you need more information to act responsibly. How would you manage expectations?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "BNS-HIRE-001",
+        "BNS-RISK-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    },
+    {
+      "question_id": "BNS-Q-004",
+      "question_type": "motivation",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "question_summary": "Original generated question from official and distilled company-lens patterns.",
+      "generated_question": "Why Scotiabank, and how does this role connect to your development and the impact you want to create?",
+      "follow_up_strategy": [
+        "Ask for the candidate's exact role and action.",
+        "Probe client/customer, risk, conduct, and business impact.",
+        "Ask what evidence or metric shows the outcome mattered.",
+        "Check whether the answer is role-specific rather than generic."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "BNS-OFFICIAL-001",
+        "BNS-HIRE-001"
+      ],
+      "copyright_note": "Original generated question from summarized patterns; no copied private source question."
+    }
+  ]
+}

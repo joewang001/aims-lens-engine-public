@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aims-lens-engine.local/schemas/role_lens.schema.json",
+  "title": "Role Lens",
+  "type": "object",
+  "required": [
+    "role_lens_id",
+    "role_family",
+    "version",
+    "aims_weighting",
+    "core_competencies",
+    "screening_rubric"
+  ],
+  "properties": {
+    "role_lens_id": { "type": "string" },
+    "role_family": { "type": "string" },
+    "seniority": {
+      "type": "string",
+      "enum": ["intern", "entry", "mid", "senior", "manager", "executive", "mixed"]
+    },
+    "version": { "type": "string" },
+    "aims_weighting": {
+      "type": "object",
+      "properties": {
+        "structured_thinking": { "type": "number", "minimum": 0, "maximum": 1 },
+        "analytical_problem_solving": { "type": "number", "minimum": 0, "maximum": 1 },
+        "ownership_execution": { "type": "number", "minimum": 0, "maximum": 1 },
+        "impact_results": { "type": "number", "minimum": 0, "maximum": 1 },
+        "collaboration_communication": { "type": "number", "minimum": 0, "maximum": 1 },
+        "growth_mindset": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "core_competencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "description", "aims_dimensions"],
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "aims_dimensions": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "screening_rubric": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["criterion", "strong_signal", "weak_signal"],
+        "properties": {
+          "criterion": { "type": "string" },
+          "strong_signal": { "type": "string" },
+          "weak_signal": { "type": "string" },
+          "follow_up_question": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

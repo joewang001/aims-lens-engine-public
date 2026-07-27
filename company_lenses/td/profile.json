@@ -1,0 +1,209 @@
+{
+  "lens_id": "td_public_v0_1",
+  "company": "TD Bank",
+  "canonical_company_name": "The Toronto-Dominion Bank",
+  "lens_status": "FULLY_DISTILLED",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "version": "0.2.0-evidence-audited-draft",
+  "source_cutoff": "2026-05-04",
+  "industries": [
+    "banking",
+    "financial services",
+    "retail banking",
+    "wealth",
+    "capital markets"
+  ],
+  "regions": [
+    "canada",
+    "united_states",
+    "north_america"
+  ],
+  "company_stage": "large North American financial institution",
+  "culture_principles": [
+    {
+      "name": "Be the Better Bank",
+      "description": "TD-style fit connects work to improving banking for clients, colleagues, and communities.",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "TD-OFFICIAL-001",
+        "TD-HIRE-001"
+      ]
+    },
+    {
+      "name": "Remarkably human, refreshingly simple",
+      "description": "Strong answers show customer empathy, simplicity, clear communication, and practical service improvement.",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "TD-OFFICIAL-002",
+        "TD-CULTURE-001"
+      ]
+    },
+    {
+      "name": "Own it, raise it, know it",
+      "description": "TD risk culture rewards ownership, escalation, risk knowledge, and doing the right thing within risk appetite.",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "TD-RISK-001",
+        "TD-CODE-001"
+      ]
+    },
+    {
+      "name": "Care, inclusion, and community impact",
+      "description": "TD culture emphasizes inclusive workplace, colleague care, customer care, and community contribution.",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "TD-CULTURE-001",
+        "TD-DI-001",
+        "TD-PRIV-001"
+      ]
+    }
+  ],
+  "aims_weighting": {
+    "structured_thinking": 0.15,
+    "analytical_problem_solving": 0.17,
+    "ownership_execution": 0.2,
+    "impact_results": 0.2,
+    "collaboration_communication": 0.16,
+    "growth_mindset": 0.12
+  },
+  "hiring_signals": [
+    {
+      "signal": "Aligns skills and career stories to the specific role while showing contribution to TD's Better Bank vision.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking",
+        "growth_mindset"
+      ],
+      "confidence": 0.86,
+      "evidence_ids": [
+        "TD-HIRE-001"
+      ]
+    },
+    {
+      "signal": "Shows customer empathy, simplicity, and practical action in banking or service situations.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "impact_results",
+        "ownership_execution"
+      ],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "TD-OFFICIAL-002",
+        "TD-PRIV-003"
+      ]
+    },
+    {
+      "signal": "Owns and escalates risk appropriately instead of hiding issues or optimizing short-term sales metrics.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "TD-RISK-001",
+        "TD-CODE-001"
+      ]
+    },
+    {
+      "signal": "Shows inclusive leadership, mentoring, and colleague/community care, especially in people-facing and banking roles.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset",
+        "impact_results"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "TD-DI-001",
+        "TD-PRIV-001",
+        "TD-PRIV-002"
+      ]
+    }
+  ],
+  "anti_signals": [
+    {
+      "anti_signal": "Sales or productivity answer that ignores customer suitability, risk, or escalation.",
+      "risk_reason": "TD risk culture emphasizes doing the right thing and Own it, Raise it, Know it.",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "TD-RISK-001",
+        "TD-CODE-001"
+      ]
+    },
+    {
+      "anti_signal": "Generic bank-interest answer without role alignment or customer/community impact.",
+      "risk_reason": "TD interview tips ask candidates to align skills to the role and explain contribution to Be the Better Bank.",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "TD-HIRE-001"
+      ]
+    },
+    {
+      "anti_signal": "Treating inclusion and care as soft extras rather than operating expectations.",
+      "risk_reason": "TD public materials frame inclusion, care, and community as core culture signals.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "TD-CULTURE-001",
+        "TD-DI-001"
+      ]
+    }
+  ],
+  "interview_patterns": [
+    {
+      "pattern": "General TD interviews should test role alignment, customer stories, thoughtful questions, culture contribution, and career success examples.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "structured_thinking",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "pattern": "Retail/personal banking interviews should test customer empathy, difficult interactions, suitability, compliance, and service-to-sales judgment.",
+      "role_families": [
+        "retail_banking",
+        "personal_banking",
+        "contact_center"
+      ],
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.62
+    },
+    {
+      "pattern": "Corporate/technology/risk roles should test risk ownership, escalation, simplification, execution, stakeholder communication, and data-informed decisions.",
+      "role_families": [
+        "corporate",
+        "technology",
+        "risk",
+        "operations"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "confidence": 0.68
+    }
+  ],
+  "evidence_summary": {
+    "source_count": 12,
+    "official_source_count": 7,
+    "interview_source_count": 4,
+    "employee_voice_source_count": 4,
+    "last_reviewed": "2026-05-04"
+  },
+  "honest_limits": [
+    "This is a public-source and private-distillation draft lens and does not represent an official TD hiring standard.",
+    "Private materials authorized by the project owner are included only as distilled aggregate patterns, not raw article text or copied questions.",
+    "TD role expectations vary across Canada, U.S., retail banking, contact center, corporate, technology, risk, wealth, and capital markets.",
+    "This v0.1 lens has static validation cases but is not approved for production screening until live answer backtesting and reviewer approval are complete.",
+    "This v0.2 lens has structured evidence records and an evidence audit, but is still not approved for production screening.",
+    "Public source URLs and private-material provenance must be reviewed before v1.0 approval."
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "bank_id": "google_public_questions_v0_1",
+  "lens_id": "google_public_v0_1",
+  "version": "0.1.0-draft",
+  "source_cutoff": "2026-05-04",
+  "questions": [
+    {
+      "question_id": "GOOG-Q-001",
+      "question_type": "technical",
+      "role_families": ["swe", "software_engineering"],
+      "aims_dimensions": ["analytical_problem_solving", "structured_thinking", "collaboration_communication"],
+      "question_summary": "Google SWE patterns emphasize clarification, algorithmic reasoning, complexity, code quality, tests, and communication.",
+      "generated_question": "You are given a stream of events and need to return the most frequent valid event type under changing constraints. Before coding, explain what assumptions you need, which data structures you would consider, and how you would test edge cases.",
+      "follow_up_strategy": [
+        "Ask for input constraints and invalid-event handling.",
+        "Probe time and space complexity under large inputs.",
+        "Ask how the solution changes if events expire after a time window.",
+        "Check whether the candidate narrates reasoning and tests edge cases."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["GOOG-PRIV-002"],
+      "copyright_note": "Original generated question from distilled patterns; no copied source question."
+    },
+    {
+      "question_id": "GOOG-Q-002",
+      "question_type": "behavioral",
+      "role_families": ["all"],
+      "aims_dimensions": ["collaboration_communication", "growth_mindset", "ownership_execution"],
+      "question_summary": "G&L / Googleyness signals emphasize collaboration, humility, ambiguity, and influence without authority.",
+      "generated_question": "Tell me about a time you disagreed with a teammate or stakeholder and changed either their mind or your own. What evidence changed the discussion, and what did you learn?",
+      "follow_up_strategy": [
+        "Ask what the candidate initially believed.",
+        "Probe how disagreement was handled without damaging trust.",
+        "Ask what evidence or user impact changed the decision.",
+        "Check whether learning changed future behavior."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["GOOG-PRIV-003", "GOOG-OFFICIAL-002"],
+      "copyright_note": "Original generated behavioral question from distilled Googleyness patterns."
+    },
+    {
+      "question_id": "GOOG-Q-003",
+      "question_type": "case",
+      "role_families": ["product", "ai_ml", "swe", "program_management"],
+      "aims_dimensions": ["analytical_problem_solving", "impact_results", "structured_thinking"],
+      "question_summary": "Google AI principles require bold innovation with responsible development, testing, monitoring, privacy, safety, and fairness.",
+      "generated_question": "A new AI feature improves engagement and task completion, but early testing shows uneven quality across user groups. How would you decide whether to launch, delay, or redesign?",
+      "follow_up_strategy": [
+        "Ask how the candidate defines user benefit and affected groups.",
+        "Probe risk assessment, safeguards, monitoring, and feedback loops.",
+        "Ask what evidence would justify launch versus delay.",
+        "Check whether responsibility is treated as product quality."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["GOOG-AI-001", "GOOG-AI-002", "GOOG-RISK-002"],
+      "copyright_note": "Original generated case based on official AI principles."
+    },
+    {
+      "question_id": "GOOG-Q-004",
+      "question_type": "technical",
+      "role_families": ["sre", "infrastructure"],
+      "aims_dimensions": ["analytical_problem_solving", "ownership_execution", "collaboration_communication"],
+      "question_summary": "SRE signals emphasize debugging, reliability, systems thinking, communication, and user impact.",
+      "generated_question": "A service shows rising latency in one region, but error rates are still low and alerts are inconsistent. Walk me through your triage, communication, and mitigation plan.",
+      "follow_up_strategy": [
+        "Ask which signals the candidate checks first.",
+        "Probe user impact, rollback/mitigation, and escalation threshold.",
+        "Ask how they distinguish noisy telemetry from real incident patterns.",
+        "Check post-incident learning and automation."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["GOOG-PRIV-004"],
+      "copyright_note": "Original generated SRE prompt from distilled role-specific signals."
+    },
+    {
+      "question_id": "GOOG-Q-005",
+      "question_type": "role_knowledge",
+      "role_families": ["data_analytics", "business_intelligence"],
+      "aims_dimensions": ["analytical_problem_solving", "structured_thinking", "impact_results"],
+      "question_summary": "Google data-role signals emphasize metric definition, data quality, product interpretation, and communication.",
+      "generated_question": "A product metric improves after a UI change, but adoption varies sharply by segment. How would you determine whether the improvement is real and useful?",
+      "follow_up_strategy": [
+        "Ask how the metric is defined and segmented.",
+        "Probe confounders, data quality, experiment design, and statistical confidence.",
+        "Ask how the result affects product decision-making.",
+        "Check whether the candidate communicates uncertainty clearly."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["GOOG-PRIV-004", "GOOG-OFFICIAL-002"],
+      "copyright_note": "Original generated data prompt from distilled role-specific signals."
+    },
+    {
+      "question_id": "GOOG-Q-006",
+      "question_type": "communication",
+      "role_families": ["ui_engineering", "frontend", "swe", "product"],
+      "aims_dimensions": ["collaboration_communication", "structured_thinking", "impact_results"],
+      "question_summary": "Google lens should test whether technical decisions are explained clearly and tied to helpful user outcomes.",
+      "generated_question": "A design partner asks for a UI behavior that is visually appealing but may reduce accessibility or performance. How would you evaluate and communicate the trade-off?",
+      "follow_up_strategy": [
+        "Ask how the candidate measures accessibility, performance, and user usefulness.",
+        "Probe collaboration with design and product.",
+        "Ask what compromise or experiment they would propose.",
+        "Check whether the candidate explains trade-offs without dismissing other functions."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["GOOG-OFFICIAL-002", "GOOG-PRIV-004"],
+      "copyright_note": "Original generated UI/frontend prompt from distilled patterns."
+    },
+    {
+      "question_id": "GOOG-Q-007",
+      "question_type": "leadership",
+      "role_families": ["all"],
+      "aims_dimensions": ["collaboration_communication", "ownership_execution", "growth_mindset"],
+      "question_summary": "Googleyness and leadership should be demonstrated through influence, ambiguity handling, and team behavior.",
+      "generated_question": "Describe a time you led progress without formal authority when the problem was ambiguous and the team did not initially agree on direction.",
+      "follow_up_strategy": [
+        "Ask how the candidate created shared understanding.",
+        "Probe what trade-offs or data shaped alignment.",
+        "Ask how dissent was handled.",
+        "Check whether the final outcome helped users, team quality, or decision speed."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["GOOG-PRIV-003", "GOOG-OFFICIAL-002"],
+      "copyright_note": "Original generated leadership question from distilled G&L patterns."
+    },
+    {
+      "question_id": "GOOG-Q-008",
+      "question_type": "motivation",
+      "role_families": ["all"],
+      "aims_dimensions": ["impact_results", "growth_mindset", "collaboration_communication"],
+      "question_summary": "Google fit should connect motivation to helpful technology, learning, collaboration, and responsible impact.",
+      "generated_question": "What kind of user problem or technical challenge makes Google the right environment for you, and what past evidence shows you can contribute in that environment?",
+      "follow_up_strategy": [
+        "Ask for a specific user or technical problem, not brand admiration.",
+        "Probe learning style and collaboration style.",
+        "Ask what evidence from past work predicts fit.",
+        "Check whether responsible impact is considered where relevant."
+      ],
+      "difficulty": "beginner",
+      "evidence_ids": ["GOOG-OFFICIAL-002", "GOOG-AI-001"],
+      "copyright_note": "Original generated motivation question based on official culture and AI principles."
+    },
+    {
+      "question_id": "GOOG-Q-009",
+      "question_type": "situational",
+      "role_families": ["all"],
+      "aims_dimensions": ["growth_mindset", "collaboration_communication", "structured_thinking"],
+      "question_summary": "Candidate voice suggests Google process can involve uncertainty, team matching, and limited feedback; strong candidates handle ambiguity constructively.",
+      "generated_question": "You receive limited feedback after a rigorous interview or review process, but you still need to improve. How would you diagnose gaps and adjust your preparation or work approach?",
+      "follow_up_strategy": [
+        "Ask what evidence the candidate can use without formal feedback.",
+        "Probe how they avoid overfitting to one outcome.",
+        "Ask how they seek coaching or practice.",
+        "Check whether they show resilience without blaming the process."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": ["GOOG-PRIV-005", "GOOG-RISK-001"],
+      "copyright_note": "Original generated situational question from distilled candidate-experience risk signals."
+    },
+    {
+      "question_id": "GOOG-Q-010",
+      "question_type": "technical",
+      "role_families": ["ai_ml", "machine_learning", "applied_science"],
+      "aims_dimensions": ["analytical_problem_solving", "impact_results", "structured_thinking"],
+      "question_summary": "AI/ML role overlays should test offline metrics, user-facing quality, error analysis, and responsible deployment.",
+      "generated_question": "Your model improves an offline ranking metric but users report worse relevance in an important segment. How would you investigate and decide next steps?",
+      "follow_up_strategy": [
+        "Ask how the candidate slices errors and validates labels.",
+        "Probe offline-online metric mismatch.",
+        "Ask about experiment design, monitoring, and rollback.",
+        "Check whether user trust and fairness are part of the decision."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": ["GOOG-AI-001", "GOOG-AI-002", "GOOG-PRIV-004"],
+      "copyright_note": "Original generated AI/ML question from official AI principles and distilled role signals."
+    }
+  ]
+}

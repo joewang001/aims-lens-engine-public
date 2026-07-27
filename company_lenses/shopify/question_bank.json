@@ -1,0 +1,73 @@
+{
+  "company": "Shopify",
+  "lens_id": "shopify_public_v0_1",
+  "version": "0.1.0-public-release-candidate",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "questions": [
+    {
+      "question_id": "SHOPIFY-Q-001",
+      "type": "behavioral",
+      "generated_question": "Tell me about a time you built or improved something that created measurable value for a customer, merchant, or business user.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Defines the user problem clearly.",
+        "Shows direct ownership and concrete action.",
+        "Quantifies result or explains practical impact.",
+        "Connects learning back to future execution."
+      ],
+      "evidence_ids": [
+        "SHOPIFY-CAREERS-001",
+        "SHOPIFY-IR-001"
+      ]
+    },
+    {
+      "question_id": "SHOPIFY-Q-002",
+      "type": "product_judgment",
+      "generated_question": "How would you decide which merchant problem to solve first when multiple teams disagree about priority?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Uses merchant impact and evidence to prioritize.",
+        "Explains tradeoffs and decision criteria.",
+        "Handles disagreement without losing speed.",
+        "Defines next steps and feedback loop."
+      ],
+      "evidence_ids": [
+        "SHOPIFY-OFFICIAL-001",
+        "SHOPIFY-CAREERS-001"
+      ]
+    },
+    {
+      "question_id": "SHOPIFY-Q-003",
+      "type": "growth",
+      "generated_question": "Describe a time you had to get better quickly in an uncomfortable or ambiguous environment.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names the gap honestly.",
+        "Shows deliberate learning action.",
+        "Uses feedback or evidence.",
+        "Demonstrates changed behavior."
+      ],
+      "evidence_ids": [
+        "SHOPIFY-CAREERS-001"
+      ]
+    }
+  ]
+}

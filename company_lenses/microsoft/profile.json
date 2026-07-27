@@ -1,0 +1,207 @@
+{
+  "lens_id": "microsoft_public_v0_1",
+  "company": "Microsoft",
+  "canonical_company_name": "Microsoft",
+  "lens_status": "FULLY_DISTILLED",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "version": "0.2.0-evidence-audited-draft",
+  "source_cutoff": "2026-05-04",
+  "industries": [
+    "technology",
+    "cloud",
+    "software",
+    "enterprise",
+    "ai"
+  ],
+  "regions": [
+    "global",
+    "north_america"
+  ],
+  "company_stage": "large global platform and enterprise technology company",
+  "culture_principles": [
+    {
+      "name": "Growth mindset and learn-it-all behavior",
+      "description": "Microsoft-style strength emphasizes learning, adaptability, feedback, humility, and continuous improvement.",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "MSFT-CULTURE-001",
+        "MSFT-HIRE-001"
+      ]
+    },
+    {
+      "name": "Empowerment and customer impact",
+      "description": "Strong answers connect work to empowering customers, users, teams, or organizations to achieve more.",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "MSFT-CULTURE-001",
+        "MSFT-OFFICIAL-001"
+      ]
+    },
+    {
+      "name": "Clarify, analyze, test, and build",
+      "description": "Technical evaluation should reward how candidates analyze, clarify, investigate data/results, design systems, and test code.",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "MSFT-HIRE-002",
+        "MSFT-PRIV-002"
+      ]
+    },
+    {
+      "name": "Responsible AI and trusted technology",
+      "description": "AI and product answers should consider fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "MSFT-AI-001",
+        "MSFT-AI-002"
+      ]
+    }
+  ],
+  "aims_weighting": {
+    "structured_thinking": 0.17,
+    "analytical_problem_solving": 0.22,
+    "ownership_execution": 0.16,
+    "impact_results": 0.18,
+    "collaboration_communication": 0.14,
+    "growth_mindset": 0.13
+  },
+  "hiring_signals": [
+    {
+      "signal": "Clarifies problems, analyzes options, tests code, and explains reasoning rather than only producing an answer.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "MSFT-HIRE-002",
+        "MSFT-PRIV-002"
+      ]
+    },
+    {
+      "signal": "Shows growth mindset through learning, feedback response, resilience, and practical improvement.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "MSFT-CULTURE-001",
+        "MSFT-PRIV-001"
+      ]
+    },
+    {
+      "signal": "Connects work to customer, enterprise, partner, or organizational empowerment.",
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "confidence": 0.86,
+      "evidence_ids": [
+        "MSFT-OFFICIAL-001",
+        "MSFT-PRIV-004"
+      ]
+    },
+    {
+      "signal": "For AI/cloud/data roles, applies responsible AI, security, privacy, reliability, and accountability boundaries.",
+      "aims_dimensions": [
+        "impact_results",
+        "analytical_problem_solving",
+        "structured_thinking"
+      ],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "MSFT-AI-001",
+        "MSFT-AI-002",
+        "MSFT-PRIV-003"
+      ]
+    }
+  ],
+  "anti_signals": [
+    {
+      "anti_signal": "Fixed-mindset framing: blaming, defensiveness, or inability to learn from feedback.",
+      "risk_reason": "Microsoft culture explicitly emphasizes growth mindset.",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "MSFT-CULTURE-001"
+      ]
+    },
+    {
+      "anti_signal": "Technical answers without clarification, testing, maintainability, or reasoning about results.",
+      "risk_reason": "Microsoft technical interviewing guidance emphasizes how candidates process problems, clarify, analyze, test, and investigate.",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "MSFT-HIRE-002"
+      ]
+    },
+    {
+      "anti_signal": "AI/product answers that ignore fairness, reliability, privacy, inclusiveness, transparency, or accountability.",
+      "risk_reason": "Microsoft Responsible AI principles define these as core boundaries.",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "MSFT-AI-001",
+        "MSFT-AI-002"
+      ]
+    }
+  ],
+  "interview_patterns": [
+    {
+      "pattern": "Technical interviews should probe clarification, design/build reasoning, code testing, data/result investigation, and platform thinking.",
+      "role_families": [
+        "software_engineering",
+        "cloud",
+        "data_engineering"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "pattern": "Behavioral interviews should test growth mindset, feedback, collaboration, customer empathy, and inclusive teamwork.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "pattern": "Cloud, solution architect, data, and AI roles should test customer scenarios, security, reliability, responsible AI, and enterprise impact.",
+      "role_families": [
+        "cloud",
+        "solutions_architecture",
+        "data_engineering",
+        "ai_ml"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "confidence": 0.68
+    }
+  ],
+  "evidence_summary": {
+    "source_count": 12,
+    "official_source_count": 6,
+    "interview_source_count": 5,
+    "employee_voice_source_count": 4,
+    "last_reviewed": "2026-05-04"
+  },
+  "honest_limits": [
+    "This is a public-source and private-distillation draft lens and does not represent an official Microsoft hiring standard.",
+    "Private materials authorized by the project owner are included only as distilled aggregate patterns, not raw article text or copied questions.",
+    "Role, level, region, business group, recruiter, and hiring manager can materially change interview emphasis.",
+    "This v0.1 lens has static validation cases but is not approved for production screening until live answer backtesting and reviewer approval are complete.",
+    "This v0.2 lens has structured evidence records and an evidence audit, but is still not approved for production screening.",
+    "Public source URLs and private-material provenance must be reviewed before v1.0 approval."
+  ]
+}

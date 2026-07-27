@@ -1,0 +1,12 @@
+{
+  "report_id": "sr-demo-candidate-001",
+  "tenant_id": "internal_pilot",
+  "candidate_id": "demo-candidate-001",
+  "reviewer_id": "reviewer-joe",
+  "decision": "needs_more_interview",
+  "decision_reason": "Candidate shows good risk process basics, but the reviewer wants one more concrete example with stakeholder escalation and measurable control outcome.",
+  "source_recommendation": "hold",
+  "source_confidence": 0.59,
+  "follow_up_required": true,
+  "follow_up_notes": "Ask the recommended follow-up questions about risk severity and escalation timing."
+}

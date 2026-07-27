@@ -1,0 +1,14 @@
+AIMS Lens Engine
+Copyright 2026 JobACE
+
+This public release contains the open, public-safe core of AIMS Lens Engine:
+schemas, public company lens artifacts, governance documents, examples, and
+validation tools.
+
+The JobACE production workspace service, tenant data, candidate data, private
+source materials, private scoring calibration, review logs, API keys, and
+deployment configuration are not part of this public release.
+
+Company names, trademarks, and brands referenced in public lens materials belong
+to their respective owners. This project is not endorsed by, affiliated with, or
+an official hiring standard of those companies.

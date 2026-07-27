@@ -1,0 +1,257 @@
+{
+  "bank_id": "mckinsey_public_questions_v0_1",
+  "lens_id": "mckinsey_public_v0_1",
+  "version": "0.1.0-draft",
+  "source_cutoff": "2026-05-07",
+  "questions": [
+    {
+      "question_id": "MCK-Q-001",
+      "question_type": "case",
+      "role_families": [
+        "consulting",
+        "strategy",
+        "operations"
+      ],
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "question_summary": "McKinsey problem-solving interviews use client scenarios to test structured thinking, math, synthesis, and recommendation.",
+      "generated_question": "A retailer's online sales are growing but profit is declining. How would you structure the problem, what analyses would you prioritize, and what recommendation would you give after initial findings?",
+      "follow_up_strategy": [
+        "Ask for issue tree and hypotheses.",
+        "Probe revenue, margin, cost, channel mix, customer behavior, and operations.",
+        "Ask for quick math and sensitivity.",
+        "Require a concise recommendation with risks and next steps."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": [
+        "MCK-HIRE-001",
+        "MCK-PRIV-002"
+      ],
+      "copyright_note": "Original generated case from summarized patterns."
+    },
+    {
+      "question_id": "MCK-Q-002",
+      "question_type": "behavioral",
+      "role_families": [
+        "consulting",
+        "all"
+      ],
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "question_summary": "PEI-style questions require one deep personal-impact story, not a broad resume summary.",
+      "generated_question": "Tell me about one situation where you had to lead through resistance to create measurable impact. What was at stake, what did you personally do, and what changed?",
+      "follow_up_strategy": [
+        "Ask for one specific episode.",
+        "Probe stakes, conflict, personal actions, and decision points.",
+        "Ask for measurable result.",
+        "Check what the candidate learned about leadership."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": [
+        "MCK-HIRE-001",
+        "MCK-PRIV-003"
+      ],
+      "copyright_note": "Original generated PEI-style question."
+    },
+    {
+      "question_id": "MCK-Q-003",
+      "question_type": "case",
+      "role_families": [
+        "digital",
+        "technology_consulting",
+        "analytics"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "question_summary": "Digital consulting should combine business problem solving with technical feasibility and adoption.",
+      "generated_question": "A bank wants to use AI to reduce call-center volume by 30%, but customer complaints are rising. How would you diagnose the opportunity and advise the client?",
+      "follow_up_strategy": [
+        "Ask for business objective and customer pain points.",
+        "Probe data, process, technology, risk, and adoption.",
+        "Ask what pilots or controls are needed.",
+        "Require client-ready recommendation and implementation path."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": [
+        "MCK-PRIV-004",
+        "MCK-RISK-001"
+      ],
+      "copyright_note": "Original generated digital consulting case."
+    },
+    {
+      "question_id": "MCK-Q-004",
+      "question_type": "communication",
+      "role_families": [
+        "consulting",
+        "all"
+      ],
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "question_summary": "McKinsey-style synthesis should lead with answer, support with logic, and name risks.",
+      "generated_question": "You have 60 seconds to update a client executive after a messy analysis with incomplete data. How would you communicate the answer, confidence level, and next step?",
+      "follow_up_strategy": [
+        "Ask for top-down headline.",
+        "Probe supporting logic and caveats.",
+        "Ask what additional analysis is needed.",
+        "Check whether the candidate is concise and client-ready."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "MCK-PRIV-001",
+        "MCK-PRIV-002"
+      ],
+      "copyright_note": "Original generated communication question."
+    },
+    {
+      "question_id": "MCK-Q-005",
+      "question_type": "situational",
+      "role_families": [
+        "consulting",
+        "all"
+      ],
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "question_summary": "McKinsey values include obligation to dissent/speak up; client service should not mean avoiding hard truths.",
+      "generated_question": "A senior client sponsor strongly prefers a recommendation that your analysis suggests is risky. How would you handle the discussion?",
+      "follow_up_strategy": [
+        "Ask how the candidate frames evidence and risk.",
+        "Probe relationship management and dissent.",
+        "Ask when to escalate or seek more analysis.",
+        "Check whether client impact and integrity are both protected."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": [
+        "MCK-VALUES-001",
+        "MCK-VALUES-002",
+        "MCK-RISK-001"
+      ],
+      "copyright_note": "Original generated values/risk question."
+    },
+    {
+      "question_id": "MCK-Q-006",
+      "question_type": "motivation",
+      "role_families": [
+        "consulting",
+        "all"
+      ],
+      "aims_dimensions": [
+        "impact_results",
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "question_summary": "McKinsey fit should connect motivation to client impact, problem solving, learning, and team-based consulting.",
+      "generated_question": "Why is consulting at McKinsey the right environment for the kind of impact and learning you want, and what evidence from your past work supports that fit?",
+      "follow_up_strategy": [
+        "Ask for specific client/problem impact motivation.",
+        "Probe learning under pressure.",
+        "Ask for teamwork evidence.",
+        "Check whether the answer goes beyond prestige."
+      ],
+      "difficulty": "beginner",
+      "evidence_ids": [
+        "MCK-HIRE-001",
+        "MCK-VALUES-001"
+      ],
+      "copyright_note": "Original generated motivation question."
+    },
+    {
+      "question_id": "MCK-Q-007",
+      "question_type": "case",
+      "role_families": [
+        "consulting",
+        "strategy",
+        "operations"
+      ],
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "collaboration_communication"
+      ],
+      "question_summary": "Original interviewer-led case opening that tests objective clarification, tailored structure, prioritization, and first analysis choice.",
+      "generated_question": "A consumer goods client has flat revenue but declining profit in its core product line. What is the objective you would clarify first, how would you structure the problem, and which branch would you prioritize first?",
+      "follow_up_strategy": [
+        "Ask the candidate to state the success metric and time frame.",
+        "Probe whether the structure separates revenue, cost, mix, channel, and external factors without using a generic template.",
+        "Ask why the first branch is highest leverage.",
+        "Require a brief interim synthesis before moving to math or exhibit analysis."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": [
+        "MCK-HIRE-001",
+        "MCK-PRIV-002",
+        "MCK-BOOK-001"
+      ],
+      "copyright_note": "Original generated case from aggregate distilled patterns; not copied from source books."
+    },
+    {
+      "question_id": "MCK-Q-008",
+      "question_type": "case_follow_up",
+      "role_families": [
+        "consulting",
+        "strategy",
+        "analytics"
+      ],
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "question_summary": "Original exhibit/math follow-up that tests so-what synthesis and recommendation readiness.",
+      "generated_question": "Assume an exhibit shows unit volume down 8%, average price up 3%, and variable cost per unit up 12%. What is the first insight, what calculation would you do next, and how would you update the client on your working hypothesis?",
+      "follow_up_strategy": [
+        "Ask for a concise insight before calculations.",
+        "Probe contribution-margin logic and sanity checks.",
+        "Ask what additional data would confirm root cause.",
+        "Require a client-ready update with confidence level, risk, and next step."
+      ],
+      "difficulty": "advanced",
+      "evidence_ids": [
+        "MCK-PRIV-002",
+        "MCK-BOOK-001",
+        "MCK-BOOK-002"
+      ],
+      "copyright_note": "Original generated follow-up from aggregate distilled patterns; not copied from source books."
+    },
+    {
+      "question_id": "MCK-Q-009",
+      "question_type": "coaching_reflection",
+      "role_families": [
+        "consulting",
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "question_summary": "Practice-loop prompt for internal coaching and calibration rather than candidate screening.",
+      "generated_question": "After a practice case where your structure was clear but your synthesis was weak, how would you diagnose the gap and change your next three practice sessions?",
+      "follow_up_strategy": [
+        "Ask for the specific failure mode.",
+        "Probe the candidate review loop and measurable practice goal.",
+        "Check whether the candidate can separate structure, math, exhibit, and synthesis errors.",
+        "Use only as coaching signal, not final selection evidence."
+      ],
+      "difficulty": "intermediate",
+      "evidence_ids": [
+        "MCK-BOOK-003"
+      ],
+      "copyright_note": "Original generated coaching prompt from aggregate distilled practice patterns."
+    }
+  ]
+}

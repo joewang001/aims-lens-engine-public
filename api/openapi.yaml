@@ -1,0 +1,245 @@
+openapi: 3.1.0
+info:
+  title: AIMS Lens Engine API
+  version: 0.7.0
+  description: Draft API for company lens evaluation, rewriting, question generation, and candidate screening.
+servers:
+  - url: https://api.aimslens.example.com
+  - url: http://127.0.0.1:8092
+paths:
+  /health:
+    get:
+      summary: Internal pilot health and approval status.
+      responses:
+        "200":
+          description: Health status, production gate status, and scorer status.
+  /v1/route:
+    post:
+      summary: Route a request to a company lens and role overlay.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ScreeningRequest"
+      responses:
+        "200":
+          description: Routing result.
+  /v1/evaluate-answer:
+    post:
+      summary: Evaluate an interview answer through AIMS and an optional company lens.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [answer, question]
+              properties:
+                tenant_id:
+                  type: string
+                company:
+                  type: string
+                role:
+                  type: string
+                job_description:
+                  type: string
+                question:
+                  type: string
+                answer:
+                  type: string
+                lens_id:
+                  type: string
+      responses:
+        "200":
+          description: Evaluation result.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EvaluationResponse"
+  /v1/rewrite-answer:
+    post:
+      summary: Rewrite an answer for a target company lens.
+      responses:
+        "200":
+          description: Rewrite result.
+  /v1/generate-questions:
+    post:
+      summary: Generate interview questions for a target role and company lens.
+      responses:
+        "200":
+          description: Generated questions.
+  /v1/screen-candidate:
+    post:
+      summary: Produce a screening report for first-round or second-round evaluation.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ScreeningRequest"
+      responses:
+        "200":
+          description: Screening report.
+  /v1/screening-report:
+    post:
+      summary: Internal limited-pilot screening report endpoint.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ScreeningRequest"
+      responses:
+        "200":
+          description: Screening report with route metadata, review queue item, and scorer metadata.
+  /v1/review-queue:
+    get:
+      summary: List pending and completed human review items.
+      responses:
+        "200":
+          description: Human review queue.
+  /v1/review-decision:
+    post:
+      summary: Record a human reviewer decision for a screening report.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ReviewDecisionRequest"
+      responses:
+        "200":
+          description: Human review decision.
+  /v1/review-decisions:
+    get:
+      summary: List recorded human review decisions.
+      responses:
+        "200":
+          description: Human review decision records.
+  /v1/lenses/derive:
+    post:
+      summary: Create a derived lens from target company context, JD, and similar lenses.
+      responses:
+        "200":
+          description: Derived lens.
+  /v1/lenses/{lens_id}:
+    get:
+      summary: Fetch a lens by id.
+      parameters:
+        - name: lens_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Lens metadata.
+components:
+  schemas:
+    ScreeningRequest:
+      type: object
+      required:
+        - company
+        - role
+        - answer
+      properties:
+        tenant_id:
+          type: string
+        candidate_id:
+          type: string
+        report_id:
+          type: string
+        company:
+          type: string
+        role:
+          type: string
+        job_description:
+          type: string
+        question:
+          type: string
+        answer:
+          type: string
+        lens_id:
+          type: string
+    ReviewDecisionRequest:
+      type: object
+      required:
+        - report_id
+        - tenant_id
+        - candidate_id
+        - reviewer_id
+        - decision
+      properties:
+        report_id:
+          type: string
+        tenant_id:
+          type: string
+        candidate_id:
+          type: string
+        reviewer_id:
+          type: string
+        decision:
+          type: string
+          enum:
+            - advance_after_human_review
+            - hold_after_human_review
+            - reject_after_human_review
+            - needs_more_interview
+            - needs_more_evidence
+        decision_reason:
+          type: string
+        source_recommendation:
+          type: string
+        source_confidence:
+          type: number
+          minimum: 0
+          maximum: 1
+        follow_up_required:
+          type: boolean
+        follow_up_notes:
+          type: string
+    EvaluationResponse:
+      type: object
+      required:
+        - lens_status
+        - confidence
+        - aims_scores
+        - assessment
+        - evidence_notice
+      properties:
+        lens_status:
+          type: string
+          enum: [FULLY_DISTILLED, DERIVED_LENS, LIGHTWEIGHT_SCAN, GENERIC_AIMS]
+        confidence:
+          type: number
+          minimum: 0
+          maximum: 1
+        aims_scores:
+          type: object
+          properties:
+            structured_thinking:
+              type: number
+            analytical_problem_solving:
+              type: number
+            ownership_execution:
+              type: number
+            impact_results:
+              type: number
+            collaboration_communication:
+              type: number
+            growth_mindset:
+              type: number
+        assessment:
+          type: string
+        company_lens_adjustment:
+          type: string
+        recommended_follow_ups:
+          type: array
+          items:
+            type: string
+        screening_recommendation:
+          type: string
+          enum: [advance, hold, reject, human_review_required]
+        evidence_notice:
+          type: string

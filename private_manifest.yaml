@@ -1,0 +1,120 @@
+# Private export denylist for AIMS Lens Engine.
+#
+# Anything matched here must not enter a public release tree, even if a
+# future allowlist accidentally references it. Export tooling should treat
+# this file as a hard safety boundary.
+
+version: 1
+status: approved_private_boundary
+default_action: block
+
+blocked_paths:
+  private_materials:
+    - private_materials/
+    - tenant_uploads/
+    - candidate_data/
+
+  workspace_and_operations:
+    - workspace_data/
+    - audit_logs/
+    - review_logs/
+    - agent_runs/
+    - validation_runs/
+
+  local_environment:
+    - .env
+    - .env.*
+    - .venv-lens-workspace/
+    - __pycache__/
+    - .pytest_cache/
+    - .mypy_cache/
+    - .ruff_cache/
+    - node_modules/
+    - dist/
+    - build/
+    - tmp/
+    - temp/
+
+  production_services:
+    - services/lens_workspace_api/
+    - services/lens_workspace_ui/
+    - integrations/jobace/
+
+  local_runtime_data:
+    - "*.sqlite"
+    - "*.sqlite3"
+    - "*.db"
+    - "*.log"
+    - "*.pyc"
+    - "*.pyo"
+
+blocked_content_markers:
+  evidence_visibility:
+    - "evidence_visibility: private_only"
+    - "\"evidence_visibility\": \"private_only\""
+    - "'evidence_visibility': 'private_only'"
+
+  private_paths:
+    - "private_materials/"
+    - "workspace_data/"
+    - "audit_logs/"
+    - "review_logs/"
+    - "tenant_uploads/"
+    - "candidate_data/"
+    - ".venv-lens-workspace/"
+
+  secrets_and_tokens:
+    - "AIMS_WORKSPACE_API_TOKEN"
+    - "AIMS_WORKSPACE_JOBACE_TOKEN"
+    - "Authorization: Bearer"
+    - "api_key"
+    - "secret_key"
+    - "client_secret"
+    - "DATABASE_URL="
+    - "POSTGRES_PASSWORD"
+
+  production_hosts:
+    - "lens-api.jobace.ca"
+    - "lens.jobace.ca"
+
+  private_data_classes:
+    - "candidate resume"
+    - "candidate_data"
+    - "tenant_id:"
+    - "\"tenant_id\""
+    - "review_decision"
+    - "raw_text_path"
+    - "user-submitted job posting"
+
+blocked_evidence_classes:
+  - private_only
+  - raw_paid_material
+  - tenant_upload
+  - user_submitted_job_posting
+  - candidate_answer
+  - candidate_resume
+  - internal_review_record
+  - private_scoring_calibration
+  - enterprise_specific_content
+
+allowed_private_derived_public_class:
+  name: private_distillation_public_safe
+  conditions:
+    - non_verbatim_distilled_signal_only
+    - no_raw_private_text
+    - no_copied_paid_content
+    - no_user_submitted_job_posting_body
+    - no_candidate_or_resume_data
+    - no_tenant_specific_details
+    - explicit_confidence_and_limitations_required
+
+promotion_policy:
+  private_to_public_is_never_automatic: true
+  approval_required: owner_or_designated_maintainer
+  required_reviews:
+    - private_marker_scan
+    - copyright_and_source_audit
+    - evidence_confidence_audit
+    - manual_company_lens_review
+    - license_compatibility_review
+    - candidate_tenant_and_private_jd_data_check
