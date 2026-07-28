@@ -358,7 +358,7 @@ Use a split license model.
 Approved public license direction:
 
 - Apache-2.0 for schemas, tools, and framework code.
-- CC BY 4.0, or a comparable content license, for documentation and public lens text after final legal review.
+- CC BY 4.0 for documentation and public lens text.
 
 Approved private license direction:
 
@@ -442,10 +442,10 @@ JobACE must not present public inferred lenses as official company hiring standa
 
 ## Approved Decisions
 
-Approved direction for the first public-release preparation cycle:
+Approved direction for the first public release:
 
 - Public code license: Apache-2.0.
-- Public content license: CC BY 4.0 or comparable content license, pending final legal review.
+- Public content license: CC BY 4.0.
 - First public lens set: 12+ companies, starting with Amazon, Google, McKinsey, Microsoft, Apple, JPMorgan, RBC, TD, BMO, CIBC, Scotiabank, and Shopify.
 - Private-derived signals: allowed only as `private_distillation_public_safe` summaries.
 - Raw private materials: never exported.
@@ -453,9 +453,9 @@ Approved direction for the first public-release preparation cycle:
 - JobACE mention: allowed as a commercial reference implementation, not as proof that JobACE's private evaluation layer is open source.
 - Private-to-public promotion: owner-approved and checklist-gated; never automatic.
 
-Remaining decisions before public repository creation:
+Post-release maintenance decisions:
 
-- Confirm final content license wording for public lens text.
+- Keep public content license wording synchronized across README, manifest, and content-license files.
 - Decide whether to include a limited mock `services/lens_workspace_api/` implementation in the first public export or defer it to a later release.
 - Assign named maintainers who can approve private-to-public lens promotion.
 

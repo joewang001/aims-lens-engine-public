@@ -1,7 +1,7 @@
 # Content License
 
-Public AIMS Lens Engine content is intended to be released under Creative
-Commons Attribution 4.0 International (CC BY 4.0), pending final legal review.
+Public AIMS Lens Engine content is released under Creative Commons Attribution
+4.0 International (CC BY 4.0).
 
 This content layer includes:
 
@@ -37,6 +37,6 @@ uploads into public lens files.
 
 ## Release Status
 
-This file establishes the intended public content licensing boundary for the
-first open release. Final public publication should still receive a short legal
-and copyright review before the repository is made public.
+This file establishes the public content licensing boundary for the current
+open release. Future additions remain subject to the repository's source,
+copyright, privacy, and contribution review requirements.

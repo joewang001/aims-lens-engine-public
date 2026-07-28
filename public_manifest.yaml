@@ -5,7 +5,7 @@
 # listed here, then apply private_manifest.yaml as a hard denylist.
 
 version: 1
-status: approved_for_public_release_preparation
+status: public_released
 release_name: aims-lens-engine-public-core
 export_root: dist/public/aims-lens-engine
 
@@ -20,7 +20,7 @@ policy:
 
 licenses:
   code: Apache-2.0
-  content: CC-BY-4.0-pending-final-legal-review
+  content: CC-BY-4.0
   private: proprietary-jobace-internal
 
 public_evidence_visibility:

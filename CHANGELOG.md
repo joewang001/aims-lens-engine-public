@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.8.1-public-core
+
+- Published the public-safe AIMS Lens Engine core.
+- Released code, schemas, and tools under Apache-2.0.
+- Released public lens content and documentation under CC BY 4.0.
+- Included the public manifest, private denylist, export scanner, audit tooling,
+  contribution rules, and the initial public company-lens set.
+
 ## v0.7.0-jobace-contract-ready
 
 - Added Phase 3C.1 Jobace staging integration contract.

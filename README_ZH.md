@@ -8,8 +8,10 @@ AIMS Lens Engine 的目标不是让 AI “扮演一家公司”，而是把企�
 
 > 同一个候选人回答，在 Amazon、Google、RBC、McKinsey 或 JPMorgan 的语境下，为什么会被不同地追问、评分和判断？
 
-当前版本：`v0.8.1-public-core-candidate`  
-当前状态：`public_release_preparation`  
+当前版本：`v0.8.1-public-core`
+
+当前状态：`public_released`
+
 当前边界：公开仓库只包含 public-safe core；JobACE 生产服务、候选人数据、租户数据、私有校准与部署配置不进入公开发布。
 
 ---
@@ -487,16 +489,21 @@ AIMS Lens Engine 的商业目标不是只做一个面试题库，而是成为企
 
 ## 关于项目
 
-项目名称：AIMS Lens Engine  
-项目状态：approved for limited pilot  
-当前版本：v0.7.0-jobace-contract-ready  
+项目名称：AIMS Lens Engine
+
+公开发布状态：public_released
+
+公开版本：v0.8.1-public-core
+
+应用运行状态：approved for limited pilot
+
 主要使用场景：Jobace 内部 pilot、合作方 API、企业自助 Lens、候选人面试准备、人工 reviewer 决策辅助。
 
 ---
 
 ## 许可证
 
-代码、schema 和工具采用 Apache-2.0。公开 Lens 内容和文档计划采用 CC BY 4.0，仍需最终法律与版权复核。具体边界见 `LICENSE`、`NOTICE`、`CONTENT_LICENSE.md` 和 `CONTRIBUTING.md`。
+代码、schema 和工具采用 Apache-2.0。公开 Lens 内容和文档采用 CC BY 4.0。具体边界见 `LICENSE`、`NOTICE`、`CONTENT_LICENSE.md` 和 `CONTRIBUTING.md`。
 
 任何外部使用都必须遵守：
 

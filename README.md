@@ -2,9 +2,9 @@
 
 Independent company, role, industry, and thinker lens distillation platform for interview evaluation, candidate screening, interview preparation, and decision support.
 
-Current version: `v0.8.1-public-core-candidate`
+Current version: `v0.8.1-public-core`
 
-Current status: `public_release_preparation`
+Current status: `public_released`
 
 ## Positioning
 
@@ -109,4 +109,4 @@ Contributions are welcome when they improve the public core without importing pr
 
 ## License
 
-Code, schemas, and tools are licensed under Apache-2.0. Public lens content and documentation are intended for CC BY 4.0 release, pending final legal review. See `LICENSE`, `NOTICE`, and `CONTENT_LICENSE.md`.
+Code, schemas, and tools are licensed under Apache-2.0. Public lens content and documentation are licensed under CC BY 4.0. See `LICENSE`, `NOTICE`, and `CONTENT_LICENSE.md`.
