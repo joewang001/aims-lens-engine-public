@@ -101,6 +101,7 @@ allow_paths:
     - docs/distillation-playbook.md
     - docs/implementation-plan.md
     - docs/limited-pilot-policy.md
+    - docs/public-lens-refresh-and-expansion.md
     - docs/public-private-split-strategy.md
     - docs/public-private-split-strategy-zh.md
     - docs/project-charter.md
@@ -273,11 +274,15 @@ allow_paths:
     - tools/interview_prep_planner.py
     - tools/llm_scorer.py
     - tools/run_scoring_harness.py
+    - tools/validate_public_lens_coverage.py
     - tools/validate_b2c2_improvement_plan.py
     - tools/validate_candidate_personas.py
     - tools/validate_cross_company_fit_matrix.py
     - tools/validate_dual_layer_evaluation.py
     - tools/validate_role_routing.py
+
+  public_ci:
+    - .github/workflows/public-lens-maintenance.yml
 
 allowed_service_public_surface:
   include_contracts_only_by_default: true
@@ -302,4 +307,5 @@ required_pre_export_checks:
   - no_local_database_paths
   - no_production_deployment_config
   - schema_validation_for_exported_lenses
+  - seven_dimension_lens_coverage_validation
   - manual_company_lens_audit

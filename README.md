@@ -107,6 +107,10 @@ B2C-2 adds `tools/interview_prep_planner.py` and `POST /v1/interview-prep/improv
 
 Contributions are welcome when they improve the public core without importing private or copyrighted source bodies. See `CONTRIBUTING.md` for source, privacy, evidence, and pull request rules.
 
+## Continuous Updates
+
+AIMS Lens Engine is intended to keep refreshing and expanding. Existing company lenses should receive new public-safe evidence across the seven independent dimensions, and new leading companies should be added in undercovered industries. See `docs/public-lens-refresh-and-expansion.md` for the automated update model, auto-merge rules, and escalation boundaries.
+
 ## License
 
 Code, schemas, and tools are licensed under Apache-2.0. Public lens content and documentation are licensed under CC BY 4.0. See `LICENSE`, `NOTICE`, and `CONTENT_LICENSE.md`.

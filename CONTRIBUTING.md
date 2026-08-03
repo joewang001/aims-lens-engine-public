@@ -50,10 +50,19 @@ Before opening a pull request:
    python tools/export_public_release.py --execute --clean
    python tools/scan_public_export.py --allowlist
    python tools/generate_public_release_audit_report.py --allowlist
+   python tools/validate_public_lens_coverage.py --min-companies 12
    ```
 
 5. Confirm the generated audit report has no blockers and no unresolved review
    findings.
+
+## Automated Updates
+
+Routine public-safe refreshes can be handled by automation when the scanner and
+coverage checks pass. New company lenses, new industries, private-derived
+signals, schema changes, routing changes, lens status promotions, or any scanner
+finding still require maintainer review. See
+`docs/public-lens-refresh-and-expansion.md`.
 
 ## Review Standard
 
