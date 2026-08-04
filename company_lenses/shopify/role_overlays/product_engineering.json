@@ -1,0 +1,109 @@
+{
+  "role_lens_id": "shopify_product_engineering_v0_1",
+  "role_family": "product_engineering",
+  "seniority": "mixed",
+  "version": "0.1.0-role-overlay-draft",
+  "aims_weighting": {
+    "structured_thinking": 0.17,
+    "analytical_problem_solving": 0.2,
+    "ownership_execution": 0.21,
+    "impact_results": 0.19,
+    "collaboration_communication": 0.12,
+    "growth_mindset": 0.11
+  },
+  "core_competencies": [
+    {
+      "name": "Merchant-centered product judgment",
+      "description": "Frames product and engineering decisions around merchant jobs-to-be-done, entrepreneur outcomes, and measurable commerce impact.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "impact_results"
+      ],
+      "evidence_ids": [
+        "SHOPIFY-OFFICIAL-001",
+        "SHOPIFY-IR-001"
+      ]
+    },
+    {
+      "name": "Builder ownership and shipping discipline",
+      "description": "Shows direct responsibility for scoping, building, launching, learning, and improving useful product or platform work.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "evidence_ids": [
+        "SHOPIFY-CAREERS-001"
+      ]
+    },
+    {
+      "name": "Tradeoff reasoning under ambiguity",
+      "description": "Explains technical, product, merchant, and operational tradeoffs without hiding assumptions or slowing down unnecessarily.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "evidence_ids": [
+        "SHOPIFY-CAREERS-001"
+      ]
+    },
+    {
+      "name": "Learning loop after launch",
+      "description": "Uses feedback, metrics, incidents, merchant behavior, or adoption signals to improve the shipped system.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "impact_results",
+        "ownership_execution"
+      ],
+      "evidence_ids": [
+        "SHOPIFY-CAREERS-001",
+        "SHOPIFY-IR-001"
+      ]
+    }
+  ],
+  "screening_rubric": [
+    {
+      "criterion": "Merchant problem clarity",
+      "strong_signal": "Defines the merchant or entrepreneur problem, the affected workflow, and the expected outcome before describing the solution.",
+      "weak_signal": "Talks about ecommerce, platform work, or technical complexity without naming the merchant impact.",
+      "follow_up_question": "Which merchant behavior or business outcome would prove this product decision worked?"
+    },
+    {
+      "criterion": "Shipping and ownership",
+      "strong_signal": "Shows a concrete shipped artifact, personal ownership, launch constraints, and post-launch learning.",
+      "weak_signal": "Describes planning, meetings, or ideas without evidence that useful work shipped.",
+      "follow_up_question": "What did you personally ship, and what changed after it reached users?"
+    },
+    {
+      "criterion": "Technical and product tradeoffs",
+      "strong_signal": "Compares alternatives across user value, technical risk, maintainability, speed, and business impact.",
+      "weak_signal": "Presents one solution as obvious without discussing constraints or discarded options.",
+      "follow_up_question": "What tradeoff would make you choose a simpler solution first?"
+    },
+    {
+      "criterion": "Learning in ambiguity",
+      "strong_signal": "Names uncertainty, gathers feedback, adjusts the plan, and keeps momentum without overclaiming certainty.",
+      "weak_signal": "Treats ambiguity as a blocker or gives a polished answer with no learning loop.",
+      "follow_up_question": "What signal would tell you to change direction after launch?"
+    }
+  ],
+  "production_status": "not_approved",
+  "allowed_use": [
+    "internal_validation",
+    "question_generation_review",
+    "role_routing_design",
+    "public_lens_refresh_candidate"
+  ],
+  "blocked_use": [
+    "automated_rejection",
+    "production_screening_without_human_review",
+    "official_shopify_hiring_standard_claim"
+  ],
+  "company_lens_id": "shopify_public_v0_1",
+  "honest_limits": [
+    "This overlay is a lightweight public-source draft based on official public Shopify lens evidence.",
+    "It should be used for product and engineering practice prompts only, not as an official hiring rubric.",
+    "It needs more public interview-pattern validation before promotion beyond draft status."
+  ]
+}

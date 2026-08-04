@@ -265,6 +265,7 @@ allow_paths:
     - company_lenses/shopify/rewrite_rules.md
     - company_lenses/shopify/limits.md
     - company_lenses/shopify/validation_report.md
+    - company_lenses/shopify/role_overlays/
     - company_lenses/shopify/validation_cases/
 
   public_tools:
