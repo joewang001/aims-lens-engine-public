@@ -51,6 +51,7 @@ Before opening a pull request:
    python tools/scan_public_export.py --allowlist
    python tools/generate_public_release_audit_report.py --allowlist
    python tools/validate_public_lens_coverage.py --min-companies 12
+   python tools/prepare_public_lens_refresh.py
    ```
 
 5. Confirm the generated audit report has no blockers and no unresolved review
@@ -63,6 +64,11 @@ coverage checks pass. New company lenses, new industries, private-derived
 signals, schema changes, routing changes, lens status promotions, or any scanner
 finding still require maintainer review. See
 `docs/public-lens-refresh-and-expansion.md`.
+
+Scheduled maintenance opens an automated refresh-candidate PR from repository
+metadata. That PR may be merged as routine maintenance when it only updates the
+generated candidate report. It must be reviewed manually if it is expanded to
+change company lens content.
 
 ## Review Standard
 

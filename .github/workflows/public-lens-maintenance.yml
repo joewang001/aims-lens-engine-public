@@ -9,6 +9,10 @@ on:
     - cron: "0 13 * * 1"
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   validate-public-lens:
     runs-on: ubuntu-latest
@@ -29,10 +33,56 @@ jobs:
           python -m py_compile \
             tools/scan_public_export.py \
             tools/generate_public_release_audit_report.py \
-            tools/validate_public_lens_coverage.py
+            tools/validate_public_lens_coverage.py \
+            tools/prepare_public_lens_refresh.py
 
       - name: Scan public boundary
         run: python tools/scan_public_export.py --allowlist
 
       - name: Validate company lens coverage
         run: python tools/validate_public_lens_coverage.py --min-companies 12
+
+  propose-public-refresh:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    needs: validate-public-lens
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install validation dependencies
+        run: python -m pip install pyyaml
+
+      - name: Prepare refresh candidate
+        run: python tools/prepare_public_lens_refresh.py
+
+      - name: Validate generated candidate
+        run: |
+          python tools/scan_public_export.py --allowlist
+          python tools/validate_public_lens_coverage.py --min-companies 12
+
+      - name: Create refresh pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: automation/public-lens-refresh
+          delete-branch: true
+          commit-message: Prepare public lens refresh candidate
+          title: "Prepare public lens refresh candidate"
+          body: |
+            Automated public-lens maintenance candidate.
+
+            This PR is generated from repository metadata only. It does not add
+            private material, candidate data, tenant data, copied job posting
+            bodies, paywalled source text, secrets, or production configuration.
+
+            Required checks:
+            - `python tools/scan_public_export.py --allowlist`
+            - `python tools/validate_public_lens_coverage.py --min-companies 12`
+          labels: |
+            automated-refresh
+            public-safe-candidate

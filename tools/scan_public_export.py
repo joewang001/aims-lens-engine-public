@@ -170,6 +170,7 @@ def is_policy_doc(rel_path: str) -> bool:
         "private_manifest.yaml",
         "public_manifest.yaml",
         "docs/public-lens-refresh-and-expansion.md",
+        "docs/refresh-candidates/public-lens-refresh-candidate.md",
         "docs/public-private-split-strategy.md",
         "docs/public-private-split-strategy-zh.md",
         "governance/privacy-and-fairness.md",

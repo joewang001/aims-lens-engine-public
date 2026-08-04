@@ -102,6 +102,7 @@ allow_paths:
     - docs/implementation-plan.md
     - docs/limited-pilot-policy.md
     - docs/public-lens-refresh-and-expansion.md
+    - docs/refresh-candidates/
     - docs/public-private-split-strategy.md
     - docs/public-private-split-strategy-zh.md
     - docs/project-charter.md
@@ -270,6 +271,7 @@ allow_paths:
     - tools/export_public_release.py
     - tools/scan_public_export.py
     - tools/generate_public_release_audit_report.py
+    - tools/prepare_public_lens_refresh.py
     - tools/generate_phase2c_validation_cases.py
     - tools/interview_prep_planner.py
     - tools/llm_scorer.py

@@ -109,7 +109,7 @@ Contributions are welcome when they improve the public core without importing pr
 
 ## Continuous Updates
 
-AIMS Lens Engine is intended to keep refreshing and expanding. Existing company lenses should receive new public-safe evidence across the seven independent dimensions, and new leading companies should be added in undercovered industries. See `docs/public-lens-refresh-and-expansion.md` for the automated update model, auto-merge rules, and escalation boundaries.
+AIMS Lens Engine is intended to keep refreshing and expanding. Existing company lenses should receive new public-safe evidence across the seven independent dimensions, and new leading companies should be added in undercovered industries. The maintenance workflow now validates every PR and scheduled run, then opens an automated refresh-candidate PR for routine updates. See `docs/public-lens-refresh-and-expansion.md` for the automated update model, auto-merge rules, and escalation boundaries.
 
 ## License
 
