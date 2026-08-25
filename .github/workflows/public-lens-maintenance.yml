@@ -34,7 +34,9 @@ jobs:
             tools/scan_public_export.py \
             tools/generate_public_release_audit_report.py \
             tools/validate_public_lens_coverage.py \
-            tools/prepare_public_lens_refresh.py
+            tools/prepare_public_lens_refresh.py \
+            tools/collect_public_lens_sources.py \
+            tools/generate_public_lens_patch.py
 
       - name: Scan public boundary
         run: python tools/scan_public_export.py --allowlist

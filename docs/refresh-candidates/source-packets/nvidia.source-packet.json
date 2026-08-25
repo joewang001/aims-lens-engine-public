@@ -1,0 +1,99 @@
+{
+  "company_slug": "nvidia",
+  "company": "NVIDIA",
+  "collected_at": "2026-08-25T21:06:49Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "technology",
+      "ai infrastructure",
+      "semiconductors",
+      "cloud computing"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public AI infrastructure and semiconductor company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "NVIDIA company homepage",
+      "url": "https://www.nvidia.com/",
+      "confidence": 0.82,
+      "public_safe_signal": "NVIDIA publicly positions itself around accelerated computing, AI infrastructure, graphics, simulation, and platforms that help organizations build and deploy intelligent systems.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "NVIDIA-OFFICIAL-001",
+      "date_accessed": "2026-08-25"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "NVIDIA careers page",
+      "url": "https://www.nvidia.com/en-us/about-nvidia/careers/",
+      "confidence": 0.78,
+      "public_safe_signal": "NVIDIA careers messaging emphasizes ambitious technical work, collaboration across disciplines, and impact through products used by developers, researchers, enterprises, and creators.",
+      "dimensions": [
+        "company_judges",
+        "evidence_valued",
+        "role_variation"
+      ],
+      "evidence_id": "NVIDIA-CAREERS-002",
+      "date_accessed": "2026-08-25"
+    },
+    {
+      "source_type": "official_investor_relations",
+      "title": "NVIDIA investor relations",
+      "url": "https://investor.nvidia.com/",
+      "confidence": 0.76,
+      "public_safe_signal": "Investor materials frame NVIDIA around accelerated computing platforms, ecosystem adoption, product cycles, and execution in fast-moving infrastructure markets.",
+      "dimensions": [
+        "company_says",
+        "risk_warnings"
+      ],
+      "evidence_id": "NVIDIA-IR-003",
+      "date_accessed": "2026-08-25"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "behavioral",
+        "generated_question": "Tell me about a time you turned a difficult technical or product problem into a measurable user or business result.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the technical or product problem clearly.",
+          "Explains concrete ownership and tradeoffs.",
+          "Connects the work to measurable user, platform, or business impact.",
+          "Shows what changed after feedback or new evidence."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "ai_infrastructure_engineering",
+        "role_family": "AI infrastructure engineering",
+        "signals": [
+          "Explains systems tradeoffs across model, data, hardware, latency, cost, and reliability.",
+          "Connects engineering decisions to developer, researcher, enterprise, or platform outcomes."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "company_slug": "accenture",
+  "company": "Accenture",
+  "collected_at": "2026-08-25T21:06:49Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "consulting",
+      "professional services",
+      "technology services"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public consulting and technology services company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Accenture company homepage",
+      "url": "https://www.accenture.com/us-en",
+      "confidence": 0.8,
+      "public_safe_signal": "Accenture publicly emphasizes reinvention, consulting, technology, operations, and helping clients apply digital, cloud, data, and AI capabilities.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "ACCENTURE-OFFICIAL-001",
+      "date_accessed": "2026-08-25"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Accenture careers page",
+      "url": "https://www.accenture.com/us-en/careers",
+      "confidence": 0.76,
+      "public_safe_signal": "Careers messaging points toward client impact, continuous learning, collaboration, inclusion, and applying technology to practical business problems.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "ACCENTURE-CAREERS-002",
+      "date_accessed": "2026-08-25"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "consulting_behavioral",
+        "generated_question": "Describe a client or stakeholder problem where you had to convert ambiguity into a practical execution plan.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Structures the ambiguous situation into clear workstreams.",
+          "Shows stakeholder communication and tradeoff handling.",
+          "Defines execution steps and evidence of progress.",
+          "Connects the result to client or business value."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "technology_consulting",
+        "role_family": "Technology consulting",
+        "signals": [
+          "Frames technology choices through client outcomes and implementation constraints.",
+          "Balances structured analysis, communication, and delivery ownership."
+        ]
+      }
+    ]
+  }
+}

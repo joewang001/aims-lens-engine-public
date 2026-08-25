@@ -1,0 +1,35 @@
+{
+  "company": "NVIDIA",
+  "lens_id": "nvidia_public_v0_1",
+  "version": "0.1.0-public-release-candidate",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "questions": [
+    {
+      "question_id": "NVIDIA-Q-001",
+      "type": "behavioral",
+      "generated_question": "Tell me about a time you turned a difficult technical or product problem into a measurable user or business result.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Defines the technical or product problem clearly.",
+        "Explains concrete ownership and tradeoffs.",
+        "Connects the work to measurable user, platform, or business impact.",
+        "Shows what changed after feedback or new evidence."
+      ],
+      "evidence_ids": [
+        "NVIDIA-OFFICIAL-001",
+        "NVIDIA-CAREERS-002",
+        "NVIDIA-IR-003"
+      ]
+    }
+  ]
+}

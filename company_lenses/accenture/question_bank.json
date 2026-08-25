@@ -1,0 +1,34 @@
+{
+  "company": "Accenture",
+  "lens_id": "accenture_public_v0_1",
+  "version": "0.1.0-public-release-candidate",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "questions": [
+    {
+      "question_id": "ACCENTURE-Q-001",
+      "type": "consulting_behavioral",
+      "generated_question": "Describe a client or stakeholder problem where you had to convert ambiguity into a practical execution plan.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Structures the ambiguous situation into clear workstreams.",
+        "Shows stakeholder communication and tradeoff handling.",
+        "Defines execution steps and evidence of progress.",
+        "Connects the result to client or business value."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-OFFICIAL-001",
+        "ACCENTURE-CAREERS-002"
+      ]
+    }
+  ]
+}

@@ -71,6 +71,12 @@ initial_public_release:
     - slug: shopify
       path: company_lenses/shopify/
       status: existing_candidate
+    - slug: nvidia
+      path: company_lenses/nvidia/
+      status: existing_candidate
+    - slug: accenture
+      path: company_lenses/accenture/
+      status: existing_candidate
 
 allow_paths:
   root_files:
@@ -271,12 +277,32 @@ allow_paths:
     - company_lenses/shopify/validation_report.md
     - company_lenses/shopify/role_overlays/
     - company_lenses/shopify/validation_cases/
+    - company_lenses/nvidia/README.md
+    - company_lenses/nvidia/profile.json
+    - company_lenses/nvidia/evidence.md
+    - company_lenses/nvidia/rubric.md
+    - company_lenses/nvidia/question_bank.json
+    - company_lenses/nvidia/rewrite_rules.md
+    - company_lenses/nvidia/limits.md
+    - company_lenses/nvidia/validation_report.md
+    - company_lenses/nvidia/role_overlays/
+    - company_lenses/accenture/README.md
+    - company_lenses/accenture/profile.json
+    - company_lenses/accenture/evidence.md
+    - company_lenses/accenture/rubric.md
+    - company_lenses/accenture/question_bank.json
+    - company_lenses/accenture/rewrite_rules.md
+    - company_lenses/accenture/limits.md
+    - company_lenses/accenture/validation_report.md
+    - company_lenses/accenture/role_overlays/
 
   public_tools:
     - tools/export_public_release.py
     - tools/scan_public_export.py
     - tools/generate_public_release_audit_report.py
     - tools/prepare_public_lens_refresh.py
+    - tools/collect_public_lens_sources.py
+    - tools/generate_public_lens_patch.py
     - tools/generate_phase2c_validation_cases.py
     - tools/interview_prep_planner.py
     - tools/llm_scorer.py

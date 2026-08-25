@@ -41,6 +41,21 @@
       },
       "additionalProperties": false
     },
+    "company_profile": {
+      "type": "object",
+      "properties": {
+        "industries": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "regions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "company_stage": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
     "sources": {
       "type": "array",
       "minItems": 1,
