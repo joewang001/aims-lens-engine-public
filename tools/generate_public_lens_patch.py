@@ -465,6 +465,7 @@ def main() -> int:
     parser.add_argument("--expansion-limit", type=int, default=0)
     parser.add_argument("--existing-limit", type=int, default=0)
     parser.add_argument("--execute", action="store_true")
+    parser.add_argument("--allow-empty", action="store_true", help="Exit successfully when no source packet applies.")
     args = parser.parse_args()
 
     paths = packet_paths(args)
@@ -473,6 +474,9 @@ def main() -> int:
     elif args.existing_limit:
         paths = [path for path in paths if (COMPANY_LENSES / path.name.replace(".source-packet.json", "")).exists()][: args.existing_limit]
 
+    if not paths and args.allow_empty:
+        print("lens_patch_status=empty")
+        return 0
     if not paths:
         raise SystemExit("No source packets found.")
 

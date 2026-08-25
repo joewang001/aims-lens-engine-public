@@ -270,6 +270,7 @@ def main() -> int:
     parser.add_argument("--input-packet", type=Path, action="append", help="Normalize an externally collected packet.")
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--date-accessed", default=datetime.now(timezone.utc).date().isoformat())
+    parser.add_argument("--allow-empty", action="store_true", help="Exit successfully when no packet is requested.")
     args = parser.parse_args()
 
     packets: list[dict[str, Any]] = []
@@ -280,6 +281,9 @@ def main() -> int:
     if args.expansion_limit:
         packets.extend(build_packet(slug, accessed_date=args.date_accessed) for slug in choose_expansion(args.expansion_limit))
 
+    if not packets and args.allow_empty:
+        print("source_packet_status=empty")
+        return 0
     if not packets:
         raise SystemExit("No packets requested. Use --company, --expansion-limit, or --input-packet.")
 
