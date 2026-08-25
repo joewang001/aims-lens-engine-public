@@ -1,0 +1,34 @@
+{
+  "company_slug": "nvidia",
+  "company": "NVIDIA",
+  "collected_at": "2026-08-25T13:00:00Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "sources": [
+    {
+      "evidence_id": "NVIDIA-OFFICIAL-001",
+      "source_type": "official_company",
+      "title": "Official company homepage",
+      "url": "https://www.nvidia.com/",
+      "date_accessed": "2026-08-25",
+      "confidence": 0.8,
+      "public_safe_signal": "A public-safe sourcing agent writes a non-verbatim signal about company positioning here.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ]
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [],
+    "role_overlays": []
+  }
+}

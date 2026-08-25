@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aims-lens-engine.local/schemas/public_lens_source_packet.schema.json",
+  "title": "Public Lens Source Packet",
+  "type": "object",
+  "required": [
+    "company_slug",
+    "company",
+    "collected_at",
+    "source_policy",
+    "sources",
+    "lens_updates"
+  ],
+  "properties": {
+    "company_slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "company": {
+      "type": "string"
+    },
+    "collected_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source_policy": {
+      "type": "object",
+      "required": [
+        "public_safe",
+        "contains_private_material",
+        "contains_candidate_data",
+        "contains_raw_job_posting_body",
+        "contains_paywalled_text"
+      ],
+      "properties": {
+        "public_safe": { "type": "boolean", "const": true },
+        "contains_private_material": { "type": "boolean", "const": false },
+        "contains_candidate_data": { "type": "boolean", "const": false },
+        "contains_raw_job_posting_body": { "type": "boolean", "const": false },
+        "contains_paywalled_text": { "type": "boolean", "const": false }
+      },
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "source_type",
+          "title",
+          "url",
+          "date_accessed",
+          "confidence",
+          "public_safe_signal",
+          "dimensions"
+        ],
+        "properties": {
+          "evidence_id": { "type": "string" },
+          "source_type": {
+            "type": "string",
+            "enum": [
+              "official_company",
+              "official_careers",
+              "official_investor_relations",
+              "official_engineering_blog",
+              "official_product_blog",
+              "official_leadership_letter",
+              "public_community_aggregate"
+            ]
+          },
+          "title": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "date_accessed": { "type": "string", "format": "date" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "public_safe_signal": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 500
+          },
+          "dimensions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "enum": [
+                "company_says",
+                "company_judges",
+                "company_asks",
+                "evidence_valued",
+                "risk_warnings",
+                "role_variation",
+                "honest_unknowns"
+              ]
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "lens_updates": {
+      "type": "object",
+      "required": [
+        "culture_principles",
+        "hiring_signals",
+        "anti_signals",
+        "questions",
+        "role_overlays"
+      ],
+      "properties": {
+        "culture_principles": { "type": "array" },
+        "hiring_signals": { "type": "array" },
+        "anti_signals": { "type": "array" },
+        "questions": { "type": "array" },
+        "role_overlays": { "type": "array" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

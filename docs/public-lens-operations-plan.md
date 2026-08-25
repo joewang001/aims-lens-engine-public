@@ -277,3 +277,7 @@ tools/generate_public_lens_patch.py
 Those tools should create real lens updates only from approved public sources,
 then rely on the existing scanner, coverage validator, and PR rules before
 merge.
+
+The agent-to-patch interface is defined in
+`docs/public-lens-sourcing-agent-contract.md` and
+`schemas/public_lens_source_packet.schema.json`.

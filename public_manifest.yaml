@@ -103,6 +103,7 @@ allow_paths:
     - docs/limited-pilot-policy.md
     - docs/public-lens-operations-plan.md
     - docs/public-lens-refresh-and-expansion.md
+    - docs/public-lens-sourcing-agent-contract.md
     - docs/refresh-candidates/
     - docs/public-private-split-strategy.md
     - docs/public-private-split-strategy-zh.md
@@ -123,6 +124,7 @@ allow_paths:
     - schemas/evidence.schema.json
     - schemas/interview_prep_plan.schema.json
     - schemas/jobace_adapter_contract.schema.json
+    - schemas/public_lens_source_packet.schema.json
     - schemas/question_bank.schema.json
     - schemas/review_decision.schema.json
     - schemas/role_lens.schema.json
@@ -142,6 +144,7 @@ allow_paths:
     - examples/lens-workspace-create-api-key-request.json
     - examples/lens-workspace-create-tenant-request.json
     - examples/lens-workspace-source-material-request.json
+    - examples/public-lens-source-packet.example.json
 
   routing:
     - routing/role_router.json
