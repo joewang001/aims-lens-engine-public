@@ -153,3 +153,6 @@ python tools/generate_public_release_audit_report.py --allowlist
 The goal is a public system that updates itself routinely, while preserving hard
 boundaries around privacy, copyright, source quality, and JobACE private
 implementation details.
+
+For the operating cadence, monthly expansion quantity, approved company backlog,
+and low-risk auto-merge rules, see `docs/public-lens-operations-plan.md`.

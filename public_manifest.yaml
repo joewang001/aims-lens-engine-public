@@ -101,6 +101,7 @@ allow_paths:
     - docs/distillation-playbook.md
     - docs/implementation-plan.md
     - docs/limited-pilot-policy.md
+    - docs/public-lens-operations-plan.md
     - docs/public-lens-refresh-and-expansion.md
     - docs/refresh-candidates/
     - docs/public-private-split-strategy.md
