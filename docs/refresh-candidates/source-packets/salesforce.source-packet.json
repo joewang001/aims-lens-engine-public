@@ -1,0 +1,86 @@
+{
+  "company_slug": "salesforce",
+  "company": "Salesforce",
+  "collected_at": "2026-08-31T19:28:49Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "technology",
+      "enterprise software",
+      "crm",
+      "saas"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public enterprise software company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Salesforce company homepage",
+      "url": "https://www.salesforce.com/",
+      "confidence": 0.8,
+      "public_safe_signal": "Salesforce publicly positions itself around customer relationship management, trusted enterprise AI, data, automation, and customer success across business functions.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "SALESFORCE-OFFICIAL-001",
+      "date_accessed": "2026-08-31"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Salesforce careers page",
+      "url": "https://careers.salesforce.com/",
+      "confidence": 0.76,
+      "public_safe_signal": "Careers messaging emphasizes customer impact, trust, innovation, equality, learning, and work that helps organizations connect with customers.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "SALESFORCE-CAREERS-002",
+      "date_accessed": "2026-08-31"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "behavioral",
+        "generated_question": "Tell me about a time you improved a process, product, or customer experience while protecting trust and reliability.",
+        "aims_dimensions": [
+          "impact_results",
+          "structured_thinking",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names the customer or business outcome.",
+          "Explains the trust or reliability constraint.",
+          "Shows cross-functional execution.",
+          "Measures the resulting improvement."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "customer_platform",
+        "role_family": "Customer platform roles",
+        "signals": [
+          "Links technical or operational decisions to customer success and trusted adoption.",
+          "Shows practical judgment around data, automation, reliability, and stakeholder alignment."
+        ]
+      }
+    ]
+  }
+}

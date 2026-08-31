@@ -1,0 +1,34 @@
+{
+  "company": "Salesforce",
+  "lens_id": "salesforce_public_v0_1",
+  "version": "0.1.0-public-release-candidate",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "questions": [
+    {
+      "question_id": "SALESFORCE-Q-001",
+      "type": "behavioral",
+      "generated_question": "Tell me about a time you improved a process, product, or customer experience while protecting trust and reliability.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names the customer or business outcome.",
+        "Explains the trust or reliability constraint.",
+        "Shows cross-functional execution.",
+        "Measures the resulting improvement."
+      ],
+      "evidence_ids": [
+        "SALESFORCE-OFFICIAL-001",
+        "SALESFORCE-CAREERS-002"
+      ]
+    }
+  ]
+}

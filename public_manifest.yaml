@@ -77,6 +77,9 @@ initial_public_release:
     - slug: accenture
       path: company_lenses/accenture/
       status: existing_candidate
+    - slug: salesforce
+      path: company_lenses/salesforce/
+      status: existing_candidate
 
 allow_paths:
   root_files:
@@ -295,6 +298,15 @@ allow_paths:
     - company_lenses/accenture/limits.md
     - company_lenses/accenture/validation_report.md
     - company_lenses/accenture/role_overlays/
+    - company_lenses/salesforce/README.md
+    - company_lenses/salesforce/profile.json
+    - company_lenses/salesforce/evidence.md
+    - company_lenses/salesforce/rubric.md
+    - company_lenses/salesforce/question_bank.json
+    - company_lenses/salesforce/rewrite_rules.md
+    - company_lenses/salesforce/limits.md
+    - company_lenses/salesforce/validation_report.md
+    - company_lenses/salesforce/role_overlays/
 
   public_tools:
     - tools/export_public_release.py
