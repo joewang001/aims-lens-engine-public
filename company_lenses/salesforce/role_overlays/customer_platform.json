@@ -1,0 +1,20 @@
+{
+  "company": "Salesforce",
+  "role_family": "Customer platform roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Links technical or operational decisions to customer success and trusted adoption.",
+    "Shows practical judgment around data, automation, reliability, and stakeholder alignment."
+  ],
+  "evidence_ids": [
+    "SALESFORCE-OFFICIAL-001",
+    "SALESFORCE-CAREERS-002"
+  ]
+}
