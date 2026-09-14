@@ -1,0 +1,99 @@
+{
+  "company_slug": "costco",
+  "company": "Costco",
+  "collected_at": "2026-09-14T16:35:16Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "retail",
+      "wholesale",
+      "consumer services",
+      "operations"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public membership warehouse retail company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Costco homepage",
+      "url": "https://www.costco.com/",
+      "confidence": 0.78,
+      "public_safe_signal": "Costco publicly presents a membership warehouse model centered on value, quality, operations, member trust, and efficient merchandising.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "COSTCO-OFFICIAL-001",
+      "date_accessed": "2026-09-14"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Costco jobs page",
+      "url": "https://www.costco.com/jobs.html",
+      "confidence": 0.74,
+      "public_safe_signal": "Careers materials provide public context for warehouse operations, service roles, promotion pathways, benefits, and team-based execution.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "COSTCO-CAREERS-002",
+      "date_accessed": "2026-09-14"
+    },
+    {
+      "source_type": "official_investor_relations",
+      "title": "Costco investor relations",
+      "url": "https://investor.costco.com/",
+      "confidence": 0.7,
+      "public_safe_signal": "Investor materials offer public context for membership economics, merchandising discipline, warehouse growth, and operating performance.",
+      "dimensions": [
+        "company_says",
+        "risk_warnings"
+      ],
+      "evidence_id": "COSTCO-IR-003",
+      "date_accessed": "2026-09-14"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "service_operations_behavioral",
+        "generated_question": "Describe a time you protected customer trust while improving speed, quality, or cost in an operating process.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names the customer or member trust issue.",
+          "Explains the process constraint and improvement path.",
+          "Shows practical coordination with the people doing the work.",
+          "Connects the change to service, quality, or cost evidence."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "membership_retail",
+        "role_family": "Membership retail roles",
+        "signals": [
+          "Balances member value, process reliability, and disciplined execution.",
+          "Shows respect for frontline realities and measurable service outcomes."
+        ]
+      }
+    ]
+  }
+}

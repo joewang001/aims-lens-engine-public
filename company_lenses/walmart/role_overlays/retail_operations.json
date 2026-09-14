@@ -1,0 +1,21 @@
+{
+  "company": "Walmart",
+  "role_family": "Retail operations and supply chain roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Links decisions to customer value, availability, cost, and operational consistency.",
+    "Shows execution discipline in high-volume, cross-functional environments."
+  ],
+  "evidence_ids": [
+    "WALMART-OFFICIAL-001",
+    "WALMART-CAREERS-002",
+    "WALMART-IR-003"
+  ]
+}

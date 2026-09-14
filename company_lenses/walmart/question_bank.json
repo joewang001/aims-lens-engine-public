@@ -1,0 +1,35 @@
+{
+  "company": "Walmart",
+  "lens_id": "walmart_public_v0_1",
+  "version": "0.1.0-public-release-candidate",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "questions": [
+    {
+      "question_id": "WALMART-Q-001",
+      "type": "retail_operations_behavioral",
+      "generated_question": "Tell me about a time you improved a customer or operational metric in a high-volume environment.",
+      "aims_dimensions": [
+        "impact_results",
+        "ownership_execution",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Identifies the customer or operational metric.",
+        "Explains the root cause and action taken.",
+        "Shows how teams or frontline constraints were handled.",
+        "Quantifies the improvement or learning."
+      ],
+      "evidence_ids": [
+        "WALMART-OFFICIAL-001",
+        "WALMART-CAREERS-002",
+        "WALMART-IR-003"
+      ]
+    }
+  ]
+}

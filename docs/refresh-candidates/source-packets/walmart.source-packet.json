@@ -1,0 +1,99 @@
+{
+  "company_slug": "walmart",
+  "company": "Walmart",
+  "collected_at": "2026-09-14T16:35:16Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "retail",
+      "ecommerce",
+      "logistics",
+      "consumer services"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public retail, ecommerce, and supply chain company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Walmart corporate homepage",
+      "url": "https://corporate.walmart.com/",
+      "confidence": 0.8,
+      "public_safe_signal": "Walmart publicly emphasizes serving customers, everyday value, stores, ecommerce, supply chain scale, communities, and technology-enabled retail operations.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "WALMART-OFFICIAL-001",
+      "date_accessed": "2026-09-14"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Walmart careers page",
+      "url": "https://careers.walmart.com/",
+      "confidence": 0.76,
+      "public_safe_signal": "Careers messaging points toward customer service, frontline execution, logistics, technology, growth opportunities, and operational teamwork at large scale.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "WALMART-CAREERS-002",
+      "date_accessed": "2026-09-14"
+    },
+    {
+      "source_type": "official_investor_relations",
+      "title": "Walmart investor relations",
+      "url": "https://stock.walmart.com/",
+      "confidence": 0.74,
+      "public_safe_signal": "Investor materials give public context for omnichannel retail, margin discipline, supply chain investment, digital growth, and operating scale.",
+      "dimensions": [
+        "company_says",
+        "risk_warnings"
+      ],
+      "evidence_id": "WALMART-IR-003",
+      "date_accessed": "2026-09-14"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "retail_operations_behavioral",
+        "generated_question": "Tell me about a time you improved a customer or operational metric in a high-volume environment.",
+        "aims_dimensions": [
+          "impact_results",
+          "ownership_execution",
+          "analytical_problem_solving"
+        ],
+        "strong_answer_signals": [
+          "Identifies the customer or operational metric.",
+          "Explains the root cause and action taken.",
+          "Shows how teams or frontline constraints were handled.",
+          "Quantifies the improvement or learning."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "retail_operations",
+        "role_family": "Retail operations and supply chain roles",
+        "signals": [
+          "Links decisions to customer value, availability, cost, and operational consistency.",
+          "Shows execution discipline in high-volume, cross-functional environments."
+        ]
+      }
+    ]
+  }
+}

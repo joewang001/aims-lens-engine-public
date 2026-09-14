@@ -1,0 +1,21 @@
+{
+  "company": "Costco",
+  "role_family": "Membership retail roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Balances member value, process reliability, and disciplined execution.",
+    "Shows respect for frontline realities and measurable service outcomes."
+  ],
+  "evidence_ids": [
+    "COSTCO-OFFICIAL-001",
+    "COSTCO-CAREERS-002",
+    "COSTCO-IR-003"
+  ]
+}
