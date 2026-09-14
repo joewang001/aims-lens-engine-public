@@ -80,6 +80,12 @@ initial_public_release:
     - slug: salesforce
       path: company_lenses/salesforce/
       status: existing_candidate
+    - slug: enbridge
+      path: company_lenses/enbridge/
+      status: existing_candidate
+    - slug: johnson-johnson
+      path: company_lenses/johnson-johnson/
+      status: existing_candidate
 
 allow_paths:
   root_files:
@@ -307,6 +313,24 @@ allow_paths:
     - company_lenses/salesforce/limits.md
     - company_lenses/salesforce/validation_report.md
     - company_lenses/salesforce/role_overlays/
+    - company_lenses/enbridge/README.md
+    - company_lenses/enbridge/profile.json
+    - company_lenses/enbridge/evidence.md
+    - company_lenses/enbridge/rubric.md
+    - company_lenses/enbridge/question_bank.json
+    - company_lenses/enbridge/rewrite_rules.md
+    - company_lenses/enbridge/limits.md
+    - company_lenses/enbridge/validation_report.md
+    - company_lenses/enbridge/role_overlays/
+    - company_lenses/johnson-johnson/README.md
+    - company_lenses/johnson-johnson/profile.json
+    - company_lenses/johnson-johnson/evidence.md
+    - company_lenses/johnson-johnson/rubric.md
+    - company_lenses/johnson-johnson/question_bank.json
+    - company_lenses/johnson-johnson/rewrite_rules.md
+    - company_lenses/johnson-johnson/limits.md
+    - company_lenses/johnson-johnson/validation_report.md
+    - company_lenses/johnson-johnson/role_overlays/
 
   public_tools:
     - tools/export_public_release.py

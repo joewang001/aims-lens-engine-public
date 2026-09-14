@@ -255,28 +255,30 @@ Track:
 ### Month 2
 
 - Refresh Microsoft, Apple, JPMorgan, TD, CIBC, and Scotiabank.
-- Add Salesforce and Johnson & Johnson.
+- Add Salesforce, Johnson & Johnson, Enbridge, Walmart, and Costco through the approved public-source catalog.
 - Add validation cases for technology, banking, consulting, and healthcare.
 
 ### Month 3
 
 - Refresh all 12 initial lenses for source freshness and role-overlay gaps.
-- Add Enbridge and Walmart.
+- Add Tesla, Pfizer, Deloitte, IBM, Oracle, and Adobe through the approved public-source catalog.
 - Produce quarterly coverage report and re-rank the expansion backlog.
 
 ## Implementation Next Step
 
-The next engineering step is to extend the scheduled workflow from planning PRs
-to content PRs by adding a source collector and lens patch generator:
+The scheduled workflow now creates content PRs, not only planning PRs, by using
+a source collector and lens patch generator:
 
 ```text
 tools/collect_public_lens_sources.py
 tools/generate_public_lens_patch.py
 ```
 
-Those tools should create real lens updates only from approved public sources,
-then rely on the existing scanner, coverage validator, and PR rules before
-merge.
+Those tools create real lens updates only from approved public sources, then
+rely on the existing scanner, coverage validator, and PR rules before merge.
+The default cadence is up to two new public company lenses per weekly scheduled
+or manual workflow run, selected from companies that are present in the approved
+catalog but not yet present under `company_lenses/`.
 
 The agent-to-patch interface is defined in
 `docs/public-lens-sourcing-agent-contract.md` and

@@ -1,0 +1,99 @@
+{
+  "company_slug": "johnson-johnson",
+  "company": "Johnson & Johnson",
+  "collected_at": "2026-09-14T16:16:07Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "healthcare",
+      "pharma",
+      "medical devices",
+      "life sciences"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public healthcare, pharmaceutical, and medical technology company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Johnson & Johnson company homepage",
+      "url": "https://www.jnj.com/",
+      "confidence": 0.8,
+      "public_safe_signal": "Johnson & Johnson publicly frames its work around health, medicine, medical technology, science, and improving outcomes for patients and communities.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "JOHNSON_JOHNSON-OFFICIAL-001",
+      "date_accessed": "2026-09-14"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Johnson & Johnson careers page",
+      "url": "https://www.careers.jnj.com/",
+      "confidence": 0.72,
+      "public_safe_signal": "Careers messaging points toward purpose-driven healthcare work, collaboration, learning, innovation, and impact across science, technology, operations, and commercial roles.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "JOHNSON_JOHNSON-CAREERS-002",
+      "date_accessed": "2026-09-14"
+    },
+    {
+      "source_type": "official_investor_relations",
+      "title": "Johnson & Johnson investor relations",
+      "url": "https://www.investor.jnj.com/",
+      "confidence": 0.7,
+      "public_safe_signal": "Investor materials provide public context for portfolio focus, regulated execution, innovation priorities, and risk factors in healthcare markets.",
+      "dimensions": [
+        "company_says",
+        "risk_warnings"
+      ],
+      "evidence_id": "JOHNSON_JOHNSON-IR-003",
+      "date_accessed": "2026-09-14"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "regulated_healthcare_behavioral",
+        "generated_question": "Tell me about a time you improved an outcome while working within a regulated, safety-sensitive, or quality-sensitive environment.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the patient, customer, quality, or compliance stakes clearly.",
+          "Explains how evidence and constraints shaped the decision.",
+          "Shows ownership without bypassing safety or review standards.",
+          "Connects the work to a measurable quality, user, or operational result."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "healthcare_operations",
+        "role_family": "Healthcare operations and product roles",
+        "signals": [
+          "Balances speed, quality, compliance, and stakeholder trust.",
+          "Connects operational or product decisions to patient, clinician, customer, or community outcomes."
+        ]
+      }
+    ]
+  }
+}

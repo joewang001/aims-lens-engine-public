@@ -1,0 +1,99 @@
+{
+  "company_slug": "enbridge",
+  "company": "Enbridge",
+  "collected_at": "2026-09-14T16:16:07Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "energy",
+      "utilities",
+      "infrastructure",
+      "sustainability"
+    ],
+    "regions": [
+      "canada",
+      "north_america"
+    ],
+    "company_stage": "large North American energy infrastructure and utilities company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Enbridge company homepage",
+      "url": "https://www.enbridge.com/",
+      "confidence": 0.8,
+      "public_safe_signal": "Enbridge publicly describes its work around energy infrastructure, reliability, safety, energy delivery, and the transition toward lower-emission energy systems.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "ENBRIDGE-OFFICIAL-001",
+      "date_accessed": "2026-09-14"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Enbridge careers page",
+      "url": "https://www.enbridge.com/careers",
+      "confidence": 0.76,
+      "public_safe_signal": "Careers messaging emphasizes safety, inclusion, technical and operational work, community impact, and opportunities across engineering, operations, business, and field roles.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "ENBRIDGE-CAREERS-002",
+      "date_accessed": "2026-09-14"
+    },
+    {
+      "source_type": "official_investor_relations",
+      "title": "Enbridge investment center",
+      "url": "https://www.enbridge.com/investment-center",
+      "confidence": 0.76,
+      "public_safe_signal": "Investor materials provide public context for infrastructure assets, capital allocation, risk management, reliability, growth, and energy transition priorities.",
+      "dimensions": [
+        "company_says",
+        "risk_warnings"
+      ],
+      "evidence_id": "ENBRIDGE-IR-003",
+      "date_accessed": "2026-09-14"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "operations_behavioral",
+        "generated_question": "Describe a situation where you had to make a practical decision while balancing reliability, safety, cost, and stakeholder impact.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names the operational risk and affected stakeholders.",
+          "Explains the tradeoff between reliability, safety, cost, and timing.",
+          "Shows coordination across technical and non-technical groups.",
+          "Defines how the result was monitored or improved."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "energy_infrastructure",
+        "role_family": "Energy infrastructure roles",
+        "signals": [
+          "Treats safety, reliability, and community impact as core decision constraints.",
+          "Uses evidence to balance operational execution with long-term infrastructure outcomes."
+        ]
+      }
+    ]
+  }
+}

@@ -90,24 +90,29 @@ runs:
 
 ```bash
 python tools/prepare_public_lens_refresh.py
+python tools/collect_public_lens_sources.py --expansion-limit 2 --allow-empty
+python tools/generate_public_lens_patch.py --expansion-limit 2 --execute --allow-empty
 ```
 
-That script writes a refresh candidate report under
-`docs/refresh-candidates/`. The workflow then opens or updates an automated PR
-with the generated report. This upgrades automation from passive validation to
-an active maintenance loop while keeping actual lens-content changes behind the
-same scanner and coverage gates.
+Those scripts write a refresh candidate report, create public-safe source
+packets for approved expansion companies, and generate lightweight public
+company lenses. The workflow then opens or updates an automated PR with the
+generated files. This upgrades automation from passive validation to an active
+maintenance loop while keeping lens-content changes behind the same scanner and
+coverage gates.
 
-The generated PR is allowed to merge automatically only when it remains a
-planning/report PR. If a future sourcing agent adds real lens content, the
-escalation rules below apply.
+The generated PR is allowed to merge automatically when new lens content is
+generated from the approved public expansion catalog and all required checks
+pass. External source packets, private-derived public-safe signals, schema
+changes, routing changes, scoring changes, and status promotions remain
+escalation cases.
 
 ## Escalation Path
 
 Require maintainer review when any condition is true:
 
-- A new company lens is introduced.
-- A new industry category is introduced.
+- A new company lens is introduced outside the approved expansion catalog.
+- A new industry category is introduced without an approved source packet.
 - A private-derived signal is used, even if public-safe.
 - The update relies on paid, gated, or community material.
 - The scanner reports any blocker or review finding.

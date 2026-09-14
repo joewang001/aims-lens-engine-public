@@ -1,0 +1,21 @@
+{
+  "company": "Johnson & Johnson",
+  "role_family": "Healthcare operations and product roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Balances speed, quality, compliance, and stakeholder trust.",
+    "Connects operational or product decisions to patient, clinician, customer, or community outcomes."
+  ],
+  "evidence_ids": [
+    "JOHNSON_JOHNSON-OFFICIAL-001",
+    "JOHNSON_JOHNSON-CAREERS-002",
+    "JOHNSON_JOHNSON-IR-003"
+  ]
+}

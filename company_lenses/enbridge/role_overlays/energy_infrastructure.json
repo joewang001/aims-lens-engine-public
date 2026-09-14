@@ -1,0 +1,21 @@
+{
+  "company": "Enbridge",
+  "role_family": "Energy infrastructure roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Treats safety, reliability, and community impact as core decision constraints.",
+    "Uses evidence to balance operational execution with long-term infrastructure outcomes."
+  ],
+  "evidence_ids": [
+    "ENBRIDGE-OFFICIAL-001",
+    "ENBRIDGE-CAREERS-002",
+    "ENBRIDGE-IR-003"
+  ]
+}

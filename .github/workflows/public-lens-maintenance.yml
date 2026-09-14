@@ -63,8 +63,8 @@ jobs:
       - name: Prepare real public lens update
         run: |
           python tools/prepare_public_lens_refresh.py
-          python tools/collect_public_lens_sources.py --expansion-limit 1 --allow-empty
-          python tools/generate_public_lens_patch.py --expansion-limit 1 --execute --allow-empty
+          python tools/collect_public_lens_sources.py --expansion-limit 2 --allow-empty
+          python tools/generate_public_lens_patch.py --expansion-limit 2 --execute --allow-empty
 
       - name: Validate generated update
         run: |
@@ -86,6 +86,10 @@ jobs:
             metadata. It does not add private material, candidate data, tenant
             data, copied job posting bodies, paywalled source text, secrets, or
             production configuration.
+
+            Routine new-company additions are eligible for auto-merge when they
+            are generated from the approved public expansion catalog and all
+            public boundary checks pass.
 
             Required checks:
             - `python tools/scan_public_export.py --allowlist`

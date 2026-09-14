@@ -1,0 +1,35 @@
+{
+  "company": "Johnson & Johnson",
+  "lens_id": "johnson-johnson_public_v0_1",
+  "version": "0.1.0-public-release-candidate",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "questions": [
+    {
+      "question_id": "JOHNSON_JOHNSON-Q-001",
+      "type": "regulated_healthcare_behavioral",
+      "generated_question": "Tell me about a time you improved an outcome while working within a regulated, safety-sensitive, or quality-sensitive environment.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Defines the patient, customer, quality, or compliance stakes clearly.",
+        "Explains how evidence and constraints shaped the decision.",
+        "Shows ownership without bypassing safety or review standards.",
+        "Connects the work to a measurable quality, user, or operational result."
+      ],
+      "evidence_ids": [
+        "JOHNSON_JOHNSON-OFFICIAL-001",
+        "JOHNSON_JOHNSON-CAREERS-002",
+        "JOHNSON_JOHNSON-IR-003"
+      ]
+    }
+  ]
+}
