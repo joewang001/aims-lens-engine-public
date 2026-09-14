@@ -1,0 +1,35 @@
+{
+  "company": "Costco",
+  "lens_id": "costco_public_v0_1",
+  "version": "0.1.0-public-release-candidate",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "questions": [
+    {
+      "question_id": "COSTCO-Q-001",
+      "type": "service_operations_behavioral",
+      "generated_question": "Describe a time you protected customer trust while improving speed, quality, or cost in an operating process.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names the customer or member trust issue.",
+        "Explains the process constraint and improvement path.",
+        "Shows practical coordination with the people doing the work.",
+        "Connects the change to service, quality, or cost evidence."
+      ],
+      "evidence_ids": [
+        "COSTCO-OFFICIAL-001",
+        "COSTCO-CAREERS-002",
+        "COSTCO-IR-003"
+      ]
+    }
+  ]
+}

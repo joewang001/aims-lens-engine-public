@@ -86,6 +86,12 @@ initial_public_release:
     - slug: johnson-johnson
       path: company_lenses/johnson-johnson/
       status: existing_candidate
+    - slug: costco
+      path: company_lenses/costco/
+      status: existing_candidate
+    - slug: walmart
+      path: company_lenses/walmart/
+      status: existing_candidate
 
 allow_paths:
   root_files:
@@ -331,6 +337,24 @@ allow_paths:
     - company_lenses/johnson-johnson/limits.md
     - company_lenses/johnson-johnson/validation_report.md
     - company_lenses/johnson-johnson/role_overlays/
+    - company_lenses/costco/README.md
+    - company_lenses/costco/profile.json
+    - company_lenses/costco/evidence.md
+    - company_lenses/costco/rubric.md
+    - company_lenses/costco/question_bank.json
+    - company_lenses/costco/rewrite_rules.md
+    - company_lenses/costco/limits.md
+    - company_lenses/costco/validation_report.md
+    - company_lenses/costco/role_overlays/
+    - company_lenses/walmart/README.md
+    - company_lenses/walmart/profile.json
+    - company_lenses/walmart/evidence.md
+    - company_lenses/walmart/rubric.md
+    - company_lenses/walmart/question_bank.json
+    - company_lenses/walmart/rewrite_rules.md
+    - company_lenses/walmart/limits.md
+    - company_lenses/walmart/validation_report.md
+    - company_lenses/walmart/role_overlays/
 
   public_tools:
     - tools/export_public_release.py
