@@ -1,0 +1,99 @@
+{
+  "company_slug": "pfizer",
+  "company": "Pfizer",
+  "collected_at": "2026-09-14T18:30:51Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "healthcare",
+      "pharma",
+      "biotechnology",
+      "life sciences"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public pharmaceutical and biotechnology company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Pfizer homepage",
+      "url": "https://www.pfizer.com/",
+      "confidence": 0.8,
+      "public_safe_signal": "Pfizer publicly frames its work around medicines, vaccines, science, innovation, health outcomes, and bringing therapies to patients.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "PFIZER-OFFICIAL-001",
+      "date_accessed": "2026-09-14"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Pfizer careers page",
+      "url": "https://www.pfizer.com/about/careers",
+      "confidence": 0.76,
+      "public_safe_signal": "Careers messaging emphasizes science, patient impact, inclusion, learning, cross-functional work, and roles across research, manufacturing, commercial, and enabling functions.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "PFIZER-CAREERS-002",
+      "date_accessed": "2026-09-14"
+    },
+    {
+      "source_type": "official_investor_relations",
+      "title": "Pfizer investor relations",
+      "url": "https://investors.pfizer.com/",
+      "confidence": 0.7,
+      "public_safe_signal": "Investor materials offer public context for research portfolio, product lifecycle, regulatory risk, commercial execution, and capital allocation.",
+      "dimensions": [
+        "company_says",
+        "risk_warnings"
+      ],
+      "evidence_id": "PFIZER-IR-003",
+      "date_accessed": "2026-09-14"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "life_sciences_behavioral",
+        "generated_question": "Describe a time you used scientific, customer, or operating evidence to make a decision with real stakeholder impact.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Clarifies the evidence base and uncertainty.",
+          "Explains how stakeholders or patients could be affected.",
+          "Shows cross-functional decision-making.",
+          "Links action to a concrete result or learning."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "life_sciences",
+        "role_family": "Life sciences roles",
+        "signals": [
+          "Uses evidence carefully under scientific, regulatory, commercial, or quality constraints.",
+          "Connects work to patient, provider, business, or public-health outcomes."
+        ]
+      }
+    ]
+  }
+}

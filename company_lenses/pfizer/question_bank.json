@@ -1,0 +1,35 @@
+{
+  "company": "Pfizer",
+  "lens_id": "pfizer_public_v0_1",
+  "version": "0.1.0-public-release-candidate",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "questions": [
+    {
+      "question_id": "PFIZER-Q-001",
+      "type": "life_sciences_behavioral",
+      "generated_question": "Describe a time you used scientific, customer, or operating evidence to make a decision with real stakeholder impact.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Clarifies the evidence base and uncertainty.",
+        "Explains how stakeholders or patients could be affected.",
+        "Shows cross-functional decision-making.",
+        "Links action to a concrete result or learning."
+      ],
+      "evidence_ids": [
+        "PFIZER-OFFICIAL-001",
+        "PFIZER-CAREERS-002",
+        "PFIZER-IR-003"
+      ]
+    }
+  ]
+}

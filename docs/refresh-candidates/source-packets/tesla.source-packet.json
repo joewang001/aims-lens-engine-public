@@ -1,0 +1,99 @@
+{
+  "company_slug": "tesla",
+  "company": "Tesla",
+  "collected_at": "2026-09-14T18:30:51Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "automotive",
+      "energy",
+      "manufacturing",
+      "ai"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public electric vehicle, energy, manufacturing, and AI company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Tesla homepage",
+      "url": "https://www.tesla.com/",
+      "confidence": 0.76,
+      "public_safe_signal": "Tesla publicly positions itself around electric vehicles, energy products, manufacturing, software, autonomy, and accelerating sustainable energy.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "TESLA-OFFICIAL-001",
+      "date_accessed": "2026-09-14"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Tesla careers page",
+      "url": "https://www.tesla.com/careers",
+      "confidence": 0.72,
+      "public_safe_signal": "Careers messaging emphasizes fast execution, engineering, manufacturing, operations, software, energy, and mission-aligned work across technical and business functions.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "TESLA-CAREERS-002",
+      "date_accessed": "2026-09-14"
+    },
+    {
+      "source_type": "official_investor_relations",
+      "title": "Tesla investor relations",
+      "url": "https://ir.tesla.com/",
+      "confidence": 0.74,
+      "public_safe_signal": "Investor materials give public context for vehicle programs, energy products, manufacturing scale, software, margins, delivery volatility, and execution risk.",
+      "dimensions": [
+        "company_says",
+        "risk_warnings"
+      ],
+      "evidence_id": "TESLA-IR-003",
+      "date_accessed": "2026-09-14"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "execution_behavioral",
+        "generated_question": "Tell me about a time you moved quickly on a difficult technical or operating problem without losing control of quality or risk.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the time pressure and technical or operating constraint.",
+          "Explains the quality or risk control used while moving fast.",
+          "Shows direct ownership and iteration.",
+          "Measures the result and what changed afterward."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "manufacturing_and_autonomy",
+        "role_family": "Manufacturing, software, and autonomy roles",
+        "signals": [
+          "Connects speed of execution to measurable product, manufacturing, energy, or software outcomes.",
+          "Shows judgment around quality, reliability, safety, and system-level tradeoffs."
+        ]
+      }
+    ]
+  }
+}

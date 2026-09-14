@@ -1,0 +1,116 @@
+{
+  "lens_id": "tesla_public_v0_1",
+  "company": "Tesla",
+  "canonical_company_name": "Tesla",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "version": "0.1.0-public-release-candidate",
+  "source_cutoff": "2026-09-14",
+  "industries": [
+    "automotive",
+    "energy",
+    "manufacturing",
+    "ai"
+  ],
+  "regions": [
+    "north_america",
+    "global"
+  ],
+  "company_stage": "large public electric vehicle, energy, manufacturing, and AI company",
+  "culture_principles": [
+    {
+      "name": "Public mission and customer-impact alignment",
+      "description": "Tesla fit should connect work to the company outcomes and users described in cited public sources.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "TESLA-OFFICIAL-001",
+        "TESLA-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Evidence-backed execution",
+      "description": "Strong answers should show practical judgment, clear tradeoffs, ownership, and outcomes rather than generic enthusiasm.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "TESLA-OFFICIAL-001",
+        "TESLA-CAREERS-002",
+        "TESLA-IR-003"
+      ]
+    }
+  ],
+  "aims_weighting": {
+    "structured_thinking": 0.1667,
+    "analytical_problem_solving": 0.1667,
+    "ownership_execution": 0.1667,
+    "impact_results": 0.1667,
+    "collaboration_communication": 0.1667,
+    "growth_mindset": 0.1665
+  },
+  "hiring_signals": [
+    {
+      "signal": "Connects decisions to the users, customers, products, or markets named in public company sources.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "TESLA-OFFICIAL-001",
+        "TESLA-CAREERS-002"
+      ]
+    },
+    {
+      "signal": "Uses concrete examples to show ownership, learning, and measurable improvement.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "confidence": 0.68,
+      "evidence_ids": [
+        "TESLA-OFFICIAL-001",
+        "TESLA-CAREERS-002",
+        "TESLA-IR-003"
+      ]
+    }
+  ],
+  "anti_signals": [
+    {
+      "anti_signal": "Generic admiration for the company without a concrete role, customer, product, or business mechanism.",
+      "risk_reason": "Public lens usage should stay grounded in cited source signals and role-relevant evidence.",
+      "confidence": 0.66,
+      "evidence_ids": [
+        "TESLA-OFFICIAL-001",
+        "TESLA-CAREERS-002",
+        "TESLA-IR-003"
+      ]
+    }
+  ],
+  "interview_patterns": [
+    {
+      "pattern": "Use cited public source signals to test role-relevant judgment, ownership, communication, and impact.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.62
+    }
+  ],
+  "evidence_summary": {
+    "source_count": 3,
+    "official_source_count": 3,
+    "interview_source_count": 0,
+    "employee_voice_source_count": 0,
+    "last_reviewed": "2026-09-14"
+  },
+  "honest_limits": [
+    "This is a lightweight public-source lens and does not represent an official Tesla hiring standard.",
+    "It contains source metadata and non-verbatim public-safe signals only.",
+    "Role, team, seniority, location, and hiring manager can materially change interview emphasis.",
+    "This lens requires deeper multi-source validation before being promoted to FULLY_DISTILLED."
+  ]
+}

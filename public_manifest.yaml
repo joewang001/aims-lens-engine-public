@@ -92,6 +92,12 @@ initial_public_release:
     - slug: walmart
       path: company_lenses/walmart/
       status: existing_candidate
+    - slug: pfizer
+      path: company_lenses/pfizer/
+      status: existing_candidate
+    - slug: tesla
+      path: company_lenses/tesla/
+      status: existing_candidate
 
 allow_paths:
   root_files:
@@ -355,6 +361,24 @@ allow_paths:
     - company_lenses/walmart/limits.md
     - company_lenses/walmart/validation_report.md
     - company_lenses/walmart/role_overlays/
+    - company_lenses/pfizer/README.md
+    - company_lenses/pfizer/profile.json
+    - company_lenses/pfizer/evidence.md
+    - company_lenses/pfizer/rubric.md
+    - company_lenses/pfizer/question_bank.json
+    - company_lenses/pfizer/rewrite_rules.md
+    - company_lenses/pfizer/limits.md
+    - company_lenses/pfizer/validation_report.md
+    - company_lenses/pfizer/role_overlays/
+    - company_lenses/tesla/README.md
+    - company_lenses/tesla/profile.json
+    - company_lenses/tesla/evidence.md
+    - company_lenses/tesla/rubric.md
+    - company_lenses/tesla/question_bank.json
+    - company_lenses/tesla/rewrite_rules.md
+    - company_lenses/tesla/limits.md
+    - company_lenses/tesla/validation_report.md
+    - company_lenses/tesla/role_overlays/
 
   public_tools:
     - tools/export_public_release.py

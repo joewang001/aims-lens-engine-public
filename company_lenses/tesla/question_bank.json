@@ -1,0 +1,35 @@
+{
+  "company": "Tesla",
+  "lens_id": "tesla_public_v0_1",
+  "version": "0.1.0-public-release-candidate",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "questions": [
+    {
+      "question_id": "TESLA-Q-001",
+      "type": "execution_behavioral",
+      "generated_question": "Tell me about a time you moved quickly on a difficult technical or operating problem without losing control of quality or risk.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Defines the time pressure and technical or operating constraint.",
+        "Explains the quality or risk control used while moving fast.",
+        "Shows direct ownership and iteration.",
+        "Measures the result and what changed afterward."
+      ],
+      "evidence_ids": [
+        "TESLA-OFFICIAL-001",
+        "TESLA-CAREERS-002",
+        "TESLA-IR-003"
+      ]
+    }
+  ]
+}
