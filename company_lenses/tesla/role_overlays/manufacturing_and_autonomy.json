@@ -1,0 +1,21 @@
+{
+  "company": "Tesla",
+  "role_family": "Manufacturing, software, and autonomy roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Connects speed of execution to measurable product, manufacturing, energy, or software outcomes.",
+    "Shows judgment around quality, reliability, safety, and system-level tradeoffs."
+  ],
+  "evidence_ids": [
+    "TESLA-OFFICIAL-001",
+    "TESLA-CAREERS-002",
+    "TESLA-IR-003"
+  ]
+}
