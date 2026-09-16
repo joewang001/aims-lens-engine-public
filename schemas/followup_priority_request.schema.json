@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aimslens.example/schemas/followup_priority_request.schema.json",
+  "title": "AIMS Lens Paper Follow-up Priority Request",
+  "type": "object",
+  "required": [
+    "categories",
+    "parent_distribution",
+    "evidence",
+    "permitted_categories",
+    "kappa_company",
+    "temporal_decay_rate_per_day",
+    "routing_levels"
+  ],
+  "properties": {
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "parent_distribution": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 0
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "category",
+          "authorized",
+          "quality",
+          "age_days"
+        ],
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "authorized": {
+            "type": "boolean"
+          },
+          "quality": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "age_days": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "permitted_categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "routing_gamma": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 1,
+      "default": 0.7
+    },
+    "support_tau": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "default": 8.0
+    },
+    "routing_levels": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "backoff_distance",
+          "authorized",
+          "applicable",
+          "coverage",
+          "distribution"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "backoff_distance": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "authorized": {
+            "type": "boolean"
+          },
+          "applicable": {
+            "type": "boolean"
+          },
+          "coverage": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "distribution": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "kappa_company": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "temporal_decay_rate_per_day": {
+      "type": "number",
+      "minimum": 0
+    },
+    "abstention_threshold": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0.3
+    }
+  },
+  "additionalProperties": false
+}

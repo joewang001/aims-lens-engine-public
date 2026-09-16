@@ -1,245 +1,140 @@
 openapi: 3.1.0
 info:
-  title: AIMS Lens Engine API
-  version: 0.7.0
-  description: Draft API for company lens evaluation, rewriting, question generation, and candidate screening.
+  title: AIMS Lens Engine Research-Core API
+  version: 0.9.0-paper-readiness
+  description: >-
+    Candidate-side, institution-agnostic research API for Lens validation, routing,
+    interview-practice follow-up prioritization, and explanation provenance. This
+    paper API intentionally excludes employer-side candidate ranking, screening,
+    rejection, and hiring-decision endpoints.
 servers:
-  - url: https://api.aimslens.example.com
   - url: http://127.0.0.1:8092
 paths:
   /health:
     get:
-      summary: Internal pilot health and approval status.
+      summary: Return research-core health and artifact version.
       responses:
         "200":
-          description: Health status, production gate status, and scorer status.
-  /v1/route:
+          description: Health status.
+  /v1/lenses/validate:
     post:
-      summary: Route a request to a company lens and role overlay.
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/ScreeningRequest"
-      responses:
-        "200":
-          description: Routing result.
-  /v1/evaluate-answer:
-    post:
-      summary: Evaluate an interview answer through AIMS and an optional company lens.
+      summary: Validate a versioned Lens against the public research schema and governance boundary.
       requestBody:
         required: true
         content:
           application/json:
             schema:
               type: object
-              required: [answer, question]
+              required: [lens]
               properties:
-                tenant_id:
-                  type: string
-                company:
-                  type: string
-                role:
-                  type: string
-                job_description:
-                  type: string
-                question:
-                  type: string
-                answer:
-                  type: string
-                lens_id:
-                  type: string
+                lens:
+                  type: object
+                  additionalProperties: true
       responses:
         "200":
-          description: Evaluation result.
+          description: Validation result and any boundary violations.
+  /v1/route:
+    post:
+      summary: Select the highest-specificity authorized Lens or declared fallback for interview practice.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RouteRequest"
+      responses:
+        "200":
+          description: Routing provenance and selected practice context.
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/EvaluationResponse"
-  /v1/rewrite-answer:
+                $ref: "#/components/schemas/RouteResponse"
+  /v1/practice/followup-priority:
     post:
-      summary: Rewrite an answer for a target company lens.
-      responses:
-        "200":
-          description: Rewrite result.
-  /v1/generate-questions:
-    post:
-      summary: Generate interview questions for a target role and company lens.
-      responses:
-        "200":
-          description: Generated questions.
-  /v1/screen-candidate:
-    post:
-      summary: Produce a screening report for first-round or second-round evaluation.
+      summary: Return an ordered interview-practice follow-up priority under evidence and compatibility constraints.
+      description: >-
+        The output is a practice decision, not a prediction of a specific employer's
+        interview process or hiring decision. Numerical internal distributions are
+        diagnostic research outputs and must not be presented as employer-outcome probabilities.
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/ScreeningRequest"
+              $ref: "../schemas/followup_priority_request.schema.json"
       responses:
         "200":
-          description: Screening report.
-  /v1/screening-report:
+          description: Ordered practice priority with uncertainty and routing provenance.
+          content:
+            application/json:
+              schema:
+                $ref: "../schemas/followup_priority_response.schema.json"
+  /v1/practice/explanation:
     post:
-      summary: Internal limited-pilot screening report endpoint.
+      summary: Generate a provenance-aware explanation for a previously computed practice priority.
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/ScreeningRequest"
+              type: object
+              required: [top_category, routing_provenance, evidence_maturity]
+              properties:
+                top_category:
+                  type: string
+                routing_provenance:
+                  type: array
+                  items:
+                    type: object
+                evidence_maturity:
+                  type: string
+                lens_type:
+                  type: string
       responses:
         "200":
-          description: Screening report with route metadata, review queue item, and scorer metadata.
-  /v1/review-queue:
-    get:
-      summary: List pending and completed human review items.
-      responses:
-        "200":
-          description: Human review queue.
-  /v1/review-decision:
-    post:
-      summary: Record a human reviewer decision for a screening report.
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/ReviewDecisionRequest"
-      responses:
-        "200":
-          description: Human review decision.
-  /v1/review-decisions:
-    get:
-      summary: List recorded human review decisions.
-      responses:
-        "200":
-          description: Human review decision records.
-  /v1/lenses/derive:
-    post:
-      summary: Create a derived lens from target company context, JD, and similar lenses.
-      responses:
-        "200":
-          description: Derived lens.
-  /v1/lenses/{lens_id}:
-    get:
-      summary: Fetch a lens by id.
-      parameters:
-        - name: lens_id
-          in: path
-          required: true
-          schema:
-            type: string
-      responses:
-        "200":
-          description: Lens metadata.
+          description: Plain-language explanation with an explicit practice-only disclaimer.
 components:
   schemas:
-    ScreeningRequest:
+    RouteRequest:
       type: object
-      required:
-        - company
-        - role
-        - answer
+      required: [role_context, use_case]
       properties:
-        tenant_id:
+        tenant:
           type: string
-        candidate_id:
+          description: Optional institutional namespace; not JobACE-specific.
+        role_context:
+          type: object
+          additionalProperties: true
+        requested_lens_id:
           type: string
-        report_id:
-          type: string
-        company:
-          type: string
-        role:
-          type: string
-        job_description:
-          type: string
-        question:
-          type: string
-        answer:
-          type: string
-        lens_id:
-          type: string
-    ReviewDecisionRequest:
-      type: object
-      required:
-        - report_id
-        - tenant_id
-        - candidate_id
-        - reviewer_id
-        - decision
-      properties:
-        report_id:
-          type: string
-        tenant_id:
-          type: string
-        candidate_id:
-          type: string
-        reviewer_id:
-          type: string
-        decision:
+        use_case:
           type: string
           enum:
-            - advance_after_human_review
-            - hold_after_human_review
-            - reject_after_human_review
-            - needs_more_interview
-            - needs_more_evidence
-        decision_reason:
-          type: string
-        source_recommendation:
-          type: string
-        source_confidence:
-          type: number
-          minimum: 0
-          maximum: 1
-        follow_up_required:
-          type: boolean
-        follow_up_notes:
-          type: string
-    EvaluationResponse:
+            - interview_practice
+            - practice_answer_review
+            - practice_followup_selection
+            - research_simulation
+    RouteResponse:
       type: object
-      required:
-        - lens_status
-        - confidence
-        - aims_scores
-        - assessment
-        - evidence_notice
+      required: [selected_lens_type, routing_level, evidence_maturity, explanation]
       properties:
-        lens_status:
+        selected_lens_id:
           type: string
-          enum: [FULLY_DISTILLED, DERIVED_LENS, LIGHTWEIGHT_SCAN, GENERIC_AIMS]
-        confidence:
-          type: number
+        selected_lens_type:
+          type: string
+          enum: [company, industry, derived, archetype, general_practice]
+        routing_level:
+          type: string
+          enum: [L0, L1, L2, L3, L4, L5]
+        backoff_distance:
+          type: integer
           minimum: 0
-          maximum: 1
-        aims_scores:
-          type: object
-          properties:
-            structured_thinking:
-              type: number
-            analytical_problem_solving:
-              type: number
-            ownership_execution:
-              type: number
-            impact_results:
-              type: number
-            collaboration_communication:
-              type: number
-            growth_mindset:
-              type: number
-        assessment:
+          maximum: 5
+        evidence_maturity:
           type: string
-        company_lens_adjustment:
+          enum: [exploratory, reviewed_practice, evaluation_ready, empirically_supported]
+        explanation:
           type: string
-        recommended_follow_ups:
-          type: array
-          items:
-            type: string
-        screening_recommendation:
+        disclaimer:
           type: string
-          enum: [advance, hold, reject, human_review_required]
-        evidence_notice:
-          type: string
+          default: "Routing selects a practice context and does not predict a specific employer's behavior."

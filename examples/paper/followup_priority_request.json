@@ -1,0 +1,103 @@
+{
+  "categories": [
+    "ownership",
+    "evidence",
+    "tradeoff",
+    "collaboration",
+    "reflection"
+  ],
+  "parent_distribution": {
+    "ownership": 0.22,
+    "evidence": 0.3,
+    "tradeoff": 0.2,
+    "collaboration": 0.16,
+    "reflection": 0.12
+  },
+  "evidence": [
+    {
+      "category": "ownership",
+      "authorized": true,
+      "quality": 0.9,
+      "age_days": 10
+    },
+    {
+      "category": "evidence",
+      "authorized": true,
+      "quality": 1.0,
+      "age_days": 4
+    },
+    {
+      "category": "evidence",
+      "authorized": true,
+      "quality": 0.8,
+      "age_days": 40
+    },
+    {
+      "category": "tradeoff",
+      "authorized": false,
+      "quality": 1.0,
+      "age_days": 0
+    },
+    {
+      "category": "reflection",
+      "authorized": true,
+      "quality": 0.55,
+      "age_days": 70
+    }
+  ],
+  "permitted_categories": [
+    "ownership",
+    "evidence",
+    "tradeoff",
+    "reflection"
+  ],
+  "routing_gamma": 0.7,
+  "support_tau": 8.0,
+  "routing_levels": [
+    {
+      "name": "L0_full_context",
+      "backoff_distance": 0,
+      "authorized": true,
+      "applicable": true,
+      "coverage": 0.78,
+      "distribution": {
+        "ownership": 0.25,
+        "evidence": 0.35,
+        "tradeoff": 0.2,
+        "collaboration": 0.1,
+        "reflection": 0.1
+      }
+    },
+    {
+      "name": "L3_industry_context",
+      "backoff_distance": 3,
+      "authorized": true,
+      "applicable": true,
+      "coverage": 0.92,
+      "distribution": {
+        "ownership": 0.24,
+        "evidence": 0.28,
+        "tradeoff": 0.21,
+        "collaboration": 0.15,
+        "reflection": 0.12
+      }
+    },
+    {
+      "name": "L5_generic_context",
+      "backoff_distance": 5,
+      "authorized": true,
+      "applicable": true,
+      "coverage": 1.0,
+      "distribution": {
+        "ownership": 0.2,
+        "evidence": 0.25,
+        "tradeoff": 0.2,
+        "collaboration": 0.2,
+        "reflection": 0.15
+      }
+    }
+  ],
+  "kappa_company": 6.0,
+  "temporal_decay_rate_per_day": 0.0006570841889117044,
+  "abstention_threshold": 0.3
+}

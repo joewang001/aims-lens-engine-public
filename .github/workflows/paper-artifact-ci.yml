@@ -1,0 +1,37 @@
+name: Paper Artifact CI
+
+on:
+  push:
+    branches:
+      - paper-release-readiness-v1.1
+  pull_request:
+    paths:
+      - "research_core/**"
+      - "schemas/**"
+      - "config/**"
+      - "docs/PAPER_TO_CODE_MAP.md"
+      - "docs/MATH_TO_CODE_COMPLETENESS_AUDIT.md"
+      - "examples/paper/**"
+      - "tools/run_paper_artifact_demo.py"
+      - "tools/validate_paper_artifact.py"
+      - "RESEARCH_BOUNDARY.md"
+      - "REPRODUCIBILITY.md"
+      - "paper_artifact_manifest.yaml"
+      - "api/openapi.yaml"
+      - "architecture/**"
+      - "governance/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate paper artifact
+        run: python tools/validate_paper_artifact.py
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Run deterministic demo
+        run: python tools/run_paper_artifact_demo.py

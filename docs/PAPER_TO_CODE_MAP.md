@@ -1,0 +1,31 @@
+# Paper-to-Code Map
+
+This map is the reviewer-oriented index for manuscript v1.1. It links paper claims to the smallest public artifact that makes the claim inspectable.
+
+| Paper location | Claim / object | Primary repo path |
+|---|---|---|
+| §3.2 | Structured Interview DNA | `schemas/interview_dna.schema.json`, `examples/paper/interview_dna.example.json` |
+| §3.3 | Evidence packet / authorization boundary | `research_core/evidence.py`, `schemas/evidence_packet.schema.json` |
+| §4.1 | Highest-specificity eligible Lens routing | `research_core/routing.py::select_highest_specificity` |
+| §4.2 | Follow-up category selection before wording | `research_core/service.py` |
+| §4.3 | Candidate-state isolation | `research_core/candidate_state.py` |
+| §5.1 | Declared DAG / parent caps | `research_core/dag.py` |
+| §5.2 Eq. 1 | DAG factorization | `research_core/dag.py::joint_factorization` |
+| §5.2 Eq. 2 | Stopping logistic model | `research_core/stopping.py` |
+| §5.2 Eq. 3 | Compatibility mask | `research_core/compatibility.py` |
+| §5.3 Eq. 4 | Hierarchical pooling | `research_core/inference.py::hierarchical_partial_pooling` |
+| §5.3 Eq. 5 | Weighted sufficient statistics | `research_core/evidence.py::weighted_counts` |
+| §5.3 Eq. 6–7 | Dirichlet posterior / mean | `research_core/inference.py` |
+| §5.4 Eq. 8–9 | Six-level mixture / provenance | `research_core/routing.py` |
+| §5.5 Eq. 10–11 | Entropy / evidential support | `research_core/uncertainty.py` |
+| §5.5 Eq. 12–13 | Brier / ECE | `research_core/evaluation.py` |
+| §5.5 Eq. 14 | KL drift | `research_core/evaluation.py::kl_divergence` |
+| §5.5 Eq. 15 | Annotation information gain | `research_core/active_learning.py` |
+| §7.2 | De-identification protocol | `research_core/privacy.py` |
+| §8.2 | Minimized context boundary | `research_core/privacy.py::MinimizedContextPackage`, schema |
+| §9.4 | Plain-language explanation | `research_core/explanation.py` |
+| §9.5 | Auditable reconstruction | `research_core/audit.py` |
+| Appendix B | Initial research parameters | `config/paper_defaults.json` |
+| Appendix C | Reference pipeline | `research_core/`, `tools/run_paper_artifact_demo.py` |
+
+Run `python tools/validate_paper_artifact.py` and `python -m unittest discover -s tests -v` before freezing a paper release.
