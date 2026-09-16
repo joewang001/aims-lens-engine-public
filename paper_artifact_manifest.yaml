@@ -3,6 +3,7 @@ version: 1
 paper_version: v1.1
 artifact_version: 0.9.1-paper-math-complete
 base_commit: cf2586e5649feb05fd19faefa479e765055c76d4
+frozen_artifact_ref: pending_until_release_freeze
 repository: joewang001/aims-lens-engine-public
 policy:
   default_action: exclude
