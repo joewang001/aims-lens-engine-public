@@ -23,6 +23,16 @@ from research_core.uncertainty import data_support, normalized_entropy
 BASELINE_PATH = ROOT / "examples/paper/followup_priority_request.json"
 OUT_DIR = ROOT / "examples/paper/experiments/exp1a/results"
 ABSTENTION_THRESHOLD = 0.3
+TRACE_REPORT_DECIMALS = 12
+
+def qtrace(obj):
+    if isinstance(obj, dict):
+        return {k: qtrace(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [qtrace(v) for v in obj]
+    if isinstance(obj, float):
+        return round(float(obj), TRACE_REPORT_DECIMALS)
+    return obj
 
 def canonical_hash(obj) -> str:
     return hashlib.sha256(
@@ -278,7 +288,7 @@ def main() -> int:
         json.dumps(output, sort_keys=True, indent=2) + "\n", encoding="utf-8"
     )
     baseline_trace.write_text(
-        json.dumps(b, sort_keys=True, indent=2) + "\n", encoding="utf-8"
+        json.dumps(qtrace(b), sort_keys=True, indent=2) + "\n", encoding="utf-8"
     )
 
     with results_csv.open("w", encoding="utf-8", newline="") as fh:

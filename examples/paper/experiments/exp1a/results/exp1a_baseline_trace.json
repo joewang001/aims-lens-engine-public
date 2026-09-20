@@ -23,13 +23,13 @@
     }
   ],
   "compatibility_masked_posterior": {
-    "evidence": 0.43426674948400557,
-    "ownership": 0.2688325360530166,
-    "reflection": 0.1511989742033392,
-    "tradeoff": 0.14570174025963858
+    "evidence": 0.434266749484,
+    "ownership": 0.268832536053,
+    "reflection": 0.151198974203,
+    "tradeoff": 0.14570174026
   },
-  "data_support": 0.3293449789610178,
-  "effective_evidence_mass": 3.1960032066989443,
+  "data_support": 0.329344978961,
+  "effective_evidence_mass": 3.196003206699,
   "final_result": {
     "data_support": 0.329345,
     "diagnostic_distribution": {
@@ -77,11 +77,11 @@
     "uncertainty_entropy": 0.952409
   },
   "local_posterior": {
-    "collaboration": 0.10439317803855003,
-    "evidence": 0.38893226338889936,
-    "ownership": 0.2407682532542791,
-    "reflection": 0.13541483277008387,
-    "tradeoff": 0.13049147254818755
+    "collaboration": 0.104393178039,
+    "evidence": 0.388932263389,
+    "ownership": 0.240768253254,
+    "reflection": 0.13541483277,
+    "tradeoff": 0.130491472548
   },
   "parent_distribution_normalized": {
     "collaboration": 0.16,
@@ -97,10 +97,10 @@
     "reflection"
   ],
   "routed_distribution": {
-    "evidence": 0.39188616609934285,
-    "ownership": 0.2697040844543102,
-    "reflection": 0.1535243480587103,
-    "tradeoff": 0.1848854013876366
+    "evidence": 0.391886166099,
+    "ownership": 0.269704084454,
+    "reflection": 0.153524348059,
+    "tradeoff": 0.184885401388
   },
   "routing_provenance": [
     {
@@ -128,12 +128,12 @@
       "routing_weight": 0.133006
     }
   ],
-  "uncertainty_entropy": 0.9524093452575465,
+  "uncertainty_entropy": 0.952409345258,
   "weighted_counts": {
     "collaboration": 0.0,
-    "evidence": 1.7766223413129976,
-    "ownership": 0.8941056289976543,
-    "reflection": 0.5252752363882927,
+    "evidence": 1.776622341313,
+    "ownership": 0.894105628998,
+    "reflection": 0.525275236388,
     "tradeoff": 0.0
   }
 }

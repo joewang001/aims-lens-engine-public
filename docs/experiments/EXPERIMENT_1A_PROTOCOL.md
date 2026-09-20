@@ -1,5 +1,19 @@
 # Experiment 1A — Core Synthetic End-to-End Verification
 
+**Protocol version:** v0.1.1 reproducibility amendment
+
+
+## Reproducibility amendment v0.1.1
+
+A later repository-wide regeneration gate exposed cross-Python-version differences only in the
+unrounded floating-point values stored in `exp1a_baseline_trace.json`. The Experiment 1A
+pass/fail result file, all seven invariant outcomes, and the research-core behavior were stable.
+
+Before freezing the combined experiment artifact, v0.1.1 canonicalizes floating-point values in
+the explanatory baseline trace to 12 decimal places. This is a serialization-only change. The
+input fixtures, invariant definitions, authorization test, abstention thresholds, routing logic,
+and final result assertions are unchanged.
+
 ## Purpose
 
 Experiment 1A verifies that the candidate-side paper core obeys its declared algorithmic
