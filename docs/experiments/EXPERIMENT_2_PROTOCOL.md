@@ -1,5 +1,7 @@
 # Experiment 2 — Parameter Sensitivity and Controlled Ablations
 
+**Protocol version:** v0.1.1 reproducibility amendment
+
 ## Purpose
 
 Experiment 2 evaluates how declared research parameters affect the reference implementation and
@@ -23,6 +25,20 @@ The three parameters do not occupy the same implementation layer.
 
 A forced full factorial would conflate distinct hierarchy levels. The study therefore uses
 pre-registered one-factor perturbations while holding the other inputs fixed.
+
+
+## Reproducibility amendment v0.1.1
+
+The first remote regeneration used Python 3.11 while the local result-bearing run used Python
+3.14. All substantive Experiment 2 assertions passed remotely, but byte-for-byte verification
+failed because floating-point tails differed at approximately 1e-16. One paired comparison was
+a numerical near-tie and changed the descriptive paired-win count by one replicate.
+
+Before freezing Experiment 2, v0.1.1 fixes the reporting contract: reported and compared
+floating metrics are canonicalized to 12 decimal places, aggregate sums use `math.fsum`, and
+paired full-vs-ablated comparisons use a declared 1e-12 tolerance. Seeds, synthetic truths,
+sample sizes, replicate counts, parameter grids, research-core algorithms, and directional
+pass/fail criteria are unchanged.
 
 # Part A — Sensitivity
 

@@ -7,7 +7,6 @@ import hashlib
 import json
 import math
 import random
-import statistics
 import sys
 from pathlib import Path
 
@@ -30,6 +29,20 @@ BASELINE_PATH = ROOT / "examples/paper/followup_priority_request.json"
 OUT_DIR = ROOT / "examples/paper/experiments/exp2/results"
 MASTER_SEED = 1729
 REPLICATES = 200
+REPORT_DECIMALS = 12
+COMPARISON_TOLERANCE = 1e-12
+
+def q(value):
+    return round(float(value), REPORT_DECIMALS)
+
+def qdict(obj):
+    if isinstance(obj, dict):
+        return {k: qdict(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [qdict(v) for v in obj]
+    if isinstance(obj, float):
+        return q(obj)
+    return obj
 
 def canonical_hash(obj) -> str:
     return hashlib.sha256(
@@ -38,7 +51,9 @@ def canonical_hash(obj) -> str:
 
 def tv(a: dict, b: dict) -> float:
     keys = sorted(set(a) | set(b))
-    return 0.5 * sum(abs(float(a.get(k, 0.0)) - float(b.get(k, 0.0))) for k in keys)
+    return q(0.5 * math.fsum(
+        abs(float(a.get(k, 0.0)) - float(b.get(k, 0.0))) for k in keys
+    ))
 
 def top_key(d: dict) -> str:
     return sorted(d.items(), key=lambda kv: (-kv[1], kv[0]))[0][0]
@@ -81,11 +96,19 @@ def sample_multinomial(rng: random.Random, distribution: dict, n: int) -> dict:
                 break
     return counts
 
-def population_variance(xs):
-    return statistics.pvariance(xs) if len(xs) > 1 else 0.0
-
 def mean(xs):
-    return statistics.mean(xs)
+    vals = [q(x) for x in xs]
+    return q(math.fsum(vals) / len(vals)) if vals else 0.0
+
+def population_variance(xs):
+    vals = [q(x) for x in xs]
+    if len(vals) <= 1:
+        return 0.0
+    mu = math.fsum(vals) / len(vals)
+    return q(math.fsum((x - mu) ** 2 for x in vals) / len(vals))
+
+def full_better(a, b):
+    return q(a) < q(b) - COMPARISON_TOLERANCE
 
 def sensitivity_gamma(failures, rows):
     baseline = json.loads(BASELINE_PATH.read_text(encoding="utf-8"))
@@ -304,9 +327,9 @@ def hierarchy_ablation(failures, replicate_rows, summary_rows):
             )
             local_only = normalize(company_counts, cats)
 
-            e_full = tv(full, company_truth)
-            e_no_ind = tv(no_industry, company_truth)
-            e_local = tv(local_only, company_truth)
+            e_full = q(tv(full, company_truth))
+            e_no_ind = q(tv(no_industry, company_truth))
+            e_local = q(tv(local_only, company_truth))
 
             a2_full.append(e_full)
             a2_ablated.append(e_no_ind)
@@ -324,7 +347,7 @@ def hierarchy_ablation(failures, replicate_rows, summary_rows):
                 "seed": seed,
                 "full_tv_error": e_full,
                 "ablated_tv_error": e_no_ind,
-                "full_better": e_full < e_no_ind,
+                "full_better": full_better(e_full, e_no_ind),
             })
             replicate_rows.append({
                 "ablation": "A4_remove_hierarchical_pooling",
@@ -333,7 +356,7 @@ def hierarchy_ablation(failures, replicate_rows, summary_rows):
                 "seed": seed,
                 "full_tv_error": e_full,
                 "ablated_tv_error": e_local,
-                "full_better": e_full < e_local,
+                "full_better": full_better(e_full, e_local),
             })
 
         for ablation, fulls, ablateds, ftops, atops in [
@@ -349,7 +372,7 @@ def hierarchy_ablation(failures, replicate_rows, summary_rows):
                 "full_tv_variance": population_variance(fulls),
                 "ablated_tv_variance": population_variance(ablateds),
                 "paired_full_win_rate": mean(
-                    [a < b for a, b in zip(fulls, ablateds)]
+                    [full_better(a, b) for a, b in zip(fulls, ablateds)]
                 ),
                 "full_top1_accuracy": mean(ftops),
                 "ablated_top1_accuracy": mean(atops),
@@ -456,8 +479,8 @@ def temporal_ablation(failures, replicate_rows, summary_rows):
         full = hierarchical_dirichlet_mean(parent, full_counts, cats, 10.0)
         ablated = hierarchical_dirichlet_mean(parent, ablated_counts, cats, 10.0)
 
-        e_full = tv(full, current_truth)
-        e_ablated = tv(ablated, current_truth)
+        e_full = q(tv(full, current_truth))
+        e_ablated = q(tv(ablated, current_truth))
         full_errors.append(e_full)
         ablated_errors.append(e_ablated)
 
@@ -468,7 +491,7 @@ def temporal_ablation(failures, replicate_rows, summary_rows):
             "seed": seed,
             "full_tv_error": e_full,
             "ablated_tv_error": e_ablated,
-            "full_better": e_full < e_ablated,
+            "full_better": full_better(e_full, e_ablated),
         })
 
     row = {
@@ -480,7 +503,7 @@ def temporal_ablation(failures, replicate_rows, summary_rows):
         "full_tv_variance": population_variance(full_errors),
         "ablated_tv_variance": population_variance(ablated_errors),
         "paired_full_win_rate": mean(
-            [a < b for a, b in zip(full_errors, ablated_errors)]
+            [full_better(a, b) for a, b in zip(full_errors, ablated_errors)]
         ),
     }
     summary_rows.append(row)
@@ -536,7 +559,7 @@ def main() -> int:
     temporal_truth = temporal_ablation(failures, replicate_rows, summary_rows)
 
     result = {
-        "protocol_version": "0.1-pre-registered",
+        "protocol_version": "0.1.1-reproducibility-amendment",
         "experiment_base_commit": "ce3346642bc03a939115f506abada9443303438c",
         "master_seed": MASTER_SEED,
         "replicates": REPLICATES,
@@ -556,9 +579,20 @@ def main() -> int:
             "A5_evidence_lineage_human_explainability":
                 "Requires external labels or human evaluation.",
         },
+        "numeric_canonicalization": {
+            "reported_decimal_places": REPORT_DECIMALS,
+            "paired_comparison_tolerance": COMPARISON_TOLERANCE,
+            "stable_aggregation": "math.fsum",
+            "reason": "Cross-Python float-tail reproducibility; directional criteria unchanged."
+        },
         "failures": failures,
         "passed": not failures,
     }
+
+    result = qdict(result)
+    sensitivity_rows = qdict(sensitivity_rows)
+    summary_rows = qdict(summary_rows)
+    replicate_rows = qdict(replicate_rows)
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     json_path = OUT_DIR / "exp2_results.json"
