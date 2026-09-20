@@ -16,9 +16,9 @@ def prioritize_followups(request: PracticeRequest) -> Dict[str,Any]:
     if not local_masked:
         return {"mode":"abstain","reason":"all_categories_masked","disclaimer":"This system abstained rather than release an invalid practice priority."}
     routed_levels=list(request.routing_levels)
-    if routed_levels:
-        first=routed_levels[0]
-        routed_levels[0]=type(first)(first.name,first.backoff_distance,first.authorized,first.applicable,first.coverage,local_masked)
+    l0_index=next(i for i,level in enumerate(routed_levels) if level.backoff_distance==0)
+    l0=routed_levels[l0_index]
+    routed_levels[l0_index]=type(l0)(l0.name,l0.backoff_distance,l0.authorized,l0.applicable,l0.coverage,local_masked)
     routed,provenance=route_mixture(routed_levels,request.permitted_categories,request.routing_gamma)
     if not routed:
         return {"mode":"abstain","reason":"no_eligible_routing_level","disclaimer":"This system abstained because no authorized applicable routing level was available."}

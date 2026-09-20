@@ -89,6 +89,7 @@ class PracticeRequest:
             raise ValueError("routing_levels must not be empty")
 
         seen_levels = set()
+        l0_count = 0
         for record in self.evidence:
             record.validate()
             if record.category not in self.categories:
@@ -96,8 +97,13 @@ class PracticeRequest:
 
         for level in self.routing_levels:
             level.validate()
+            if level.backoff_distance == 0:
+                l0_count += 1
             if level.name in seen_levels:
                 raise ValueError("routing level names must be unique")
             seen_levels.add(level.name)
             if set(level.distribution) - set(self.categories):
                 raise ValueError("routing distribution contains an unknown category")
+
+        if l0_count != 1:
+            raise ValueError("routing_levels must contain exactly one L0 level")

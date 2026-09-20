@@ -116,6 +116,50 @@ class ResearchCoreTests(unittest.TestCase):
         self.assertEqual(out["mode"], "abstain")
         self.assertEqual(out["reason"], "insufficient_data_support")
 
+    def test_local_posterior_targets_l0_not_list_position(self):
+        request = self._request()
+        baseline = prioritize_followups(request)
+        reordered = replace(
+            request,
+            routing_levels=[request.routing_levels[1], request.routing_levels[0], request.routing_levels[2]],
+        )
+        out = prioritize_followups(reordered)
+        self.assertEqual(out["diagnostic_distribution"], baseline["diagnostic_distribution"])
+        self.assertEqual(out["top_category"], baseline["top_category"])
+
+    def test_request_requires_exactly_one_l0_level(self):
+        request = self._request()
+        without_l0 = replace(
+            request,
+            routing_levels=[level for level in request.routing_levels if level.backoff_distance != 0],
+        )
+        with self.assertRaisesRegex(ValueError, "exactly one L0"):
+            without_l0.validate()
+
+        l0 = next(level for level in request.routing_levels if level.backoff_distance == 0)
+        duplicate_l0 = RoutingLevel(
+            "L0_alternate_context",
+            0,
+            l0.authorized,
+            l0.applicable,
+            l0.coverage,
+            l0.distribution,
+        )
+        with_two_l0 = replace(request, routing_levels=request.routing_levels + [duplicate_l0])
+        with self.assertRaisesRegex(ValueError, "exactly one L0"):
+            with_two_l0.validate()
+
+    def test_request_schema_matches_runtime_routing_contract(self):
+        schema = json.loads((ROOT / "schemas/followup_priority_request.schema.json").read_text())
+        routing = schema["properties"]["routing_levels"]
+        item = routing["items"]
+        self.assertEqual(routing["minContains"], 1)
+        self.assertEqual(routing["maxContains"], 1)
+        self.assertEqual(routing["contains"]["properties"]["backoff_distance"]["const"], 0)
+        self.assertEqual(item["properties"]["backoff_distance"]["maximum"], 5)
+        self.assertEqual(item["properties"]["name"]["pattern"], "^L[0-5](?:_|$)")
+        self.assertEqual(len(item["allOf"]), 6)
+
     def test_eq10_11_uncertainty_and_support(self):
         self.assertAlmostEqual(normalized_entropy({"a": 0.5, "b": 0.5}, 2), 1.0)
         self.assertAlmostEqual(data_support(8.0, 8.0), 1 - math.exp(-1))

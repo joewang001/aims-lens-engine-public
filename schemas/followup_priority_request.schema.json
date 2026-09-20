@@ -91,11 +91,13 @@
         ],
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^L[0-5](?:_|$)"
           },
           "backoff_distance": {
             "type": "integer",
-            "minimum": 0
+            "minimum": 0,
+            "maximum": 5
           },
           "authorized": {
             "type": "boolean"
@@ -116,8 +118,142 @@
             }
           }
         },
-        "additionalProperties": false
-      }
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "name": {
+                  "pattern": "^L0(?:_|$)"
+                }
+              },
+              "required": [
+                "name"
+              ]
+            },
+            "then": {
+              "properties": {
+                "backoff_distance": {
+                  "const": 0
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "name": {
+                  "pattern": "^L1(?:_|$)"
+                }
+              },
+              "required": [
+                "name"
+              ]
+            },
+            "then": {
+              "properties": {
+                "backoff_distance": {
+                  "const": 1
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "name": {
+                  "pattern": "^L2(?:_|$)"
+                }
+              },
+              "required": [
+                "name"
+              ]
+            },
+            "then": {
+              "properties": {
+                "backoff_distance": {
+                  "const": 2
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "name": {
+                  "pattern": "^L3(?:_|$)"
+                }
+              },
+              "required": [
+                "name"
+              ]
+            },
+            "then": {
+              "properties": {
+                "backoff_distance": {
+                  "const": 3
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "name": {
+                  "pattern": "^L4(?:_|$)"
+                }
+              },
+              "required": [
+                "name"
+              ]
+            },
+            "then": {
+              "properties": {
+                "backoff_distance": {
+                  "const": 4
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "name": {
+                  "pattern": "^L5(?:_|$)"
+                }
+              },
+              "required": [
+                "name"
+              ]
+            },
+            "then": {
+              "properties": {
+                "backoff_distance": {
+                  "const": 5
+                }
+              }
+            }
+          }
+        ]
+      },
+      "contains": {
+        "type": "object",
+        "required": [
+          "name",
+          "backoff_distance"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^L0(?:_|$)"
+          },
+          "backoff_distance": {
+            "const": 0
+          }
+        }
+      },
+      "minContains": 1,
+      "maxContains": 1
     },
     "kappa_company": {
       "type": "number",
