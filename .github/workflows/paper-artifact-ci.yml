@@ -12,6 +12,7 @@ on:
       - "tests/**"
       - "examples/paper/**"
       - "tools/run_paper_artifact_demo.py"
+      - "tools/run_exp1a_core_verification.py"
       - "tools/run_exp1b_lens_differentiation.py"
       - "tools/validate_paper_artifact.py"
       - "docs/PAPER_TO_CODE_MAP.md"
@@ -43,5 +44,7 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Run deterministic demo
         run: python tools/run_paper_artifact_demo.py
+      - name: Run Experiment 1A core verification
+        run: python tools/run_exp1a_core_verification.py
       - name: Run Experiment 1B structural verification
         run: python tools/run_exp1b_lens_differentiation.py

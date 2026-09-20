@@ -32,6 +32,7 @@ include_paths:
   - governance/privacy-and-fairness.md
   - research_core/
   - docs/MATH_TO_CODE_COMPLETENESS_AUDIT.md
+  - docs/experiments/EXPERIMENT_1A_PROTOCOL.md
   - docs/experiments/EXPERIMENT_1B_PROTOCOL.md
   - docs/PAPER_TO_CODE_MAP.md
   - config/paper_defaults.json
@@ -42,6 +43,7 @@ include_paths:
   - schemas/followup_priority_response.schema.json
   - examples/paper/
   - tools/run_paper_artifact_demo.py
+  - tools/run_exp1a_core_verification.py
   - tools/run_exp1b_lens_differentiation.py
   - tools/validate_paper_artifact.py
   - tests/test_research_core.py
