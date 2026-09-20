@@ -14,6 +14,7 @@ on:
       - "tools/run_paper_artifact_demo.py"
       - "tools/run_exp1a_core_verification.py"
       - "tools/run_exp1b_lens_differentiation.py"
+      - "tools/run_exp2_sensitivity_ablation.py"
       - "tools/validate_paper_artifact.py"
       - "docs/PAPER_TO_CODE_MAP.md"
       - "docs/MATH_TO_CODE_COMPLETENESS_AUDIT.md"
@@ -48,3 +49,7 @@ jobs:
         run: python tools/run_exp1a_core_verification.py
       - name: Run Experiment 1B structural verification
         run: python tools/run_exp1b_lens_differentiation.py
+      - name: Run Experiment 2 sensitivity and ablations
+        run: python tools/run_exp2_sensitivity_ablation.py
+      - name: Verify committed experiment outputs
+        run: git diff --exit-code -- examples/paper/experiments
