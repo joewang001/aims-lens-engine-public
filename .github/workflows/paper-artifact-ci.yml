@@ -12,9 +12,11 @@ on:
       - "tests/**"
       - "examples/paper/**"
       - "tools/run_paper_artifact_demo.py"
+      - "tools/run_exp1b_lens_differentiation.py"
       - "tools/validate_paper_artifact.py"
       - "docs/PAPER_TO_CODE_MAP.md"
       - "docs/MATH_TO_CODE_COMPLETENESS_AUDIT.md"
+      - "docs/experiments/**"
       - "README.md"
       - "VERSION"
       - "CITATION.cff"
@@ -41,3 +43,5 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Run deterministic demo
         run: python tools/run_paper_artifact_demo.py
+      - name: Run Experiment 1B structural verification
+        run: python tools/run_exp1b_lens_differentiation.py
