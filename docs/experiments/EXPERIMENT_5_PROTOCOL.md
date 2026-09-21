@@ -1,7 +1,26 @@
 # Experiment 5 — Hierarchy Approximation Benchmark
 
-**Protocol version:** v0.1-corrective-prespecified
-**Status:** pre-specified on the v1.4 corrective branch before committing result-bearing outputs
+**Protocol version:** v0.1.1 reproducibility amendment
+**Status:** corrective benchmark with a post-run serialization-only reproducibility amendment
+
+## Reproducibility amendment v0.1.1
+
+The first remote CI regeneration used Python 3.11 on Linux while the result-bearing local run
+used a newer Python version on Windows. All Experiment 5 convergence assertions and reported
+scientific conclusions passed remotely, but byte-for-byte verification exposed two
+serialization-only differences:
+
+1. the CSV writer used platform-default line endings; and
+2. floating-point tails in the detailed JSON differed below the declared scientific tolerance.
+
+v0.1.1 therefore fixes the reporting contract by:
+
+- forcing `LF` CSV line endings; and
+- canonicalizing reported floating-point values to **10 decimal places**.
+
+The hierarchy model, synthetic regimes, concentration parameters, 240/480 grids, 95% interval,
+`5e-5` convergence tolerance, deterministic integration method, and pass/fail criteria are
+unchanged. Ten reported decimal places remain far finer than the declared convergence tolerance.
 
 ## Purpose
 
@@ -153,7 +172,7 @@ This prevents the experiment from turning a methodological comparison into a con
 
 ## Reproducibility contract
 
-Reported floating-point values are canonicalized to 12 decimal places.
+Reported floating-point values are canonicalized to 10 decimal places under the v0.1.1 cross-platform reproducibility amendment.
 
 The runner writes:
 

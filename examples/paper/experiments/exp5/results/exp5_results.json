@@ -3,23 +3,23 @@
   "cases": [
     {
       "comparison": {
-        "absolute_mean_difference": 0.087988461276,
-        "plugin_interval_width": 0.573182581141,
-        "reference_interval_width": 0.722621807394,
-        "reference_to_plugin_width_ratio": 1.260718366487
+        "absolute_mean_difference": 0.0879884613,
+        "plugin_interval_width": 0.5731825811,
+        "reference_interval_width": 0.7226218074,
+        "reference_to_plugin_width_ratio": 1.2607183665
       },
       "convergence_delta": {
-        "interval_lower": 1.1006009e-05,
-        "interval_upper": 1.0883245e-05,
-        "posterior_mean": 3.1054529e-05
+        "interval_lower": 1.1006e-05,
+        "interval_upper": 1.08832e-05,
+        "posterior_mean": 3.10545e-05
       },
       "convergence_pass": true,
       "convergence_reference": {
         "grid_points": 480,
-        "interval_lower": 0.276909321155,
-        "interval_upper": 0.999531005785,
-        "interval_width": 0.72262168463,
-        "posterior_mean": 0.736853535009
+        "interval_lower": 0.2769093212,
+        "interval_upper": 0.9995310058,
+        "interval_width": 0.7226216846,
+        "posterior_mean": 0.736853535
       },
       "counts": {
         "archetype": [
@@ -36,27 +36,27 @@
         ]
       },
       "plugin": {
-        "interval_lower": 0.331205434795,
-        "interval_upper": 0.904388015936,
-        "interval_width": 0.573182581141,
-        "plug_in_industry_mean": 0.604938271605,
-        "posterior_mean": 0.648834019204
+        "interval_lower": 0.3312054348,
+        "interval_upper": 0.9043880159,
+        "interval_width": 0.5731825811,
+        "plug_in_industry_mean": 0.6049382716,
+        "posterior_mean": 0.6488340192
       },
       "regime": "sparse",
       "uncertainty_propagating_reference": {
         "grid_points": 240,
-        "interval_lower": 0.276898315146,
-        "interval_upper": 0.99952012254,
-        "interval_width": 0.722621807394,
-        "posterior_mean": 0.73682248048
+        "interval_lower": 0.2768983151,
+        "interval_upper": 0.9995201225,
+        "interval_width": 0.7226218074,
+        "posterior_mean": 0.7368224805
       }
     },
     {
       "comparison": {
-        "absolute_mean_difference": 0.010099279328,
-        "plugin_interval_width": 0.481364013812,
-        "reference_interval_width": 0.533190021157,
-        "reference_to_plugin_width_ratio": 1.107664897787
+        "absolute_mean_difference": 0.0100992793,
+        "plugin_interval_width": 0.4813640138,
+        "reference_interval_width": 0.5331900212,
+        "reference_to_plugin_width_ratio": 1.1076648978
       },
       "convergence_delta": {
         "interval_lower": 0.0,
@@ -66,10 +66,10 @@
       "convergence_pass": true,
       "convergence_reference": {
         "grid_points": 480,
-        "interval_lower": 0.345102551714,
-        "interval_upper": 0.878292572871,
-        "interval_width": 0.533190021157,
-        "posterior_mean": 0.633115152344
+        "interval_lower": 0.3451025517,
+        "interval_upper": 0.8782925729,
+        "interval_width": 0.5331900212,
+        "posterior_mean": 0.6331151523
       },
       "counts": {
         "archetype": [
@@ -86,27 +86,27 @@
         ]
       },
       "plugin": {
-        "interval_lower": 0.365723007831,
-        "interval_upper": 0.847087021643,
-        "interval_width": 0.481364013812,
-        "plug_in_industry_mean": 0.590277777778,
-        "posterior_mean": 0.623015873016
+        "interval_lower": 0.3657230078,
+        "interval_upper": 0.8470870216,
+        "interval_width": 0.4813640138,
+        "plug_in_industry_mean": 0.5902777778,
+        "posterior_mean": 0.623015873
       },
       "regime": "intermediate",
       "uncertainty_propagating_reference": {
         "grid_points": 240,
-        "interval_lower": 0.345102551714,
-        "interval_upper": 0.878292572871,
-        "interval_width": 0.533190021157,
-        "posterior_mean": 0.633115152344
+        "interval_lower": 0.3451025517,
+        "interval_upper": 0.8782925729,
+        "interval_width": 0.5331900212,
+        "posterior_mean": 0.6331151523
       }
     },
     {
       "comparison": {
-        "absolute_mean_difference": 0.000940329235,
-        "plugin_interval_width": 0.296039992717,
-        "reference_interval_width": 0.300444949701,
-        "reference_to_plugin_width_ratio": 1.014879601041
+        "absolute_mean_difference": 0.0009403292,
+        "plugin_interval_width": 0.2960399927,
+        "reference_interval_width": 0.3004449497,
+        "reference_to_plugin_width_ratio": 1.014879601
       },
       "convergence_delta": {
         "interval_lower": 0.0,
@@ -116,10 +116,10 @@
       "convergence_pass": true,
       "convergence_reference": {
         "grid_points": 480,
-        "interval_lower": 0.499246695292,
-        "interval_upper": 0.799691644994,
-        "interval_width": 0.300444949701,
-        "posterior_mean": 0.657473904552
+        "interval_lower": 0.4992466953,
+        "interval_upper": 0.799691645,
+        "interval_width": 0.3004449497,
+        "posterior_mean": 0.6574739046
       },
       "counts": {
         "archetype": [
@@ -136,19 +136,19 @@
         ]
       },
       "plugin": {
-        "interval_lower": 0.500710011482,
-        "interval_upper": 0.796750004199,
-        "interval_width": 0.296039992717,
-        "plug_in_industry_mean": 0.618534482759,
-        "posterior_mean": 0.656533575318
+        "interval_lower": 0.5007100115,
+        "interval_upper": 0.7967500042,
+        "interval_width": 0.2960399927,
+        "plug_in_industry_mean": 0.6185344828,
+        "posterior_mean": 0.6565335753
       },
       "regime": "dense",
       "uncertainty_propagating_reference": {
         "grid_points": 240,
-        "interval_lower": 0.499246695292,
-        "interval_upper": 0.799691644994,
-        "interval_width": 0.300444949701,
-        "posterior_mean": 0.657473904552
+        "interval_lower": 0.4992466953,
+        "interval_upper": 0.799691645,
+        "interval_width": 0.3004449497,
+        "posterior_mean": 0.6574739046
       }
     }
   ],
@@ -162,6 +162,6 @@
   "failures": [],
   "passed": true,
   "primary_grid_points": 240,
-  "protocol_version": "0.1-corrective-prespecified",
+  "protocol_version": "0.1.1-reproducibility-amendment",
   "reference_model": "binary_full_hierarchical_posterior_midpoint_quadrature"
 }

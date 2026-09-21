@@ -11,7 +11,7 @@
   "kappa_company": 8.0,
   "kappa_industry": 8.0,
   "primary_grid_points": 240,
-  "protocol_version": "0.1-corrective-prespecified",
+  "protocol_version": "0.1.1-reproducibility-amendment",
   "quantile_bisection_iterations": 70,
   "regimes": [
     {
@@ -60,5 +60,5 @@
       "name": "dense"
     }
   ],
-  "report_decimal_places": 12
+  "report_decimal_places": 10
 }
