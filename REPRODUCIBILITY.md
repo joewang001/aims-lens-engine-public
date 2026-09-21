@@ -83,22 +83,22 @@ See `docs/PAPER_TO_CODE_MAP.md` for the section/equation-to-function index, `doc
 
 ## Freeze step before submission
 
-The current branch is a **release candidate** for artifact `0.10.0-paper-v1.4` and planned immutable tag **`v0.10.0-paper-v1.4`**. No v1.4 frozen tag is claimed at the candidate stage.
+This freeze-metadata state declares artifact `0.10.0-paper-v1.4` and immutable archival ref **`v0.10.0-paper-v1.4`**. The Git tag is created only after this exact freeze-metadata commit passes the full remote Paper Artifact CI. Once the tag resolves to that green commit, the artifact is the frozen manuscript v1.4 release.
 
-The v1.4 corrective experimental baseline is `c18899b469e1d579391306872d5834ebf6e3caf3`. The previous frozen v1.3 artifact remains `v0.9.2-paper-v1.3` at `f7fcb6a3129cb58fe20c414f1abe519376def8e1`.
+The v1.4 corrective experimental baseline remains `c18899b469e1d579391306872d5834ebf6e3caf3`. The previous frozen v1.3 artifact remains `v0.9.2-paper-v1.3` at `f7fcb6a3129cb58fe20c414f1abe519376def8e1`.
 
-The manifest has two explicit states:
+The manifest records:
 
-- `release_status: candidate` requires `frozen_artifact_ref: pending_until_release_freeze`;
-- `release_status: frozen` requires the immutable target tag or a 40-character commit SHA.
+- `release_status: frozen`;
+- `frozen_artifact_ref: v0.10.0-paper-v1.4`;
+- `target_release_tag: v0.10.0-paper-v1.4`.
 
 Final archival sequence:
 
-1. complete v1.4 release-candidate metadata alignment;
-2. run the full validation / unit-test / Exp1A–5 suite and require zero committed-output diff;
-3. push the candidate commit and require remote Paper Artifact CI to be green;
-4. create a separate freeze-metadata commit by setting `release_status: frozen`, `frozen_artifact_ref: v0.10.0-paper-v1.4`, and the final `date-released` in `CITATION.cff`;
-5. rerun the full validation suite and remote CI on that freeze commit;
-6. create immutable Git tag `v0.10.0-paper-v1.4` on that exact green commit;
-7. verify remotely that the tag resolves to the exact freeze commit;
-8. cite the frozen tag / commit in the manuscript rather than the moving branch.
+1. the release-candidate metadata commit `2543a310accacf8ecf69bba3e50b5ecb351383ab` passed remote Paper Artifact CI run #29;
+2. this separate freeze-metadata commit records the frozen status, archival ref, and `date-released`;
+3. rerun the full local validation / unit-test / Exp1A–5 suite and require zero committed-output diff;
+4. push the freeze-metadata commit and require remote Paper Artifact CI to be green;
+5. create immutable Git tag `v0.10.0-paper-v1.4` on that exact green commit;
+6. verify remotely that the tag resolves to the exact freeze commit;
+7. cite the frozen tag / commit in the manuscript rather than the moving branch.

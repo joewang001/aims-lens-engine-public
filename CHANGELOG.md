@@ -1,8 +1,8 @@
 # Changelog
 
-## 0.10.0-paper-v1.4 (release candidate)
+## 0.10.0-paper-v1.4
 
-- Aligned release-candidate metadata with manuscript v1.4 without claiming a frozen v1.4 tag.
+- Finalized v1.4 freeze metadata after the release-candidate commit passed remote Paper Artifact CI.
 - Recorded frozen v1.3 commit `f7fcb6a3129cb58fe20c414f1abe519376def8e1` as the v1.4 branch base and `c18899b469e1d579391306872d5834ebf6e3caf3` as the corrective experimental baseline.
 - Added Experiment 4 / Experiment 5 protocols and runners, the implementation–integration coverage matrix, and documentation-alignment validation to the paper artifact allowlist.
 - Aligned README / reproducibility wording with top-label ECE, recursive plug-in hierarchical Dirichlet shrinkage, and conditional Dirichlet intervals given the plug-in parent distribution.

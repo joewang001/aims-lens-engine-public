@@ -4,15 +4,15 @@ Target branch: `paper-math-alignment-v1.4`
 Previous frozen tag: `v0.9.2-paper-v1.3`
 Previous frozen commit: `f7fcb6a3129cb58fe20c414f1abe519376def8e1`
 v1.4 corrective experimental baseline: `c18899b469e1d579391306872d5834ebf6e3caf3`
-Release-candidate artifact version: **`0.10.0-paper-v1.4`**
-Planned immutable tag: **`v0.10.0-paper-v1.4`**
-Current release status: **candidate**
+Release artifact version: **`0.10.0-paper-v1.4`**
+Target immutable tag: **`v0.10.0-paper-v1.4`**
+Current release status: **frozen metadata** — tag creation remains gated on this exact commit passing remote CI.
 
 ## Objective
 
-Prepare the v1.4 corrective research artifact for an immutable freeze without modifying or moving the frozen v1.3 history.
+Record the final v1.4 freeze metadata without modifying or moving the frozen v1.3 history, then gate immutable tag creation on the exact freeze commit passing remote CI.
 
-The v1.4 candidate preserves the candidate-side interview-practice research boundary. It corrects and documents internal mathematical–implementation alignment while keeping external-validity claims explicitly out of scope.
+The v1.4 release preserves the candidate-side interview-practice research boundary. It records the completed internal mathematical–implementation corrections while keeping external-validity claims explicitly out of scope.
 
 ## Corrective scope
 
@@ -34,16 +34,16 @@ For the recursive plug-in hierarchy, reported credible intervals are **condition
 - **Experiment 5** is a synthetic approximation benchmark.
 - None of these experiments establish real-employer validity, population fairness, employer-behavior prediction, interview-improvement efficacy, or employment-outcome efficacy.
 
-## Release-candidate metadata state
+## Freeze-metadata state
 
-The candidate must remain distinguishable from a frozen release:
+The freeze-metadata commit records the final release identity while keeping tag creation as a post-CI action:
 
 - `VERSION`: `0.10.0-paper-v1.4`;
-- `CITATION.cff`: version `0.10.0-paper-v1.4`, with no `date-released` while candidate;
-- `paper_artifact_manifest.yaml`: `paper_version: v1.4`, `release_status: candidate`;
-- `frozen_artifact_ref: pending_until_release_freeze`;
+- `CITATION.cff`: version `0.10.0-paper-v1.4`, `date-released: 2026-09-21`;
+- `paper_artifact_manifest.yaml`: `paper_version: v1.4`, `release_status: frozen`;
+- `frozen_artifact_ref: v0.10.0-paper-v1.4`;
 - `target_release_tag: v0.10.0-paper-v1.4`;
-- README files describe the tag as planned, not created or frozen.
+- README files state the immutable archival ref and the rule that the tag is created only after this exact freeze commit passes remote CI.
 
 The previous frozen v1.3 tag and commit remain immutable historical references.
 
@@ -61,9 +61,9 @@ The paper allowlist includes the existing v1.3 research core plus the v1.4 corre
 - `tools/validate_documentation_alignment.py`;
 - bilingual root README metadata needed by documentation alignment.
 
-## Candidate validation gates
+## Freeze validation gates
 
-Before any freeze metadata is committed, all of the following must pass on the candidate branch:
+For the freeze-metadata commit, all of the following must pass locally before push and remotely before tag creation:
 
 ```bash
 python tools/validate_paper_artifact.py
@@ -88,22 +88,18 @@ Expected gate state:
 - committed experiment outputs: zero diff;
 - remote Paper Artifact CI: GREEN.
 
-## Freeze sequence
+## Tag finalization sequence
 
-Only after the release-candidate commit is green:
+The release-candidate commit `2543a310accacf8ecf69bba3e50b5ecb351383ab` passed remote Paper Artifact CI run #29. The remaining archival sequence is:
 
-1. create a **separate freeze-metadata commit**;
-2. change `release_status` from `candidate` to `frozen`;
-3. set `frozen_artifact_ref: v0.10.0-paper-v1.4`;
-4. add the final `date-released` to `CITATION.cff`;
-5. keep repository wording explicit that the tag is created only after the exact freeze commit passes CI;
-6. rerun the full local validation suite;
-7. push the freeze-metadata commit and require remote Paper Artifact CI to pass;
-8. create immutable tag `v0.10.0-paper-v1.4` on that exact green freeze commit;
-9. verify remotely that the tag resolves to that exact commit;
-10. update manuscript Code and Artifact Availability wording to cite the frozen tag / commit.
+1. commit this **separate freeze-metadata change**;
+2. rerun the full local validation suite;
+3. push the freeze-metadata commit and require remote Paper Artifact CI to pass;
+4. create immutable tag `v0.10.0-paper-v1.4` on that exact green freeze commit;
+5. verify remotely that the tag resolves to that exact commit;
+6. update manuscript Code and Artifact Availability wording to cite the frozen tag / commit.
 
-Do not create or advertise the v1.4 tag as existing before the freeze commit is green.
+Do not create or advertise the v1.4 tag as existing before this exact freeze commit is green.
 
 ## Historical immutability
 

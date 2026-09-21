@@ -5,15 +5,19 @@
 
 AIMS Lens Engine 是一个可独立部署、与具体机构无绑定的 **evidence-governed interview reasoning and practice-decision engine（证据治理的面试推理与练习决策引擎）**。它把来源不同、授权状态不同、质量和时效不同的证据转成有版本的练习假设，再通过明确的 uncertainty、routing、backoff 和 abstention 规则，决定下一步最值得练习和追问的方向。
 
-**Release-candidate artifact：** `0.10.0-paper-v1.4`
+**Freeze-metadata artifact：** `0.10.0-paper-v1.4`
 
 **对应 manuscript：** `v1.4`
 
-**Candidate experimental baseline：** `c18899b469e1d579391306872d5834ebf6e3caf3`
+**Corrective experimental baseline：** `c18899b469e1d579391306872d5834ebf6e3caf3`
 
-**Planned immutable tag（尚未创建）：** `v0.10.0-paper-v1.4`
+**Immutable archival ref：** `v0.10.0-paper-v1.4`
 
-**Release status：** `candidate` — 当前不声称 v1.4 tag 已冻结。
+**Release status：** `frozen`
+
+**Tag creation gate：** 只有在这个精确的 freeze-metadata commit 通过远程 Paper Artifact CI 后，才创建 immutable tag。
+
+**Release date：** `2026-09-21`
 
 **上一冻结 paper artifact：** `v0.9.2-paper-v1.3`，commit `f7fcb6a3129cb58fe20c414f1abe519376def8e1`
 
