@@ -1,0 +1,183 @@
+{
+  "cases": [
+    {
+      "allowed_primary_gap_classes": [
+        "ownership_or_senior_scope"
+      ],
+      "case_id": "AHA-001",
+      "expected_mode": "diagnostic",
+      "expected_strong_gate": false,
+      "expected_target_role": "Senior Software Developer",
+      "historical_baseline_status": "PASS",
+      "language_surface_variation": false,
+      "must_credit_features": [
+        "measurable_impact",
+        "collaboration",
+        "mentoring"
+      ],
+      "preferred_aims_signals": [
+        "ownership_execution"
+      ],
+      "scenario": "Strong answer with quantified impact; probe leadership scope",
+      "source_basis": "canonical suite input plus explicitly recorded stronger-production-variant evidence markers; no unretrieved full production transcript reconstructed",
+      "supplemental_evidence_markers": [
+        "customer dashboard used by over 50,000 users",
+        "cross-functional coordination",
+        "code review process",
+        "approximately 30% reduction in regression bugs"
+      ],
+      "transcript": "I'm a software developer with about five years of experience building web applications, and I'm currently looking for a senior role where I can both contribute technically and lead a team. In my past roles, I've worked on large web projects, collaborated with design, product, and QA. I've also mentored junior developers, helping them get onboarded faster, reviewing their code, and helping them grow. All that experience, to me, is what makes me a strong fit for a senior role where I can bridge hands-on development with guiding a team toward success.",
+      "transcript_sha256": "5a282630c2bd44c6cf4067a570a859bb7047e224bb223bfce61bda9b342978b2"
+    },
+    {
+      "allowed_primary_gap_classes": [
+        "evidence_and_ownership"
+      ],
+      "case_id": "AHA-002",
+      "expected_mode": "diagnostic",
+      "expected_strong_gate": false,
+      "expected_target_role": "Senior Software Developer",
+      "historical_baseline_status": "PASS",
+      "language_surface_variation": false,
+      "must_credit_features": [
+        "unsupported_self_claims"
+      ],
+      "preferred_aims_signals": [
+        "ownership_execution"
+      ],
+      "scenario": "Weak unsupported claims",
+      "source_basis": "canonical suite input",
+      "supplemental_evidence_markers": [],
+      "transcript": "I'm a software developer with about five years of experience. I'm looking for a senior software developer role because I feel I'm ready to take on more responsibility and grow into a leadership position. I've worked on different web projects and collaborated with different teams. I also have experience helping junior developers and solving technical problems. I think I'm a strong candidate because I'm hardworking, responsible, and I learn quickly.",
+      "transcript_sha256": "497b55ec4f616eeaf570005f5f7ad9e1ca46bd32156bd0a764c7e5c2a54a1f95"
+    },
+    {
+      "allowed_primary_gap_classes": [
+        "ownership_or_senior_scope"
+      ],
+      "case_id": "AHA-003",
+      "expected_mode": "diagnostic",
+      "expected_strong_gate": false,
+      "expected_target_role": "Senior Software Developer",
+      "historical_baseline_status": "PASS",
+      "language_surface_variation": false,
+      "must_credit_features": [
+        "measurable_impact",
+        "technical_reasoning",
+        "collaboration"
+      ],
+      "preferred_aims_signals": [
+        "ownership_execution",
+        "analytical_problem_solving"
+      ],
+      "scenario": "Strong technical evidence, weak senior-level positioning",
+      "source_basis": "canonical suite input",
+      "supplemental_evidence_markers": [],
+      "transcript": "I'm a software developer with around five years of experience. In one of my recent projects, I worked on improving the checkout flow for an e-commerce platform. I identified a performance issue in one of our backend services and changed part of the caching logic, which reduced the average response time from about 1.8 seconds to 900 milliseconds. I also worked closely with QA and product during the release. I'm now looking for a senior software developer role because I want to take on more responsibility, work on larger systems, and continue growing as a developer.",
+      "transcript_sha256": "d0b87ce06e7ccda1d3281398da52ffa0fa388a2d61688d92fe0b94c6626a0f26"
+    },
+    {
+      "allowed_primary_gap_classes": [
+        "target_role_clarity"
+      ],
+      "case_id": "AHA-004",
+      "expected_mode": "diagnostic",
+      "expected_strong_gate": false,
+      "expected_target_role": "Not clearly stated",
+      "historical_baseline_status": "PASS",
+      "language_surface_variation": false,
+      "must_credit_features": [
+        "collaboration",
+        "mentoring"
+      ],
+      "preferred_aims_signals": [
+        "structured_thinking"
+      ],
+      "scenario": "Relevant experience, no clearly stated target role",
+      "source_basis": "canonical suite input",
+      "supplemental_evidence_markers": [],
+      "transcript": "I'm a software developer with about five years of experience building web applications. In my recent work, I've been involved in backend development, API design, code reviews, and working with product and QA teams to deliver features. I also enjoy mentoring junior developers and helping improve development processes. I'm now looking for a new opportunity where I can take on more responsibility, work on challenging projects, and continue growing technically and professionally.",
+      "transcript_sha256": "baf15f212feaa01faba9181738a90b972f96d1df0c26b0b28d8b82c8449ae84c"
+    },
+    {
+      "allowed_primary_gap_classes": [
+        "validation_probe"
+      ],
+      "case_id": "AHA-005",
+      "expected_mode": "validation_probe",
+      "expected_strong_gate": true,
+      "expected_target_role": "Senior Software Developer",
+      "historical_baseline_status": "PASS",
+      "language_surface_variation": false,
+      "must_credit_features": [
+        "measurable_impact",
+        "technical_reasoning",
+        "project_ownership",
+        "collaboration",
+        "mentoring",
+        "senior_scope"
+      ],
+      "preferred_aims_signals": [
+        "analytical_problem_solving"
+      ],
+      "scenario": "Very strong answer / Strong Answer Gate",
+      "source_basis": "canonical suite input",
+      "supplemental_evidence_markers": [],
+      "transcript": "I'm a software developer with about five years of experience building and scaling web applications, and I'm currently targeting a Senior Software Developer role. In my last position, I led the backend redesign of a customer platform serving more than 100,000 monthly users. I proposed moving one of our highest-traffic services to an asynchronous processing model after identifying database contention as the main bottleneck, and I worked with product and QA to plan the rollout without disrupting customers. The change reduced average processing time by about 35% and cut related production incidents by roughly 40%. I also introduced structured code reviews and mentored two junior developers, both of whom later took ownership of production features independently. I believe I'm a strong fit for a senior role because I can combine hands-on engineering with technical decision-making, cross-functional delivery, and helping other developers become more effective.",
+      "transcript_sha256": "b07b1e45e2e18b2fc3fa97c6cd8dfb0b1f4b8bde8ca1c5596d9db0af4771cca6"
+    },
+    {
+      "allowed_primary_gap_classes": [
+        "validation_probe"
+      ],
+      "case_id": "AHA-006",
+      "expected_mode": "validation_probe",
+      "expected_strong_gate": true,
+      "expected_target_role": "Senior Software Developer",
+      "historical_baseline_status": "PASS",
+      "language_surface_variation": true,
+      "must_credit_features": [
+        "measurable_impact",
+        "technical_reasoning",
+        "project_ownership",
+        "collaboration",
+        "mentoring",
+        "senior_scope"
+      ],
+      "preferred_aims_signals": [
+        "analytical_problem_solving"
+      ],
+      "scenario": "Non-native English surface variation with strong evidence",
+      "source_basis": "canonical suite input",
+      "supplemental_evidence_markers": [],
+      "transcript": "I am software developer around five years experience. Now I am looking senior software developer position. In my last company, I was responsible for backend service for payment system. We had problem because sometimes payment request become very slow when traffic is high. I checked logs and database query, and I found one table locking cause most delay. I proposed change the transaction logic and separate one heavy process to background job. I worked with QA and product team for release because we don't want affect customer payment. After change, average response time reduce around 40 percent and failed payment incidents also reduce about 25 percent. I also help two junior developers review code and understand this service. I think I can fit senior role because I can solve technical problem, take responsibility for delivery, and work with different teams.",
+      "transcript_sha256": "75f2f14742adfadce434c101de8fdaca06f740f6afda9f349ec3c7cb6eda5bf4"
+    }
+  ],
+  "claim_boundary": {
+    "current_model_rerun_performed": false,
+    "historical_baseline_is_not_current_model_evaluation": true,
+    "not_employer_side_screening": true,
+    "not_employment_outcome_evidence": true,
+    "not_fairness_validation": true
+  },
+  "experiment": "Experiment 3 \u2014 Candidate-Answer Semantic Regression",
+  "experiment_base_commit": "024c45fa91d443b56d3a5fb1bab34a83b6715558",
+  "historical_only_generation_rules": [
+    "no_more_than_two_followup_questions",
+    "one_or_two_relevant_aims_signals",
+    "no_quick_score",
+    "no_complete_replacement_answer",
+    "voice_friendly_under_180_words",
+    "no_company_style_rewrite"
+  ],
+  "protocol_version": "0.1-pre-registered-public-contract",
+  "source_record": {
+    "full_generation_prompt_in_public_artifact": false,
+    "historical_baseline": "AHA-001 through AHA-006 recorded PASS",
+    "historical_model_outputs_retrieved": false,
+    "historical_scope": "anonymous one-answer Aha Moment semantic regression",
+    "name": "JobACE Aha Moment Regression Suite v1",
+    "retrieved_status": "public-safe historical regression record"
+  }
+}

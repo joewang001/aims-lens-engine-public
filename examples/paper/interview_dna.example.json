@@ -1,0 +1,84 @@
+{
+  "lens_id": "company_aires_backend_engineer_v1.2.0",
+  "lens_type": "company",
+  "maturity": "reviewed_practice",
+  "created_at": "2026-09-14T01:02:00Z",
+  "expires_at": "2027-03-14T01:02:00Z",
+  "role": {
+    "family": "engineering",
+    "level": "junior_intermediate",
+    "function": "backend",
+    "seniority_years": "1-3"
+  },
+  "sector": {
+    "industry": "technology",
+    "sub_industry": "fintech",
+    "operating_context": "b2b_saas"
+  },
+  "interview_stage": {
+    "stage": "technical_deep_dive",
+    "format": "video_call",
+    "duration_minutes": 60,
+    "interviewer_role": "tech_lead"
+  },
+  "competency_dimensions": [
+    "structured_thinking",
+    "analytical_problem_solving",
+    "ownership_execution",
+    "impact_results",
+    "collaboration_communication",
+    "growth_mindset"
+  ],
+  "followup_taxonomy": [
+    "ownership_clarification",
+    "evidence_request",
+    "tradeoff_exploration",
+    "stakeholder_management",
+    "technical_depth",
+    "results_validation",
+    "reflective_learning"
+  ],
+  "evidence_register": [
+    {
+      "evidence_id": "ev_001",
+      "source_type": "job_description",
+      "permitted_use": "practice_prioritization",
+      "date_collected": "2026-08-15",
+      "collection_method": "llm_extraction_plus_human_review",
+      "scope": "company",
+      "reviewer": "human_reviewer_01",
+      "quality_rating": 0.85,
+      "transformation_history": [
+        "LLM extraction",
+        "human review"
+      ],
+      "expiry_conditions": "2027-08-15",
+      "supports": [
+        "role",
+        "sector"
+      ]
+    }
+  ],
+  "constraints": {
+    "forbidden_topics": [
+      "age",
+      "gender",
+      "religion",
+      "family_plan"
+    ],
+    "stage_inappropriate": [
+      "technical_depth@opening"
+    ],
+    "role_inappropriate": [
+      "architectural_decisions@junior"
+    ],
+    "logical_contradictions": [
+      "tech_stack_not_mentioned"
+    ]
+  },
+  "uncertainty_settings": {
+    "support_ceiling": 0.85,
+    "abstention_threshold": 0.3,
+    "backoff_discount": 0.7
+  }
+}

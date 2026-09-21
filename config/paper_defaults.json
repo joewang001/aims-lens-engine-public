@@ -1,0 +1,18 @@
+{
+  "status": "initial_research_parameters_not_validated_constants",
+  "prior_strength_lambda0": 10,
+  "half_life_observations_kappa": 20,
+  "backoff_discount_gamma": 0.7,
+  "temporal_decay_delta_per_month": 0.02,
+  "kl_drift_review_threshold": 0.3,
+  "ece_secondary_target": 0.1,
+  "abstention_threshold_example": 0.3,
+  "support_ceiling_example": 0.85,
+  "minimum_sample_size_example": 30,
+  "maximum_declared_parents": 6,
+  "notes": {
+    "support_ceiling": "deployment policy cap, not correctness probability",
+    "thresholds": "secondary operational settings requiring sensitivity analysis or held-out validation",
+    "symbol_warning": "the manuscript uses kappa both for hierarchical concentration subscripts and an appendix half-life label; code uses explicit names to avoid collision"
+  }
+}

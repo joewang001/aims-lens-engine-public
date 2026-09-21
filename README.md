@@ -1,116 +1,123 @@
 # AIMS Lens Engine
 
-Independent company, role, industry, and thinker lens distillation platform for interview evaluation, candidate screening, interview preparation, and decision support.
+AIMS Lens Engine is an independently deployable, institution-agnostic **evidence-governed interview reasoning and practice-decision engine**. It is designed to select and explain interview-practice follow-up priorities under incomplete, heterogeneous, and differently authorized evidence.
 
-Current version: `v0.8.1-public-core`
+**Frozen paper artifact version:** `v0.9.2-paper-v1.3`
 
-Current status: `public_released`
+**Aligned manuscript:** `v1.3`
 
-## Positioning
+**Experimental bundle:** `84c0afc5f928989237832d625002aba17ae8ac4f`
 
-AIMS Lens Engine is built as an independent system first. This public repository contains the open, public-safe core: schemas, company lens structures, evidence standards, validation tools, and public company lens examples.
+**Frozen artifact ref:** `v0.9.2-paper-v1.3`
 
-JobACE uses AIMS Lens Engine as a commercial reference implementation, but the production workspace service, tenant data, candidate data, review logs, private calibration, deployment configuration, and enterprise-specific lenses remain private.
+**Release date:** `2026-09-20`
 
-The system distills public and private evidence into structured lenses:
+**Public repository:** https://github.com/joewang001/aims-lens-engine-public
 
-- Company Lens
-- Role Lens
-- Industry Lens
-- Thinker Lens
-- Interview Question Bank
-- Evidence and Validation Layer
+## Relationship to JobACE
 
-## Product Modes
+JobACE is the first deep reference integration of AIMS Lens Engine, not an architectural prerequisite. The Lens Engine owns versioned Lens representation, evidence lineage, routing/backoff, constrained dependency assumptions, hierarchical borrowing, compatibility constraints, uncertainty, abstention, and explanation provenance. A client such as JobACE may own candidate-facing interaction, coaching, learning history, and progress tracking.
 
-- `FULLY_DISTILLED`: multi-agent research, archived evidence, validation complete.
-- `DERIVED_LENS`: generated from similar companies, industry archetypes, role requirements, and target JD.
-- `LIGHTWEIGHT_SCAN`: generated from limited public/company-provided material with explicit lower confidence.
-- `GENERIC_AIMS`: fallback when no meaningful target lens exists.
+Client systems should integrate through versioned APIs rather than copy the Lens inference algorithm.
 
-## Public Release Scope
+## Paper research boundary
 
-The first public release is designed to be large enough for external review and contribution. It includes at least 12 public company lenses:
+The manuscript-associated research core is **candidate-side interview practice**. It does not rank candidates for employers, recommend hiring/rejection decisions, infer protected characteristics, or claim to predict a named employer's real interview behavior.
 
-- Amazon
-- Google
-- McKinsey
-- Microsoft
-- Apple
-- JPMorgan
-- RBC
-- TD
-- BMO
-- CIBC
-- Scotiabank
-- Shopify
+A Lens is a **versioned, evidence-bounded hypothesis for practice**, not an official or complete description of an organization.
 
-Additional company lenses should be added only when they meet the public contribution and evidence rules in `CONTRIBUTING.md`.
+Read:
 
-## Repository Map
+- `RESEARCH_BOUNDARY.md`
+- `REPRODUCIBILITY.md`
+- `PAPER_RELEASE_READINESS.md`
+- `docs/MATH_TO_CODE_COMPLETENESS_AUDIT.md`
+- `docs/PAPER_TO_CODE_MAP.md`
+- `paper_artifact_manifest.yaml`
 
-```text
-api/                  API contracts and OpenAPI draft
-architecture/         System design and routing model
-agents/               Multi-agent research templates
-company_lenses/       Lens files and company profile folders
-docs/                 Project charter and implementation plan
-governance/           privacy, fairness, evidence, and version rules
-schemas/              JSON schemas for structured lens artifacts
-examples/             sample requests, reports, and validation cases
-services/             private production services, excluded from public export by default
-interview_prep_templates/ B2C improvement plan templates for structured interview practice
-candidate_personas/     Synthetic candidate fixtures for mock interview QA and calibration
-```
+## Reviewer quick start
 
-## Implementation Principle
-
-Start file-first and auditable. Move to database, queue, and review portal only after the MVP proves that the lens outputs are differentiated, useful, and evidence-backed.
-
-## Public And Private Boundary
-
-The public release is produced through an allowlist and denylist pair:
-
-```text
-public_manifest.yaml
-private_manifest.yaml
-tools/export_public_release.py
-tools/scan_public_export.py
-tools/generate_public_release_audit_report.py
-```
-
-The export tooling copies only allowlisted public paths, then applies the private manifest as a hard denylist. Public releases must not include raw private materials, tenant uploads, candidate data, production service code, API keys, local databases, deployment configuration, or private review records.
-
-To create and audit a public export:
+The paper reference implementation is dependency-free and uses synthetic data.
 
 ```bash
-python tools/export_public_release.py --execute --clean
-python tools/scan_public_export.py --allowlist
-python tools/generate_public_release_audit_report.py --allowlist
+python tools/validate_paper_artifact.py
+python -m unittest discover -s tests -v
+python tools/run_paper_artifact_demo.py
+python tools/run_exp1a_core_verification.py
+python tools/run_exp1b_lens_differentiation.py
+python tools/run_exp2_sensitivity_ablation.py
+python tools/run_exp3_semantic_regression.py
 ```
 
-## Interview Prep Templates
+The demo covers:
 
-Phase B2C-1 adds the first B2C improvement plan template:
+- evidence authorization as a hard gate;
+- quality and recency weighting of eligible evidence;
+- hierarchical Dirichlet-style partial pooling;
+- compatibility masking;
+- declared backoff and routing mixture;
+- uncertainty and data-support summaries;
+- provenance-aware ordered practice priorities;
+- all fifteen Section 5 mathematical expressions through inspectable reference functions;
+- calibration metrics, KL drift monitoring, and reference information-gain scoring.
+
+It is a reference implementation, not empirical proof that the framework predicts employer behavior or improves employment outcomes.
+
+Manuscript v1.3 additionally reports controlled synthetic verification, parameter sensitivity, controlled ablations, and six public-safe semantic regression fixtures. These results verify declared mechanism behavior and reproducibility under controlled inputs; they do not establish named-employer validity, population fairness, current production-LLM accuracy, or employment outcomes.
+
+## Research-core map
 
 ```text
-interview_prep_templates/mckinsey_case/
-docs/phase-b2c1-mckinsey-case-improvement-plan.md
-docs/phase-b2c2-improvement-plan-adapter.md
-docs/candidate-persona-fixtures.md
+api/                         candidate-side research API
+architecture/                system boundary and routing specification
+governance/                  evidence, privacy, fairness, authenticity, abstention
+research_core/               paper reference inference implementation
+schemas/                     research and supporting public schemas
+examples/paper/              synthetic deterministic paper examples
+tools/                       reproducibility and public-release tooling
+tests/                       paper reference tests
+company_lenses/              supporting public Lens assets; not employer ground truth
+docs/                        wider project and public-Lens operations documentation
+legacy/                      historical/non-paper capabilities explicitly outside research core
 ```
 
-It converts McKinsey-style case interview preparation into a reusable AIMS-linked training plan for interview prep users.
-B2C-2 adds `tools/interview_prep_planner.py` and `POST /v1/interview-prep/improvement-plan` so product flows can turn AIMS scores into Priority Improvement Points, drills, reflection routing, and next mock instructions.
+## Open / protected boundary
 
-## Contribution
+The public project may contain:
 
-Contributions are welcome when they improve the public core without importing private or copyrighted source bodies. See `CONTRIBUTING.md` for source, privacy, evidence, and pull request rules.
+- protocol and schemas;
+- validators;
+- reference implementation;
+- public-safe Lens assets;
+- synthetic examples;
+- public evidence standards and governance documentation.
 
-## Continuous Updates
+It must not expose:
 
-AIMS Lens Engine is intended to keep refreshing and expanding. Existing company lenses should receive new public-safe evidence across the seven independent dimensions, and new leading companies should be added in undercovered industries. The maintenance workflow validates every PR and scheduled run, then opens automated refresh-candidate PRs. See `docs/public-lens-refresh-and-expansion.md` for the mechanism and `docs/public-lens-operations-plan.md` for cadence, quantity targets, approved expansion waves, and normal auto-merge rules.
+- JobACE user data;
+- candidate records, resumes, or real transcripts;
+- tenant-private configuration;
+- confidential organization evidence;
+- production credentials or databases;
+- proprietary production policy/calibration state.
 
-## License
+The existing `public_manifest.yaml` and `private_manifest.yaml` govern the broader public export. The narrower `paper_artifact_manifest.yaml` defines the frozen manuscript artifact.
 
-Code, schemas, and tools are licensed under Apache-2.0. Public lens content and documentation are licensed under CC BY 4.0. See `LICENSE`, `NOTICE`, and `CONTENT_LICENSE.md`.
+## Broader repository history
+
+Earlier development explored additional product and pilot workflows, including employer-side decision-support concepts. Those historical artifacts are **not part of the manuscript research core**. The paper-readiness branch preserves history but separates these semantics from the candidate-side API and frozen artifact manifest. See `legacy/employer_decision_support/README.md`.
+
+## Public company Lens assets
+
+Named company Lens folders are supporting public artifacts. Their presence does not mean AIMS claims official access to employer hiring criteria. Public inferred Lenses must expose provenance, limitations, review state, and the disclosure that they are practice hypotheses inferred from permitted evidence.
+
+## Licenses
+
+- Code, schemas, and tools: Apache-2.0
+- Public Lens content and documentation: CC BY 4.0
+
+See `LICENSE`, `NOTICE`, and `CONTENT_LICENSE.md`.
+
+## Citation
+
+See `CITATION.cff`. For a manuscript submission or archival release, cite a frozen tag or commit rather than a moving `main` branch.

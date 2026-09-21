@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aimslens.example/schemas/followup_priority_response.schema.json",
+  "title": "AIMS Lens Paper Follow-up Priority Response",
+  "type": "object",
+  "required": ["mode", "top_category", "priority_order", "diagnostic_distribution", "uncertainty_entropy", "data_support", "effective_evidence_mass", "routing_provenance", "disclaimer"],
+  "properties": {
+    "mode": {"const": "ordered_practice_priority"},
+    "top_category": {"type": "string"},
+    "priority_order": {"type": "array", "items": {"type": "string"}},
+    "diagnostic_distribution": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}},
+    "uncertainty_entropy": {"type": "number", "minimum": 0, "maximum": 1},
+    "data_support": {"type": "number", "minimum": 0, "maximum": 1},
+    "effective_evidence_mass": {"type": "number", "minimum": 0},
+    "routing_provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["level", "backoff_distance", "coverage", "routing_weight"],
+        "properties": {
+          "level": {"type": "string"},
+          "backoff_distance": {"type": "integer", "minimum": 0},
+          "coverage": {"type": "number", "minimum": 0, "maximum": 1},
+          "routing_weight": {"type": "number", "minimum": 0, "maximum": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "disclaimer": {"type": "string"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,46 @@
+{
+  "data_support": 0.329345,
+  "diagnostic_distribution": {
+    "evidence": 0.391886,
+    "ownership": 0.269704,
+    "reflection": 0.153524,
+    "tradeoff": 0.184885
+  },
+  "disclaimer": "This output prioritizes interview practice. It is not a prediction of a specific employer's interview process or hiring decision.",
+  "effective_evidence_mass": 3.196003,
+  "mode": "ordered_practice_priority",
+  "priority_order": [
+    "evidence",
+    "ownership",
+    "tradeoff",
+    "reflection"
+  ],
+  "routing_provenance": [
+    {
+      "applicability": true,
+      "authorization": true,
+      "backoff_distance": 0,
+      "coverage": 0.78,
+      "level": "L0_full_context",
+      "routing_weight": 0.617269
+    },
+    {
+      "applicability": true,
+      "authorization": true,
+      "backoff_distance": 3,
+      "coverage": 0.92,
+      "level": "L3_industry_context",
+      "routing_weight": 0.249725
+    },
+    {
+      "applicability": true,
+      "authorization": true,
+      "backoff_distance": 5,
+      "coverage": 1.0,
+      "level": "L5_generic_context",
+      "routing_weight": 0.133006
+    }
+  ],
+  "top_category": "evidence",
+  "uncertainty_entropy": 0.952409
+}
