@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from research_core import EvidenceRecord, PracticeRequest, RoutingLevel, prioritize_followups
-from research_core.active_learning import expected_information_gain
+from research_core.active_learning import expected_information_gain, predictive_entropy_reduction
 from research_core.compatibility import masked_and_renormalized
 from research_core.dag import PARENT_CARDINALITY_CAPS, joint_factorization, parent_configuration_count, validate_dag
 from research_core.evaluation import kl_divergence, multiclass_brier, multiclass_log_loss, vector_ece
@@ -176,7 +176,29 @@ class ResearchCoreTests(unittest.TestCase):
         self.assertGreater(kl_divergence([0.8, 0.2], [0.5, 0.5]), 0.0)
 
     def test_eq15_information_gain(self):
-        self.assertGreater(expected_information_gain({"a": 2.0, "b": 2.0}), 0.0)
+        alpha = {"a": 1.0, "b": 1.0}
+        parameter_ig = expected_information_gain(alpha)
+        predictive_reduction = predictive_entropy_reduction(alpha)
+
+        self.assertAlmostEqual(
+            parameter_ig,
+            math.log(2.0) - 0.5,
+            places=12,
+        )
+        self.assertAlmostEqual(
+            parameter_ig,
+            0.1931471805599453,
+            places=12,
+        )
+        self.assertAlmostEqual(
+            predictive_reduction,
+            0.0566330122651325,
+            places=12,
+        )
+        self.assertNotAlmostEqual(parameter_ig, predictive_reduction, places=6)
+
+        with self.assertRaises(ValueError):
+            expected_information_gain({"a": 1.0, "b": 0.0})
 
     def test_interview_dna_example_validates(self):
         lens = load_lens(ROOT / "examples/paper/interview_dna.example.json")

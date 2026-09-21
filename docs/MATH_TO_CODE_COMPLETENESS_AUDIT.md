@@ -20,7 +20,7 @@
 | 12 | Multiclass Brier score | `research_core/evaluation.py::multiclass_brier` | Complete | Evaluation only; does not assert calibration. |
 | 13 | Vector-form ECE | `research_core/evaluation.py::vector_ece` | Complete reference operationalization | Binning is by maximum predicted probability; bin vector mismatch uses L1 distance as written. |
 | 14 | KL drift statistic | `research_core/evaluation.py::kl_divergence` | Complete | Threshold remains an empirical policy setting. |
-| 15 | Expected information gain | `research_core/active_learning.py::expected_information_gain` | Complete reference operationalization | Uses one-record posterior-predictive entropy reduction among already-authorized records; does not authorize collection. |
+| 15 | Expected parameter information gain | `research_core/active_learning.py::expected_information_gain` | Corrected reference operationalization | Computes one-record Dirichlet-parameter posterior information gain (equivalently `I(Theta;Y)`) for already-authorized records. The former predictive category-entropy reduction is retained separately as `predictive_entropy_reduction` and is not Eq. 15. |
 
 ### Posterior uncertainty
 
