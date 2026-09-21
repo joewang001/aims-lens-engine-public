@@ -73,7 +73,7 @@ See `docs/PAPER_TO_CODE_MAP.md` for the section/equation-to-function index and `
 
 ## Freeze step before submission
 
-This branch is a **manuscript v1.3 release candidate**, not yet a frozen archival release.
+This freeze-metadata commit declares the intended immutable archival ref **`v0.9.2-paper-v1.3`**. The Git tag must be created only after this exact commit passes the full remote Paper Artifact CI. Once the tag resolves to that green commit, the artifact is the frozen manuscript v1.3 release.
 
 The manifest has two explicit states:
 

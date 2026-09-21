@@ -2,11 +2,15 @@
 
 AIMS Lens Engine is an independently deployable, institution-agnostic **evidence-governed interview reasoning and practice-decision engine**. It is designed to select and explain interview-practice follow-up priorities under incomplete, heterogeneous, and differently authorized evidence.
 
-**Paper release-candidate artifact version:** `v0.9.2-paper-v1.3`
+**Frozen paper artifact version:** `v0.9.2-paper-v1.3`
 
 **Aligned manuscript:** `v1.3`
 
 **Experimental bundle:** `84c0afc5f928989237832d625002aba17ae8ac4f`
+
+**Frozen artifact ref:** `v0.9.2-paper-v1.3`
+
+**Release date:** `2026-09-20`
 
 **Public repository:** https://github.com/joewang001/aims-lens-engine-public
 

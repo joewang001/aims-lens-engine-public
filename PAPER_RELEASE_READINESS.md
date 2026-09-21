@@ -4,8 +4,10 @@ Target branch: `paper-release-readiness-v1.1`
 Base: `main` at `cf2586e5649feb05fd19faefa479e765055c76d4`  
 Original branch target: AIMS Lens Engine v1.1 journal-preparation manuscript
 Current aligned manuscript: **v1.3**
-Release-candidate artifact: **v0.9.2-paper-v1.3**
+Final paper artifact version: **v0.9.2-paper-v1.3**
 Frozen experimental bundle: `84c0afc5f928989237832d625002aba17ae8ac4f`
+Declared archival tag: **`v0.9.2-paper-v1.3`**
+Release date: **2026-09-20**
 
 ## Objective
 
