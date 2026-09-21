@@ -1,0 +1,167 @@
+{
+  "acceptance_scope": "Pass/fail is numerical-convergence only. Estimator differences are descriptive.",
+  "cases": [
+    {
+      "comparison": {
+        "absolute_mean_difference": 0.087988461276,
+        "plugin_interval_width": 0.573182581141,
+        "reference_interval_width": 0.722621807394,
+        "reference_to_plugin_width_ratio": 1.260718366487
+      },
+      "convergence_delta": {
+        "interval_lower": 1.1006009e-05,
+        "interval_upper": 1.0883245e-05,
+        "posterior_mean": 3.1054529e-05
+      },
+      "convergence_pass": true,
+      "convergence_reference": {
+        "grid_points": 480,
+        "interval_lower": 0.276909321155,
+        "interval_upper": 0.999531005785,
+        "interval_width": 0.72262168463,
+        "posterior_mean": 0.736853535009
+      },
+      "counts": {
+        "archetype": [
+          1,
+          0
+        ],
+        "company": [
+          1,
+          0
+        ],
+        "industry": [
+          1,
+          0
+        ]
+      },
+      "plugin": {
+        "interval_lower": 0.331205434795,
+        "interval_upper": 0.904388015936,
+        "interval_width": 0.573182581141,
+        "plug_in_industry_mean": 0.604938271605,
+        "posterior_mean": 0.648834019204
+      },
+      "regime": "sparse",
+      "uncertainty_propagating_reference": {
+        "grid_points": 240,
+        "interval_lower": 0.276898315146,
+        "interval_upper": 0.99952012254,
+        "interval_width": 0.722621807394,
+        "posterior_mean": 0.73682248048
+      }
+    },
+    {
+      "comparison": {
+        "absolute_mean_difference": 0.010099279328,
+        "plugin_interval_width": 0.481364013812,
+        "reference_interval_width": 0.533190021157,
+        "reference_to_plugin_width_ratio": 1.107664897787
+      },
+      "convergence_delta": {
+        "interval_lower": 0.0,
+        "interval_upper": 0.0,
+        "posterior_mean": 0.0
+      },
+      "convergence_pass": true,
+      "convergence_reference": {
+        "grid_points": 480,
+        "interval_lower": 0.345102551714,
+        "interval_upper": 0.878292572871,
+        "interval_width": 0.533190021157,
+        "posterior_mean": 0.633115152344
+      },
+      "counts": {
+        "archetype": [
+          6,
+          4
+        ],
+        "company": [
+          4,
+          2
+        ],
+        "industry": [
+          5,
+          3
+        ]
+      },
+      "plugin": {
+        "interval_lower": 0.365723007831,
+        "interval_upper": 0.847087021643,
+        "interval_width": 0.481364013812,
+        "plug_in_industry_mean": 0.590277777778,
+        "posterior_mean": 0.623015873016
+      },
+      "regime": "intermediate",
+      "uncertainty_propagating_reference": {
+        "grid_points": 240,
+        "interval_lower": 0.345102551714,
+        "interval_upper": 0.878292572871,
+        "interval_width": 0.533190021157,
+        "posterior_mean": 0.633115152344
+      }
+    },
+    {
+      "comparison": {
+        "absolute_mean_difference": 0.000940329235,
+        "plugin_interval_width": 0.296039992717,
+        "reference_interval_width": 0.300444949701,
+        "reference_to_plugin_width_ratio": 1.014879601041
+      },
+      "convergence_delta": {
+        "interval_lower": 0.0,
+        "interval_upper": 0.0,
+        "posterior_mean": 0.0
+      },
+      "convergence_pass": true,
+      "convergence_reference": {
+        "grid_points": 480,
+        "interval_lower": 0.499246695292,
+        "interval_upper": 0.799691644994,
+        "interval_width": 0.300444949701,
+        "posterior_mean": 0.657473904552
+      },
+      "counts": {
+        "archetype": [
+          30,
+          20
+        ],
+        "company": [
+          20,
+          10
+        ],
+        "industry": [
+          25,
+          15
+        ]
+      },
+      "plugin": {
+        "interval_lower": 0.500710011482,
+        "interval_upper": 0.796750004199,
+        "interval_width": 0.296039992717,
+        "plug_in_industry_mean": 0.618534482759,
+        "posterior_mean": 0.656533575318
+      },
+      "regime": "dense",
+      "uncertainty_propagating_reference": {
+        "grid_points": 240,
+        "interval_lower": 0.499246695292,
+        "interval_upper": 0.799691644994,
+        "interval_width": 0.300444949701,
+        "posterior_mean": 0.657473904552
+      }
+    }
+  ],
+  "convergence_grid_points": 480,
+  "credible_level": 0.95,
+  "declared_kappa": {
+    "archetype": 8.0,
+    "company": 8.0,
+    "industry": 8.0
+  },
+  "failures": [],
+  "passed": true,
+  "primary_grid_points": 240,
+  "protocol_version": "0.1-corrective-prespecified",
+  "reference_model": "binary_full_hierarchical_posterior_midpoint_quadrature"
+}
