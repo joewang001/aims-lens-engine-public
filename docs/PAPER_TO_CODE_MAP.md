@@ -1,6 +1,6 @@
 # Paper-to-Code Map
 
-This map is the reviewer-oriented index for manuscript v1.3. It links paper claims to the smallest public artifact that makes the claim inspectable.
+This map is the reviewer-oriented index for manuscript v1.3. It links paper claims to the smallest public artifact that makes the claim inspectable. Executable traceability is distinct from runtime integration; see `docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md` for that separation.
 
 | Paper location | Claim / object | Primary repo path |
 |---|---|---|
@@ -27,10 +27,11 @@ This map is the reviewer-oriented index for manuscript v1.3. It links paper clai
 | §7.8 | Sensitivity and controlled ablations (Experiment 2) | `docs/experiments/EXPERIMENT_2_PROTOCOL.md`, `tools/run_exp2_sensitivity_ablation.py`, `examples/paper/experiments/exp2/` |
 | §7.9 | Candidate-answer semantic regression (Experiment 3) | `docs/experiments/EXPERIMENT_3_PROTOCOL.md`, `tools/run_exp3_semantic_regression.py`, `examples/paper/experiments/exp3/` |
 | §7.10 | End-to-end numeric trace and committed-output reproducibility | `examples/paper/experiments/exp1a/results/exp1a_baseline_trace.json`, `.github/workflows/paper-artifact-ci.yml` |
+| v1.4 corrective | Hierarchy plug-in approximation benchmark (Experiment 5) | `docs/experiments/EXPERIMENT_5_PROTOCOL.md`, `tools/run_exp5_hierarchy_approximation.py`, `examples/paper/experiments/exp5/` |
 | §8.2 | Minimized context boundary | `research_core/privacy.py::MinimizedContextPackage`, schema |
 | §9.4 | Plain-language explanation | `research_core/explanation.py` |
 | §9.5 | Auditable reconstruction | `research_core/audit.py` |
 | Appendix B | Initial research parameters | `config/paper_defaults.json` |
-| Appendix C | Reference pipeline | `research_core/`, `tools/run_paper_artifact_demo.py` |
+| Appendix C | Candidate runtime plus standalone research utilities | `research_core/`, `tools/run_paper_artifact_demo.py`, `docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md` |
 
 Before freezing a manuscript v1.3 release, run the validator, unit tests, deterministic demo, Experiments 1A/1B/2/3, and the committed-output reproducibility gate defined in `.github/workflows/paper-artifact-ci.yml`.

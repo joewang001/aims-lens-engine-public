@@ -50,7 +50,17 @@ python tools/run_exp2_sensitivity_ablation.py
 python tools/run_exp3_semantic_regression.py
 ```
 
-Experiments 1A, 1B, 2, and 3 use synthetic or public-safe fixtures. CI reruns all four and requires a zero git diff across `examples/paper/experiments`, providing committed-output reproducibility across the declared reference environment.
+Experiments 1A, 1B, 2, and 3 use synthetic or public-safe fixtures. The frozen v1.3 artifact uses those four as its controlled-verification bundle.
+
+## Run the v1.4 corrective hierarchy benchmark
+
+```bash
+python tools/run_exp5_hierarchy_approximation.py
+```
+
+Experiment 5 is a pre-specified synthetic benchmark of the recursive plug-in hierarchy against a deterministic uncertainty-propagating binary reference. Its pass/fail criterion is numerical convergence of the reference calculation; estimator differences are descriptive. It does not establish real-world calibration or external validity.
+
+On the v1.4 corrective branch, CI also reruns Experiment 5 and requires a zero git diff across `examples/paper/experiments`, providing committed-output reproducibility for the added corrective benchmark.
 
 ## What the demo establishes
 
@@ -58,7 +68,7 @@ The demo is a **reference implementation**, not empirical validation. It demonst
 
 1. authorization gating;
 2. quality and temporal evidence weighting;
-3. hierarchical Dirichlet-style partial pooling;
+3. company-level Dirichlet shrinkage against a supplied parent distribution; the complete four-level hierarchy remains a standalone research helper and is benchmarked separately in Experiment 5;
 4. compatibility masking;
 5. backoff-aware routing mixture;
 6. uncertainty and data-support summaries;
@@ -69,7 +79,7 @@ It does not establish that a company follows the modeled pattern, that the outpu
 
 ## Equation-level traceability
 
-See `docs/PAPER_TO_CODE_MAP.md` for the section/equation-to-function index and `docs/MATH_TO_CODE_COMPLETENESS_AUDIT.md` for completeness status, deliberate boundaries, and manuscript issues found by the audit.
+See `docs/PAPER_TO_CODE_MAP.md` for the section/equation-to-function index, `docs/MATH_TO_CODE_COMPLETENESS_AUDIT.md` for executable-counterpart completeness, and `docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md` for the separate runtime-integration / evaluation / experiment / external-validation status.
 
 ## Freeze step before submission
 

@@ -24,7 +24,7 @@
 
 ### Posterior uncertainty
 
-The manuscript also states that Dirichlet posteriors provide credible intervals. `research_core/inference.py::credible_intervals` supplies deterministic-seed Monte Carlo marginal intervals using only the Python standard library. This reproduces the inference concept without implying empirical coverage has been validated.
+The manuscript also states that Dirichlet posteriors provide credible intervals. `research_core/inference.py::credible_intervals` supplies deterministic-seed Monte Carlo marginal intervals using only the Python standard library. These are **conditional Dirichlet intervals given the supplied parameter vector**. Under the recursive plug-in hierarchy, upper-level posterior uncertainty is not propagated through those intervals. Experiment 5 separately quantifies that approximation under a declared synthetic binary hierarchy. Neither the interval utility nor Experiment 5 implies external empirical coverage has been established.
 
 ## B. Manuscript listings / algorithms
 
@@ -43,7 +43,7 @@ The manuscript also states that Dirichlet posteriors provide credible intervals.
 | 11 | Hierarchical inference | `research_core/inference.py` | Complete reference logic |
 | 12 | Compatibility masking | `research_core/compatibility.py` | Complete |
 | 13 | Routing class / backoff | `research_core/routing.py` | Complete |
-| 14 | Full AIMS pipeline | `research_core/service.py` | Complete reference path |
+| 14 | Candidate follow-up prioritization runtime | `research_core/service.py` | Integrated reference subset; see `docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md` |
 
 ## C. Thresholds and initialization parameters
 
@@ -76,10 +76,14 @@ These should be corrected in manuscript v1.3 rather than hidden in code:
 
 ## E. Current completeness assessment
 
-- Core Section 5 equations with executable counterpart: **15/15**.
-- Public decision algorithms/listings with counterpart: **14/14**, with Listing 6 intentionally partial at the NER layer and explicitly disclosed.
+- Core Section 5 equations with an executable public counterpart: **15/15**. This is an executable-counterpart count, **not** a claim that all fifteen equations are integrated into one runtime.
+- Candidate follow-up runtime: Eq. **3, 5, 6, 7, 8, 9, 10, and 11** are reached directly or indirectly from `prioritize_followups`; Eq. **4 is partial** because the runtime uses company-level shrinkage against a supplied parent distribution rather than invoking the complete four-level hierarchy.
+- Standalone / offline mathematical utilities: Eq. **1, 2, and 12–15** are not part of the candidate prioritization call graph. Eq. 12–14 are evaluation / monitoring metrics; Eq. 15 is an acquisition-scoring utility.
+- Public decision algorithms/listings with counterpart: **14/14**, with Listing 6 intentionally partial at the NER layer and explicitly disclosed. Listing 14 is now described as the candidate follow-up prioritization runtime rather than shorthand for every mathematical utility.
 - Declared thresholds centralized: **10/10**, but three (`lambda_0`, observation half-life `kappa`, min sample 30) require manuscript clarification before stronger executable semantics are justified.
-- Controlled verification claims: **present and artifact-backed** for Experiments 1A, 1B, 2, and 3. External participant, named-employer, calibration, fairness, current-production-LLM, and employment-outcome validation remain future empirical work.
+- Controlled verification claims: artifact-backed for Experiments 1A, 1B, 2, and 3, with Experiment 5 providing a corrective synthetic hierarchy-approximation benchmark. External participant, named-employer, calibration, fairness, current-production-LLM, and employment-outcome validation remain future empirical work.
+
+See `docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md` for the reviewer-facing equation-by-equation separation of executable counterpart, runtime integration, evaluation use, controlled experimental coverage, and external empirical validation.
 
 The target is conceptual reproducibility and reference-algorithm reproducibility, not disclosure of tenant configuration, JobACE production policy, user data, proprietary operational thresholds, or complete production code.
 

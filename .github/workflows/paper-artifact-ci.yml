@@ -16,6 +16,7 @@ on:
       - "tools/run_exp1b_lens_differentiation.py"
       - "tools/run_exp2_sensitivity_ablation.py"
       - "tools/run_exp3_semantic_regression.py"
+      - "tools/run_exp5_hierarchy_approximation.py"
       - "tools/validate_paper_artifact.py"
       - "docs/PAPER_TO_CODE_MAP.md"
       - "docs/MATH_TO_CODE_COMPLETENESS_AUDIT.md"
@@ -54,5 +55,7 @@ jobs:
         run: python tools/run_exp2_sensitivity_ablation.py
       - name: Run Experiment 3 semantic regression
         run: python tools/run_exp3_semantic_regression.py
+      - name: Run Experiment 5 hierarchy approximation benchmark
+        run: python tools/run_exp5_hierarchy_approximation.py
       - name: Verify committed experiment outputs
         run: git diff --exit-code -- examples/paper/experiments
