@@ -1,0 +1,34 @@
+{
+  "company": "Deloitte",
+  "lens_id": "deloitte_public_v0_1",
+  "version": "0.1.0-public-release-candidate",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "questions": [
+    {
+      "question_id": "DELOITTE-Q-001",
+      "type": "consulting_behavioral",
+      "generated_question": "Tell me about a time you helped a stakeholder move from a complex problem to a practical recommendation and execution path.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Structures the problem and assumptions clearly.",
+        "Explains stakeholder alignment and tradeoffs.",
+        "Connects recommendation to execution reality.",
+        "Shows evidence of client or business impact."
+      ],
+      "evidence_ids": [
+        "DELOITTE-OFFICIAL-001",
+        "DELOITTE-CAREERS-002"
+      ]
+    }
+  ]
+}

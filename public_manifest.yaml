@@ -98,6 +98,12 @@ initial_public_release:
     - slug: tesla
       path: company_lenses/tesla/
       status: existing_candidate
+    - slug: deloitte
+      path: company_lenses/deloitte/
+      status: existing_candidate
+    - slug: ibm
+      path: company_lenses/ibm/
+      status: existing_candidate
 
 allow_paths:
   root_files:
@@ -379,6 +385,24 @@ allow_paths:
     - company_lenses/tesla/limits.md
     - company_lenses/tesla/validation_report.md
     - company_lenses/tesla/role_overlays/
+    - company_lenses/deloitte/README.md
+    - company_lenses/deloitte/profile.json
+    - company_lenses/deloitte/evidence.md
+    - company_lenses/deloitte/rubric.md
+    - company_lenses/deloitte/question_bank.json
+    - company_lenses/deloitte/rewrite_rules.md
+    - company_lenses/deloitte/limits.md
+    - company_lenses/deloitte/validation_report.md
+    - company_lenses/deloitte/role_overlays/
+    - company_lenses/ibm/README.md
+    - company_lenses/ibm/profile.json
+    - company_lenses/ibm/evidence.md
+    - company_lenses/ibm/rubric.md
+    - company_lenses/ibm/question_bank.json
+    - company_lenses/ibm/rewrite_rules.md
+    - company_lenses/ibm/limits.md
+    - company_lenses/ibm/validation_report.md
+    - company_lenses/ibm/role_overlays/
 
   public_tools:
     - tools/export_public_release.py
