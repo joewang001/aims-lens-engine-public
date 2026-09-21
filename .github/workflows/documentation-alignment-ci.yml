@@ -1,0 +1,26 @@
+name: Documentation Alignment CI
+
+on:
+  push:
+    branches:
+      - main
+      - paper-release-readiness-v1.1
+  pull_request:
+    paths:
+      - "README.md"
+      - "README.zh-CN.md"
+      - "README_ZH.md"
+      - "docs/**"
+      - "tools/validate_documentation_alignment.py"
+      - ".github/workflows/documentation-alignment-ci.yml"
+
+jobs:
+  validate-documentation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate bilingual documentation alignment
+        run: python tools/validate_documentation_alignment.py
