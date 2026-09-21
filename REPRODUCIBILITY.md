@@ -52,15 +52,20 @@ python tools/run_exp3_semantic_regression.py
 
 Experiments 1A, 1B, 2, and 3 use synthetic or public-safe fixtures. The frozen v1.3 artifact uses those four as its controlled-verification bundle.
 
-## Run the v1.4 corrective hierarchy benchmark
+## Run the v1.4 corrective verification bundle
 
 ```bash
+python tools/run_exp4_adversarial_alignment.py
 python tools/run_exp5_hierarchy_approximation.py
 ```
 
-Experiment 5 is a pre-specified synthetic benchmark of the recursive plug-in hierarchy against a deterministic uncertainty-propagating binary reference. Its pass/fail criterion is numerical convergence of the reference calculation; estimator differences are descriptive. It does not establish real-world calibration or external validity.
+Experiment 4 is a pre-specified adversarial mathematical-alignment experiment for the four v1.3 corrective counterexamples: Eq. 15 information gain, calibration cancellation, masked-evidence support inflation, and zero-permitted-mass routing. It records the frozen v1.3 semantics through explicit legacy reference helpers and compares them with the corrected v1.4 behavior.
 
-On the v1.4 corrective branch, CI also reruns Experiment 5 and requires a zero git diff across `examples/paper/experiments`, providing committed-output reproducibility for the added corrective benchmark.
+Experiment 5 is a pre-specified synthetic benchmark of the recursive plug-in hierarchy against a deterministic uncertainty-propagating binary reference. Its pass/fail criterion is numerical convergence of the reference calculation; estimator differences are descriptive.
+
+Both corrective experiments concern internal mathematical–implementation behavior. They do not establish real-world calibration, employer validity, population fairness, interview improvement, or employment outcomes.
+
+On the v1.4 corrective branch, CI reruns Experiments 1A, 1B, 2, 3, 4, and 5 and requires a zero git diff across `examples/paper/experiments`, providing committed-output reproducibility for the complete controlled and corrective bundle.
 
 ## What the demo establishes
 

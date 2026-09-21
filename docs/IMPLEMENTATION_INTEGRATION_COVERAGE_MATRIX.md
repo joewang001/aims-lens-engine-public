@@ -36,14 +36,14 @@ That statement does **not** mean all fifteen equations are composed into one end
 | 5 | Authorization × quality × recency weighted counts | `research_core/evidence.py::weighted_counts` | **Integrated** | No | Exp1A; Exp2 temporal sensitivity/ablation | Not externally validated |
 | 6 | Dirichlet posterior parameters | `research_core/inference.py::posterior_alpha` | **Integrated indirectly** through `hierarchical_dirichlet_mean` | No | Exp2; Exp5 plug-in comparator | Not externally validated |
 | 7 | Posterior mean | `research_core/inference.py::posterior_mean` | **Integrated indirectly** through `hierarchical_dirichlet_mean` | No | Exp2; Exp5 plug-in comparator | Not externally validated |
-| 8 | Routed predictive mixture | `research_core/routing.py::route_mixture` | **Integrated** | No | Exp1A; Exp2 gamma sensitivity; v1.4 zero-mass regression tests | Not externally validated |
+| 8 | Routed predictive mixture | `research_core/routing.py::route_mixture` | **Integrated** | No | Exp1A; Exp2 gamma sensitivity; Exp4 E4-04 | Not externally validated |
 | 9 | Routing weights | `research_core/routing.py::route_mixture` | **Integrated** | No | Exp1A; Exp2 gamma sensitivity | Not externally validated |
 | 10 | Normalized entropy | `research_core/uncertainty.py::normalized_entropy` | **Integrated** | Runtime diagnostic summary | Exp1A baseline trace | Not externally validated |
-| 11 | Data-support score | `research_core/uncertainty.py::data_support`, `research_core/service.py` | **Integrated** | Runtime release / abstention support summary | Exp1A; v1.4 masked-support regression tests | Not externally validated |
+| 11 | Data-support score | `research_core/uncertainty.py::data_support`, `research_core/service.py` | **Integrated** | Runtime release / abstention support summary | Exp1A; Exp4 E4-03 | Not externally validated |
 | 12 | Multiclass Brier score | `research_core/evaluation.py::multiclass_brier` | Standalone | **Evaluation** | Unit-level metric test | No external calibration claim |
-| 13 | Top-label ECE | `research_core/evaluation.py::top_label_ece` | Standalone | **Evaluation** | v1.4 adversarial cancellation regression test | No external calibration claim |
+| 13 | Top-label ECE | `research_core/evaluation.py::top_label_ece` | Standalone | **Evaluation** | Exp4 E4-02 | No external calibration claim |
 | 14 | KL drift statistic | `research_core/evaluation.py::kl_divergence` | Standalone | **Evaluation / monitoring** | Unit-level metric test | Threshold not externally validated |
-| 15 | Expected parameter information gain | `research_core/active_learning.py::expected_information_gain` | Standalone | Acquisition-scoring utility | v1.4 exact counterexample regression test | Not externally validated |
+| 15 | Expected parameter information gain | `research_core/active_learning.py::expected_information_gain` | Standalone | Acquisition-scoring utility | Exp4 E4-01 | Not externally validated |
 
 ## Runtime call-graph boundary
 

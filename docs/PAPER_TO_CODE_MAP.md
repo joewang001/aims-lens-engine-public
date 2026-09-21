@@ -27,6 +27,7 @@ This map is the reviewer-oriented index for manuscript v1.3. It links paper clai
 | §7.8 | Sensitivity and controlled ablations (Experiment 2) | `docs/experiments/EXPERIMENT_2_PROTOCOL.md`, `tools/run_exp2_sensitivity_ablation.py`, `examples/paper/experiments/exp2/` |
 | §7.9 | Candidate-answer semantic regression (Experiment 3) | `docs/experiments/EXPERIMENT_3_PROTOCOL.md`, `tools/run_exp3_semantic_regression.py`, `examples/paper/experiments/exp3/` |
 | §7.10 | End-to-end numeric trace and committed-output reproducibility | `examples/paper/experiments/exp1a/results/exp1a_baseline_trace.json`, `.github/workflows/paper-artifact-ci.yml` |
+| v1.4 corrective | Adversarial mathematical alignment (Experiment 4) | `docs/experiments/EXPERIMENT_4_PROTOCOL.md`, `tools/run_exp4_adversarial_alignment.py`, `examples/paper/experiments/exp4/` |
 | v1.4 corrective | Hierarchy plug-in approximation benchmark (Experiment 5) | `docs/experiments/EXPERIMENT_5_PROTOCOL.md`, `tools/run_exp5_hierarchy_approximation.py`, `examples/paper/experiments/exp5/` |
 | §8.2 | Minimized context boundary | `research_core/privacy.py::MinimizedContextPackage`, schema |
 | §9.4 | Plain-language explanation | `research_core/explanation.py` |
@@ -34,4 +35,4 @@ This map is the reviewer-oriented index for manuscript v1.3. It links paper clai
 | Appendix B | Initial research parameters | `config/paper_defaults.json` |
 | Appendix C | Candidate runtime plus standalone research utilities | `research_core/`, `tools/run_paper_artifact_demo.py`, `docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md` |
 
-Before freezing a manuscript v1.3 release, run the validator, unit tests, deterministic demo, Experiments 1A/1B/2/3, and the committed-output reproducibility gate defined in `.github/workflows/paper-artifact-ci.yml`.
+The historical v1.3 release gate remains validator + unit tests + deterministic demo + Experiments 1A/1B/2/3. For the v1.4 corrective branch, additionally run Experiments 4/5 and documentation alignment, with the committed-output reproducibility gate defined in `.github/workflows/paper-artifact-ci.yml`.

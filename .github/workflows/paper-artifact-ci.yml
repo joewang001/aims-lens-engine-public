@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - paper-release-readiness-v1.1
+      - paper-math-alignment-v1.4
   pull_request:
     paths:
       - "research_core/**"
@@ -16,10 +17,13 @@ on:
       - "tools/run_exp1b_lens_differentiation.py"
       - "tools/run_exp2_sensitivity_ablation.py"
       - "tools/run_exp3_semantic_regression.py"
+      - "tools/run_exp4_adversarial_alignment.py"
       - "tools/run_exp5_hierarchy_approximation.py"
       - "tools/validate_paper_artifact.py"
+      - "tools/validate_documentation_alignment.py"
       - "docs/PAPER_TO_CODE_MAP.md"
       - "docs/MATH_TO_CODE_COMPLETENESS_AUDIT.md"
+      - "docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md"
       - "docs/experiments/**"
       - "README.md"
       - "VERSION"
@@ -43,6 +47,8 @@ jobs:
           python-version: "3.11"
       - name: Validate paper artifact
         run: python tools/validate_paper_artifact.py
+      - name: Validate documentation alignment
+        run: python tools/validate_documentation_alignment.py
       - name: Run unit tests
         run: python -m unittest discover -s tests -v
       - name: Run deterministic demo
@@ -55,6 +61,8 @@ jobs:
         run: python tools/run_exp2_sensitivity_ablation.py
       - name: Run Experiment 3 semantic regression
         run: python tools/run_exp3_semantic_regression.py
+      - name: Run Experiment 4 adversarial mathematical alignment
+        run: python tools/run_exp4_adversarial_alignment.py
       - name: Run Experiment 5 hierarchy approximation benchmark
         run: python tools/run_exp5_hierarchy_approximation.py
       - name: Verify committed experiment outputs

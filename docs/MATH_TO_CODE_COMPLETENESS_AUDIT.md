@@ -81,7 +81,7 @@ These should be corrected in manuscript v1.3 rather than hidden in code:
 - Standalone / offline mathematical utilities: Eq. **1, 2, and 12–15** are not part of the candidate prioritization call graph. Eq. 12–14 are evaluation / monitoring metrics; Eq. 15 is an acquisition-scoring utility.
 - Public decision algorithms/listings with counterpart: **14/14**, with Listing 6 intentionally partial at the NER layer and explicitly disclosed. Listing 14 is now described as the candidate follow-up prioritization runtime rather than shorthand for every mathematical utility.
 - Declared thresholds centralized: **10/10**, but three (`lambda_0`, observation half-life `kappa`, min sample 30) require manuscript clarification before stronger executable semantics are justified.
-- Controlled verification claims: artifact-backed for Experiments 1A, 1B, 2, and 3, with Experiment 5 providing a corrective synthetic hierarchy-approximation benchmark. External participant, named-employer, calibration, fairness, current-production-LLM, and employment-outcome validation remain future empirical work.
+- Controlled verification claims: artifact-backed for Experiments 1A, 1B, 2, and 3; Experiment 4 provides adversarial verification of corrective findings F1–F4; Experiment 5 provides the corrective synthetic hierarchy-approximation benchmark for F5. External participant, named-employer, calibration, fairness, current-production-LLM, and employment-outcome validation remain future empirical work.
 
 See `docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md` for the reviewer-facing equation-by-equation separation of executable counterpart, runtime integration, evaluation use, controlled experimental coverage, and external empirical validation.
 
@@ -97,3 +97,14 @@ The v1.3 manuscript adds controlled results without changing the Section 5 mathe
 - **Experiment 3:** six public-safe candidate-answer semantic regression fixtures; the current production language model is explicitly **not** rerun.
 
 These experiments verify internal mechanism behavior, contract preservation, and reproducibility under controlled inputs. They do not establish the external empirical claims reserved by manuscript Sections 7.1–7.6.
+
+## G. v1.4 corrective verification alignment
+
+The corrective branch adds two experiments without rewriting the immutable v1.3 artifact:
+
+- **Experiment 4 — Adversarial Mathematical Alignment:** four deterministic cases reproduce the frozen v1.3 counterexamples and verify the v1.4 corrections for Eq. 15 parameter information gain, top-label calibration diagnostics, permitted-category support, and zero-permitted-mass routing.
+- **Experiment 5 — Hierarchy Approximation Benchmark:** a pre-specified synthetic binary hierarchy compares recursive plug-in shrinkage with a deterministic uncertainty-propagating numerical reference across sparse, intermediate, and dense regimes.
+
+Experiment 4 is evidence of internal mathematical–implementation correction, not external calibration or real-world efficacy. Experiment 5 is evidence about approximation behavior under the declared synthetic hierarchy, not proof that either estimator is externally valid for employer behavior or employment outcomes.
+
+The v1.4 integration gate therefore consists of the paper artifact validator, documentation-alignment validator, unit tests, deterministic demo, Experiments 1A/1B/2/3/4/5, committed-output zero diff, and `git diff --check`.
