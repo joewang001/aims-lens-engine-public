@@ -14,7 +14,7 @@ from research_core import EvidenceRecord, PracticeRequest, RoutingLevel, priorit
 from research_core.active_learning import expected_information_gain, predictive_entropy_reduction
 from research_core.compatibility import masked_and_renormalized
 from research_core.dag import PARENT_CARDINALITY_CAPS, joint_factorization, parent_configuration_count, validate_dag
-from research_core.evaluation import kl_divergence, multiclass_brier, multiclass_log_loss, vector_ece
+from research_core.evaluation import kl_divergence, multiclass_brier, multiclass_log_loss, top_label_ece, vector_ece
 from research_core.evidence import decay_rate_from_half_life, weighted_counts
 from research_core.inference import credible_intervals, hierarchical_partial_pooling, posterior_alpha, posterior_mean
 from research_core.lens import load_lens
@@ -290,8 +290,20 @@ class ResearchCoreTests(unittest.TestCase):
         preds = [[0.8, 0.2], [0.3, 0.7]]
         ys = [0, 1]
         self.assertGreaterEqual(multiclass_brier(preds, ys), 0)
-        self.assertGreaterEqual(vector_ece(preds, ys, bins=2), 0)
+        self.assertGreaterEqual(top_label_ece(preds, ys, bins=2), 0)
         self.assertGreaterEqual(multiclass_log_loss(preds, ys), 0)
+
+    def test_top_label_ece_exposes_high_confidence_error_cancellation(self):
+        preds = [[0.9, 0.1], [0.1, 0.9]]
+        ys = [1, 0]
+
+        legacy_vector = vector_ece(preds, ys, bins=10)
+        top_label = top_label_ece(preds, ys, bins=10)
+
+        self.assertAlmostEqual(legacy_vector, 0.0, places=12)
+        self.assertAlmostEqual(top_label, 0.9, places=12)
+        self.assertGreater(multiclass_brier(preds, ys), 0.0)
+        self.assertGreater(multiclass_log_loss(preds, ys), 0.0)
 
     def test_eq14_drift_kl(self):
         self.assertAlmostEqual(kl_divergence([0.5, 0.5], [0.5, 0.5]), 0.0)

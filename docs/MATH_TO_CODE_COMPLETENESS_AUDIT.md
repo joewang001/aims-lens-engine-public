@@ -18,7 +18,7 @@
 | 10 | Normalized entropy | `research_core/uncertainty.py::normalized_entropy` | Complete and corrected | Denominator uses permitted category count `K_L`, not only non-zero entries. |
 | 11 | Data-support score `1-exp(-n_eff/tau)` | `research_core/uncertainty.py::data_support`, `research_core/service.py::prioritize_followups` | Corrected v1.4 reference logic | `n_eff` used for release/abstention is the sum of authorization-, quality-, and recency-weighted counts over the current permitted categories only. Compatibility-masked categories contribute zero released support. Explicitly not a correctness probability. |
 | 12 | Multiclass Brier score | `research_core/evaluation.py::multiclass_brier` | Complete | Evaluation only; does not assert calibration. |
-| 13 | Vector-form ECE | `research_core/evaluation.py::vector_ece` | Complete reference operationalization | Binning is by maximum predicted probability; bin vector mismatch uses L1 distance as written. |
+| 13 | Top-label ECE | `research_core/evaluation.py::top_label_ece` | Corrected v1.4 calibration diagnostic | Bins by predicted top-class confidence and compares mean confidence with empirical top-label accuracy. The former `vector_ece` is retained only as a supplementary diagnostic because opposing class-vector errors can cancel within a bin. ECE remains a diagnostic rather than evidence that calibration has been externally established. |
 | 14 | KL drift statistic | `research_core/evaluation.py::kl_divergence` | Complete | Threshold remains an empirical policy setting. |
 | 15 | Expected parameter information gain | `research_core/active_learning.py::expected_information_gain` | Corrected reference operationalization | Computes one-record Dirichlet-parameter posterior information gain (equivalently `I(Theta;Y)`) for already-authorized records. The former predictive category-entropy reduction is retained separately as `predictive_entropy_reduction` and is not Eq. 15. |
 
@@ -56,7 +56,7 @@ All initial values are centralized in `config/paper_defaults.json` so a reviewer
 | backoff `gamma = 0.7` | `backoff_discount_gamma`; `route_mixture` | Executable |
 | temporal `delta = 0.02/month` | `temporal_decay_delta_per_month`; `exponential_recency_weight` | Executable when evidence age is supplied in months; demo uses the mathematically equivalent half-life-to-rate conversion in days. |
 | KL review threshold `0.3` | `kl_drift_review_threshold`; `kl_divergence` | Metric executable; threshold not claimed validated |
-| ECE secondary target `0.10` | `ece_secondary_target`; `vector_ece` | Metric executable; target remains secondary/empirical |
+| ECE secondary target `0.10` | `ece_secondary_target`; `top_label_ece` | Metric executable; target remains secondary/empirical and is not treated as proof of calibration. `vector_ece` is supplementary only. |
 | support ceiling example `0.85` | `support_ceiling_example`; `research_core/policy.py::apply_support_ceiling` | Executable policy cap; not probability |
 | abstention threshold example `0.3` | `abstention_threshold_example`; `should_abstain` | Executable configurable policy |
 | minimum sample size `30` | `minimum_sample_size_example` | Documented only; v1.3 should clarify what operation is gated because hierarchical shrinkage is already continuous below and above 30. |
