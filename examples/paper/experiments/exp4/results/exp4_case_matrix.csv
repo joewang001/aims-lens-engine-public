@@ -1,0 +1,5 @@
+case_id,finding,legacy_behavior,corrected_behavior,passed
+E4-01,F1_eq15_information_gain,predictive_reduction=0.056633012265,parameter_ig=0.193147180560,True
+E4-02,F2_calibration_cancellation,vector_ece=0.000000000000,top_label_ece=0.900000000000,True
+E4-03,F3_masked_evidence_support,below_threshold=ordered_practice_priority,below_threshold=abstain,True
+E4-04,F4_zero_permitted_mass_routing,all_massless=ordered_practice_priority,all_massless=abstain,True

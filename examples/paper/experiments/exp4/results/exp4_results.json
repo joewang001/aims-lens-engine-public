@@ -1,0 +1,159 @@
+{
+  "absolute_tolerance": 1e-12,
+  "case_count": 4,
+  "cases": [
+    {
+      "case_id": "E4-01",
+      "checks": {
+        "current_matches_declared": true,
+        "legacy_matches_declared": true,
+        "quantities_are_distinct": true
+      },
+      "corrected_v14": {
+        "semantic": "parameter_posterior_information_gain",
+        "value": 0.19314718056
+      },
+      "finding": "F1_eq15_information_gain",
+      "legacy_v13": {
+        "semantic": "predictive_category_entropy_reduction",
+        "value": 0.056633012265
+      },
+      "passed": true
+    },
+    {
+      "case_id": "E4-02",
+      "checks": {
+        "brier_positive": true,
+        "current_top_label_ece_matches_declared": true,
+        "legacy_cancellation_reproduced": true,
+        "log_loss_positive": true
+      },
+      "complementary_metrics": {
+        "multiclass_brier": 1.62,
+        "multiclass_log_loss": 2.302585092994
+      },
+      "corrected_v14": {
+        "metric": "top_label_ece",
+        "value": 0.9
+      },
+      "finding": "F2_calibration_cancellation",
+      "legacy_v13": {
+        "metric": "vector_ece",
+        "value": 0.0
+      },
+      "passed": true
+    },
+    {
+      "above_threshold_invariance": {
+        "corrected_attack_mass": 3.196003206699,
+        "corrected_attack_support": 0.329344978961,
+        "corrected_base_mass": 3.196003206699,
+        "corrected_base_support": 0.329344978961,
+        "legacy_attack_mass": 53.196003206699,
+        "legacy_attack_support": 0.998705331241,
+        "legacy_base_mass": 3.196003206699,
+        "legacy_base_support": 0.329344978961
+      },
+      "below_threshold_attack": {
+        "corrected_v14": {
+          "data_support": 0.117503097415,
+          "effective_evidence_mass": 1.0,
+          "mode": "abstain",
+          "reason": "insufficient_data_support"
+        },
+        "legacy_v13": {
+          "data_support": 0.99999671124,
+          "effective_evidence_mass": 101.0,
+          "mode": "ordered_practice_priority"
+        },
+        "threshold": 0.2
+      },
+      "case_id": "E4-03",
+      "checks": {
+        "above_corrected_mass_invariant": true,
+        "above_corrected_support_invariant": true,
+        "above_distribution_invariant": true,
+        "above_priority_invariant": true,
+        "below_current_abstains": true,
+        "below_current_support_below_threshold": true,
+        "below_legacy_releases": true,
+        "below_legacy_support_above_threshold": true,
+        "legacy_mass_inflates": true,
+        "legacy_support_inflates": true
+      },
+      "finding": "F3_masked_evidence_support",
+      "passed": true
+    },
+    {
+      "all_massless_service": {
+        "corrected_v14": {
+          "mode": "abstain",
+          "reason": "no_supported_routing_mass"
+        },
+        "legacy_v13": {
+          "mode": "ordered_practice_priority",
+          "reason": null
+        }
+      },
+      "case_id": "E4-04",
+      "checks": {
+        "current_all_massless_service_abstains": true,
+        "current_mixed_excludes_zero_mass_component": true,
+        "current_mixed_is_normalized": true,
+        "legacy_all_massless_service_releases": true,
+        "legacy_mixed_has_two_components": true,
+        "legacy_zero_mass_component_gets_weight": true
+      },
+      "finding": "F4_zero_permitted_mass_routing",
+      "mixed_component": {
+        "corrected_v14": {
+          "mixture": {
+            "a": 1.0
+          },
+          "routing_provenance": [
+            {
+              "applicability": true,
+              "authorization": true,
+              "backoff_distance": 0,
+              "coverage": 0.5,
+              "level": "L0",
+              "routing_weight": 1.0
+            }
+          ]
+        },
+        "legacy_v13": {
+          "mixture": {
+            "a": 1.0
+          },
+          "routing_provenance": [
+            {
+              "applicability": true,
+              "authorization": true,
+              "backoff_distance": 0,
+              "coverage": 0.5,
+              "level": "L0",
+              "routing_weight": 0.748425
+            },
+            {
+              "applicability": true,
+              "authorization": true,
+              "backoff_distance": 5,
+              "coverage": 1.0,
+              "level": "L5",
+              "routing_weight": 0.251575
+            }
+          ]
+        }
+      },
+      "passed": true
+    }
+  ],
+  "claim_boundary": "Internal mathematical-implementation alignment only; no external empirical validity claim.",
+  "failures": [],
+  "legacy_reference": {
+    "commit": "f7fcb6a3129cb58fe20c414f1abe519376def8e1",
+    "tag": "v0.9.2-paper-v1.3"
+  },
+  "passed": true,
+  "protocol_version": "0.1-corrective-prespecified"
+}
