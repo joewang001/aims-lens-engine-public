@@ -10,7 +10,15 @@ from .uncertainty import data_support, normalized_entropy, should_abstain
 
 def prioritize_followups(request: PracticeRequest) -> Dict[str,Any]:
     request.validate()
-    counts,effective_mass=weighted_counts(request.evidence,request.categories,request.temporal_decay_rate_per_day)
+    counts,_total_effective_mass=weighted_counts(
+        request.evidence,
+        request.categories,
+        request.temporal_decay_rate_per_day,
+    )
+    # Release/abstention support is defined only over categories permitted in
+    # the current practice context. Evidence assigned to a category that is
+    # later compatibility-masked must not increase support for release.
+    effective_mass=sum(counts.get(category,0.0) for category in request.permitted_categories)
     local=hierarchical_dirichlet_mean(request.parent_distribution,counts,request.categories,request.kappa_company)
     local_masked=masked_and_renormalized(local,request.categories,request.permitted_categories)
     if not local_masked:

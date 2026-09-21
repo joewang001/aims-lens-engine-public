@@ -116,6 +116,55 @@ class ResearchCoreTests(unittest.TestCase):
         self.assertEqual(out["mode"], "abstain")
         self.assertEqual(out["reason"], "insufficient_data_support")
 
+    def test_masked_only_evidence_cannot_cross_support_threshold(self):
+        base = replace(
+            self._request(),
+            evidence=[EvidenceRecord("ownership", True, 1.0, 0.0)],
+            abstention_threshold=0.2,
+        )
+        masked_evidence = [
+            EvidenceRecord("collaboration", True, 1.0, 0.0)
+            for _ in range(100)
+        ]
+        attacked = replace(base, evidence=base.evidence + masked_evidence)
+
+        base_out = prioritize_followups(base)
+        attacked_out = prioritize_followups(attacked)
+
+        self.assertEqual(base_out["mode"], "abstain")
+        self.assertEqual(attacked_out["mode"], "abstain")
+        self.assertEqual(base_out["reason"], "insufficient_data_support")
+        self.assertEqual(attacked_out["reason"], "insufficient_data_support")
+        self.assertEqual(
+            attacked_out["effective_evidence_mass"],
+            base_out["effective_evidence_mass"],
+        )
+        self.assertEqual(attacked_out["data_support"], base_out["data_support"])
+
+    def test_masked_evidence_does_not_change_released_support_or_priority(self):
+        base = self._request()
+        masked_evidence = [
+            EvidenceRecord("collaboration", True, 1.0, 0.0)
+            for _ in range(50)
+        ]
+        attacked = replace(base, evidence=base.evidence + masked_evidence)
+
+        base_out = prioritize_followups(base)
+        attacked_out = prioritize_followups(attacked)
+
+        self.assertEqual(base_out["mode"], "ordered_practice_priority")
+        self.assertEqual(attacked_out["mode"], "ordered_practice_priority")
+        self.assertEqual(
+            attacked_out["effective_evidence_mass"],
+            base_out["effective_evidence_mass"],
+        )
+        self.assertEqual(attacked_out["data_support"], base_out["data_support"])
+        self.assertEqual(
+            attacked_out["diagnostic_distribution"],
+            base_out["diagnostic_distribution"],
+        )
+        self.assertEqual(attacked_out["priority_order"], base_out["priority_order"])
+
     def test_local_posterior_targets_l0_not_list_position(self):
         request = self._request()
         baseline = prioritize_followups(request)

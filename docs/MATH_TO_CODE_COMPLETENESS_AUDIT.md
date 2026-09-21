@@ -16,7 +16,7 @@
 | 8 | Routed predictive mixture | `research_core/routing.py::route_mixture` | Complete | Exposes component provenance. |
 | 9 | Routing weights | `research_core/routing.py::route_mixture` | Complete | Implements authorization × applicability × coverage × gamma^distance and normalization. |
 | 10 | Normalized entropy | `research_core/uncertainty.py::normalized_entropy` | Complete and corrected | Denominator uses permitted category count `K_L`, not only non-zero entries. |
-| 11 | Data-support score `1-exp(-n_eff/tau)` | `research_core/uncertainty.py::data_support` | Complete and corrected | Explicitly not a correctness probability. |
+| 11 | Data-support score `1-exp(-n_eff/tau)` | `research_core/uncertainty.py::data_support`, `research_core/service.py::prioritize_followups` | Corrected v1.4 reference logic | `n_eff` used for release/abstention is the sum of authorization-, quality-, and recency-weighted counts over the current permitted categories only. Compatibility-masked categories contribute zero released support. Explicitly not a correctness probability. |
 | 12 | Multiclass Brier score | `research_core/evaluation.py::multiclass_brier` | Complete | Evaluation only; does not assert calibration. |
 | 13 | Vector-form ECE | `research_core/evaluation.py::vector_ece` | Complete reference operationalization | Binning is by maximum predicted probability; bin vector mismatch uses L1 distance as written. |
 | 14 | KL drift statistic | `research_core/evaluation.py::kl_divergence` | Complete | Threshold remains an empirical policy setting. |
