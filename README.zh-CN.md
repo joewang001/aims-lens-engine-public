@@ -5,15 +5,17 @@
 
 AIMS Lens Engine 是一个可独立部署、与具体机构无绑定的 **evidence-governed interview reasoning and practice-decision engine（证据治理的面试推理与练习决策引擎）**。它把来源不同、授权状态不同、质量和时效不同的证据转成有版本的练习假设，再通过明确的 uncertainty、routing、backoff 和 abstention 规则，决定下一步最值得练习和追问的方向。
 
-**冻结论文 artifact：** `v0.9.2-paper-v1.3`
+**Release-candidate artifact：** `0.10.0-paper-v1.4`
 
-**对应 manuscript：** `v1.3`
+**对应 manuscript：** `v1.4`
 
-**Experimental bundle：** `84c0afc5f928989237832d625002aba17ae8ac4f`
+**Candidate experimental baseline：** `c18899b469e1d579391306872d5834ebf6e3caf3`
 
-**Frozen artifact ref：** `v0.9.2-paper-v1.3`
+**Planned immutable tag（尚未创建）：** `v0.10.0-paper-v1.4`
 
-**Release date：** `2026-09-20`
+**Release status：** `candidate` — 当前不声称 v1.4 tag 已冻结。
+
+**上一冻结 paper artifact：** `v0.9.2-paper-v1.3`，commit `f7fcb6a3129cb58fe20c414f1abe519376def8e1`
 
 **Public repository：** https://github.com/joewang001/aims-lens-engine-public
 
@@ -94,7 +96,7 @@ Lens 是一套机器可读、可以复核、可以更新的面试上下文表示
 2. **独立采集证据。** 把官方资料、招聘信号、高管语言、社区经验、决策案例、批评与风险证据分开。
 3. **规范化证据。** 转为 evidence packet，记录 authorization、provenance、quality、recency、scope 和 expiry。
 4. **合成 Lens。** 把有支持的信号映射到 AIMS 能力模型和 follow-up taxonomy；社区经验不能自动升级为“企业官方规则”。
-5. **进行概率推理。** 使用 hierarchical Dirichlet-style partial pooling、compatibility masking 和显式 uncertainty。
+5. **进行概率推理。** 使用 recursive plug-in hierarchical Dirichlet shrinkage、compatibility masking 和显式 uncertainty。
 6. **诚实 routing。** 使用 L0–L5 backoff；不够支持的 specificity 必须折扣、降级或 abstention。
 7. **验证和维护。** 跟踪 maturity、drift、相互冲突的证据、过期状态和 review history。
 
@@ -121,12 +123,12 @@ Lens 是一套机器可读、可以复核、可以更新的面试上下文表示
 - constrained probabilistic DAG；
 - logistic stopping model；
 - compatibility masking；
-- hierarchical Dirichlet-style partial pooling；
+- recursive plug-in hierarchical Dirichlet shrinkage；
 - authorization × quality × recency 的 effective evidence；
-- posterior mean 和可检查 uncertainty interval；
+- posterior mean 和 conditional Dirichlet intervals given the plug-in parent distribution；
 - 六级 routing / backoff mixture；
 - normalized entropy 和 data support；
-- Brier score、vector ECE、log loss；
+- Brier score、top-label ECE、log loss；
 - KL drift；
 - reference information-gain scoring。
 
@@ -220,9 +222,11 @@ python tools/run_exp1a_core_verification.py
 python tools/run_exp1b_lens_differentiation.py
 python tools/run_exp2_sensitivity_ablation.py
 python tools/run_exp3_semantic_regression.py
+python tools/run_exp4_adversarial_alignment.py
+python tools/run_exp5_hierarchy_approximation.py
 ```
 
-Manuscript v1.3 还报告 controlled synthetic verification、parameter sensitivity、controlled ablation，以及 6 个 public-safe semantic regression fixtures。这些结果验证的是受控输入下声明机制的行为和可复现性；它们并不能证明 named-employer validity、population fairness、当前 production LLM accuracy 或就业结果。
+Manuscript v1.4 保留 Experiments 1A/1B/2/3，并新增 Experiment 4 作为 internal mathematical–implementation correction evidence，以及 Experiment 5 作为 synthetic approximation benchmark。这些结果验证受控输入下的机制行为、corrective alignment、approximation behavior 与可复现性；不能外推为 real-employer validity、population fairness、当前 production LLM accuracy、面试提升或 employment-outcome efficacy。
 
 双语文档一致性单独检查：
 

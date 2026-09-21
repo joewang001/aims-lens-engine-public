@@ -1,186 +1,115 @@
-# Paper-Release Readiness Refactor Plan
+# Paper Release Readiness — v1.4 Corrective Research Release
 
-Target branch: `paper-release-readiness-v1.1`  
-Base: `main` at `cf2586e5649feb05fd19faefa479e765055c76d4`  
-Original branch target: AIMS Lens Engine v1.1 journal-preparation manuscript
-Current aligned manuscript: **v1.3**
-Final paper artifact version: **v0.9.2-paper-v1.3**
-Frozen experimental bundle: `84c0afc5f928989237832d625002aba17ae8ac4f`
-Declared archival tag: **`v0.9.2-paper-v1.3`**
-Release date: **2026-09-20**
+Target branch: `paper-math-alignment-v1.4`
+Previous frozen tag: `v0.9.2-paper-v1.3`
+Previous frozen commit: `f7fcb6a3129cb58fe20c414f1abe519376def8e1`
+v1.4 corrective experimental baseline: `c18899b469e1d579391306872d5834ebf6e3caf3`
+Release-candidate artifact version: **`0.10.0-paper-v1.4`**
+Planned immutable tag: **`v0.10.0-paper-v1.4`**
+Current release status: **candidate**
 
 ## Objective
 
-Make the public repository internally consistent with manuscript v1.3 before journal submission, while preserving repository history and leaving `main` unchanged until review/merge. The v1.3 release layer additionally aligns the frozen controlled-verification bundle, reviewer documentation, citation metadata, and archival freeze semantics.
+Prepare the v1.4 corrective research artifact for an immutable freeze without modifying or moving the frozen v1.3 history.
 
-The frozen manuscript artifact must present AIMS Lens Engine as an independent, institution-agnostic, candidate-side interview-practice reasoning engine. JobACE remains a reference client. Historical employer-side screening experiments remain visible in repository history or wider project files but are not part of the paper research core.
+The v1.4 candidate preserves the candidate-side interview-practice research boundary. It corrects and documents internal mathematical–implementation alignment while keeping external-validity claims explicitly out of scope.
 
-## Classification rules
+## Corrective scope
 
-Every file on the base commit is classified by the precedence below. A more specific path overrides a directory rule.
+The v1.4 release candidate includes:
 
-### A. MODIFY — paper-facing files
+- **F1 — Eq. 15:** parameter-information-gain alignment;
+- **F2 — calibration:** top-label ECE correction;
+- **F3 — support:** permitted-category evidence support;
+- **F4 — routing:** zero-permitted-mass fail-closed behavior;
+- **F5 — hierarchy:** synthetic benchmark of the **recursive plug-in hierarchical Dirichlet shrinkage** approximation;
+- **F6 — coverage:** explicit implementation / runtime integration / evaluation / experiment / external-validation matrix.
 
-| File | Action | Reason |
-|---|---|---|
-| `README.md` | replace | Lead with independent research-core positioning; add reviewer quick start and explicit legacy boundary. |
-| `VERSION` | replace on branch | Mark branch artifact as `v0.9.0-paper-readiness`; do not change `main` until accepted. |
-| `CHANGELOG.md` | prepend | Record the paper-readiness boundary and artifact changes. |
-| `api/openapi.yaml` | replace | Remove employer-side screening / advance / reject semantics from the paper-facing API; expose Lens validation, routing, practice priority and explanation. |
-| `architecture/system-design.md` | replace | Make Versioned Lens API the system boundary; JobACE becomes one client; split public research assets from protected production assets. |
-| `architecture/lens-router.md` | replace | Align routing with L0-L5 paper backoff and practice-only scope. |
-| `governance/evidence-standard.md` | replace | Separate authorization gate from quality/recency weight; define Lens as evidence-bounded hypothesis. |
-| `governance/privacy-and-fairness.md` | replace | Remove employer adverse-decision framing from paper governance; add authenticity, stereotyping, contestability, fail-closed rules. |
+For the recursive plug-in hierarchy, reported credible intervals are **conditional Dirichlet intervals given the plug-in parent distribution**. They are not presented as full hierarchical posterior uncertainty propagation.
 
-### B. ADD — manuscript research core
+## Experiment interpretation boundary
 
-| New file | Purpose |
-|---|---|
-| `CITATION.cff` | Machine-readable citation metadata. |
-| `RESEARCH_BOUNDARY.md` | Normative definition of paper scope and exclusions. |
-| `REPRODUCIBILITY.md` | Reviewer runbook requiring no network/private data. |
-| `PAPER_RELEASE_READINESS.md` | This file-level refactor record. |
-| `paper_artifact_manifest.yaml` | Frozen manuscript allowlist/exclusion policy, narrower than `public_manifest.yaml`. |
-| `research_core/__init__.py` | Public reference package surface. |
-| `research_core/models.py` | Institution-agnostic evidence, routing and practice request models. |
-| `research_core/inference.py` | Authorization gating, recency/quality weighting, partial pooling, compatibility mask, routing mixture, entropy/support. |
-| `research_core/service.py` | Ordered candidate-side practice-priority service. |
-| `schemas/followup_priority_request.schema.json` | Research-core request contract. |
-| `schemas/followup_priority_response.schema.json` | Research-core response contract. |
-| `examples/paper/followup_priority_request.json` | Synthetic deterministic example. |
-| `examples/paper/expected_followup_priority_response.json` | Expected deterministic output. |
-| `tools/run_paper_artifact_demo.py` | One-command reviewer demo. |
-| `tools/validate_paper_artifact.py` | Boundary and deterministic-output validation. |
-| `tests/test_research_core.py` | Reference implementation unit tests. |
-| `.github/workflows/paper-artifact-ci.yml` | CI for paper artifact. |
-| `legacy/employer_decision_support/README.md` | Scope marker for historical employer-side semantics; points to git history rather than duplicating old API. |
+- **Experiments 1A/1B/2/3** remain controlled verification / sensitivity / ablation / semantic-regression evidence.
+- **Experiment 4** is internal mathematical–implementation correction evidence.
+- **Experiment 5** is a synthetic approximation benchmark.
+- None of these experiments establish real-employer validity, population fairness, employer-behavior prediction, interview-improvement efficacy, or employment-outcome efficacy.
 
-### C. KEEP — legal, contribution and broad public-release infrastructure
+## Release-candidate metadata state
 
-These files remain unchanged and are valid repository-level assets. They are not rewritten merely for the paper:
+The candidate must remain distinguishable from a frozen release:
 
-- `LICENSE`
-- `NOTICE`
-- `CONTENT_LICENSE.md`
-- `CONTRIBUTING.md`
-- `README_ZH.md` — retain as broader project documentation; update separately if a Chinese paper-artifact mirror is desired.
-- `public_manifest.yaml` — remains the broad public-export allowlist; the paper uses the stricter `paper_artifact_manifest.yaml`.
-- `private_manifest.yaml` — remains the hard denylist for private data and production assets.
-- `.github/workflows/public-lens-maintenance.yml` — remains the wider public-Lens maintenance workflow, outside frozen paper reproducibility.
+- `VERSION`: `0.10.0-paper-v1.4`;
+- `CITATION.cff`: version `0.10.0-paper-v1.4`, with no `date-released` while candidate;
+- `paper_artifact_manifest.yaml`: `paper_version: v1.4`, `release_status: candidate`;
+- `frozen_artifact_ref: pending_until_release_freeze`;
+- `target_release_tag: v0.10.0-paper-v1.4`;
+- README files describe the tag as planned, not created or frozen.
 
-### D. KEEP AS SUPPORTING PUBLIC ASSETS — not required to reproduce the paper model
+The previous frozen v1.3 tag and commit remain immutable historical references.
 
-All files under these paths remain in the repository, but are outside the minimal frozen paper artifact unless explicitly allowlisted:
+## v1.4 paper-artifact coverage
 
-- `company_lenses/**`
-- `agents/templates/**`
-- `routing/role_router.json`
-- `docs/aims-lens-distillation-strategy-zh.md`
-- `docs/candidate-persona-fixtures.md`
-- `docs/distillation-playbook.md`
-- `docs/implementation-plan.md`
-- `docs/project-charter.md`
-- `docs/public-lens-operations-plan.md`
-- `docs/public-lens-refresh-and-expansion.md`
-- `docs/public-lens-sourcing-agent-contract.md`
-- `docs/public-private-split-strategy.md`
-- `docs/public-private-split-strategy-zh.md`
-- `docs/refresh-candidates/**`
-- `docs/role-routing-and-validation.md`
-- `docs/validation-checklist.md`
+The paper allowlist includes the existing v1.3 research core plus the v1.4 corrective assets, including:
 
-Interpretation rule for `company_lenses/**`: named-company assets are public practice hypotheses inferred from permitted evidence; they are not official employer standards and are not required by the deterministic paper demo.
+- `docs/experiments/EXPERIMENT_4_PROTOCOL.md`;
+- `docs/experiments/EXPERIMENT_5_PROTOCOL.md`;
+- `examples/paper/experiments/exp4/`;
+- `examples/paper/experiments/exp5/`;
+- `tools/run_exp4_adversarial_alignment.py`;
+- `tools/run_exp5_hierarchy_approximation.py`;
+- `docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md`;
+- `tools/validate_documentation_alignment.py`;
+- bilingual root README metadata needed by documentation alignment.
 
-### E. KEEP AS SUPPORTING SCHEMAS — outside minimal paper core
+## Candidate validation gates
 
-The following existing schema files remain in place because they support the wider open project, but the manuscript does not rely on them as its reproducibility contract:
+Before any freeze metadata is committed, all of the following must pass on the candidate branch:
 
-- `schemas/agent_artifact.schema.json`
-- `schemas/candidate_persona_fixture.schema.json`
-- `schemas/company_lens.schema.json`
-- `schemas/derived_lens.schema.json`
-- `schemas/dual_layer_evaluation.schema.json`
-- `schemas/evidence.schema.json`
-- `schemas/interview_prep_plan.schema.json`
-- `schemas/public_lens_source_packet.schema.json`
-- `schemas/question_bank.schema.json`
-- `schemas/role_lens.schema.json`
+```bash
+python tools/validate_paper_artifact.py
+python tools/validate_documentation_alignment.py
+python -m unittest discover -s tests -v
+python tools/run_paper_artifact_demo.py
+python tools/run_exp1a_core_verification.py
+python tools/run_exp1b_lens_differentiation.py
+python tools/run_exp2_sensitivity_ablation.py
+python tools/run_exp3_semantic_regression.py
+python tools/run_exp4_adversarial_alignment.py
+python tools/run_exp5_hierarchy_approximation.py
+git diff --exit-code -- examples/paper/experiments
+```
 
-### F. RETAIN BUT SEPARATE FROM RESEARCH CORE — employer/product-specific semantics
+Expected gate state:
 
-These files remain in repository history/wider development scope, but must not be included in the frozen paper artifact or cited as implementation evidence for the manuscript's candidate-side claims:
+- Exp1A / Exp1B / Exp2 / Exp3 / Exp4 / Exp5: PASS;
+- unit tests: PASS;
+- paper artifact validator: PASS;
+- documentation alignment: PASS;
+- committed experiment outputs: zero diff;
+- remote Paper Artifact CI: GREEN.
 
-- `schemas/jobace_adapter_contract.schema.json`
-- `schemas/review_decision.schema.json`
-- `schemas/screening_report.schema.json`
-- `examples/human-review-decision-request.json`
-- `examples/internal-pilot-screening-request.json`
-- `examples/jobace-amazon-marketing-request.json`
-- `examples/jobace-review-decision-request.json`
-- `examples/jobace-staging-screening-request.json`
-- `examples/jobace-staging-validation-suite.json`
-- `examples/lens-workspace-create-api-key-request.json`
-- `examples/lens-workspace-create-tenant-request.json`
-- `examples/lens-workspace-source-material-request.json`
-- `docs/limited-pilot-policy.md`
-- `tools/llm_scorer.py`
-- `tools/run_scoring_harness.py`
+## Freeze sequence
 
-The legacy boundary also covers any future path matching:
+Only after the release-candidate commit is green:
 
-- `services/**`
-- `integrations/jobace/**`
-- employer ranking / screening / advance / reject decision workflows.
+1. create a **separate freeze-metadata commit**;
+2. change `release_status` from `candidate` to `frozen`;
+3. set `frozen_artifact_ref: v0.10.0-paper-v1.4`;
+4. add the final `date-released` to `CITATION.cff`;
+5. keep repository wording explicit that the tag is created only after the exact freeze commit passes CI;
+6. rerun the full local validation suite;
+7. push the freeze-metadata commit and require remote Paper Artifact CI to pass;
+8. create immutable tag `v0.10.0-paper-v1.4` on that exact green freeze commit;
+9. verify remotely that the tag resolves to that exact commit;
+10. update manuscript Code and Artifact Availability wording to cite the frozen tag / commit.
 
-### G. KEEP AS BROADER PUBLIC TOOLING — outside paper core
+Do not create or advertise the v1.4 tag as existing before the freeze commit is green.
 
-The following existing tools remain useful for public Lens operations and validation but are not needed to reproduce the manuscript reference path:
+## Historical immutability
 
-- `tools/collect_public_lens_sources.py`
-- `tools/export_public_release.py`
-- `tools/generate_phase2c_validation_cases.py`
-- `tools/generate_public_lens_patch.py`
-- `tools/generate_public_release_audit_report.py`
-- `tools/interview_prep_planner.py`
-- `tools/prepare_public_lens_refresh.py`
-- `tools/scan_public_export.py`
-- `tools/validate_b2c2_improvement_plan.py`
-- `tools/validate_candidate_personas.py`
-- `tools/validate_cross_company_fit_matrix.py`
-- `tools/validate_dual_layer_evaluation.py`
-- `tools/validate_public_lens_coverage.py`
-- `tools/validate_role_routing.py`
+The following historical artifact must not be rewritten, retagged, force-moved, or otherwise altered:
 
-### H. KEEP AS EXISTING NON-PAPER EXAMPLES
+- tag: `v0.9.2-paper-v1.3`;
+- commit: `f7fcb6a3129cb58fe20c414f1abe519376def8e1`.
 
-Unless listed in section F, current `examples/*.json` remain wider-project examples. They are not included in the paper artifact. The paper's reproducibility examples live only under `examples/paper/**`.
-
-## Why no destructive deletion is required
-
-The manuscript problem is not that historical employer-side experiments exist; the problem is ambiguity over which files constitute the research artifact. The refactor therefore uses four boundaries:
-
-1. paper-facing API and governance contain candidate-side semantics only;
-2. `paper_artifact_manifest.yaml` is a strict manuscript allowlist;
-3. historical employer decision-support semantics are explicitly labelled non-paper;
-4. git history preserves provenance without forcing those semantics into the current paper core.
-
-## Release gates before journal submission
-
-The branch is ready for a frozen paper release only when all gates pass:
-
-- `python tools/validate_paper_artifact.py` -> `PAPER_ARTIFACT_VALIDATION_PASS`;
-- `python -m unittest tests.test_research_core` -> pass;
-- `python tools/run_paper_artifact_demo.py` -> matches expected JSON;
-- no paper-core API contains screening/advance/reject endpoints;
-- no private/candidate production data is present in the paper artifact;
-- manuscript Code and Artifact Availability points to a frozen tag/commit, not moving `main`;
-- a release tag such as `v0.9.2-paper-v1.3` is created after review;
-- optional but recommended: archive the tag with Zenodo and add the resulting DOI to `CITATION.cff` and the manuscript.
-
-## Branch strategy
-
-1. Use the existing `paper-release-readiness-v1.1` branch, preserving the recorded branch-base commit.
-2. Apply only this overlay; do not delete broader project assets.
-3. Run paper CI and review the compare against `main`.
-4. Do **not** merge before manuscript/artifact consistency review.
-5. Once accepted for submission, create a frozen release tag from this branch (or a clean follow-up branch) and cite that immutable ref in the manuscript.
+PR #6 and PR #7 remain outside this release procedure unless explicitly requested.

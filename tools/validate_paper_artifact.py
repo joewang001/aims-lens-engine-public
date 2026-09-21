@@ -14,6 +14,10 @@ from research_core import EvidenceRecord, PracticeRequest, RoutingLevel, priorit
 
 REQUIRED_FILES = [
     "CITATION.cff",
+    "VERSION",
+    "README.md",
+    "README.zh-CN.md",
+    "PAPER_RELEASE_READINESS.md",
     "RESEARCH_BOUNDARY.md",
     "REPRODUCIBILITY.md",
     "paper_artifact_manifest.yaml",
@@ -43,6 +47,9 @@ REQUIRED_FILES = [
     "config/paper_defaults.json",
     "docs/PAPER_TO_CODE_MAP.md",
     "docs/MATH_TO_CODE_COMPLETENESS_AUDIT.md",
+    "docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md",
+    "docs/experiments/EXPERIMENT_4_PROTOCOL.md",
+    "docs/experiments/EXPERIMENT_5_PROTOCOL.md",
     "schemas/interview_dna.schema.json",
     "schemas/evidence_packet.schema.json",
     "schemas/minimized_context.schema.json",
@@ -51,6 +58,9 @@ REQUIRED_FILES = [
     "schemas/followup_priority_response.schema.json",
     "examples/paper/followup_priority_request.json",
     "examples/paper/expected_followup_priority_response.json",
+    "tools/run_exp4_adversarial_alignment.py",
+    "tools/run_exp5_hierarchy_approximation.py",
+    "tools/validate_documentation_alignment.py",
 ]
 
 FORBIDDEN_API_TERMS = [
@@ -104,14 +114,15 @@ def validate_manifest() -> None:
     text = (ROOT / "paper_artifact_manifest.yaml").read_text(encoding="utf-8")
 
     required_policy_markers = [
-        "paper_version: v1.3",
-        "artifact_version: 0.9.2-paper-v1.3",
+        "paper_version: v1.4",
+        "artifact_version: 0.10.0-paper-v1.4",
         "candidate_side_practice_only: true",
         "employer_selection_decisions_allowed: false",
         "private_data_allowed: false",
         "network_required_for_demo: false",
-        "branch_base_commit: cf2586e5649feb05fd19faefa479e765055c76d4",
-        "experimental_bundle_commit: 84c0afc5f928989237832d625002aba17ae8ac4f",
+        "branch_base_commit: f7fcb6a3129cb58fe20c414f1abe519376def8e1",
+        "experimental_bundle_commit: c18899b469e1d579391306872d5834ebf6e3caf3",
+        "target_release_tag: v0.10.0-paper-v1.4",
     ]
     for marker in required_policy_markers:
         if marker not in text:
@@ -119,10 +130,25 @@ def validate_manifest() -> None:
 
     release_status = parse_manifest_scalar(text, "release_status")
     frozen_ref = parse_manifest_scalar(text, "frozen_artifact_ref")
+    target_tag = parse_manifest_scalar(text, "target_release_tag")
+    artifact_version = parse_manifest_scalar(text, "artifact_version")
+
+    version_text = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
+    if version_text != artifact_version:
+        fail(f"VERSION / manifest artifact-version mismatch: {version_text!r} != {artifact_version!r}")
+
+    citation_text = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+    citation_match = re.search(r'^version:\s*["\']?([^"\'\n]+)["\']?\s*$', citation_text, re.MULTILINE)
+    if not citation_match:
+        fail("CITATION.cff is missing version")
+    if citation_match.group(1).strip() != artifact_version:
+        fail("CITATION.cff version does not match paper manifest artifact_version")
 
     if release_status == "candidate":
         if frozen_ref != "pending_until_release_freeze":
             fail("candidate release status requires pending_until_release_freeze")
+        if "date-released:" in citation_text:
+            fail("candidate release must not declare date-released in CITATION.cff")
     elif release_status == "frozen":
         immutable_commit = bool(re.fullmatch(r"[0-9a-f]{40}", frozen_ref))
         immutable_tag = bool(re.fullmatch(r"v[0-9][A-Za-z0-9._+-]*", frozen_ref))
@@ -130,6 +156,10 @@ def validate_manifest() -> None:
             fail("frozen release status requires an immutable-looking tag or 40-character commit SHA")
         if frozen_ref == "pending_until_release_freeze":
             fail("frozen release status cannot use the pending marker")
+        if frozen_ref != target_tag:
+            fail("frozen release must use target_release_tag as frozen_artifact_ref")
+        if "date-released:" not in citation_text:
+            fail("frozen release requires date-released in CITATION.cff")
     else:
         fail(f"unsupported release_status: {release_status!r}")
 

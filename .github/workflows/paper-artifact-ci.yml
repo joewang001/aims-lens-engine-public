@@ -26,6 +26,8 @@ on:
       - "docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md"
       - "docs/experiments/**"
       - "README.md"
+      - "README.zh-CN.md"
+      - "CHANGELOG.md"
       - "VERSION"
       - "CITATION.cff"
       - "RESEARCH_BOUNDARY.md"

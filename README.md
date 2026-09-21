@@ -5,15 +5,17 @@
 
 AIMS Lens Engine is an independently deployable, institution-agnostic **evidence-governed interview reasoning and practice-decision engine**. It turns heterogeneous, differently authorized evidence into versioned practice hypotheses, then uses explicit uncertainty, routing, backoff, and abstention rules to decide what interview-practice follow-up deserves attention next.
 
-**Frozen paper artifact:** `v0.9.2-paper-v1.3`
+**Release-candidate artifact:** `0.10.0-paper-v1.4`
 
-**Aligned manuscript:** `v1.3`
+**Aligned manuscript:** `v1.4`
 
-**Experimental bundle:** `84c0afc5f928989237832d625002aba17ae8ac4f`
+**Candidate experimental baseline:** `c18899b469e1d579391306872d5834ebf6e3caf3`
 
-**Frozen artifact ref:** `v0.9.2-paper-v1.3`
+**Planned immutable tag (not yet created):** `v0.10.0-paper-v1.4`
 
-**Release date:** `2026-09-20`
+**Release status:** `candidate` — no v1.4 frozen tag is claimed yet.
+
+**Previous frozen paper artifact:** `v0.9.2-paper-v1.3` at `f7fcb6a3129cb58fe20c414f1abe519376def8e1`
 
 **Public repository:** https://github.com/joewang001/aims-lens-engine-public
 
@@ -92,7 +94,7 @@ At a high level:
 2. **Collect evidence independently.** Separate official material, hiring signals, executive language, community experience, decision cases, and critic/risk evidence.
 3. **Normalize evidence.** Convert material into evidence packets with authorization, provenance, quality, recency, scope, and expiry.
 4. **Synthesize a Lens.** Map supported signals to the AIMS capability model and a follow-up taxonomy without promoting community anecdotes into employer truth.
-5. **Apply probabilistic inference.** Use hierarchical Dirichlet-style partial pooling, compatibility masking, and explicit uncertainty.
+5. **Apply probabilistic inference.** Use recursive plug-in hierarchical Dirichlet shrinkage, compatibility masking, and explicit uncertainty.
 6. **Route honestly.** Use the declared L0–L5 backoff sequence; unsupported specificity is discounted, backed off, or rejected through abstention.
 7. **Validate and maintain.** Track maturity, drift, contradictory evidence, expiry, and review history.
 
@@ -119,12 +121,12 @@ The public reference implementation exposes the manuscript's core mathematical p
 - constrained probabilistic DAG specification;
 - logistic stopping model;
 - compatibility masking;
-- hierarchical Dirichlet-style partial pooling;
+- recursive plug-in hierarchical Dirichlet shrinkage;
 - authorization × quality × recency effective evidence;
-- posterior means and inspectable uncertainty intervals;
+- posterior means and conditional Dirichlet intervals given the plug-in parent distribution;
 - six-level routing and backoff mixture;
 - normalized entropy and data support;
-- Brier score, vector ECE, and log loss helpers;
+- Brier score, top-label ECE, and log loss helpers;
 - KL drift;
 - reference information-gain scoring.
 
@@ -218,9 +220,11 @@ python tools/run_exp1a_core_verification.py
 python tools/run_exp1b_lens_differentiation.py
 python tools/run_exp2_sensitivity_ablation.py
 python tools/run_exp3_semantic_regression.py
+python tools/run_exp4_adversarial_alignment.py
+python tools/run_exp5_hierarchy_approximation.py
 ```
 
-Manuscript v1.3 additionally reports controlled synthetic verification, parameter sensitivity, controlled ablations, and six public-safe semantic regression fixtures. These results verify declared mechanism behavior and reproducibility under controlled inputs; they do not establish named-employer validity, population fairness, current production-LLM accuracy, or employment outcomes.
+Manuscript v1.4 retains Experiments 1A/1B/2/3 and adds Experiment 4 as internal mathematical–implementation correction evidence plus Experiment 5 as a synthetic approximation benchmark. These results verify declared mechanism behavior, corrective alignment, approximation behavior, and reproducibility under controlled inputs; they do not establish real-employer validity, population fairness, current production-LLM accuracy, interview improvement, or employment-outcome efficacy.
 
 Documentation alignment can be checked separately:
 
