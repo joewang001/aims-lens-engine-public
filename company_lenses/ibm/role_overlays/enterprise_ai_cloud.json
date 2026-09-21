@@ -1,0 +1,21 @@
+{
+  "company": "IBM",
+  "role_family": "Enterprise AI, cloud, and consulting roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Frames technical decisions around enterprise trust, integration, client outcomes, and adoption.",
+    "Shows ability to translate complex systems into practical stakeholder decisions."
+  ],
+  "evidence_ids": [
+    "IBM-OFFICIAL-001",
+    "IBM-CAREERS-002",
+    "IBM-IR-003"
+  ]
+}

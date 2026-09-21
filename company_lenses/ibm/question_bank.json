@@ -1,0 +1,35 @@
+{
+  "company": "IBM",
+  "lens_id": "ibm_public_v0_1",
+  "version": "0.1.0-public-release-candidate",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "questions": [
+    {
+      "question_id": "IBM-Q-001",
+      "type": "enterprise_technology_behavioral",
+      "generated_question": "Describe a time you solved an enterprise customer or platform problem where trust, integration, and measurable impact mattered.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Defines the enterprise context and stakeholder constraints.",
+        "Explains integration, trust, or reliability tradeoffs.",
+        "Shows cross-functional execution.",
+        "Measures customer, platform, or business impact."
+      ],
+      "evidence_ids": [
+        "IBM-OFFICIAL-001",
+        "IBM-CAREERS-002",
+        "IBM-IR-003"
+      ]
+    }
+  ]
+}

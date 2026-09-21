@@ -1,0 +1,86 @@
+{
+  "company_slug": "deloitte",
+  "company": "Deloitte",
+  "collected_at": "2026-09-21T18:36:25Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "consulting",
+      "professional services",
+      "technology services",
+      "audit"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large global professional services and consulting organization"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Deloitte global homepage",
+      "url": "https://www2.deloitte.com/global/en.html",
+      "confidence": 0.78,
+      "public_safe_signal": "Deloitte publicly describes work across consulting, audit, tax, risk, technology, transformation, and helping clients address complex business issues.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "DELOITTE-OFFICIAL-001",
+      "date_accessed": "2026-09-21"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Deloitte global careers page",
+      "url": "https://www.deloitte.com/global/en/careers.html",
+      "confidence": 0.74,
+      "public_safe_signal": "Careers messaging emphasizes client impact, learning, collaboration, inclusion, multidisciplinary work, and development across consulting and professional services roles.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "DELOITTE-CAREERS-002",
+      "date_accessed": "2026-09-21"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "consulting_behavioral",
+        "generated_question": "Tell me about a time you helped a stakeholder move from a complex problem to a practical recommendation and execution path.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Structures the problem and assumptions clearly.",
+          "Explains stakeholder alignment and tradeoffs.",
+          "Connects recommendation to execution reality.",
+          "Shows evidence of client or business impact."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "professional_services",
+        "role_family": "Professional services roles",
+        "signals": [
+          "Combines structured analysis with client-ready communication.",
+          "Shows practical ownership across ambiguity, stakeholder pressure, and delivery constraints."
+        ]
+      }
+    ]
+  }
+}

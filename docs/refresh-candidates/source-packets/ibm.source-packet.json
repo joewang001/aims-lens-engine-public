@@ -1,0 +1,99 @@
+{
+  "company_slug": "ibm",
+  "company": "IBM",
+  "collected_at": "2026-09-21T18:36:25Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "technology",
+      "enterprise software",
+      "cloud",
+      "ai consulting"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public enterprise technology, cloud, AI, and consulting company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "IBM homepage",
+      "url": "https://www.ibm.com/",
+      "confidence": 0.8,
+      "public_safe_signal": "IBM publicly positions itself around hybrid cloud, AI, enterprise technology, consulting, research, automation, and trusted transformation for organizations.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "IBM-OFFICIAL-001",
+      "date_accessed": "2026-09-21"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "IBM careers page",
+      "url": "https://www.ibm.com/careers",
+      "confidence": 0.76,
+      "public_safe_signal": "Careers messaging emphasizes technology, consulting, learning, client work, inclusion, and opportunities across engineering, sales, research, operations, and services.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "IBM-CAREERS-002",
+      "date_accessed": "2026-09-21"
+    },
+    {
+      "source_type": "official_investor_relations",
+      "title": "IBM investor relations",
+      "url": "https://www.ibm.com/investor/",
+      "confidence": 0.76,
+      "public_safe_signal": "Investor materials provide public context for hybrid cloud, AI, consulting performance, enterprise clients, margins, and execution priorities.",
+      "dimensions": [
+        "company_says",
+        "risk_warnings"
+      ],
+      "evidence_id": "IBM-IR-003",
+      "date_accessed": "2026-09-21"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "enterprise_technology_behavioral",
+        "generated_question": "Describe a time you solved an enterprise customer or platform problem where trust, integration, and measurable impact mattered.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "collaboration_communication",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the enterprise context and stakeholder constraints.",
+          "Explains integration, trust, or reliability tradeoffs.",
+          "Shows cross-functional execution.",
+          "Measures customer, platform, or business impact."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "enterprise_ai_cloud",
+        "role_family": "Enterprise AI, cloud, and consulting roles",
+        "signals": [
+          "Frames technical decisions around enterprise trust, integration, client outcomes, and adoption.",
+          "Shows ability to translate complex systems into practical stakeholder decisions."
+        ]
+      }
+    ]
+  }
+}
