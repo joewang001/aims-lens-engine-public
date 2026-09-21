@@ -4,7 +4,7 @@ from .compatibility import masked_and_renormalized
 from .evidence import weighted_counts
 from .inference import hierarchical_dirichlet_mean
 from .models import PracticeRequest
-from .routing import route_mixture
+from .routing import route_mixture, routing_distribution_has_permitted_mass
 from .uncertainty import data_support, normalized_entropy, should_abstain
 
 
@@ -29,6 +29,22 @@ def prioritize_followups(request: PracticeRequest) -> Dict[str,Any]:
     routed_levels[l0_index]=type(l0)(l0.name,l0.backoff_distance,l0.authorized,l0.applicable,l0.coverage,local_masked)
     routed,provenance=route_mixture(routed_levels,request.permitted_categories,request.routing_gamma)
     if not routed:
+        has_massless_eligible_level=any(
+            level.authorized
+            and level.applicable
+            and level.coverage>0
+            and not routing_distribution_has_permitted_mass(
+                level.distribution,
+                request.permitted_categories,
+            )
+            for level in routed_levels
+        )
+        if has_massless_eligible_level:
+            return {
+                "mode":"abstain",
+                "reason":"no_supported_routing_mass",
+                "disclaimer":"This system abstained because authorized applicable routing levels retained no probability mass on the permitted practice categories.",
+            }
         return {"mode":"abstain","reason":"no_eligible_routing_level","disclaimer":"This system abstained because no authorized applicable routing level was available."}
     support=data_support(effective_mass,request.support_tau)
     if request.abstention_threshold>0 and should_abstain(support,request.abstention_threshold):

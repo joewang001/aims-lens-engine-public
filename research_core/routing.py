@@ -1,7 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass
 from typing import Dict, Iterable, List, Tuple
-from .inference import normalize
 
 BACKOFF_SEQUENCE = [
     ("L0_full_parent_context", 0),
@@ -13,8 +12,37 @@ BACKOFF_SEQUENCE = [
 ]
 
 
+def _normalize_positive_permitted_mass(
+    distribution: Dict[str, float],
+    categories: Iterable[str],
+) -> Dict[str, float]:
+    """Normalize only when the permitted category set retains positive mass.
+
+    Returning an empty mapping is deliberate fail-closed behavior. A routing
+    component with zero mass on every permitted category is unsupported in the
+    current context and must not be converted into an artificial uniform prior.
+    """
+    cats = list(categories)
+    restricted = {
+        category: max(0.0, float(distribution.get(category, 0.0)))
+        for category in cats
+    }
+    total = sum(restricted.values())
+    if total <= 0:
+        return {}
+    return {category: value / total for category, value in restricted.items()}
+
+
+def routing_distribution_has_permitted_mass(
+    distribution: Dict[str, float],
+    categories: Iterable[str],
+) -> bool:
+    """Whether a routing distribution retains positive mass after restriction."""
+    return bool(_normalize_positive_permitted_mass(distribution, categories))
+
+
 def route_mixture(levels, categories: Iterable[str], gamma: float) -> Tuple[Dict[str, float], List[dict]]:
-    """Implements manuscript Eq. 8–9."""
+    """Implements manuscript Eq. 8–9 with fail-closed permitted-mass routing."""
     if not 0 < gamma <= 1:
         raise ValueError("gamma must be in (0,1]")
     cats = list(categories)
@@ -24,8 +52,14 @@ def route_mixture(levels, categories: Iterable[str], gamma: float) -> Tuple[Dict
         authorization = 1.0 if level.authorized else 0.0
         applicability = 1.0 if level.applicable else 0.0
         raw = authorization * applicability * level.coverage * (gamma ** level.backoff_distance)
-        if raw > 0:
-            components.append((level, raw, normalize(level.distribution, cats)))
+        if raw <= 0:
+            continue
+
+        distribution = _normalize_positive_permitted_mass(level.distribution, cats)
+        if not distribution:
+            continue
+        components.append((level, raw, distribution))
+
     if not components:
         return {}, []
 
@@ -46,7 +80,11 @@ def route_mixture(levels, categories: Iterable[str], gamma: float) -> Tuple[Dict
                 "routing_weight": round(omega, 6),
             }
         )
-    return normalize(mixture, cats), provenance
+
+    total = sum(mixture.values())
+    if total <= 0:
+        return {}, []
+    return {category: value / total for category, value in mixture.items()}, provenance
 
 
 @dataclass(frozen=True)

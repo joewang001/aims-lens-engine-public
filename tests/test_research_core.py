@@ -84,6 +84,79 @@ class ResearchCoreTests(unittest.TestCase):
         self.assertAlmostEqual(sum(mix.values()), 1.0)
         self.assertEqual(len(provenance), 2)
 
+    def test_zero_permitted_mass_routing_component_is_excluded(self):
+        levels = [
+            RoutingLevel("L0", 0, True, True, 0.5, {"a": 1.0, "b": 0.0}),
+            RoutingLevel("L5", 5, True, True, 1.0, {"a": 0.0, "b": 1.0}),
+        ]
+        mix, provenance = route_mixture(levels, ["a"], 0.7)
+
+        self.assertEqual(mix, {"a": 1.0})
+        self.assertEqual(len(provenance), 1)
+        self.assertEqual(provenance[0]["level"], "L0")
+        self.assertEqual(provenance[0]["routing_weight"], 1.0)
+
+    def test_all_zero_permitted_mass_routing_fails_closed(self):
+        levels = [
+            RoutingLevel("L3_industry_context", 3, True, True, 0.9, {"b": 1.0}),
+            RoutingLevel("L5_generic_context", 5, True, True, 1.0, {"b": 1.0}),
+        ]
+        mix, provenance = route_mixture(levels, ["a"], 0.7)
+
+        self.assertEqual(mix, {})
+        self.assertEqual(provenance, [])
+
+    def test_service_distinguishes_zero_supported_mass_from_unauthorized_routes(self):
+        request = self._request()
+        massless_levels = [
+            RoutingLevel(
+                "L0_full_context",
+                0,
+                True,
+                True,
+                0.0,
+                {"ownership": 1.0},
+            ),
+            RoutingLevel(
+                "L3_industry_context",
+                3,
+                True,
+                True,
+                1.0,
+                {"collaboration": 1.0},
+            ),
+            RoutingLevel(
+                "L5_generic_context",
+                5,
+                True,
+                True,
+                1.0,
+                {"collaboration": 1.0},
+            ),
+        ]
+        massless_request = replace(
+            request,
+            permitted_categories=["ownership"],
+            routing_levels=massless_levels,
+            abstention_threshold=0.0,
+        )
+        massless_out = prioritize_followups(massless_request)
+        self.assertEqual(massless_out["mode"], "abstain")
+        self.assertEqual(massless_out["reason"], "no_supported_routing_mass")
+
+        unauthorized_levels = [
+            replace(level, authorized=False)
+            for level in request.routing_levels
+        ]
+        unauthorized_request = replace(
+            request,
+            routing_levels=unauthorized_levels,
+            abstention_threshold=0.0,
+        )
+        unauthorized_out = prioritize_followups(unauthorized_request)
+        self.assertEqual(unauthorized_out["mode"], "abstain")
+        self.assertEqual(unauthorized_out["reason"], "no_eligible_routing_level")
+
     def test_routing_name_must_match_declared_distance(self):
         with self.assertRaises(ValueError):
             RoutingLevel("L3_industry_context", 2, True, True, 1.0, {"a": 1.0}).validate()
