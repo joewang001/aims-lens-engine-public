@@ -41,6 +41,17 @@ The validator checks required research-core files, the paper-manifest policy dec
 
 The JSON Schema files remain the normative exchange contracts. The dependency-free validator intentionally performs targeted runtime checks rather than claiming to be a complete general-purpose JSON Schema or OpenAPI validator.
 
+## Run the manuscript v1.3 controlled verification bundle
+
+```bash
+python tools/run_exp1a_core_verification.py
+python tools/run_exp1b_lens_differentiation.py
+python tools/run_exp2_sensitivity_ablation.py
+python tools/run_exp3_semantic_regression.py
+```
+
+Experiments 1A, 1B, 2, and 3 use synthetic or public-safe fixtures. CI reruns all four and requires a zero git diff across `examples/paper/experiments`, providing committed-output reproducibility across the declared reference environment.
+
 ## What the demo establishes
 
 The demo is a **reference implementation**, not empirical validation. It demonstrates that the manuscript's core operations can be expressed reproducibly:
@@ -62,9 +73,19 @@ See `docs/PAPER_TO_CODE_MAP.md` for the section/equation-to-function index and `
 
 ## Freeze step before submission
 
-This branch is a release candidate, not yet a frozen archival release. Before journal submission:
+This branch is a **manuscript v1.3 release candidate**, not yet a frozen archival release.
 
-1. select the final reviewed commit;
-2. replace `frozen_artifact_ref: pending_until_release_freeze` in `paper_artifact_manifest.yaml` with the final tag or commit;
-3. add `date-released` to `CITATION.cff`;
-4. cite that frozen tag/commit in the manuscript rather than the moving branch.
+The manifest has two explicit states:
+
+- `release_status: candidate` permits `frozen_artifact_ref: pending_until_release_freeze`;
+- `release_status: frozen` requires an immutable-looking tag or 40-character commit SHA.
+
+Final archival sequence:
+
+1. complete manuscript/repository cross-audit and release-metadata alignment;
+2. run the full paper CI with all four experiments and zero committed-output diff;
+3. create the freeze-metadata commit by setting `release_status: frozen`, a final immutable tag name in `frozen_artifact_ref`, and `date-released` in `CITATION.cff`;
+4. rerun CI;
+5. create the immutable Git tag on that exact green commit;
+6. verify the tag resolves to that commit;
+7. cite the frozen tag/commit in the manuscript rather than the moving branch.

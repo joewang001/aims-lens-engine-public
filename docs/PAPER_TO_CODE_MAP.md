@@ -1,6 +1,6 @@
 # Paper-to-Code Map
 
-This map is the reviewer-oriented index for manuscript v1.1. It links paper claims to the smallest public artifact that makes the claim inspectable.
+This map is the reviewer-oriented index for manuscript v1.3. It links paper claims to the smallest public artifact that makes the claim inspectable.
 
 | Paper location | Claim / object | Primary repo path |
 |---|---|---|
@@ -22,10 +22,15 @@ This map is the reviewer-oriented index for manuscript v1.1. It links paper clai
 | §5.5 Eq. 14 | KL drift | `research_core/evaluation.py::kl_divergence` |
 | §5.5 Eq. 15 | Annotation information gain | `research_core/active_learning.py` |
 | §7.2 | De-identification protocol | `research_core/privacy.py` |
+| §7.7 | Core controlled verification (Experiment 1A) | `docs/experiments/EXPERIMENT_1A_PROTOCOL.md`, `tools/run_exp1a_core_verification.py`, `examples/paper/experiments/exp1a/` |
+| §7.7 | Lens/role-prior controls (Experiment 1B) | `docs/experiments/EXPERIMENT_1B_PROTOCOL.md`, `tools/run_exp1b_lens_differentiation.py`, `examples/paper/experiments/exp1b/` |
+| §7.8 | Sensitivity and controlled ablations (Experiment 2) | `docs/experiments/EXPERIMENT_2_PROTOCOL.md`, `tools/run_exp2_sensitivity_ablation.py`, `examples/paper/experiments/exp2/` |
+| §7.9 | Candidate-answer semantic regression (Experiment 3) | `docs/experiments/EXPERIMENT_3_PROTOCOL.md`, `tools/run_exp3_semantic_regression.py`, `examples/paper/experiments/exp3/` |
+| §7.10 | End-to-end numeric trace and committed-output reproducibility | `examples/paper/experiments/exp1a/results/exp1a_baseline_trace.json`, `.github/workflows/paper-artifact-ci.yml` |
 | §8.2 | Minimized context boundary | `research_core/privacy.py::MinimizedContextPackage`, schema |
 | §9.4 | Plain-language explanation | `research_core/explanation.py` |
 | §9.5 | Auditable reconstruction | `research_core/audit.py` |
 | Appendix B | Initial research parameters | `config/paper_defaults.json` |
 | Appendix C | Reference pipeline | `research_core/`, `tools/run_paper_artifact_demo.py` |
 
-Run `python tools/validate_paper_artifact.py` and `python -m unittest discover -s tests -v` before freezing a paper release.
+Before freezing a manuscript v1.3 release, run the validator, unit tests, deterministic demo, Experiments 1A/1B/2/3, and the committed-output reproducibility gate defined in `.github/workflows/paper-artifact-ci.yml`.

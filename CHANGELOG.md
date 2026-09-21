@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.9.2-paper-v1.3
+
+- Aligned reviewer-facing artifact metadata and documentation with manuscript v1.3.
+- Recorded the frozen experimental bundle commit `84c0afc5f928989237832d625002aba17ae8ac4f`.
+- Added Experiment 1A/1B/2/3 paths to the paper-to-code and reproducibility documentation.
+- Documented controlled synthetic verification, sensitivity, ablations, and semantic regression while preserving external-validity boundaries.
+- Split branch-base, experimental-bundle, and final archival-reference semantics in the paper manifest.
+- Updated the paper validator to support explicit release-candidate and frozen archival states without changing experiment logic or outputs.
+
 ## v0.9.1-paper-math-complete
 
 - Added equation-level paper-to-code traceability for all 15 mathematical expressions in manuscript Section 5.

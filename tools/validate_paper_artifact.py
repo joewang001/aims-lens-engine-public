@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 from dataclasses import replace
 from pathlib import Path
@@ -91,19 +92,46 @@ def parse_manifest_list(text: str, section: str) -> list[str]:
     return items
 
 
+def parse_manifest_scalar(text: str, key: str) -> str:
+    prefix = f"{key}:"
+    for line in text.splitlines():
+        if line.startswith(prefix):
+            return line.split(":", 1)[1].strip().strip('"').strip("'")
+    fail(f"paper manifest is missing scalar: {key}")
+
+
 def validate_manifest() -> None:
     text = (ROOT / "paper_artifact_manifest.yaml").read_text(encoding="utf-8")
 
     required_policy_markers = [
+        "paper_version: v1.3",
+        "artifact_version: 0.9.2-paper-v1.3",
         "candidate_side_practice_only: true",
         "employer_selection_decisions_allowed: false",
         "private_data_allowed: false",
         "network_required_for_demo: false",
-        "frozen_artifact_ref: pending_until_release_freeze",
+        "branch_base_commit: cf2586e5649feb05fd19faefa479e765055c76d4",
+        "experimental_bundle_commit: 84c0afc5f928989237832d625002aba17ae8ac4f",
     ]
     for marker in required_policy_markers:
         if marker not in text:
             fail(f"paper manifest is missing required declaration: {marker}")
+
+    release_status = parse_manifest_scalar(text, "release_status")
+    frozen_ref = parse_manifest_scalar(text, "frozen_artifact_ref")
+
+    if release_status == "candidate":
+        if frozen_ref != "pending_until_release_freeze":
+            fail("candidate release status requires pending_until_release_freeze")
+    elif release_status == "frozen":
+        immutable_commit = bool(re.fullmatch(r"[0-9a-f]{40}", frozen_ref))
+        immutable_tag = bool(re.fullmatch(r"v[0-9][A-Za-z0-9._+-]*", frozen_ref))
+        if not (immutable_commit or immutable_tag):
+            fail("frozen release status requires an immutable-looking tag or 40-character commit SHA")
+        if frozen_ref == "pending_until_release_freeze":
+            fail("frozen release status cannot use the pending marker")
+    else:
+        fail(f"unsupported release_status: {release_status!r}")
 
     include_paths = parse_manifest_list(text, "include_paths")
     exclude_paths = parse_manifest_list(text, "exclude_from_paper_core")

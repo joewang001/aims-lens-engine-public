@@ -1,4 +1,4 @@
-# Math-to-Code Completeness Audit — Manuscript v1.1
+# Math-to-Code Completeness Audit — Manuscript v1.3
 
 **Scope.** This audit maps every mathematical expression in manuscript Section 5, every algorithm/listing that defines public research behavior, and every stated operational threshold to the paper-release reference artifact. It distinguishes reproducible reference logic from empirical quantities that have not yet been fitted or validated.
 
@@ -51,25 +51,25 @@ All initial values are centralized in `config/paper_defaults.json` so a reviewer
 
 | Manuscript item | Repo representation | Status / caution |
 |---|---|---|
-| prior strength `lambda_0 = 10` | `prior_strength_lambda0` | Documented; relationship to manuscript `alpha_0` should be clarified in v1.2 before treating it as an executable prior vector. |
-| `kappa = 20` “half-life in observations” | `half_life_observations_kappa` | **Manuscript ambiguity.** `kappa` is also used for hierarchical concentration parameters. No hidden implementation is invented. Rename/define in v1.2. |
+| prior strength `lambda_0 = 10` | `prior_strength_lambda0` | Documented; relationship to manuscript `alpha_0` should be clarified in v1.3 before treating it as an executable prior vector. |
+| `kappa = 20` “half-life in observations” | `half_life_observations_kappa` | **Manuscript ambiguity.** `kappa` is also used for hierarchical concentration parameters. No hidden implementation is invented. Rename/define in v1.3. |
 | backoff `gamma = 0.7` | `backoff_discount_gamma`; `route_mixture` | Executable |
 | temporal `delta = 0.02/month` | `temporal_decay_delta_per_month`; `exponential_recency_weight` | Executable when evidence age is supplied in months; demo uses the mathematically equivalent half-life-to-rate conversion in days. |
 | KL review threshold `0.3` | `kl_drift_review_threshold`; `kl_divergence` | Metric executable; threshold not claimed validated |
 | ECE secondary target `0.10` | `ece_secondary_target`; `vector_ece` | Metric executable; target remains secondary/empirical |
 | support ceiling example `0.85` | `support_ceiling_example`; `research_core/policy.py::apply_support_ceiling` | Executable policy cap; not probability |
 | abstention threshold example `0.3` | `abstention_threshold_example`; `should_abstain` | Executable configurable policy |
-| minimum sample size `30` | `minimum_sample_size_example` | Documented only; v1.2 should clarify what operation is gated because hierarchical shrinkage is already continuous below and above 30. |
+| minimum sample size `30` | `minimum_sample_size_example` | Documented only; v1.3 should clarify what operation is gated because hierarchical shrinkage is already continuous below and above 30. |
 | maximum parents `6` | `maximum_declared_parents`; `PARENT_CARDINALITY_CAPS` | Executable; test verifies 22,050 configurations |
 
 ## D. Manuscript issues exposed by the audit
 
-These should be corrected in manuscript v1.2 rather than hidden in code:
+These should be corrected in manuscript v1.3 rather than hidden in code:
 
 1. **`primary_probability` in Listing 4** should be renamed `primary_priority_weight` (or similar) unless the Lens is Evaluation-Ready and held-out calibration has been established.
 2. **`confidence` in Listing 9 AuditRecord** should become `diagnostic_weight`, `support`, or a typed field that distinguishes support from calibrated probability.
 3. **Symbol collision for `kappa`.** Section 5 uses `kappa_c`, `kappa_i`, `kappa_a` as Dirichlet concentration parameters, while Appendix B/Table 19 uses `kappa` for a “half-life.” Rename the latter (for example `h_n`) or define a separate prior-decay quantity.
-4. **`lambda_0` versus `alpha_0`.** The appendix says prior strength `lambda_0 = 10`, while the hierarchy writes `pi_u ~ Dirichlet(alpha_0)`. v1.2 should explicitly define whether `alpha_0 = lambda_0 * pi_base` or use one notation consistently.
+4. **`lambda_0` versus `alpha_0`.** The appendix says prior strength `lambda_0 = 10`, while the hierarchy writes `pi_u ~ Dirichlet(alpha_0)`. v1.3 should explicitly define whether `alpha_0 = lambda_0 * pi_base` or use one notation consistently.
 5. **Minimum sample size = 30.** The manuscript should say exactly which release/fitting operation this gates. The Bayesian hierarchy itself does not suddenly switch methods at 30 observations.
 6. **“Prediction” wording in limitations.** Candidate-side ordered practice priorities should not be casually called employer predictions.
 7. **De-identification claim boundary.** Listing 6 is a procedure/interface, not evidence that PII removal has been empirically validated. The text should state that production de-identification requires validated entity detection and review.
@@ -79,6 +79,17 @@ These should be corrected in manuscript v1.2 rather than hidden in code:
 - Core Section 5 equations with executable counterpart: **15/15**.
 - Public decision algorithms/listings with counterpart: **14/14**, with Listing 6 intentionally partial at the NER layer and explicitly disclosed.
 - Declared thresholds centralized: **10/10**, but three (`lambda_0`, observation half-life `kappa`, min sample 30) require manuscript clarification before stronger executable semantics are justified.
-- Empirical validation claims: **0 fabricated**. Metrics and harness logic are provided; empirical results remain future work.
+- Controlled verification claims: **present and artifact-backed** for Experiments 1A, 1B, 2, and 3. External participant, named-employer, calibration, fairness, current-production-LLM, and employment-outcome validation remain future empirical work.
 
 The target is conceptual reproducibility and reference-algorithm reproducibility, not disclosure of tenant configuration, JobACE production policy, user data, proprietary operational thresholds, or complete production code.
+
+## F. Manuscript v1.3 controlled-verification alignment
+
+The v1.3 manuscript adds controlled results without changing the Section 5 mathematical definitions:
+
+- **Experiment 1A:** seven candidate-side end-to-end invariant cases, including authorization hard-gating, aging, masking, routing eligibility, support, and fail-closed abstention.
+- **Experiment 1B:** eleven controlled Lens/role-prior fixtures with positive and company-name negative controls.
+- **Experiment 2:** one-factor sensitivity for `gamma`, `delta`, and `lambda_0`, plus controlled A2/A3/A4/A6 synthetic ablations.
+- **Experiment 3:** six public-safe candidate-answer semantic regression fixtures; the current production language model is explicitly **not** rerun.
+
+These experiments verify internal mechanism behavior, contract preservation, and reproducibility under controlled inputs. They do not establish the external empirical claims reserved by manuscript Sections 7.1–7.6.

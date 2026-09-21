@@ -2,11 +2,14 @@
 
 Target branch: `paper-release-readiness-v1.1`  
 Base: `main` at `cf2586e5649feb05fd19faefa479e765055c76d4`  
-Manuscript: AIMS Lens Engine v1.1 journal-preparation manuscript
+Original branch target: AIMS Lens Engine v1.1 journal-preparation manuscript
+Current aligned manuscript: **v1.3**
+Release-candidate artifact: **v0.9.2-paper-v1.3**
+Frozen experimental bundle: `84c0afc5f928989237832d625002aba17ae8ac4f`
 
 ## Objective
 
-Make the public repository internally consistent with the manuscript's claims before journal submission, while preserving repository history and leaving `main` unchanged until review/merge.
+Make the public repository internally consistent with manuscript v1.3 before journal submission, while preserving repository history and leaving `main` unchanged until review/merge. The v1.3 release layer additionally aligns the frozen controlled-verification bundle, reviewer documentation, citation metadata, and archival freeze semantics.
 
 The frozen manuscript artifact must present AIMS Lens Engine as an independent, institution-agnostic, candidate-side interview-practice reasoning engine. JobACE remains a reference client. Historical employer-side screening experiments remain visible in repository history or wider project files but are not part of the paper research core.
 
@@ -169,12 +172,12 @@ The branch is ready for a frozen paper release only when all gates pass:
 - no paper-core API contains screening/advance/reject endpoints;
 - no private/candidate production data is present in the paper artifact;
 - manuscript Code and Artifact Availability points to a frozen tag/commit, not moving `main`;
-- a release tag such as `v0.9.0-paper-artifact` is created after review;
+- a release tag such as `v0.9.2-paper-v1.3` is created after review;
 - optional but recommended: archive the tag with Zenodo and add the resulting DOI to `CITATION.cff` and the manuscript.
 
 ## Branch strategy
 
-1. Create `paper-release-readiness-v1.1` from the recorded base commit.
+1. Use the existing `paper-release-readiness-v1.1` branch, preserving the recorded branch-base commit.
 2. Apply only this overlay; do not delete broader project assets.
 3. Run paper CI and review the compare against `main`.
 4. Do **not** merge before manuscript/artifact consistency review.
