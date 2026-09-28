@@ -1,0 +1,5561 @@
+{
+  "claim_boundary": {
+    "does_not_establish": [
+      "real_employer_validity",
+      "real_interview_followup_prediction",
+      "population_calibration",
+      "subgroup_fairness",
+      "candidate_learning_benefit",
+      "optimal_gamma",
+      "optimal_kappa_company",
+      "optimal_routing_architecture",
+      "real_world_absence_or_presence_of_routing_shrinkage_redundancy",
+      "employment_outcomes"
+    ],
+    "synthetic_only": true
+  },
+  "comparison": {
+    "path_a": "hierarchically_shrunken_L0_only",
+    "path_b": "same_L0_plus_frozen_v1.4_L3_L5_routing"
+  },
+  "conditions": [
+    {
+      "condition": "n2_rho0.1_kappa2_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0144684739,
+        "median": -0.012201192,
+        "p05": -0.034367457,
+        "p95": -0.0054923617,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0327555823,
+        "median": -0.0338555479,
+        "p05": -0.0536990014,
+        "p95": -0.0188125949,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0238639834,
+        "median": -0.0234301865,
+        "p05": -0.033626531,
+        "p95": -0.0170883738,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8139514928,
+        "median": 0.8269006205,
+        "p05": 0.6730681023,
+        "p95": 0.9086972773
+      },
+      "entropy_routed": {
+        "mean": 0.8344299594,
+        "median": 0.8440449009,
+        "p05": 0.7064437728,
+        "p95": 0.9244658955
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.85271656,
+        "brier_routed": 0.8382057679,
+        "log_loss_l0": 1.7094259271,
+        "log_loss_routed": 1.6764998001,
+        "top_label_accuracy_l0": 0.2916,
+        "top_label_accuracy_routed": 0.2916,
+        "top_label_ece_l0": 0.157097,
+        "top_label_ece_routed": 0.1436554895
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 1.0,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0238639834,
+        "median": 0.0234301865,
+        "p05": 0.0170883738,
+        "p95": 0.033626531
+      }
+    },
+    {
+      "condition": "n2_rho0.1_kappa2_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0620167696,
+        "median": -0.0529396517,
+        "p05": -0.1361769646,
+        "p95": -0.0216514472,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.1291689084,
+        "median": -0.1265102906,
+        "p05": -0.2102554963,
+        "p95": -0.0685898444,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.1156942097,
+        "median": -0.116369135,
+        "p05": -0.1584084384,
+        "p95": -0.0813370607,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8075154139,
+        "median": 0.8269006205,
+        "p05": 0.6730681023,
+        "p95": 0.9030955352
+      },
+      "entropy_routed": {
+        "mean": 0.8934708424,
+        "median": 0.8968822919,
+        "p05": 0.813779146,
+        "p95": 0.9570786505
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.86035176,
+        "brier_routed": 0.7982248985,
+        "log_loss_l0": 1.7170977802,
+        "log_loss_routed": 1.5877557204,
+        "top_label_accuracy_l0": 0.28494,
+        "top_label_accuracy_routed": 0.28494,
+        "top_label_ece_l0": 0.175141,
+        "top_label_ece_routed": 0.1044826824
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 1.0,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.1156942097,
+        "median": 0.116369135,
+        "p05": 0.0813370607,
+        "p95": 0.1584084384
+      }
+    },
+    {
+      "condition": "n2_rho0.1_kappa2_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.080421796,
+        "median": -0.0690262518,
+        "p05": -0.1876984542,
+        "p95": -0.0294170361,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.1714134812,
+        "median": -0.171074754,
+        "p05": -0.2933396932,
+        "p95": -0.0896313983,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.1833412746,
+        "median": -0.1789092947,
+        "p05": -0.255313989,
+        "p95": -0.131563956,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8143678272,
+        "median": 0.8269006205,
+        "p05": 0.6730681023,
+        "p95": 0.9086972773
+      },
+      "entropy_routed": {
+        "mean": 0.92964197,
+        "median": 0.9327385935,
+        "p05": 0.8799826026,
+        "p95": 0.9762500785
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.85492322,
+        "brier_routed": 0.7743572252,
+        "log_loss_l0": 1.71239484,
+        "log_loss_routed": 1.5409282941,
+        "top_label_accuracy_l0": 0.28831,
+        "top_label_accuracy_routed": 0.30635,
+        "top_label_ece_l0": 0.160888,
+        "top_label_ece_routed": 0.0417367689
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.892,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.183920221,
+        "median": 0.1796222828,
+        "p05": 0.1322769441,
+        "p95": 0.2560269772
+      }
+    },
+    {
+      "condition": "n2_rho0.1_kappa6_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0037486774,
+        "median": -0.0032902061,
+        "p05": -0.008562312,
+        "p95": -0.0012894104,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0077266021,
+        "median": -0.0073738437,
+        "p05": -0.0139190587,
+        "p95": -0.0034750617,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0121374622,
+        "median": -0.0117693612,
+        "p05": -0.0168373846,
+        "p95": -0.008622574,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.9147520119,
+        "median": 0.9277262296,
+        "p05": 0.8466149903,
+        "p95": 0.9701179552
+      },
+      "entropy_routed": {
+        "mean": 0.9201078406,
+        "median": 0.9316044301,
+        "p05": 0.8577641028,
+        "p95": 0.9717483833
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.783666155,
+        "brier_routed": 0.7799467571,
+        "log_loss_l0": 1.5606538408,
+        "log_loss_routed": 1.5529878868,
+        "top_label_accuracy_l0": 0.29338,
+        "top_label_accuracy_routed": 0.30652,
+        "top_label_ece_l0": 0.0714925,
+        "top_label_ece_routed": 0.071681731
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.916,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0121374622,
+        "median": 0.0117693612,
+        "p05": 0.008622574,
+        "p95": 0.0168373846
+      }
+    },
+    {
+      "condition": "n2_rho0.1_kappa6_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0151164574,
+        "median": -0.0127350602,
+        "p05": -0.0339274222,
+        "p95": -0.0050603076,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0312105723,
+        "median": -0.0284830699,
+        "p05": -0.0572828248,
+        "p95": -0.0134088819,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0526138154,
+        "median": -0.0506650483,
+        "p05": -0.0732807685,
+        "p95": -0.0353436053,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.9123216617,
+        "median": 0.9108217656,
+        "p05": 0.8466149903,
+        "p95": 0.9701179552
+      },
+      "entropy_routed": {
+        "mean": 0.9353679091,
+        "median": 0.9412419658,
+        "p05": 0.8956561383,
+        "p95": 0.9738305126
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.784848255,
+        "brier_routed": 0.7698253797,
+        "log_loss_l0": 1.5628944204,
+        "log_loss_routed": 1.5317929022,
+        "top_label_accuracy_l0": 0.29408,
+        "top_label_accuracy_routed": 0.31052,
+        "top_label_ece_l0": 0.075621,
+        "top_label_ece_routed": 0.0332813226
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.906,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0575530062,
+        "median": 0.0560232248,
+        "p05": 0.0415330674,
+        "p95": 0.0794702306
+      }
+    },
+    {
+      "condition": "n2_rho0.1_kappa6_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0201274267,
+        "median": -0.0174501084,
+        "p05": -0.0376229852,
+        "p95": -0.0067493464,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0414780219,
+        "median": -0.0390454519,
+        "p05": -0.075309709,
+        "p95": -0.0176480509,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0822168136,
+        "median": -0.079413612,
+        "p05": -0.1131427343,
+        "p95": -0.0563195226,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.9093582016,
+        "median": 0.9108217656,
+        "p05": 0.8466149903,
+        "p95": 0.9701179552
+      },
+      "entropy_routed": {
+        "mean": 0.9438203076,
+        "median": 0.9423011291,
+        "p05": 0.92104637,
+        "p95": 0.9703865679
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.78317704,
+        "brier_routed": 0.7633958933,
+        "log_loss_l0": 1.5586886756,
+        "log_loss_routed": 1.5177763677,
+        "top_label_accuracy_l0": 0.29713,
+        "top_label_accuracy_routed": 0.33175,
+        "top_label_ece_l0": 0.075803,
+        "top_label_ece_routed": 0.0275546689
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.694,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0920910517,
+        "median": 0.0902923985,
+        "p05": 0.0680188568,
+        "p95": 0.1169874337
+      }
+    },
+    {
+      "condition": "n2_rho0.1_kappa20_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0004828557,
+        "median": -0.0003961788,
+        "p05": -0.0011206795,
+        "p95": -0.0001339227,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0010904096,
+        "median": -0.0008803167,
+        "p05": -0.0022452257,
+        "p95": -0.0003297639,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0038077807,
+        "median": -0.0036071741,
+        "p05": -0.0053994827,
+        "p95": -0.002480703,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.944384341,
+        "median": 0.9477373872,
+        "p05": 0.9204341395,
+        "p95": 0.967122484
+      },
+      "entropy_routed": {
+        "mean": 0.9452314696,
+        "median": 0.9482478968,
+        "p05": 0.9232702274,
+        "p95": 0.9662602528
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.7631260446,
+        "brier_routed": 0.7626708003,
+        "log_loss_l0": 1.5175563639,
+        "log_loss_routed": 1.5165159826,
+        "top_label_accuracy_l0": 0.33433,
+        "top_label_accuracy_routed": 0.33433,
+        "top_label_ece_l0": 0.0011118182,
+        "top_label_ece_routed": 0.0016442076
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 1.0,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0044189612,
+        "median": 0.004348836,
+        "p05": 0.0032352468,
+        "p95": 0.0061533823
+      }
+    },
+    {
+      "condition": "n2_rho0.1_kappa20_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0019088873,
+        "median": -0.001469701,
+        "p05": -0.0035167242,
+        "p95": -0.000523029,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0043815936,
+        "median": -0.0032136367,
+        "p05": -0.0092625267,
+        "p95": -0.0013542376,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0185356757,
+        "median": -0.0181966118,
+        "p05": -0.0262995958,
+        "p95": -0.0132660236,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.9443081295,
+        "median": 0.9477373872,
+        "p05": 0.9204341395,
+        "p95": 0.967122484
+      },
+      "entropy_routed": {
+        "mean": 0.9483144233,
+        "median": 0.9502931427,
+        "p05": 0.9337770861,
+        "p95": 0.9629852474
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.7625035967,
+        "brier_routed": 0.7608127103,
+        "log_loss_l0": 1.5162771262,
+        "log_loss_routed": 1.5123449696,
+        "top_label_accuracy_l0": 0.33629,
+        "top_label_accuracy_routed": 0.34101,
+        "top_label_ece_l0": 0.0035627273,
+        "top_label_ece_routed": 0.010410738
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.93,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0209735765,
+        "median": 0.0211338417,
+        "p05": 0.0162032535,
+        "p95": 0.0267104082
+      }
+    },
+    {
+      "condition": "n2_rho0.1_kappa20_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0025627363,
+        "median": -0.0019225713,
+        "p05": -0.0060980105,
+        "p95": -0.0006309376,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0059138019,
+        "median": -0.0040362013,
+        "p05": -0.0136625843,
+        "p95": -0.0016675029,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0280063147,
+        "median": -0.02904231,
+        "p05": -0.0433519359,
+        "p95": -0.0169027389,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.9435956794,
+        "median": 0.9477373872,
+        "p05": 0.9204341395,
+        "p95": 0.967122484
+      },
+      "entropy_routed": {
+        "mean": 0.9502859812,
+        "median": 0.9515860829,
+        "p05": 0.9416798638,
+        "p95": 0.9599556516
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7629099355,
+        "brier_routed": 0.7602787996,
+        "log_loss_l0": 1.5167050948,
+        "log_loss_routed": 1.5106617147,
+        "top_label_accuracy_l0": 0.33501,
+        "top_label_accuracy_routed": 0.3405,
+        "top_label_ece_l0": 0.0007736364,
+        "top_label_ece_routed": 0.010432186
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.932,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0339097575,
+        "median": 0.0331875008,
+        "p05": 0.0255260245,
+        "p95": 0.043461353
+      }
+    },
+    {
+      "condition": "n2_rho0.4_kappa2_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0145944082,
+        "median": -0.0120457776,
+        "p05": -0.0280145046,
+        "p95": -0.0051230966,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0333566746,
+        "median": -0.0357848283,
+        "p05": -0.0498151361,
+        "p95": -0.0179009992,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0193466079,
+        "median": -0.0211886188,
+        "p05": -0.0270344828,
+        "p95": -0.012165065,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8263115989,
+        "median": 0.8490443972,
+        "p05": 0.6923175362,
+        "p95": 0.9123831583
+      },
+      "entropy_routed": {
+        "mean": 0.8481239033,
+        "median": 0.8672980147,
+        "p05": 0.7269343491,
+        "p95": 0.9283342992
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.8605253,
+        "brier_routed": 0.8458831686,
+        "log_loss_l0": 1.7341666379,
+        "log_loss_routed": 1.7007978531,
+        "top_label_accuracy_l0": 0.28273,
+        "top_label_accuracy_routed": 0.28273,
+        "top_label_ece_l0": 0.16013,
+        "top_label_ece_routed": 0.1450766139
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 1.0,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0251068732,
+        "median": 0.0253431317,
+        "p05": 0.0195123422,
+        "p95": 0.0317469003
+      }
+    },
+    {
+      "condition": "n2_rho0.4_kappa2_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0569302022,
+        "median": -0.0470457936,
+        "p05": -0.1339510448,
+        "p95": -0.0193821073,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.1244928149,
+        "median": -0.1134343386,
+        "p05": -0.212411898,
+        "p95": -0.064704111,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0926560308,
+        "median": -0.0898005666,
+        "p05": -0.1307717528,
+        "p95": -0.0636065858,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8253887861,
+        "median": 0.8490443972,
+        "p05": 0.6923175362,
+        "p95": 0.9123831583
+      },
+      "entropy_routed": {
+        "mean": 0.915381766,
+        "median": 0.9256924982,
+        "p05": 0.8404978336,
+        "p95": 0.9690791339
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.86018798,
+        "brier_routed": 0.8030610935,
+        "log_loss_l0": 1.7342364331,
+        "log_loss_routed": 1.6088832626,
+        "top_label_accuracy_l0": 0.28481,
+        "top_label_accuracy_routed": 0.28481,
+        "top_label_ece_l0": 0.160932,
+        "top_label_ece_routed": 0.0881348991
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 1.0,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.1189164765,
+        "median": 0.1152779453,
+        "p05": 0.0957098201,
+        "p95": 0.1562491315
+      }
+    },
+    {
+      "condition": "n2_rho0.4_kappa2_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.078511263,
+        "median": -0.0630193696,
+        "p05": -0.1831250706,
+        "p95": -0.0239548445,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.1672011847,
+        "median": -0.1494898886,
+        "p05": -0.2938408205,
+        "p95": -0.0788528119,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.1506544045,
+        "median": -0.1500414909,
+        "p05": -0.2146924411,
+        "p95": -0.1043755934,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8289779653,
+        "median": 0.8490443972,
+        "p05": 0.6923175362,
+        "p95": 0.9243455771
+      },
+      "entropy_routed": {
+        "mean": 0.9551888265,
+        "median": 0.9584496549,
+        "p05": 0.9104747071,
+        "p95": 0.9905873138
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.86123776,
+        "brier_routed": 0.7823928307,
+        "log_loss_l0": 1.734058054,
+        "log_loss_routed": 1.5657246046,
+        "top_label_accuracy_l0": 0.28102,
+        "top_label_accuracy_routed": 0.29023,
+        "top_label_ece_l0": 0.16156,
+        "top_label_ece_routed": 0.0332152602
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.946,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.1944376577,
+        "median": 0.1948421494,
+        "p05": 0.1583880422,
+        "p95": 0.2455211085
+      }
+    },
+    {
+      "condition": "n2_rho0.4_kappa6_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0033058886,
+        "median": -0.0026371619,
+        "p05": -0.0082054395,
+        "p95": -0.000783471,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0071160594,
+        "median": -0.0059612275,
+        "p05": -0.0139651695,
+        "p95": -0.0027130668,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0096551573,
+        "median": -0.0094079518,
+        "p05": -0.0138066704,
+        "p95": -0.0065890334,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.9309207401,
+        "median": 0.93336488,
+        "p05": 0.8676229439,
+        "p95": 0.9790232257
+      },
+      "entropy_routed": {
+        "mean": 0.936783442,
+        "median": 0.9386362217,
+        "p05": 0.8792407826,
+        "p95": 0.9810944301
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.78923433,
+        "brier_routed": 0.7859453045,
+        "log_loss_l0": 1.5824299529,
+        "log_loss_routed": 1.5753793732,
+        "top_label_accuracy_l0": 0.28611,
+        "top_label_accuracy_routed": 0.28611,
+        "top_label_ece_l0": 0.064677,
+        "top_label_ece_routed": 0.0572829408
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 1.0,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0125023584,
+        "median": 0.0124258526,
+        "p05": 0.0100697192,
+        "p95": 0.0168245713
+      }
+    },
+    {
+      "condition": "n2_rho0.4_kappa6_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0134028691,
+        "median": -0.009320585,
+        "p05": -0.0319231865,
+        "p95": -0.002775242,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0291738541,
+        "median": -0.0220638993,
+        "p05": -0.0582181231,
+        "p95": -0.0107291575,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0461651643,
+        "median": -0.0494224773,
+        "p05": -0.0685780133,
+        "p95": -0.0257094165,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.9273595135,
+        "median": 0.93336488,
+        "p05": 0.8676229439,
+        "p95": 0.9790232257
+      },
+      "entropy_routed": {
+        "mean": 0.955479048,
+        "median": 0.9583586436,
+        "p05": 0.9209929424,
+        "p95": 0.9855374817
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.79107108,
+        "brier_routed": 0.7775536384,
+        "log_loss_l0": 1.5863044718,
+        "log_loss_routed": 1.5567800812,
+        "top_label_accuracy_l0": 0.28583,
+        "top_label_accuracy_routed": 0.30671,
+        "top_label_ece_l0": 0.072467,
+        "top_label_ece_routed": 0.015900424
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.906,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0606761091,
+        "median": 0.0575507546,
+        "p05": 0.0462601988,
+        "p95": 0.0765271401
+      }
+    },
+    {
+      "condition": "n2_rho0.4_kappa6_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0172539578,
+        "median": -0.0116680316,
+        "p05": -0.0434614805,
+        "p95": -0.0023573654,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0378396926,
+        "median": -0.0269465152,
+        "p05": -0.0806080577,
+        "p95": -0.0110715573,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0645069806,
+        "median": -0.0677509958,
+        "p05": -0.1122509958,
+        "p95": -0.0266037273,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.930387117,
+        "median": 0.93336488,
+        "p05": 0.8676229439,
+        "p95": 0.9790232257
+      },
+      "entropy_routed": {
+        "mean": 0.970406598,
+        "median": 0.9712338678,
+        "p05": 0.9494241486,
+        "p95": 0.9862191894
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.79075548,
+        "brier_routed": 0.7730266342,
+        "log_loss_l0": 1.5850787365,
+        "log_loss_routed": 1.5465306218,
+        "top_label_accuracy_l0": 0.28294,
+        "top_label_accuracy_routed": 0.33352,
+        "top_label_ece_l0": 0.070284,
+        "top_label_ece_routed": 0.0294506291
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.656,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0979029603,
+        "median": 0.0960621261,
+        "p05": 0.0696099516,
+        "p95": 0.1250339805
+      }
+    },
+    {
+      "condition": "n2_rho0.4_kappa20_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0003816661,
+        "median": -0.0001715596,
+        "p05": -0.0011830602,
+        "p95": 9.21564e-05,
+        "proportion_routing_improves": 0.828
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0009803029,
+        "median": -0.000465357,
+        "p05": -0.0027716208,
+        "p95": -7.60868e-05,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0021720543,
+        "median": -0.0016888843,
+        "p05": -0.0053889717,
+        "p95": 0.0010201278,
+        "proportion_routing_improves": 0.828
+      },
+      "entropy_l0": {
+        "mean": 0.9616637701,
+        "median": 0.9605254112,
+        "p05": 0.9399075823,
+        "p95": 0.9847194044
+      },
+      "entropy_routed": {
+        "mean": 0.9629357507,
+        "median": 0.9618591263,
+        "p05": 0.9430699125,
+        "p95": 0.9844313824
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.7720848926,
+        "brier_routed": 0.7717337502,
+        "log_loss_l0": 1.5462330761,
+        "log_loss_routed": 1.5453184632,
+        "top_label_accuracy_l0": 0.33776,
+        "top_label_accuracy_routed": 0.33776,
+        "top_label_ece_l0": 0.0261236364,
+        "top_label_ece_routed": 0.0272512695
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 1.0,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0046777382,
+        "median": 0.0045157511,
+        "p05": 0.003457252,
+        "p95": 0.0059541258
+      }
+    },
+    {
+      "condition": "n2_rho0.4_kappa20_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0017448481,
+        "median": -0.0007370369,
+        "p05": -0.0056137593,
+        "p95": 0.0003181666,
+        "proportion_routing_improves": 0.744
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0048748005,
+        "median": -0.0025593113,
+        "p05": -0.0142249906,
+        "p95": -0.0002211989,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0110264556,
+        "median": -0.0085544704,
+        "p05": -0.0271662303,
+        "p95": 0.0023546205,
+        "proportion_routing_improves": 0.678
+      },
+      "entropy_l0": {
+        "mean": 0.9622135948,
+        "median": 0.9605254112,
+        "p05": 0.9399075823,
+        "p95": 0.9847194044
+      },
+      "entropy_routed": {
+        "mean": 0.9700748441,
+        "median": 0.9692417211,
+        "p05": 0.956997661,
+        "p95": 0.9832173523
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.7734135702,
+        "brier_routed": 0.7716417816,
+        "log_loss_l0": 1.5492192593,
+        "log_loss_routed": 1.5442144234,
+        "top_label_accuracy_l0": 0.33353,
+        "top_label_accuracy_routed": 0.33916,
+        "top_label_ece_l0": 0.0230936364,
+        "top_label_ece_routed": 0.0347427979
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.926,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0228506872,
+        "median": 0.0248945225,
+        "p05": 0.0110663708,
+        "p95": 0.0295208508
+      }
+    },
+    {
+      "condition": "n2_rho0.4_kappa20_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0017585171,
+        "median": -0.0004836107,
+        "p05": -0.0076703492,
+        "p95": 0.0010741588,
+        "proportion_routing_improves": 0.64
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0052396212,
+        "median": -0.0019854976,
+        "p05": -0.0187682246,
+        "p95": 0.0007785158,
+        "proportion_routing_improves": 0.64
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0059878804,
+        "median": -0.0005254339,
+        "p05": -0.0286102623,
+        "p95": 0.010383657,
+        "proportion_routing_improves": 0.64
+      },
+      "entropy_l0": {
+        "mean": 0.9616529682,
+        "median": 0.9605254112,
+        "p05": 0.9399075823,
+        "p95": 0.9853271841
+      },
+      "entropy_routed": {
+        "mean": 0.9755257128,
+        "median": 0.9755065668,
+        "p05": 0.9681209349,
+        "p95": 0.9830437826
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7724628694,
+        "brier_routed": 0.7707896645,
+        "log_loss_l0": 1.5467532797,
+        "log_loss_routed": 1.5419080093,
+        "top_label_accuracy_l0": 0.33677,
+        "top_label_accuracy_routed": 0.3411,
+        "top_label_ece_l0": 0.0246790909,
+        "top_label_ece_routed": 0.0411413987
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.95,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0391592625,
+        "median": 0.0437681757,
+        "p05": 0.020041853,
+        "p95": 0.0503961952
+      }
+    },
+    {
+      "condition": "n2_rho0.8_kappa2_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0124103833,
+        "median": -0.009859699,
+        "p05": -0.0325008929,
+        "p95": -0.0037500845,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0317500651,
+        "median": -0.0289533102,
+        "p05": -0.0550277375,
+        "p95": -0.0171614241,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0168985506,
+        "median": -0.0168622574,
+        "p05": -0.024357264,
+        "p95": -0.0117128321,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8368877327,
+        "median": 0.8379313546,
+        "p05": 0.7010449912,
+        "p95": 0.936069485
+      },
+      "entropy_routed": {
+        "mean": 0.8582817594,
+        "median": 0.8568361077,
+        "p05": 0.7361733353,
+        "p95": 0.9507878079
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.86487812,
+        "brier_routed": 0.8524168416,
+        "log_loss_l0": 1.7758005304,
+        "log_loss_routed": 1.7439409998,
+        "top_label_accuracy_l0": 0.26306,
+        "top_label_accuracy_routed": 0.26306,
+        "top_label_ece_l0": 0.163978,
+        "top_label_ece_routed": 0.1486293179
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 1.0,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0260767319,
+        "median": 0.0249270774,
+        "p05": 0.0192078387,
+        "p95": 0.0332059544
+      }
+    },
+    {
+      "condition": "n2_rho0.8_kappa2_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0504768429,
+        "median": -0.0361251892,
+        "p05": -0.1264275841,
+        "p95": -0.0118007532,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.1231985391,
+        "median": -0.1060135802,
+        "p05": -0.2157233693,
+        "p95": -0.0600058329,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0861085058,
+        "median": -0.0896594177,
+        "p05": -0.1218467985,
+        "p95": -0.0513441435,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8365986502,
+        "median": 0.8575948513,
+        "p05": 0.7010449912,
+        "p95": 0.936069485
+      },
+      "entropy_routed": {
+        "mean": 0.926922933,
+        "median": 0.9377556994,
+        "p05": 0.8540409121,
+        "p95": 0.9841658874
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.872735,
+        "brier_routed": 0.8222183561,
+        "log_loss_l0": 1.7888244694,
+        "log_loss_routed": 1.6655422506,
+        "top_label_accuracy_l0": 0.25315,
+        "top_label_accuracy_routed": 0.25016,
+        "top_label_ece_l0": 0.17677,
+        "top_label_ece_routed": 0.1016830079
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.938,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.1256110826,
+        "median": 0.1234754398,
+        "p05": 0.1000772932,
+        "p95": 0.1591779714
+      }
+    },
+    {
+      "condition": "n2_rho0.8_kappa2_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0615013555,
+        "median": -0.0428085475,
+        "p05": -0.1657124741,
+        "p95": -0.0081278039,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.1499360388,
+        "median": -0.1249064384,
+        "p05": -0.2797969444,
+        "p95": -0.0599057353,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.1158934768,
+        "median": -0.1242570731,
+        "p05": -0.1967302723,
+        "p95": -0.0432570731,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8317861223,
+        "median": 0.8379313546,
+        "p05": 0.7010449912,
+        "p95": 0.936069485
+      },
+      "entropy_routed": {
+        "mean": 0.9612613629,
+        "median": 0.9596745937,
+        "p05": 0.9242765292,
+        "p95": 0.9931860117
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.86703756,
+        "brier_routed": 0.8054948158,
+        "log_loss_l0": 1.7781345034,
+        "log_loss_routed": 1.6284189584,
+        "top_label_accuracy_l0": 0.26101,
+        "top_label_accuracy_routed": 0.25892,
+        "top_label_ece_l0": 0.172982,
+        "top_label_ece_routed": 0.0458545026
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.948,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.2039707764,
+        "median": 0.1932028395,
+        "p05": 0.1540486927,
+        "p95": 0.2599538206
+      }
+    },
+    {
+      "condition": "n2_rho0.8_kappa6_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0024511797,
+        "median": -0.0012366577,
+        "p05": -0.0069975653,
+        "p95": 0.0004906402,
+        "proportion_routing_improves": 0.826
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0068203874,
+        "median": -0.0049396872,
+        "p05": -0.0141023079,
+        "p95": -0.0018833342,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.006899841,
+        "median": -0.0083512342,
+        "p05": -0.0127574901,
+        "p95": -0.0006391558,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.9290076095,
+        "median": 0.9315105257,
+        "p05": 0.8698917828,
+        "p95": 0.9752402323
+      },
+      "entropy_routed": {
+        "mean": 0.9351455634,
+        "median": 0.940376437,
+        "p05": 0.8816565758,
+        "p95": 0.9769087077
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.81330888,
+        "brier_routed": 0.8108104237,
+        "log_loss_l0": 1.649225874,
+        "log_loss_routed": 1.6422785585,
+        "top_label_accuracy_l0": 0.25931,
+        "top_label_accuracy_routed": 0.25603,
+        "top_label_ece_l0": 0.082077,
+        "top_label_ece_routed": 0.0768777756
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.96,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0133750111,
+        "median": 0.0127574901,
+        "p05": 0.0107924628,
+        "p95": 0.0168441681
+      }
+    },
+    {
+      "condition": "n2_rho0.8_kappa6_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.008792751,
+        "median": -0.0039503375,
+        "p05": -0.0260666666,
+        "p95": 0.0029505623,
+        "proportion_routing_improves": 0.718
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0262470398,
+        "median": -0.0192883269,
+        "p05": -0.0601387957,
+        "p95": -0.0052358279,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0265227888,
+        "median": -0.0286057272,
+        "p05": -0.0673076731,
+        "p95": 0.0073723163,
+        "proportion_routing_improves": 0.718
+      },
+      "entropy_l0": {
+        "mean": 0.9290573122,
+        "median": 0.9349581775,
+        "p05": 0.8698917828,
+        "p95": 0.9752402323
+      },
+      "entropy_routed": {
+        "mean": 0.9591747451,
+        "median": 0.9639481365,
+        "p05": 0.9271938616,
+        "p95": 0.9811732513
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.81283031,
+        "brier_routed": 0.8040742187,
+        "log_loss_l0": 1.6480619049,
+        "log_loss_routed": 1.6218715705,
+        "top_label_accuracy_l0": 0.2615,
+        "top_label_accuracy_routed": 0.25681,
+        "top_label_ece_l0": 0.07978,
+        "top_label_ece_routed": 0.0442021177
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.952,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0640249973,
+        "median": 0.0643530464,
+        "p05": 0.0418085793,
+        "p95": 0.0822490998
+      }
+    },
+    {
+      "condition": "n2_rho0.8_kappa6_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0085070009,
+        "median": -0.0016196671,
+        "p05": -0.0351106873,
+        "p95": 0.0084619276,
+        "proportion_routing_improves": 0.532
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0263767668,
+        "median": -0.0147643702,
+        "p05": -0.0765085112,
+        "p95": 0.0023004364,
+        "proportion_routing_improves": 0.736
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0223904243,
+        "median": -0.0192235409,
+        "p05": -0.0929862505,
+        "p95": 0.0307764591,
+        "proportion_routing_improves": 0.644
+      },
+      "entropy_l0": {
+        "mean": 0.9304038873,
+        "median": 0.9349581775,
+        "p05": 0.8698917828,
+        "p95": 0.9752402323
+      },
+      "entropy_routed": {
+        "mean": 0.9746238812,
+        "median": 0.9741539091,
+        "p05": 0.9570231904,
+        "p95": 0.9886857363
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.81191638,
+        "brier_routed": 0.8034352688,
+        "log_loss_l0": 1.6468923102,
+        "log_loss_routed": 1.619944423,
+        "top_label_accuracy_l0": 0.26264,
+        "top_label_accuracy_routed": 0.22202,
+        "top_label_ece_l0": 0.074612,
+        "top_label_ece_routed": 0.0539820151
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.724,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.1051129092,
+        "median": 0.111644498,
+        "p05": 0.0573526286,
+        "p95": 0.1357627096
+      }
+    },
+    {
+      "condition": "n2_rho0.8_kappa20_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -7.13536e-05,
+        "median": 0.0002673252,
+        "p05": -0.0014689322,
+        "p95": 0.0005882412,
+        "proportion_routing_improves": 0.29
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0009124567,
+        "median": -0.000370121,
+        "p05": -0.0033463076,
+        "p95": 0.0006384196,
+        "proportion_routing_improves": 0.618
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0003353153,
+        "median": 0.0008112784,
+        "p05": -0.0050578824,
+        "p95": 0.0013742399,
+        "proportion_routing_improves": 0.406
+      },
+      "entropy_l0": {
+        "mean": 0.9539652158,
+        "median": 0.954329788,
+        "p05": 0.934213108,
+        "p95": 0.9797088447
+      },
+      "entropy_routed": {
+        "mean": 0.955680575,
+        "median": 0.9560879163,
+        "p05": 0.9377735745,
+        "p95": 0.9792284094
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.8040211967,
+        "brier_routed": 0.8039851354,
+        "log_loss_l0": 1.6189274552,
+        "log_loss_routed": 1.6181395506,
+        "top_label_accuracy_l0": 0.22055,
+        "top_label_accuracy_routed": 0.21069,
+        "top_label_ece_l0": 0.0735663636,
+        "top_label_ece_routed": 0.081481841
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.942,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0050061656,
+        "median": 0.0051614848,
+        "p05": 0.0029924114,
+        "p95": 0.0064321222
+      }
+    },
+    {
+      "condition": "n2_rho0.8_kappa20_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0007623538,
+        "median": 0.0007371298,
+        "p05": -0.0070848668,
+        "p95": 0.0022056129,
+        "proportion_routing_improves": 0.408
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0045450099,
+        "median": -0.0028186144,
+        "p05": -0.0168184831,
+        "p95": 0.004642932,
+        "proportion_routing_improves": 0.794
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0008721819,
+        "median": 0.0015778079,
+        "p05": -0.0158190423,
+        "p95": 0.0141918815,
+        "proportion_routing_improves": 0.408
+      },
+      "entropy_l0": {
+        "mean": 0.9545494063,
+        "median": 0.954329788,
+        "p05": 0.934213108,
+        "p95": 0.9797088447
+      },
+      "entropy_routed": {
+        "mean": 0.9677800737,
+        "median": 0.9684900368,
+        "p05": 0.9566116123,
+        "p95": 0.9792024805
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.8059409355,
+        "brier_routed": 0.8051531305,
+        "log_loss_l0": 1.624018653,
+        "log_loss_routed": 1.6193753484,
+        "top_label_accuracy_l0": 0.21869,
+        "top_label_accuracy_routed": 0.20524,
+        "top_label_ece_l0": 0.0742445455,
+        "top_label_ece_routed": 0.0759542316
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.92,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0284803198,
+        "median": 0.0322036672,
+        "p05": 0.0158975132,
+        "p95": 0.0337030043
+      }
+    },
+    {
+      "condition": "n2_rho0.8_kappa20_gamma0.9",
+      "delta_exact_brier": {
+        "mean": 0.0006000165,
+        "median": 0.002810301,
+        "p05": -0.0100104965,
+        "p95": 0.0047966184,
+        "proportion_routing_improves": 0.226
+      },
+      "delta_exact_log_loss": {
+        "mean": 0.0001652918,
+        "median": 0.0043558937,
+        "p05": -0.0200548412,
+        "p95": 0.0122192294,
+        "proportion_routing_improves": 0.382
+      },
+      "delta_tv_to_truth": {
+        "mean": 0.0152533685,
+        "median": 0.0202281713,
+        "p05": -0.0179536469,
+        "p95": 0.0330524338,
+        "proportion_routing_improves": 0.21
+      },
+      "entropy_l0": {
+        "mean": 0.9553592378,
+        "median": 0.954329788,
+        "p05": 0.934213108,
+        "p95": 0.9810559107
+      },
+      "entropy_routed": {
+        "mean": 0.9771066159,
+        "median": 0.9765259298,
+        "p05": 0.9707950928,
+        "p95": 0.9841323381
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.8054236793,
+        "brier_routed": 0.8058855292,
+        "log_loss_l0": 1.6225065779,
+        "log_loss_routed": 1.6225963877,
+        "top_label_accuracy_l0": 0.21439,
+        "top_label_accuracy_routed": 0.20168,
+        "top_label_ece_l0": 0.0762681818,
+        "top_label_ece_routed": 0.0659630487
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 2,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "sparse",
+      "top_category_retention_rate": 0.92,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0553865283,
+        "median": 0.0633626196,
+        "p05": 0.0352777912,
+        "p95": 0.0633626196
+      }
+    },
+    {
+      "condition": "n10_rho0.1_kappa2_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0083507753,
+        "median": -0.0068375244,
+        "p05": -0.0201013723,
+        "p95": -0.0017266521,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0436872472,
+        "median": -0.0389849877,
+        "p05": -0.1032959529,
+        "p95": -0.0043555894,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0167218542,
+        "median": -0.0163821368,
+        "p05": -0.0268128886,
+        "p95": -0.0076065574,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8438047575,
+        "median": 0.851666485,
+        "p05": 0.6906241814,
+        "p95": 0.9674630515
+      },
+      "entropy_routed": {
+        "mean": 0.8611677099,
+        "median": 0.8687825001,
+        "p05": 0.7288914883,
+        "p95": 0.9672732771
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.8130927089,
+        "brier_routed": 0.8047424365,
+        "log_loss_l0": 1.6941683642,
+        "log_loss_routed": 1.6506191378,
+        "top_label_accuracy_l0": 0.29188,
+        "top_label_accuracy_routed": 0.29188,
+        "top_label_ece_l0": 0.1117853333,
+        "top_label_ece_routed": 0.1020542581
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 1.0,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0170552734,
+        "median": 0.0165532316,
+        "p05": 0.0080346712,
+        "p95": 0.0268128886
+      }
+    },
+    {
+      "condition": "n10_rho0.1_kappa2_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0317973314,
+        "median": -0.0254575385,
+        "p05": -0.0774059109,
+        "p95": -0.0057484735,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.1257533153,
+        "median": -0.1059811871,
+        "p05": -0.2957526722,
+        "p95": -0.0177462775,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0765587927,
+        "median": -0.0749229284,
+        "p05": -0.1269403742,
+        "p95": -0.0348825107,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8454265031,
+        "median": 0.8557760423,
+        "p05": 0.6859830226,
+        "p95": 0.9695343045
+      },
+      "entropy_routed": {
+        "mean": 0.909187199,
+        "median": 0.9134108782,
+        "p05": 0.8296665291,
+        "p95": 0.9739804217
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.8110291422,
+        "brier_routed": 0.7790099168,
+        "log_loss_l0": 1.6828765423,
+        "log_loss_routed": 1.5574716867,
+        "top_label_accuracy_l0": 0.30057,
+        "top_label_accuracy_routed": 0.31155,
+        "top_label_ece_l0": 0.106605,
+        "top_label_ece_routed": 0.0529938591
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.942,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0781063494,
+        "median": 0.0760426193,
+        "p05": 0.0366582726,
+        "p95": 0.1269403742
+      }
+    },
+    {
+      "condition": "n10_rho0.1_kappa2_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0451014816,
+        "median": -0.0372235952,
+        "p05": -0.1041160881,
+        "p95": -0.008933664,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.1607921611,
+        "median": -0.1421092103,
+        "p05": -0.3589569615,
+        "p95": -0.0251278012,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.1268175222,
+        "median": -0.1237297947,
+        "p05": -0.206088148,
+        "p95": -0.0601092168,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8511628072,
+        "median": 0.8594120188,
+        "p05": 0.6888502964,
+        "p95": 0.9703572509
+      },
+      "entropy_routed": {
+        "mean": 0.9362692412,
+        "median": 0.9383243467,
+        "p05": 0.8899910279,
+        "p95": 0.971108204
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.8138831133,
+        "brier_routed": 0.7685561076,
+        "log_loss_l0": 1.693437338,
+        "log_loss_routed": 1.5308104613,
+        "top_label_accuracy_l0": 0.2908,
+        "top_label_accuracy_routed": 0.32223,
+        "top_label_ece_l0": 0.1078776667,
+        "top_label_ece_routed": 0.0236894955
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.77,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.1288513092,
+        "median": 0.1260176259,
+        "p05": 0.0634878379,
+        "p95": 0.211497156
+      }
+    },
+    {
+      "condition": "n10_rho0.1_kappa6_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0046941908,
+        "median": -0.0038416208,
+        "p05": -0.0124846046,
+        "p95": -0.0007551131,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0150097151,
+        "median": -0.0129656185,
+        "p05": -0.0351571195,
+        "p95": -0.0021313263,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0124017637,
+        "median": -0.0121070285,
+        "p05": -0.0212332014,
+        "p95": -0.0053871114,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8899540262,
+        "median": 0.8971602198,
+        "p05": 0.7922265836,
+        "p95": 0.9690867596
+      },
+      "entropy_routed": {
+        "mean": 0.8988620715,
+        "median": 0.9054192064,
+        "p05": 0.8107845506,
+        "p95": 0.9698662398
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.790784355,
+        "brier_routed": 0.7860656765,
+        "log_loss_l0": 1.5946787034,
+        "log_loss_routed": 1.5794425607,
+        "top_label_accuracy_l0": 0.29814,
+        "top_label_accuracy_routed": 0.30431,
+        "top_label_ece_l0": 0.08008425,
+        "top_label_ece_routed": 0.0672428366
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.96,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.012667097,
+        "median": 0.012373469,
+        "p05": 0.0059657057,
+        "p95": 0.0212332014
+      }
+    },
+    {
+      "condition": "n10_rho0.1_kappa6_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0186734922,
+        "median": -0.0152059409,
+        "p05": -0.0442516916,
+        "p95": -0.002159526,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0538975868,
+        "median": -0.0485793582,
+        "p05": -0.1155967431,
+        "p95": -0.0052312415,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.058743961,
+        "median": -0.0569559612,
+        "p05": -0.0956121356,
+        "p95": -0.021318236,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8933092506,
+        "median": 0.9010911384,
+        "p05": 0.7923352476,
+        "p95": 0.9695250943
+      },
+      "entropy_routed": {
+        "mean": 0.9277114088,
+        "median": 0.929822037,
+        "p05": 0.8704693381,
+        "p95": 0.9711858619
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.7899879987,
+        "brier_routed": 0.7712053029,
+        "log_loss_l0": 1.5912942331,
+        "log_loss_routed": 1.5372430956,
+        "top_label_accuracy_l0": 0.29873,
+        "top_label_accuracy_routed": 0.32245,
+        "top_label_ece_l0": 0.07799225,
+        "top_label_ece_routed": 0.0330685372
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.812,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0597990158,
+        "median": 0.0569559612,
+        "p05": 0.0238422907,
+        "p95": 0.0956121356
+      }
+    },
+    {
+      "condition": "n10_rho0.1_kappa6_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0250055983,
+        "median": -0.0200171304,
+        "p05": -0.0628463646,
+        "p95": -0.0040271305,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0711450343,
+        "median": -0.0622179242,
+        "p05": -0.1609146997,
+        "p95": -0.0111759601,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.094712028,
+        "median": -0.0876604402,
+        "p05": -0.1644059877,
+        "p95": -0.0447164161,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8895117336,
+        "median": 0.8968491272,
+        "p05": 0.783201004,
+        "p95": 0.9646777568
+      },
+      "entropy_routed": {
+        "mean": 0.9401639053,
+        "median": 0.9414316631,
+        "p05": 0.9079446254,
+        "p95": 0.967435867
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7883143275,
+        "brier_routed": 0.7634948159,
+        "log_loss_l0": 1.5889339126,
+        "log_loss_routed": 1.5183909595,
+        "top_label_accuracy_l0": 0.30823,
+        "top_label_accuracy_routed": 0.33395,
+        "top_label_ece_l0": 0.07139775,
+        "top_label_ece_routed": 0.0174964293
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.768,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0961840386,
+        "median": 0.0885343369,
+        "p05": 0.0457186184,
+        "p95": 0.1644059877
+      }
+    },
+    {
+      "condition": "n10_rho0.1_kappa20_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.001242357,
+        "median": -0.0009587742,
+        "p05": -0.0029049507,
+        "p95": -0.0001915956,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0031427948,
+        "median": -0.002871023,
+        "p05": -0.0068067238,
+        "p95": -0.0005413224,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0064724357,
+        "median": -0.0063614095,
+        "p05": -0.01027443,
+        "p95": -0.0029820237,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.9343026864,
+        "median": 0.9351374075,
+        "p05": 0.8870642984,
+        "p95": 0.9726441356
+      },
+      "entropy_routed": {
+        "mean": 0.9365928839,
+        "median": 0.9372668737,
+        "p05": 0.893619614,
+        "p95": 0.9722541944
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.7680339289,
+        "brier_routed": 0.7668025157,
+        "log_loss_l0": 1.5297995892,
+        "log_loss_routed": 1.5266729381,
+        "top_label_accuracy_l0": 0.32558,
+        "top_label_accuracy_routed": 0.32558,
+        "top_label_ece_l0": 0.0298266667,
+        "top_label_ece_routed": 0.0220216559
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 1.0,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0065991332,
+        "median": 0.0063614095,
+        "p05": 0.0031264368,
+        "p95": 0.0105732052
+      }
+    },
+    {
+      "condition": "n10_rho0.1_kappa20_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.004917498,
+        "median": -0.0039093856,
+        "p05": -0.0114694814,
+        "p95": -0.0005701487,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0121971769,
+        "median": -0.0110594898,
+        "p05": -0.0272270535,
+        "p95": -0.0021341706,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0310366344,
+        "median": -0.0291094387,
+        "p05": -0.0504960708,
+        "p95": -0.0122230004,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.9326349521,
+        "median": 0.9334323491,
+        "p05": 0.88447346,
+        "p95": 0.9723939914
+      },
+      "entropy_routed": {
+        "mean": 0.9430980419,
+        "median": 0.9438928823,
+        "p05": 0.9161328948,
+        "p95": 0.9687245477
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.76773752,
+        "brier_routed": 0.7626930895,
+        "log_loss_l0": 1.5284093094,
+        "log_loss_routed": 1.5161100628,
+        "top_label_accuracy_l0": 0.32493,
+        "top_label_accuracy_routed": 0.33813,
+        "top_label_ece_l0": 0.0337313333,
+        "top_label_ece_routed": 0.0079030482
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.85,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0315842949,
+        "median": 0.0293834034,
+        "p05": 0.0134607203,
+        "p95": 0.0508841829
+      }
+    },
+    {
+      "condition": "n10_rho0.1_kappa20_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0069079871,
+        "median": -0.0051753376,
+        "p05": -0.0171802413,
+        "p95": -0.0007606726,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0170827906,
+        "median": -0.0147577855,
+        "p05": -0.0399409087,
+        "p95": -0.001990054,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0451674882,
+        "median": -0.0424951351,
+        "p05": -0.0773308985,
+        "p95": -0.0152334396,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.9327583448,
+        "median": 0.9339235709,
+        "p05": 0.8886246793,
+        "p95": 0.9708029563
+      },
+      "entropy_routed": {
+        "mean": 0.9481614698,
+        "median": 0.9482867738,
+        "p05": 0.9330915341,
+        "p95": 0.9625269561
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7680041956,
+        "brier_routed": 0.7610504343,
+        "log_loss_l0": 1.5297608543,
+        "log_loss_routed": 1.5126599371,
+        "top_label_accuracy_l0": 0.32455,
+        "top_label_accuracy_routed": 0.33989,
+        "top_label_ece_l0": 0.02959,
+        "top_label_ece_routed": 0.0091254175
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.84,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0506550254,
+        "median": 0.0482471377,
+        "p05": 0.0243277385,
+        "p95": 0.0836756941
+      }
+    },
+    {
+      "condition": "n10_rho0.4_kappa2_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.007557547,
+        "median": -0.0063339166,
+        "p05": -0.0181001997,
+        "p95": -0.0011247108,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.037286607,
+        "median": -0.0284322653,
+        "p05": -0.0956333853,
+        "p95": -0.0027363891,
+        "proportion_routing_improves": 0.992
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0154762299,
+        "median": -0.0153819484,
+        "p05": -0.0262421707,
+        "p95": -0.0039706049,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.8626451284,
+        "median": 0.8686475635,
+        "p05": 0.7165157604,
+        "p95": 0.9735465481
+      },
+      "entropy_routed": {
+        "mean": 0.8806704454,
+        "median": 0.8854418773,
+        "p05": 0.7550863606,
+        "p95": 0.9753806647
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.8106837156,
+        "brier_routed": 0.8031050871,
+        "log_loss_l0": 1.679781703,
+        "log_loss_routed": 1.6422805325,
+        "top_label_accuracy_l0": 0.29459,
+        "top_label_accuracy_routed": 0.29459,
+        "top_label_ece_l0": 0.1016186667,
+        "top_label_ece_routed": 0.0907657584
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 1.0,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0179011871,
+        "median": 0.0176009045,
+        "p05": 0.0095330695,
+        "p95": 0.0270147353
+      }
+    },
+    {
+      "condition": "n10_rho0.4_kappa2_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0303047463,
+        "median": -0.0244564933,
+        "p05": -0.0753116848,
+        "p95": -0.0035901149,
+        "proportion_routing_improves": 0.988
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.1151555787,
+        "median": -0.1025667832,
+        "p05": -0.2755810817,
+        "p95": -0.0088558599,
+        "proportion_routing_improves": 0.982
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.076343308,
+        "median": -0.0729387004,
+        "p05": -0.129549467,
+        "p95": -0.022483583,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.860211883,
+        "median": 0.8661901096,
+        "p05": 0.7178247058,
+        "p95": 0.9732495108
+      },
+      "entropy_routed": {
+        "mean": 0.9326308509,
+        "median": 0.9343465042,
+        "p05": 0.8669137183,
+        "p95": 0.9830218908
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.8124685267,
+        "brier_routed": 0.7821125685,
+        "log_loss_l0": 1.6816690647,
+        "log_loss_routed": 1.5670544822,
+        "top_label_accuracy_l0": 0.28632,
+        "top_label_accuracy_routed": 0.30097,
+        "top_label_ece_l0": 0.1069953333,
+        "top_label_ece_routed": 0.051286165
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.92,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0865816385,
+        "median": 0.0865324264,
+        "p05": 0.0422143824,
+        "p95": 0.1361924139
+      }
+    },
+    {
+      "condition": "n10_rho0.4_kappa2_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0393600119,
+        "median": -0.0322325981,
+        "p05": -0.1019640242,
+        "p95": -0.0039092976,
+        "proportion_routing_improves": 0.982
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.14055786,
+        "median": -0.1226663889,
+        "p05": -0.3411143002,
+        "p95": -0.0089687414,
+        "proportion_routing_improves": 0.972
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0998451624,
+        "median": -0.0990331868,
+        "p05": -0.1923103024,
+        "p95": -0.0196020616,
+        "proportion_routing_improves": 0.982
+      },
+      "entropy_l0": {
+        "mean": 0.8563132744,
+        "median": 0.8651583502,
+        "p05": 0.7118467023,
+        "p95": 0.9735465481
+      },
+      "entropy_routed": {
+        "mean": 0.9588604567,
+        "median": 0.9598850731,
+        "p05": 0.9250151684,
+        "p95": 0.9868847582
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.8127238289,
+        "brier_routed": 0.7730755173,
+        "log_loss_l0": 1.6888160819,
+        "log_loss_routed": 1.5457989403,
+        "top_label_accuracy_l0": 0.29505,
+        "top_label_accuracy_routed": 0.32211,
+        "top_label_ece_l0": 0.1033113333,
+        "top_label_ece_routed": 0.0297006005
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.784,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.1397742305,
+        "median": 0.1339769691,
+        "p05": 0.0710331868,
+        "p95": 0.2225485089
+      }
+    },
+    {
+      "condition": "n10_rho0.4_kappa6_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.004252031,
+        "median": -0.0033212763,
+        "p05": -0.0105034765,
+        "p95": -0.0003418181,
+        "proportion_routing_improves": 0.97
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0131251929,
+        "median": -0.0120324079,
+        "p05": -0.031351545,
+        "p95": -0.0007855571,
+        "proportion_routing_improves": 0.958
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0124047515,
+        "median": -0.0121507443,
+        "p05": -0.0213951385,
+        "p95": -0.003121613,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.9030038541,
+        "median": 0.9096713419,
+        "p05": 0.806215089,
+        "p95": 0.9736601849
+      },
+      "entropy_routed": {
+        "mean": 0.9133129921,
+        "median": 0.9172092678,
+        "p05": 0.8272688197,
+        "p95": 0.9763066555
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.7912491775,
+        "brier_routed": 0.7869330128,
+        "log_loss_l0": 1.5957127582,
+        "log_loss_routed": 1.5824578209,
+        "top_label_accuracy_l0": 0.30088,
+        "top_label_accuracy_routed": 0.30507,
+        "top_label_ece_l0": 0.0710185,
+        "top_label_ece_routed": 0.058393057
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.976,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0140316171,
+        "median": 0.0140584134,
+        "p05": 0.0061322781,
+        "p95": 0.0213951385
+      }
+    },
+    {
+      "condition": "n10_rho0.4_kappa6_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0157803463,
+        "median": -0.0125344702,
+        "p05": -0.043259011,
+        "p95": 0.000114416,
+        "proportion_routing_improves": 0.942
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0441636561,
+        "median": -0.0371121618,
+        "p05": -0.1160695344,
+        "p95": 8.1202e-06,
+        "proportion_routing_improves": 0.942
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0441028122,
+        "median": -0.0428401233,
+        "p05": -0.086091259,
+        "p95": -0.0029987852,
+        "proportion_routing_improves": 0.986
+      },
+      "entropy_l0": {
+        "mean": 0.9095579159,
+        "median": 0.9154936891,
+        "p05": 0.8133295539,
+        "p95": 0.9800060119
+      },
+      "entropy_routed": {
+        "mean": 0.9495111081,
+        "median": 0.952377149,
+        "p05": 0.9011247854,
+        "p95": 0.9866115353
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.79139413,
+        "brier_routed": 0.7756533489,
+        "log_loss_l0": 1.596263545,
+        "log_loss_routed": 1.5519877143,
+        "top_label_accuracy_l0": 0.29553,
+        "top_label_accuracy_routed": 0.32167,
+        "top_label_ece_l0": 0.065247,
+        "top_label_ece_routed": 0.0158621335
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.784,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0643060967,
+        "median": 0.061880226,
+        "p05": 0.0288737744,
+        "p95": 0.1097215641
+      }
+    },
+    {
+      "condition": "n10_rho0.4_kappa6_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0202771792,
+        "median": -0.0160698505,
+        "p05": -0.0559383883,
+        "p95": 0.0015372091,
+        "proportion_routing_improves": 0.89
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0551759137,
+        "median": -0.0504007895,
+        "p05": -0.1393846457,
+        "p95": 0.0047907539,
+        "proportion_routing_improves": 0.89
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0598110754,
+        "median": -0.0586942379,
+        "p05": -0.1258856391,
+        "p95": 0.0114496612,
+        "proportion_routing_improves": 0.904
+      },
+      "entropy_l0": {
+        "mean": 0.9053084285,
+        "median": 0.9106276164,
+        "p05": 0.8120072397,
+        "p95": 0.975859672
+      },
+      "entropy_routed": {
+        "mean": 0.9659152269,
+        "median": 0.9668697802,
+        "p05": 0.9420171567,
+        "p95": 0.9865112899
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.791335085,
+        "brier_routed": 0.7708339313,
+        "log_loss_l0": 1.5965535082,
+        "log_loss_routed": 1.5405461621,
+        "top_label_accuracy_l0": 0.29607,
+        "top_label_accuracy_routed": 0.33135,
+        "top_label_ece_l0": 0.07059,
+        "top_label_ece_routed": 0.0264472564
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.716,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.1071762734,
+        "median": 0.1034765208,
+        "p05": 0.0490658997,
+        "p95": 0.1695149914
+      }
+    },
+    {
+      "condition": "n10_rho0.4_kappa20_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.000841038,
+        "median": -0.0006256146,
+        "p05": -0.0026740217,
+        "p95": 0.0002889525,
+        "proportion_routing_improves": 0.828
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0021327616,
+        "median": -0.0018221696,
+        "p05": -0.0068140318,
+        "p95": 0.0007869631,
+        "proportion_routing_improves": 0.768
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0027453431,
+        "median": -0.0028520822,
+        "p05": -0.008805879,
+        "p95": 0.0020561523,
+        "proportion_routing_improves": 0.786
+      },
+      "entropy_l0": {
+        "mean": 0.9516519917,
+        "median": 0.9547294236,
+        "p05": 0.9088680005,
+        "p95": 0.9848852734
+      },
+      "entropy_routed": {
+        "mean": 0.9544495991,
+        "median": 0.9573212257,
+        "p05": 0.9164567054,
+        "p95": 0.9844333802
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.7725736622,
+        "brier_routed": 0.7717375777,
+        "log_loss_l0": 1.5464807653,
+        "log_loss_routed": 1.5443710476,
+        "top_label_accuracy_l0": 0.32473,
+        "top_label_accuracy_routed": 0.32532,
+        "top_label_ece_l0": 0.01079,
+        "top_label_ece_routed": 0.0090238847
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.996,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0070607665,
+        "median": 0.0068437912,
+        "p05": 0.0036419823,
+        "p95": 0.0114625966
+      }
+    },
+    {
+      "condition": "n10_rho0.4_kappa20_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0030163277,
+        "median": -0.0022064319,
+        "p05": -0.0116956503,
+        "p95": 0.0014229333,
+        "proportion_routing_improves": 0.762
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0079875663,
+        "median": -0.0070897507,
+        "p05": -0.0272176845,
+        "p95": 0.0048169,
+        "proportion_routing_improves": 0.74
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0147847948,
+        "median": -0.0159606847,
+        "p05": -0.0415830124,
+        "p95": 0.0095546956,
+        "proportion_routing_improves": 0.838
+      },
+      "entropy_l0": {
+        "mean": 0.9506257855,
+        "median": 0.9502114634,
+        "p05": 0.9175221097,
+        "p95": 0.9800877579
+      },
+      "entropy_routed": {
+        "mean": 0.9650455944,
+        "median": 0.9648030167,
+        "p05": 0.9457110853,
+        "p95": 0.9829388367
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.7742800178,
+        "brier_routed": 0.7711948908,
+        "log_loss_l0": 1.5508039678,
+        "log_loss_routed": 1.5424989566,
+        "top_label_accuracy_l0": 0.3199,
+        "top_label_accuracy_routed": 0.33464,
+        "top_label_ece_l0": 0.007512,
+        "top_label_ece_routed": 0.02432792
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.846,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0349277109,
+        "median": 0.0350700759,
+        "p05": 0.0159932575,
+        "p95": 0.054266328
+      }
+    },
+    {
+      "condition": "n10_rho0.4_kappa20_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0035536449,
+        "median": -0.0019717569,
+        "p05": -0.0150274283,
+        "p95": 0.0034557381,
+        "proportion_routing_improves": 0.674
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0091848262,
+        "median": -0.007747363,
+        "p05": -0.0371173327,
+        "p95": 0.0107616251,
+        "proportion_routing_improves": 0.658
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0143433201,
+        "median": -0.0115755866,
+        "p05": -0.0622882024,
+        "p95": 0.0204955393,
+        "proportion_routing_improves": 0.704
+      },
+      "entropy_l0": {
+        "mean": 0.9481787778,
+        "median": 0.9509720678,
+        "p05": 0.9061993889,
+        "p95": 0.9832082859
+      },
+      "entropy_routed": {
+        "mean": 0.9727811071,
+        "median": 0.973472491,
+        "p05": 0.9603675555,
+        "p95": 0.9843737655
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7738191022,
+        "brier_routed": 0.7700056389,
+        "log_loss_l0": 1.5492626945,
+        "log_loss_routed": 1.5394037754,
+        "top_label_accuracy_l0": 0.32213,
+        "top_label_accuracy_routed": 0.33862,
+        "top_label_ece_l0": 0.0135926667,
+        "top_label_ece_routed": 0.0353330451
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.818,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.061435822,
+        "median": 0.0616866209,
+        "p05": 0.029993298,
+        "p95": 0.0952680668
+      }
+    },
+    {
+      "condition": "n10_rho0.8_kappa2_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0067987923,
+        "median": -0.0056081055,
+        "p05": -0.0177446737,
+        "p95": 0.0004083089,
+        "proportion_routing_improves": 0.92
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.036089086,
+        "median": -0.0234256529,
+        "p05": -0.0981443111,
+        "p95": 0.0009202454,
+        "proportion_routing_improves": 0.896
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0151181217,
+        "median": -0.0134946297,
+        "p05": -0.0302875448,
+        "p95": 7.23573e-05,
+        "proportion_routing_improves": 0.946
+      },
+      "entropy_l0": {
+        "mean": 0.8670447894,
+        "median": 0.8813410794,
+        "p05": 0.7310886753,
+        "p95": 0.9769820192
+      },
+      "entropy_routed": {
+        "mean": 0.8873535729,
+        "median": 0.9007778699,
+        "p05": 0.7728527496,
+        "p95": 0.9792952954
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.8132986311,
+        "brier_routed": 0.8065294167,
+        "log_loss_l0": 1.6928026105,
+        "log_loss_routed": 1.6570472291,
+        "top_label_accuracy_l0": 0.28838,
+        "top_label_accuracy_routed": 0.28838,
+        "top_label_ece_l0": 0.1033993333,
+        "top_label_ece_routed": 0.0902950771
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 1.0,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0214079035,
+        "median": 0.0211765593,
+        "p05": 0.010598681,
+        "p95": 0.032343697
+      }
+    },
+    {
+      "condition": "n10_rho0.8_kappa2_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0208872808,
+        "median": -0.0161154761,
+        "p05": -0.0615130694,
+        "p95": 0.0056048132,
+        "proportion_routing_improves": 0.858
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0950347858,
+        "median": -0.0664355977,
+        "p05": -0.2787255822,
+        "p95": 0.0133197079,
+        "proportion_routing_improves": 0.856
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.045432108,
+        "median": -0.044001195,
+        "p05": -0.0993042876,
+        "p95": 0.0135276497,
+        "proportion_routing_improves": 0.884
+      },
+      "entropy_l0": {
+        "mean": 0.8723261709,
+        "median": 0.8822768482,
+        "p05": 0.7450510542,
+        "p95": 0.9738974881
+      },
+      "entropy_routed": {
+        "mean": 0.9473388647,
+        "median": 0.9526662178,
+        "p05": 0.8894578924,
+        "p95": 0.9889685565
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.8120810933,
+        "brier_routed": 0.7912893057,
+        "log_loss_l0": 1.6933374493,
+        "log_loss_routed": 1.5982478721,
+        "top_label_accuracy_l0": 0.28472,
+        "top_label_accuracy_routed": 0.28769,
+        "top_label_ece_l0": 0.0965726667,
+        "top_label_ece_routed": 0.033246208
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.94,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.101461622,
+        "median": 0.1019461591,
+        "p05": 0.0546572019,
+        "p95": 0.150339878
+      }
+    },
+    {
+      "condition": "n10_rho0.8_kappa2_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0242626296,
+        "median": -0.0166924459,
+        "p05": -0.0888225049,
+        "p95": 0.0138447158,
+        "proportion_routing_improves": 0.79
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.1015818125,
+        "median": -0.0599918419,
+        "p05": -0.3266292205,
+        "p95": 0.0333852147,
+        "proportion_routing_improves": 0.746
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0458063631,
+        "median": -0.0395241896,
+        "p05": -0.1516301876,
+        "p95": 0.0564758104,
+        "proportion_routing_improves": 0.77
+      },
+      "entropy_l0": {
+        "mean": 0.8667643118,
+        "median": 0.8808792112,
+        "p05": 0.7154608446,
+        "p95": 0.9727178516
+      },
+      "entropy_routed": {
+        "mean": 0.9726894735,
+        "median": 0.9758532651,
+        "p05": 0.9389165011,
+        "p95": 0.9941362353
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.8144671711,
+        "brier_routed": 0.7907240011,
+        "log_loss_l0": 1.6934299606,
+        "log_loss_routed": 1.5936090167,
+        "top_label_accuracy_l0": 0.28574,
+        "top_label_accuracy_routed": 0.2977,
+        "top_label_ece_l0": 0.1079986667,
+        "top_label_ece_routed": 0.0160622407
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.806,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.1719059527,
+        "median": 0.1686608122,
+        "p05": 0.0959265884,
+        "p95": 0.2543977866
+      }
+    },
+    {
+      "condition": "n10_rho0.8_kappa6_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0025652777,
+        "median": -0.0016871683,
+        "p05": -0.0091332416,
+        "p95": 0.0012891601,
+        "proportion_routing_improves": 0.788
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0092356788,
+        "median": -0.0062645248,
+        "p05": -0.0300036006,
+        "p95": 0.0030515372,
+        "proportion_routing_improves": 0.722
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0035400795,
+        "median": -0.003959299,
+        "p05": -0.0126184285,
+        "p95": 0.0059018278,
+        "proportion_routing_improves": 0.708
+      },
+      "entropy_l0": {
+        "mean": 0.9179745981,
+        "median": 0.9309929927,
+        "p05": 0.8258795305,
+        "p95": 0.9800490774
+      },
+      "entropy_routed": {
+        "mean": 0.9278315162,
+        "median": 0.9393778795,
+        "p05": 0.8466352557,
+        "p95": 0.9833337502
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.7948682725,
+        "brier_routed": 0.7923198393,
+        "log_loss_l0": 1.6133389641,
+        "log_loss_routed": 1.6041435672,
+        "top_label_accuracy_l0": 0.28946,
+        "top_label_accuracy_routed": 0.29309,
+        "top_label_ece_l0": 0.063894,
+        "top_label_ece_routed": 0.0506420573
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.968,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0162027089,
+        "median": 0.0162924439,
+        "p05": 0.0088946674,
+        "p95": 0.0238138308
+      }
+    },
+    {
+      "condition": "n10_rho0.8_kappa6_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0069094914,
+        "median": -0.0042397158,
+        "p05": -0.0328350148,
+        "p95": 0.0090212959,
+        "proportion_routing_improves": 0.656
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0274916654,
+        "median": -0.0149088254,
+        "p05": -0.1067739716,
+        "p95": 0.0210268487,
+        "proportion_routing_improves": 0.656
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0149260699,
+        "median": -0.0171814871,
+        "p05": -0.0729990959,
+        "p95": 0.0391389647,
+        "proportion_routing_improves": 0.682
+      },
+      "entropy_l0": {
+        "mean": 0.9184224919,
+        "median": 0.9292283599,
+        "p05": 0.8334373407,
+        "p95": 0.9841326028
+      },
+      "entropy_routed": {
+        "mean": 0.9598492873,
+        "median": 0.9639503154,
+        "p05": 0.9187410085,
+        "p95": 0.990992765
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.795237075,
+        "brier_routed": 0.7886177831,
+        "log_loss_l0": 1.6160424793,
+        "log_loss_routed": 1.589267944,
+        "top_label_accuracy_l0": 0.29445,
+        "top_label_accuracy_routed": 0.30216,
+        "top_label_ece_l0": 0.058383,
+        "top_label_ece_routed": 0.0107400337
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.834,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0780542627,
+        "median": 0.0780390621,
+        "p05": 0.0391389647,
+        "p95": 0.1162130568
+      }
+    },
+    {
+      "condition": "n10_rho0.8_kappa6_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0032493688,
+        "median": 0.0017796282,
+        "p05": -0.0392187841,
+        "p95": 0.0189526241,
+        "proportion_routing_improves": 0.45
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0195562013,
+        "median": -0.0066770889,
+        "p05": -0.1193584507,
+        "p95": 0.0491375176,
+        "proportion_routing_improves": 0.54
+      },
+      "delta_tv_to_truth": {
+        "mean": 0.0016608971,
+        "median": 0.0051927167,
+        "p05": -0.0921656285,
+        "p95": 0.0801927167,
+        "proportion_routing_improves": 0.444
+      },
+      "entropy_l0": {
+        "mean": 0.9176189643,
+        "median": 0.9276783692,
+        "p05": 0.8253093181,
+        "p95": 0.9785465001
+      },
+      "entropy_routed": {
+        "mean": 0.9762094947,
+        "median": 0.9780108033,
+        "p05": 0.9531873129,
+        "p95": 0.992389112
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.79542815,
+        "brier_routed": 0.7925215755,
+        "log_loss_l0": 1.6161105931,
+        "log_loss_routed": 1.596599045,
+        "top_label_accuracy_l0": 0.29635,
+        "top_label_accuracy_routed": 0.30625,
+        "top_label_ece_l0": 0.0573825,
+        "top_label_ece_routed": 0.0268430093
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.746,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.1311032661,
+        "median": 0.1273920509,
+        "p05": 0.0716824821,
+        "p95": 0.2000100825
+      }
+    },
+    {
+      "condition": "n10_rho0.8_kappa20_gamma0.4",
+      "delta_exact_brier": {
+        "mean": 0.0004705671,
+        "median": 0.0006880112,
+        "p05": -0.0013723665,
+        "p95": 0.0016104103,
+        "proportion_routing_improves": 0.272
+      },
+      "delta_exact_log_loss": {
+        "mean": 8.47721e-05,
+        "median": 0.0007509387,
+        "p05": -0.0054141484,
+        "p95": 0.0036761465,
+        "proportion_routing_improves": 0.454
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0004090085,
+        "median": -0.000343697,
+        "p05": -0.007060863,
+        "p95": 0.0043836442,
+        "proportion_routing_improves": 0.534
+      },
+      "entropy_l0": {
+        "mean": 0.9547034947,
+        "median": 0.9584973725,
+        "p05": 0.9144684501,
+        "p95": 0.9861894638
+      },
+      "entropy_routed": {
+        "mean": 0.95733793,
+        "median": 0.9603535871,
+        "p05": 0.9212863151,
+        "p95": 0.9860743652
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.7898729956,
+        "brier_routed": 0.7903398116,
+        "log_loss_l0": 1.592473051,
+        "log_loss_routed": 1.5925754886,
+        "top_label_accuracy_l0": 0.30046,
+        "top_label_accuracy_routed": 0.29911,
+        "top_label_ece_l0": 0.006612,
+        "top_label_ece_routed": 0.0037146075
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.98,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.008647899,
+        "median": 0.0089692858,
+        "p05": 0.0043314867,
+        "p95": 0.0128675334
+      }
+    },
+    {
+      "condition": "n10_rho0.8_kappa20_gamma0.7",
+      "delta_exact_brier": {
+        "mean": 0.0028977312,
+        "median": 0.0035236529,
+        "p05": -0.004911623,
+        "p95": 0.0094907922,
+        "proportion_routing_improves": 0.236
+      },
+      "delta_exact_log_loss": {
+        "mean": 0.0014677917,
+        "median": 0.0023787737,
+        "p05": -0.0224038817,
+        "p95": 0.0207029551,
+        "proportion_routing_improves": 0.434
+      },
+      "delta_tv_to_truth": {
+        "mean": 0.002891754,
+        "median": 0.003800163,
+        "p05": -0.0343637774,
+        "p95": 0.0314065668,
+        "proportion_routing_improves": 0.38
+      },
+      "entropy_l0": {
+        "mean": 0.9528583501,
+        "median": 0.9542196372,
+        "p05": 0.9120247898,
+        "p95": 0.9866092258
+      },
+      "entropy_routed": {
+        "mean": 0.9696332917,
+        "median": 0.9708432371,
+        "p05": 0.9481586771,
+        "p95": 0.9885123885
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.7907109778,
+        "brier_routed": 0.7934625214,
+        "log_loss_l0": 1.5954580581,
+        "log_loss_routed": 1.5966136625,
+        "top_label_accuracy_l0": 0.29987,
+        "top_label_accuracy_routed": 0.29756,
+        "top_label_ece_l0": 0.0089006667,
+        "top_label_ece_routed": 0.0119089683
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.886,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.047054498,
+        "median": 0.0441036063,
+        "p05": 0.024331901,
+        "p95": 0.0684355072
+      }
+    },
+    {
+      "condition": "n10_rho0.8_kappa20_gamma0.9",
+      "delta_exact_brier": {
+        "mean": 0.007638773,
+        "median": 0.0096947532,
+        "p05": -0.0084067259,
+        "p95": 0.0173867102,
+        "proportion_routing_improves": 0.13
+      },
+      "delta_exact_log_loss": {
+        "mean": 0.0122394572,
+        "median": 0.0151904039,
+        "p05": -0.027068925,
+        "p95": 0.0400289077,
+        "proportion_routing_improves": 0.23
+      },
+      "delta_tv_to_truth": {
+        "mean": 0.028368288,
+        "median": 0.0333963854,
+        "p05": -0.0239369479,
+        "p95": 0.0673288158,
+        "proportion_routing_improves": 0.144
+      },
+      "entropy_l0": {
+        "mean": 0.9529172006,
+        "median": 0.9532103484,
+        "p05": 0.9117825709,
+        "p95": 0.9866288056
+      },
+      "entropy_routed": {
+        "mean": 0.9788069529,
+        "median": 0.979259453,
+        "p05": 0.9673529286,
+        "p95": 0.9880511553
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7901228,
+        "brier_routed": 0.7979784415,
+        "log_loss_l0": 1.5943637677,
+        "log_loss_routed": 1.6068560484,
+        "top_label_accuracy_l0": 0.30519,
+        "top_label_accuracy_routed": 0.30512,
+        "top_label_ece_l0": 0.007194,
+        "top_label_ece_routed": 0.0361037281
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 10,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "intermediate",
+      "top_category_retention_rate": 0.854,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0831042119,
+        "median": 0.0780630521,
+        "p05": 0.0382996105,
+        "p95": 0.1192541337
+      }
+    },
+    {
+      "condition": "n50_rho0.1_kappa2_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0021446116,
+        "median": -0.001790189,
+        "p05": -0.0054618924,
+        "p95": -0.0003036186,
+        "proportion_routing_improves": 0.996
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0076828422,
+        "median": -0.0054895708,
+        "p05": -0.0210551743,
+        "p95": -0.0008095407,
+        "proportion_routing_improves": 0.994
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0082938946,
+        "median": -0.0082665855,
+        "p05": -0.0144919772,
+        "p95": -0.002727376,
+        "proportion_routing_improves": 0.992
+      },
+      "entropy_l0": {
+        "mean": 0.9142245598,
+        "median": 0.9196827871,
+        "p05": 0.8444433936,
+        "p95": 0.9698095464
+      },
+      "entropy_routed": {
+        "mean": 0.9192662461,
+        "median": 0.9237703288,
+        "p05": 0.8572052508,
+        "p95": 0.9686966051
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.7722442346,
+        "brier_routed": 0.770108163,
+        "log_loss_l0": 1.5459925772,
+        "log_loss_routed": 1.5384056924,
+        "top_label_accuracy_l0": 0.32326,
+        "top_label_accuracy_routed": 0.32534,
+        "top_label_ece_l0": 0.0333870769,
+        "top_label_ece_routed": 0.0310936107
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.988,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0087147543,
+        "median": 0.0087060631,
+        "p05": 0.0035189865,
+        "p95": 0.0145383079
+      }
+    },
+    {
+      "condition": "n50_rho0.1_kappa2_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0084664303,
+        "median": -0.006885387,
+        "p05": -0.0193084805,
+        "p95": -0.0012623144,
+        "proportion_routing_improves": 0.996
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0263922658,
+        "median": -0.0207951103,
+        "p05": -0.0689023846,
+        "p95": -0.00385791,
+        "proportion_routing_improves": 0.994
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0389325074,
+        "median": -0.03818005,
+        "p05": -0.0665083662,
+        "p95": -0.0133754642,
+        "proportion_routing_improves": 0.992
+      },
+      "entropy_l0": {
+        "mean": 0.9159888754,
+        "median": 0.9212112659,
+        "p05": 0.8443299447,
+        "p95": 0.9691376157
+      },
+      "entropy_routed": {
+        "mean": 0.9359554423,
+        "median": 0.9383101278,
+        "p05": 0.8964395878,
+        "p95": 0.9684000109
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.772024903,
+        "brier_routed": 0.7638673192,
+        "log_loss_l0": 1.5462257031,
+        "log_loss_routed": 1.520200875,
+        "top_label_accuracy_l0": 0.32445,
+        "top_label_accuracy_routed": 0.33441,
+        "top_label_ece_l0": 0.0260943846,
+        "top_label_ece_routed": 0.0077844805
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.894,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0414613016,
+        "median": 0.041000105,
+        "p05": 0.0194377608,
+        "p95": 0.0665084331
+      }
+    },
+    {
+      "condition": "n50_rho0.1_kappa2_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0120777274,
+        "median": -0.0092576262,
+        "p05": -0.0308953739,
+        "p95": -0.0019829029,
+        "proportion_routing_improves": 0.996
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0361328403,
+        "median": -0.0274994509,
+        "p05": -0.0926778487,
+        "p95": -0.0056114915,
+        "proportion_routing_improves": 0.996
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0616293796,
+        "median": -0.05843918,
+        "p05": -0.1117465072,
+        "p95": -0.0212231243,
+        "proportion_routing_improves": 0.996
+      },
+      "entropy_l0": {
+        "mean": 0.9160353064,
+        "median": 0.9208158859,
+        "p05": 0.845709033,
+        "p95": 0.971457349
+      },
+      "entropy_routed": {
+        "mean": 0.9447610348,
+        "median": 0.9462408462,
+        "p05": 0.9238426468,
+        "p95": 0.9634171586
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7743935297,
+        "brier_routed": 0.7621492759,
+        "log_loss_l0": 1.5515173391,
+        "log_loss_routed": 1.5150473951,
+        "top_label_accuracy_l0": 0.31358,
+        "top_label_accuracy_routed": 0.33713,
+        "top_label_ece_l0": 0.0389144615,
+        "top_label_ece_routed": 0.0067147799
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.762,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.067238527,
+        "median": 0.0637728466,
+        "p05": 0.0304183179,
+        "p95": 0.1143749571
+      }
+    },
+    {
+      "condition": "n50_rho0.1_kappa6_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0018307786,
+        "median": -0.0014378802,
+        "p05": -0.0044662944,
+        "p95": -0.0003038938,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0060683761,
+        "median": -0.0045448131,
+        "p05": -0.0159010302,
+        "p95": -0.0007541851,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0076722442,
+        "median": -0.0072083771,
+        "p05": -0.0130396673,
+        "p95": -0.0028113812,
+        "proportion_routing_improves": 1.0
+      },
+      "entropy_l0": {
+        "mean": 0.9189513081,
+        "median": 0.9233701845,
+        "p05": 0.8514463664,
+        "p95": 0.9697060499
+      },
+      "entropy_routed": {
+        "mean": 0.9232629449,
+        "median": 0.9275813144,
+        "p05": 0.8628003528,
+        "p95": 0.9686613497
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.77047887,
+        "brier_routed": 0.7686601138,
+        "log_loss_l0": 1.5396571496,
+        "log_loss_routed": 1.5336229319,
+        "top_label_accuracy_l0": 0.32131,
+        "top_label_accuracy_routed": 0.32203,
+        "top_label_ece_l0": 0.027955,
+        "top_label_ece_routed": 0.0241726438
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.996,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0080840361,
+        "median": 0.0075939595,
+        "p05": 0.0039576085,
+        "p95": 0.0133620501
+      }
+    },
+    {
+      "condition": "n50_rho0.1_kappa6_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0070113143,
+        "median": -0.0057368674,
+        "p05": -0.0178964217,
+        "p95": -0.0008926221,
+        "proportion_routing_improves": 0.998
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0205721931,
+        "median": -0.0169642507,
+        "p05": -0.056363202,
+        "p95": -0.0023643509,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0346345111,
+        "median": -0.0338102055,
+        "p05": -0.0621799348,
+        "p95": -0.0110661329,
+        "proportion_routing_improves": 0.998
+      },
+      "entropy_l0": {
+        "mean": 0.9196108721,
+        "median": 0.9235032056,
+        "p05": 0.8610244886,
+        "p95": 0.9688839077
+      },
+      "entropy_routed": {
+        "mean": 0.9370307053,
+        "median": 0.9384334158,
+        "p05": 0.9036358193,
+        "p95": 0.96584451
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.7716844535,
+        "brier_routed": 0.7647017167,
+        "log_loss_l0": 1.5422281355,
+        "log_loss_routed": 1.521420276,
+        "top_label_accuracy_l0": 0.31719,
+        "top_label_accuracy_routed": 0.3308,
+        "top_label_ece_l0": 0.0319778571,
+        "top_label_ece_routed": 0.0138014881
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.858,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0374897008,
+        "median": 0.0367752052,
+        "p05": 0.0154779477,
+        "p95": 0.0631001171
+      }
+    },
+    {
+      "condition": "n50_rho0.1_kappa6_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0100879126,
+        "median": -0.0080664359,
+        "p05": -0.0246043632,
+        "p95": -0.0013520851,
+        "proportion_routing_improves": 0.998
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0285245906,
+        "median": -0.0221199585,
+        "p05": -0.0708070493,
+        "p95": -0.0041313974,
+        "proportion_routing_improves": 0.998
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0559647214,
+        "median": -0.0550648554,
+        "p05": -0.0985662573,
+        "p95": -0.01685179,
+        "proportion_routing_improves": 0.998
+      },
+      "entropy_l0": {
+        "mean": 0.9197994555,
+        "median": 0.9247054391,
+        "p05": 0.855951862,
+        "p95": 0.9698670322
+      },
+      "entropy_routed": {
+        "mean": 0.9451793428,
+        "median": 0.9453308113,
+        "p05": 0.9252517315,
+        "p95": 0.9630446733
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7715121389,
+        "brier_routed": 0.7613417716,
+        "log_loss_l0": 1.541742667,
+        "log_loss_routed": 1.5133524159,
+        "top_label_accuracy_l0": 0.31913,
+        "top_label_accuracy_routed": 0.34167,
+        "top_label_ece_l0": 0.031471,
+        "top_label_ece_routed": 0.0093335626
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.788,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0620776736,
+        "median": 0.0597111454,
+        "p05": 0.0291461363,
+        "p95": 0.1014631813
+      }
+    },
+    {
+      "condition": "n50_rho0.1_kappa20_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0012106618,
+        "median": -0.0009414563,
+        "p05": -0.0031471654,
+        "p95": -0.0001720368,
+        "proportion_routing_improves": 0.998
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0033812056,
+        "median": -0.0026628189,
+        "p05": -0.009251061,
+        "p95": -0.0004309897,
+        "proportion_routing_improves": 0.994
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0058288342,
+        "median": -0.0057256992,
+        "p05": -0.0110690247,
+        "p95": -0.0018003176,
+        "proportion_routing_improves": 0.988
+      },
+      "entropy_l0": {
+        "mean": 0.9296704945,
+        "median": 0.9317115782,
+        "p05": 0.8876056438,
+        "p95": 0.9689725146
+      },
+      "entropy_routed": {
+        "mean": 0.9324359926,
+        "median": 0.9340322494,
+        "p05": 0.8945047693,
+        "p95": 0.9686091979
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.7676590302,
+        "brier_routed": 0.7664806031,
+        "log_loss_l0": 1.5297714578,
+        "log_loss_routed": 1.5264516079,
+        "top_label_accuracy_l0": 0.32652,
+        "top_label_accuracy_routed": 0.33008,
+        "top_label_ece_l0": 0.0256891429,
+        "top_label_ece_routed": 0.0218541232
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.956,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0065544095,
+        "median": 0.0063760532,
+        "p05": 0.0026347519,
+        "p95": 0.0113180974
+      }
+    },
+    {
+      "condition": "n50_rho0.1_kappa20_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0045728256,
+        "median": -0.0035451114,
+        "p05": -0.0119492369,
+        "p95": -0.0006353501,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0123540752,
+        "median": -0.0099751738,
+        "p05": -0.0316413805,
+        "p95": -0.0014853543,
+        "proportion_routing_improves": 1.0
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0272332897,
+        "median": -0.0262001852,
+        "p05": -0.0495457693,
+        "p95": -0.0080738729,
+        "proportion_routing_improves": 0.998
+      },
+      "entropy_l0": {
+        "mean": 0.928270746,
+        "median": 0.9306775179,
+        "p05": 0.8818586953,
+        "p95": 0.966884043
+      },
+      "entropy_routed": {
+        "mean": 0.9405254016,
+        "median": 0.9411205792,
+        "p05": 0.914433854,
+        "p95": 0.9642359607
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.7669953502,
+        "brier_routed": 0.7624617,
+        "log_loss_l0": 1.5276890805,
+        "log_loss_routed": 1.5155550375,
+        "top_label_accuracy_l0": 0.32537,
+        "top_label_accuracy_routed": 0.33647,
+        "top_label_ece_l0": 0.0292917143,
+        "top_label_ece_routed": 0.006918992
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.866,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.030418308,
+        "median": 0.0294512634,
+        "p05": 0.0137753971,
+        "p95": 0.0525624589
+      }
+    },
+    {
+      "condition": "n50_rho0.1_kappa20_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0062600028,
+        "median": -0.0051947006,
+        "p05": -0.0151572388,
+        "p95": -0.0009318251,
+        "proportion_routing_improves": 0.994
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0165663214,
+        "median": -0.0137268135,
+        "p05": -0.0399944146,
+        "p95": -0.0021138354,
+        "proportion_routing_improves": 0.99
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0421379538,
+        "median": -0.0408278529,
+        "p05": -0.0756209884,
+        "p95": -0.0116801626,
+        "proportion_routing_improves": 0.992
+      },
+      "entropy_l0": {
+        "mean": 0.9288216807,
+        "median": 0.9327561126,
+        "p05": 0.8815795266,
+        "p95": 0.9685205509
+      },
+      "entropy_routed": {
+        "mean": 0.9467751376,
+        "median": 0.9474941253,
+        "p05": 0.9315763455,
+        "p95": 0.9612430237
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7671173837,
+        "brier_routed": 0.760887597,
+        "log_loss_l0": 1.5284375009,
+        "log_loss_routed": 1.5117979954,
+        "top_label_accuracy_l0": 0.32644,
+        "top_label_accuracy_routed": 0.33979,
+        "top_label_ece_l0": 0.025668,
+        "top_label_ece_routed": 0.0087995575
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "high_agreement",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.1,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.832,
+      "tv_l3_to_truth": 0.025,
+      "tv_l5_to_truth": 0.038,
+      "tv_routed_vs_l0": {
+        "mean": 0.0499145703,
+        "median": 0.0494925641,
+        "p05": 0.0230125831,
+        "p95": 0.0798220915
+      }
+    },
+    {
+      "condition": "n50_rho0.4_kappa2_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0019940905,
+        "median": -0.0015001996,
+        "p05": -0.0054556517,
+        "p95": 9.34791e-05,
+        "proportion_routing_improves": 0.932
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0068365667,
+        "median": -0.0042365754,
+        "p05": -0.0246940709,
+        "p95": 0.0005923592,
+        "proportion_routing_improves": 0.904
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0073889543,
+        "median": -0.0072382775,
+        "p05": -0.0170276123,
+        "p95": 0.0011523822,
+        "proportion_routing_improves": 0.898
+      },
+      "entropy_l0": {
+        "mean": 0.9182952489,
+        "median": 0.9243470972,
+        "p05": 0.8508888511,
+        "p95": 0.9724163128
+      },
+      "entropy_routed": {
+        "mean": 0.9264907018,
+        "median": 0.9318260753,
+        "p05": 0.8681026627,
+        "p95": 0.9739813537
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.7732520828,
+        "brier_routed": 0.7712542118,
+        "log_loss_l0": 1.5468919726,
+        "log_loss_routed": 1.5399664089,
+        "top_label_accuracy_l0": 0.32154,
+        "top_label_accuracy_routed": 0.32183,
+        "top_label_ece_l0": 0.033998,
+        "top_label_ece_routed": 0.0292876363
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.998,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0114123565,
+        "median": 0.0113547564,
+        "p05": 0.0054708121,
+        "p95": 0.01742349
+      }
+    },
+    {
+      "condition": "n50_rho0.4_kappa2_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0061338745,
+        "median": -0.0046851826,
+        "p05": -0.0181350171,
+        "p95": 0.0009359716,
+        "proportion_routing_improves": 0.858
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0188187093,
+        "median": -0.0130576415,
+        "p05": -0.0640005059,
+        "p95": 0.0043132832,
+        "proportion_routing_improves": 0.816
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0249442265,
+        "median": -0.023971868,
+        "p05": -0.0638624495,
+        "p95": 0.0105164292,
+        "proportion_routing_improves": 0.858
+      },
+      "entropy_l0": {
+        "mean": 0.9178350599,
+        "median": 0.9220560412,
+        "p05": 0.8480239563,
+        "p95": 0.9716390702
+      },
+      "entropy_routed": {
+        "mean": 0.9517154389,
+        "median": 0.952992312,
+        "p05": 0.9202406034,
+        "p95": 0.9776867098
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.7731629684,
+        "brier_routed": 0.766967487,
+        "log_loss_l0": 1.5485967836,
+        "log_loss_routed": 1.5291997349,
+        "top_label_accuracy_l0": 0.32224,
+        "top_label_accuracy_routed": 0.3315,
+        "top_label_ece_l0": 0.032708,
+        "top_label_ece_routed": 0.014159551
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.898,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.054029093,
+        "median": 0.0546776643,
+        "p05": 0.0275260424,
+        "p95": 0.0819903964
+      }
+    },
+    {
+      "condition": "n50_rho0.4_kappa2_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0064295005,
+        "median": -0.0043623397,
+        "p05": -0.023228979,
+        "p95": 0.0033092184,
+        "proportion_routing_improves": 0.758
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.018682861,
+        "median": -0.0094535396,
+        "p05": -0.0747234781,
+        "p95": 0.011920151,
+        "proportion_routing_improves": 0.698
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0236882288,
+        "median": -0.0224647369,
+        "p05": -0.0833779107,
+        "p95": 0.0294634853,
+        "proportion_routing_improves": 0.714
+      },
+      "entropy_l0": {
+        "mean": 0.9176440452,
+        "median": 0.9221558697,
+        "p05": 0.8389543223,
+        "p95": 0.9717895698
+      },
+      "entropy_routed": {
+        "mean": 0.9671887488,
+        "median": 0.9680578408,
+        "p05": 0.9490782757,
+        "p95": 0.9820613332
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7730324586,
+        "brier_routed": 0.7666409979,
+        "log_loss_l0": 1.5474049412,
+        "log_loss_routed": 1.5294958683,
+        "top_label_accuracy_l0": 0.31784,
+        "top_label_accuracy_routed": 0.33891,
+        "top_label_ece_l0": 0.0337066154,
+        "top_label_ece_routed": 0.0290935172
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.776,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0899447544,
+        "median": 0.088835921,
+        "p05": 0.0447652596,
+        "p95": 0.1398872208
+      }
+    },
+    {
+      "condition": "n50_rho0.4_kappa6_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.001668592,
+        "median": -0.0013658439,
+        "p05": -0.0043294962,
+        "p95": 2.53704e-05,
+        "proportion_routing_improves": 0.944
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.005384689,
+        "median": -0.0037890292,
+        "p05": -0.0165427831,
+        "p95": 0.0003302127,
+        "proportion_routing_improves": 0.922
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0064959582,
+        "median": -0.0059617217,
+        "p05": -0.0158423645,
+        "p95": 0.001458548,
+        "proportion_routing_improves": 0.906
+      },
+      "entropy_l0": {
+        "mean": 0.9229803537,
+        "median": 0.9268230956,
+        "p05": 0.863521673,
+        "p95": 0.9695432554
+      },
+      "entropy_routed": {
+        "mean": 0.9303008173,
+        "median": 0.9334457929,
+        "p05": 0.8785184579,
+        "p95": 0.9713220553
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.7714566739,
+        "brier_routed": 0.7697736753,
+        "log_loss_l0": 1.5420501962,
+        "log_loss_routed": 1.5366568603,
+        "top_label_accuracy_l0": 0.3214,
+        "top_label_accuracy_routed": 0.32211,
+        "top_label_ece_l0": 0.0289272857,
+        "top_label_ece_routed": 0.0226013553
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.996,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0108563004,
+        "median": 0.0107840319,
+        "p05": 0.0058046031,
+        "p95": 0.0159946055
+      }
+    },
+    {
+      "condition": "n50_rho0.4_kappa6_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0054772314,
+        "median": -0.003778014,
+        "p05": -0.0169189171,
+        "p95": 0.0015697428,
+        "proportion_routing_improves": 0.846
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0155793835,
+        "median": -0.0101901324,
+        "p05": -0.0543212032,
+        "p95": 0.0059911441,
+        "proportion_routing_improves": 0.778
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.02288854,
+        "median": -0.022482028,
+        "p05": -0.0610108366,
+        "p95": 0.0104149672,
+        "proportion_routing_improves": 0.846
+      },
+      "entropy_l0": {
+        "mean": 0.922084367,
+        "median": 0.9281871211,
+        "p05": 0.8545672078,
+        "p95": 0.9732201167
+      },
+      "entropy_routed": {
+        "mean": 0.953263813,
+        "median": 0.9559741917,
+        "p05": 0.9206500946,
+        "p95": 0.9789237882
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.7727517331,
+        "brier_routed": 0.7672328888,
+        "log_loss_l0": 1.545516619,
+        "log_loss_routed": 1.529803365,
+        "top_label_accuracy_l0": 0.3191,
+        "top_label_accuracy_routed": 0.33149,
+        "top_label_ece_l0": 0.0321042857,
+        "top_label_ece_routed": 0.0158222015
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.874,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0516981499,
+        "median": 0.0514181446,
+        "p05": 0.0241539137,
+        "p95": 0.079726063
+      }
+    },
+    {
+      "condition": "n50_rho0.4_kappa6_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.004944827,
+        "median": -0.003108566,
+        "p05": -0.0214647339,
+        "p95": 0.0037517748,
+        "proportion_routing_improves": 0.714
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0119114171,
+        "median": -0.0064372257,
+        "p05": -0.0528842079,
+        "p95": 0.0131528491,
+        "proportion_routing_improves": 0.654
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0181020103,
+        "median": -0.0160864147,
+        "p05": -0.0789018761,
+        "p95": 0.0299726436,
+        "proportion_routing_improves": 0.698
+      },
+      "entropy_l0": {
+        "mean": 0.9238392897,
+        "median": 0.9280149622,
+        "p05": 0.8652120336,
+        "p95": 0.9731014229
+      },
+      "entropy_routed": {
+        "mean": 0.9683209214,
+        "median": 0.9687997461,
+        "p05": 0.9519699371,
+        "p95": 0.9822143236
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7705795418,
+        "brier_routed": 0.7659335841,
+        "log_loss_l0": 1.5391069166,
+        "log_loss_routed": 1.5277947177,
+        "top_label_accuracy_l0": 0.31916,
+        "top_label_accuracy_routed": 0.33949,
+        "top_label_ece_l0": 0.027316,
+        "top_label_ece_routed": 0.0310916372
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.756,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0858863087,
+        "median": 0.0867058662,
+        "p05": 0.0439450336,
+        "p95": 0.1308391679
+      }
+    },
+    {
+      "condition": "n50_rho0.4_kappa20_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0008214247,
+        "median": -0.0005402734,
+        "p05": -0.0027411216,
+        "p95": 0.000326219,
+        "proportion_routing_improves": 0.822
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.001790972,
+        "median": -0.001022693,
+        "p05": -0.006956844,
+        "p95": 0.0012056087,
+        "proportion_routing_improves": 0.736
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0034016285,
+        "median": -0.0029899055,
+        "p05": -0.0104726022,
+        "p95": 0.0022964387,
+        "proportion_routing_improves": 0.814
+      },
+      "entropy_l0": {
+        "mean": 0.9376615901,
+        "median": 0.9405200059,
+        "p05": 0.8895740505,
+        "p95": 0.9746027647
+      },
+      "entropy_routed": {
+        "mean": 0.9423917357,
+        "median": 0.9451842642,
+        "p05": 0.8988815096,
+        "p95": 0.9755416352
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.7677753078,
+        "brier_routed": 0.7669601202,
+        "log_loss_l0": 1.5308926916,
+        "log_loss_routed": 1.5291231714,
+        "top_label_accuracy_l0": 0.32869,
+        "top_label_accuracy_routed": 0.33131,
+        "top_label_ece_l0": 0.0218117143,
+        "top_label_ece_routed": 0.017389203
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.972,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0088200748,
+        "median": 0.0085596921,
+        "p05": 0.0046811274,
+        "p95": 0.0136514038
+      }
+    },
+    {
+      "condition": "n50_rho0.4_kappa20_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0021023347,
+        "median": -0.0012774668,
+        "p05": -0.0087917739,
+        "p95": 0.0019504977,
+        "proportion_routing_improves": 0.688
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0044691209,
+        "median": -0.0019388613,
+        "p05": -0.0235741254,
+        "p95": 0.0069736309,
+        "proportion_routing_improves": 0.614
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0103292498,
+        "median": -0.0092906671,
+        "p05": -0.038548335,
+        "p95": 0.0179731212,
+        "proportion_routing_improves": 0.712
+      },
+      "entropy_l0": {
+        "mean": 0.9379496819,
+        "median": 0.9399556485,
+        "p05": 0.8910019993,
+        "p95": 0.9736041669
+      },
+      "entropy_routed": {
+        "mean": 0.9592852971,
+        "median": 0.9601428848,
+        "p05": 0.9355187282,
+        "p95": 0.9778328844
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.7678973224,
+        "brier_routed": 0.7657227474,
+        "log_loss_l0": 1.5322917509,
+        "log_loss_routed": 1.5274664936,
+        "top_label_accuracy_l0": 0.32957,
+        "top_label_accuracy_routed": 0.33814,
+        "top_label_ece_l0": 0.0126934286,
+        "top_label_ece_routed": 0.019889628
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.906,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.042322217,
+        "median": 0.0408742433,
+        "p05": 0.0210730673,
+        "p95": 0.0648137192
+      }
+    },
+    {
+      "condition": "n50_rho0.4_kappa20_gamma0.9",
+      "delta_exact_brier": {
+        "mean": -0.0015532458,
+        "median": -0.0003893436,
+        "p05": -0.0117358995,
+        "p95": 0.0048416154,
+        "proportion_routing_improves": 0.536
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0017821973,
+        "median": 0.0021985656,
+        "p05": -0.0314597305,
+        "p95": 0.0151833332,
+        "proportion_routing_improves": 0.442
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0036446741,
+        "median": -0.0029705946,
+        "p05": -0.0564946312,
+        "p95": 0.0427741736,
+        "proportion_routing_improves": 0.524
+      },
+      "entropy_l0": {
+        "mean": 0.9365316935,
+        "median": 0.9394726642,
+        "p05": 0.887740478,
+        "p95": 0.9733287947
+      },
+      "entropy_routed": {
+        "mean": 0.9699664022,
+        "median": 0.9706758012,
+        "p05": 0.9575834818,
+        "p95": 0.9813286414
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7683236229,
+        "brier_routed": 0.7667472848,
+        "log_loss_l0": 1.5325775515,
+        "log_loss_routed": 1.5305937841,
+        "top_label_accuracy_l0": 0.32615,
+        "top_label_accuracy_routed": 0.34024,
+        "top_label_ece_l0": 0.0203322857,
+        "top_label_ece_routed": 0.0319882175
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "moderate_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.4,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.838,
+      "tv_l3_to_truth": 0.1,
+      "tv_l5_to_truth": 0.152,
+      "tv_routed_vs_l0": {
+        "mean": 0.0720931004,
+        "median": 0.0706132827,
+        "p05": 0.0377607591,
+        "p95": 0.107448518
+      }
+    },
+    {
+      "condition": "n50_rho0.8_kappa2_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0015293979,
+        "median": -0.0012351677,
+        "p05": -0.0053212703,
+        "p95": 0.0013153248,
+        "proportion_routing_improves": 0.742
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0052395987,
+        "median": -0.0032809438,
+        "p05": -0.0212823614,
+        "p95": 0.0040481679,
+        "proportion_routing_improves": 0.674
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0047279477,
+        "median": -0.0026735299,
+        "p05": -0.021531852,
+        "p95": 0.0085279529,
+        "proportion_routing_improves": 0.606
+      },
+      "entropy_l0": {
+        "mean": 0.9193217044,
+        "median": 0.9225616448,
+        "p05": 0.8533826345,
+        "p95": 0.9732206749
+      },
+      "entropy_routed": {
+        "mean": 0.9314596769,
+        "median": 0.934467999,
+        "p05": 0.8754252219,
+        "p95": 0.97624786
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.773379324,
+        "brier_routed": 0.7718480739,
+        "log_loss_l0": 1.5468521923,
+        "log_loss_routed": 1.5416402961,
+        "top_label_accuracy_l0": 0.31609,
+        "top_label_accuracy_routed": 0.31609,
+        "top_label_ece_l0": 0.0393512308,
+        "top_label_ece_routed": 0.0316444164
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 1.0,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0173284413,
+        "median": 0.0172305373,
+        "p05": 0.0116587961,
+        "p95": 0.0226214782
+      }
+    },
+    {
+      "condition": "n50_rho0.8_kappa2_gamma0.7",
+      "delta_exact_brier": {
+        "mean": -0.0009742318,
+        "median": 0.0010183801,
+        "p05": -0.0178296138,
+        "p95": 0.0090494861,
+        "proportion_routing_improves": 0.442
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0021393171,
+        "median": 0.0055433259,
+        "p05": -0.0545210789,
+        "p95": 0.0247814696,
+        "proportion_routing_improves": 0.382
+      },
+      "delta_tv_to_truth": {
+        "mean": 0.0012613437,
+        "median": 0.0033128849,
+        "p05": -0.0594029827,
+        "p95": 0.0494077365,
+        "proportion_routing_improves": 0.462
+      },
+      "entropy_l0": {
+        "mean": 0.9173345794,
+        "median": 0.9236202494,
+        "p05": 0.8395395005,
+        "p95": 0.9708165232
+      },
+      "entropy_routed": {
+        "mean": 0.9646591418,
+        "median": 0.9668887141,
+        "p05": 0.9314799263,
+        "p95": 0.9876217654
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.7751947065,
+        "brier_routed": 0.7739853833,
+        "log_loss_l0": 1.5529085819,
+        "log_loss_routed": 1.5498156963,
+        "top_label_accuracy_l0": 0.32089,
+        "top_label_accuracy_routed": 0.32814,
+        "top_label_ece_l0": 0.0432918462,
+        "top_label_ece_routed": 0.0211215279
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.912,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0856858842,
+        "median": 0.0865942313,
+        "p05": 0.0545052162,
+        "p95": 0.1167439313
+      }
+    },
+    {
+      "condition": "n50_rho0.8_kappa2_gamma0.9",
+      "delta_exact_brier": {
+        "mean": 0.0078964406,
+        "median": 0.0103721302,
+        "p05": -0.0112968349,
+        "p95": 0.0198481575,
+        "proportion_routing_improves": 0.182
+      },
+      "delta_exact_log_loss": {
+        "mean": 0.0204887065,
+        "median": 0.0294088669,
+        "p05": -0.0405665816,
+        "p95": 0.0537158641,
+        "proportion_routing_improves": 0.17
+      },
+      "delta_tv_to_truth": {
+        "mean": 0.0399729709,
+        "median": 0.0441577398,
+        "p05": -0.035618191,
+        "p95": 0.0977423552,
+        "proportion_routing_improves": 0.17
+      },
+      "entropy_l0": {
+        "mean": 0.9162176807,
+        "median": 0.9187813168,
+        "p05": 0.8427073397,
+        "p95": 0.9726554788
+      },
+      "entropy_routed": {
+        "mean": 0.9803967573,
+        "median": 0.9809096284,
+        "p05": 0.9667470424,
+        "p95": 0.992173296
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.774278792,
+        "brier_routed": 0.7823482837,
+        "log_loss_l0": 1.550520339,
+        "log_loss_routed": 1.5715799587,
+        "top_label_accuracy_l0": 0.31409,
+        "top_label_accuracy_routed": 0.33258,
+        "top_label_ece_l0": 0.0460352308,
+        "top_label_ece_routed": 0.0510343493
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 2.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.794,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.1465979106,
+        "median": 0.1510346374,
+        "p05": 0.0944975427,
+        "p95": 0.1985628084
+      }
+    },
+    {
+      "condition": "n50_rho0.8_kappa6_gamma0.4",
+      "delta_exact_brier": {
+        "mean": -0.0009489813,
+        "median": -0.0005631885,
+        "p05": -0.0043204598,
+        "p95": 0.0013083792,
+        "proportion_routing_improves": 0.658
+      },
+      "delta_exact_log_loss": {
+        "mean": -0.0025274558,
+        "median": -0.0007868674,
+        "p05": -0.0134246617,
+        "p95": 0.0041145913,
+        "proportion_routing_improves": 0.586
+      },
+      "delta_tv_to_truth": {
+        "mean": -0.0031390377,
+        "median": -0.0017482032,
+        "p05": -0.0186022773,
+        "p95": 0.0068371154,
+        "proportion_routing_improves": 0.6
+      },
+      "entropy_l0": {
+        "mean": 0.9280074594,
+        "median": 0.9309728288,
+        "p05": 0.8702004173,
+        "p95": 0.9741989414
+      },
+      "entropy_routed": {
+        "mean": 0.9380977508,
+        "median": 0.9411099002,
+        "p05": 0.8879836675,
+        "p95": 0.9780645699
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.773314768,
+        "brier_routed": 0.77232512,
+        "log_loss_l0": 1.546288385,
+        "log_loss_routed": 1.5436119593,
+        "top_label_accuracy_l0": 0.31955,
+        "top_label_accuracy_routed": 0.32125,
+        "top_label_ece_l0": 0.0343084286,
+        "top_label_ece_routed": 0.0255711918
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.988,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0162219249,
+        "median": 0.0163357291,
+        "p05": 0.0109431748,
+        "p95": 0.021118415
+      }
+    },
+    {
+      "condition": "n50_rho0.8_kappa6_gamma0.7",
+      "delta_exact_brier": {
+        "mean": 0.0018696038,
+        "median": 0.0032482982,
+        "p05": -0.0098803697,
+        "p95": 0.0094936872,
+        "proportion_routing_improves": 0.306
+      },
+      "delta_exact_log_loss": {
+        "mean": 0.0060031041,
+        "median": 0.010114104,
+        "p05": -0.0297315603,
+        "p95": 0.0263911958,
+        "proportion_routing_improves": 0.268
+      },
+      "delta_tv_to_truth": {
+        "mean": 0.0095291,
+        "median": 0.0109433062,
+        "p05": -0.0424371701,
+        "p95": 0.0497900381,
+        "proportion_routing_improves": 0.346
+      },
+      "entropy_l0": {
+        "mean": 0.9293611184,
+        "median": 0.9348231683,
+        "p05": 0.8722020158,
+        "p95": 0.9740608924
+      },
+      "entropy_routed": {
+        "mean": 0.9680767088,
+        "median": 0.969843792,
+        "p05": 0.9417010061,
+        "p95": 0.9878992772
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.7721285761,
+        "brier_routed": 0.7740856199,
+        "log_loss_l0": 1.5446599984,
+        "log_loss_routed": 1.5507494107,
+        "top_label_accuracy_l0": 0.32351,
+        "top_label_accuracy_routed": 0.33127,
+        "top_label_ece_l0": 0.030856,
+        "top_label_ece_routed": 0.02674628
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.904,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0798644855,
+        "median": 0.0780766759,
+        "p05": 0.0507387685,
+        "p95": 0.109670766
+      }
+    },
+    {
+      "condition": "n50_rho0.8_kappa6_gamma0.9",
+      "delta_exact_brier": {
+        "mean": 0.0105810625,
+        "median": 0.0121890582,
+        "p05": -0.0046600559,
+        "p95": 0.0207259503,
+        "proportion_routing_improves": 0.104
+      },
+      "delta_exact_log_loss": {
+        "mean": 0.0283617868,
+        "median": 0.0352732222,
+        "p05": -0.0187175923,
+        "p95": 0.0557086251,
+        "proportion_routing_improves": 0.12
+      },
+      "delta_tv_to_truth": {
+        "mean": 0.0486372224,
+        "median": 0.0537781467,
+        "p05": -0.0178359713,
+        "p95": 0.1022217027,
+        "proportion_routing_improves": 0.13
+      },
+      "entropy_l0": {
+        "mean": 0.9274111036,
+        "median": 0.9319957995,
+        "p05": 0.8658717974,
+        "p95": 0.9771204265
+      },
+      "entropy_routed": {
+        "mean": 0.9812059207,
+        "median": 0.9818362104,
+        "p05": 0.9679964197,
+        "p95": 0.9920969973
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7739005216,
+        "brier_routed": 0.7841482646,
+        "log_loss_l0": 1.5475046214,
+        "log_loss_routed": 1.5757149718,
+        "top_label_accuracy_l0": 0.31595,
+        "top_label_accuracy_routed": 0.33155,
+        "top_label_ece_l0": 0.0417984286,
+        "top_label_ece_routed": 0.0515461095
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 6.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.814,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.1376582916,
+        "median": 0.1333687969,
+        "p05": 0.0878900673,
+        "p95": 0.1871899961
+      }
+    },
+    {
+      "condition": "n50_rho0.8_kappa20_gamma0.4",
+      "delta_exact_brier": {
+        "mean": 0.0005796528,
+        "median": 0.0008665673,
+        "p05": -0.0013554773,
+        "p95": 0.001709559,
+        "proportion_routing_improves": 0.236
+      },
+      "delta_exact_log_loss": {
+        "mean": 0.0020671702,
+        "median": 0.0027120846,
+        "p05": -0.0030605888,
+        "p95": 0.0048909746,
+        "proportion_routing_improves": 0.17
+      },
+      "delta_tv_to_truth": {
+        "mean": 0.0022442207,
+        "median": 0.0022938975,
+        "p05": -0.0046882339,
+        "p95": 0.0090840669,
+        "proportion_routing_improves": 0.29
+      },
+      "entropy_l0": {
+        "mean": 0.9472342385,
+        "median": 0.9494079202,
+        "p05": 0.906249071,
+        "p95": 0.9804112219
+      },
+      "entropy_routed": {
+        "mean": 0.9526986815,
+        "median": 0.9553559228,
+        "p05": 0.9165188795,
+        "p95": 0.9815494084
+      },
+      "gamma": 0.4,
+      "heldout": {
+        "brier_l0": 0.7704193094,
+        "brier_routed": 0.7710348779,
+        "log_loss_l0": 1.5408071144,
+        "log_loss_routed": 1.5430133188,
+        "top_label_accuracy_l0": 0.3291,
+        "top_label_accuracy_routed": 0.33182,
+        "top_label_ece_l0": 0.0204805714,
+        "top_label_ece_routed": 0.0185990328
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.972,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0129739486,
+        "median": 0.0126013621,
+        "p05": 0.0081083205,
+        "p95": 0.0172227516
+      }
+    },
+    {
+      "condition": "n50_rho0.8_kappa20_gamma0.7",
+      "delta_exact_brier": {
+        "mean": 0.0064414366,
+        "median": 0.0074531024,
+        "p05": -0.0012745936,
+        "p95": 0.0105942845,
+        "proportion_routing_improves": 0.074
+      },
+      "delta_exact_log_loss": {
+        "mean": 0.0174088695,
+        "median": 0.0205328328,
+        "p05": -0.0022303872,
+        "p95": 0.0284370851,
+        "proportion_routing_improves": 0.056
+      },
+      "delta_tv_to_truth": {
+        "mean": 0.0229005214,
+        "median": 0.0250617925,
+        "p05": -0.0155023385,
+        "p95": 0.0563470364,
+        "proportion_routing_improves": 0.168
+      },
+      "entropy_l0": {
+        "mean": 0.950553672,
+        "median": 0.9530065597,
+        "p05": 0.9080778179,
+        "p95": 0.9834805208
+      },
+      "entropy_routed": {
+        "mean": 0.973323484,
+        "median": 0.9746014004,
+        "p05": 0.9519839776,
+        "p95": 0.9888566073
+      },
+      "gamma": 0.7,
+      "heldout": {
+        "brier_l0": 0.7710665029,
+        "brier_routed": 0.7775628315,
+        "log_loss_l0": 1.5418973746,
+        "log_loss_routed": 1.5593467297,
+        "top_label_accuracy_l0": 0.32435,
+        "top_label_accuracy_routed": 0.33502,
+        "top_label_ece_l0": 0.0213328571,
+        "top_label_ece_routed": 0.0404783069
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.872,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.0657041129,
+        "median": 0.065345742,
+        "p05": 0.0419975016,
+        "p95": 0.0858867865
+      }
+    },
+    {
+      "condition": "n50_rho0.8_kappa20_gamma0.9",
+      "delta_exact_brier": {
+        "mean": 0.0151721386,
+        "median": 0.0162808798,
+        "p05": 0.0038662478,
+        "p95": 0.0216559952,
+        "proportion_routing_improves": 0.022
+      },
+      "delta_exact_log_loss": {
+        "mean": 0.0378273851,
+        "median": 0.041606391,
+        "p05": 0.0067901116,
+        "p95": 0.0566655495,
+        "proportion_routing_improves": 0.028
+      },
+      "delta_tv_to_truth": {
+        "mean": 0.0597624154,
+        "median": 0.0643140426,
+        "p05": 0.0010588108,
+        "p95": 0.1045738467,
+        "proportion_routing_improves": 0.05
+      },
+      "entropy_l0": {
+        "mean": 0.9481081746,
+        "median": 0.9509480962,
+        "p05": 0.9030539633,
+        "p95": 0.982847345
+      },
+      "entropy_routed": {
+        "mean": 0.981960254,
+        "median": 0.9825903828,
+        "p05": 0.9711359945,
+        "p95": 0.990930753
+      },
+      "gamma": 0.9,
+      "heldout": {
+        "brier_l0": 0.7716965045,
+        "brier_routed": 0.7872904778,
+        "log_loss_l0": 1.544333604,
+        "log_loss_routed": 1.5829672392,
+        "top_label_accuracy_l0": 0.32675,
+        "top_label_accuracy_routed": 0.33695,
+        "top_label_ece_l0": 0.0219374286,
+        "top_label_ece_routed": 0.0617464837
+      },
+      "heldout_observations": 100000,
+      "kappa_c": 20.0,
+      "mismatch_regime": "strong_mismatch",
+      "n_c": 50,
+      "paired_replicates": 500,
+      "rho": 0.8,
+      "routing_weights": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      },
+      "sample_regime": "dense",
+      "top_category_retention_rate": 0.86,
+      "tv_l3_to_truth": 0.2,
+      "tv_l5_to_truth": 0.304,
+      "tv_routed_vs_l0": {
+        "mean": 0.1157578156,
+        "median": 0.1134873822,
+        "p05": 0.0777501223,
+        "p95": 0.1490098431
+      }
+    }
+  ],
+  "ece": {
+    "binning": "equal_width",
+    "bins": 10,
+    "role": "secondary_diagnostic_not_proper_scoring_rule"
+  },
+  "execution_scope": "PASS concerns protocol execution and reproducibility only; routing is not required to outperform L0-only.",
+  "experiment_id": "exp6",
+  "failures": [],
+  "frozen_base": {
+    "commit": "a0d89f33aaa7303404a9b26cc7bec5a331a6e82f",
+    "tag": "v0.10.0-paper-v1.4"
+  },
+  "passed": true,
+  "protocol_version": "0.1.0-pre-specified",
+  "report_decimal_places": 10,
+  "seed_contract": {
+    "algorithm": "sha256",
+    "canonical_fields": [
+      "protocol_version",
+      "rotation",
+      "n_c",
+      "rho",
+      "kappa_c",
+      "gamma",
+      "replicate"
+    ],
+    "canonical_float_format": ".12g",
+    "digest_slice": "first_8_bytes",
+    "integer_encoding": "unsigned_big_endian"
+  }
+}
