@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Minimized Context Package",
+  "type": "object",
+  "required": [
+    "role_level",
+    "stage",
+    "competency",
+    "evidence_gap_signal",
+    "time_remaining"
+  ],
+  "properties": {
+    "role_level": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "competency": {
+      "type": "string"
+    },
+    "evidence_gap_signal": {
+      "type": "string"
+    },
+    "prior_followup": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "time_remaining": {
+      "type": "string"
+    },
+    "requested_lens_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

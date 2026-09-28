@@ -1,0 +1,58 @@
+name: Paper Artifact CI
+
+on:
+  push:
+    branches:
+      - paper-release-readiness-v1.1
+  pull_request:
+    paths:
+      - "research_core/**"
+      - "schemas/**"
+      - "config/**"
+      - "tests/**"
+      - "examples/paper/**"
+      - "tools/run_paper_artifact_demo.py"
+      - "tools/run_exp1a_core_verification.py"
+      - "tools/run_exp1b_lens_differentiation.py"
+      - "tools/run_exp2_sensitivity_ablation.py"
+      - "tools/run_exp3_semantic_regression.py"
+      - "tools/validate_paper_artifact.py"
+      - "docs/PAPER_TO_CODE_MAP.md"
+      - "docs/MATH_TO_CODE_COMPLETENESS_AUDIT.md"
+      - "docs/experiments/**"
+      - "README.md"
+      - "VERSION"
+      - "CITATION.cff"
+      - "RESEARCH_BOUNDARY.md"
+      - "REPRODUCIBILITY.md"
+      - "PAPER_RELEASE_READINESS.md"
+      - "paper_artifact_manifest.yaml"
+      - "api/openapi.yaml"
+      - "architecture/**"
+      - "governance/**"
+      - ".github/workflows/paper-artifact-ci.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate paper artifact
+        run: python tools/validate_paper_artifact.py
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Run deterministic demo
+        run: python tools/run_paper_artifact_demo.py
+      - name: Run Experiment 1A core verification
+        run: python tools/run_exp1a_core_verification.py
+      - name: Run Experiment 1B structural verification
+        run: python tools/run_exp1b_lens_differentiation.py
+      - name: Run Experiment 2 sensitivity and ablations
+        run: python tools/run_exp2_sensitivity_ablation.py
+      - name: Run Experiment 3 semantic regression
+        run: python tools/run_exp3_semantic_regression.py
+      - name: Verify committed experiment outputs
+        run: git diff --exit-code -- examples/paper/experiments

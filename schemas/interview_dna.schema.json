@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AIMS Lens Structured Interview DNA",
+  "type": "object",
+  "required": [
+    "lens_id",
+    "lens_type",
+    "maturity",
+    "role",
+    "interview_stage",
+    "competency_dimensions",
+    "followup_taxonomy",
+    "evidence_register",
+    "constraints",
+    "uncertainty_settings"
+  ],
+  "properties": {
+    "lens_id": {
+      "type": "string"
+    },
+    "lens_type": {
+      "enum": [
+        "company",
+        "industry",
+        "derived",
+        "archetype",
+        "general"
+      ]
+    },
+    "maturity": {
+      "enum": [
+        "exploratory",
+        "reviewed_practice",
+        "evaluation_ready",
+        "empirically_supported"
+      ]
+    },
+    "role": {
+      "type": "object"
+    },
+    "sector": {
+      "type": "object"
+    },
+    "interview_stage": {
+      "type": "object"
+    },
+    "competency_dimensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "followup_taxonomy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_register": {
+      "type": "array",
+      "items": {
+        "$ref": "evidence_packet.schema.json"
+      }
+    },
+    "constraints": {
+      "type": "object"
+    },
+    "uncertainty_settings": {
+      "type": "object",
+      "properties": {
+        "support_ceiling": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "abstention_threshold": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "backoff_discount": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

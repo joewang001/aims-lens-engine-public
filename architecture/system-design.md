@@ -1,131 +1,101 @@
-# System Design
+# System Design — Paper Research Core
 
-## High-Level Flow
+## Architectural boundary
+
+AIMS Lens Engine is an independently deployable, institution-agnostic reasoning service. JobACE is the first deep reference integration, not an architectural prerequisite.
 
 ```text
-User or partner request
-        |
-        v
-Target context parser
-        |
-        v
-Lens router
-        |
-        +--> FULLY_DISTILLED
-        +--> DERIVED_LENS
-        +--> LIGHTWEIGHT_SCAN
-        +--> GENERIC_AIMS
-        |
-        v
-AIMS base evaluator
-        |
-        v
-Lens overlay
-        |
-        v
-Response generator
-        |
-        v
-Score, feedback, rewrite, follow-up, screening recommendation, evidence, confidence
+CLIENT / APPLICATION LAYER
+
+JobACE     University     Career Service     Training Provider     Enterprise L&D
+   \           |               |                    |                    /
+    \__________|_______________|____________________|___________________/
+                                |
+                         Versioned Lens API
+                                |
+                                v
++-----------------------------------------------------------------------+
+|                         AIMS LENS ENGINE CORE                         |
+|                                                                       |
+| Lens Registry      Evidence Lineage      Routing / Backoff            |
+| Structured DNA     Compatibility Rules   Constrained DAG              |
+| Hierarchical Inference / Borrowing       Uncertainty / Abstention     |
+| Explanation / Provenance                 Audit Reconstruction         |
++-----------------------------------------------------------------------+
+                                |
+                 +--------------+---------------+
+                 |                              |
+                 v                              v
+         Public research assets          Protected production assets
+         schemas / validators            tenant configuration
+         safe Lens examples              candidate records
+         synthetic examples              private evidence
+         reference implementation        credentials / deployment policy
 ```
 
-## Core Services
+## Research-core responsibilities
 
-### Lens Router
+The paper research core owns:
 
-Inputs:
+- versioned Lens representation;
+- evidence authorization and lineage;
+- structured interview DNA;
+- compatibility rules;
+- constrained dependency assumptions;
+- hierarchical borrowing and partial pooling;
+- declared L0-L5 backoff;
+- uncertainty and data-support summaries;
+- abstention and broad-routing rules;
+- explanation provenance;
+- reproducible candidate-side practice decisions.
 
-- target company
-- target role
-- job description
-- country or region
-- industry
-- requested use case
-- tenant id
+## Client responsibilities
 
-Output:
+Client systems such as JobACE own interaction and workflow concerns, for example:
 
-- selected lens id
-- lens status
-- confidence
-- fallback explanation
+- identity and account management;
+- candidate-facing interview UI;
+- coaching workflow;
+- longitudinal practice history;
+- progress tracking;
+- institution-specific presentation and permissions.
 
-Routing order:
+Clients should call versioned Lens APIs instead of duplicating the Lens inference algorithm.
 
-1. Exact private enterprise lens.
-2. Exact public company lens.
-3. Derived lens from similar companies and industry archetypes.
-4. Lightweight scan from supplied JD and public profile.
-5. Generic AIMS.
+## Candidate-state boundary
 
-### Distillation Orchestrator
+Candidate-state features may personalize the candidate's next practice step when consent allows it. Candidate practice records must not automatically update company, industry, archetype, or public Lenses. Only deliberately authorized evidence pipelines may update those assets.
 
-Runs independent agents and stores their outputs.
+## Paper API surface
 
-Agent types:
+The frozen paper artifact exposes four conceptual operations:
 
-- official culture
-- executive thought
-- hiring signal
-- interview question
-- employee voice
-- decision case
-- critic and risk
+1. `validate Lens` — verify schema, provenance, rights, maturity, and declared constraints;
+2. `route` — choose the highest-specificity eligible practice Lens or fallback;
+3. `follow-up priority` — select an ordered practice category under compatibility and uncertainty constraints;
+4. `explain` — return provenance and a plain-language practice-only explanation.
 
-### Evidence Store
+## Explicitly out of scope
 
-Stores:
+Employer-side candidate ranking, automated screening, rejection recommendations, hiring-decision APIs, and protected-trait inference are outside the paper research core. Historical experiments related to those functions may remain elsewhere in the repository but are excluded from `paper_artifact_manifest.yaml`.
 
-- source URL or document reference
-- source title
-- source date
-- source type
-- extracted signal
-- confidence
-- related AIMS dimensions
-- related company principles
+## Open / protected split
 
-### Evaluation Engine
+### Public research artifact
 
-Combines:
+- protocol and schemas;
+- validators;
+- candidate-side research API;
+- reference inference implementation;
+- synthetic examples and expected outputs;
+- public-safe Lens templates/assets;
+- governance rules and reproducibility tests.
 
-- AIMS base score
-- company lens rubric
-- role lens rubric
-- evidence-aware explanation
-- screening recommendation
+### Protected production assets
 
-### Enterprise Lens Manager
-
-Handles:
-
-- tenant ownership
-- private lens permissions
-- company-provided documents
-- HR approval state
-- versioning
-- audit history
-
-## Lens Status
-
-`FULLY_DISTILLED`
-
-Multi-agent research and validation complete.
-
-`DERIVED_LENS`
-
-Generated from anchor companies, industry archetypes, role requirements, region, and target JD.
-
-`LIGHTWEIGHT_SCAN`
-
-Generated from limited public or user-provided material. Must disclose lower confidence.
-
-`GENERIC_AIMS`
-
-No useful company-specific context available.
-
-## Data Boundaries
-
-Public inferred lenses and private enterprise lenses must remain separate.
-
-Private enterprise materials cannot be used in public lenses or other tenants unless explicitly authorized.
+- real candidate records or transcripts;
+- tenant-specific configuration;
+- private organizational evidence;
+- production credentials and deployment configuration;
+- proprietary production routing/calibration policies;
+- JobACE private workflow data.

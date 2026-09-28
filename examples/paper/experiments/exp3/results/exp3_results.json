@@ -1,0 +1,279 @@
+{
+  "case_count": 6,
+  "cases": [
+    {
+      "case_id": "AHA-001",
+      "expected": {
+        "allowed_primary_gap_classes": [
+          "ownership_or_senior_scope"
+        ],
+        "mode": "diagnostic",
+        "must_credit_features": [
+          "measurable_impact",
+          "collaboration",
+          "mentoring"
+        ],
+        "preferred_aims_signals": [
+          "ownership_execution"
+        ],
+        "strong_answer_gate": false,
+        "target_role": "Senior Software Developer"
+      },
+      "failures": [],
+      "oracle": {
+        "features": {
+          "collaboration": true,
+          "measurable_impact": true,
+          "mentoring": true,
+          "project_ownership": false,
+          "role_fit_connection": true,
+          "senior_scope": false,
+          "technical_reasoning": false,
+          "unsupported_self_claims": false
+        },
+        "language_surface_used_in_gate": false,
+        "language_surface_variation": false,
+        "mode": "diagnostic",
+        "primary_gap_class": "ownership_or_senior_scope",
+        "strong_answer_gate": false,
+        "target_role": "Senior Software Developer"
+      },
+      "scenario": "Strong answer with quantified impact; probe leadership scope",
+      "source_basis": "canonical suite input plus explicitly recorded stronger-production-variant evidence markers; no unretrieved full production transcript reconstructed"
+    },
+    {
+      "case_id": "AHA-002",
+      "expected": {
+        "allowed_primary_gap_classes": [
+          "evidence_and_ownership"
+        ],
+        "mode": "diagnostic",
+        "must_credit_features": [
+          "unsupported_self_claims"
+        ],
+        "preferred_aims_signals": [
+          "ownership_execution"
+        ],
+        "strong_answer_gate": false,
+        "target_role": "Senior Software Developer"
+      },
+      "failures": [],
+      "oracle": {
+        "features": {
+          "collaboration": true,
+          "measurable_impact": false,
+          "mentoring": true,
+          "project_ownership": false,
+          "role_fit_connection": true,
+          "senior_scope": false,
+          "technical_reasoning": false,
+          "unsupported_self_claims": true
+        },
+        "language_surface_used_in_gate": false,
+        "language_surface_variation": false,
+        "mode": "diagnostic",
+        "primary_gap_class": "evidence_and_ownership",
+        "strong_answer_gate": false,
+        "target_role": "Senior Software Developer"
+      },
+      "scenario": "Weak unsupported claims",
+      "source_basis": "canonical suite input"
+    },
+    {
+      "case_id": "AHA-003",
+      "expected": {
+        "allowed_primary_gap_classes": [
+          "ownership_or_senior_scope"
+        ],
+        "mode": "diagnostic",
+        "must_credit_features": [
+          "measurable_impact",
+          "technical_reasoning",
+          "collaboration"
+        ],
+        "preferred_aims_signals": [
+          "ownership_execution",
+          "analytical_problem_solving"
+        ],
+        "strong_answer_gate": false,
+        "target_role": "Senior Software Developer"
+      },
+      "failures": [],
+      "oracle": {
+        "features": {
+          "collaboration": true,
+          "measurable_impact": true,
+          "mentoring": false,
+          "project_ownership": true,
+          "role_fit_connection": false,
+          "senior_scope": false,
+          "technical_reasoning": true,
+          "unsupported_self_claims": false
+        },
+        "language_surface_used_in_gate": false,
+        "language_surface_variation": false,
+        "mode": "diagnostic",
+        "primary_gap_class": "ownership_or_senior_scope",
+        "strong_answer_gate": false,
+        "target_role": "Senior Software Developer"
+      },
+      "scenario": "Strong technical evidence, weak senior-level positioning",
+      "source_basis": "canonical suite input"
+    },
+    {
+      "case_id": "AHA-004",
+      "expected": {
+        "allowed_primary_gap_classes": [
+          "target_role_clarity"
+        ],
+        "mode": "diagnostic",
+        "must_credit_features": [
+          "collaboration",
+          "mentoring"
+        ],
+        "preferred_aims_signals": [
+          "structured_thinking"
+        ],
+        "strong_answer_gate": false,
+        "target_role": "Not clearly stated"
+      },
+      "failures": [],
+      "oracle": {
+        "features": {
+          "collaboration": true,
+          "measurable_impact": false,
+          "mentoring": true,
+          "project_ownership": false,
+          "role_fit_connection": false,
+          "senior_scope": false,
+          "technical_reasoning": false,
+          "unsupported_self_claims": false
+        },
+        "language_surface_used_in_gate": false,
+        "language_surface_variation": false,
+        "mode": "diagnostic",
+        "primary_gap_class": "target_role_clarity",
+        "strong_answer_gate": false,
+        "target_role": "Not clearly stated"
+      },
+      "scenario": "Relevant experience, no clearly stated target role",
+      "source_basis": "canonical suite input"
+    },
+    {
+      "case_id": "AHA-005",
+      "expected": {
+        "allowed_primary_gap_classes": [
+          "validation_probe"
+        ],
+        "mode": "validation_probe",
+        "must_credit_features": [
+          "measurable_impact",
+          "technical_reasoning",
+          "project_ownership",
+          "collaboration",
+          "mentoring",
+          "senior_scope"
+        ],
+        "preferred_aims_signals": [
+          "analytical_problem_solving"
+        ],
+        "strong_answer_gate": true,
+        "target_role": "Senior Software Developer"
+      },
+      "failures": [],
+      "oracle": {
+        "features": {
+          "collaboration": true,
+          "measurable_impact": true,
+          "mentoring": true,
+          "project_ownership": true,
+          "role_fit_connection": true,
+          "senior_scope": true,
+          "technical_reasoning": true,
+          "unsupported_self_claims": false
+        },
+        "language_surface_used_in_gate": false,
+        "language_surface_variation": false,
+        "mode": "validation_probe",
+        "primary_gap_class": "validation_probe",
+        "strong_answer_gate": true,
+        "target_role": "Senior Software Developer"
+      },
+      "scenario": "Very strong answer / Strong Answer Gate",
+      "source_basis": "canonical suite input"
+    },
+    {
+      "case_id": "AHA-006",
+      "expected": {
+        "allowed_primary_gap_classes": [
+          "validation_probe"
+        ],
+        "mode": "validation_probe",
+        "must_credit_features": [
+          "measurable_impact",
+          "technical_reasoning",
+          "project_ownership",
+          "collaboration",
+          "mentoring",
+          "senior_scope"
+        ],
+        "preferred_aims_signals": [
+          "analytical_problem_solving"
+        ],
+        "strong_answer_gate": true,
+        "target_role": "Senior Software Developer"
+      },
+      "failures": [],
+      "oracle": {
+        "features": {
+          "collaboration": true,
+          "measurable_impact": true,
+          "mentoring": true,
+          "project_ownership": true,
+          "role_fit_connection": true,
+          "senior_scope": true,
+          "technical_reasoning": true,
+          "unsupported_self_claims": false
+        },
+        "language_surface_used_in_gate": false,
+        "language_surface_variation": true,
+        "mode": "validation_probe",
+        "primary_gap_class": "validation_probe",
+        "strong_answer_gate": true,
+        "target_role": "Senior Software Developer"
+      },
+      "scenario": "Non-native English surface variation with strong evidence",
+      "source_basis": "canonical suite input"
+    }
+  ],
+  "claim_boundary": {
+    "current_model_rerun_performed": false,
+    "historical_baseline_is_not_current_model_evaluation": true,
+    "not_employer_side_screening": true,
+    "not_employment_outcome_evidence": true,
+    "not_fairness_validation": true
+  },
+  "current_model_rerun_performed": false,
+  "deterministic_oracle_pass_count": 6,
+  "experiment_base_commit": "024c45fa91d443b56d3a5fb1bab34a83b6715558",
+  "failures": [],
+  "historical_baseline_pass_count": 6,
+  "historical_only_generation_rules": [
+    "no_more_than_two_followup_questions",
+    "one_or_two_relevant_aims_signals",
+    "no_quick_score",
+    "no_complete_replacement_answer",
+    "voice_friendly_under_180_words",
+    "no_company_style_rewrite"
+  ],
+  "passed": true,
+  "protocol_version": "0.1-pre-registered-public-contract",
+  "source_record": {
+    "full_generation_prompt_in_public_artifact": false,
+    "historical_baseline": "AHA-001 through AHA-006 recorded PASS",
+    "historical_model_outputs_retrieved": false,
+    "historical_scope": "anonymous one-answer Aha Moment semantic regression",
+    "name": "JobACE Aha Moment Regression Suite v1",
+    "retrieved_status": "public-safe historical regression record"
+  }
+}

@@ -1,0 +1,99 @@
+# Frozen-paper artifact allowlist. This is intentionally narrower than public_manifest.yaml.
+version: 1
+paper_version: v1.3
+artifact_version: 0.9.2-paper-v1.3
+release_status: frozen
+branch_base_commit: cf2586e5649feb05fd19faefa479e765055c76d4
+experimental_bundle_commit: 84c0afc5f928989237832d625002aba17ae8ac4f
+frozen_artifact_ref: v0.9.2-paper-v1.3
+repository: joewang001/aims-lens-engine-public
+policy:
+  default_action: exclude
+  candidate_side_practice_only: true
+  employer_selection_decisions_allowed: false
+  private_data_allowed: false
+  network_required_for_demo: false
+
+include_paths:
+  - README.md
+  - LICENSE
+  - NOTICE
+  - CONTENT_LICENSE.md
+  - CONTRIBUTING.md
+  - VERSION
+  - CHANGELOG.md
+  - CITATION.cff
+  - RESEARCH_BOUNDARY.md
+  - REPRODUCIBILITY.md
+  - PAPER_RELEASE_READINESS.md
+  - paper_artifact_manifest.yaml
+  - api/openapi.yaml
+  - architecture/system-design.md
+  - architecture/lens-router.md
+  - governance/evidence-standard.md
+  - governance/privacy-and-fairness.md
+  - research_core/
+  - docs/MATH_TO_CODE_COMPLETENESS_AUDIT.md
+  - docs/experiments/EXPERIMENT_1A_PROTOCOL.md
+  - docs/experiments/EXPERIMENT_1B_PROTOCOL.md
+  - docs/experiments/EXPERIMENT_2_PROTOCOL.md
+  - docs/experiments/EXPERIMENT_3_PROTOCOL.md
+  - docs/PAPER_TO_CODE_MAP.md
+  - config/paper_defaults.json
+  - schemas/interview_dna.schema.json
+  - schemas/evidence_packet.schema.json
+  - schemas/minimized_context.schema.json
+  - schemas/followup_priority_request.schema.json
+  - schemas/followup_priority_response.schema.json
+  - examples/paper/
+  - tools/run_paper_artifact_demo.py
+  - tools/run_exp1a_core_verification.py
+  - tools/run_exp1b_lens_differentiation.py
+  - tools/run_exp2_sensitivity_ablation.py
+  - tools/run_exp3_semantic_regression.py
+  - tools/validate_paper_artifact.py
+  - tests/test_research_core.py
+  - .github/workflows/paper-artifact-ci.yml
+
+supporting_public_assets_not_required_for_reproduction:
+  - company_lenses/**
+  - schemas/company_lens.schema.json
+  - schemas/derived_lens.schema.json
+  - schemas/evidence.schema.json
+  - schemas/role_lens.schema.json
+  - routing/role_router.json
+  - agents/templates/**
+  - docs/public-lens-operations-plan.md
+  - docs/public-lens-refresh-and-expansion.md
+  - docs/public-lens-sourcing-agent-contract.md
+  - docs/public-private-split-strategy.md
+  - docs/validation-checklist.md
+
+exclude_from_paper_core:
+  - schemas/screening_report.schema.json
+  - schemas/review_decision.schema.json
+  - schemas/jobace_adapter_contract.schema.json
+  - examples/human-review-decision-request.json
+  - examples/internal-pilot-screening-request.json
+  - examples/jobace-review-decision-request.json
+  - examples/jobace-staging-screening-request.json
+  - examples/jobace-staging-validation-suite.json
+  - docs/limited-pilot-policy.md
+  - tools/llm_scorer.py
+  - tools/run_scoring_harness.py
+  - legacy/employer_decision_support/**
+  - services/**
+  - integrations/jobace/**
+  - private_materials/**
+  - tenant_uploads/**
+  - candidate_data/**
+  - audit_logs/**
+  - review_logs/**
+  - workspace_data/**
+
+forbidden_paper_core_semantics:
+  - automatic candidate ranking for employers
+  - candidate rejection recommendation
+  - hiring outcome prediction
+  - protected-trait inference
+  - fabricated experience coaching

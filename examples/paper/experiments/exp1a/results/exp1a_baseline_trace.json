@@ -1,0 +1,139 @@
+{
+  "abstention_threshold": 0.3,
+  "authorized_evidence": [
+    {
+      "age_days": 10,
+      "category": "ownership",
+      "quality": 0.9
+    },
+    {
+      "age_days": 4,
+      "category": "evidence",
+      "quality": 1.0
+    },
+    {
+      "age_days": 40,
+      "category": "evidence",
+      "quality": 0.8
+    },
+    {
+      "age_days": 70,
+      "category": "reflection",
+      "quality": 0.55
+    }
+  ],
+  "compatibility_masked_posterior": {
+    "evidence": 0.434266749484,
+    "ownership": 0.268832536053,
+    "reflection": 0.151198974203,
+    "tradeoff": 0.14570174026
+  },
+  "data_support": 0.329344978961,
+  "effective_evidence_mass": 3.196003206699,
+  "final_result": {
+    "data_support": 0.329345,
+    "diagnostic_distribution": {
+      "evidence": 0.391886,
+      "ownership": 0.269704,
+      "reflection": 0.153524,
+      "tradeoff": 0.184885
+    },
+    "disclaimer": "This output prioritizes interview practice. It is not a prediction of a specific employer's interview process or hiring decision.",
+    "effective_evidence_mass": 3.196003,
+    "mode": "ordered_practice_priority",
+    "priority_order": [
+      "evidence",
+      "ownership",
+      "tradeoff",
+      "reflection"
+    ],
+    "routing_provenance": [
+      {
+        "applicability": true,
+        "authorization": true,
+        "backoff_distance": 0,
+        "coverage": 0.78,
+        "level": "L0_full_context",
+        "routing_weight": 0.617269
+      },
+      {
+        "applicability": true,
+        "authorization": true,
+        "backoff_distance": 3,
+        "coverage": 0.92,
+        "level": "L3_industry_context",
+        "routing_weight": 0.249725
+      },
+      {
+        "applicability": true,
+        "authorization": true,
+        "backoff_distance": 5,
+        "coverage": 1.0,
+        "level": "L5_generic_context",
+        "routing_weight": 0.133006
+      }
+    ],
+    "top_category": "evidence",
+    "uncertainty_entropy": 0.952409
+  },
+  "local_posterior": {
+    "collaboration": 0.104393178039,
+    "evidence": 0.388932263389,
+    "ownership": 0.240768253254,
+    "reflection": 0.13541483277,
+    "tradeoff": 0.130491472548
+  },
+  "parent_distribution_normalized": {
+    "collaboration": 0.16,
+    "evidence": 0.3,
+    "ownership": 0.22,
+    "reflection": 0.12,
+    "tradeoff": 0.2
+  },
+  "permitted_categories": [
+    "ownership",
+    "evidence",
+    "tradeoff",
+    "reflection"
+  ],
+  "routed_distribution": {
+    "evidence": 0.391886166099,
+    "ownership": 0.269704084454,
+    "reflection": 0.153524348059,
+    "tradeoff": 0.184885401388
+  },
+  "routing_provenance": [
+    {
+      "applicability": true,
+      "authorization": true,
+      "backoff_distance": 0,
+      "coverage": 0.78,
+      "level": "L0_full_context",
+      "routing_weight": 0.617269
+    },
+    {
+      "applicability": true,
+      "authorization": true,
+      "backoff_distance": 3,
+      "coverage": 0.92,
+      "level": "L3_industry_context",
+      "routing_weight": 0.249725
+    },
+    {
+      "applicability": true,
+      "authorization": true,
+      "backoff_distance": 5,
+      "coverage": 1.0,
+      "level": "L5_generic_context",
+      "routing_weight": 0.133006
+    }
+  ],
+  "uncertainty_entropy": 0.952409345258,
+  "weighted_counts": {
+    "collaboration": 0.0,
+    "evidence": 1.776622341313,
+    "ownership": 0.894105628998,
+    "reflection": 0.525275236388,
+    "tradeoff": 0.0
+  }
+}

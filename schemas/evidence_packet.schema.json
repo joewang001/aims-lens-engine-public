@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AIMS Evidence Packet",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "source_type",
+    "permitted_use",
+    "date_collected",
+    "collection_method",
+    "scope",
+    "reviewer",
+    "quality_rating",
+    "expiry_conditions",
+    "supports"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string"
+    },
+    "source_type": {
+      "type": "string"
+    },
+    "permitted_use": {
+      "type": "string"
+    },
+    "date_collected": {
+      "type": "string"
+    },
+    "collection_method": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "reviewer": {
+      "type": "string"
+    },
+    "quality_rating": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "transformation_history": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expiry_conditions": {
+      "type": "string"
+    },
+    "supports": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

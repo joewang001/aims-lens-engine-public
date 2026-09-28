@@ -1,0 +1,749 @@
+{
+  "comparisons": {
+    "company_negative_retail": [
+      {
+        "a": "E1B-N1-rbc-retail",
+        "b": "E1B-N1-cibc-retail",
+        "exact_result_equal": true,
+        "same_top_category": true,
+        "tv": 0.0
+      },
+      {
+        "a": "E1B-N1-rbc-retail",
+        "b": "E1B-N1-bmo-retail",
+        "exact_result_equal": true,
+        "same_top_category": true,
+        "tv": 0.0
+      },
+      {
+        "a": "E1B-N1-cibc-retail",
+        "b": "E1B-N1-bmo-retail",
+        "exact_result_equal": true,
+        "same_top_category": true,
+        "tv": 0.0
+      }
+    ],
+    "company_positive_swe": [
+      {
+        "a": "E1B-C1-amazon-swe",
+        "b": "E1B-C1-google-swe",
+        "exact_result_equal": false,
+        "same_top_category": false,
+        "tv": 0.092865
+      },
+      {
+        "a": "E1B-C1-amazon-swe",
+        "b": "E1B-C1-jpmorgan-swe",
+        "exact_result_equal": false,
+        "same_top_category": false,
+        "tv": 0.0437005
+      },
+      {
+        "a": "E1B-C1-google-swe",
+        "b": "E1B-C1-jpmorgan-swe",
+        "exact_result_equal": false,
+        "same_top_category": true,
+        "tv": 0.0600895
+      }
+    ],
+    "role_positive": [
+      {
+        "a": "E1B-R1-swe",
+        "b": "E1B-R1-data",
+        "exact_result_equal": false,
+        "same_top_category": true,
+        "tv": 0.0460985
+      },
+      {
+        "a": "E1B-R1-swe",
+        "b": "E1B-R1-retail",
+        "exact_result_equal": false,
+        "same_top_category": false,
+        "tv": 0.1053685
+      },
+      {
+        "a": "E1B-R1-swe",
+        "b": "E1B-R1-risk",
+        "exact_result_equal": false,
+        "same_top_category": true,
+        "tv": 0.0460985
+      },
+      {
+        "a": "E1B-R1-swe",
+        "b": "E1B-R1-consult",
+        "exact_result_equal": false,
+        "same_top_category": false,
+        "tv": 0.085611
+      },
+      {
+        "a": "E1B-R1-data",
+        "b": "E1B-R1-retail",
+        "exact_result_equal": false,
+        "same_top_category": false,
+        "tv": 0.105368
+      },
+      {
+        "a": "E1B-R1-data",
+        "b": "E1B-R1-risk",
+        "exact_result_equal": false,
+        "same_top_category": true,
+        "tv": 0.059269
+      },
+      {
+        "a": "E1B-R1-data",
+        "b": "E1B-R1-consult",
+        "exact_result_equal": false,
+        "same_top_category": false,
+        "tv": 0.0658545
+      },
+      {
+        "a": "E1B-R1-retail",
+        "b": "E1B-R1-risk",
+        "exact_result_equal": false,
+        "same_top_category": false,
+        "tv": 0.092197
+      },
+      {
+        "a": "E1B-R1-retail",
+        "b": "E1B-R1-consult",
+        "exact_result_equal": false,
+        "same_top_category": false,
+        "tv": 0.1646375
+      },
+      {
+        "a": "E1B-R1-risk",
+        "b": "E1B-R1-consult",
+        "exact_result_equal": false,
+        "same_top_category": false,
+        "tv": 0.0921965
+      }
+    ]
+  },
+  "experiment_base_commit": "d55e900b8f2e2a579ad3b58ccbe0e90172fe11b3",
+  "failures": [],
+  "fixture_count": 11,
+  "passed": true,
+  "protocol_version": "0.1-pre-registered",
+  "results": [
+    {
+      "case_id": "E1B-C1-amazon-swe",
+      "control_type": "positive_control",
+      "result": {
+        "data_support": 0.312711,
+        "diagnostic_distribution": {
+          "analytical_problem_solving": 0.187811,
+          "collaboration_communication": 0.11683,
+          "growth_mindset": 0.13527,
+          "impact_results": 0.194664,
+          "ownership_execution": 0.205589,
+          "structured_thinking": 0.159836
+        },
+        "disclaimer": "This output prioritizes interview practice. It is not a prediction of a specific employer's interview process or hiring decision.",
+        "effective_evidence_mass": 3.0,
+        "mode": "ordered_practice_priority",
+        "priority_order": [
+          "ownership_execution",
+          "impact_results",
+          "analytical_problem_solving",
+          "structured_thinking",
+          "growth_mindset",
+          "collaboration_communication"
+        ],
+        "routing_provenance": [
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 0,
+            "coverage": 1.0,
+            "level": "L0_full_parent_context",
+            "routing_weight": 0.710142
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 4,
+            "coverage": 1.0,
+            "level": "L4_archetype_context",
+            "routing_weight": 0.170505
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 5,
+            "coverage": 1.0,
+            "level": "L5_generic_context",
+            "routing_weight": 0.119353
+          }
+        ],
+        "top_category": "ownership_execution",
+        "uncertainty_entropy": 0.989184
+      },
+      "sha256": "f0458ba37272979bb667145cca07d25c1379d7d77d1dbc57cfc021a15ca80e0f",
+      "source_company": "amazon",
+      "source_company_lens_id": "amazon_public_v0_1",
+      "source_role": "swe",
+      "source_role_lens_id": null,
+      "study": "company_prior_differentiation"
+    },
+    {
+      "case_id": "E1B-C1-google-swe",
+      "control_type": "positive_control",
+      "result": {
+        "data_support": 0.312711,
+        "diagnostic_distribution": {
+          "analytical_problem_solving": 0.242438,
+          "collaboration_communication": 0.13868,
+          "growth_mindset": 0.129807,
+          "impact_results": 0.167351,
+          "ownership_execution": 0.1455,
+          "structured_thinking": 0.176224
+        },
+        "disclaimer": "This output prioritizes interview practice. It is not a prediction of a specific employer's interview process or hiring decision.",
+        "effective_evidence_mass": 3.0,
+        "mode": "ordered_practice_priority",
+        "priority_order": [
+          "analytical_problem_solving",
+          "structured_thinking",
+          "impact_results",
+          "ownership_execution",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "routing_provenance": [
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 0,
+            "coverage": 1.0,
+            "level": "L0_full_parent_context",
+            "routing_weight": 0.710142
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 4,
+            "coverage": 1.0,
+            "level": "L4_archetype_context",
+            "routing_weight": 0.170505
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 5,
+            "coverage": 1.0,
+            "level": "L5_generic_context",
+            "routing_weight": 0.119353
+          }
+        ],
+        "top_category": "analytical_problem_solving",
+        "uncertainty_entropy": 0.986792
+      },
+      "sha256": "faabd7b461a38c16f34735800205fdf07e44f35bcd272de7c5576047265ce919",
+      "source_company": "google",
+      "source_company_lens_id": "google_public_v0_1",
+      "source_role": "swe",
+      "source_role_lens_id": null,
+      "study": "company_prior_differentiation"
+    },
+    {
+      "case_id": "E1B-C1-jpmorgan-swe",
+      "control_type": "positive_control",
+      "result": {
+        "data_support": 0.312711,
+        "diagnostic_distribution": {
+          "analytical_problem_solving": 0.193274,
+          "collaboration_communication": 0.149605,
+          "growth_mindset": 0.129807,
+          "impact_results": 0.183739,
+          "ownership_execution": 0.178276,
+          "structured_thinking": 0.165298
+        },
+        "disclaimer": "This output prioritizes interview practice. It is not a prediction of a specific employer's interview process or hiring decision.",
+        "effective_evidence_mass": 3.0,
+        "mode": "ordered_practice_priority",
+        "priority_order": [
+          "analytical_problem_solving",
+          "impact_results",
+          "ownership_execution",
+          "structured_thinking",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "routing_provenance": [
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 0,
+            "coverage": 1.0,
+            "level": "L0_full_parent_context",
+            "routing_weight": 0.710142
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 4,
+            "coverage": 1.0,
+            "level": "L4_archetype_context",
+            "routing_weight": 0.170505
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 5,
+            "coverage": 1.0,
+            "level": "L5_generic_context",
+            "routing_weight": 0.119353
+          }
+        ],
+        "top_category": "analytical_problem_solving",
+        "uncertainty_entropy": 0.995208
+      },
+      "sha256": "6796008bd3630a2ced2e4701fe4c8eb03ba295f878d91daf290eb1676b20bbde",
+      "source_company": "jpmorgan",
+      "source_company_lens_id": "jpmorgan_public_v0_1",
+      "source_role": "swe",
+      "source_role_lens_id": null,
+      "study": "company_prior_differentiation"
+    },
+    {
+      "case_id": "E1B-N1-rbc-retail",
+      "control_type": "negative_control",
+      "result": {
+        "data_support": 0.312711,
+        "diagnostic_distribution": {
+          "analytical_problem_solving": 0.172813,
+          "collaboration_communication": 0.161541,
+          "growth_mindset": 0.129807,
+          "impact_results": 0.192264,
+          "ownership_execution": 0.185096,
+          "structured_thinking": 0.158478
+        },
+        "disclaimer": "This output prioritizes interview practice. It is not a prediction of a specific employer's interview process or hiring decision.",
+        "effective_evidence_mass": 3.0,
+        "mode": "ordered_practice_priority",
+        "priority_order": [
+          "impact_results",
+          "ownership_execution",
+          "analytical_problem_solving",
+          "collaboration_communication",
+          "structured_thinking",
+          "growth_mindset"
+        ],
+        "routing_provenance": [
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 0,
+            "coverage": 1.0,
+            "level": "L0_full_parent_context",
+            "routing_weight": 0.710142
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 4,
+            "coverage": 1.0,
+            "level": "L4_archetype_context",
+            "routing_weight": 0.170505
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 5,
+            "coverage": 1.0,
+            "level": "L5_generic_context",
+            "routing_weight": 0.119353
+          }
+        ],
+        "top_category": "impact_results",
+        "uncertainty_entropy": 0.995721
+      },
+      "sha256": "41d29e9f7a641bc93ac124828e53d816e3f7cb8ed6b4f6ad3fac38ccf3ae613d",
+      "source_company": "rbc",
+      "source_company_lens_id": "rbc_public_v0_1",
+      "source_role": "retail_banking",
+      "source_role_lens_id": null,
+      "study": "company_prior_differentiation"
+    },
+    {
+      "case_id": "E1B-N1-cibc-retail",
+      "control_type": "negative_control",
+      "result": {
+        "data_support": 0.312711,
+        "diagnostic_distribution": {
+          "analytical_problem_solving": 0.172813,
+          "collaboration_communication": 0.161541,
+          "growth_mindset": 0.129807,
+          "impact_results": 0.192264,
+          "ownership_execution": 0.185096,
+          "structured_thinking": 0.158478
+        },
+        "disclaimer": "This output prioritizes interview practice. It is not a prediction of a specific employer's interview process or hiring decision.",
+        "effective_evidence_mass": 3.0,
+        "mode": "ordered_practice_priority",
+        "priority_order": [
+          "impact_results",
+          "ownership_execution",
+          "analytical_problem_solving",
+          "collaboration_communication",
+          "structured_thinking",
+          "growth_mindset"
+        ],
+        "routing_provenance": [
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 0,
+            "coverage": 1.0,
+            "level": "L0_full_parent_context",
+            "routing_weight": 0.710142
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 4,
+            "coverage": 1.0,
+            "level": "L4_archetype_context",
+            "routing_weight": 0.170505
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 5,
+            "coverage": 1.0,
+            "level": "L5_generic_context",
+            "routing_weight": 0.119353
+          }
+        ],
+        "top_category": "impact_results",
+        "uncertainty_entropy": 0.995721
+      },
+      "sha256": "41d29e9f7a641bc93ac124828e53d816e3f7cb8ed6b4f6ad3fac38ccf3ae613d",
+      "source_company": "cibc",
+      "source_company_lens_id": "cibc_public_v0_1",
+      "source_role": "retail_banking",
+      "source_role_lens_id": null,
+      "study": "company_prior_differentiation"
+    },
+    {
+      "case_id": "E1B-N1-bmo-retail",
+      "control_type": "negative_control",
+      "result": {
+        "data_support": 0.312711,
+        "diagnostic_distribution": {
+          "analytical_problem_solving": 0.172813,
+          "collaboration_communication": 0.161541,
+          "growth_mindset": 0.129807,
+          "impact_results": 0.192264,
+          "ownership_execution": 0.185096,
+          "structured_thinking": 0.158478
+        },
+        "disclaimer": "This output prioritizes interview practice. It is not a prediction of a specific employer's interview process or hiring decision.",
+        "effective_evidence_mass": 3.0,
+        "mode": "ordered_practice_priority",
+        "priority_order": [
+          "impact_results",
+          "ownership_execution",
+          "analytical_problem_solving",
+          "collaboration_communication",
+          "structured_thinking",
+          "growth_mindset"
+        ],
+        "routing_provenance": [
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 0,
+            "coverage": 1.0,
+            "level": "L0_full_parent_context",
+            "routing_weight": 0.710142
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 4,
+            "coverage": 1.0,
+            "level": "L4_archetype_context",
+            "routing_weight": 0.170505
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 5,
+            "coverage": 1.0,
+            "level": "L5_generic_context",
+            "routing_weight": 0.119353
+          }
+        ],
+        "top_category": "impact_results",
+        "uncertainty_entropy": 0.995721
+      },
+      "sha256": "41d29e9f7a641bc93ac124828e53d816e3f7cb8ed6b4f6ad3fac38ccf3ae613d",
+      "source_company": "bmo",
+      "source_company_lens_id": "bmo_public_v0_1",
+      "source_role": "retail_banking",
+      "source_role_lens_id": null,
+      "study": "company_prior_differentiation"
+    },
+    {
+      "case_id": "E1B-R1-swe",
+      "control_type": "positive_control",
+      "result": {
+        "data_support": 0.312711,
+        "diagnostic_distribution": {
+          "analytical_problem_solving": 0.241302,
+          "collaboration_communication": 0.135934,
+          "growth_mindset": 0.122763,
+          "impact_results": 0.162276,
+          "ownership_execution": 0.162276,
+          "structured_thinking": 0.175447
+        },
+        "disclaimer": "This output prioritizes interview practice. It is not a prediction of a specific employer's interview process or hiring decision.",
+        "effective_evidence_mass": 3.0,
+        "mode": "ordered_practice_priority",
+        "priority_order": [
+          "analytical_problem_solving",
+          "structured_thinking",
+          "impact_results",
+          "ownership_execution",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "routing_provenance": [
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 0,
+            "coverage": 1.0,
+            "level": "L0_full_parent_context",
+            "routing_weight": 0.856113
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 5,
+            "coverage": 1.0,
+            "level": "L5_generic_context",
+            "routing_weight": 0.143887
+          }
+        ],
+        "top_category": "analytical_problem_solving",
+        "uncertainty_entropy": 0.986383
+      },
+      "sha256": "e827ea0033873244f5dac06883f73a7866619cd42c3b12c3f0fb0b1b401047cb",
+      "source_company": null,
+      "source_company_lens_id": null,
+      "source_role": "swe",
+      "source_role_lens_id": "role_template_swe_v0_1",
+      "study": "role_prior_differentiation"
+    },
+    {
+      "case_id": "E1B-R1-data",
+      "control_type": "positive_control",
+      "result": {
+        "data_support": 0.312711,
+        "diagnostic_distribution": {
+          "analytical_problem_solving": 0.228131,
+          "collaboration_communication": 0.14252,
+          "growth_mindset": 0.109592,
+          "impact_results": 0.188618,
+          "ownership_execution": 0.14252,
+          "structured_thinking": 0.188618
+        },
+        "disclaimer": "This output prioritizes interview practice. It is not a prediction of a specific employer's interview process or hiring decision.",
+        "effective_evidence_mass": 3.0,
+        "mode": "ordered_practice_priority",
+        "priority_order": [
+          "analytical_problem_solving",
+          "impact_results",
+          "structured_thinking",
+          "collaboration_communication",
+          "ownership_execution",
+          "growth_mindset"
+        ],
+        "routing_provenance": [
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 0,
+            "coverage": 1.0,
+            "level": "L0_full_parent_context",
+            "routing_weight": 0.856113
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 5,
+            "coverage": 1.0,
+            "level": "L5_generic_context",
+            "routing_weight": 0.143887
+          }
+        ],
+        "top_category": "analytical_problem_solving",
+        "uncertainty_entropy": 0.984521
+      },
+      "sha256": "dbf4eb616374fea17405ec61f7bcb3a8381fce1c76871d1052deacdaa35b517a",
+      "source_company": null,
+      "source_company_lens_id": null,
+      "source_role": "data_analytics",
+      "source_role_lens_id": "role_template_data_analytics_v0_1",
+      "study": "role_prior_differentiation"
+    },
+    {
+      "case_id": "E1B-R1-retail",
+      "control_type": "positive_control",
+      "result": {
+        "data_support": 0.312711,
+        "diagnostic_distribution": {
+          "analytical_problem_solving": 0.162276,
+          "collaboration_communication": 0.182033,
+          "growth_mindset": 0.122763,
+          "impact_results": 0.195204,
+          "ownership_execution": 0.188618,
+          "structured_thinking": 0.149105
+        },
+        "disclaimer": "This output prioritizes interview practice. It is not a prediction of a specific employer's interview process or hiring decision.",
+        "effective_evidence_mass": 3.0,
+        "mode": "ordered_practice_priority",
+        "priority_order": [
+          "impact_results",
+          "ownership_execution",
+          "collaboration_communication",
+          "analytical_problem_solving",
+          "structured_thinking",
+          "growth_mindset"
+        ],
+        "routing_provenance": [
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 0,
+            "coverage": 1.0,
+            "level": "L0_full_parent_context",
+            "routing_weight": 0.856113
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 5,
+            "coverage": 1.0,
+            "level": "L5_generic_context",
+            "routing_weight": 0.143887
+          }
+        ],
+        "top_category": "impact_results",
+        "uncertainty_entropy": 0.993428
+      },
+      "sha256": "01bcabc54ac94cdc086b7630350b24ab5847c0095f044543bf0e3696d32e8d32",
+      "source_company": null,
+      "source_company_lens_id": null,
+      "source_role": "retail_banking",
+      "source_role_lens_id": "role_template_retail_banking_v0_1",
+      "study": "role_prior_differentiation"
+    },
+    {
+      "case_id": "E1B-R1-risk",
+      "control_type": "positive_control",
+      "result": {
+        "data_support": 0.312711,
+        "diagnostic_distribution": {
+          "analytical_problem_solving": 0.21496,
+          "collaboration_communication": 0.14252,
+          "growth_mindset": 0.103007,
+          "impact_results": 0.162276,
+          "ownership_execution": 0.201789,
+          "structured_thinking": 0.175447
+        },
+        "disclaimer": "This output prioritizes interview practice. It is not a prediction of a specific employer's interview process or hiring decision.",
+        "effective_evidence_mass": 3.0,
+        "mode": "ordered_practice_priority",
+        "priority_order": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "structured_thinking",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "routing_provenance": [
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 0,
+            "coverage": 1.0,
+            "level": "L0_full_parent_context",
+            "routing_weight": 0.856113
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 5,
+            "coverage": 1.0,
+            "level": "L5_generic_context",
+            "routing_weight": 0.143887
+          }
+        ],
+        "top_category": "analytical_problem_solving",
+        "uncertainty_entropy": 0.98544
+      },
+      "sha256": "36fc7a741378e5c7b8b0f9027efc36079460e3f5126973d88071cfddfd46b756",
+      "source_company": null,
+      "source_company_lens_id": null,
+      "source_role": "risk_compliance",
+      "source_role_lens_id": "role_template_risk_compliance_v0_1",
+      "study": "role_prior_differentiation"
+    },
+    {
+      "case_id": "E1B-R1-consult",
+      "control_type": "positive_control",
+      "result": {
+        "data_support": 0.312711,
+        "diagnostic_distribution": {
+          "analytical_problem_solving": 0.228131,
+          "collaboration_communication": 0.149105,
+          "growth_mindset": 0.083251,
+          "impact_results": 0.155691,
+          "ownership_execution": 0.135934,
+          "structured_thinking": 0.247888
+        },
+        "disclaimer": "This output prioritizes interview practice. It is not a prediction of a specific employer's interview process or hiring decision.",
+        "effective_evidence_mass": 3.0,
+        "mode": "ordered_practice_priority",
+        "priority_order": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "impact_results",
+          "collaboration_communication",
+          "ownership_execution",
+          "growth_mindset"
+        ],
+        "routing_provenance": [
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 0,
+            "coverage": 1.0,
+            "level": "L0_full_parent_context",
+            "routing_weight": 0.856113
+          },
+          {
+            "applicability": true,
+            "authorization": true,
+            "backoff_distance": 5,
+            "coverage": 1.0,
+            "level": "L5_generic_context",
+            "routing_weight": 0.143887
+          }
+        ],
+        "top_category": "structured_thinking",
+        "uncertainty_entropy": 0.968009
+      },
+      "sha256": "2164a4d49fde4a8eb73c52fb804c25d8905aab3cf2694400cd050f8dc7ad0f37",
+      "source_company": null,
+      "source_company_lens_id": null,
+      "source_role": "consulting_case_pei",
+      "source_role_lens_id": "role_template_consulting_case_pei_v0_1",
+      "study": "role_prior_differentiation"
+    }
+  ]
+}

@@ -1,55 +1,71 @@
-# Privacy and Fairness
+# Privacy, Fairness, and Candidate-Side Use Boundary
 
-## Data Separation
+## Intended use
 
-Public lenses, private enterprise lenses, and candidate evaluation data must be separated by tenant and visibility.
+The paper research core is an interview-practice aid. It helps a candidate decide what evidence or competency to practice next. It is not an employer-side selection system.
 
-Private enterprise data must not be used to improve public lenses unless explicitly authorized.
+## Prohibited paper-core uses
 
-## Candidate Data
+The frozen research artifact must not:
 
-Candidate answers, resumes, scores, and screening reports are sensitive data.
+- rank candidates for employers;
+- recommend that an employer advance, hold, or reject a candidate;
+- infer protected or sensitive characteristics;
+- tell a candidate that a specific employer is likely to reject them;
+- encourage fabrication of experience, metrics, ownership, or credentials;
+- claim that practice performance guarantees a hiring outcome.
 
-Required controls:
+## Data separation
 
-- tenant isolation
-- access logs
-- retention policy
-- deletion workflow
-- export controls
-- human review for adverse decisions
+Public Lens evidence, private enterprise evidence, and candidate data are separate classes with separate update paths.
 
-## Fairness Constraints
+Candidate-side production systems should implement:
 
-The system must not score candidates based on protected or sensitive traits.
+- tenant isolation where applicable;
+- purpose limitation;
+- access logging;
+- retention schedules;
+- deletion workflows;
+- export controls;
+- consent for candidate-state adaptation;
+- separation of raw candidate content from organization-level Lens updates.
 
-Disallowed scoring factors include:
+The paper artifact itself uses synthetic examples and requires no private candidate data.
 
-- age
-- race
-- ethnicity
-- gender
-- religion
-- disability
-- marital status
-- pregnancy
-- national origin
-- citizenship status unless legally required for the role
+## Fairness and accessibility
 
-## Screening Recommendation
+Fairness review applies to both model outputs and interaction design. Evaluation should test whether errors, abstentions, routing depth, and practice benefit differ across relevant participant groups.
 
-The system provides decision support, not automatic final hiring decisions.
+Design considerations include:
 
-For low-confidence results, conflicting evidence, or borderline recommendations, return:
+- language variation and multilingual support;
+- plain-language explanations;
+- screen-reader compatibility;
+- adjustable pacing and alternative formats;
+- configurable follow-up style where culturally appropriate;
+- avoidance of protected-trait inference or proxy use.
 
-`human_review_required`
+## Authenticity-preserving coaching
 
-## Explanation Requirement
+The system may help a candidate surface, organize, substantiate, and reflect on genuine experience. It must not optimize deceptive impression management or manufacture evidence the candidate did not provide.
 
-Every screening report should explain:
+## Explainability without false precision
 
-- assessed role requirements
-- AIMS scores
-- company lens adjustments
-- evidence limitations
-- recommended human follow-up questions
+The preferred explanation names:
+
+- Lens type and version;
+- evidence maturity;
+- major context factors;
+- routing/backoff level;
+- evidence-support limitations;
+- why a broader fallback was used when applicable.
+
+A numerical score must not be described as the probability of employer behavior unless the paper's empirical calibration conditions are actually satisfied for that claim.
+
+## Organizational stereotyping and contestability
+
+A company Lens is a bounded hypothesis, not an ontological description of an organization. Team, role, region, interviewer, and time may differ. Public-source selection bias and stale evidence can distort a Lens. The design therefore requires versioning, expiry/review, provenance, fallback, and a way for authorized reviewers to contest or withdraw unsupported claims.
+
+## Fail-closed governance
+
+The system should narrow its claim, route more broadly, or abstain when evidence rights are missing, evidence is stale, an audit cannot reproduce an output, a required calibration check fails, or a fairness review threshold is triggered.

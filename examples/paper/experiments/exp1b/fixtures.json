@@ -1,0 +1,1314 @@
+{
+  "protocol_version": "0.1-pre-registered",
+  "experiment_base_commit": "d55e900b8f2e2a579ad3b58ccbe0e90172fe11b3",
+  "description": "Experiment 1B controlled Lens and role-prior differentiation fixtures",
+  "epistemic_boundary": "Historical answer text is provenance only. Candidate state never updates company Lens evidence.",
+  "fixtures": [
+    {
+      "case_id": "E1B-C1-amazon-swe",
+      "study": "company_prior_differentiation",
+      "control_type": "positive_control",
+      "source_company": "amazon",
+      "source_company_lens_id": "amazon_public_v0_1",
+      "source_company_cutoff": "2026-05-04",
+      "source_role": "swe",
+      "historical_answer_use": "provenance_only_not_model_input",
+      "request": {
+        "categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "evidence": [
+          {
+            "category": "structured_thinking",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "analytical_problem_solving",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "ownership_execution",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "impact_results",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "collaboration_communication",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "growth_mindset",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          }
+        ],
+        "permitted_categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "kappa_company": 10.0,
+        "temporal_decay_rate_per_day": 0.0,
+        "routing_gamma": 0.7,
+        "support_tau": 8.0,
+        "abstention_threshold": 0.0,
+        "parent_distribution": {
+          "structured_thinking": 0.15,
+          "analytical_problem_solving": 0.17,
+          "ownership_execution": 0.24,
+          "impact_results": 0.22,
+          "collaboration_communication": 0.09,
+          "growth_mindset": 0.13
+        },
+        "routing_levels": [
+          {
+            "name": "L0_full_parent_context",
+            "backoff_distance": 0,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          },
+          {
+            "name": "L4_archetype_context",
+            "backoff_distance": 4,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.18,
+              "analytical_problem_solving": 0.28,
+              "ownership_execution": 0.16,
+              "impact_results": 0.16,
+              "collaboration_communication": 0.12,
+              "growth_mindset": 0.1
+            }
+          },
+          {
+            "name": "L5_generic_context",
+            "backoff_distance": 5,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "E1B-C1-google-swe",
+      "study": "company_prior_differentiation",
+      "control_type": "positive_control",
+      "source_company": "google",
+      "source_company_lens_id": "google_public_v0_1",
+      "source_company_cutoff": "2026-05-04",
+      "source_role": "swe",
+      "historical_answer_use": "provenance_only_not_model_input",
+      "request": {
+        "categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "evidence": [
+          {
+            "category": "structured_thinking",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "analytical_problem_solving",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "ownership_execution",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "impact_results",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "collaboration_communication",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "growth_mindset",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          }
+        ],
+        "permitted_categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "kappa_company": 10.0,
+        "temporal_decay_rate_per_day": 0.0,
+        "routing_gamma": 0.7,
+        "support_tau": 8.0,
+        "abstention_threshold": 0.0,
+        "parent_distribution": {
+          "structured_thinking": 0.18,
+          "analytical_problem_solving": 0.27,
+          "ownership_execution": 0.13,
+          "impact_results": 0.17,
+          "collaboration_communication": 0.13,
+          "growth_mindset": 0.12
+        },
+        "routing_levels": [
+          {
+            "name": "L0_full_parent_context",
+            "backoff_distance": 0,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          },
+          {
+            "name": "L4_archetype_context",
+            "backoff_distance": 4,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.18,
+              "analytical_problem_solving": 0.28,
+              "ownership_execution": 0.16,
+              "impact_results": 0.16,
+              "collaboration_communication": 0.12,
+              "growth_mindset": 0.1
+            }
+          },
+          {
+            "name": "L5_generic_context",
+            "backoff_distance": 5,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "E1B-C1-jpmorgan-swe",
+      "study": "company_prior_differentiation",
+      "control_type": "positive_control",
+      "source_company": "jpmorgan",
+      "source_company_lens_id": "jpmorgan_public_v0_1",
+      "source_company_cutoff": "2026-05-04",
+      "source_role": "swe",
+      "historical_answer_use": "provenance_only_not_model_input",
+      "request": {
+        "categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "evidence": [
+          {
+            "category": "structured_thinking",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "analytical_problem_solving",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "ownership_execution",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "impact_results",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "collaboration_communication",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "growth_mindset",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          }
+        ],
+        "permitted_categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "kappa_company": 10.0,
+        "temporal_decay_rate_per_day": 0.0,
+        "routing_gamma": 0.7,
+        "support_tau": 8.0,
+        "abstention_threshold": 0.0,
+        "parent_distribution": {
+          "structured_thinking": 0.16,
+          "analytical_problem_solving": 0.18,
+          "ownership_execution": 0.19,
+          "impact_results": 0.2,
+          "collaboration_communication": 0.15,
+          "growth_mindset": 0.12
+        },
+        "routing_levels": [
+          {
+            "name": "L0_full_parent_context",
+            "backoff_distance": 0,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          },
+          {
+            "name": "L4_archetype_context",
+            "backoff_distance": 4,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.18,
+              "analytical_problem_solving": 0.28,
+              "ownership_execution": 0.16,
+              "impact_results": 0.16,
+              "collaboration_communication": 0.12,
+              "growth_mindset": 0.1
+            }
+          },
+          {
+            "name": "L5_generic_context",
+            "backoff_distance": 5,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "E1B-N1-rbc-retail",
+      "study": "company_prior_differentiation",
+      "control_type": "negative_control",
+      "source_company": "rbc",
+      "source_company_lens_id": "rbc_public_v0_1",
+      "source_company_cutoff": "2026-05-09",
+      "source_role": "retail_banking",
+      "historical_answer_use": "provenance_only_not_model_input",
+      "request": {
+        "categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "evidence": [
+          {
+            "category": "structured_thinking",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "analytical_problem_solving",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "ownership_execution",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "impact_results",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "collaboration_communication",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "growth_mindset",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          }
+        ],
+        "permitted_categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "kappa_company": 10.0,
+        "temporal_decay_rate_per_day": 0.0,
+        "routing_gamma": 0.7,
+        "support_tau": 8.0,
+        "abstention_threshold": 0.0,
+        "parent_distribution": {
+          "structured_thinking": 0.16,
+          "analytical_problem_solving": 0.18,
+          "ownership_execution": 0.19,
+          "impact_results": 0.2,
+          "collaboration_communication": 0.15,
+          "growth_mindset": 0.12
+        },
+        "routing_levels": [
+          {
+            "name": "L0_full_parent_context",
+            "backoff_distance": 0,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          },
+          {
+            "name": "L4_archetype_context",
+            "backoff_distance": 4,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.14,
+              "analytical_problem_solving": 0.16,
+              "ownership_execution": 0.2,
+              "impact_results": 0.21,
+              "collaboration_communication": 0.19,
+              "growth_mindset": 0.1
+            }
+          },
+          {
+            "name": "L5_generic_context",
+            "backoff_distance": 5,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "E1B-N1-cibc-retail",
+      "study": "company_prior_differentiation",
+      "control_type": "negative_control",
+      "source_company": "cibc",
+      "source_company_lens_id": "cibc_public_v0_1",
+      "source_company_cutoff": "2026-05-04",
+      "source_role": "retail_banking",
+      "historical_answer_use": "provenance_only_not_model_input",
+      "request": {
+        "categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "evidence": [
+          {
+            "category": "structured_thinking",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "analytical_problem_solving",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "ownership_execution",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "impact_results",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "collaboration_communication",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "growth_mindset",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          }
+        ],
+        "permitted_categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "kappa_company": 10.0,
+        "temporal_decay_rate_per_day": 0.0,
+        "routing_gamma": 0.7,
+        "support_tau": 8.0,
+        "abstention_threshold": 0.0,
+        "parent_distribution": {
+          "structured_thinking": 0.16,
+          "analytical_problem_solving": 0.18,
+          "ownership_execution": 0.19,
+          "impact_results": 0.2,
+          "collaboration_communication": 0.15,
+          "growth_mindset": 0.12
+        },
+        "routing_levels": [
+          {
+            "name": "L0_full_parent_context",
+            "backoff_distance": 0,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          },
+          {
+            "name": "L4_archetype_context",
+            "backoff_distance": 4,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.14,
+              "analytical_problem_solving": 0.16,
+              "ownership_execution": 0.2,
+              "impact_results": 0.21,
+              "collaboration_communication": 0.19,
+              "growth_mindset": 0.1
+            }
+          },
+          {
+            "name": "L5_generic_context",
+            "backoff_distance": 5,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "E1B-N1-bmo-retail",
+      "study": "company_prior_differentiation",
+      "control_type": "negative_control",
+      "source_company": "bmo",
+      "source_company_lens_id": "bmo_public_v0_1",
+      "source_company_cutoff": "2026-05-04",
+      "source_role": "retail_banking",
+      "historical_answer_use": "provenance_only_not_model_input",
+      "request": {
+        "categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "evidence": [
+          {
+            "category": "structured_thinking",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "analytical_problem_solving",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "ownership_execution",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "impact_results",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "collaboration_communication",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "growth_mindset",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          }
+        ],
+        "permitted_categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "kappa_company": 10.0,
+        "temporal_decay_rate_per_day": 0.0,
+        "routing_gamma": 0.7,
+        "support_tau": 8.0,
+        "abstention_threshold": 0.0,
+        "parent_distribution": {
+          "structured_thinking": 0.16,
+          "analytical_problem_solving": 0.18,
+          "ownership_execution": 0.19,
+          "impact_results": 0.2,
+          "collaboration_communication": 0.15,
+          "growth_mindset": 0.12
+        },
+        "routing_levels": [
+          {
+            "name": "L0_full_parent_context",
+            "backoff_distance": 0,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          },
+          {
+            "name": "L4_archetype_context",
+            "backoff_distance": 4,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.14,
+              "analytical_problem_solving": 0.16,
+              "ownership_execution": 0.2,
+              "impact_results": 0.21,
+              "collaboration_communication": 0.19,
+              "growth_mindset": 0.1
+            }
+          },
+          {
+            "name": "L5_generic_context",
+            "backoff_distance": 5,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "E1B-R1-swe",
+      "study": "role_prior_differentiation",
+      "control_type": "positive_control",
+      "source_role": "swe",
+      "source_role_lens_id": "role_template_swe_v0_1",
+      "historical_shared_answer": "I would first clarify the goal, define success criteria, identify the key risk or constraint, compare options, communicate trade-offs to stakeholders, and monitor the outcome after the decision.",
+      "historical_answer_use": "provenance_only_not_model_input",
+      "request": {
+        "categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "evidence": [
+          {
+            "category": "structured_thinking",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "analytical_problem_solving",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "ownership_execution",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "impact_results",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "collaboration_communication",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "growth_mindset",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          }
+        ],
+        "permitted_categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "kappa_company": 10.0,
+        "temporal_decay_rate_per_day": 0.0,
+        "routing_gamma": 0.7,
+        "support_tau": 8.0,
+        "abstention_threshold": 0.0,
+        "parent_distribution": {
+          "structured_thinking": 0.18,
+          "analytical_problem_solving": 0.28,
+          "ownership_execution": 0.16,
+          "impact_results": 0.16,
+          "collaboration_communication": 0.12,
+          "growth_mindset": 0.1
+        },
+        "routing_levels": [
+          {
+            "name": "L0_full_parent_context",
+            "backoff_distance": 0,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          },
+          {
+            "name": "L5_generic_context",
+            "backoff_distance": 5,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "E1B-R1-data",
+      "study": "role_prior_differentiation",
+      "control_type": "positive_control",
+      "source_role": "data_analytics",
+      "source_role_lens_id": "role_template_data_analytics_v0_1",
+      "historical_shared_answer": "I would first clarify the goal, define success criteria, identify the key risk or constraint, compare options, communicate trade-offs to stakeholders, and monitor the outcome after the decision.",
+      "historical_answer_use": "provenance_only_not_model_input",
+      "request": {
+        "categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "evidence": [
+          {
+            "category": "structured_thinking",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "analytical_problem_solving",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "ownership_execution",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "impact_results",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "collaboration_communication",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "growth_mindset",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          }
+        ],
+        "permitted_categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "kappa_company": 10.0,
+        "temporal_decay_rate_per_day": 0.0,
+        "routing_gamma": 0.7,
+        "support_tau": 8.0,
+        "abstention_threshold": 0.0,
+        "parent_distribution": {
+          "structured_thinking": 0.2,
+          "analytical_problem_solving": 0.26,
+          "ownership_execution": 0.13,
+          "impact_results": 0.2,
+          "collaboration_communication": 0.13,
+          "growth_mindset": 0.08
+        },
+        "routing_levels": [
+          {
+            "name": "L0_full_parent_context",
+            "backoff_distance": 0,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          },
+          {
+            "name": "L5_generic_context",
+            "backoff_distance": 5,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "E1B-R1-retail",
+      "study": "role_prior_differentiation",
+      "control_type": "positive_control",
+      "source_role": "retail_banking",
+      "source_role_lens_id": "role_template_retail_banking_v0_1",
+      "historical_shared_answer": "I would first clarify the goal, define success criteria, identify the key risk or constraint, compare options, communicate trade-offs to stakeholders, and monitor the outcome after the decision.",
+      "historical_answer_use": "provenance_only_not_model_input",
+      "request": {
+        "categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "evidence": [
+          {
+            "category": "structured_thinking",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "analytical_problem_solving",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "ownership_execution",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "impact_results",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "collaboration_communication",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "growth_mindset",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          }
+        ],
+        "permitted_categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "kappa_company": 10.0,
+        "temporal_decay_rate_per_day": 0.0,
+        "routing_gamma": 0.7,
+        "support_tau": 8.0,
+        "abstention_threshold": 0.0,
+        "parent_distribution": {
+          "structured_thinking": 0.14,
+          "analytical_problem_solving": 0.16,
+          "ownership_execution": 0.2,
+          "impact_results": 0.21,
+          "collaboration_communication": 0.19,
+          "growth_mindset": 0.1
+        },
+        "routing_levels": [
+          {
+            "name": "L0_full_parent_context",
+            "backoff_distance": 0,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          },
+          {
+            "name": "L5_generic_context",
+            "backoff_distance": 5,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "E1B-R1-risk",
+      "study": "role_prior_differentiation",
+      "control_type": "positive_control",
+      "source_role": "risk_compliance",
+      "source_role_lens_id": "role_template_risk_compliance_v0_1",
+      "historical_shared_answer": "I would first clarify the goal, define success criteria, identify the key risk or constraint, compare options, communicate trade-offs to stakeholders, and monitor the outcome after the decision.",
+      "historical_answer_use": "provenance_only_not_model_input",
+      "request": {
+        "categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "evidence": [
+          {
+            "category": "structured_thinking",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "analytical_problem_solving",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "ownership_execution",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "impact_results",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "collaboration_communication",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "growth_mindset",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          }
+        ],
+        "permitted_categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "kappa_company": 10.0,
+        "temporal_decay_rate_per_day": 0.0,
+        "routing_gamma": 0.7,
+        "support_tau": 8.0,
+        "abstention_threshold": 0.0,
+        "parent_distribution": {
+          "structured_thinking": 0.18,
+          "analytical_problem_solving": 0.24,
+          "ownership_execution": 0.22,
+          "impact_results": 0.16,
+          "collaboration_communication": 0.13,
+          "growth_mindset": 0.07
+        },
+        "routing_levels": [
+          {
+            "name": "L0_full_parent_context",
+            "backoff_distance": 0,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          },
+          {
+            "name": "L5_generic_context",
+            "backoff_distance": 5,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "E1B-R1-consult",
+      "study": "role_prior_differentiation",
+      "control_type": "positive_control",
+      "source_role": "consulting_case_pei",
+      "source_role_lens_id": "role_template_consulting_case_pei_v0_1",
+      "historical_shared_answer": "I would first clarify the goal, define success criteria, identify the key risk or constraint, compare options, communicate trade-offs to stakeholders, and monitor the outcome after the decision.",
+      "historical_answer_use": "provenance_only_not_model_input",
+      "request": {
+        "categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "evidence": [
+          {
+            "category": "structured_thinking",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "analytical_problem_solving",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "ownership_execution",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "impact_results",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "collaboration_communication",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          },
+          {
+            "category": "growth_mindset",
+            "authorized": true,
+            "quality": 0.5,
+            "age_days": 0.0
+          }
+        ],
+        "permitted_categories": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "kappa_company": 10.0,
+        "temporal_decay_rate_per_day": 0.0,
+        "routing_gamma": 0.7,
+        "support_tau": 8.0,
+        "abstention_threshold": 0.0,
+        "parent_distribution": {
+          "structured_thinking": 0.29,
+          "analytical_problem_solving": 0.26,
+          "ownership_execution": 0.12,
+          "impact_results": 0.15,
+          "collaboration_communication": 0.14,
+          "growth_mindset": 0.04
+        },
+        "routing_levels": [
+          {
+            "name": "L0_full_parent_context",
+            "backoff_distance": 0,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          },
+          {
+            "name": "L5_generic_context",
+            "backoff_distance": 5,
+            "authorized": true,
+            "applicable": true,
+            "coverage": 1.0,
+            "distribution": {
+              "structured_thinking": 0.16666666666666666,
+              "analytical_problem_solving": 0.16666666666666666,
+              "ownership_execution": 0.16666666666666666,
+              "impact_results": 0.16666666666666666,
+              "collaboration_communication": 0.16666666666666666,
+              "growth_mindset": 0.16666666666666666
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
