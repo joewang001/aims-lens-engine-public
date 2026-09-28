@@ -9,6 +9,7 @@ repository-code: "https://github.com/joewang001/aims-lens-engine-public"
 url: "https://github.com/joewang001/aims-lens-engine-public"
 license: Apache-2.0
 version: "0.11.0-paper-v1.5"
+date-released: 2026-09-28
 keywords:
   - interview practice
   - evidence provenance

@@ -5,19 +5,19 @@
 
 AIMS Lens Engine is an independently deployable, institution-agnostic **evidence-governed interview reasoning and practice-decision engine**. It turns heterogeneous, differently authorized evidence into versioned practice hypotheses, then uses explicit uncertainty, routing, backoff, and abstention rules to decide what interview-practice follow-up deserves attention next.
 
-**Release-candidate artifact:** `0.11.0-paper-v1.5`
+**Freeze-metadata artifact:** `0.11.0-paper-v1.5`
 
 **Aligned manuscript:** `v1.5`
 
 **v1.5 result-bearing experimental baseline:** `3f2a4d3b8ebfdf2535233e76ac6cc4debd0a1a75`
 
-**Target immutable archival ref:** `v0.11.0-paper-v1.5`
+**Immutable archival ref:** `v0.11.0-paper-v1.5`
 
-**Release status:** `candidate`
+**Release status:** `frozen`
 
-**Freeze gate:** create the immutable v1.5 tag only after the final freeze-metadata commit passes the complete remote Paper Artifact CI, including Experiment 6 output regeneration.
+**Tag creation gate:** create the immutable v1.5 tag only after this exact freeze-metadata commit passes the complete remote Paper Artifact CI, including Experiment 6 output regeneration.
 
-**Release date:** pending final v1.5 freeze
+**Release date:** `2026-09-28`
 
 **Previous frozen paper artifact:** `v0.10.0-paper-v1.4` at `a0d89f33aaa7303404a9b26cc7bec5a331a6e82f`
 

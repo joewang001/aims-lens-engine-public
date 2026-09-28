@@ -1,12 +1,12 @@
-# Paper artifact allowlist. This is intentionally narrower than public_manifest.yaml.
+# Frozen-paper artifact allowlist. This is intentionally narrower than public_manifest.yaml.
 version: 1
 paper_version: v1.5
 artifact_version: 0.11.0-paper-v1.5
-release_status: candidate
+release_status: frozen
 branch_base_commit: a0d89f33aaa7303404a9b26cc7bec5a331a6e82f
 experimental_bundle_commit: 3f2a4d3b8ebfdf2535233e76ac6cc4debd0a1a75
 target_release_tag: v0.11.0-paper-v1.5
-frozen_artifact_ref: pending_until_release_freeze
+frozen_artifact_ref: v0.11.0-paper-v1.5
 previous_frozen_artifact_ref: v0.10.0-paper-v1.4
 previous_frozen_commit: a0d89f33aaa7303404a9b26cc7bec5a331a6e82f
 repository: joewang001/aims-lens-engine-public

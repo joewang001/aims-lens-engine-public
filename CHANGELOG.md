@@ -1,7 +1,8 @@
 # Changelog
 
-## 0.11.0-paper-v1.5 (release candidate)
+## 0.11.0-paper-v1.5
 
+- Finalized v1.5 freeze metadata after release-candidate Commit E `79ccb9ea039e6320101b58e732da0a182bb7b973` passed remote Paper Artifact CI #32 (run `36465884041`).
 - Added the pre-specified K=5 Experiment 6 routing–shrinkage overlap ablation without modifying the frozen v1.4 artifact.
 - Recorded 81 factorial conditions, 40,500 paired L0-only versus routed realizations, and 8.1 million synthetic held-out observations; routing effects are reported as regime-dependent rather than universally beneficial.
 - Added cross-environment Experiment 6 reproducibility: committed outputs regenerate byte-for-byte on Windows/Python 3.11 and GitHub Actions Ubuntu/Python 3.11.
