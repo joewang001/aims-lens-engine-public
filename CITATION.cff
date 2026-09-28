@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use the AIMS Lens Engine paper artifact, please cite the associated manuscript and the frozen software tag or commit."
-title: "AIMS Lens Engine: Evidence-Governed Probabilistic Framework Reference Implementation"
+title: "AIMS Lens Engine: Evidence-Governed Framework Reference Implementation"
 type: software
 authors:
   - family-names: Wang
@@ -8,8 +8,7 @@ authors:
 repository-code: "https://github.com/joewang001/aims-lens-engine-public"
 url: "https://github.com/joewang001/aims-lens-engine-public"
 license: Apache-2.0
-version: "0.10.0-paper-v1.4"
-date-released: 2026-09-21
+version: "0.11.0-paper-v1.5"
 keywords:
   - interview practice
   - evidence provenance
@@ -19,7 +18,7 @@ keywords:
   - employment technology
 preferred-citation:
   type: article
-  title: "AIMS Lens Engine: An Evidence-Governed Probabilistic Framework for Interview Follow-Up Simulation and Practice Prioritization"
+  title: "AIMS Lens Engine: An Evidence-Governed Framework for Interview Follow-Up Simulation and Practice Prioritization"
   authors:
     - family-names: Wang
       given-names: Jiuyu (Joe)

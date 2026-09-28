@@ -1,4 +1,4 @@
-# Math-to-Code Completeness Audit — Manuscript v1.3
+# Math-to-Code Completeness Audit — Manuscript v1.5
 
 **Scope.** This audit maps every mathematical expression in manuscript Section 5, every algorithm/listing that defines public research behavior, and every stated operational threshold to the paper-release reference artifact. It distinguishes reproducible reference logic from empirical quantities that have not yet been fitted or validated.
 
@@ -13,7 +13,7 @@
 | 5 | Authorization-gated, quality- and recency-weighted counts | `research_core/evidence.py::weighted_counts`, `exponential_recency_weight` | Complete and equation-aligned | Authorization is binary; recency is exactly `exp(-delta * age)`. |
 | 6 | Company posterior Dirichlet parameters | `research_core/inference.py::posterior_alpha` | Complete | Works with fractional effective counts. |
 | 7 | Posterior mean | `research_core/inference.py::posterior_mean` | Complete | Direct normalized posterior-alpha calculation. |
-| 8 | Routed predictive mixture | `research_core/routing.py::route_mixture` | Corrected v1.4 fail-closed logic | Routing components are restricted to permitted categories and contribute only when positive permitted mass remains. Zero-permitted-mass components are excluded rather than converted to a uniform distribution. |
+| 8 | Governance-oriented routing decision mixture | `research_core/routing.py::route_mixture` | Corrected v1.4 fail-closed logic | Routing components are restricted to permitted categories and contribute only when positive permitted mass remains. Zero-permitted-mass components are excluded rather than converted to a uniform distribution. |
 | 9 | Routing weights | `research_core/routing.py::route_mixture` | Corrected v1.4 fail-closed logic | Implements authorization × applicability × coverage × gamma^distance, then normalizes weights only across components that retain positive probability mass on permitted categories. |
 | 10 | Normalized entropy | `research_core/uncertainty.py::normalized_entropy` | Complete and corrected | Denominator uses permitted category count `K_L`, not only non-zero entries. |
 | 11 | Data-support score `1-exp(-n_eff/tau)` | `research_core/uncertainty.py::data_support`, `research_core/service.py::prioritize_followups` | Corrected v1.4 reference logic | `n_eff` used for release/abstention is the sum of authorization-, quality-, and recency-weighted counts over the current permitted categories only. Compatibility-masked categories contribute zero released support. Explicitly not a correctness probability. |
@@ -24,7 +24,7 @@
 
 ### Posterior uncertainty
 
-The manuscript also states that Dirichlet posteriors provide credible intervals. `research_core/inference.py::credible_intervals` supplies deterministic-seed Monte Carlo marginal intervals using only the Python standard library. These are **conditional Dirichlet intervals given the supplied parameter vector**. Under the recursive plug-in hierarchy, upper-level posterior uncertainty is not propagated through those intervals. Experiment 5 separately quantifies that approximation under a declared synthetic binary hierarchy. Neither the interval utility nor Experiment 5 implies external empirical coverage has been established.
+The manuscript also states that Dirichlet posteriors provide credible intervals. `research_core/inference.py::credible_intervals` supplies deterministic-seed Monte Carlo marginal intervals using only the Python standard library. These are **conditional Dirichlet intervals given the supplied parameter vector**. Under the recursive plug-in hierarchy, upper-level posterior uncertainty is not propagated through those intervals. Experiment 5 separately quantifies that approximation under a declared synthetic binary latent-parameter hierarchy with fixed root base distribution and fixed concentration settings. Neither the interval utility nor Experiment 5 implies external empirical coverage has been established.
 
 ## B. Manuscript listings / algorithms
 
@@ -81,7 +81,7 @@ These should be corrected in manuscript v1.3 rather than hidden in code:
 - Standalone / offline mathematical utilities: Eq. **1, 2, and 12–15** are not part of the candidate prioritization call graph. Eq. 12–14 are evaluation / monitoring metrics; Eq. 15 is an acquisition-scoring utility.
 - Public decision algorithms/listings with counterpart: **14/14**, with Listing 6 intentionally partial at the NER layer and explicitly disclosed. Listing 14 is now described as the candidate follow-up prioritization runtime rather than shorthand for every mathematical utility.
 - Declared thresholds centralized: **10/10**, but three (`lambda_0`, observation half-life `kappa`, min sample 30) require manuscript clarification before stronger executable semantics are justified.
-- Controlled verification claims: artifact-backed for Experiments 1A, 1B, 2, and 3; Experiment 4 provides adversarial verification of corrective findings F1–F4; Experiment 5 provides the corrective synthetic hierarchy-approximation benchmark for F5. External participant, named-employer, calibration, fairness, current-production-LLM, and employment-outcome validation remain future empirical work.
+- Controlled verification claims: artifact-backed for Experiments 1A, 1B, 2, and 3; Experiment 4 provides adversarial verification of corrective findings F1–F4; Experiment 5 provides a binary latent-parameter hierarchy-approximation benchmark; Experiment 6 provides a pre-specified K=5 routing–shrinkage overlap ablation with synthetic held-out diagnostics. External participant, named-employer, empirical calibration, fairness, current-production-LLM, and employment-outcome validation remain future empirical work.
 
 See `docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md` for the reviewer-facing equation-by-equation separation of executable counterpart, runtime integration, evaluation use, controlled experimental coverage, and external empirical validation.
 
@@ -105,6 +105,16 @@ The corrective branch adds two experiments without rewriting the immutable v1.3 
 - **Experiment 4 — Adversarial Mathematical Alignment:** four deterministic cases reproduce the frozen v1.3 counterexamples and verify the v1.4 corrections for Eq. 15 parameter information gain, top-label calibration diagnostics, permitted-category support, and zero-permitted-mass routing.
 - **Experiment 5 — Hierarchy Approximation Benchmark:** a pre-specified synthetic binary hierarchy compares recursive plug-in shrinkage with a deterministic uncertainty-propagating numerical reference across sparse, intermediate, and dense regimes.
 
-Experiment 4 is evidence of internal mathematical–implementation correction, not external calibration or real-world efficacy. Experiment 5 is evidence about approximation behavior under the declared synthetic hierarchy, not proof that either estimator is externally valid for employer behavior or employment outcomes.
+Experiment 4 is evidence of internal mathematical–implementation correction, not external calibration or real-world efficacy. Experiment 5 is evidence about approximation behavior under its declared K=2 fixed-root synthetic hierarchy, not proof of general K-category accuracy, repeated-sampling coverage, simulation-based calibration, employer behavior, or employment outcomes.
 
 The v1.4 integration gate therefore consists of the paper artifact validator, documentation-alignment validator, unit tests, deterministic demo, Experiments 1A/1B/2/3/4/5, committed-output zero diff, and `git diff --check`.
+
+## H. v1.5 routing–shrinkage overlap alignment
+
+Experiment 6 was pre-specified before result-bearing execution and compares the already-shrunken L0 distribution with the current L0/L3/L5 routing mixture under a K=5 synthetic factorial. It crosses local evidence density, broader-context mismatch, company-level shrinkage concentration, and routing discount, using paired synthetic training realizations and synthetic held-out observations.
+
+The experiment exercises the **partial runtime form** of hierarchical company shrinkage plus Eq. 8–9 routing. It does not convert Eq. 8 into Bayesian model averaging and does not establish that routing weights are posterior model probabilities. Its controlled result is regime-dependent: routing can improve synthetic predictive scores under aligned/sparse conditions and can worsen them under strong broader-context mismatch.
+
+Experiment 6 therefore supports a bounded architecture claim about numerical interaction between shrinkage and routing. It does not establish external calibration, optimal routing, absence of redundancy in real populations, fairness, or employment-outcome validity.
+
+The v1.5 integration gate consists of the paper artifact validator, documentation-alignment validator, unit tests, deterministic demo, Experiments 1A–6, committed-output zero diff, and `git diff --check`.

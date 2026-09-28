@@ -1,6 +1,6 @@
 # Research Artifact Boundary
 
-This document defines the boundary of the research artifact associated with the manuscript **AIMS Lens Engine: An Evidence-Governed Probabilistic Framework for Interview Follow-Up Simulation and Practice Prioritization**.
+This document defines the boundary of the research artifact associated with the manuscript **AIMS Lens Engine: An Evidence-Governed Framework for Interview Follow-Up Simulation and Practice Prioritization**.
 
 ## Research-core purpose
 

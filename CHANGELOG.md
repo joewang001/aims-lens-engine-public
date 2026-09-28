@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.11.0-paper-v1.5 (release candidate)
+
+- Added the pre-specified K=5 Experiment 6 routing–shrinkage overlap ablation without modifying the frozen v1.4 artifact.
+- Recorded 81 factorial conditions, 40,500 paired L0-only versus routed realizations, and 8.1 million synthetic held-out observations; routing effects are reported as regime-dependent rather than universally beneficial.
+- Added cross-environment Experiment 6 reproducibility: committed outputs regenerate byte-for-byte on Windows/Python 3.11 and GitHub Actions Ubuntu/Python 3.11.
+- Reframed compatibility-masked and routed outputs as policy-constrained / routing decision distributions rather than automatically calibrated posterior-predictive claims.
+- Narrowed calibration language to metric implementation, protocol, and claims gates; no held-out external empirical calibration is claimed.
+- Narrowed Experiment 5 to a synthetic binary latent-parameter hierarchy-approximation benchmark and retained numerical-convergence-only PASS semantics.
+- Updated paper-artifact documentation, traceability, and release metadata for manuscript v1.5. The immutable v1.4 tag remains unchanged.
+
 ## 0.10.0-paper-v1.4
 
 - Finalized v1.4 freeze metadata after the release-candidate commit passed remote Paper Artifact CI.

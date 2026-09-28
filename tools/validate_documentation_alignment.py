@@ -39,11 +39,12 @@ MATURITY_TOKENS = [
 ]
 
 CURRENT_FACT_TOKENS = [
-    "0.10.0-paper-v1.4",
-    "v1.4",
-    "c18899b469e1d579391306872d5834ebf6e3caf3",
+    "0.11.0-paper-v1.5",
+    "v1.5",
+    "3f2a4d3b8ebfdf2535233e76ac6cc4debd0a1a75",
+    "v0.11.0-paper-v1.5",
     "v0.10.0-paper-v1.4",
-    "v0.9.2-paper-v1.3",
+    "a0d89f33aaa7303404a9b26cc7bec5a331a6e82f",
 ]
 
 DEPRECATED_CANONICAL_TOKENS = [
@@ -120,12 +121,12 @@ def main() -> int:
             if token not in text:
                 fail(f"{path} is missing maturity token: {token}")
 
-    # The maintained root READMEs must carry the same v1.4 candidate/freeze identity facts.
+    # The maintained root READMEs must carry the same v1.5 release-candidate identity facts.
     for path in ["README.md", "README.zh-CN.md"]:
         text = read(path)
         for token in CURRENT_FACT_TOKENS:
             if token not in text:
-                fail(f"{path} is missing current v1.4 release fact token: {token}")
+                fail(f"{path} is missing current v1.5 release fact token: {token}")
         for token in DEPRECATED_CANONICAL_TOKENS:
             if token in text:
                 fail(f"{path} contains deprecated canonical content: {token}")

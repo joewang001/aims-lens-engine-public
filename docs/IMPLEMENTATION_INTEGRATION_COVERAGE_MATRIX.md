@@ -1,4 +1,4 @@
-# Implementation–Integration Coverage Matrix — v1.4 Corrective Branch
+# Implementation–Integration Coverage Matrix — v1.5 Routing-Ablation Branch
 
 ## Purpose
 
@@ -32,16 +32,16 @@ That statement does **not** mean all fifteen equations are composed into one end
 | 1 | DAG joint factorization | `research_core/dag.py::joint_factorization`, `validate_dag` | Standalone | No | Unit-level structural test | Not externally validated |
 | 2 | Logistic stopping model | `research_core/stopping.py::stopping_probability` | Standalone | No | Unit-level functional test | Not externally validated; coefficients are not claimed fitted |
 | 3 | Compatibility masking | `research_core/compatibility.py::masked_and_renormalized` | **Integrated** | No | Exp1A; Exp2 A3 | Not externally validated |
-| 4 | Generic → archetype → industry → company hierarchy | `research_core/inference.py::hierarchical_partial_pooling` | **Partial** — runtime uses company-level shrinkage against a supplied parent distribution, not the complete four-level helper | No | Exp2 A2/A4; Exp5 hierarchy approximation benchmark | Not externally validated |
+| 4 | Generic → archetype → industry → company hierarchy | `research_core/inference.py::hierarchical_partial_pooling` | **Partial** — runtime uses company-level shrinkage against a supplied parent distribution, not the complete four-level helper | No | Exp2 A2/A4; Exp5 binary hierarchy benchmark; Exp6 L0 shrinkage path | Not externally validated |
 | 5 | Authorization × quality × recency weighted counts | `research_core/evidence.py::weighted_counts` | **Integrated** | No | Exp1A; Exp2 temporal sensitivity/ablation | Not externally validated |
-| 6 | Dirichlet posterior parameters | `research_core/inference.py::posterior_alpha` | **Integrated indirectly** through `hierarchical_dirichlet_mean` | No | Exp2; Exp5 plug-in comparator | Not externally validated |
-| 7 | Posterior mean | `research_core/inference.py::posterior_mean` | **Integrated indirectly** through `hierarchical_dirichlet_mean` | No | Exp2; Exp5 plug-in comparator | Not externally validated |
-| 8 | Routed predictive mixture | `research_core/routing.py::route_mixture` | **Integrated** | No | Exp1A; Exp2 gamma sensitivity; Exp4 E4-04 | Not externally validated |
-| 9 | Routing weights | `research_core/routing.py::route_mixture` | **Integrated** | No | Exp1A; Exp2 gamma sensitivity | Not externally validated |
+| 6 | Dirichlet posterior parameters | `research_core/inference.py::posterior_alpha` | **Integrated indirectly** through `hierarchical_dirichlet_mean` | No | Exp2; Exp5 plug-in comparator; Exp6 | Not externally validated |
+| 7 | Posterior mean | `research_core/inference.py::posterior_mean` | **Integrated indirectly** through `hierarchical_dirichlet_mean` | No | Exp2; Exp5 plug-in comparator; Exp6 | Not externally validated |
+| 8 | Governance-oriented routing decision mixture | `research_core/routing.py::route_mixture` | **Integrated** | No | Exp1A; Exp2 gamma sensitivity; Exp4 E4-04; Exp6 overlap ablation | Not externally validated; not claimed as Bayesian model averaging |
+| 9 | Routing weights | `research_core/routing.py::route_mixture` | **Integrated** | No | Exp1A; Exp2 gamma sensitivity; Exp6 overlap ablation | Not externally validated; coverage inputs are declared policy inputs |
 | 10 | Normalized entropy | `research_core/uncertainty.py::normalized_entropy` | **Integrated** | Runtime diagnostic summary | Exp1A baseline trace | Not externally validated |
 | 11 | Data-support score | `research_core/uncertainty.py::data_support`, `research_core/service.py` | **Integrated** | Runtime release / abstention support summary | Exp1A; Exp4 E4-03 | Not externally validated |
-| 12 | Multiclass Brier score | `research_core/evaluation.py::multiclass_brier` | Standalone | **Evaluation** | Unit-level metric test | No external calibration claim |
-| 13 | Top-label ECE | `research_core/evaluation.py::top_label_ece` | Standalone | **Evaluation** | Exp4 E4-02 | No external calibration claim |
+| 12 | Multiclass Brier score | `research_core/evaluation.py::multiclass_brier` | Standalone | **Evaluation** | Unit-level metric test; Exp6 synthetic held-out diagnostic | No external calibration claim |
+| 13 | Top-label ECE | `research_core/evaluation.py::top_label_ece` | Standalone | **Evaluation** | Exp4 E4-02; Exp6 synthetic held-out diagnostic | No external calibration claim; ECE remains diagnostic |
 | 14 | KL drift statistic | `research_core/evaluation.py::kl_divergence` | Standalone | **Evaluation / monitoring** | Unit-level metric test | Threshold not externally validated |
 | 15 | Expected parameter information gain | `research_core/active_learning.py::expected_information_gain` | Standalone | Acquisition-scoring utility | Exp4 E4-01 | Not externally validated |
 
@@ -117,3 +117,9 @@ Avoid using the following as shorthand:
 - “Full Bayesian uncertainty propagation” for the recursive plug-in hierarchy.
 - “Validated” without specifying whether the evidence is unit-level, controlled synthetic,
   public-safe semantic regression, or external empirical validation.
+
+## Routing–shrinkage overlap boundary added in v1.5
+
+Experiment 6 directly tests the numerical interaction that can arise when the company-level L0 estimate has already been shrunk toward an L3 parent and broader L3/L5 distributions subsequently receive non-zero routing weight. The two stages retain different semantics—within-level statistical shrinkage versus governance-oriented cross-level routing—but their broader-context influence can overlap numerically.
+
+Under the pre-specified K=5 synthetic factorial, routing improved mean log loss in 71 of 81 conditions, while all 10 conditions with worsened mean log loss occurred under the strongest declared broader-context mismatch. This does not establish an optimal routing rule. It establishes only that the current architecture is regime-dependent under the declared synthetic design and that broader-context mismatch must remain an explicit governance concern.

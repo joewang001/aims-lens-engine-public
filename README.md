@@ -5,21 +5,21 @@
 
 AIMS Lens Engine is an independently deployable, institution-agnostic **evidence-governed interview reasoning and practice-decision engine**. It turns heterogeneous, differently authorized evidence into versioned practice hypotheses, then uses explicit uncertainty, routing, backoff, and abstention rules to decide what interview-practice follow-up deserves attention next.
 
-**Freeze-metadata artifact:** `0.10.0-paper-v1.4`
+**Release-candidate artifact:** `0.11.0-paper-v1.5`
 
-**Aligned manuscript:** `v1.4`
+**Aligned manuscript:** `v1.5`
 
-**Corrective experimental baseline:** `c18899b469e1d579391306872d5834ebf6e3caf3`
+**v1.5 result-bearing experimental baseline:** `3f2a4d3b8ebfdf2535233e76ac6cc4debd0a1a75`
 
-**Immutable archival ref:** `v0.10.0-paper-v1.4`
+**Target immutable archival ref:** `v0.11.0-paper-v1.5`
 
-**Release status:** `frozen`
+**Release status:** `candidate`
 
-**Tag creation gate:** the immutable tag is created only after this exact freeze-metadata commit passes remote Paper Artifact CI.
+**Freeze gate:** create the immutable v1.5 tag only after the final freeze-metadata commit passes the complete remote Paper Artifact CI, including Experiment 6 output regeneration.
 
-**Release date:** `2026-09-21`
+**Release date:** pending final v1.5 freeze
 
-**Previous frozen paper artifact:** `v0.9.2-paper-v1.3` at `f7fcb6a3129cb58fe20c414f1abe519376def8e1`
+**Previous frozen paper artifact:** `v0.10.0-paper-v1.4` at `a0d89f33aaa7303404a9b26cc7bec5a331a6e82f`
 
 **Public repository:** https://github.com/joewang001/aims-lens-engine-public
 
@@ -226,9 +226,10 @@ python tools/run_exp2_sensitivity_ablation.py
 python tools/run_exp3_semantic_regression.py
 python tools/run_exp4_adversarial_alignment.py
 python tools/run_exp5_hierarchy_approximation.py
+python tools/run_exp6_routing_overlap_ablation.py
 ```
 
-Manuscript v1.4 retains Experiments 1A/1B/2/3 and adds Experiment 4 as internal mathematical–implementation correction evidence plus Experiment 5 as a synthetic approximation benchmark. These results verify declared mechanism behavior, corrective alignment, approximation behavior, and reproducibility under controlled inputs; they do not establish real-employer validity, population fairness, current production-LLM accuracy, interview improvement, or employment-outcome efficacy.
+Manuscript v1.5 retains Experiments 1A–5 and adds Experiment 6 as a pre-specified K=5 routing–shrinkage overlap ablation. Experiment 6 shows regime-dependent synthetic behavior: routing often helps under sparse/aligned conditions but can over-smooth under strong broader-context mismatch. These controlled results do not establish real-employer validity, population calibration or fairness, current production-LLM accuracy, interview improvement, or employment-outcome efficacy.
 
 Documentation alignment can be checked separately:
 

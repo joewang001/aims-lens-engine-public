@@ -1,6 +1,6 @@
 # Paper-to-Code Map
 
-This map is the reviewer-oriented index for manuscript v1.3. It links paper claims to the smallest public artifact that makes the claim inspectable. Executable traceability is distinct from runtime integration; see `docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md` for that separation.
+This map is the reviewer-oriented index for manuscript v1.5. It links paper claims to the smallest public artifact that makes the claim inspectable. Executable traceability is distinct from runtime integration; see `docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md` for that separation.
 
 | Paper location | Claim / object | Primary repo path |
 |---|---|---|
@@ -16,7 +16,7 @@ This map is the reviewer-oriented index for manuscript v1.3. It links paper clai
 | §5.3 Eq. 4 | Hierarchical pooling | `research_core/inference.py::hierarchical_partial_pooling` |
 | §5.3 Eq. 5 | Weighted sufficient statistics | `research_core/evidence.py::weighted_counts` |
 | §5.3 Eq. 6–7 | Dirichlet posterior / mean | `research_core/inference.py` |
-| §5.4 Eq. 8–9 | Six-level mixture / provenance | `research_core/routing.py` |
+| §5.4 Eq. 8–9 | Governance-oriented routing decision mixture / provenance | `research_core/routing.py` |
 | §5.5 Eq. 10–11 | Entropy / evidential support | `research_core/uncertainty.py` |
 | §5.5 Eq. 12–13 | Brier / ECE | `research_core/evaluation.py` |
 | §5.5 Eq. 14 | KL drift | `research_core/evaluation.py::kl_divergence` |
@@ -28,11 +28,12 @@ This map is the reviewer-oriented index for manuscript v1.3. It links paper clai
 | §7.9 | Candidate-answer semantic regression (Experiment 3) | `docs/experiments/EXPERIMENT_3_PROTOCOL.md`, `tools/run_exp3_semantic_regression.py`, `examples/paper/experiments/exp3/` |
 | §7.10 | End-to-end numeric trace and committed-output reproducibility | `examples/paper/experiments/exp1a/results/exp1a_baseline_trace.json`, `.github/workflows/paper-artifact-ci.yml` |
 | v1.4 corrective | Adversarial mathematical alignment (Experiment 4) | `docs/experiments/EXPERIMENT_4_PROTOCOL.md`, `tools/run_exp4_adversarial_alignment.py`, `examples/paper/experiments/exp4/` |
-| v1.4 corrective | Hierarchy plug-in approximation benchmark (Experiment 5) | `docs/experiments/EXPERIMENT_5_PROTOCOL.md`, `tools/run_exp5_hierarchy_approximation.py`, `examples/paper/experiments/exp5/` |
+| v1.4 corrective | Binary latent-parameter hierarchy-approximation benchmark (Experiment 5) | `docs/experiments/EXPERIMENT_5_PROTOCOL.md`, `tools/run_exp5_hierarchy_approximation.py`, `examples/paper/experiments/exp5/` |
+| §7.13 / v1.5 | Routing–shrinkage overlap ablation (Experiment 6) | `docs/experiments/EXPERIMENT_6_PROTOCOL.md`, `tools/run_exp6_routing_overlap_ablation.py`, `examples/paper/experiments/exp6/` |
 | §8.2 | Minimized context boundary | `research_core/privacy.py::MinimizedContextPackage`, schema |
 | §9.4 | Plain-language explanation | `research_core/explanation.py` |
 | §9.5 | Auditable reconstruction | `research_core/audit.py` |
 | Appendix B | Initial research parameters | `config/paper_defaults.json` |
 | Appendix C | Candidate runtime plus standalone research utilities | `research_core/`, `tools/run_paper_artifact_demo.py`, `docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md` |
 
-The historical v1.3 release gate remains validator + unit tests + deterministic demo + Experiments 1A/1B/2/3. For the v1.4 corrective branch, additionally run Experiments 4/5 and documentation alignment, with the committed-output reproducibility gate defined in `.github/workflows/paper-artifact-ci.yml`.
+The historical v1.3 release gate remains validator + unit tests + deterministic demo + Experiments 1A/1B/2/3. For the v1.5 branch, additionally run Experiment 6 and documentation alignment. The Paper Artifact CI regenerates Experiments 1A–6 and requires zero diff across committed experiment outputs.

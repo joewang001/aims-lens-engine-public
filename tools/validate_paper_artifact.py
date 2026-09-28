@@ -50,6 +50,7 @@ REQUIRED_FILES = [
     "docs/IMPLEMENTATION_INTEGRATION_COVERAGE_MATRIX.md",
     "docs/experiments/EXPERIMENT_4_PROTOCOL.md",
     "docs/experiments/EXPERIMENT_5_PROTOCOL.md",
+    "docs/experiments/EXPERIMENT_6_PROTOCOL.md",
     "schemas/interview_dna.schema.json",
     "schemas/evidence_packet.schema.json",
     "schemas/minimized_context.schema.json",
@@ -60,6 +61,8 @@ REQUIRED_FILES = [
     "examples/paper/expected_followup_priority_response.json",
     "tools/run_exp4_adversarial_alignment.py",
     "tools/run_exp5_hierarchy_approximation.py",
+    "tools/run_exp6_routing_overlap_ablation.py",
+    "tests/test_exp6_routing_overlap.py",
     "tools/validate_documentation_alignment.py",
 ]
 
@@ -114,15 +117,15 @@ def validate_manifest() -> None:
     text = (ROOT / "paper_artifact_manifest.yaml").read_text(encoding="utf-8")
 
     required_policy_markers = [
-        "paper_version: v1.4",
-        "artifact_version: 0.10.0-paper-v1.4",
+        "paper_version: v1.5",
+        "artifact_version: 0.11.0-paper-v1.5",
         "candidate_side_practice_only: true",
         "employer_selection_decisions_allowed: false",
         "private_data_allowed: false",
         "network_required_for_demo: false",
-        "branch_base_commit: f7fcb6a3129cb58fe20c414f1abe519376def8e1",
-        "experimental_bundle_commit: c18899b469e1d579391306872d5834ebf6e3caf3",
-        "target_release_tag: v0.10.0-paper-v1.4",
+        "branch_base_commit: a0d89f33aaa7303404a9b26cc7bec5a331a6e82f",
+        "experimental_bundle_commit: 3f2a4d3b8ebfdf2535233e76ac6cc4debd0a1a75",
+        "target_release_tag: v0.11.0-paper-v1.5",
     ]
     for marker in required_policy_markers:
         if marker not in text:

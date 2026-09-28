@@ -5,21 +5,21 @@
 
 AIMS Lens Engine 是一个可独立部署、与具体机构无绑定的 **evidence-governed interview reasoning and practice-decision engine（证据治理的面试推理与练习决策引擎）**。它把来源不同、授权状态不同、质量和时效不同的证据转成有版本的练习假设，再通过明确的 uncertainty、routing、backoff 和 abstention 规则，决定下一步最值得练习和追问的方向。
 
-**Freeze-metadata artifact：** `0.10.0-paper-v1.4`
+**Release-candidate artifact：** `0.11.0-paper-v1.5`
 
-**对应 manuscript：** `v1.4`
+**对应 manuscript：** `v1.5`
 
-**Corrective experimental baseline：** `c18899b469e1d579391306872d5834ebf6e3caf3`
+**v1.5 result-bearing experimental baseline：** `3f2a4d3b8ebfdf2535233e76ac6cc4debd0a1a75`
 
-**Immutable archival ref：** `v0.10.0-paper-v1.4`
+**Target immutable archival ref：** `v0.11.0-paper-v1.5`
 
-**Release status：** `frozen`
+**Release status：** `candidate`
 
-**Tag creation gate：** 只有在这个精确的 freeze-metadata commit 通过远程 Paper Artifact CI 后，才创建 immutable tag。
+**Freeze gate：** 只有最终 v1.5 freeze-metadata commit 通过完整远程 Paper Artifact CI（包括 Experiment 6 输出重生成）后，才创建 immutable tag。
 
-**Release date：** `2026-09-21`
+**Release date：** 待最终 v1.5 freeze
 
-**上一冻结 paper artifact：** `v0.9.2-paper-v1.3`，commit `f7fcb6a3129cb58fe20c414f1abe519376def8e1`
+**上一冻结 paper artifact：** `v0.10.0-paper-v1.4`，commit `a0d89f33aaa7303404a9b26cc7bec5a331a6e82f`
 
 **Public repository：** https://github.com/joewang001/aims-lens-engine-public
 
@@ -228,9 +228,10 @@ python tools/run_exp2_sensitivity_ablation.py
 python tools/run_exp3_semantic_regression.py
 python tools/run_exp4_adversarial_alignment.py
 python tools/run_exp5_hierarchy_approximation.py
+python tools/run_exp6_routing_overlap_ablation.py
 ```
 
-Manuscript v1.4 保留 Experiments 1A/1B/2/3，并新增 Experiment 4 作为 internal mathematical–implementation correction evidence，以及 Experiment 5 作为 synthetic approximation benchmark。这些结果验证受控输入下的机制行为、corrective alignment、approximation behavior 与可复现性；不能外推为 real-employer validity、population fairness、当前 production LLM accuracy、面试提升或 employment-outcome efficacy。
+Manuscript v1.5 保留 Experiments 1A–5，并新增预先规定的 K=5 Experiment 6 routing–shrinkage overlap ablation。Experiment 6 显示明显的 regime dependence：在 sparse/aligned 条件下 routing 往往有帮助，但在 strong broader-context mismatch 下可能产生 over-smoothing。这些受控结果不能外推为 real-employer validity、population calibration 或 fairness、当前 production LLM accuracy、面试提升或 employment-outcome efficacy。
 
 双语文档一致性单独检查：
 
