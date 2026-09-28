@@ -5,6 +5,7 @@ on:
     branches:
       - paper-release-readiness-v1.1
       - paper-math-alignment-v1.4
+      - paper-routing-ablation-v1.5
   pull_request:
     paths:
       - "research_core/**"
@@ -19,6 +20,7 @@ on:
       - "tools/run_exp3_semantic_regression.py"
       - "tools/run_exp4_adversarial_alignment.py"
       - "tools/run_exp5_hierarchy_approximation.py"
+      - "tools/run_exp6_routing_overlap_ablation.py"
       - "tools/validate_paper_artifact.py"
       - "tools/validate_documentation_alignment.py"
       - "docs/PAPER_TO_CODE_MAP.md"
@@ -67,5 +69,7 @@ jobs:
         run: python tools/run_exp4_adversarial_alignment.py
       - name: Run Experiment 5 hierarchy approximation benchmark
         run: python tools/run_exp5_hierarchy_approximation.py
+      - name: Run Experiment 6 routing-shrinkage overlap ablation
+        run: python tools/run_exp6_routing_overlap_ablation.py
       - name: Verify committed experiment outputs
         run: git diff --exit-code -- examples/paper/experiments
