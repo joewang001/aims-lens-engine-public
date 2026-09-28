@@ -1,0 +1,99 @@
+{
+  "company_slug": "oracle",
+  "company": "Oracle",
+  "collected_at": "2026-09-28T20:04:52Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "technology",
+      "enterprise software",
+      "cloud",
+      "database"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public enterprise software, database, and cloud infrastructure company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Oracle homepage",
+      "url": "https://www.oracle.com/",
+      "confidence": 0.8,
+      "public_safe_signal": "Oracle publicly positions itself around cloud applications, database technology, infrastructure, enterprise software, data, automation, and business operations.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "ORACLE-OFFICIAL-001",
+      "date_accessed": "2026-09-28"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Oracle careers page",
+      "url": "https://www.oracle.com/careers/",
+      "confidence": 0.76,
+      "public_safe_signal": "Careers messaging points toward enterprise technology work, customer impact, cloud, applications, engineering, sales, support, and global collaboration.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "ORACLE-CAREERS-002",
+      "date_accessed": "2026-09-28"
+    },
+    {
+      "source_type": "official_investor_relations",
+      "title": "Oracle investor relations",
+      "url": "https://investor.oracle.com/",
+      "confidence": 0.7,
+      "public_safe_signal": "Investor materials provide public context for cloud growth, database and application businesses, capital allocation, margin priorities, and market risk.",
+      "dimensions": [
+        "company_says",
+        "risk_warnings"
+      ],
+      "evidence_id": "ORACLE-IR-003",
+      "date_accessed": "2026-09-28"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "enterprise_software_behavioral",
+        "generated_question": "Tell me about a time you improved reliability, adoption, or business value in an enterprise software or data environment.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Names the enterprise user or customer need.",
+          "Explains technical or operational constraints.",
+          "Shows how adoption, reliability, or value was improved.",
+          "Uses concrete evidence rather than generic platform claims."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "enterprise_data_cloud",
+        "role_family": "Enterprise data, applications, and cloud roles",
+        "signals": [
+          "Links platform or data decisions to customer operations, reliability, and measurable value.",
+          "Shows practical judgment across legacy systems, integration, cost, and adoption."
+        ]
+      }
+    ]
+  }
+}

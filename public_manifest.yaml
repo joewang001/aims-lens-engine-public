@@ -104,6 +104,12 @@ initial_public_release:
     - slug: ibm
       path: company_lenses/ibm/
       status: existing_candidate
+    - slug: adobe
+      path: company_lenses/adobe/
+      status: existing_candidate
+    - slug: oracle
+      path: company_lenses/oracle/
+      status: existing_candidate
 
 allow_paths:
   root_files:
@@ -403,6 +409,24 @@ allow_paths:
     - company_lenses/ibm/limits.md
     - company_lenses/ibm/validation_report.md
     - company_lenses/ibm/role_overlays/
+    - company_lenses/adobe/README.md
+    - company_lenses/adobe/profile.json
+    - company_lenses/adobe/evidence.md
+    - company_lenses/adobe/rubric.md
+    - company_lenses/adobe/question_bank.json
+    - company_lenses/adobe/rewrite_rules.md
+    - company_lenses/adobe/limits.md
+    - company_lenses/adobe/validation_report.md
+    - company_lenses/adobe/role_overlays/
+    - company_lenses/oracle/README.md
+    - company_lenses/oracle/profile.json
+    - company_lenses/oracle/evidence.md
+    - company_lenses/oracle/rubric.md
+    - company_lenses/oracle/question_bank.json
+    - company_lenses/oracle/rewrite_rules.md
+    - company_lenses/oracle/limits.md
+    - company_lenses/oracle/validation_report.md
+    - company_lenses/oracle/role_overlays/
 
   public_tools:
     - tools/export_public_release.py
