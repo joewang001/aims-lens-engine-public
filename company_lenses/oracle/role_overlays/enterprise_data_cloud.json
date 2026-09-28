@@ -1,0 +1,21 @@
+{
+  "company": "Oracle",
+  "role_family": "Enterprise data, applications, and cloud roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Links platform or data decisions to customer operations, reliability, and measurable value.",
+    "Shows practical judgment across legacy systems, integration, cost, and adoption."
+  ],
+  "evidence_ids": [
+    "ORACLE-OFFICIAL-001",
+    "ORACLE-CAREERS-002",
+    "ORACLE-IR-003"
+  ]
+}

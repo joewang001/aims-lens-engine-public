@@ -1,0 +1,99 @@
+{
+  "company_slug": "adobe",
+  "company": "Adobe",
+  "collected_at": "2026-09-28T20:04:52Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "technology",
+      "creative software",
+      "digital experience",
+      "ai"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public creative software, document cloud, and digital experience company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Adobe homepage",
+      "url": "https://www.adobe.com/",
+      "confidence": 0.76,
+      "public_safe_signal": "Adobe publicly positions itself around creativity, documents, digital experience, content workflows, marketing technology, and AI-supported creative and business tools.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "ADOBE-OFFICIAL-001",
+      "date_accessed": "2026-09-28"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Adobe careers page",
+      "url": "https://careers.adobe.com/",
+      "confidence": 0.76,
+      "public_safe_signal": "Careers messaging emphasizes creativity, customer impact, innovation, inclusion, learning, and work across product, engineering, sales, design, and operations.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "ADOBE-CAREERS-002",
+      "date_accessed": "2026-09-28"
+    },
+    {
+      "source_type": "official_investor_relations",
+      "title": "Adobe investor relations",
+      "url": "https://www.adobe.com/investor-relations.html",
+      "confidence": 0.7,
+      "public_safe_signal": "Investor materials provide public context for subscription businesses, digital media, digital experience, AI strategy, customer retention, and growth risk.",
+      "dimensions": [
+        "company_says",
+        "risk_warnings"
+      ],
+      "evidence_id": "ADOBE-IR-003",
+      "date_accessed": "2026-09-28"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "product_behavioral",
+        "generated_question": "Describe a time you improved a creative, content, document, or customer experience workflow using evidence from users or customers.",
+        "aims_dimensions": [
+          "impact_results",
+          "structured_thinking",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Defines the user or customer workflow clearly.",
+          "Explains evidence used to decide what mattered.",
+          "Shows cross-functional product or operational execution.",
+          "Measures adoption, quality, efficiency, or customer impact."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "creative_and_experience_cloud",
+        "role_family": "Creative software and digital experience roles",
+        "signals": [
+          "Connects product choices to creator, document, marketer, or enterprise customer workflows.",
+          "Shows evidence-based judgment around usability, trust, content, AI, or customer experience."
+        ]
+      }
+    ]
+  }
+}

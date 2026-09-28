@@ -1,0 +1,35 @@
+{
+  "company": "Adobe",
+  "lens_id": "adobe_public_v0_1",
+  "version": "0.1.0-public-release-candidate",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "questions": [
+    {
+      "question_id": "ADOBE-Q-001",
+      "type": "product_behavioral",
+      "generated_question": "Describe a time you improved a creative, content, document, or customer experience workflow using evidence from users or customers.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Defines the user or customer workflow clearly.",
+        "Explains evidence used to decide what mattered.",
+        "Shows cross-functional product or operational execution.",
+        "Measures adoption, quality, efficiency, or customer impact."
+      ],
+      "evidence_ids": [
+        "ADOBE-OFFICIAL-001",
+        "ADOBE-CAREERS-002",
+        "ADOBE-IR-003"
+      ]
+    }
+  ]
+}

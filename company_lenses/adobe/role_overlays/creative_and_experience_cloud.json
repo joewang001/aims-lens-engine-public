@@ -1,0 +1,21 @@
+{
+  "company": "Adobe",
+  "role_family": "Creative software and digital experience roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Connects product choices to creator, document, marketer, or enterprise customer workflows.",
+    "Shows evidence-based judgment around usability, trust, content, AI, or customer experience."
+  ],
+  "evidence_ids": [
+    "ADOBE-OFFICIAL-001",
+    "ADOBE-CAREERS-002",
+    "ADOBE-IR-003"
+  ]
+}
