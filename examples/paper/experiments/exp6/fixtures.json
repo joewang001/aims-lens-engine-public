@@ -1,0 +1,240 @@
+{
+  "experiment_id": "exp6",
+  "title": "Routing–Shrinkage Overlap Ablation",
+  "protocol_version": "0.1.0-pre-specified",
+  "status": "protocol_frozen_no_results",
+  "research_release_target": "v1.5",
+  "frozen_base": {
+    "tag": "v0.10.0-paper-v1.4",
+    "commit": "a0d89f33aaa7303404a9b26cc7bec5a331a6e82f"
+  },
+  "categories": [
+    "ownership",
+    "evidence",
+    "tradeoff",
+    "collaboration",
+    "reflection"
+  ],
+  "company_truth": {
+    "base": [
+      0.34,
+      0.26,
+      0.18,
+      0.13,
+      0.09
+    ],
+    "rotation_operator": "cyclic_left",
+    "rotations": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "broader_context": {
+    "l3_formula": "(1-rho)*theta + rho*R1(theta)",
+    "l5_formula": "(1-rho)*theta + rho*R2(theta)",
+    "mismatch_levels": [
+      {
+        "name": "high_agreement",
+        "rho": 0.1
+      },
+      {
+        "name": "moderate_mismatch",
+        "rho": 0.4
+      },
+      {
+        "name": "strong_mismatch",
+        "rho": 0.8
+      }
+    ]
+  },
+  "company_training": {
+    "sample_sizes": [
+      {
+        "name": "sparse",
+        "n": 2
+      },
+      {
+        "name": "intermediate",
+        "n": 10
+      },
+      {
+        "name": "dense",
+        "n": 50
+      }
+    ],
+    "evidence_record_defaults": {
+      "authorized": true,
+      "quality": 1,
+      "age_days": 0
+    }
+  },
+  "shrinkage": {
+    "kappa_company": [
+      2,
+      6,
+      20
+    ],
+    "parent_level": "L3",
+    "path_a": "shrunken_L0_only"
+  },
+  "routing": {
+    "levels": [
+      {
+        "name": "L0_full_context",
+        "backoff_distance": 0,
+        "authorized": true,
+        "applicable": true,
+        "coverage": 0.78
+      },
+      {
+        "name": "L3_industry_context",
+        "backoff_distance": 3,
+        "authorized": true,
+        "applicable": true,
+        "coverage": 0.92
+      },
+      {
+        "name": "L5_generic_context",
+        "backoff_distance": 5,
+        "authorized": true,
+        "applicable": true,
+        "coverage": 1
+      }
+    ],
+    "gamma": [
+      0.4,
+      0.7,
+      0.9
+    ],
+    "raw_score_formula": "authorization * applicability * coverage * gamma**backoff_distance",
+    "expected_weights": {
+      "0.4": {
+        "L0_full_context": 0.918598078,
+        "L3_industry_context": 0.069342378,
+        "L5_generic_context": 0.012059544
+      },
+      "0.7": {
+        "L0_full_context": 0.6172692956,
+        "L3_industry_context": 0.2497249986,
+        "L5_generic_context": 0.1330057058
+      },
+      "0.9": {
+        "L0_full_context": 0.3821337762,
+        "L3_industry_context": 0.3285762577,
+        "L5_generic_context": 0.289289966
+      }
+    },
+    "coverage_semantics": "declared_fixture_input_not_calibrated_probability",
+    "path_b": "current_L0_L3_L5_routing"
+  },
+  "isolation": {
+    "all_categories_permitted": true,
+    "compatibility_masking": false,
+    "runtime_data_support_gate": false,
+    "runtime_abstention_gate": false,
+    "all_routing_components_positive_permitted_mass": true
+  },
+  "replication": {
+    "training_replicates_per_rotation_condition": 100,
+    "heldout_observations_per_training_replicate": 200,
+    "primary_factorial_conditions": 81,
+    "truth_rotations": 5,
+    "total_paired_training_realizations": 40500,
+    "total_heldout_observations": 8100000
+  },
+  "seed_contract": {
+    "algorithm": "sha256",
+    "canonical_fields": [
+      "protocol_version",
+      "rotation",
+      "n_c",
+      "rho",
+      "kappa_c",
+      "gamma",
+      "replicate"
+    ],
+    "python_hash_forbidden": true,
+    "digest_to_integer_rule": "fixed documented byte slice; to be specified in Commit B without changing generated-condition semantics"
+  },
+  "metrics": {
+    "primary_population": [
+      "exact_expected_log_loss",
+      "exact_expected_multiclass_brier",
+      "tv_to_true_company_distribution"
+    ],
+    "direct_overlap": [
+      "tv_routed_vs_l0",
+      "normalized_entropy_path_a",
+      "normalized_entropy_path_b",
+      "top_category_retained",
+      "routing_weights",
+      "tv_l3_to_truth",
+      "tv_l5_to_truth"
+    ],
+    "heldout": [
+      "multiclass_log_loss",
+      "multiclass_brier",
+      "top_label_ece",
+      "top_label_accuracy"
+    ],
+    "top_label_ece": {
+      "bins": 10,
+      "binning": "equal_width",
+      "role": "secondary_diagnostic_not_proper_scoring_rule",
+      "pooling": "within each primary factorial condition across rotations, replicates, and heldout observations"
+    }
+  },
+  "aggregate_reporting": {
+    "delta_metrics": [
+      "delta_log_loss",
+      "delta_brier",
+      "delta_tv_to_truth"
+    ],
+    "summaries": [
+      "mean",
+      "median",
+      "p05",
+      "p95",
+      "proportion_routing_improves"
+    ],
+    "percentile_semantics": "replicate_distribution_percentiles_not_confidence_intervals"
+  },
+  "execution_pass": {
+    "routing_performance_direction_required": false,
+    "criteria": [
+      "all_81_factorial_conditions_present",
+      "all_40500_paired_realizations_complete",
+      "all_distributions_normalized_within_declared_tolerance",
+      "existing_public_shrinkage_and_routing_functions_used",
+      "gamma_0.7_baseline_routing_weights_reproduced",
+      "deterministic_repeated_execution",
+      "all_declared_metrics_finite",
+      "all_declared_output_fields_present",
+      "byte_stable_regeneration_once_results_are_committed"
+    ]
+  },
+  "claim_boundary": {
+    "synthetic_only": true,
+    "does_not_establish": [
+      "real_employer_validity",
+      "real_interview_followup_prediction",
+      "population_calibration",
+      "subgroup_fairness",
+      "candidate_learning_benefit",
+      "optimal_gamma",
+      "optimal_kappa_company",
+      "optimal_routing_architecture",
+      "real_world_absence_or_presence_of_routing_shrinkage_redundancy",
+      "employment_outcomes"
+    ]
+  },
+  "planned_later_artifacts": [
+    "tools/run_exp6_routing_overlap_ablation.py",
+    "examples/paper/experiments/exp6/results/exp6_results.json",
+    "examples/paper/experiments/exp6/results/exp6_condition_matrix.csv",
+    "examples/paper/experiments/exp6/results/exp6_paired_deltas.csv"
+  ]
+}
