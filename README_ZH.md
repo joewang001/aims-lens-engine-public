@@ -1,5 +1,7 @@
 # AIMS Lens Engine 中文说明
 
+[English README](README.md) | [公开版快速开始](#如何运行)
+
 > 面向公开贡献、合作机构与 JobACE 私有实现的公司 Lens 蒸馏、验证与决策增强系统。
 
 AIMS Lens Engine 的目标不是让 AI “扮演一家公司”，而是把企业公开表达、招聘标准、面试问题、岗位要求、行业语境和真实候选人回答转化为可审计、可验证、可调用的结构化 Lens。
@@ -8,11 +10,15 @@ AIMS Lens Engine 的目标不是让 AI “扮演一家公司”，而是把企�
 
 > 同一个候选人回答，在 Amazon、Google、RBC、McKinsey 或 JPMorgan 的语境下，为什么会被不同地追问、评分和判断？
 
-当前版本：`v0.8.1-public-core`
+公开核心软件版本：`v0.8.1-public-core`，见 [VERSION](VERSION) 和 [CHANGELOG.md](CHANGELOG.md)。
+
+研究论文版本：`v1.5`。论文版本与公开核心软件版本独立编号；论文及冻结研究基线不包含在当前公开 `main` 分支中。
 
 当前状态：`public_released`
 
 当前边界：公开仓库只包含 public-safe core；JobACE 生产服务、候选人数据、租户数据、私有校准与部署配置不进入公开发布。
+
+开发者、研究人员和合作机构可以在不运行 JobACE 的情况下检查公开 Lens、schema 和验证工具。下文的完整产品场景与 API 设计不代表公开仓库包含可直接部署的生产服务；首次使用请从公开版检查开始。
 
 ---
 
@@ -120,48 +126,31 @@ AIMS Lens Engine 是一个独立平台，早期独立于 Jobace 主系统建设�
 
 ## 如何运行
 
-### 本地 API
+### 公开版快速开始
+
+需要 Python 3.11 或更新版本。克隆公开仓库并创建虚拟环境：
 
 ```bash
-cd /home/django/myspace/aims-lens-engine
-python3 tools/internal_pilot_api.py --host 127.0.0.1 --port 8092
+git clone https://github.com/joewang001/aims-lens-engine-public.git
+cd aims-lens-engine-public
+python -m venv .venv
 ```
 
-健康检查：
+macOS/Linux 使用 `source .venv/bin/activate` 激活；Windows PowerShell 使用 `.venv\Scripts\Activate.ps1`。如果系统使用 `python3` 命令，创建环境时将 `python` 替换为 `python3`。
+
+激活后，安装验证依赖并在仓库根目录运行：
 
 ```bash
-curl http://127.0.0.1:8092/health
+python -m pip install PyYAML
+python tools/scan_public_export.py --allowlist
+python tools/validate_public_lens_coverage.py --min-companies 12
 ```
 
-生成筛选报告：
+检查成功时分别输出 `public_scan_status=ok` 和 `public_lens_coverage_status=ok`。这些本地检查不需要 API key，也不依赖 JobACE 或私有服务。
 
-```bash
-curl -X POST http://127.0.0.1:8092/v1/screening-report \
-  -H 'Content-Type: application/json' \
-  --data @examples/internal-pilot-screening-request.json
-```
+### API 与私有实现的区别
 
-### 可用端点
-
-- `GET /health`
-- `POST /v1/route`
-- `POST /v1/screening-report`
-- `POST /v1/screen-candidate`
-- `GET /v1/review-queue`
-- `POST /v1/review-decision`
-- `GET /v1/review-decisions`
-
-### LLM Scorer
-
-默认使用 deterministic scorer，便于离线回归和稳定测试。需要启用 OpenAI LLM scorer 时，在 `.env.local` 中配置：
-
-```bash
-AIMS_SCORER_MODE=llm
-OPENAI_MODEL=gpt-5.4-mini
-OPENAI_API_KEY=your_key_here
-```
-
-LLM scorer 只能在 limited pilot 控制下增强评分，不允许输出自动拒绝或最终招聘决定。
+[api/openapi.yaml](api/openapi.yaml) 提供集成契约，[examples/](examples/) 提供请求示例，不代表本仓库包含可启动的 API 服务。公开版不提供内部 pilot API 启动程序、生产服务或完整私有校准资产；不要将请求示例当作可直接访问的公开服务。
 
 ---
 
@@ -320,7 +309,7 @@ AIMS Lens Engine 体系中采用对应持续进化的评估机制。 Calibration
 ## 仓库结构
 
 ```text
-aims-lens-engine/
+aims-lens-engine-public/
 ├── README.md                         # 英文/工程简版入口
 ├── README_ZH.md                      # 中文说明
 ├── LICENSE                           # 代码、schema、工具的 Apache-2.0 许可
@@ -328,53 +317,20 @@ aims-lens-engine/
 ├── CONTRIBUTING.md                   # 公开贡献规则
 ├── public_manifest.yaml              # 公开导出 allowlist
 ├── private_manifest.yaml             # 私有内容 denylist
-├── api/
-│   └── openapi.yaml                  # API contract
-├── architecture/
-│   ├── system-design.md              # 系统设计
-│   └── lens-router.md                # Lens routing 逻辑
-├── company_lenses/
-│   ├── amazon/
-│   ├── google/
-│   ├── apple/
-│   ├── microsoft/
-│   ├── mckinsey/
-│   ├── rbc/
-│   ├── td/
-│   ├── cibc/
-│   ├── bmo/
-│   ├── scotiabank/
-│   ├── jpmorgan/
-│   └── shopify/
-├── docs/
-│   ├── project-charter.md
-│   ├── implementation-plan.md
-│   ├── distillation-playbook.md
-│   ├── phase-2c-production-gates.md
-│   ├── phase-3a-internal-pilot-integration.md
-│   ├── phase-3a1-human-review-workflow.md
-│   ├── phase-3b-llm-scorer-integration.md
-│   └── phase-3c1-jobace-integration-contract.md
-├── governance/
-│   ├── evidence-standard.md
-│   └── privacy-and-fairness.md
-├── routing/
-│   └── role_router.json
-├── schemas/
-│   ├── company_lens.schema.json
-│   ├── question_bank.schema.json
-│   ├── screening_report.schema.json
-│   └── jobace_adapter_contract.schema.json
-├── tools/
-│   ├── export_public_release.py
-│   ├── scan_public_export.py
-│   ├── generate_public_release_audit_report.py
-│   ├── interview_prep_planner.py
-│   ├── llm_scorer.py
-│   └── run_scoring_harness.py
-└── examples/
-    └── internal-pilot-screening-request.json
+├── .github/                         # 公开 Lens 维护工作流
+├── agents/                          # 研究模板
+├── api/                             # API 契约，不含运行服务
+├── architecture/                    # 系统设计与路由说明
+├── company_lenses/                  # 当前公开公司 Lens
+├── docs/                            # 项目、验证与公开维护文档
+├── examples/                        # 请求与公开示例
+├── governance/                      # 证据、隐私与公平规则
+├── routing/                         # 岗位路由配置
+├── schemas/                         # 结构化数据契约
+└── tools/                           # 公开导出、验证与维护工具
 ```
+
+此图只列出当前公开仓库中实际存在的目录。私有服务、未导出的模板和候选人 fixture 目录不在图中；个别历史工具仍可能依赖未公开资产，首次验证请使用上面的快速开始命令。
 
 ---
 
