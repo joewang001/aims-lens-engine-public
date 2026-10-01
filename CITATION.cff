@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use AIMS Lens Engine, please cite this software release. For research use, also cite the associated manuscript where appropriate."
+
+title: "AIMS Lens Engine"
+type: software
+
+authors:
+  - family-names: Wang
+    given-names: Jiuyu (Joe)
+
+repository-code: "https://github.com/joewang001/aims-lens-engine-public"
+url: "https://github.com/joewang001/aims-lens-engine-public"
+
+license: Apache-2.0
+version: "v0.8.1-public-core"
+date-released: 2026-10-01
+
+keywords:
+  - interview preparation
+  - evidence governance
+  - decision support
+  - responsible AI
+  - employment technology
+  - interview reasoning
+  - structured evaluation
+
+preferred-citation:
+  type: article
+  title: "AIMS Lens Engine: An Evidence-Governed Framework for Interview Follow-Up Simulation and Practice Prioritization"
+  authors:
+    - family-names: Wang
+      given-names: Jiuyu (Joe)
+  year: 2026
