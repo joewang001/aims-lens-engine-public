@@ -8,6 +8,9 @@
 - Added fail-closed evidence weighting, compatibility masking, permitted-category
   support accounting, and company-level hierarchical shrinkage primitives.
 - Added focused runtime-core unit tests and an independent CI gate.
+- Added an internal Decision Envelope and local decision service that compose the
+  promoted primitives into abstention or ordered practice-priority outputs while
+  stopping before routing, backoff, adapter translation, or LLM generation.
 
 ## v0.8.1-public-core
 

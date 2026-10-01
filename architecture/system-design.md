@@ -95,6 +95,42 @@ Combines:
 - evidence-aware explanation
 - screening recommendation
 
+### Runtime Decision Layer
+
+The promoted v1.5 runtime core exposes a local, pre-routing decision layer for
+practice prioritization. Its inputs are a declared category taxonomy, a parent
+distribution, authorized evidence, compatibility-permitted categories, and
+caller-supplied hyperparameters.
+
+The local flow is:
+
+    authorized evidence
+            |
+            v
+    quality + recency weighting
+            |
+            v
+    company-level hierarchical shrinkage
+            |
+            v
+    compatibility mask
+            |
+            v
+    permitted-category evidence support
+            |
+            +--> abstain
+            |
+            +--> ordered practice priority
+
+The internal DecisionEnvelope reports the decision mode, abstention reason when
+applicable, ordered priority, compatibility-masked diagnostic distribution, data
+support, and effective permitted evidence mass.
+
+This layer intentionally stops before cross-level routing mixtures, support-aware
+backoff, divergence guards, JobACE adapter translation, provenance/explanation
+assembly, or natural-language generation. It prioritizes practice; it is not a
+prediction of a specific employer's interview process or hiring decision.
+
 ### Enterprise Lens Manager
 
 Handles:
