@@ -14,6 +14,11 @@
 - Added a shadow-only proposed support-aware L0-L5 backoff policy and an
   observe-only Context Divergence Guard using caller-supplied thresholds. These
   mechanisms do not change the live decision path.
+- Added a public-safe JobACE Adapter v2 reference layer that preserves the
+  existing external contract while normalizing it into an institution-agnostic
+  practice context, plus an unbound candidate-signal adapter for the existing
+  six-dimension AIMS score taxonomy. No live decision binding or API change is
+  introduced.
 
 ## v0.8.1-public-core
 

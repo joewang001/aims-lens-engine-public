@@ -162,6 +162,35 @@ not establish an optimal fallback rule or validated production divergence
 threshold, so no experiment fixture or mismatch value is embedded as a runtime
 constant.
 
+### Reference Adapter Layer
+
+JobACE integration is represented in the public repository by a reference
+adapter only. The existing external JobACE adapter contract remains unchanged.
+Adapter v2 normalizes that contract into an institution-agnostic practice
+context while preserving the accepted external identifiers and optional
+context fields.
+
+Candidate-side AIMS scores may be carried as an unbound signal packet using the
+existing six public AIMS dimensions:
+
+- structured_thinking
+- analytical_problem_solving
+- ownership_execution
+- impact_results
+- collaboration_communication
+- growth_mindset
+
+The reference adapter does not infer a mapping from those six dimensions to the
+v1.5 follow-up taxonomy or to runtime evidence categories. It also does not
+derive practice gaps, scoring calibration, routing weights, or screening
+recommendations from the scores. Any such binding requires a separately
+reviewed downstream policy.
+
+The public reference layer performs no persistence, production prompt routing,
+tenant configuration, private calibration, or live decision invocation.
+Production JobACE mappings and proprietary scoring logic remain outside the
+public core.
+
 ### Enterprise Lens Manager
 
 Handles:

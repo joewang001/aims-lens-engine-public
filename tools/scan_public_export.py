@@ -200,6 +200,13 @@ def is_release_boundary_tool(rel_path: str) -> bool:
     }
 
 
+def is_reviewed_reference_adapter(rel_path: str) -> bool:
+    return rel_path in {
+        "reference_adapters/jobace_v2.py",
+        "jobace_v2.py",
+    }
+
+
 def is_lens_source(rel_path: str) -> bool:
     return rel_path.startswith("company_lenses/")
 
@@ -255,8 +262,22 @@ def scan_line(rel_path: str, line_no: int, line: str, findings: list[Finding]) -
         add(findings, severity, "candidate_data_marker", rel_path, line_no, stripped[:120], "Candidate or resume marker found.")
 
     if "\"tenant_id\"" in line or "tenant_id:" in line:
-        severity = "allowed_context" if is_policy_doc(rel_path) or is_schema_or_contract(rel_path) or is_example(rel_path) or is_tool(rel_path) else "review"
-        add(findings, severity, "tenant_id_marker", rel_path, line_no, "tenant_id", "Tenant marker found; allowed in schemas/contracts/examples, review elsewhere.")
+        severity = "allowed_context" if (
+            is_policy_doc(rel_path)
+            or is_schema_or_contract(rel_path)
+            or is_example(rel_path)
+            or is_tool(rel_path)
+            or is_reviewed_reference_adapter(rel_path)
+        ) else "review"
+        add(
+            findings,
+            severity,
+            "tenant_id_marker",
+            rel_path,
+            line_no,
+            "tenant_id",
+            "Tenant marker found; allowed only in reviewed public contract contexts.",
+        )
 
     if "review_decision" in line:
         severity = "allowed_context" if is_policy_doc(rel_path) or is_schema_or_contract(rel_path) or is_example(rel_path) or is_release_boundary_tool(rel_path) else "review"

@@ -199,6 +199,11 @@ allow_paths:
     - runtime_core/service.py
     - runtime_core/shadow_routing.py
 
+  reference_adapters:
+    - reference_adapters/__init__.py
+    - reference_adapters/candidate_signals.py
+    - reference_adapters/jobace_v2.py
+
   public_company_lenses:
     - company_lenses/_template/profile.json
     - company_lenses/amazon/README.md
@@ -465,6 +470,7 @@ allowed_service_public_surface:
   allowed_now:
     - api/openapi.yaml
     - schemas/jobace_adapter_contract.schema.json
+    - reference_adapters/
     - examples/lens-workspace-create-api-key-request.json
     - examples/lens-workspace-create-tenant-request.json
     - examples/lens-workspace-source-material-request.json
