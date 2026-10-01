@@ -10,9 +10,9 @@ AIMS Lens Engine 的目标不是让 AI “扮演一家公司”，而是把企�
 
 > 同一个候选人回答，在 Amazon、Google、RBC、McKinsey 或 JPMorgan 的语境下，为什么会被不同地追问、评分和判断？
 
-软件发布版本：`v0.8.1-public-core`，见 [VERSION](VERSION) 和 [CHANGELOG.md](CHANGELOG.md)。
+公开核心软件版本：`v0.8.1-public-core`，见 [VERSION](VERSION) 和 [CHANGELOG.md](CHANGELOG.md)。
 
-研究论文版本：`v1.5`。论文版本与软件发布版本独立编号；论文及冻结研究基线不包含在当前公开 `main` 分支中。
+研究论文版本：`v1.5`。论文版本与公开核心软件版本独立编号；论文及冻结研究基线不包含在当前公开 `main` 分支中。
 
 当前状态：`public_released`
 

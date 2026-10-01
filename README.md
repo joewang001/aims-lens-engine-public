@@ -6,7 +6,7 @@ AIMS Lens Engine turns evidence about companies, roles, and industries into stru
 
 This public repository is for developers, researchers, and partner institutions who want to inspect lens examples, validate public-safe content, or build integrations using the published schemas and API contracts. It is not a turnkey JobACE deployment or a hosted API service.
 
-- **Software release:** `v0.8.1-public-core` — the public core version recorded in [VERSION](VERSION) and [CHANGELOG.md](CHANGELOG.md).
+- **Public-core software version:** `v0.8.1-public-core` — the public core version recorded in [VERSION](VERSION) and [CHANGELOG.md](CHANGELOG.md).
 - **Research manuscript:** `v1.5` — a separate manuscript version, not a software release number. The manuscript and frozen research baseline are not included on this public `main` branch.
 - **Public release status:** `public_released`.
 
