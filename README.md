@@ -1,10 +1,36 @@
 # AIMS Lens Engine
 
-Independent company, role, industry, and thinker lens distillation platform for interview evaluation, candidate screening, interview preparation, and decision support.
+[中文说明](README_ZH.md) | [Quick Start](#quick-start) | [Contributing](CONTRIBUTING.md)
 
-Current version: `v0.8.1-public-core`
+AIMS Lens Engine turns evidence about companies, roles, and industries into structured, auditable **lenses** for interview preparation and human-reviewed decision support. A lens records contextual priorities, sources, and limitations; it is not an official employer hiring standard.
 
-Current status: `public_released`
+This public repository is for developers, researchers, and partner institutions who want to inspect lens examples, validate public-safe content, or build integrations using the published schemas and API contracts. It is not a turnkey JobACE deployment or a hosted API service.
+
+- **Software release:** `v0.8.1-public-core` — the public core version recorded in [VERSION](VERSION) and [CHANGELOG.md](CHANGELOG.md).
+- **Research manuscript:** `v1.5` — a separate manuscript version, not a software release number. The manuscript and frozen research baseline are not included on this public `main` branch.
+- **Public release status:** `public_released`.
+
+Start with [company lens examples](company_lenses/), the [repository map](#repository-map), or the checks below. JobACE is a reference integration; it is not required to inspect or validate this public core.
+
+## Quick Start
+
+Use Python 3.11 or newer. Clone the public repository and create a virtual environment:
+
+```bash
+git clone https://github.com/joewang001/aims-lens-engine-public.git
+cd aims-lens-engine-public
+python -m venv .venv
+```
+
+Activate it with `source .venv/bin/activate` on macOS/Linux or `.venv\Scripts\Activate.ps1` in Windows PowerShell. If your system uses `python3`, substitute it for `python` when creating the environment.
+
+```bash
+python -m pip install PyYAML
+python tools/scan_public_export.py --allowlist
+python tools/validate_public_lens_coverage.py --min-companies 12
+```
+
+Successful checks report `public_scan_status=ok` and `public_lens_coverage_status=ok`. They run locally without API keys or private services. [api/openapi.yaml](api/openapi.yaml) describes integration contracts; it does not start an API server.
 
 ## Positioning
 
@@ -50,18 +76,20 @@ Additional company lenses should be added only when they meet the public contrib
 ## Repository Map
 
 ```text
+.github/              Public-lens maintenance workflow
 api/                  API contracts and OpenAPI draft
 architecture/         System design and routing model
 agents/               Multi-agent research templates
 company_lenses/       Lens files and company profile folders
 docs/                 Project charter and implementation plan
 governance/           privacy, fairness, evidence, and version rules
+routing/              Role-routing configuration
 schemas/              JSON schemas for structured lens artifacts
 examples/             sample requests, reports, and validation cases
-services/             private production services, excluded from public export by default
-interview_prep_templates/ B2C improvement plan templates for structured interview practice
-candidate_personas/     Synthetic candidate fixtures for mock interview QA and calibration
+tools/                Public export, validation, and maintenance tools
 ```
+
+Only directories present in this public checkout are listed. Private services and excluded assets are not part of this repository map.
 
 ## Implementation Principle
 
@@ -89,19 +117,11 @@ python tools/scan_public_export.py --allowlist
 python tools/generate_public_release_audit_report.py --allowlist
 ```
 
-## Interview Prep Templates
+## Interview Prep Integration Boundary
 
-Phase B2C-1 adds the first B2C improvement plan template:
+The public tree includes [interview-prep request examples](examples/b2c-mckinsey-improvement-plan-request.json) and `tools/interview_prep_planner.py`, but its `interview_prep_templates/` assets are not included. Do not treat the planner as a self-contained public Quick Start.
 
-```text
-interview_prep_templates/mckinsey_case/
-docs/phase-b2c1-mckinsey-case-improvement-plan.md
-docs/phase-b2c2-improvement-plan-adapter.md
-docs/candidate-persona-fixtures.md
-```
-
-It converts McKinsey-style case interview preparation into a reusable AIMS-linked training plan for interview prep users.
-B2C-2 adds `tools/interview_prep_planner.py` and `POST /v1/interview-prep/improvement-plan` so product flows can turn AIMS scores into Priority Improvement Points, drills, reflection routing, and next mock instructions.
+API endpoint descriptions are integration contracts, not services shipped by this public release. For public validation, use the [Quick Start](#quick-start) above.
 
 ## Contribution
 
