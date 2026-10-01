@@ -76,7 +76,10 @@ def flatten(value: Any) -> list[str]:
 
 
 def normalize_path(value: str) -> str:
-    return value.replace("\\", "/").lstrip("./")
+    normalized = value.replace("\\", "/")
+    while normalized.startswith("./"):
+        normalized = normalized[2:]
+    return normalized
 
 
 def is_glob(pattern: str) -> bool:

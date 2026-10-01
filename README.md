@@ -6,9 +6,10 @@ AIMS Lens Engine turns evidence about companies, roles, and industries into stru
 
 This public repository is for developers, researchers, and partner institutions who want to inspect lens examples, validate public-safe content, or build integrations using the published schemas and API contracts. It is not a turnkey JobACE deployment or a hosted API service.
 
-- **Public-core software version:** `v0.8.1-public-core` — the public core version recorded in [VERSION](VERSION) and [CHANGELOG.md](CHANGELOG.md).
+- **Public-core software version:** `v0.12.0-public-core` — the public core version recorded in [VERSION](VERSION) and [CHANGELOG.md](CHANGELOG.md).
 - **Research manuscript:** `v1.5` — a separate manuscript version, not a software release number. The manuscript and frozen research baseline are not included on this public `main` branch.
 - **Public release status:** `public_released`.
+- **Runtime integration status:** selected v1.5 mechanisms are available behind a fail-closed promotion layer; the support-aware backoff policy and Context Divergence Guard remain shadow-only, and this repository does not assert that private production gates have been completed.
 
 Start with [company lens examples](company_lenses/), the [repository map](#repository-map), or the checks below. JobACE is a reference integration; it is not required to inspect or validate this public core.
 
@@ -86,6 +87,8 @@ governance/           privacy, fairness, evidence, and version rules
 routing/              Role-routing configuration
 schemas/              JSON schemas for structured lens artifacts
 examples/             sample requests, reports, and validation cases
+reference_adapters/   Public-safe external integration reference adapters
+runtime_core/         Promoted reasoning primitives, gating, and provenance
 tools/                Public export, validation, and maintenance tools
 ```
 

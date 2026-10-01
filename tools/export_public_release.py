@@ -15,6 +15,11 @@ from pathlib import Path
 from typing import Any
 
 try:
+    from scan_public_export import scan_file
+except ImportError:  # pragma: no cover - package import path
+    from tools.scan_public_export import scan_file
+
+try:
     import yaml
 except ImportError as exc:  # pragma: no cover - environment guard
     raise SystemExit("PyYAML is required. Run with the lens workspace virtualenv.") from exc
@@ -57,7 +62,10 @@ def flatten(value: Any) -> list[str]:
 
 
 def normalize_manifest_path(value: str) -> str:
-    return value.replace("\\", "/").lstrip("./")
+    normalized = value.replace("\\", "/")
+    while normalized.startswith("./"):
+        normalized = normalized[2:]
+    return normalized
 
 
 def resolve_repo_path(value: str) -> Path:
@@ -85,10 +93,6 @@ def matches_pattern(rel_path: str, pattern: str) -> bool:
 
 def blocked_path_patterns(private_manifest: dict[str, Any]) -> list[str]:
     return flatten(private_manifest.get("blocked_paths"))
-
-
-def content_markers(private_manifest: dict[str, Any]) -> list[str]:
-    return flatten(private_manifest.get("blocked_content_markers"))
 
 
 def collect_allow_paths(public_manifest: dict[str, Any]) -> list[str]:
@@ -121,18 +125,6 @@ def list_files_for_path(path: Path) -> list[Path]:
     return []
 
 
-def scan_file_for_markers(path: Path, markers: list[str]) -> list[str]:
-    try:
-        text = path.read_text(encoding="utf-8")
-    except UnicodeDecodeError:
-        return []
-    hits = []
-    for marker in markers:
-        if marker and marker in text:
-            hits.append(marker)
-    return hits
-
-
 def validate_company_candidates(public_manifest: dict[str, Any]) -> tuple[list[str], list[str]]:
     errors = []
     warnings = []
@@ -160,9 +152,9 @@ def build_plan(
 ) -> dict[str, Any]:
     allow_paths = collect_allow_paths(public_manifest)
     blocked_patterns = blocked_path_patterns(private_manifest)
-    markers = content_markers(private_manifest)
     errors, warnings = validate_company_candidates(public_manifest)
     planned_files = []
+    candidate_files = []
     skipped_missing = []
 
     for allow_path in allow_paths:
@@ -178,17 +170,43 @@ def build_plan(
             continue
         for file_path in list_files_for_path(source):
             rel_file = file_path.relative_to(ROOT.resolve()).as_posix()
-            blocked_file_by = source_is_blocked(rel_file, blocked_patterns)
-            if blocked_file_by:
-                errors.append(f"file blocked by private manifest: {rel_file} matches {blocked_file_by}")
-                continue
-            marker_hits = scan_file_for_markers(file_path, markers) if scan_content else []
-            if marker_hits:
-                errors.append(f"file contains private markers: {rel_file} markers={marker_hits}")
-                continue
-            planned_files.append(rel_file)
+            candidate_files.append(rel_file)
 
-    planned_files = sorted(dict.fromkeys(planned_files))
+    for rel_file in sorted(dict.fromkeys(candidate_files)):
+        blocked_file_by = source_is_blocked(rel_file, blocked_patterns)
+        if blocked_file_by:
+            errors.append(
+                f"file blocked by private manifest: "
+                f"{rel_file} matches {blocked_file_by}"
+            )
+            continue
+        if scan_content:
+            file_path = ROOT / rel_file
+            findings = scan_file(file_path, ROOT, private_manifest)
+            blockers = [
+                finding for finding in findings
+                if finding.severity == "blocker"
+            ]
+            reviews = [
+                finding for finding in findings
+                if finding.severity == "review"
+            ]
+            if blockers:
+                for finding in blockers:
+                    errors.append(
+                        "content scan blocker: "
+                        f"{finding.path}:{finding.line} "
+                        f"{finding.code} marker={finding.marker!r}"
+                    )
+                continue
+            for finding in reviews:
+                warnings.append(
+                    "content scan review: "
+                    f"{finding.path}:{finding.line} "
+                    f"{finding.code} marker={finding.marker!r}"
+                )
+        planned_files.append(rel_file)
+
     return {
         "status": "fail" if errors else "ok",
         "errors": errors,
@@ -217,7 +235,7 @@ def main() -> int:
     parser.add_argument(
         "--scan-content",
         action="store_true",
-        help="Also scan allowlisted files for private_manifest blocked content markers.",
+        help="Also apply the contextual public-export content scanner to allowlisted files.",
     )
     parser.add_argument("--json", action="store_true", help="Print machine-readable JSON.")
     parser.add_argument("--output", type=Path, help="Override export root.")

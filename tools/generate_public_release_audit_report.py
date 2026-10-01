@@ -9,19 +9,38 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from scan_public_export import (
-    PRIVATE_MANIFEST,
-    PUBLIC_MANIFEST,
-    ROOT,
-    files_from_allowlist,
-    files_from_target,
-    load_yaml,
-    scan_file,
-    summarize,
-)
+try:
+    from scan_public_export import (
+        PRIVATE_MANIFEST,
+        PUBLIC_MANIFEST,
+        ROOT,
+        files_from_allowlist,
+        files_from_target,
+        load_yaml,
+        scan_file,
+        summarize,
+    )
+except ImportError:  # pragma: no cover - package import path
+    from tools.scan_public_export import (
+        PRIVATE_MANIFEST,
+        PUBLIC_MANIFEST,
+        ROOT,
+        files_from_allowlist,
+        files_from_target,
+        load_yaml,
+        scan_file,
+        summarize,
+    )
 
 
 DEFAULT_OUTPUT = ROOT / "docs" / "public-release-audit-report.md"
+
+
+def resolve_output_path(value: Path) -> tuple[Path, Path]:
+    output = value if value.is_absolute() else ROOT / value
+    output = output.resolve()
+    relative = output.relative_to(ROOT.resolve())
+    return output, relative
 
 
 def company_for_path(path: str) -> str:
@@ -269,9 +288,10 @@ def main() -> int:
         "findings": [finding.to_dict() for finding in findings],
     }
     report = build_report(scan_report, source_label=source_label)
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(report, encoding="utf-8", newline="\n")
-    print(f"audit_report={args.output.relative_to(ROOT)}")
+    output, relative_output = resolve_output_path(args.output)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(report, encoding="utf-8", newline="\n")
+    print(f"audit_report={relative_output}")
     print(f"status={scan_report['status']} files={scan_report['files_scanned']} summary={scan_report['summary']}")
     return 0
 

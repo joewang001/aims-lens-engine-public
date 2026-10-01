@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v0.12.0-public-core
+
 - Began production promotion of selected manuscript v1.5 reasoning mechanisms into a
   standalone `runtime_core` package without changing the existing JobACE adapter
   contract or public API.
@@ -23,6 +25,11 @@
   layer, decision regression comparator, and fail-closed runtime promotion
   switch. Promoted-local release requires explicit gate attestations; the PR-C
   support-aware backoff and Context Divergence Guard remain shadow-only.
+- Closed the integrated public-core release as v0.12.0-public-core and aligned
+  release tooling with the contextual public-safety scanner. The release tools
+  now preserve dot-prefixed paths such as .github/, avoid duplicate content
+  scans across overlapping allowlist entries, and resolve relative audit report
+  output paths consistently.
 
 ## v0.8.1-public-core
 

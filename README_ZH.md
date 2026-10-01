@@ -10,11 +10,13 @@ AIMS Lens Engine 的目标不是让 AI “扮演一家公司”，而是把企�
 
 > 同一个候选人回答，在 Amazon、Google、RBC、McKinsey 或 JPMorgan 的语境下，为什么会被不同地追问、评分和判断？
 
-公开核心软件版本：`v0.8.1-public-core`，见 [VERSION](VERSION) 和 [CHANGELOG.md](CHANGELOG.md)。
+公开核心软件版本：`v0.12.0-public-core`，见 [VERSION](VERSION) 和 [CHANGELOG.md](CHANGELOG.md)。
 
 研究论文版本：`v1.5`。论文版本与公开核心软件版本独立编号；论文及冻结研究基线不包含在当前公开 `main` 分支中。
 
 当前状态：`public_released`
+
+运行时集成状态：已将部分 v1.5 机制纳入带 fail-closed gate 的公开 runtime；support-aware backoff 与 Context Divergence Guard 仍严格保持 shadow-only。本仓库不表示 JobACE 私有生产 gate 已经完成或生产环境已经切换。
 
 当前边界：公开仓库只包含 public-safe core；JobACE 生产服务、候选人数据、租户数据、私有校准与部署配置不进入公开发布。
 
@@ -327,6 +329,8 @@ aims-lens-engine-public/
 ├── governance/                      # 证据、隐私与公平规则
 ├── routing/                         # 岗位路由配置
 ├── schemas/                         # 结构化数据契约
+├── reference_adapters/              # 对外集成的 public-safe reference adapter
+├── runtime_core/                    # 已提升的推理原语、gate 与 provenance
 └── tools/                           # 公开导出、验证与维护工具
 ```
 
@@ -449,7 +453,7 @@ AIMS Lens Engine 的商业目标不是只做一个面试题库，而是成为企
 
 公开发布状态：public_released
 
-公开版本：v0.8.1-public-core
+公开版本：v0.12.0-public-core
 
 应用运行状态：approved for limited pilot
 
