@@ -10,6 +10,23 @@ from .decision import DecisionEnvelope, LocalDecisionRequest
 from .evidence import exponential_recency_weight, weighted_counts
 from .inference import hierarchical_dirichlet_mean
 from .models import EvidenceRecord
+from .production import (
+    PROMOTION_REQUIRED_GATES,
+    DecisionExplanation,
+    ProductionDecisionEnvelope,
+    PromotionGateEvidence,
+    RuntimeSwitchDecision,
+    build_production_envelope,
+    explain_decision,
+    resolve_runtime_mode,
+)
+from .provenance import (
+    PUBLIC_PROVENANCE_SCOPE,
+    PublicDecisionProvenance,
+    PublicShadowRoutingProvenance,
+    build_public_provenance,
+)
+from .regression import DecisionRegressionResult, compare_decision_envelopes
 from .service import decide_local_practice_priority
 from .shadow_routing import (
     BackoffCandidate,
@@ -26,10 +43,22 @@ __all__ = [
     "BackoffCandidate",
     "BackoffSelection",
     "ContextDivergenceObservation",
+    "DecisionExplanation",
     "DecisionEnvelope",
+    "DecisionRegressionResult",
     "EvidenceRecord",
     "LocalDecisionRequest",
+    "PROMOTION_REQUIRED_GATES",
+    "PUBLIC_PROVENANCE_SCOPE",
+    "ProductionDecisionEnvelope",
+    "PromotionGateEvidence",
+    "PublicDecisionProvenance",
+    "PublicShadowRoutingProvenance",
+    "RuntimeSwitchDecision",
     "ShadowRoutingDecision",
+    "build_production_envelope",
+    "build_public_provenance",
+    "compare_decision_envelopes",
     "data_support",
     "decide_local_practice_priority",
     "effective_permitted_mass",
@@ -38,6 +67,8 @@ __all__ = [
     "hierarchical_dirichlet_mean",
     "masked_and_renormalized",
     "observe_context_divergence",
+    "explain_decision",
+    "resolve_runtime_mode",
     "select_support_aware_backoff",
     "should_abstain",
     "weighted_counts",

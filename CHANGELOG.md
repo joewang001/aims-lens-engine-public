@@ -19,6 +19,10 @@
   practice context, plus an unbound candidate-signal adapter for the existing
   six-dimension AIMS score taxonomy. No live decision binding or API change is
   introduced.
+- Added a public-safe production-candidate envelope, deterministic explanation
+  layer, decision regression comparator, and fail-closed runtime promotion
+  switch. Promoted-local release requires explicit gate attestations; the PR-C
+  support-aware backoff and Context Divergence Guard remain shadow-only.
 
 ## v0.8.1-public-core
 

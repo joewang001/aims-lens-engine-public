@@ -198,6 +198,9 @@ allow_paths:
     - runtime_core/decision.py
     - runtime_core/service.py
     - runtime_core/shadow_routing.py
+    - runtime_core/provenance.py
+    - runtime_core/regression.py
+    - runtime_core/production.py
 
   reference_adapters:
     - reference_adapters/__init__.py

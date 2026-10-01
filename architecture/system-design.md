@@ -191,6 +191,52 @@ tenant configuration, private calibration, or live decision invocation.
 Production JobACE mappings and proprietary scoring logic remain outside the
 public core.
 
+### Production Promotion Layer
+
+The promoted runtime is gated through three internal artifacts:
+
+1. a stable local DecisionEnvelope;
+2. a public-safe provenance and explanation envelope; and
+3. a fail-closed runtime switch with explicit promotion attestations.
+
+The production-candidate envelope may expose only decision-level information:
+
+- decision mode and abstention reason;
+- ordered practice priority and diagnostic distribution from the local
+  decision;
+- data support and effective permitted evidence mass;
+- runtime path (legacy, shadow, or promoted_local);
+- shadow routing level, backoff distance, support, and total-variation
+  divergence summary when a PR-C observation is present; and
+- deterministic explanation text with the practice-not-prediction disclaimer.
+
+The public provenance layer intentionally excludes operational audit records and
+identifying or reconstructive fields, including audit IDs, timestamps, context
+hashes, parent configuration, evidence packet IDs, tenant/user/conversation
+identifiers, and raw routing distributions.
+
+The runtime switch does not treat repository state as proof of production
+readiness. A caller requesting promoted_local must explicitly attest that all
+of the following gates are satisfied:
+
+- runtime regression suite;
+- public-safety scan;
+- external contract compatibility;
+- provenance review;
+- private production controls;
+- human-review calibration; and
+- owner approval.
+
+If any gate is absent or false, the requested promoted-local path fails closed
+to shadow. legacy remains available as a non-promoted path.
+
+Importantly, this switch promotes only the local decision path. The PR-C
+support-aware backoff selector and Context Divergence Guard remain
+enforcement_mode="shadow" even when the local decision path is promoted.
+Turning either PR-C mechanism into live enforcement requires a separate
+validation and review decision; PR-E does not make that scientific or product
+claim.
+
 ### Enterprise Lens Manager
 
 Handles:
