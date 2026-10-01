@@ -188,6 +188,14 @@ allow_paths:
   routing:
     - routing/role_router.json
 
+  runtime_core:
+    - runtime_core/__init__.py
+    - runtime_core/models.py
+    - runtime_core/evidence.py
+    - runtime_core/compatibility.py
+    - runtime_core/inference.py
+    - runtime_core/support.py
+
   public_company_lenses:
     - company_lenses/_template/profile.json
     - company_lenses/amazon/README.md

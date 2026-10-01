@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Began production promotion of selected manuscript v1.5 reasoning mechanisms into a
+  standalone `runtime_core` package without changing the existing JobACE adapter
+  contract or public API.
+- Added fail-closed evidence weighting, compatibility masking, permitted-category
+  support accounting, and company-level hierarchical shrinkage primitives.
+- Added focused runtime-core unit tests and an independent CI gate.
+
 ## v0.8.1-public-core
 
 - Published the public-safe AIMS Lens Engine core.

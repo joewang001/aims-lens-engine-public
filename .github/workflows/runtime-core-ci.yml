@@ -1,0 +1,28 @@
+name: Runtime Core CI
+
+on:
+  pull_request:
+    paths:
+      - "runtime_core/**"
+      - "tests/**"
+      - "public_manifest.yaml"
+      - ".github/workflows/runtime-core-ci.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "runtime_core/**"
+      - "tests/**"
+      - "public_manifest.yaml"
+      - ".github/workflows/runtime-core-ci.yml"
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run runtime-core unit tests
+        run: python -m unittest discover -s tests -v
