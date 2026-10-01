@@ -11,6 +11,9 @@
 - Added an internal Decision Envelope and local decision service that compose the
   promoted primitives into abstention or ordered practice-priority outputs while
   stopping before routing, backoff, adapter translation, or LLM generation.
+- Added a shadow-only proposed support-aware L0-L5 backoff policy and an
+  observe-only Context Divergence Guard using caller-supplied thresholds. These
+  mechanisms do not change the live decision path.
 
 ## v0.8.1-public-core
 

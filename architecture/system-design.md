@@ -131,6 +131,37 @@ backoff, divergence guards, JobACE adapter translation, provenance/explanation
 assembly, or natural-language generation. It prioritizes practice; it is not a
 prediction of a specific employer's interview process or hiring decision.
 
+### Shadow Routing Policy
+
+The next promotion stage evaluates a proposed support-aware backoff policy in
+shadow mode only. It does not replace the local decision service or alter any
+public API response.
+
+For each L0-L5 candidate, the shadow policy requires:
+
+- authorization and applicability;
+- freshness and maturity eligibility;
+- a compatibility-valid distribution;
+- caller-supplied effective permitted evidence mass; and
+- a caller-supplied support threshold.
+
+The selector considers levels from most specific to least specific and chooses the
+first level whose permitted distribution retains positive mass and whose data
+support meets the declared threshold. If no level qualifies, it fails closed with
+no selected backoff level.
+
+The shadow Context Divergence Guard separately measures total-variation distance
+between the local reference distribution and the selected shadow distribution.
+Its threshold is caller-supplied and its enforcement mode is fixed to shadow:
+triggering the observation does not block, replace, or otherwise change the live
+decision.
+
+This policy is a production proposal motivated by the regime-dependent routing
+results in the v1.5 synthetic routing-shrinkage experiment. That experiment did
+not establish an optimal fallback rule or validated production divergence
+threshold, so no experiment fixture or mismatch value is embedded as a runtime
+constant.
+
 ### Enterprise Lens Manager
 
 Handles:

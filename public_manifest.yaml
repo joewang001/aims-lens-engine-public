@@ -197,6 +197,7 @@ allow_paths:
     - runtime_core/support.py
     - runtime_core/decision.py
     - runtime_core/service.py
+    - runtime_core/shadow_routing.py
 
   public_company_lenses:
     - company_lenses/_template/profile.json
