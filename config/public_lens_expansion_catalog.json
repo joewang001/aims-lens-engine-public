@@ -5,6 +5,7 @@
   "candidates": [
     {
       "slug": "amd",
+      "sector": "semiconductors",
       "company": "AMD",
       "industries": ["technology", "semiconductors", "ai infrastructure", "high performance computing"],
       "regions": ["north_america", "global"],
@@ -39,6 +40,7 @@
     },
     {
       "slug": "intel",
+      "sector": "semiconductors",
       "company": "Intel",
       "industries": ["technology", "semiconductors", "manufacturing", "ai infrastructure"],
       "regions": ["north_america", "global"],
@@ -73,6 +75,7 @@
     },
     {
       "slug": "bcg",
+      "sector": "consulting",
       "company": "Boston Consulting Group",
       "industries": ["consulting", "strategy consulting", "professional services", "digital consulting"],
       "regions": ["north_america", "global"],
@@ -107,6 +110,7 @@
     },
     {
       "slug": "bain",
+      "sector": "consulting",
       "company": "Bain & Company",
       "industries": ["consulting", "strategy consulting", "professional services"],
       "regions": ["north_america", "global"],
@@ -141,6 +145,7 @@
     },
     {
       "slug": "servicenow",
+      "sector": "enterprise software",
       "company": "ServiceNow",
       "industries": ["technology", "enterprise software", "cloud", "workflow automation", "ai"],
       "regions": ["north_america", "global"],
@@ -175,6 +180,7 @@
     },
     {
       "slug": "sap",
+      "sector": "enterprise software",
       "company": "SAP",
       "industries": ["technology", "enterprise software", "cloud", "business applications"],
       "regions": ["north_america", "europe", "global"],
@@ -209,6 +215,7 @@
     },
     {
       "slug": "roche",
+      "sector": "healthcare",
       "company": "Roche",
       "industries": ["healthcare", "pharma", "diagnostics", "biotechnology", "life sciences"],
       "regions": ["north_america", "europe", "global"],
@@ -243,6 +250,7 @@
     },
     {
       "slug": "novartis",
+      "sector": "healthcare",
       "company": "Novartis",
       "industries": ["healthcare", "pharma", "biotechnology", "life sciences"],
       "regions": ["north_america", "europe", "global"],
@@ -277,6 +285,7 @@
     },
     {
       "slug": "shell",
+      "sector": "energy",
       "company": "Shell",
       "industries": ["energy", "oil and gas", "lng", "chemicals", "low carbon energy"],
       "regions": ["north_america", "europe", "global"],
@@ -311,6 +320,7 @@
     },
     {
       "slug": "nextera-energy",
+      "sector": "utilities",
       "company": "NextEra Energy",
       "industries": ["energy", "utilities", "renewable energy", "infrastructure"],
       "regions": ["north_america"],
@@ -345,6 +355,7 @@
     },
     {
       "slug": "ups",
+      "sector": "logistics",
       "company": "UPS",
       "industries": ["logistics", "transportation", "supply chain", "ecommerce"],
       "regions": ["north_america", "global"],
@@ -379,6 +390,7 @@
     },
     {
       "slug": "airbnb",
+      "sector": "travel and hospitality",
       "company": "Airbnb",
       "industries": ["technology", "travel", "marketplace", "consumer services", "payments"],
       "regions": ["north_america", "global"],
@@ -413,6 +425,7 @@
     },
     {
       "slug": "boeing",
+      "sector": "aerospace",
       "company": "Boeing",
       "industries": ["aerospace", "defense", "manufacturing", "engineering", "services"],
       "regions": ["north_america", "global"],
@@ -447,6 +460,7 @@
     },
     {
       "slug": "siemens",
+      "sector": "industrial manufacturing",
       "company": "Siemens",
       "industries": ["industrial technology", "automation", "manufacturing", "infrastructure", "software"],
       "regions": ["north_america", "europe", "global"],
@@ -481,6 +495,7 @@
     },
     {
       "slug": "manulife",
+      "sector": "insurance",
       "company": "Manulife",
       "industries": ["financial services", "insurance", "wealth", "asset management"],
       "regions": ["canada", "north_america", "asia", "global"],
@@ -515,6 +530,7 @@
     },
     {
       "slug": "sun-life",
+      "sector": "insurance",
       "company": "Sun Life",
       "industries": ["financial services", "insurance", "wealth", "asset management", "health benefits"],
       "regions": ["canada", "north_america", "asia", "global"],
