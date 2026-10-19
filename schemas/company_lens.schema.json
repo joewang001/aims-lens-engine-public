@@ -89,6 +89,11 @@
           "evidence_ids": {
             "type": "array",
             "items": { "type": "string" }
+          },
+          "basis": {
+            "type": "string",
+            "enum": ["stated_by_company", "derived_public_inference", "generic_public_default"],
+            "description": "Whether the signal paraphrases a company-stated criterion or is a derived interview-preparation suggestion from public positioning."
           }
         }
       }
