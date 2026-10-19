@@ -769,6 +769,7 @@ def load_catalog_extension(path: Path = CATALOG_EXTENSION) -> dict[str, dict[str
         extension[slug] = {
             "company": company,
             "industries": list(candidate.get("industries") or []),
+            "sector": str(candidate.get("sector") or (candidate.get("industries") or ["unknown"])[0]),
             "regions": list(candidate.get("regions") or ["global"]),
             "stage": str(candidate.get("stage") or "large public company"),
             "industry": str(candidate.get("industry") or ", ".join(candidate.get("industries") or [])),
