@@ -82,7 +82,8 @@
         "MCK-PRIV-002",
         "MCK-BOOK-001",
         "MCK-BOOK-002"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Uses PEI stories with specific personal action, stakes, conflict, leadership, and result.",
@@ -95,7 +96,8 @@
       "evidence_ids": [
         "MCK-HIRE-001",
         "MCK-PRIV-003"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Communicates top-down with concise recommendation, supporting logic, and risks.",
@@ -108,7 +110,8 @@
         "MCK-PRIV-001",
         "MCK-PRIV-002",
         "MCK-BOOK-001"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Balances client impact with dissent, integrity, and willingness to speak up.",
@@ -121,7 +124,8 @@
       "evidence_ids": [
         "MCK-VALUES-001",
         "MCK-RISK-001"
-      ]
+      ],
+      "basis": "stated_by_company"
     }
   ],
   "anti_signals": [

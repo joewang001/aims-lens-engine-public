@@ -86,7 +86,8 @@
       "confidence": 0.76,
       "evidence_ids": [
         "GOOG-PRIV-002"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Shows collaboration, humility, conflict handling, and influence without relying on formal authority.",
@@ -99,7 +100,8 @@
       "evidence_ids": [
         "GOOG-PRIV-003",
         "GOOG-OFFICIAL-002"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "For AI/product work, balances bold innovation with rigorous responsible-development controls.",
@@ -112,7 +114,8 @@
       "evidence_ids": [
         "GOOG-AI-001",
         "GOOG-AI-002"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Connects technical work to useful, inclusive, safe, and measurable user outcomes.",
@@ -126,7 +129,8 @@
         "GOOG-OFFICIAL-002",
         "GOOG-OFFICIAL-003",
         "GOOG-AI-001"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Adapts preparation and answers to role-specific expectations for SWE, SRE, Data Analyst, UI, Android, and AI/ML.",
@@ -138,7 +142,8 @@
       "confidence": 0.62,
       "evidence_ids": [
         "GOOG-PRIV-004"
-      ]
+      ],
+      "basis": "stated_by_company"
     }
   ],
   "anti_signals": [

@@ -102,7 +102,8 @@
         "AMZ-OFFICIAL-003",
         "AMZ-HIRE-001",
         "AMZ-HIRE-002"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Connects technical, product, analytics, or operations work to customer and business outcomes.",
@@ -115,7 +116,8 @@
         "AMZ-OFFICIAL-002",
         "AMZ-CASE-001",
         "AMZ-HIRE-003"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Explains decision reversibility, risk, speed, and correction mechanisms.",
@@ -129,7 +131,8 @@
         "AMZ-CASE-001",
         "AMZ-CASE-002",
         "AMZ-CASE-003"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "For SDE and senior SDE roles, combines coding or system design depth with scale, production ownership, and operational consequences.",
@@ -144,7 +147,8 @@
         "AMZ-MED-004",
         "AMZ-MED-005",
         "AMZ-PRIV-002"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "For BIE and analytics roles, defines metrics clearly, validates data, communicates uncertainty, and converts analysis into a decision.",
@@ -159,7 +163,8 @@
         "AMZ-MED-002",
         "AMZ-HIRE-003",
         "AMZ-PRIV-003"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "For non-SDE technical roles, adapt the Amazon lens to the role evidence: Applied Science should test scientific/ML reasoning, Data Center should test safe operational troubleshooting, and Developer Advocate should test technical communication.",
@@ -171,7 +176,8 @@
       "confidence": 0.57,
       "evidence_ids": [
         "AMZ-PRIV-004"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Acknowledges trust, safety, consent, and transparency risks when optimizing growth, speed, or productivity.",
@@ -184,7 +190,8 @@
       "evidence_ids": [
         "AMZ-RISK-001",
         "AMZ-RISK-002"
-      ]
+      ],
+      "basis": "stated_by_company"
     }
   ],
   "anti_signals": [
