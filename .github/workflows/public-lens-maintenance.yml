@@ -166,7 +166,21 @@ jobs:
           gh pr edit "$number" \
             --repo "$GITHUB_REPOSITORY" \
             --add-label automated-refresh,daily-lens-enrichment,public-safe-candidate,auto-merge-eligible || true
-          gh pr merge "$number" --repo "$GITHUB_REPOSITORY" --squash --auto --delete-branch --match-head-commit "$GITHUB_SHA"
+          ready=false
+          for attempt in $(seq 1 12); do
+            mergeable=$(gh pr view "$number" --repo "$GITHUB_REPOSITORY" --json mergeable --jq '.mergeable')
+            case "$mergeable" in
+              MERGEABLE) ready=true; break ;;
+              CONFLICTING) echo "PR has conflicts; preserving it for review" >&2; exit 1 ;;
+              *) sleep 5 ;;
+            esac
+          done
+          if [ "$ready" != true ]; then
+            echo "PR mergeability is still unknown; preserving it for review" >&2
+            exit 1
+          fi
+          # All validation completed in needs; the server still enforces branch rules.
+          gh pr merge "$number" --repo "$GITHUB_REPOSITORY" --squash --delete-branch --match-head-commit "$GITHUB_SHA"
 
   daily-seven-dimension-enrichment:
     if: >-
