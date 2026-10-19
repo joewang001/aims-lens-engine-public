@@ -2,6 +2,7 @@
 # Deterministic public-catalog expansion; no LLM or private source access.
 set -eu
 export TZ=America/Toronto
+export PYTHONDONTWRITEBYTECODE=1
 ROOT=${AIMS_OPS_ROOT:-/home/node/.openclaw/workspace/aims-lens-public-ops}
 KEY=${AIMS_DEPLOY_KEY:-${ROOT}/credentials/aims-lens-deploy-key}
 KNOWN_HOSTS=${AIMS_KNOWN_HOSTS:-${ROOT}/credentials/github-known-hosts}
