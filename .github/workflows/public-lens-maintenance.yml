@@ -26,6 +26,7 @@ permissions:
   pull-requests: write
 
 env:
+  PYTHONDONTWRITEBYTECODE: "1"
   WEEKLY_NEW_COMPANY_TARGET: "2"
   DAILY_HISTORICAL_COMPANY_TARGET: "2"
 
