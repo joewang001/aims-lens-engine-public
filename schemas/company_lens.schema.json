@@ -89,6 +89,11 @@
           "evidence_ids": {
             "type": "array",
             "items": { "type": "string" }
+          },
+          "basis": {
+            "type": "string",
+            "enum": ["stated_by_company", "derived_public_inference", "generic_public_default"],
+            "description": "Source provenance of the claim, not its verbatim fidelity. stated_by_company: traces to company-issued material (official site, careers, investor relations, job postings, recruiting material) even when rewritten as a de-identified summary under the Copyright Rule; derived_public_inference: synthesized from public positioning, candidate-reported interview accounts, third-party case material, or external criticism, with no company-issued source; generic_public_default: generator boilerplate not specific to the company."
           }
         }
       }
