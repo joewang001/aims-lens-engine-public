@@ -1,0 +1,21 @@
+{
+  "company": "Costco",
+  "role_family": "Warehouse and depot operations",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Optimizes flow, replenishment, and labour scheduling against real member traffic.",
+    "Treats safety and shrink control as everyday operating constraints."
+  ],
+  "evidence_ids": [
+    "COSTCO-OFFICIAL-001",
+    "COSTCO-CAREERS-002",
+    "COSTCO-IR-003"
+  ]
+}

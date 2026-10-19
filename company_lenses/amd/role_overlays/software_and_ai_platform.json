@@ -1,0 +1,21 @@
+{
+  "company": "AMD",
+  "role_family": "Software and AI platform",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Explains how software, compilers, or libraries unlock hardware capability for real workloads.",
+    "Shows measurement discipline when claiming speedups, including baseline and workload definition."
+  ],
+  "evidence_ids": [
+    "AMD-IR-001",
+    "AMD-CAREERS-002",
+    "AMD-CORPORATE-003"
+  ]
+}

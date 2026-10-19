@@ -29,6 +29,61 @@
         "BCG-OFFICIAL-001",
         "BCG-CAREERS-002"
       ]
+    },
+    {
+      "question_id": "BCG-Q-002",
+      "type": "case",
+      "generated_question": "A client wants to launch an AI product but has no delivery capability. What would you recommend they build, buy, or stop doing, and how would you sequence it?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Separates capability gaps from strategy gaps.",
+        "Sequences by dependency and time-to-value.",
+        "Defines the metric that would show the sequence is working."
+      ],
+      "evidence_ids": [
+        "BCG-ABOUT-003",
+        "BCG-OFFICIAL-001"
+      ]
+    },
+    {
+      "question_id": "BCG-Q-003",
+      "type": "behavioral",
+      "generated_question": "Tell me about a time you had to deliver quality work with less senior support than you expected. What did you do first?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Triages what can be simplified without losing the decision.",
+        "Seeks targeted help rather than blanket escalation.",
+        "Reports the quality bar achieved and what was consciously traded away."
+      ],
+      "evidence_ids": [
+        "BCG-CAREERS-002",
+        "BCG-ABOUT-003"
+      ]
+    },
+    {
+      "question_id": "BCG-Q-004",
+      "type": "behavioral",
+      "generated_question": "Describe feedback you received that changed how you run a team. What did you actually do differently in the next engagement?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Quotes the substance of the feedback, not just its tone.",
+        "Names a specific behavioral change.",
+        "Shows evidence from a later situation where the change held."
+      ],
+      "evidence_ids": [
+        "BCG-CAREERS-002",
+        "BCG-ABOUT-003"
+      ]
     }
   ]
 }

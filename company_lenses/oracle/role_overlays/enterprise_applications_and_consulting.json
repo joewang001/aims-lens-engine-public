@@ -1,0 +1,22 @@
+{
+  "company": "Oracle",
+  "role_family": "Enterprise applications and consulting",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Maps business processes to configured software and names what will not fit.",
+    "Manages client-side change adoption alongside technical delivery."
+  ],
+  "evidence_ids": [
+    "ORACLE-OFFICIAL-001",
+    "ORACLE-CAREERS-002",
+    "ORACLE-IR-003",
+    "ORACLE-CITIZENSHIP-004"
+  ]
+}

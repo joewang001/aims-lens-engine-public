@@ -1,0 +1,21 @@
+{
+  "company": "Deloitte",
+  "role_family": "Audit and assurance",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Applies professional skepticism to management explanations and documents the basis for conclusions.",
+    "Manages sampling, evidence sufficiency, and review timelines under fixed deadlines."
+  ],
+  "evidence_ids": [
+    "DELOITTE-OFFICIAL-001",
+    "DELOITTE-CAREERS-002",
+    "DELOITTE-ABOUT-003"
+  ]
+}

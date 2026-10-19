@@ -29,6 +29,62 @@
         "AMD-IR-001",
         "AMD-CAREERS-002"
       ]
+    },
+    {
+      "question_id": "AMD-Q-002",
+      "type": "behavioral",
+      "generated_question": "Walk me through the hardest performance-versus-power or performance-versus-cost tradeoff you have owned, and how you decided where to stop optimizing.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "States the constraint and the measurement method before the decision.",
+        "Names alternatives considered and why they were rejected.",
+        "Reports the resulting number and what it changed for the product."
+      ],
+      "evidence_ids": [
+        "AMD-IR-001",
+        "AMD-CORPORATE-003"
+      ]
+    },
+    {
+      "question_id": "AMD-Q-003",
+      "type": "behavioral",
+      "generated_question": "Describe a change that required hardware, software, and validation teams to move together. What did you personally do when one group fell behind?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Identifies the dependency and the earliest visible signal of slippage.",
+        "Shows a specific intervention rather than passive escalation.",
+        "Explains how the team verified the change landed correctly."
+      ],
+      "evidence_ids": [
+        "AMD-CORPORATE-003",
+        "AMD-CAREERS-002"
+      ]
+    },
+    {
+      "question_id": "AMD-Q-004",
+      "type": "behavioral",
+      "generated_question": "Tell me about a result you claimed publicly or to leadership that later turned out to be wrong, and how you corrected it.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Admits the error without deflecting to tooling or teammates.",
+        "Describes the corrected measurement or validation step.",
+        "Shows a durable change in how results are reported afterwards."
+      ],
+      "evidence_ids": [
+        "AMD-IR-001",
+        "AMD-CAREERS-002"
+      ]
     }
   ]
 }

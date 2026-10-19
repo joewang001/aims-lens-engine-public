@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-09-21",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "technology",
     "enterprise software",
@@ -35,6 +35,33 @@
         "IBM-OFFICIAL-001",
         "IBM-CAREERS-002",
         "IBM-IR-003"
+      ]
+    },
+    {
+      "name": "Client success as the primary measure",
+      "description": "Public values material puts client success first, which means technical elegance is judged by whether the client's operation actually improves.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "IBM-OFFICIAL-001",
+        "IBM-IR-003"
+      ]
+    },
+    {
+      "name": "Innovation that has to matter",
+      "description": "Research depth is publicly paired with enterprise applicability, so answers should connect novel work to adoption rather than to novelty alone.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "IBM-OFFICIAL-001",
+        "IBM-IR-003"
+      ]
+    },
+    {
+      "name": "Trust and personal responsibility",
+      "description": "Enterprise and regulated clients make auditability, data handling, and clear ownership part of the engineering brief.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "IBM-OFFICIAL-001",
+        "IBM-CAREERS-002"
       ]
     }
   ],
@@ -72,6 +99,42 @@
         "IBM-CAREERS-002",
         "IBM-IR-003"
       ]
+    },
+    {
+      "signal": "Frames a technical solution in terms of the client's operating constraint and the metric that improved.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "IBM-OFFICIAL-001",
+        "IBM-CAREERS-002"
+      ]
+    },
+    {
+      "signal": "Explains how a system stays supportable in production, including monitoring, ownership, and upgrade paths.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "IBM-OFFICIAL-001",
+        "IBM-IR-003"
+      ]
+    },
+    {
+      "signal": "Shows deliberate skill acquisition when the platform or tooling changed under them.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "confidence": 0.66,
+      "evidence_ids": [
+        "IBM-CAREERS-002",
+        "IBM-OFFICIAL-001"
+      ]
     }
   ],
   "anti_signals": [
@@ -83,6 +146,23 @@
         "IBM-OFFICIAL-001",
         "IBM-CAREERS-002",
         "IBM-IR-003"
+      ]
+    },
+    {
+      "anti_signal": "Describing IBM only as an AI or cloud brand without distinguishing consulting, software, infrastructure, and research work.",
+      "risk_reason": "Public sources describe materially different role families with different expectations.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "IBM-OFFICIAL-001",
+        "IBM-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Claims about internal values assessments or hiring criteria presented as public fact.",
+      "risk_reason": "The lens is built from public-safe source metadata and does not represent an official IBM standard.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "IBM-CAREERS-002"
       ]
     }
   ],
@@ -105,7 +185,7 @@
     "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-09-21"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official IBM hiring standard.",

@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-09-14",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "retail",
     "ecommerce",
@@ -35,6 +35,33 @@
         "WALMART-OFFICIAL-001",
         "WALMART-CAREERS-002",
         "WALMART-IR-003"
+      ]
+    },
+    {
+      "name": "Customer price leadership as the constraint",
+      "description": "Public material ties the business to everyday low prices, which makes cost-to-serve and waste reduction central to nearly every role.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "WALMART-OFFICIAL-001",
+        "WALMART-IR-003"
+      ]
+    },
+    {
+      "name": "Scale operations with local accountability",
+      "description": "The company publicly operates through stores, clubs, and market-level leadership, so decisions balance central standards with local execution reality.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "WALMART-OFFICIAL-001",
+        "WALMART-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Technology in service of stores and supply chain",
+      "description": "Public positioning frames automation and data work around store and supply-chain outcomes rather than technology for its own sake.",
+      "confidence": 0.67,
+      "evidence_ids": [
+        "WALMART-IR-003",
+        "WALMART-CAREERS-002"
       ]
     }
   ],
@@ -72,6 +99,42 @@
         "WALMART-CAREERS-002",
         "WALMART-IR-003"
       ]
+    },
+    {
+      "signal": "Reasons about cost, throughput, and inventory with concrete numbers from a real operation.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "WALMART-OFFICIAL-001",
+        "WALMART-IR-003"
+      ]
+    },
+    {
+      "signal": "Shows a change rolled out across many locations that survived frontline reality and local variation.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "confidence": 0.69,
+      "evidence_ids": [
+        "WALMART-CAREERS-002",
+        "WALMART-OFFICIAL-001"
+      ]
+    },
+    {
+      "signal": "Connects a technical or data initiative to a measured store, associate, or customer outcome.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "WALMART-IR-003",
+        "WALMART-CAREERS-002"
+      ]
     }
   ],
   "anti_signals": [
@@ -83,6 +146,23 @@
         "WALMART-OFFICIAL-001",
         "WALMART-CAREERS-002",
         "WALMART-IR-003"
+      ]
+    },
+    {
+      "anti_signal": "Treating Walmart as only retail store operations and ignoring supply chain, technology, and corporate functions.",
+      "risk_reason": "Public sources describe a large set of distinct role families.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "WALMART-CAREERS-002",
+        "WALMART-OFFICIAL-001"
+      ]
+    },
+    {
+      "anti_signal": "Proposing a process or technology change without accounting for frontline labour and store variation.",
+      "risk_reason": "Scale execution is a public operating promise, so an unqualified rollout claim cannot be evaluated.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "WALMART-OFFICIAL-001"
       ]
     }
   ],
@@ -105,7 +185,7 @@
     "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-09-14"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Walmart hiring standard.",

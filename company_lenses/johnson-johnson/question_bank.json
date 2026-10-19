@@ -30,6 +30,60 @@
         "JOHNSON_JOHNSON-CAREERS-002",
         "JOHNSON_JOHNSON-IR-003"
       ]
+    },
+    {
+      "question_id": "JOHNSON_JOHNSON-Q-002",
+      "type": "behavioral",
+      "generated_question": "Tell me about a time you slowed or stopped work because the evidence was not strong enough. What was the cost?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "States the threshold that was not met and who set it.",
+        "Acknowledges the commercial or schedule cost honestly.",
+        "Describes how the decision was documented and revisited."
+      ],
+      "evidence_ids": [
+        "JOHNSON_JOHNSON-IR-003",
+        "JOHNSON_JOHNSON-OFFICIAL-001"
+      ]
+    },
+    {
+      "question_id": "JOHNSON_JOHNSON-Q-003",
+      "type": "behavioral",
+      "generated_question": "Describe a project where clinical, quality, and commercial priorities conflicted. How was it resolved?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Names the actual conflict rather than smoothing it over.",
+        "Identifies the decision authority and escalation path.",
+        "Reports the outcome and its regulatory or patient impact."
+      ],
+      "evidence_ids": [
+        "JOHNSON_JOHNSON-CAREERS-002",
+        "JOHNSON_JOHNSON-OFFICIAL-001"
+      ]
+    },
+    {
+      "question_id": "JOHNSON_JOHNSON-Q-004",
+      "type": "behavioral",
+      "generated_question": "Tell me about a result you reported that had wide confidence intervals or weak evidence. How did you present it to decision-makers?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Separates what is known from what is inferred.",
+        "Quantifies uncertainty in a way decision-makers can use.",
+        "States what data would resolve the ambiguity."
+      ],
+      "evidence_ids": [
+        "JOHNSON_JOHNSON-IR-003",
+        "JOHNSON_JOHNSON-CAREERS-002"
+      ]
     }
   ]
 }

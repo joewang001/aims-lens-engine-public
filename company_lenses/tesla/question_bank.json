@@ -30,6 +30,60 @@
         "TESLA-CAREERS-002",
         "TESLA-IR-003"
       ]
+    },
+    {
+      "question_id": "TESLA-Q-002",
+      "type": "behavioral",
+      "generated_question": "Tell me about a time you removed cost or complexity by rejecting an inherited assumption. How did you verify it was safe?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Names the assumption and why it was previously accepted.",
+        "Shows a physical or economic calculation behind the change.",
+        "Reports validation evidence and the residual risk."
+      ],
+      "evidence_ids": [
+        "TESLA-OFFICIAL-001",
+        "TESLA-IR-003"
+      ]
+    },
+    {
+      "question_id": "TESLA-Q-003",
+      "type": "behavioral",
+      "generated_question": "Describe a problem you owned that only got solved by changing something outside your own discipline.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Identifies the cross-boundary cause rather than the local symptom.",
+        "Persuades the owning team with evidence.",
+        "Confirms the fix in field or production data."
+      ],
+      "evidence_ids": [
+        "TESLA-OFFICIAL-001",
+        "TESLA-CAREERS-002"
+      ]
+    },
+    {
+      "question_id": "TESLA-Q-004",
+      "type": "behavioral",
+      "generated_question": "Tell me about a change you shipped fast that later needed correction. What did you change in your validation process?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Owns the miss without blaming schedule pressure alone.",
+        "Adds a specific validation gate.",
+        "Shows a later case where the gate worked."
+      ],
+      "evidence_ids": [
+        "TESLA-CAREERS-002",
+        "TESLA-IR-003"
+      ]
     }
   ]
 }

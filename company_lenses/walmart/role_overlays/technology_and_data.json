@@ -1,0 +1,21 @@
+{
+  "company": "Walmart",
+  "role_family": "Technology and data",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Builds systems that store associates and supply-chain teams can actually operate.",
+    "Measures success by operational adoption and outcome, not deployment."
+  ],
+  "evidence_ids": [
+    "WALMART-OFFICIAL-001",
+    "WALMART-CAREERS-002",
+    "WALMART-IR-003"
+  ]
+}

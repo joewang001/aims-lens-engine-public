@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-08-25",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "technology",
     "ai infrastructure",
@@ -33,6 +33,33 @@
       "confidence": 0.68,
       "evidence_ids": [
         "NVIDIA-OFFICIAL-001",
+        "NVIDIA-CAREERS-002",
+        "NVIDIA-IR-003"
+      ]
+    },
+    {
+      "name": "Full-stack co-design",
+      "description": "Public material describes gains that come from designing chips, systems, networking, and software together, so isolated component optimization is an incomplete answer.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "NVIDIA-OFFICIAL-001",
+        "NVIDIA-IR-003"
+      ]
+    },
+    {
+      "name": "Intellectual honesty about limits",
+      "description": "Performance claims are publicly benchmark-driven, which makes acknowledging where a result does not hold a credibility signal.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "NVIDIA-OFFICIAL-001",
+        "NVIDIA-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Speed with measurement",
+      "description": "Fast iteration is publicly paired with profiler- and benchmark-based verification, so velocity without a measurement loop reads as risk.",
+      "confidence": 0.67,
+      "evidence_ids": [
         "NVIDIA-CAREERS-002",
         "NVIDIA-IR-003"
       ]
@@ -72,6 +99,42 @@
         "NVIDIA-CAREERS-002",
         "NVIDIA-IR-003"
       ]
+    },
+    {
+      "signal": "Explains a performance problem across compute, memory, network, and software layers rather than one layer alone.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking"
+      ],
+      "confidence": 0.73,
+      "evidence_ids": [
+        "NVIDIA-OFFICIAL-001",
+        "NVIDIA-IR-003"
+      ]
+    },
+    {
+      "signal": "Shows how they enabled other teams or developers through tooling, libraries, or documentation.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "confidence": 0.69,
+      "evidence_ids": [
+        "NVIDIA-CAREERS-002",
+        "NVIDIA-OFFICIAL-001"
+      ]
+    },
+    {
+      "signal": "Reports a speedup with baseline, workload, and measurement conditions stated.",
+      "aims_dimensions": [
+        "impact_results",
+        "growth_mindset"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "NVIDIA-OFFICIAL-001",
+        "NVIDIA-IR-003"
+      ]
     }
   ],
   "anti_signals": [
@@ -82,6 +145,23 @@
       "evidence_ids": [
         "NVIDIA-OFFICIAL-001",
         "NVIDIA-CAREERS-002",
+        "NVIDIA-IR-003"
+      ]
+    },
+    {
+      "anti_signal": "Reducing Nvidia to a GPU vendor without engaging the software ecosystem and systems context.",
+      "risk_reason": "Public sources describe platform-level work spanning software and systems, not components alone.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "NVIDIA-OFFICIAL-001",
+        "NVIDIA-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Unqualified speedup claims without workload or baseline definition.",
+      "risk_reason": "The lens is benchmark-oriented and cannot evaluate a number without its conditions.",
+      "confidence": 0.71,
+      "evidence_ids": [
         "NVIDIA-IR-003"
       ]
     }
@@ -105,7 +185,7 @@
     "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-08-25"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official NVIDIA hiring standard.",

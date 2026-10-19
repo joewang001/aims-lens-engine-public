@@ -35,6 +35,33 @@
         "BAIN-OFFICIAL-001",
         "BAIN-CAREERS-002"
       ]
+    },
+    {
+      "name": "Candor as a working norm",
+      "description": "Public material puts candor alongside collaboration, implying that direct feedback and disagreement are expected parts of teamwork rather than exceptions.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "BAIN-ABOUT-003",
+        "BAIN-OFFICIAL-001"
+      ]
+    },
+    {
+      "name": "Results that hold after the engagement",
+      "description": "Success is framed around durable client outcomes and client advocacy, so answers that stop at recommendations without adoption are weak signals.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "BAIN-ABOUT-003",
+        "BAIN-OFFICIAL-001"
+      ]
+    },
+    {
+      "name": "Apprenticeship through generalist problem solving",
+      "description": "The firm presents itself as a place where consultants build judgment across industries and problems, which favors learning velocity over narrow specialization early on.",
+      "confidence": 0.64,
+      "evidence_ids": [
+        "BAIN-CAREERS-002",
+        "BAIN-ABOUT-003"
+      ]
     }
   ],
   "aims_weighting": {
@@ -70,6 +97,42 @@
         "BAIN-OFFICIAL-001",
         "BAIN-CAREERS-002"
       ]
+    },
+    {
+      "signal": "Structures an ambiguous problem into testable parts and states what evidence would change the recommendation.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "BAIN-ABOUT-003",
+        "BAIN-CAREERS-002"
+      ]
+    },
+    {
+      "signal": "Shows how the candidate gave and acted on direct feedback inside a team, including disagreement with someone more senior.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "confidence": 0.68,
+      "evidence_ids": [
+        "BAIN-ABOUT-003",
+        "BAIN-CAREERS-002"
+      ]
+    },
+    {
+      "signal": "Connects analysis to a client decision that was actually adopted, and can explain the adoption mechanism.",
+      "aims_dimensions": [
+        "impact_results",
+        "ownership_execution"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "BAIN-OFFICIAL-001",
+        "BAIN-ABOUT-003"
+      ]
     }
   ],
   "anti_signals": [
@@ -80,6 +143,22 @@
       "evidence_ids": [
         "BAIN-OFFICIAL-001",
         "BAIN-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Reciting a consulting framework by name without showing why it fit this problem or what it excluded.",
+      "risk_reason": "Framework labels are not public-source evidence of judgment and cannot be evaluated against the lens.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "BAIN-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Treating 'the Bain Way' or any internal method as a documented official standard.",
+      "risk_reason": "The lens contains public-safe signals only; internal methods and evaluation standards are not public.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "BAIN-ABOUT-003"
       ]
     }
   ],
@@ -98,8 +177,8 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 2,
-    "official_source_count": 2,
+    "source_count": 3,
+    "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
     "last_reviewed": "2026-10-19"

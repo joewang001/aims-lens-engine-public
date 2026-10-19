@@ -1,0 +1,22 @@
+{
+  "company": "Oracle",
+  "role_family": "Cloud infrastructure and database engineering",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Reasons about availability, latency, and cost together for regulated workloads.",
+    "Designs migration and rollback paths rather than one-way moves."
+  ],
+  "evidence_ids": [
+    "ORACLE-OFFICIAL-001",
+    "ORACLE-CAREERS-002",
+    "ORACLE-IR-003",
+    "ORACLE-CITIZENSHIP-004"
+  ]
+}

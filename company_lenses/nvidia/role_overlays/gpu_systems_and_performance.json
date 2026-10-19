@@ -1,0 +1,21 @@
+{
+  "company": "NVIDIA",
+  "role_family": "GPU systems and performance engineering",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Works across memory hierarchy, interconnect, and power constraints.",
+    "Uses profiler evidence to choose between algorithmic and systems fixes."
+  ],
+  "evidence_ids": [
+    "NVIDIA-OFFICIAL-001",
+    "NVIDIA-CAREERS-002",
+    "NVIDIA-IR-003"
+  ]
+}

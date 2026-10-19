@@ -36,6 +36,33 @@
         "BCG-OFFICIAL-001",
         "BCG-CAREERS-002"
       ]
+    },
+    {
+      "name": "Purpose and people before pure analysis",
+      "description": "Public positioning links strategy work to purpose and to the people who deliver it, so answers that ignore team and organizational dynamics read as incomplete.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "BCG-ABOUT-003",
+        "BCG-OFFICIAL-001"
+      ]
+    },
+    {
+      "name": "Strategy carried through to build",
+      "description": "The firm describes pairing strategy with engineering and delivery, which favors candidates who can move from recommendation to implementation detail.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "BCG-ABOUT-003",
+        "BCG-OFFICIAL-001"
+      ]
+    },
+    {
+      "name": "Case-team apprenticeship",
+      "description": "Work is organized in small case teams, so peer-level teaching, fast feedback, and shared ownership are structural parts of the job.",
+      "confidence": 0.63,
+      "evidence_ids": [
+        "BCG-CAREERS-002",
+        "BCG-ABOUT-003"
+      ]
     }
   ],
   "aims_weighting": {
@@ -71,6 +98,42 @@
         "BCG-OFFICIAL-001",
         "BCG-CAREERS-002"
       ]
+    },
+    {
+      "signal": "States a hypothesis, the evidence that would kill it, and the decision it informs within the first minutes of a case.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "BCG-ABOUT-003",
+        "BCG-CAREERS-002"
+      ]
+    },
+    {
+      "signal": "Shows how they lifted a teammate's work quality through direct, specific feedback rather than general encouragement.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "confidence": 0.66,
+      "evidence_ids": [
+        "BCG-CAREERS-002",
+        "BCG-ABOUT-003"
+      ]
+    },
+    {
+      "signal": "Connects a strategic recommendation to the operating change and metric that proved it worked.",
+      "aims_dimensions": [
+        "impact_results",
+        "ownership_execution"
+      ],
+      "confidence": 0.69,
+      "evidence_ids": [
+        "BCG-OFFICIAL-001",
+        "BCG-ABOUT-003"
+      ]
     }
   ],
   "anti_signals": [
@@ -80,6 +143,23 @@
       "confidence": 0.66,
       "evidence_ids": [
         "BCG-OFFICIAL-001",
+        "BCG-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Naming a matrix or framework instead of explaining the judgment it supported.",
+      "risk_reason": "The lens evaluates reasoning against public signals, and a label alone provides no reasoning to assess.",
+      "confidence": 0.71,
+      "evidence_ids": [
+        "BCG-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Assuming one global BCG hiring bar across offices, practices, and specialist tracks.",
+      "risk_reason": "Public sources describe multiple practices and roles; the lens cannot support a single uniform standard.",
+      "confidence": 0.73,
+      "evidence_ids": [
+        "BCG-ABOUT-003",
         "BCG-CAREERS-002"
       ]
     }
@@ -99,8 +179,8 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 2,
-    "official_source_count": 2,
+    "source_count": 3,
+    "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
     "last_reviewed": "2026-10-19"

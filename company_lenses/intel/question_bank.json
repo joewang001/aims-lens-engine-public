@@ -29,6 +29,61 @@
         "INTEL-OFFICIAL-001",
         "INTEL-CAREERS-002"
       ]
+    },
+    {
+      "question_id": "INTEL-Q-002",
+      "type": "behavioral",
+      "generated_question": "Walk me through your hardest debug. What did you believe first, and what evidence made you abandon it?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "States the initial hypothesis and the test that challenged it.",
+        "Shows methodical elimination rather than trial and error.",
+        "Reports the root cause and the preventive change."
+      ],
+      "evidence_ids": [
+        "INTEL-OFFICIAL-001",
+        "INTEL-CULTURE-003"
+      ]
+    },
+    {
+      "question_id": "INTEL-Q-003",
+      "type": "behavioral",
+      "generated_question": "Describe a time a late design change forced rework in another team's plan. How did you limit the damage?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Communicates impact with dates and options, not just notice.",
+        "Negotiates scope explicitly with the affected team.",
+        "Captures the lesson in the interface or process."
+      ],
+      "evidence_ids": [
+        "INTEL-CULTURE-003",
+        "INTEL-CAREERS-002"
+      ]
+    },
+    {
+      "question_id": "INTEL-Q-004",
+      "type": "behavioral",
+      "generated_question": "Tell me about a quality escape you were close to. What did you change in the verification approach afterwards?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "growth_mindset",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Owns the miss without blaming tooling alone.",
+        "Adds specific coverage rather than generic caution.",
+        "Verifies the new control actually catches the class of defect."
+      ],
+      "evidence_ids": [
+        "INTEL-OFFICIAL-001",
+        "INTEL-CAREERS-002"
+      ]
     }
   ]
 }

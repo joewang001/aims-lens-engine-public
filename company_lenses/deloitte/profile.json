@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-09-21",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "consulting",
     "professional services",
@@ -34,6 +34,33 @@
       "evidence_ids": [
         "DELOITTE-OFFICIAL-001",
         "DELOITTE-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Impact that matters and can be measured",
+      "description": "Public material frames the firm's purpose around impact that matters and real, measurable results rather than activity or deliverables alone.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "DELOITTE-ABOUT-003",
+        "DELOITTE-OFFICIAL-001"
+      ]
+    },
+    {
+      "name": "Multidisciplinary teaming",
+      "description": "Services are delivered by mixed audit, tax, consulting, and advisory teams, so handoffs and shared standards are part of the work rather than overhead.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "DELOITTE-ABOUT-003",
+        "DELOITTE-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Impact that survives review",
+      "description": "Public positioning emphasizes measurable impact, which in practice means work that can be defended to a client, a regulator, or an internal quality reviewer.",
+      "confidence": 0.66,
+      "evidence_ids": [
+        "DELOITTE-OFFICIAL-001",
+        "DELOITTE-ABOUT-003"
       ]
     }
   ],
@@ -70,6 +97,42 @@
         "DELOITTE-OFFICIAL-001",
         "DELOITTE-CAREERS-002"
       ]
+    },
+    {
+      "signal": "Raises a quality or integrity concern early and shows how it was resolved without losing the relationship.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.71,
+      "evidence_ids": [
+        "DELOITTE-ABOUT-003",
+        "DELOITTE-CAREERS-002"
+      ]
+    },
+    {
+      "signal": "Delivers a deadline-bound piece of work while making dependencies and review points explicit.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "confidence": 0.68,
+      "evidence_ids": [
+        "DELOITTE-CAREERS-002",
+        "DELOITTE-OFFICIAL-001"
+      ]
+    },
+    {
+      "signal": "Works effectively across disciplines and states what each function needed from the others.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.66,
+      "evidence_ids": [
+        "DELOITTE-ABOUT-003",
+        "DELOITTE-CAREERS-002"
+      ]
     }
   ],
   "anti_signals": [
@@ -79,6 +142,22 @@
       "confidence": 0.66,
       "evidence_ids": [
         "DELOITTE-OFFICIAL-001",
+        "DELOITTE-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Treating Deloitte as a single firm with one hiring bar across member firms and service lines.",
+      "risk_reason": "The global network is legally and operationally distributed; public sources do not support a uniform standard.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "DELOITTE-ABOUT-003"
+      ]
+    },
+    {
+      "anti_signal": "Substituting brand prestige for a role-specific reason to join.",
+      "risk_reason": "Brand recognition is not evidence of fit and is not tied to any cited public signal.",
+      "confidence": 0.7,
+      "evidence_ids": [
         "DELOITTE-CAREERS-002"
       ]
     }
@@ -98,11 +177,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 2,
-    "official_source_count": 2,
+    "source_count": 3,
+    "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-09-21"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Deloitte hiring standard.",

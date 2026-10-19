@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-09-14",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "retail",
     "wholesale",
@@ -34,6 +34,33 @@
       "evidence_ids": [
         "COSTCO-OFFICIAL-001",
         "COSTCO-CAREERS-002",
+        "COSTCO-IR-003"
+      ]
+    },
+    {
+      "name": "Member value as the operating constraint",
+      "description": "Public material consistently ties decisions to member price and value, which makes cost-to-serve and waste reduction central rather than optional.",
+      "confidence": 0.71,
+      "evidence_ids": [
+        "COSTCO-OFFICIAL-001",
+        "COSTCO-IR-003"
+      ]
+    },
+    {
+      "name": "Long-tenure employee care",
+      "description": "The company is publicly known for comparatively strong pay and retention in retail, which shapes expectations around scheduling fairness and internal promotion.",
+      "confidence": 0.66,
+      "evidence_ids": [
+        "COSTCO-CAREERS-002",
+        "COSTCO-IR-003"
+      ]
+    },
+    {
+      "name": "Operational simplicity at scale",
+      "description": "A limited-assortment, high-volume model rewards people who simplify processes and protect throughput rather than adding variation.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "COSTCO-OFFICIAL-001",
         "COSTCO-IR-003"
       ]
     }
@@ -72,6 +99,42 @@
         "COSTCO-CAREERS-002",
         "COSTCO-IR-003"
       ]
+    },
+    {
+      "signal": "Reasons about cost, throughput, and waste with concrete numbers from a real operation.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "COSTCO-OFFICIAL-001",
+        "COSTCO-IR-003"
+      ]
+    },
+    {
+      "signal": "Handles a member or customer problem by fixing the cause, not only the immediate complaint.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.67,
+      "evidence_ids": [
+        "COSTCO-CAREERS-002",
+        "COSTCO-OFFICIAL-001"
+      ]
+    },
+    {
+      "signal": "Shows respect for frontline constraints when proposing a process or systems change.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "structured_thinking"
+      ],
+      "confidence": 0.65,
+      "evidence_ids": [
+        "COSTCO-CAREERS-002",
+        "COSTCO-IR-003"
+      ]
     }
   ],
   "anti_signals": [
@@ -81,6 +144,23 @@
       "confidence": 0.66,
       "evidence_ids": [
         "COSTCO-OFFICIAL-001",
+        "COSTCO-CAREERS-002",
+        "COSTCO-IR-003"
+      ]
+    },
+    {
+      "anti_signal": "Assuming all Costco roles are warehouse-floor roles or that retail pace equals corporate pace.",
+      "risk_reason": "The lens covers multiple role families and public sources do not support one uniform working model.",
+      "confidence": 0.69,
+      "evidence_ids": [
+        "COSTCO-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Using 'good pay and benefits' as a substitute for role-specific motivation.",
+      "risk_reason": "Compensation reputation is widely reported but says nothing about fit for the specific work.",
+      "confidence": 0.66,
+      "evidence_ids": [
         "COSTCO-CAREERS-002",
         "COSTCO-IR-003"
       ]
@@ -105,7 +185,7 @@
     "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-09-14"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Costco hiring standard.",

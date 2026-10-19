@@ -29,6 +29,61 @@
         "DELOITTE-OFFICIAL-001",
         "DELOITTE-CAREERS-002"
       ]
+    },
+    {
+      "question_id": "DELOITTE-Q-002",
+      "type": "behavioral",
+      "generated_question": "Tell me about a finding or result that was politically inconvenient. How did you present it and what did you refuse to soften?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Keeps the substance intact while adapting the framing.",
+        "Shows awareness of professional or regulatory obligations.",
+        "Reports the outcome including any cost to themselves."
+      ],
+      "evidence_ids": [
+        "DELOITTE-ABOUT-003",
+        "DELOITTE-OFFICIAL-001"
+      ]
+    },
+    {
+      "question_id": "DELOITTE-Q-003",
+      "type": "behavioral",
+      "generated_question": "Describe a deadline-driven engagement where a dependency slipped. What did you renegotiate first?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Distinguishes scope, quality, and timeline explicitly.",
+        "Escalates with options rather than problems.",
+        "Protects the review steps that carry real risk."
+      ],
+      "evidence_ids": [
+        "DELOITTE-CAREERS-002",
+        "DELOITTE-OFFICIAL-001"
+      ]
+    },
+    {
+      "question_id": "DELOITTE-Q-004",
+      "type": "behavioral",
+      "generated_question": "Tell me about a project where another discipline's work changed your conclusion. How did you handle the rework?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Describes the substantive disagreement rather than interpersonal friction.",
+        "Updates the conclusion when evidence warrants it.",
+        "Keeps the client or reviewer informed during the change."
+      ],
+      "evidence_ids": [
+        "DELOITTE-ABOUT-003",
+        "DELOITTE-CAREERS-002"
+      ]
     }
   ]
 }

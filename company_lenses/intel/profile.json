@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-18",
-  "source_cutoff": "2026-10-18",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "technology",
     "semiconductors",
@@ -34,6 +34,33 @@
       "confidence": 0.68,
       "evidence_ids": [
         "INTEL-OFFICIAL-001",
+        "INTEL-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Engineering discipline at manufacturing scale",
+      "description": "Public material ties product claims to process, yield, and validation realities, so answers that ignore manufacturability read as incomplete.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "INTEL-OFFICIAL-001",
+        "INTEL-CULTURE-003"
+      ]
+    },
+    {
+      "name": "Quality and security before schedule",
+      "description": "Chip-level defects propagate at scale, which makes verification and security review structural rather than final-stage gates.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "INTEL-OFFICIAL-001",
+        "INTEL-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Responsible innovation beyond the product",
+      "description": "Public careers material frames technology work around responsible innovation, sustainability, and community impact alongside product delivery.",
+      "confidence": 0.64,
+      "evidence_ids": [
+        "INTEL-CULTURE-003",
         "INTEL-CAREERS-002"
       ]
     }
@@ -71,6 +98,42 @@
         "INTEL-OFFICIAL-001",
         "INTEL-CAREERS-002"
       ]
+    },
+    {
+      "signal": "Shows a debugging or validation process where evidence narrowed the search space step by step.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "INTEL-OFFICIAL-001",
+        "INTEL-CULTURE-003"
+      ]
+    },
+    {
+      "signal": "Explains a handoff between design, process, and test teams and what made it reliable.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "confidence": 0.68,
+      "evidence_ids": [
+        "INTEL-CULTURE-003",
+        "INTEL-CAREERS-002"
+      ]
+    },
+    {
+      "signal": "Describes owning quality outcomes beyond their own deliverable, including coverage or escape analysis.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "INTEL-OFFICIAL-001",
+        "INTEL-CAREERS-002"
+      ]
     }
   ],
   "anti_signals": [
@@ -81,6 +144,23 @@
       "evidence_ids": [
         "INTEL-OFFICIAL-001",
         "INTEL-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Assuming every Intel role is chip design and ignoring manufacturing, validation, software, and business roles.",
+      "risk_reason": "Public sources describe a broad set of role families with different constraints.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "INTEL-CAREERS-002",
+        "INTEL-CULTURE-003"
+      ]
+    },
+    {
+      "anti_signal": "Performance claims without a baseline, workload definition, or measurement method.",
+      "risk_reason": "Public product messaging is benchmark-oriented, so unsupported claims cannot be evaluated.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "INTEL-OFFICIAL-001"
       ]
     }
   ],
@@ -99,11 +179,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 2,
-    "official_source_count": 2,
+    "source_count": 3,
+    "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-18"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Intel hiring standard.",

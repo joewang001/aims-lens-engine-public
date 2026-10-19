@@ -30,6 +30,60 @@
         "IBM-CAREERS-002",
         "IBM-IR-003"
       ]
+    },
+    {
+      "question_id": "IBM-Q-002",
+      "type": "behavioral",
+      "generated_question": "Tell me about an enterprise system you shipped where the hard part was adoption, not code. What did you change?",
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Identifies the real blocker as workflow or incentive, not interface.",
+        "Describes the adoption work and who owned it.",
+        "Reports usage or outcome data rather than launch date."
+      ],
+      "evidence_ids": [
+        "IBM-OFFICIAL-001",
+        "IBM-CAREERS-002"
+      ]
+    },
+    {
+      "question_id": "IBM-Q-003",
+      "type": "behavioral",
+      "generated_question": "Describe a production incident where the root cause was in a system you did not own. How did you drive the fix?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Separates diagnosis from boundary negotiation.",
+        "Documents the evidence that convinced the owning team.",
+        "Adds a durable control rather than a one-off patch."
+      ],
+      "evidence_ids": [
+        "IBM-OFFICIAL-001",
+        "IBM-IR-003"
+      ]
+    },
+    {
+      "question_id": "IBM-Q-004",
+      "type": "behavioral",
+      "generated_question": "Tell me about a technology shift that made part of your expertise obsolete. How did you rebuild it?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Names what specifically stopped being true.",
+        "Describes a deliberate learning sequence with practice.",
+        "Shows evidence of applying the new skill in real work."
+      ],
+      "evidence_ids": [
+        "IBM-CAREERS-002",
+        "IBM-OFFICIAL-001"
+      ]
     }
   ]
 }

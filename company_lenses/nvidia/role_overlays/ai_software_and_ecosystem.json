@@ -1,0 +1,21 @@
+{
+  "company": "NVIDIA",
+  "role_family": "AI software and ecosystem",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Reasons about framework integration, kernel performance, and developer adoption.",
+    "Prioritizes the interface that many downstream teams must depend on."
+  ],
+  "evidence_ids": [
+    "NVIDIA-OFFICIAL-001",
+    "NVIDIA-CAREERS-002",
+    "NVIDIA-IR-003"
+  ]
+}
