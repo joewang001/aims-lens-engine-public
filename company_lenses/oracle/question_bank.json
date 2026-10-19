@@ -30,6 +30,60 @@
         "ORACLE-CAREERS-002",
         "ORACLE-IR-003"
       ]
+    },
+    {
+      "question_id": "ORACLE-Q-002",
+      "type": "behavioral",
+      "generated_question": "Tell me about a production migration you led. What was your rollback plan and what actually went wrong?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "States cutover criteria and rollback triggers in advance.",
+        "Names a real surprise and the response.",
+        "Reports post-migration stability evidence."
+      ],
+      "evidence_ids": [
+        "ORACLE-OFFICIAL-001",
+        "ORACLE-IR-003"
+      ]
+    },
+    {
+      "question_id": "ORACLE-Q-003",
+      "type": "behavioral",
+      "generated_question": "Describe the worst customer escalation you have owned. What did you change so it would not recur?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Separates the immediate recovery from the root cause.",
+        "Keeps the customer informed with accurate timelines.",
+        "Adds a durable control verified later."
+      ],
+      "evidence_ids": [
+        "ORACLE-CAREERS-002",
+        "ORACLE-OFFICIAL-001"
+      ]
+    },
+    {
+      "question_id": "ORACLE-Q-004",
+      "type": "behavioral",
+      "generated_question": "Tell me about a time a data-handling or licensing constraint reshaped a design. How early did you catch it?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Explains the constraint in concrete terms.",
+        "Describes the design change and its cost.",
+        "Shows a habit of checking constraints earlier next time."
+      ],
+      "evidence_ids": [
+        "ORACLE-CITIZENSHIP-004",
+        "ORACLE-CAREERS-002"
+      ]
     }
   ]
 }

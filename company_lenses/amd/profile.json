@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-18",
-  "source_cutoff": "2026-10-18",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "technology",
     "semiconductors",
@@ -31,6 +31,33 @@
     {
       "name": "Evidence-backed execution",
       "description": "Strong answers should show practical judgment, clear tradeoffs, ownership, and outcomes rather than generic enthusiasm.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "AMD-IR-001",
+        "AMD-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Outcome-linked technical ambition",
+      "description": "Work is framed around product performance, power efficiency, and customer workloads rather than around activity volume; strong candidates connect engineering choices to those outcomes.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "AMD-IR-001",
+        "AMD-CORPORATE-003"
+      ]
+    },
+    {
+      "name": "Co-design across silicon, software, and platform",
+      "description": "Public material describes products that depend on hardware, software, and platform teams converging on one roadmap, so cross-team coordination is a visible part of the work.",
+      "confidence": 0.66,
+      "evidence_ids": [
+        "AMD-CORPORATE-003",
+        "AMD-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Measured evidence over enthusiasm",
+      "description": "Public-safe signals reward answers that cite benchmarks, validation results, or shipped outcomes instead of general excitement about the company or the AI market.",
       "confidence": 0.68,
       "evidence_ids": [
         "AMD-IR-001",
@@ -71,6 +98,44 @@
         "AMD-IR-001",
         "AMD-CAREERS-002"
       ]
+    },
+    {
+      "signal": "Explains a concrete tradeoff across performance, power, cost, and schedule using measured or reproducible evidence.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "impact_results"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "AMD-IR-001",
+        "AMD-CORPORATE-003"
+      ]
+    },
+    {
+      "signal": "Describes coordinating a change across hardware, software, and validation groups and names the mechanism that kept them aligned.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "confidence": 0.66,
+      "evidence_ids": [
+        "AMD-CORPORATE-003",
+        "AMD-CAREERS-002"
+      ]
+    },
+    {
+      "signal": "Shows ownership of a difficult technical problem through to a shipped product, benchmark result, or documented customer outcome.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results",
+        "growth_mindset"
+      ],
+      "confidence": 0.69,
+      "evidence_ids": [
+        "AMD-IR-001",
+        "AMD-CAREERS-002"
+      ]
     }
   ],
   "anti_signals": [
@@ -80,6 +145,23 @@
       "confidence": 0.66,
       "evidence_ids": [
         "AMD-IR-001",
+        "AMD-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Enthusiasm about AI accelerators with no concrete engineering mechanism, measurement approach, or role-relevant tradeoff.",
+      "risk_reason": "Public source signals are product- and roadmap-level; without a mechanism the answer cannot be evaluated against them.",
+      "confidence": 0.64,
+      "evidence_ids": [
+        "AMD-IR-001",
+        "AMD-CORPORATE-003"
+      ]
+    },
+    {
+      "anti_signal": "Claims about AMD's internal culture, interview bar, or hiring process presented as established fact.",
+      "risk_reason": "The lens is built only from public-safe source metadata and does not represent an official AMD hiring standard.",
+      "confidence": 0.72,
+      "evidence_ids": [
         "AMD-CAREERS-002"
       ]
     }
@@ -100,10 +182,10 @@
   ],
   "evidence_summary": {
     "source_count": 2,
-    "official_source_count": 2,
+    "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-18"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official AMD hiring standard.",

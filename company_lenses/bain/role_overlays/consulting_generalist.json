@@ -1,0 +1,21 @@
+{
+  "company": "Bain & Company",
+  "role_family": "Generalist strategy consulting",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Moves fluently across industries and frames each problem from first principles.",
+    "Shows comfort with incomplete data and explicit assumptions."
+  ],
+  "evidence_ids": [
+    "BAIN-OFFICIAL-001",
+    "BAIN-CAREERS-002",
+    "BAIN-ABOUT-003"
+  ]
+}

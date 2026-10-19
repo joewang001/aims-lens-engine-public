@@ -1,0 +1,29 @@
+{
+  "company": "Apple",
+  "role_family": "Hardware and silicon engineering",
+  "lens_status": "FULLY_DISTILLED",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Connects component and system decisions to power, thermal, and industrial design constraints.",
+    "Shows validation discipline when performance and physical limits conflict."
+  ],
+  "evidence_ids": [
+    "APL-OFFICIAL-001",
+    "APL-HIG-001",
+    "APL-HIG-002",
+    "APL-VALUES-001",
+    "APL-VALUES-002",
+    "APL-PRIV-001",
+    "APL-PRIV-002",
+    "APL-PRIV-003",
+    "APL-ACCESS-001",
+    "APL-PRIV-004",
+    "APL-RISK-002"
+  ]
+}

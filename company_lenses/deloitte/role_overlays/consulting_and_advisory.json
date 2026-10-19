@@ -1,0 +1,21 @@
+{
+  "company": "Deloitte",
+  "role_family": "Consulting and advisory",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Frames recommendations around client decision points and implementation ownership.",
+    "Works across specialist teams without losing a single accountable narrative."
+  ],
+  "evidence_ids": [
+    "DELOITTE-OFFICIAL-001",
+    "DELOITTE-CAREERS-002",
+    "DELOITTE-ABOUT-003"
+  ]
+}

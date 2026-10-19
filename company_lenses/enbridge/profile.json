@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-09-14",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "energy",
     "utilities",
@@ -35,6 +35,33 @@
         "ENBRIDGE-OFFICIAL-001",
         "ENBRIDGE-CAREERS-002",
         "ENBRIDGE-IR-003"
+      ]
+    },
+    {
+      "name": "Safety as a non-negotiable operating condition",
+      "description": "Public material places safety alongside reliability for assets that carry energy near communities, so decisions are expected to be defensible before they are fast.",
+      "confidence": 0.73,
+      "evidence_ids": [
+        "ENBRIDGE-OFFICIAL-001",
+        "ENBRIDGE-IR-003"
+      ]
+    },
+    {
+      "name": "Reliability across a long-lived asset base",
+      "description": "The business runs infrastructure with multi-decade lifetimes, which favours maintenance, integrity, and outage planning over short-term optimization.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "ENBRIDGE-OFFICIAL-001",
+        "ENBRIDGE-IR-003"
+      ]
+    },
+    {
+      "name": "Transition delivered through existing assets",
+      "description": "Public positioning pairs conventional energy infrastructure with lower-carbon investments, so candidates should be able to hold both mandates at once.",
+      "confidence": 0.65,
+      "evidence_ids": [
+        "ENBRIDGE-IR-003",
+        "ENBRIDGE-CAREERS-002"
       ]
     }
   ],
@@ -72,6 +99,42 @@
         "ENBRIDGE-CAREERS-002",
         "ENBRIDGE-IR-003"
       ]
+    },
+    {
+      "signal": "Describes a decision where safety, regulatory, or environmental risk changed the technical plan.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ENBRIDGE-OFFICIAL-001",
+        "ENBRIDGE-IR-003"
+      ]
+    },
+    {
+      "signal": "Explains how they protected reliability during a maintenance, outage, or commissioning window.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "ENBRIDGE-OFFICIAL-001",
+        "ENBRIDGE-CAREERS-002"
+      ]
+    },
+    {
+      "signal": "Works with regulators, landowners, or Indigenous communities and can describe what changed after that engagement.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "confidence": 0.66,
+      "evidence_ids": [
+        "ENBRIDGE-IR-003",
+        "ENBRIDGE-CAREERS-002"
+      ]
     }
   ],
   "anti_signals": [
@@ -82,6 +145,23 @@
       "evidence_ids": [
         "ENBRIDGE-OFFICIAL-001",
         "ENBRIDGE-CAREERS-002",
+        "ENBRIDGE-IR-003"
+      ]
+    },
+    {
+      "anti_signal": "Treating pipeline operations and renewable development as interchangeable work with the same constraints.",
+      "risk_reason": "Public sources describe materially different asset and regulatory contexts across the portfolio.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "ENBRIDGE-OFFICIAL-001",
+        "ENBRIDGE-IR-003"
+      ]
+    },
+    {
+      "anti_signal": "Assuming one regulatory regime applies across jurisdictions and asset types.",
+      "risk_reason": "The lens spans multiple regions and business units; a single-regime assumption is not supported publicly.",
+      "confidence": 0.7,
+      "evidence_ids": [
         "ENBRIDGE-IR-003"
       ]
     }
@@ -105,7 +185,7 @@
     "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-09-14"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Enbridge hiring standard.",

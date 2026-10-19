@@ -1,0 +1,21 @@
+{
+  "company": "Johnson & Johnson",
+  "role_family": "Pharmaceutical research and clinical development",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Reasons about study design, endpoints, and confounding rather than single results.",
+    "Works within protocol, safety reporting, and regulatory documentation requirements."
+  ],
+  "evidence_ids": [
+    "JOHNSON_JOHNSON-OFFICIAL-001",
+    "JOHNSON_JOHNSON-CAREERS-002",
+    "JOHNSON_JOHNSON-IR-003"
+  ]
+}

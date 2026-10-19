@@ -1,0 +1,21 @@
+{
+  "company": "Salesforce",
+  "role_family": "Platform and product engineering",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Reasons about multi-tenant scale, release safety, and API compatibility.",
+    "Treats security and data residency as design constraints."
+  ],
+  "evidence_ids": [
+    "SALESFORCE-OFFICIAL-001",
+    "SALESFORCE-CAREERS-002",
+    "SALESFORCE-CULTURE-003"
+  ]
+}

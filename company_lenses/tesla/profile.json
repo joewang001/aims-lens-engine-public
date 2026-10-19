@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-09-14",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "automotive",
     "energy",
@@ -33,6 +33,33 @@
       "confidence": 0.68,
       "evidence_ids": [
         "TESLA-OFFICIAL-001",
+        "TESLA-CAREERS-002",
+        "TESLA-IR-003"
+      ]
+    },
+    {
+      "name": "First-principles engineering",
+      "description": "Public material emphasises designing from physical and cost fundamentals rather than from industry convention, so inherited assumptions are expected to be challenged.",
+      "confidence": 0.71,
+      "evidence_ids": [
+        "TESLA-OFFICIAL-001",
+        "TESLA-IR-003"
+      ]
+    },
+    {
+      "name": "Vertical integration and ownership",
+      "description": "The company publicly owns much of its stack from cells to software to service, which places end-to-end accountability on small teams.",
+      "confidence": 0.69,
+      "evidence_ids": [
+        "TESLA-OFFICIAL-001",
+        "TESLA-IR-003"
+      ]
+    },
+    {
+      "name": "Speed with real-world validation",
+      "description": "Public positioning pairs fast iteration with safety and field data, so velocity claims need a validation mechanism to be credible.",
+      "confidence": 0.66,
+      "evidence_ids": [
         "TESLA-CAREERS-002",
         "TESLA-IR-003"
       ]
@@ -72,6 +99,42 @@
         "TESLA-CAREERS-002",
         "TESLA-IR-003"
       ]
+    },
+    {
+      "signal": "Explains a design from physical or economic first principles rather than analogy to competitors.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "TESLA-OFFICIAL-001",
+        "TESLA-IR-003"
+      ]
+    },
+    {
+      "signal": "Shows ownership of a problem that crossed hardware, software, and field operations boundaries.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "TESLA-OFFICIAL-001",
+        "TESLA-CAREERS-002"
+      ]
+    },
+    {
+      "signal": "States how a fast change was validated against safety or reliability requirements before shipping.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "impact_results"
+      ],
+      "confidence": 0.68,
+      "evidence_ids": [
+        "TESLA-CAREERS-002",
+        "TESLA-IR-003"
+      ]
     }
   ],
   "anti_signals": [
@@ -83,6 +146,23 @@
         "TESLA-OFFICIAL-001",
         "TESLA-CAREERS-002",
         "TESLA-IR-003"
+      ]
+    },
+    {
+      "anti_signal": "Admiring mission or product ambition without an engineering mechanism or measurable tradeoff.",
+      "risk_reason": "Public signals are product and manufacturing oriented; mission enthusiasm provides nothing to evaluate.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "TESLA-OFFICIAL-001"
+      ]
+    },
+    {
+      "anti_signal": "Assuming one team culture across automotive, energy, and manufacturing operations.",
+      "risk_reason": "Public sources describe materially different businesses with different operating constraints.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "TESLA-IR-003",
+        "TESLA-CAREERS-002"
       ]
     }
   ],
@@ -105,7 +185,7 @@
     "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-09-14"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Tesla hiring standard.",

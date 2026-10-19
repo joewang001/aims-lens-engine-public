@@ -1,0 +1,21 @@
+{
+  "company": "Pfizer",
+  "role_family": "Manufacturing and quality operations",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Connects process control and deviation handling to supply reliability.",
+    "Treats qualification and validation as continuous operating requirements."
+  ],
+  "evidence_ids": [
+    "PFIZER-OFFICIAL-001",
+    "PFIZER-CAREERS-002",
+    "PFIZER-IR-003"
+  ]
+}

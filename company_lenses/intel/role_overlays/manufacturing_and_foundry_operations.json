@@ -1,0 +1,21 @@
+{
+  "company": "Intel",
+  "role_family": "Manufacturing and foundry operations",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Uses yield, defect, and process-control data to drive decisions.",
+    "Balances ramp schedules against qualification and safety requirements."
+  ],
+  "evidence_ids": [
+    "INTEL-OFFICIAL-001",
+    "INTEL-CAREERS-002",
+    "INTEL-CULTURE-003"
+  ]
+}

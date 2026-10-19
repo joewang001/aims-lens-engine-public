@@ -30,6 +30,60 @@
         "ENBRIDGE-CAREERS-002",
         "ENBRIDGE-IR-003"
       ]
+    },
+    {
+      "question_id": "ENBRIDGE-Q-002",
+      "type": "behavioral",
+      "generated_question": "Describe a time a safety or environmental concern forced you to change a plan late. How did you decide what to stop?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Separates the immediate stop-work decision from the later redesign.",
+        "Names the authority and communication path used.",
+        "Reports the residual risk and how it was monitored."
+      ],
+      "evidence_ids": [
+        "ENBRIDGE-OFFICIAL-001",
+        "ENBRIDGE-IR-003"
+      ]
+    },
+    {
+      "question_id": "ENBRIDGE-Q-003",
+      "type": "behavioral",
+      "generated_question": "Tell me about an outage or turnaround you planned. What did you trade off to protect supply or service?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Uses reliability or throughput data to justify the window.",
+        "Coordinates contractors and operations explicitly.",
+        "Reports whether the plan held and what was learned."
+      ],
+      "evidence_ids": [
+        "ENBRIDGE-OFFICIAL-001",
+        "ENBRIDGE-CAREERS-002"
+      ]
+    },
+    {
+      "question_id": "ENBRIDGE-Q-004",
+      "type": "behavioral",
+      "generated_question": "Tell me about a project where community or stakeholder concerns changed the design or schedule. What did you personally own?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Describes the concerns concretely rather than as generic opposition.",
+        "Shows a specific design or commitment change.",
+        "Explains how trust was maintained afterwards."
+      ],
+      "evidence_ids": [
+        "ENBRIDGE-IR-003",
+        "ENBRIDGE-CAREERS-002"
+      ]
     }
   ]
 }

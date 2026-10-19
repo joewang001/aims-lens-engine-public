@@ -30,6 +30,60 @@
         "PFIZER-CAREERS-002",
         "PFIZER-IR-003"
       ]
+    },
+    {
+      "question_id": "PFIZER-Q-002",
+      "type": "behavioral",
+      "generated_question": "Tell me about a program where the evidence timeline collided with a business deadline. How did you handle the pressure?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Protects the evidence threshold explicitly.",
+        "Offers options that preserve integrity while recovering time.",
+        "Documents the decision and its rationale."
+      ],
+      "evidence_ids": [
+        "PFIZER-IR-003",
+        "PFIZER-CAREERS-002"
+      ]
+    },
+    {
+      "question_id": "PFIZER-Q-003",
+      "type": "behavioral",
+      "generated_question": "Describe a cross-functional program where manufacturing or supply constraints changed the scientific plan.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Names the constraint concretely with numbers.",
+        "Shows how priorities were re-sequenced.",
+        "Reports the resulting outcome and residual risk."
+      ],
+      "evidence_ids": [
+        "PFIZER-OFFICIAL-001",
+        "PFIZER-CAREERS-002"
+      ]
+    },
+    {
+      "question_id": "PFIZER-Q-004",
+      "type": "behavioral",
+      "generated_question": "Tell me about a dataset or result you did not trust. What did you do before acting on it?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Names the specific anomaly that triggered doubt.",
+        "Describes independent verification.",
+        "Explains what changed in the conclusion."
+      ],
+      "evidence_ids": [
+        "PFIZER-IR-003",
+        "PFIZER-CAREERS-002"
+      ]
     }
   ]
 }

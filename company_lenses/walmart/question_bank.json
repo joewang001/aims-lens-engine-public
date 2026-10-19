@@ -30,6 +30,60 @@
         "WALMART-CAREERS-002",
         "WALMART-IR-003"
       ]
+    },
+    {
+      "question_id": "WALMART-Q-002",
+      "type": "behavioral",
+      "generated_question": "Describe a cost or waste reduction you owned. What did you measure, and what did you refuse to compromise?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Quantifies the baseline and the saving.",
+        "Names the guardrail protecting service or safety.",
+        "Shows the saving persisted beyond the first period."
+      ],
+      "evidence_ids": [
+        "WALMART-OFFICIAL-001",
+        "WALMART-IR-003"
+      ]
+    },
+    {
+      "question_id": "WALMART-Q-003",
+      "type": "behavioral",
+      "generated_question": "Tell me about rolling out a change across many locations. Where did it break first and how did you adapt?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Pilots with realistic variation before scaling.",
+        "Uses frontline feedback as data, not complaint.",
+        "Adapts the rollout rather than enforcing compliance."
+      ],
+      "evidence_ids": [
+        "WALMART-CAREERS-002",
+        "WALMART-OFFICIAL-001"
+      ]
+    },
+    {
+      "question_id": "WALMART-Q-004",
+      "type": "behavioral",
+      "generated_question": "Tell me about a data or automation project whose business impact was weaker than expected. What did you learn?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Distinguishes model quality from adoption and workflow fit.",
+        "Shows the measurement that revealed the gap.",
+        "Names a concrete change in how the next project was scoped."
+      ],
+      "evidence_ids": [
+        "WALMART-IR-003",
+        "WALMART-CAREERS-002"
+      ]
     }
   ]
 }

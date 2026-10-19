@@ -29,6 +29,60 @@
         "SALESFORCE-OFFICIAL-001",
         "SALESFORCE-CAREERS-002"
       ]
+    },
+    {
+      "question_id": "SALESFORCE-Q-002",
+      "type": "behavioral",
+      "generated_question": "Tell me about a decision where customer trust or data handling changed what you built. What did you give up?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names the specific trust risk and who was exposed.",
+        "Describes the tradeoff made explicitly.",
+        "Shows verification that the safeguard works."
+      ],
+      "evidence_ids": [
+        "SALESFORCE-OFFICIAL-001",
+        "SALESFORCE-CULTURE-003"
+      ]
+    },
+    {
+      "question_id": "SALESFORCE-Q-003",
+      "type": "behavioral",
+      "generated_question": "Describe the last significant capability you learned from scratch. How did you get to real application quickly?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Shows a deliberate learning sequence rather than passive exposure.",
+        "Names the first real problem it was applied to.",
+        "Reports the result and what is still weak."
+      ],
+      "evidence_ids": [
+        "SALESFORCE-CULTURE-003",
+        "SALESFORCE-CAREERS-002"
+      ]
+    },
+    {
+      "question_id": "SALESFORCE-Q-004",
+      "type": "behavioral",
+      "generated_question": "Tell me about a handover where the receiving team struggled. What did you change to make ownership stick?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Diagnoses why the handover failed rather than re-training harder.",
+        "Simplifies the interface or documentation.",
+        "Confirms independent operation afterwards."
+      ],
+      "evidence_ids": [
+        "SALESFORCE-CAREERS-002",
+        "SALESFORCE-OFFICIAL-001"
+      ]
     }
   ]
 }

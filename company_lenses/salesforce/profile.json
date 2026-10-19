@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-08-31",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "technology",
     "enterprise software",
@@ -34,6 +34,33 @@
       "evidence_ids": [
         "SALESFORCE-OFFICIAL-001",
         "SALESFORCE-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Trust as the customer foundation",
+      "description": "Public values language places trust first, which for a platform company means security, transparency, and reliability are part of the product rather than support work.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "SALESFORCE-OFFICIAL-001",
+        "SALESFORCE-CULTURE-003"
+      ]
+    },
+    {
+      "name": "Learning velocity with new technology",
+      "description": "Careers material frames AI fluency as an ongoing learning path, so candidates should show how they actually acquire and apply new tooling.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "SALESFORCE-CULTURE-003",
+        "SALESFORCE-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Values expressed through team behaviour",
+      "description": "Public material ties values to collaborative, diverse teams, which makes how someone works with others a visible part of performance.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "SALESFORCE-CULTURE-003",
+        "SALESFORCE-OFFICIAL-001"
       ]
     }
   ],
@@ -70,6 +97,42 @@
         "SALESFORCE-OFFICIAL-001",
         "SALESFORCE-CAREERS-002"
       ]
+    },
+    {
+      "signal": "Connects a technical decision to customer trust, data handling, or platform reliability consequences.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "confidence": 0.71,
+      "evidence_ids": [
+        "SALESFORCE-OFFICIAL-001",
+        "SALESFORCE-CULTURE-003"
+      ]
+    },
+    {
+      "signal": "Shows a concrete example of learning a new platform capability and applying it to a real business problem.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "impact_results"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "SALESFORCE-CULTURE-003",
+        "SALESFORCE-CAREERS-002"
+      ]
+    },
+    {
+      "signal": "Describes enabling a customer or partner team to own a solution after handover.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "confidence": 0.67,
+      "evidence_ids": [
+        "SALESFORCE-CAREERS-002",
+        "SALESFORCE-OFFICIAL-001"
+      ]
     }
   ],
   "anti_signals": [
@@ -80,6 +143,23 @@
       "evidence_ids": [
         "SALESFORCE-OFFICIAL-001",
         "SALESFORCE-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Reciting Salesforce values or 'Ohana' language without a behavioural example behind it.",
+      "risk_reason": "Values language is public, but without behaviour it provides nothing to evaluate.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "SALESFORCE-CULTURE-003"
+      ]
+    },
+    {
+      "anti_signal": "Treating Salesforce as one role family across sales, engineering, success, and ecosystem work.",
+      "risk_reason": "Public careers material describes distinct functions with different expectations.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "SALESFORCE-CAREERS-002",
+        "SALESFORCE-CULTURE-003"
       ]
     }
   ],
@@ -99,10 +179,10 @@
   ],
   "evidence_summary": {
     "source_count": 2,
-    "official_source_count": 2,
+    "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-08-31"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Salesforce hiring standard.",

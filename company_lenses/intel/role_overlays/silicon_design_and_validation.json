@@ -1,0 +1,21 @@
+{
+  "company": "Intel",
+  "role_family": "Silicon design and validation",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Reasons about timing, power, and area tradeoffs with concrete constraints.",
+    "Treats verification coverage as a design input rather than a final gate."
+  ],
+  "evidence_ids": [
+    "INTEL-OFFICIAL-001",
+    "INTEL-CAREERS-002",
+    "INTEL-CULTURE-003"
+  ]
+}

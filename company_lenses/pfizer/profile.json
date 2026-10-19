@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-09-14",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "healthcare",
     "pharma",
@@ -34,6 +34,33 @@
       "evidence_ids": [
         "PFIZER-OFFICIAL-001",
         "PFIZER-CAREERS-002",
+        "PFIZER-IR-003"
+      ]
+    },
+    {
+      "name": "Patient impact as the decision anchor",
+      "description": "Public material frames the business around patients, which makes speed to patient benefit a legitimate argument in tradeoffs.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "PFIZER-OFFICIAL-001",
+        "PFIZER-IR-003"
+      ]
+    },
+    {
+      "name": "Science-led with regulatory discipline",
+      "description": "Public positioning pairs scientific innovation with regulatory and quality obligations, so evidence standards are not negotiable for speed.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "PFIZER-IR-003",
+        "PFIZER-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Scale as a capability, not just size",
+      "description": "The company publicly emphasizes manufacturing and distribution reach, which puts supply reliability alongside discovery work.",
+      "confidence": 0.66,
+      "evidence_ids": [
+        "PFIZER-OFFICIAL-001",
         "PFIZER-IR-003"
       ]
     }
@@ -72,6 +99,42 @@
         "PFIZER-CAREERS-002",
         "PFIZER-IR-003"
       ]
+    },
+    {
+      "signal": "Describes a decision where regulatory or quality evidence set the pace rather than the deadline.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "PFIZER-IR-003",
+        "PFIZER-CAREERS-002"
+      ]
+    },
+    {
+      "signal": "Shows cross-functional collaboration between scientific, manufacturing, and commercial groups with named ownership.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.68,
+      "evidence_ids": [
+        "PFIZER-CAREERS-002",
+        "PFIZER-OFFICIAL-001"
+      ]
+    },
+    {
+      "signal": "Presents data with its limitations and states what additional evidence would change the decision.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "PFIZER-IR-003",
+        "PFIZER-CAREERS-002"
+      ]
     }
   ],
   "anti_signals": [
@@ -82,6 +145,23 @@
       "evidence_ids": [
         "PFIZER-OFFICIAL-001",
         "PFIZER-CAREERS-002",
+        "PFIZER-IR-003"
+      ]
+    },
+    {
+      "anti_signal": "Assuming pharmaceutical research, manufacturing, and commercial roles share one evaluation standard.",
+      "risk_reason": "Public sources describe distinct functions with different development cycles and metrics.",
+      "confidence": 0.71,
+      "evidence_ids": [
+        "PFIZER-OFFICIAL-001",
+        "PFIZER-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Using public vaccine or product messaging as evidence of internal team culture.",
+      "risk_reason": "Product communication is not a valid signal about internal ways of working.",
+      "confidence": 0.69,
+      "evidence_ids": [
         "PFIZER-IR-003"
       ]
     }
@@ -105,7 +185,7 @@
     "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-09-14"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Pfizer hiring standard.",

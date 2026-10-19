@@ -1,0 +1,21 @@
+{
+  "company": "Tesla",
+  "role_family": "Energy products and software platform",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Works across power electronics, controls, and fleet-level software data.",
+    "Uses field telemetry to prioritise engineering work."
+  ],
+  "evidence_ids": [
+    "TESLA-OFFICIAL-001",
+    "TESLA-CAREERS-002",
+    "TESLA-IR-003"
+  ]
+}

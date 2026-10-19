@@ -1,0 +1,21 @@
+{
+  "company": "Bain & Company",
+  "role_family": "Private equity and commercial diligence",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Prioritizes the two or three findings that would change an investment decision.",
+    "Works comfortably under compressed timelines with explicit confidence levels."
+  ],
+  "evidence_ids": [
+    "BAIN-OFFICIAL-001",
+    "BAIN-CAREERS-002",
+    "BAIN-ABOUT-003"
+  ]
+}

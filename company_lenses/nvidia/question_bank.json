@@ -30,6 +30,60 @@
         "NVIDIA-CAREERS-002",
         "NVIDIA-IR-003"
       ]
+    },
+    {
+      "question_id": "NVIDIA-Q-002",
+      "type": "behavioral",
+      "generated_question": "Describe the hardest end-to-end performance problem you have worked on. Where was the real bottleneck and how did you prove it?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Profiles before optimizing and names the measurement tooling.",
+        "Distinguishes the bottleneck from the symptom.",
+        "Reports the achieved gain and its limits."
+      ],
+      "evidence_ids": [
+        "NVIDIA-OFFICIAL-001",
+        "NVIDIA-IR-003"
+      ]
+    },
+    {
+      "question_id": "NVIDIA-Q-003",
+      "type": "behavioral",
+      "generated_question": "Tell me about a time you made another team faster by changing the tooling or interface you owned.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Identifies the friction from the other team's perspective.",
+        "Ships a change that removes work rather than adding process.",
+        "Shows adoption evidence, not just release."
+      ],
+      "evidence_ids": [
+        "NVIDIA-CAREERS-002",
+        "NVIDIA-OFFICIAL-001"
+      ]
+    },
+    {
+      "question_id": "NVIDIA-Q-004",
+      "type": "behavioral",
+      "generated_question": "Tell me about a benchmark result that did not survive production conditions. What did you learn?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Explains the gap between test and production conditions.",
+        "Owns the reporting error rather than blaming users.",
+        "Changes the evaluation method afterwards."
+      ],
+      "evidence_ids": [
+        "NVIDIA-IR-003",
+        "NVIDIA-OFFICIAL-001"
+      ]
     }
   ]
 }

@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-09-14",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "healthcare",
     "pharma",
@@ -35,6 +35,33 @@
         "JOHNSON_JOHNSON-OFFICIAL-001",
         "JOHNSON_JOHNSON-CAREERS-002",
         "JOHNSON_JOHNSON-IR-003"
+      ]
+    },
+    {
+      "name": "Responsibility ordered by stakeholder",
+      "description": "The company's long-standing public credo orders responsibility toward patients, then employees, communities, and shareholders, which shapes how tradeoffs are justified.",
+      "confidence": 0.73,
+      "evidence_ids": [
+        "JOHNSON_JOHNSON-OFFICIAL-001",
+        "JOHNSON_JOHNSON-IR-003"
+      ]
+    },
+    {
+      "name": "Decentralized operating responsibility",
+      "description": "Public structure describes operating companies with meaningful local ownership, so decisions often sit closer to the product and market than to a single centre.",
+      "confidence": 0.66,
+      "evidence_ids": [
+        "JOHNSON_JOHNSON-OFFICIAL-001",
+        "JOHNSON_JOHNSON-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Evidence and compliance in equal measure",
+      "description": "Health products operate under regulatory scrutiny, making documentation, safety reporting, and reproducible evidence part of ordinary delivery.",
+      "confidence": 0.71,
+      "evidence_ids": [
+        "JOHNSON_JOHNSON-IR-003",
+        "JOHNSON_JOHNSON-CAREERS-002"
       ]
     }
   ],
@@ -72,6 +99,42 @@
         "JOHNSON_JOHNSON-CAREERS-002",
         "JOHNSON_JOHNSON-IR-003"
       ]
+    },
+    {
+      "signal": "Explains a decision where patient safety or regulatory obligation overrode a commercial or schedule goal.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "confidence": 0.73,
+      "evidence_ids": [
+        "JOHNSON_JOHNSON-OFFICIAL-001",
+        "JOHNSON_JOHNSON-IR-003"
+      ]
+    },
+    {
+      "signal": "Shows cross-functional work between scientific, clinical, quality, and commercial groups with clear ownership.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.68,
+      "evidence_ids": [
+        "JOHNSON_JOHNSON-CAREERS-002",
+        "JOHNSON_JOHNSON-OFFICIAL-001"
+      ]
+    },
+    {
+      "signal": "Presents a result with its uncertainty and the evidence that would change the conclusion.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "JOHNSON_JOHNSON-IR-003",
+        "JOHNSON_JOHNSON-CAREERS-002"
+      ]
     }
   ],
   "anti_signals": [
@@ -83,6 +146,23 @@
         "JOHNSON_JOHNSON-OFFICIAL-001",
         "JOHNSON_JOHNSON-CAREERS-002",
         "JOHNSON_JOHNSON-IR-003"
+      ]
+    },
+    {
+      "anti_signal": "Treating pharmaceutical R&D and medtech engineering as one hiring bar or one working model.",
+      "risk_reason": "Public sources describe separate segments with different development cycles and constraints.",
+      "confidence": 0.71,
+      "evidence_ids": [
+        "JOHNSON_JOHNSON-OFFICIAL-001",
+        "JOHNSON_JOHNSON-IR-003"
+      ]
+    },
+    {
+      "anti_signal": "Citing the credo as proof of a specific internal practice without a public source.",
+      "risk_reason": "The lens records public statements only and cannot verify internal practice.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "JOHNSON_JOHNSON-OFFICIAL-001"
       ]
     }
   ],
@@ -105,7 +185,7 @@
     "official_source_count": 3,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-09-14"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Johnson & Johnson hiring standard.",

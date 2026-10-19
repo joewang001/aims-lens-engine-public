@@ -1,0 +1,21 @@
+{
+  "company": "Boston Consulting Group",
+  "role_family": "Digital venture and product build",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Talks in product increments, ownership boundaries, and adoption metrics.",
+    "Shows hands-on familiarity with delivery constraints rather than strategy language only."
+  ],
+  "evidence_ids": [
+    "BCG-OFFICIAL-001",
+    "BCG-CAREERS-002",
+    "BCG-ABOUT-003"
+  ]
+}

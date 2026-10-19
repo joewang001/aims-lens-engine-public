@@ -29,6 +29,61 @@
         "BAIN-OFFICIAL-001",
         "BAIN-CAREERS-002"
       ]
+    },
+    {
+      "question_id": "BAIN-Q-002",
+      "type": "case",
+      "generated_question": "A client's margins are falling but leadership disagrees on the cause. How would you decide what to test first, and what would make you abandon your initial hypothesis?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Separates the problem into commercially meaningful buckets with rough sizing.",
+        "Names disconfirming evidence in advance.",
+        "Prioritizes by decision impact rather than by ease of analysis."
+      ],
+      "evidence_ids": [
+        "BAIN-ABOUT-003",
+        "BAIN-CAREERS-002"
+      ]
+    },
+    {
+      "question_id": "BAIN-Q-003",
+      "type": "behavioral",
+      "generated_question": "Tell me about a time you told a senior stakeholder their plan was wrong. How did you frame it, and what happened?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Frames disagreement around evidence and shared objectives.",
+        "Shows awareness of timing, audience, and relationship cost.",
+        "Reports the actual decision and own accountability for the outcome."
+      ],
+      "evidence_ids": [
+        "BAIN-ABOUT-003",
+        "BAIN-CAREERS-002"
+      ]
+    },
+    {
+      "question_id": "BAIN-Q-004",
+      "type": "behavioral",
+      "generated_question": "Describe a recommendation you made that was adopted and then had to survive contact with the organization. What did you change to make it stick?",
+      "aims_dimensions": [
+        "impact_results",
+        "ownership_execution",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Distinguishes the analysis from the adoption work.",
+        "Names specific stakeholders or incentives that had to shift.",
+        "Reports a measurable post-adoption result or an honest miss."
+      ],
+      "evidence_ids": [
+        "BAIN-OFFICIAL-001",
+        "BAIN-ABOUT-003"
+      ]
     }
   ]
 }

@@ -30,6 +30,61 @@
         "COSTCO-CAREERS-002",
         "COSTCO-IR-003"
       ]
+    },
+    {
+      "question_id": "COSTCO-Q-002",
+      "type": "behavioral",
+      "generated_question": "Describe a process you simplified without hurting service quality. What did you measure before and after?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Quantifies the baseline including labour or waste.",
+        "Explains the guardrail that protected service.",
+        "Reports a sustained result rather than a one-off improvement."
+      ],
+      "evidence_ids": [
+        "COSTCO-OFFICIAL-001",
+        "COSTCO-IR-003"
+      ]
+    },
+    {
+      "question_id": "COSTCO-Q-003",
+      "type": "behavioral",
+      "generated_question": "Tell me about a time a customer or member escalation reached you. What did you fix beyond the immediate case?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Separates the individual remedy from the systemic cause.",
+        "Involves the frontline staff who see the problem daily.",
+        "Shows a follow-up check that the fix held."
+      ],
+      "evidence_ids": [
+        "COSTCO-CAREERS-002",
+        "COSTCO-OFFICIAL-001"
+      ]
+    },
+    {
+      "question_id": "COSTCO-Q-004",
+      "type": "behavioral",
+      "generated_question": "Tell me about a change you rolled out to frontline staff. How did you keep it simple enough to survive a busy shift?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Describes testing under realistic volume.",
+        "Removes steps instead of adding training burden.",
+        "Uses adoption evidence rather than compliance claims."
+      ],
+      "evidence_ids": [
+        "COSTCO-CAREERS-002",
+        "COSTCO-IR-003"
+      ]
     }
   ]
 }

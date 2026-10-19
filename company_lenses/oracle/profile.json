@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-09-28",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "technology",
     "enterprise software",
@@ -35,6 +35,33 @@
         "ORACLE-OFFICIAL-001",
         "ORACLE-CAREERS-002",
         "ORACLE-IR-003"
+      ]
+    },
+    {
+      "name": "Ownership of the full customer outcome",
+      "description": "Public material positions Oracle across cloud infrastructure, applications, and databases that customers rely on in production, so partial delivery is visible to the customer.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "ORACLE-OFFICIAL-001",
+        "ORACLE-IR-003"
+      ]
+    },
+    {
+      "name": "Operating reliability over novelty",
+      "description": "Enterprise customers run mission-critical workloads on the platform, which makes availability, migration risk, and support paths central to any proposal.",
+      "confidence": 0.69,
+      "evidence_ids": [
+        "ORACLE-OFFICIAL-001",
+        "ORACLE-IR-003"
+      ]
+    },
+    {
+      "name": "Stated culture of connection and community",
+      "description": "Oracle's public impact material describes a culture of connection and community intended to let employees do their best work.",
+      "confidence": 0.63,
+      "evidence_ids": [
+        "ORACLE-CITIZENSHIP-004",
+        "ORACLE-OFFICIAL-001"
       ]
     }
   ],
@@ -72,6 +99,42 @@
         "ORACLE-CAREERS-002",
         "ORACLE-IR-003"
       ]
+    },
+    {
+      "signal": "Explains a migration or platform change with an explicit rollback path and cutover evidence.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ORACLE-OFFICIAL-001",
+        "ORACLE-IR-003"
+      ]
+    },
+    {
+      "signal": "Describes a customer escalation they owned end to end, including the support handoff afterwards.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.68,
+      "evidence_ids": [
+        "ORACLE-CAREERS-002",
+        "ORACLE-OFFICIAL-001"
+      ]
+    },
+    {
+      "signal": "Raises a compliance, data handling, or licensing constraint before it becomes a delivery problem.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "growth_mindset"
+      ],
+      "confidence": 0.66,
+      "evidence_ids": [
+        "ORACLE-CITIZENSHIP-004",
+        "ORACLE-CAREERS-002"
+      ]
     }
   ],
   "anti_signals": [
@@ -82,6 +145,23 @@
       "evidence_ids": [
         "ORACLE-OFFICIAL-001",
         "ORACLE-CAREERS-002",
+        "ORACLE-IR-003"
+      ]
+    },
+    {
+      "anti_signal": "Treating Oracle as a single database product and ignoring cloud infrastructure, applications, and industry solutions.",
+      "risk_reason": "Public sources describe multiple product and role families with different expectations.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "ORACLE-OFFICIAL-001",
+        "ORACLE-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Recommending a platform change without addressing migration cost, downtime, or skills transfer.",
+      "risk_reason": "Enterprise continuity is a public platform promise, so an unqualified migration claim cannot be evaluated.",
+      "confidence": 0.68,
+      "evidence_ids": [
         "ORACLE-IR-003"
       ]
     }
@@ -102,10 +182,10 @@
   ],
   "evidence_summary": {
     "source_count": 3,
-    "official_source_count": 3,
+    "official_source_count": 4,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-09-28"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Oracle hiring standard.",
