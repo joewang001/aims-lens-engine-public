@@ -110,6 +110,12 @@ initial_public_release:
     - slug: oracle
       path: company_lenses/oracle/
       status: existing_candidate
+    - slug: amd
+      path: company_lenses/amd/
+      status: existing_candidate
+    - slug: intel
+      path: company_lenses/intel/
+      status: existing_candidate
 
 allow_paths:
   root_files:
@@ -153,6 +159,12 @@ allow_paths:
   governance:
     - governance/evidence-standard.md
     - governance/privacy-and-fairness.md
+
+  operations_config:
+    - config/public_lens_expansion_catalog.json
+
+  operations_runners:
+    - ops/openclaw/
 
   schemas:
     - schemas/agent_artifact.schema.json
@@ -446,6 +458,24 @@ allow_paths:
     - company_lenses/oracle/limits.md
     - company_lenses/oracle/validation_report.md
     - company_lenses/oracle/role_overlays/
+    - company_lenses/amd/README.md
+    - company_lenses/amd/profile.json
+    - company_lenses/amd/evidence.md
+    - company_lenses/amd/rubric.md
+    - company_lenses/amd/question_bank.json
+    - company_lenses/amd/rewrite_rules.md
+    - company_lenses/amd/limits.md
+    - company_lenses/amd/validation_report.md
+    - company_lenses/amd/role_overlays/
+    - company_lenses/intel/README.md
+    - company_lenses/intel/profile.json
+    - company_lenses/intel/evidence.md
+    - company_lenses/intel/rubric.md
+    - company_lenses/intel/question_bank.json
+    - company_lenses/intel/rewrite_rules.md
+    - company_lenses/intel/limits.md
+    - company_lenses/intel/validation_report.md
+    - company_lenses/intel/role_overlays/
 
   public_tools:
     - tools/export_public_release.py
@@ -454,6 +484,7 @@ allow_paths:
     - tools/prepare_public_lens_refresh.py
     - tools/collect_public_lens_sources.py
     - tools/generate_public_lens_patch.py
+    - tools/public_lens_operations.py
     - tools/generate_phase2c_validation_cases.py
     - tools/interview_prep_planner.py
     - tools/llm_scorer.py

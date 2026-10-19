@@ -1,0 +1,34 @@
+{
+  "company": "AMD",
+  "lens_id": "amd_public_v0_1",
+  "version": "0.1.0-public-release-candidate",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "questions": [
+    {
+      "question_id": "AMD-Q-001",
+      "type": "behavioral",
+      "generated_question": "Tell me about a time you solved a difficult semiconductor and ai engineering problem and connected your decisions to a measurable stakeholder result.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Defines the problem, stakeholders, and constraints clearly.",
+        "Explains evidence, tradeoffs, and personal ownership.",
+        "Connects execution to a measurable result.",
+        "Shows learning from feedback or changed conditions."
+      ],
+      "evidence_ids": [
+        "AMD-IR-001",
+        "AMD-CAREERS-002"
+      ]
+    }
+  ]
+}

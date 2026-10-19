@@ -1,0 +1,87 @@
+{
+  "company_slug": "amd",
+  "company": "AMD",
+  "collected_at": "2026-10-19T03:44:03Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "technology",
+      "semiconductors",
+      "ai infrastructure",
+      "high performance computing"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public semiconductor and computing company"
+  },
+  "sources": [
+    {
+      "source_type": "official_investor_relations",
+      "title": "AMD investor relations",
+      "url": "https://ir.amd.com/",
+      "confidence": 0.82,
+      "public_safe_signal": "AMD publicly positions its work around high-performance and adaptive computing across data center, AI, client, gaming, and embedded markets.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "AMD-IR-001",
+      "date_accessed": "2026-10-18"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "AMD careers",
+      "url": "https://careers.amd.com/",
+      "confidence": 0.78,
+      "public_safe_signal": "AMD careers material emphasizes innovation, collaboration, inclusion, learning, and engineering impact across global computing products.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "AMD-CAREERS-002",
+      "date_accessed": "2026-10-18"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "behavioral",
+        "generated_question": "Tell me about a time you solved a difficult semiconductor and ai engineering problem and connected your decisions to a measurable stakeholder result.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the problem, stakeholders, and constraints clearly.",
+          "Explains evidence, tradeoffs, and personal ownership.",
+          "Connects execution to a measurable result.",
+          "Shows learning from feedback or changed conditions."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "semiconductor_and_ai_engineering",
+        "role_family": "Semiconductor and AI engineering",
+        "signals": [
+          "Explains system tradeoffs across compute, software, performance, power, cost, and reliability.",
+          "Connects technical execution to developer, data-center, embedded, or end-user outcomes."
+        ]
+      }
+    ]
+  }
+}

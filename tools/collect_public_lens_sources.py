@@ -19,6 +19,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT_DIR = ROOT / "docs" / "refresh-candidates" / "source-packets"
 COMPANY_LENSES = ROOT / "company_lenses"
+CATALOG_EXTENSION = ROOT / "config" / "public_lens_expansion_catalog.json"
 
 
 SOURCE_POLICY = {
@@ -723,6 +724,69 @@ CATALOG: dict[str, dict[str, Any]] = {
         ],
     },
 }
+
+
+def load_catalog_extension(path: Path = CATALOG_EXTENSION) -> dict[str, dict[str, Any]]:
+    if not path.is_file():
+        return {}
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict) or not isinstance(payload.get("candidates"), list):
+        raise ValueError(f"catalog extension must contain a candidates list: {path}")
+
+    extension: dict[str, dict[str, Any]] = {}
+    for candidate in payload["candidates"]:
+        if not isinstance(candidate, dict):
+            raise ValueError(f"catalog candidate must be an object: {path}")
+        slug = str(candidate.get("slug", "")).strip()
+        company = str(candidate.get("company", "")).strip()
+        sources = candidate.get("sources")
+        if not slug or not company or not isinstance(sources, list) or len(sources) < 2:
+            raise ValueError(f"catalog candidate requires slug, company, and two sources: {candidate}")
+        if slug in CATALOG or slug in extension:
+            raise ValueError(f"duplicate catalog slug: {slug}")
+
+        role_slug = str(candidate.get("role_slug") or "business_and_technology")
+        role_family = str(candidate.get("role_family") or role_slug.replace("_", " ").title())
+        role_signals = list(candidate.get("role_signals") or [])
+        question = candidate.get("question")
+        if not isinstance(question, dict):
+            question = {
+                "type": "behavioral",
+                "generated_question": (
+                    f"Tell me about a time you solved a difficult {role_family.lower()} problem "
+                    "and connected your decisions to a measurable stakeholder result."
+                ),
+                "aims_dimensions": ["structured_thinking", "ownership_execution", "impact_results"],
+                "strong_answer_signals": [
+                    "Defines the problem, stakeholders, and constraints clearly.",
+                    "Explains evidence, tradeoffs, and personal ownership.",
+                    "Connects execution to a measurable result.",
+                    "Shows learning from feedback or changed conditions.",
+                ],
+            }
+
+        extension[slug] = {
+            "company": company,
+            "industries": list(candidate.get("industries") or []),
+            "regions": list(candidate.get("regions") or ["global"]),
+            "stage": str(candidate.get("stage") or "large public company"),
+            "industry": str(candidate.get("industry") or ", ".join(candidate.get("industries") or [])),
+            "reason": str(candidate.get("reason") or "Expands public lens coverage in an undercovered industry."),
+            "review": str(candidate.get("review") or "new_company"),
+            "sources": sources,
+            "questions": [question],
+            "role_overlays": [
+                {
+                    "role_slug": role_slug,
+                    "role_family": role_family,
+                    "signals": role_signals,
+                }
+            ],
+        }
+    return extension
+
+
+CATALOG.update(load_catalog_extension())
 
 
 def slugify(value: str) -> str:
