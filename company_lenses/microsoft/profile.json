@@ -76,7 +76,8 @@
       "evidence_ids": [
         "MSFT-HIRE-002",
         "MSFT-PRIV-002"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Shows growth mindset through learning, feedback response, resilience, and practical improvement.",
@@ -89,7 +90,8 @@
       "evidence_ids": [
         "MSFT-CULTURE-001",
         "MSFT-PRIV-001"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Connects work to customer, enterprise, partner, or organizational empowerment.",
@@ -102,7 +104,8 @@
       "evidence_ids": [
         "MSFT-OFFICIAL-001",
         "MSFT-PRIV-004"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "For AI/cloud/data roles, applies responsible AI, security, privacy, reliability, and accountability boundaries.",
@@ -116,7 +119,8 @@
         "MSFT-AI-001",
         "MSFT-AI-002",
         "MSFT-PRIV-003"
-      ]
+      ],
+      "basis": "stated_by_company"
     }
   ],
   "anti_signals": [

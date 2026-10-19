@@ -69,7 +69,8 @@
       "evidence_ids": [
         "JPMC-HIRE-001",
         "JPMC-OFFICIAL-001"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Shows conduct, risk, escalation, and trust judgment in banking situations.",
@@ -82,7 +83,8 @@
       "evidence_ids": [
         "JPMC-RISK-001",
         "JPMC-TECH-001"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Uses concrete behavioral evidence rather than generic banking or brand interest.",
@@ -95,7 +97,8 @@
       "evidence_ids": [
         "JPMC-PRIV-001",
         "JPMC-HIRE-001"
-      ]
+      ],
+      "basis": "stated_by_company"
     }
   ],
   "anti_signals": [

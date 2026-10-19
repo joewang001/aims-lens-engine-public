@@ -77,7 +77,8 @@
       "confidence": 0.86,
       "evidence_ids": [
         "TD-HIRE-001"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Shows customer empathy, simplicity, and practical action in banking or service situations.",
@@ -90,7 +91,8 @@
       "evidence_ids": [
         "TD-OFFICIAL-002",
         "TD-PRIV-003"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Owns and escalates risk appropriately instead of hiding issues or optimizing short-term sales metrics.",
@@ -103,7 +105,8 @@
       "evidence_ids": [
         "TD-RISK-001",
         "TD-CODE-001"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Shows inclusive leadership, mentoring, and colleague/community care, especially in people-facing and banking roles.",
@@ -117,7 +120,8 @@
         "TD-DI-001",
         "TD-PRIV-001",
         "TD-PRIV-002"
-      ]
+      ],
+      "basis": "stated_by_company"
     }
   ],
   "anti_signals": [

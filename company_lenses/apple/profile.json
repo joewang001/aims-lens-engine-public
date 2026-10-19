@@ -90,7 +90,8 @@
         "APL-HIG-001",
         "APL-VALUES-001",
         "APL-PRIV-002"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Shows deep role-specific competence for iOS/frontend, product design, ML/AI, silicon/hardware-adjacent, or customer-facing product roles.",
@@ -104,7 +105,8 @@
         "APL-PRIV-001",
         "APL-PRIV-002",
         "APL-PRIV-003"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Can collaborate across disciplines without lowering product-quality standards.",
@@ -117,7 +119,8 @@
       "evidence_ids": [
         "APL-OFFICIAL-001",
         "APL-PRIV-004"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Treats values as product and operating constraints, especially privacy, accessibility, inclusion, and environment.",
@@ -131,7 +134,8 @@
         "APL-VALUES-001",
         "APL-VALUES-002",
         "APL-ACCESS-001"
-      ]
+      ],
+      "basis": "stated_by_company"
     }
   ],
   "anti_signals": [
