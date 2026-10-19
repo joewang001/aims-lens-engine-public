@@ -1,0 +1,85 @@
+{
+  "company_slug": "bain",
+  "company": "Bain & Company",
+  "collected_at": "2026-10-19T16:29:24Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "consulting",
+      "strategy consulting",
+      "professional services"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large global management consulting firm"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Bain company homepage",
+      "url": "https://www.bain.com/",
+      "confidence": 0.8,
+      "public_safe_signal": "Bain publicly frames its consulting work around client results, strategy, transformation, operations, technology, and sustained value creation.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "BAIN-OFFICIAL-001",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Bain careers",
+      "url": "https://www.bain.com/careers/",
+      "confidence": 0.78,
+      "public_safe_signal": "Bain careers material emphasizes collaboration, problem solving, learning, responsibility, and helping clients achieve practical results.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "BAIN-CAREERS-002",
+      "date_accessed": "2026-10-19"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "behavioral",
+        "generated_question": "Tell me about a time you solved a difficult results-oriented consulting problem and connected your decisions to a measurable stakeholder result.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the problem, stakeholders, and constraints clearly.",
+          "Explains evidence, tradeoffs, and personal ownership.",
+          "Connects execution to a measurable result.",
+          "Shows learning from feedback or changed conditions."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "results_oriented_consulting",
+        "role_family": "Results-oriented consulting",
+        "signals": [
+          "Turns analysis into clear recommendations, aligned stakeholders, and measurable results.",
+          "Shows practical teamwork, ownership, and adaptation as evidence changes."
+        ]
+      }
+    ]
+  }
+}

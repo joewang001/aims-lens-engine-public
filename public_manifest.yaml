@@ -116,6 +116,12 @@ initial_public_release:
     - slug: intel
       path: company_lenses/intel/
       status: existing_candidate
+    - slug: bain
+      path: company_lenses/bain/
+      status: existing_candidate
+    - slug: bcg
+      path: company_lenses/bcg/
+      status: existing_candidate
 
 allow_paths:
   root_files:
@@ -476,6 +482,24 @@ allow_paths:
     - company_lenses/intel/limits.md
     - company_lenses/intel/validation_report.md
     - company_lenses/intel/role_overlays/
+    - company_lenses/bain/README.md
+    - company_lenses/bain/profile.json
+    - company_lenses/bain/evidence.md
+    - company_lenses/bain/rubric.md
+    - company_lenses/bain/question_bank.json
+    - company_lenses/bain/rewrite_rules.md
+    - company_lenses/bain/limits.md
+    - company_lenses/bain/validation_report.md
+    - company_lenses/bain/role_overlays/
+    - company_lenses/bcg/README.md
+    - company_lenses/bcg/profile.json
+    - company_lenses/bcg/evidence.md
+    - company_lenses/bcg/rubric.md
+    - company_lenses/bcg/question_bank.json
+    - company_lenses/bcg/rewrite_rules.md
+    - company_lenses/bcg/limits.md
+    - company_lenses/bcg/validation_report.md
+    - company_lenses/bcg/role_overlays/
 
   public_tools:
     - tools/export_public_release.py
