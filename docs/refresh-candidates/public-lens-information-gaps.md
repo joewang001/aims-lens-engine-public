@@ -1,33 +1,23 @@
 # Public Lens Information Gaps
 
-Generated: `2026-10-19T03:40:03Z`
+Generated: `2026-10-19T04:16:21Z`
 
 This register records information that automation could not responsibly infer. The downstream sourcing and distillation teams own resolution using public-safe evidence.
 
 ## Summary
 
-- Open gaps: `77`
-- Companies affected: `17`
-- `company_says`: `15`
-- `company_judges`: `15`
-- `company_asks`: `15`
-- `risk_warnings`: `15`
-- `role_variation`: `17`
+- Open gaps: `67`
+- Companies affected: `15`
+- `company_says`: `13`
+- `company_judges`: `13`
+- `company_asks`: `13`
+- `risk_warnings`: `13`
+- `role_variation`: `15`
 
 ## Open Queue
 
 | Company | Dimension | Status | Reason | Next action | Owner queue | First detected |
 | --- | --- | --- | --- | --- | --- | --- |
-| Accenture | `company_says` | `thin` | Culture principles=2, evidence rows=2; target is at least 3 of each. | Collect additional official company, values, leadership, or strategy sources and add cited non-verbatim principles. | `public-lens-sourcing-and-distillation` | `2026-10-18` |
-| Accenture | `company_judges` | `thin` | Hiring signals=2; target is at least 3 with a rubric. | Collect official careers or hiring-process evidence and add cited evaluation signals without claiming an official standard. | `public-lens-sourcing-and-distillation` | `2026-10-18` |
-| Accenture | `company_asks` | `thin` | Original question count=1; target is at least 3. | Create original, evidence-grounded questions and follow-ups covering multiple AIMS dimensions. | `public-lens-sourcing-and-distillation` | `2026-10-18` |
-| Accenture | `risk_warnings` | `thin` | Anti-signals=1; target is at least 2 with explicit limits. | Add source-bounded risk and anti-signal guidance plus clear non-official-use limits. | `public-lens-sourcing-and-distillation` | `2026-10-18` |
-| Accenture | `role_variation` | `thin` | Role overlays=1; target is at least 2 materially different role families. | Collect role-family evidence and add another role overlay, or record why the role distinction cannot yet be supported. | `public-lens-sourcing-and-distillation` | `2026-10-18` |
-| Adobe | `company_says` | `thin` | Culture principles=2, evidence rows=3; target is at least 3 of each. | Collect additional official company, values, leadership, or strategy sources and add cited non-verbatim principles. | `public-lens-sourcing-and-distillation` | `2026-10-18` |
-| Adobe | `company_judges` | `thin` | Hiring signals=2; target is at least 3 with a rubric. | Collect official careers or hiring-process evidence and add cited evaluation signals without claiming an official standard. | `public-lens-sourcing-and-distillation` | `2026-10-18` |
-| Adobe | `company_asks` | `thin` | Original question count=1; target is at least 3. | Create original, evidence-grounded questions and follow-ups covering multiple AIMS dimensions. | `public-lens-sourcing-and-distillation` | `2026-10-18` |
-| Adobe | `risk_warnings` | `thin` | Anti-signals=1; target is at least 2 with explicit limits. | Add source-bounded risk and anti-signal guidance plus clear non-official-use limits. | `public-lens-sourcing-and-distillation` | `2026-10-18` |
-| Adobe | `role_variation` | `thin` | Role overlays=1; target is at least 2 materially different role families. | Collect role-family evidence and add another role overlay, or record why the role distinction cannot yet be supported. | `public-lens-sourcing-and-distillation` | `2026-10-18` |
 | AMD | `company_says` | `thin` | Culture principles=2, evidence rows=2; target is at least 3 of each. | Collect additional official company, values, leadership, or strategy sources and add cited non-verbatim principles. | `public-lens-sourcing-and-distillation` | `2026-10-18` |
 | AMD | `company_judges` | `thin` | Hiring signals=2; target is at least 3 with a rubric. | Collect official careers or hiring-process evidence and add cited evaluation signals without claiming an official standard. | `public-lens-sourcing-and-distillation` | `2026-10-18` |
 | AMD | `company_asks` | `thin` | Original question count=1; target is at least 3. | Create original, evidence-grounded questions and follow-ups covering multiple AIMS dimensions. | `public-lens-sourcing-and-distillation` | `2026-10-18` |

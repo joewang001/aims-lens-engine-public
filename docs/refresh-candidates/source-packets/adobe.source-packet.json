@@ -1,7 +1,7 @@
 {
   "company_slug": "adobe",
   "company": "Adobe",
-  "collected_at": "2026-09-28T20:04:52Z",
+  "collected_at": "2026-10-19T04:20:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -62,12 +62,212 @@
       ],
       "evidence_id": "ADOBE-IR-003",
       "date_accessed": "2026-09-28"
+    },
+    {
+      "source_type": "official_leadership_letter",
+      "title": "Evolving Adobe's Values and Culture (CEO memo)",
+      "url": "https://blog.adobe.com/en/publish/2023/03/07/evolving-adobes-values-culture",
+      "confidence": 0.8,
+      "public_safe_signal": "A CEO memo describes four Adobe values: create the future through customer-centric innovation, own the outcome with a bias to action, raise the bar with intellectual honesty, and be genuine through inclusion and respect.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "ADOBE-VALUES-004",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "How We Hire at Adobe",
+      "url": "https://careers.adobe.com/us/en/hiring-process",
+      "confidence": 0.82,
+      "public_safe_signal": "Adobe outlines a five-step hiring process and asks for evidence of impact and creativity, portfolio or GitHub links, measurable examples, and role-specific exercises such as coding, system design, creative briefs, or scenario discussions.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation",
+        "evidence_valued"
+      ],
+      "evidence_id": "ADOBE-HIRING-005",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_company",
+      "title": "Adobe for All",
+      "url": "https://www.adobe.com/adobe-for-all.html",
+      "confidence": 0.74,
+      "public_safe_signal": "Adobe for All describes a culture where all employees can make an impact, great ideas can come from anywhere, pay is reviewed twice yearly, and wellbeing benefits support people personally and professionally.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "ADOBE-ALL-006",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_engineering_blog",
+      "title": "Investing in the Future of Creative Cloud Extensibility: UXP Comes to Our Flagship Applications",
+      "url": "https://blog.developer.adobe.com/en/publish/2026/09/investing-in-the-future-of-creative-cloud-extensibility-uxp-comes-to-our-flagship-applications",
+      "confidence": 0.76,
+      "public_safe_signal": "Adobe's developer blog describes a multi-year platform investment to move flagship apps to a modern extensibility architecture, including security, migration planning, backward compatibility, and a phased developer ecosystem transition.",
+      "dimensions": [
+        "evidence_valued",
+        "role_variation",
+        "risk_warnings"
+      ],
+      "evidence_id": "ADOBE-DEVBLOG-007",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_company",
+      "title": "About Adobe",
+      "url": "https://www.adobe.com/about-adobe.html",
+      "confidence": 0.76,
+      "public_safe_signal": "Adobe's mission is to empower everyone to create; it describes AI as amplifying human ingenuity, trained for commercial safety, paired with content authenticity standards, and embedded in existing customer workflows.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "ADOBE-ABOUT-008",
+      "date_accessed": "2026-10-19"
     }
   ],
   "lens_updates": {
-    "culture_principles": [],
-    "hiring_signals": [],
-    "anti_signals": [],
+    "culture_principles": [
+      {
+        "name": "Create the future",
+        "description": "Adobe frames innovation as relentless customer centricity: anticipating unmet or unknown needs and inventing beyond the current product category.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-VALUES-004",
+          "ADOBE-ABOUT-008"
+        ]
+      },
+      {
+        "name": "Own the outcome",
+        "description": "The company values a bias toward action and empowerment, measuring work by the broader outcome it drives rather than only by assigned tasks.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ADOBE-VALUES-004"
+        ]
+      },
+      {
+        "name": "Raise the bar",
+        "description": "Adobe describes continuous improvement and intellectual honesty, including direct discussion of what is not going well, as central to raising performance.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ADOBE-VALUES-004"
+        ]
+      },
+      {
+        "name": "Be genuine",
+        "description": "Being genuine is tied to inclusion, respect, honesty, and reflecting the diversity of the world in the workforce.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ADOBE-VALUES-004",
+          "ADOBE-ALL-006"
+        ]
+      },
+      {
+        "name": "Creativity as a company-wide capability",
+        "description": "Adobe states that everyone is creative and that great ideas can come from anywhere in the organization, not only from designated creative roles.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ADOBE-CAREERS-002",
+          "ADOBE-ALL-006"
+        ]
+      }
+    ],
+    "hiring_signals": [
+      {
+        "signal": "Shows impact and creativity in work samples rather than listing responsibilities, including a portfolio or GitHub for creative and technical roles.",
+        "aims_dimensions": [
+          "impact_results",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-HIRING-005"
+        ]
+      },
+      {
+        "signal": "Prepares specific examples with measurable impact and asks thoughtful questions about the role's impact and team dynamics.",
+        "aims_dimensions": [
+          "impact_results",
+          "collaboration_communication"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-HIRING-005"
+        ]
+      },
+      {
+        "signal": "Demonstrates problem-solving in the format the role uses, such as coding and system design, creative briefs and design thinking, or scenario-based discussion.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "role_variation"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ADOBE-HIRING-005",
+          "ADOBE-DEVBLOG-007"
+        ]
+      },
+      {
+        "signal": "Shows eagerness to learn and apply AI within the craft as tools and workflows evolve.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ADOBE-HIRING-005",
+          "ADOBE-ABOUT-008"
+        ]
+      },
+      {
+        "signal": "Connects product or craft decisions to customer workflows and business outcomes.",
+        "aims_dimensions": [
+          "impact_results",
+          "structured_thinking"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ADOBE-OFFICIAL-001",
+          "ADOBE-IR-003",
+          "ADOBE-ABOUT-008"
+        ]
+      }
+    ],
+    "anti_signals": [
+      {
+        "anti_signal": "A resume or portfolio that lists responsibilities without evidence of impact, creativity, or technical judgment.",
+        "risk_reason": "Adobe's hiring guidance explicitly asks candidates to showcase work that illustrates impact and creativity rather than duties; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ADOBE-HIRING-005"
+        ]
+      },
+      {
+        "anti_signal": "Defending the status quo or avoiding direct discussion of what is not working.",
+        "risk_reason": "Adobe's stated value of raising the bar emphasizes intellectual honesty and directness about shortcomings.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ADOBE-VALUES-004"
+        ]
+      },
+      {
+        "anti_signal": "Treating AI as outside one's craft rather than a capability to learn and apply.",
+        "risk_reason": "Adobe says it looks for candidates eager to innovate with AI; this indicates an adaptability gap and is not presented as an official hiring requirement.",
+        "confidence": 0.66,
+        "evidence_ids": [
+          "ADOBE-HIRING-005",
+          "ADOBE-ABOUT-008"
+        ]
+      }
+    ],
     "questions": [
       {
         "type": "product_behavioral",
@@ -83,6 +283,36 @@
           "Shows cross-functional product or operational execution.",
           "Measures adoption, quality, efficiency, or customer impact."
         ]
+      },
+      {
+        "type": "ownership_outcome_behavioral",
+        "generated_question": "Tell me about a time you owned an outcome beyond your assigned tasks. How did you broaden your scope, and what changed because of it?",
+        "aims_dimensions": [
+          "ownership_execution",
+          "impact_results",
+          "structured_thinking"
+        ],
+        "strong_answer_signals": [
+          "Distinguishes assigned tasks from the broader outcome.",
+          "Shows initiative taken without waiting for permission.",
+          "Explains how scope was broadened and tradeoffs managed.",
+          "Quantifies the result and what others learned from it."
+        ]
+      },
+      {
+        "type": "customer_insight_behavioral",
+        "generated_question": "Describe a time you looked around the corner for an unmet customer need and changed a product or workflow as a result.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "impact_results",
+          "growth_mindset"
+        ],
+        "strong_answer_signals": [
+          "Identifies the unmet need and how it was discovered.",
+          "Explains the evidence behind the decision.",
+          "Describes the change and adoption path.",
+          "Reflects on what the result revealed about the next opportunity."
+        ]
       }
     ],
     "role_overlays": [
@@ -92,6 +322,15 @@
         "signals": [
           "Connects product choices to creator, document, marketer, or enterprise customer workflows.",
           "Shows evidence-based judgment around usability, trust, content, AI, or customer experience."
+        ]
+      },
+      {
+        "role_slug": "software_engineering",
+        "role_family": "Software engineering and platform roles",
+        "signals": [
+          "Builds or migrates extensibility platforms with attention to security, architecture, and backward compatibility.",
+          "Demonstrates depth through coding challenges, system design, and code or portfolio evidence.",
+          "Works across product teams, third-party developers, and partner ecosystems."
         ]
       }
     ]

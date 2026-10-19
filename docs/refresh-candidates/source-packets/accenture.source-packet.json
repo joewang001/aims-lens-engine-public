@@ -1,7 +1,7 @@
 {
   "company_slug": "accenture",
   "company": "Accenture",
-  "collected_at": "2026-08-25T21:06:49Z",
+  "collected_at": "2026-10-19T04:20:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -48,12 +48,240 @@
       ],
       "evidence_id": "ACCENTURE-CAREERS-002",
       "date_accessed": "2026-08-25"
+    },
+    {
+      "source_type": "official_company",
+      "title": "About Our Company",
+      "url": "https://www.accenture.com/en/about/company-index",
+      "confidence": 0.78,
+      "public_safe_signal": "Company overview frames a 360-degree value model across clients, people, shareholders, partners, and communities, and stresses ethics, innovation as a mindset, cognitive diversity, and apprenticeship-based inclusion.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "ACCENTURE-ABOUT-003",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_company",
+      "title": "Accenture Executive Leadership Team",
+      "url": "https://www.accenture.com/en/about/leadership",
+      "confidence": 0.66,
+      "public_safe_signal": "The leadership page states the executive team averages 27 years of experience with Accenture, suggesting a culture that develops senior leaders largely through long internal tenure.",
+      "dimensions": [
+        "company_says",
+        "role_variation"
+      ],
+      "evidence_id": "ACCENTURE-LEADERSHIP-004",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_company",
+      "title": "How to Prepare for a Behavioral Interview (Accenture Careers blog)",
+      "url": "https://www.accenture.com/ca-en/blogs/blogs-careers/how-to-prepare-for-a-behavioral-interview",
+      "confidence": 0.78,
+      "public_safe_signal": "Accenture describes client-facing behavioral interviews as assessing collaboration, leadership, problem-solving, learning ability, business acumen, and emotional resilience, with STAR structure for situation, task, action, and result.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "evidence_valued"
+      ],
+      "evidence_id": "ACCENTURE-BEHAVIORAL-005",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_company",
+      "title": "4 recruiter tips for your skills interview (Accenture Careers blog)",
+      "url": "https://www.accenture.com/ca-en/blogs/blogs-careers/getting-ready-for-the-skills-interview",
+      "confidence": 0.74,
+      "public_safe_signal": "Accenture frames a separate skills interview around role-specific knowledge and expertise, advising candidates to research the company and role, use quantified achievements, and explain present, past, and future contributions.",
+      "dimensions": [
+        "company_judges",
+        "company_asks"
+      ],
+      "evidence_id": "ACCENTURE-SKILLS-006",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Software Engineering Careers at Accenture",
+      "url": "https://www.accenture.com/ca-en/careers/explore-careers/area-of-interest/software-engineering-careers",
+      "confidence": 0.72,
+      "public_safe_signal": "Software engineering roles are described as solving complex business problems with a creative, pragmatic approach and agile solutions, supported by certified architects and cloud platform partnerships.",
+      "dimensions": [
+        "role_variation",
+        "company_says",
+        "company_judges"
+      ],
+      "evidence_id": "ACCENTURE-SWE-007",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Strategy Consulting Careers at Accenture",
+      "url": "https://www.accenture.com/ca-en/careers/explore-careers/area-of-interest/strategy-careers",
+      "confidence": 0.72,
+      "public_safe_signal": "Strategy consulting roles emphasize business, technology, and functional strategy, evidence-based industry insight, and carrying recommendations from idea through execution with senior client leaders.",
+      "dimensions": [
+        "role_variation",
+        "company_says"
+      ],
+      "evidence_id": "ACCENTURE-STRATEGY-008",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_investor_relations",
+      "title": "Accenture Investor Relations",
+      "url": "https://investor.accenture.com/",
+      "confidence": 0.8,
+      "public_safe_signal": "Investor materials describe a strategy to be a reinvention partner, lead safe and widespread AI adoption, and be a client-focused, AI-enabled employer, alongside scale metrics and shareholder-value priorities.",
+      "dimensions": [
+        "company_says",
+        "risk_warnings",
+        "evidence_valued"
+      ],
+      "evidence_id": "ACCENTURE-IR-009",
+      "date_accessed": "2026-10-19"
     }
   ],
   "lens_updates": {
-    "culture_principles": [],
-    "hiring_signals": [],
-    "anti_signals": [],
+    "culture_principles": [
+      {
+        "name": "360-degree value for all stakeholders",
+        "description": "Accenture publicly frames success as value created for clients, people, shareholders, partners, and communities together, not for one stakeholder alone.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ACCENTURE-ABOUT-003",
+          "ACCENTURE-IR-009"
+        ]
+      },
+      {
+        "name": "Integrity and doing the right thing",
+        "description": "Company messaging repeatedly emphasizes high ethical standards and building trust through transparency, including around AI use.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ACCENTURE-ABOUT-003",
+          "ACCENTURE-OFFICIAL-001"
+        ]
+      },
+      {
+        "name": "Reinvention through technology, talent, and bold thinking",
+        "description": "Innovation is described as an operating mindset that connects technology, people, and ambitious thinking to create lasting client value.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ACCENTURE-ABOUT-003",
+          "ACCENTURE-IR-009"
+        ]
+      },
+      {
+        "name": "Cognitive diversity and inclusion",
+        "description": "Accenture states that varied backgrounds, perspectives, and lived experiences create the cognitive diversity needed for reinvention, with apprenticeships cited as one inclusion pathway.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ACCENTURE-ABOUT-003",
+          "ACCENTURE-CAREERS-002"
+        ]
+      },
+      {
+        "name": "Continuous learning and credentials",
+        "description": "Careers material highlights external certifications across major cloud and enterprise platforms as part of how employees build in-demand skills.",
+        "confidence": 0.68,
+        "evidence_ids": [
+          "ACCENTURE-SWE-007",
+          "ACCENTURE-CAREERS-002"
+        ]
+      }
+    ],
+    "hiring_signals": [
+      {
+        "signal": "Structures behavioral answers with situation, task, action, and result rather than a general narrative.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication",
+          "impact_results"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-BEHAVIORAL-005"
+        ]
+      },
+      {
+        "signal": "Shows collaboration, leadership, problem-solving, learning agility, business acumen, and emotional resilience in client-facing scenarios.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "ownership_execution",
+          "growth_mindset"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-BEHAVIORAL-005"
+        ]
+      },
+      {
+        "signal": "Demonstrates role-specific depth and current platform or technology knowledge in a dedicated skills interview.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "growth_mindset"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ACCENTURE-SKILLS-006",
+          "ACCENTURE-SWE-007"
+        ]
+      },
+      {
+        "signal": "Quantifies achievements and explicitly connects prior experience to the target role's requirements.",
+        "aims_dimensions": [
+          "impact_results",
+          "structured_thinking"
+        ],
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ACCENTURE-SKILLS-006",
+          "ACCENTURE-CAREERS-002"
+        ]
+      },
+      {
+        "signal": "Explains technology choices through client outcomes, delivery constraints, and measurable business value.",
+        "aims_dimensions": [
+          "impact_results",
+          "structured_thinking"
+        ],
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ACCENTURE-OFFICIAL-001",
+          "ACCENTURE-SWE-007",
+          "ACCENTURE-IR-009"
+        ]
+      }
+    ],
+    "anti_signals": [
+      {
+        "anti_signal": "Unstructured storytelling that never reaches the actions taken or the result achieved.",
+        "risk_reason": "Accenture's published behavioral guidance explicitly uses STAR and focuses on actions and results; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ACCENTURE-BEHAVIORAL-005"
+        ]
+      },
+      {
+        "anti_signal": "Claiming client impact without describing collaboration, conflict handling, or adaptation to change.",
+        "risk_reason": "The behavioral interview is described as evaluating how candidates manage challenging client situations, not only outcomes.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ACCENTURE-BEHAVIORAL-005"
+        ]
+      },
+      {
+        "anti_signal": "Generic technology enthusiasm without role-specific expertise or current platform familiarity.",
+        "risk_reason": "Skills interviews are described as a distinct check on role-relevant knowledge; interest alone does not evidence that depth.",
+        "confidence": 0.68,
+        "evidence_ids": [
+          "ACCENTURE-SKILLS-006",
+          "ACCENTURE-SWE-007"
+        ]
+      }
+    ],
     "questions": [
       {
         "type": "consulting_behavioral",
@@ -69,6 +297,36 @@
           "Defines execution steps and evidence of progress.",
           "Connects the result to client or business value."
         ]
+      },
+      {
+        "type": "change_adoption_behavioral",
+        "generated_question": "Tell me about a time you had to adopt a new system, process, or technology that was a major departure from how you previously worked. How did you build your own confidence and bring others along?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "collaboration_communication",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names the change, why it mattered, and what was at stake.",
+          "Describes a concrete learning approach rather than passive exposure.",
+          "Addresses resistance or uncertainty among colleagues.",
+          "Shows an outcome and what was learned for the next change."
+        ]
+      },
+      {
+        "type": "stakeholder_conflict_behavioral",
+        "generated_question": "Describe a situation where you had to work with a difficult client or colleague. What did you do, and what was the result?",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "structured_thinking",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Diagnoses the underlying issue rather than labeling the person.",
+          "Adapts communication or approach to the stakeholder.",
+          "Preserves both the relationship and delivery commitments.",
+          "Reflects on what changed in subsequent work."
+        ]
       }
     ],
     "role_overlays": [
@@ -78,6 +336,15 @@
         "signals": [
           "Frames technology choices through client outcomes and implementation constraints.",
           "Balances structured analysis, communication, and delivery ownership."
+        ]
+      },
+      {
+        "role_slug": "software_engineering",
+        "role_family": "Software engineering",
+        "signals": [
+          "Solves business problems with pragmatic, creative engineering and agile delivery.",
+          "Shows depth through certifications and hands-on use of major cloud and enterprise platforms.",
+          "Collaborates within a large engineering community and client delivery teams."
         ]
       }
     ]
