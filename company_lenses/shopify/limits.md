@@ -1,5 +1,7 @@
 # Shopify Lens Limits
 
+This lens is inferred from public sources and does not represent an official Shopify hiring standard; derived hiring signals are interview-preparation suggestions, not company-stated evaluation criteria.
+
 - This is a `LIGHTWEIGHT_SCAN` based on official public sources only.
 - It does not include private interview reports, paid source bodies, candidate data, tenant data, or user-submitted job postings.
 - It should be used for interview preparation and public lens validation, not for official hiring decisions.
