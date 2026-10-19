@@ -103,7 +103,17 @@ Operational outputs:
 - `docs/refresh-candidates/public-lens-daily-plan.json`;
 - `docs/refresh-candidates/public-lens-daily-plan.md`;
 - `docs/refresh-candidates/public-lens-information-gaps.csv`;
-- `docs/refresh-candidates/public-lens-information-gaps.md`.
+- `docs/refresh-candidates/public-lens-information-gaps.md`;
+- `docs/refresh-candidates/public-lens-gap-resolution-history.csv`;
+- `docs/refresh-candidates/public-lens-gap-resolution-history.md`.
+
+The information-gap register is a current open queue. Every audit compares it
+with the newly calculated queue. A gap that no longer appears is appended to
+the resolution history with its threshold result, evidence references, source
+cutoff, and dates. History records are never removed by the audit. Their first
+containing Git commit and merged pull request are backfilled on a later run so
+the operational record remains traceable without trying to predict a commit
+hash before it exists.
 
 ### Quarterly Coverage Expansion
 

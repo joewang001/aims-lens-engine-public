@@ -90,6 +90,8 @@ git add \
   docs/refresh-candidates/public-lens-daily-plan.md \
   docs/refresh-candidates/public-lens-information-gaps.csv \
   docs/refresh-candidates/public-lens-information-gaps.md \
+  docs/refresh-candidates/public-lens-gap-resolution-history.csv \
+  docs/refresh-candidates/public-lens-gap-resolution-history.md \
   docs/refresh-candidates/public-lens-refresh-candidate.md \
   docs/refresh-candidates/source-packets \
   public_manifest.yaml

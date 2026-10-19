@@ -6,6 +6,8 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
+import subprocess
 from collections import Counter, defaultdict
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -21,6 +23,8 @@ ROOT = Path(__file__).resolve().parents[1]
 COMPANY_LENSES = ROOT / "company_lenses"
 DEFAULT_GAP_CSV = ROOT / "docs" / "refresh-candidates" / "public-lens-information-gaps.csv"
 DEFAULT_GAP_MD = ROOT / "docs" / "refresh-candidates" / "public-lens-information-gaps.md"
+DEFAULT_HISTORY_CSV = ROOT / "docs" / "refresh-candidates" / "public-lens-gap-resolution-history.csv"
+DEFAULT_HISTORY_MD = ROOT / "docs" / "refresh-candidates" / "public-lens-gap-resolution-history.md"
 DEFAULT_PLAN_JSON = ROOT / "docs" / "refresh-candidates" / "public-lens-daily-plan.json"
 DEFAULT_PLAN_MD = ROOT / "docs" / "refresh-candidates" / "public-lens-daily-plan.md"
 
@@ -60,12 +64,37 @@ GAP_FIELDS = (
     "last_checked",
 )
 
+HISTORY_FIELDS = (
+    "resolution_record_id",
+    "company_slug",
+    "company",
+    "dimension",
+    "reason_code",
+    "first_detected",
+    "last_open_checked",
+    "resolved_at",
+    "resolution_basis",
+    "evidence_refs",
+    "source_cutoff",
+    "owner_queue",
+    "resolution_status",
+    "resolution_commit",
+    "resolution_pr",
+)
+
 
 def load_json(path: Path) -> dict[str, Any]:
     payload = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(payload, dict):
         raise ValueError(f"expected JSON object: {path}")
     return payload
+
+
+def display_path(path: Path) -> str:
+    try:
+        return str(path.resolve().relative_to(ROOT.resolve()))
+    except ValueError:
+        return str(path)
 
 
 def write_json(path: Path, payload: dict[str, Any]) -> None:
@@ -114,6 +143,208 @@ def prior_first_detected(path: Path) -> dict[tuple[str, str, str], str]:
             for row in csv.DictReader(handle)
             if row.get("company_slug") and row.get("dimension") and row.get("reason_code")
         }
+
+
+def read_csv_rows(path: Path) -> list[dict[str, str]]:
+    if not path.is_file():
+        return []
+    with path.open("r", encoding="utf-8", newline="") as handle:
+        return [dict(row) for row in csv.DictReader(handle)]
+
+
+def gap_key(row: dict[str, str]) -> tuple[str, str, str]:
+    return (row["company_slug"], row["dimension"], row["reason_code"])
+
+
+def collect_evidence_refs(value: Any) -> set[str]:
+    refs: set[str] = set()
+    if isinstance(value, dict):
+        for key, nested in value.items():
+            if key in {"evidence_ids", "evidence_refs"} and isinstance(nested, list):
+                refs.update(str(item) for item in nested if item)
+            else:
+                refs.update(collect_evidence_refs(nested))
+    elif isinstance(value, list):
+        for nested in value:
+            refs.update(collect_evidence_refs(nested))
+    return refs
+
+
+def resolution_details(row: dict[str, str]) -> tuple[str, str, str]:
+    slug = row["company_slug"]
+    dimension = row["dimension"]
+    if slug == "_catalog":
+        existing = set(current_company_names())
+        unused = sum(1 for candidate in CATALOG if candidate not in existing)
+        return (
+            f"Approved candidate reserve now contains {unused} unused companies.",
+            "catalog_inventory",
+            "n/a",
+        )
+
+    path = COMPANY_LENSES / slug
+    if not path.is_dir():
+        return (
+            "Gap no longer appears in the current audit; company lens directory is not present.",
+            "none",
+            row.get("source_cutoff", "unknown"),
+        )
+
+    profile = load_json(path / "profile.json")
+    evidence_count = count_evidence_rows(path / "evidence.md")
+    questions_count = len(load_questions(path / "question_bank.json"))
+    overlay_dir = path / "role_overlays"
+    overlay_count = len(list(overlay_dir.glob("*.json"))) if overlay_dir.is_dir() else 0
+    metrics = {
+        "company_says": f"culture principles={len(profile.get('culture_principles') or [])}, evidence rows={evidence_count}",
+        "company_judges": f"hiring signals={len(profile.get('hiring_signals') or [])}, rubric={str((path / 'rubric.md').is_file()).lower()}",
+        "company_asks": f"original questions={questions_count}",
+        "evidence_valued": (
+            f"AIMS weights={len(profile.get('aims_weighting') or {})}, "
+            f"official sources={int((profile.get('evidence_summary') or {}).get('official_source_count', 0) or 0)}"
+        ),
+        "risk_warnings": f"anti-signals={len(profile.get('anti_signals') or [])}, limits={str((path / 'limits.md').is_file()).lower()}",
+        "role_variation": f"role overlays={overlay_count}",
+        "honest_unknowns": (
+            f"honest limits={len(profile.get('honest_limits') or [])}, "
+            f"validation report={str((path / 'validation_report.md').is_file()).lower()}"
+        ),
+    }
+    refs = collect_evidence_refs(profile)
+    questions_path = path / "question_bank.json"
+    if questions_path.is_file():
+        refs.update(collect_evidence_refs(load_json(questions_path)))
+    for overlay in sorted(overlay_dir.glob("*.json")) if overlay_dir.is_dir() else []:
+        refs.update(collect_evidence_refs(load_json(overlay)))
+    return (
+        f"Current lens passed the automated `{dimension}` threshold: {metrics.get(dimension, 'gap absent')}.",
+        ";".join(sorted(refs)) or "none_recorded",
+        str(profile.get("source_cutoff", "unknown")),
+    )
+
+
+def reconcile_resolution_provenance(rows: list[dict[str, str]], history_path: Path) -> None:
+    try:
+        relative_path = history_path.resolve().relative_to(ROOT.resolve())
+    except ValueError:
+        return
+    for row in rows:
+        commit_pending = row.get("resolution_commit", "").startswith("pending:")
+        pr_pending = row.get("resolution_pr", "").startswith("pending:")
+        if not commit_pending and not pr_pending:
+            continue
+        result = subprocess.run(
+            [
+                "git",
+                "-C",
+                str(ROOT),
+                "log",
+                "--first-parent",
+                "--diff-merges=first-parent",
+                "--reverse",
+                "--format=%H%x09%s",
+                "-S",
+                row["resolution_record_id"],
+                "--",
+                str(relative_path),
+            ],
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        first = next((line for line in result.stdout.splitlines() if "\t" in line), "")
+        if not first:
+            continue
+        commit, subject = first.split("\t", 1)
+        if commit_pending:
+            row["resolution_commit"] = commit
+        match = re.search(r"(?:\(#|pull request #)(\d+)\)?", subject, re.IGNORECASE)
+        if match:
+            row["resolution_pr"] = (
+                "https://github.com/joewang001/aims-lens-engine-public/pull/"
+                + match.group(1)
+            )
+
+
+def write_resolution_history(
+    *,
+    prior_rows: list[dict[str, str]],
+    current_rows: list[dict[str, str]],
+    csv_path: Path,
+    md_path: Path,
+    resolved_on: str | None = None,
+) -> int:
+    resolved_date = resolved_on or date.today().isoformat()
+    current_keys = {gap_key(row) for row in current_rows}
+    history = read_csv_rows(csv_path)
+    known_ids = {row.get("resolution_record_id", "") for row in history}
+    added = 0
+    for prior in prior_rows:
+        if gap_key(prior) in current_keys:
+            continue
+        record_id = "|".join(
+            (
+                prior["company_slug"],
+                prior["dimension"],
+                prior["reason_code"],
+                prior.get("first_detected", "unknown"),
+                resolved_date,
+            )
+        )
+        if record_id in known_ids:
+            continue
+        basis, evidence_refs, source_cutoff = resolution_details(prior)
+        history.append(
+            {
+                "resolution_record_id": record_id,
+                "company_slug": prior["company_slug"],
+                "company": prior.get("company", prior["company_slug"]),
+                "dimension": prior["dimension"],
+                "reason_code": prior["reason_code"],
+                "first_detected": prior.get("first_detected", "unknown"),
+                "last_open_checked": prior.get("last_checked", "unknown"),
+                "resolved_at": resolved_date,
+                "resolution_basis": basis,
+                "evidence_refs": evidence_refs,
+                "source_cutoff": source_cutoff,
+                "owner_queue": prior.get("owner_queue", "public-lens-sourcing-and-distillation"),
+                "resolution_status": "resolved",
+                "resolution_commit": "pending:first_commit_containing_record",
+                "resolution_pr": "pending:merge_pr",
+            }
+        )
+        known_ids.add(record_id)
+        added += 1
+
+    reconcile_resolution_provenance(history, csv_path)
+    history.sort(key=lambda row: (row["resolved_at"], row["company_slug"], row["dimension"], row["reason_code"]))
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+    with csv_path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=HISTORY_FIELDS, lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(history)
+
+    lines = [
+        "# Public Lens Gap Resolution History",
+        "",
+        f"Generated: `{datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}`",
+        "",
+        "This append-only operational view records gaps that disappeared after a lens passed its automated threshold. The first Git commit containing each record is the authoritative resolution change; commit and PR fields are backfilled on a later audit.",
+        "",
+        f"- Resolved records: `{len(history)}`",
+        f"- Added in this audit: `{added}`",
+        "",
+        "| Company | Dimension | First detected | Resolved | Basis | Evidence refs | Commit | PR |",
+        "| --- | --- | --- | --- | --- | --- | --- | --- |",
+    ]
+    for row in history:
+        clean = {key: str(value).replace("|", "\\|").replace("\n", " ") for key, value in row.items()}
+        lines.append(
+            "| {company} | `{dimension}` | `{first_detected}` | `{resolved_at}` | {resolution_basis} | `{evidence_refs}` | `{resolution_commit}` | {resolution_pr} |".format(**clean)
+        )
+    md_path.parent.mkdir(parents=True, exist_ok=True)
+    md_path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
+    return added
 
 
 def add_gap(
@@ -268,13 +499,29 @@ def build_gap_rows(*, reserve_target: int) -> list[dict[str, str]]:
     return rows
 
 
-def write_gap_register(rows: list[dict[str, str]], *, csv_path: Path, md_path: Path) -> None:
+def write_gap_register(
+    rows: list[dict[str, str]],
+    *,
+    csv_path: Path,
+    md_path: Path,
+    history_csv_path: Path = DEFAULT_HISTORY_CSV,
+    history_md_path: Path = DEFAULT_HISTORY_MD,
+) -> int:
     today = date.today().isoformat()
+    prior_rows = read_csv_rows(csv_path)
     previous = prior_first_detected(csv_path)
     for row in rows:
         key = (row["company_slug"], row["dimension"], row["reason_code"])
         row["first_detected"] = previous.get(key, today)
         row["last_checked"] = today
+
+    resolved = write_resolution_history(
+        prior_rows=prior_rows,
+        current_rows=rows,
+        csv_path=history_csv_path,
+        md_path=history_md_path,
+        resolved_on=today,
+    )
 
     csv_path.parent.mkdir(parents=True, exist_ok=True)
     with csv_path.open("w", encoding="utf-8", newline="") as handle:
@@ -314,6 +561,7 @@ def write_gap_register(rows: list[dict[str, str]], *, csv_path: Path, md_path: P
         )
     md_path.parent.mkdir(parents=True, exist_ok=True)
     md_path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
+    return resolved
 
 
 def current_company_names() -> list[str]:
@@ -377,10 +625,19 @@ def command_verify_reserve(args: argparse.Namespace) -> int:
 
 def command_audit(args: argparse.Namespace) -> int:
     rows = build_gap_rows(reserve_target=args.catalog_reserve_target)
-    write_gap_register(rows, csv_path=args.csv_output, md_path=args.markdown_output)
+    resolved = write_gap_register(
+        rows,
+        csv_path=args.csv_output,
+        md_path=args.markdown_output,
+        history_csv_path=args.history_csv_output,
+        history_md_path=args.history_markdown_output,
+    )
     print(
         f"public_lens_gap_status=ok open_gaps={len(rows)} "
-        f"csv={args.csv_output.relative_to(ROOT)} markdown={args.markdown_output.relative_to(ROOT)}"
+        f"resolved_added={resolved} csv={display_path(args.csv_output)} "
+        f"markdown={display_path(args.markdown_output)} "
+        f"history_csv={display_path(args.history_csv_output)} "
+        f"history_markdown={display_path(args.history_markdown_output)}"
     )
     return 0
 
@@ -510,6 +767,8 @@ def build_parser() -> argparse.ArgumentParser:
     audit = subparsers.add_parser("audit-gaps", help="Generate the information-gap register.")
     audit.add_argument("--csv-output", type=Path, default=DEFAULT_GAP_CSV)
     audit.add_argument("--markdown-output", type=Path, default=DEFAULT_GAP_MD)
+    audit.add_argument("--history-csv-output", type=Path, default=DEFAULT_HISTORY_CSV)
+    audit.add_argument("--history-markdown-output", type=Path, default=DEFAULT_HISTORY_MD)
     audit.add_argument("--catalog-reserve-target", type=int, default=8)
     audit.set_defaults(func=command_audit)
 
