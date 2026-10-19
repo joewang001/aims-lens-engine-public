@@ -35,3 +35,5 @@ class PublicationScopeTests(unittest.TestCase):
         publication = workflow.split("  open-sourcing-agent-pull-request:")[1].split("  daily-seven-dimension-enrichment:")[0]
         self.assertIn("needs: validate-public-lens", publication)
         self.assertIn('--match-head-commit "$GITHUB_SHA"', publication)
+        self.assertIn("MERGEABLE) ready=true", publication)
+        self.assertNotIn("--auto", publication)
