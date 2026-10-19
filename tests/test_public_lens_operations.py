@@ -188,7 +188,7 @@ class DailyOperationsTests(unittest.TestCase):
         self.assertIn('cron: "0 13 * * 1"', workflow)
         self.assertIn('cron: "0 13 * * 0,2-6"', workflow)
         self.assertNotIn("--expansion-limit \"$WEEKLY_NEW_COMPANY_TARGET\" --allow-empty", workflow)
-        self.assertIn("verify-growth", workflow)
+        self.assertIn("run_weekly_public_lens_expansion.py", workflow)
         self.assertIn("verify-reserve --min-unused 8", workflow)
         self.assertIn("automation/public-lens-source-agent", workflow)
         self.assertIn("gh pr create", workflow)

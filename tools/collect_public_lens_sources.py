@@ -9,6 +9,7 @@ a sourcing agent. It does not copy source bodies or scrape pages.
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import json
 import re
 from datetime import datetime, timezone
@@ -873,7 +874,20 @@ def display_path(path: Path) -> str:
 
 def choose_expansion(limit: int) -> list[str]:
     existing = {path.name for path in COMPANY_LENSES.iterdir() if path.is_dir() and not path.name.startswith("_")}
-    return [slug for slug in CATALOG if slug not in existing][:limit]
+    # Prefer different sectors in the same cohort, then underrepresented sectors.
+    def sector(slug):
+        return str(CATALOG[slug].get("sector") or CATALOG[slug].get("industries", ["unknown"])[0])
+    coverage = Counter(sector(slug) for slug in existing if slug in CATALOG)
+    batch = Counter()
+    remaining = [slug for slug in CATALOG if slug not in existing]
+    selected = []
+    for _ in range(min(max(limit, 0), len(remaining))):
+        slug = min(remaining, key=lambda item: (batch[sector(item)], coverage[sector(item)]))
+        selected.append(slug)
+        remaining.remove(slug)
+        batch[sector(slug)] += 1
+        coverage[sector(slug)] += 1
+    return selected
 
 
 def main() -> int:

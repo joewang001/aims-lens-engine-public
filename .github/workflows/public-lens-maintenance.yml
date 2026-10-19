@@ -79,19 +79,8 @@ jobs:
       - name: Install validation dependencies
         run: python -m pip install pyyaml
 
-      - name: Capture pre-expansion baseline
-        run: python tools/public_lens_operations.py snapshot --output /tmp/public-lens-baseline.json
-
-      - name: Add the weekly company cohort
-        run: |
-          python tools/collect_public_lens_sources.py --expansion-limit "$WEEKLY_NEW_COMPANY_TARGET"
-          python tools/generate_public_lens_patch.py --expansion-limit "$WEEKLY_NEW_COMPANY_TARGET" --execute
-
-      - name: Enforce weekly new-company target
-        run: |
-          python tools/public_lens_operations.py verify-growth \
-            --baseline /tmp/public-lens-baseline.json \
-            --min-new-companies "$WEEKLY_NEW_COMPANY_TARGET"
+      - name: Add only the missing weekly cohort (idempotent)
+        run: python tools/run_weekly_public_lens_expansion.py --target "$WEEKLY_NEW_COMPANY_TARGET" --reserve 8
 
       - name: Build operations reports
         run: |
