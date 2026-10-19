@@ -84,7 +84,8 @@
       "evidence_ids": [
         "PFIZER-OFFICIAL-001",
         "PFIZER-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Uses concrete examples to show ownership, learning, and measurable improvement.",
@@ -98,7 +99,8 @@
         "PFIZER-OFFICIAL-001",
         "PFIZER-CAREERS-002",
         "PFIZER-IR-003"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Describes a decision where regulatory or quality evidence set the pace rather than the deadline.",
@@ -110,7 +112,8 @@
       "evidence_ids": [
         "PFIZER-IR-003",
         "PFIZER-CAREERS-002"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Shows cross-functional collaboration between scientific, manufacturing, and commercial groups with named ownership.",
@@ -122,7 +125,8 @@
       "evidence_ids": [
         "PFIZER-CAREERS-002",
         "PFIZER-OFFICIAL-001"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Presents data with its limitations and states what additional evidence would change the decision.",
@@ -134,7 +138,8 @@
       "evidence_ids": [
         "PFIZER-IR-003",
         "PFIZER-CAREERS-002"
-      ]
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -178,6 +183,17 @@
         "impact_results"
       ],
       "confidence": 0.62
+    },
+    {
+      "pattern": "Hiring signals in this lens are derived interview-preparation suggestions: they translate public company positioning into questions a candidate can prepare for, and are not evidence that the company evaluates candidates on them.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "confidence": 0.6
     }
   ],
   "evidence_summary": {

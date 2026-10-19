@@ -84,7 +84,8 @@
       "evidence_ids": [
         "BCG-OFFICIAL-001",
         "BCG-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Uses concrete examples to show ownership, learning, and measurable improvement.",
@@ -97,7 +98,8 @@
       "evidence_ids": [
         "BCG-OFFICIAL-001",
         "BCG-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "States a hypothesis, the evidence that would kill it, and the decision it informs within the first minutes of a case.",
@@ -109,7 +111,8 @@
       "evidence_ids": [
         "BCG-ABOUT-003",
         "BCG-CAREERS-002"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Shows how they lifted a teammate's work quality through direct, specific feedback rather than general encouragement.",
@@ -121,7 +124,8 @@
       "evidence_ids": [
         "BCG-CAREERS-002",
         "BCG-ABOUT-003"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Connects a strategic recommendation to the operating change and metric that proved it worked.",
@@ -133,7 +137,8 @@
       "evidence_ids": [
         "BCG-OFFICIAL-001",
         "BCG-ABOUT-003"
-      ]
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -176,6 +181,17 @@
         "impact_results"
       ],
       "confidence": 0.62
+    },
+    {
+      "pattern": "Hiring signals in this lens are derived interview-preparation suggestions: they translate public company positioning into questions a candidate can prepare for, and are not evidence that the company evaluates candidates on them.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "confidence": 0.6
     }
   ],
   "evidence_summary": {

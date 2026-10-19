@@ -84,7 +84,8 @@
       "evidence_ids": [
         "COSTCO-OFFICIAL-001",
         "COSTCO-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Uses concrete examples to show ownership, learning, and measurable improvement.",
@@ -98,7 +99,8 @@
         "COSTCO-OFFICIAL-001",
         "COSTCO-CAREERS-002",
         "COSTCO-IR-003"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Reasons about cost, throughput, and waste with concrete numbers from a real operation.",
@@ -110,7 +112,8 @@
       "evidence_ids": [
         "COSTCO-OFFICIAL-001",
         "COSTCO-IR-003"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Handles a member or customer problem by fixing the cause, not only the immediate complaint.",
@@ -122,7 +125,8 @@
       "evidence_ids": [
         "COSTCO-CAREERS-002",
         "COSTCO-OFFICIAL-001"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Shows respect for frontline constraints when proposing a process or systems change.",
@@ -134,7 +138,8 @@
       "evidence_ids": [
         "COSTCO-CAREERS-002",
         "COSTCO-IR-003"
-      ]
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -178,6 +183,17 @@
         "impact_results"
       ],
       "confidence": 0.62
+    },
+    {
+      "pattern": "Hiring signals in this lens are derived interview-preparation suggestions: they translate public company positioning into questions a candidate can prepare for, and are not evidence that the company evaluates candidates on them.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "confidence": 0.6
     }
   ],
   "evidence_summary": {

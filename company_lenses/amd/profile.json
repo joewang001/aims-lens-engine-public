@@ -84,7 +84,8 @@
       "evidence_ids": [
         "AMD-IR-001",
         "AMD-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Uses concrete examples to show ownership, learning, and measurable improvement.",
@@ -97,7 +98,8 @@
       "evidence_ids": [
         "AMD-IR-001",
         "AMD-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Explains a concrete tradeoff across performance, power, cost, and schedule using measured or reproducible evidence.",
@@ -110,7 +112,8 @@
       "evidence_ids": [
         "AMD-IR-001",
         "AMD-CORPORATE-003"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Describes coordinating a change across hardware, software, and validation groups and names the mechanism that kept them aligned.",
@@ -122,7 +125,8 @@
       "evidence_ids": [
         "AMD-CORPORATE-003",
         "AMD-CAREERS-002"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Shows ownership of a difficult technical problem through to a shipped product, benchmark result, or documented customer outcome.",
@@ -135,7 +139,8 @@
       "evidence_ids": [
         "AMD-IR-001",
         "AMD-CAREERS-002"
-      ]
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -178,6 +183,17 @@
         "impact_results"
       ],
       "confidence": 0.62
+    },
+    {
+      "pattern": "Hiring signals in this lens are derived interview-preparation suggestions: they translate public company positioning into questions a candidate can prepare for, and are not evidence that the company evaluates candidates on them.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "confidence": 0.6
     }
   ],
   "evidence_summary": {

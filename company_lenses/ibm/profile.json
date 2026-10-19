@@ -84,7 +84,8 @@
       "evidence_ids": [
         "IBM-OFFICIAL-001",
         "IBM-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Uses concrete examples to show ownership, learning, and measurable improvement.",
@@ -98,7 +99,8 @@
         "IBM-OFFICIAL-001",
         "IBM-CAREERS-002",
         "IBM-IR-003"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Frames a technical solution in terms of the client's operating constraint and the metric that improved.",
@@ -110,7 +112,8 @@
       "evidence_ids": [
         "IBM-OFFICIAL-001",
         "IBM-CAREERS-002"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Explains how a system stays supportable in production, including monitoring, ownership, and upgrade paths.",
@@ -122,7 +125,8 @@
       "evidence_ids": [
         "IBM-OFFICIAL-001",
         "IBM-IR-003"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Shows deliberate skill acquisition when the platform or tooling changed under them.",
@@ -134,7 +138,8 @@
       "evidence_ids": [
         "IBM-CAREERS-002",
         "IBM-OFFICIAL-001"
-      ]
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -178,6 +183,17 @@
         "impact_results"
       ],
       "confidence": 0.62
+    },
+    {
+      "pattern": "Hiring signals in this lens are derived interview-preparation suggestions: they translate public company positioning into questions a candidate can prepare for, and are not evidence that the company evaluates candidates on them.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "confidence": 0.6
     }
   ],
   "evidence_summary": {

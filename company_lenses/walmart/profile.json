@@ -84,7 +84,8 @@
       "evidence_ids": [
         "WALMART-OFFICIAL-001",
         "WALMART-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Uses concrete examples to show ownership, learning, and measurable improvement.",
@@ -98,7 +99,8 @@
         "WALMART-OFFICIAL-001",
         "WALMART-CAREERS-002",
         "WALMART-IR-003"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Reasons about cost, throughput, and inventory with concrete numbers from a real operation.",
@@ -110,7 +112,8 @@
       "evidence_ids": [
         "WALMART-OFFICIAL-001",
         "WALMART-IR-003"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Shows a change rolled out across many locations that survived frontline reality and local variation.",
@@ -122,7 +125,8 @@
       "evidence_ids": [
         "WALMART-CAREERS-002",
         "WALMART-OFFICIAL-001"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Connects a technical or data initiative to a measured store, associate, or customer outcome.",
@@ -134,7 +138,8 @@
       "evidence_ids": [
         "WALMART-IR-003",
         "WALMART-CAREERS-002"
-      ]
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -178,6 +183,17 @@
         "impact_results"
       ],
       "confidence": 0.62
+    },
+    {
+      "pattern": "Hiring signals in this lens are derived interview-preparation suggestions: they translate public company positioning into questions a candidate can prepare for, and are not evidence that the company evaluates candidates on them.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "confidence": 0.6
     }
   ],
   "evidence_summary": {

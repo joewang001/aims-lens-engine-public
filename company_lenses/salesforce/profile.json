@@ -83,7 +83,8 @@
       "evidence_ids": [
         "SALESFORCE-OFFICIAL-001",
         "SALESFORCE-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Uses concrete examples to show ownership, learning, and measurable improvement.",
@@ -96,7 +97,8 @@
       "evidence_ids": [
         "SALESFORCE-OFFICIAL-001",
         "SALESFORCE-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Connects a technical decision to customer trust, data handling, or platform reliability consequences.",
@@ -108,7 +110,8 @@
       "evidence_ids": [
         "SALESFORCE-OFFICIAL-001",
         "SALESFORCE-CULTURE-003"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Shows a concrete example of learning a new platform capability and applying it to a real business problem.",
@@ -120,7 +123,8 @@
       "evidence_ids": [
         "SALESFORCE-CULTURE-003",
         "SALESFORCE-CAREERS-002"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Describes enabling a customer or partner team to own a solution after handover.",
@@ -132,7 +136,8 @@
       "evidence_ids": [
         "SALESFORCE-CAREERS-002",
         "SALESFORCE-OFFICIAL-001"
-      ]
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -175,6 +180,17 @@
         "impact_results"
       ],
       "confidence": 0.62
+    },
+    {
+      "pattern": "Hiring signals in this lens are derived interview-preparation suggestions: they translate public company positioning into questions a candidate can prepare for, and are not evidence that the company evaluates candidates on them.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "confidence": 0.6
     }
   ],
   "evidence_summary": {
