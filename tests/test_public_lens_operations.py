@@ -92,6 +92,29 @@ class ExistingLensMergeTests(unittest.TestCase):
 
 
 class DailyOperationsTests(unittest.TestCase):
+    @staticmethod
+    def _thin_lens(directory: str) -> Path:
+        """Build a synthetic thin lens so tests do not depend on repo gap state."""
+        path = Path(directory) / "thin-co"
+        path.mkdir()
+        (path / "profile.json").write_text(
+            json.dumps(
+                {
+                    "company": "Thin Co",
+                    "lens_status": "LIGHTWEIGHT_SCAN",
+                    "source_cutoff": "2026-10-19",
+                    "culture_principles": [],
+                    "hiring_signals": [],
+                    "anti_signals": [],
+                    "honest_limits": [],
+                    "aims_weighting": {},
+                    "evidence_summary": {},
+                }
+            ),
+            encoding="utf-8",
+        )
+        return path
+
     def test_tuesday_through_sunday_cover_all_seven_dimensions(self):
         covered = {
             dimension
@@ -101,7 +124,8 @@ class DailyOperationsTests(unittest.TestCase):
         self.assertEqual(covered, set(public_lens_operations.SEVEN_DIMENSIONS))
 
     def test_gap_audit_records_reason_and_downstream_action(self):
-        rows = public_lens_operations.build_gap_rows(reserve_target=8)
+        with tempfile.TemporaryDirectory() as directory:
+            rows = public_lens_operations.audit_company(self._thin_lens(directory))
         self.assertTrue(rows)
         for row in rows:
             self.assertTrue(row["reason"])
@@ -110,7 +134,8 @@ class DailyOperationsTests(unittest.TestCase):
             self.assertEqual(row["resolution_status"], "open")
 
     def test_resolved_gap_is_appended_once_to_history(self):
-        prior = public_lens_operations.build_gap_rows(reserve_target=8)[0]
+        with tempfile.TemporaryDirectory() as directory:
+            prior = public_lens_operations.audit_company(self._thin_lens(directory))[0]
         prior["first_detected"] = "2026-10-01"
         prior["last_checked"] = "2026-10-18"
         with tempfile.TemporaryDirectory() as directory:
