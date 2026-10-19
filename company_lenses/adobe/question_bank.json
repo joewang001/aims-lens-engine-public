@@ -30,6 +30,58 @@
         "ADOBE-CAREERS-002",
         "ADOBE-IR-003"
       ]
+    },
+    {
+      "question_id": "ADOBE-Q-002",
+      "type": "ownership_outcome_behavioral",
+      "generated_question": "Tell me about a time you owned an outcome beyond your assigned tasks. How did you broaden your scope, and what changed because of it?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Distinguishes assigned tasks from the broader outcome.",
+        "Shows initiative taken without waiting for permission.",
+        "Explains how scope was broadened and tradeoffs managed.",
+        "Quantifies the result and what others learned from it."
+      ],
+      "evidence_ids": [
+        "ADOBE-OFFICIAL-001",
+        "ADOBE-CAREERS-002",
+        "ADOBE-IR-003",
+        "ADOBE-VALUES-004",
+        "ADOBE-HIRING-005",
+        "ADOBE-ALL-006",
+        "ADOBE-DEVBLOG-007",
+        "ADOBE-ABOUT-008"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-003",
+      "type": "customer_insight_behavioral",
+      "generated_question": "Describe a time you looked around the corner for an unmet customer need and changed a product or workflow as a result.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Identifies the unmet need and how it was discovered.",
+        "Explains the evidence behind the decision.",
+        "Describes the change and adoption path.",
+        "Reflects on what the result revealed about the next opportunity."
+      ],
+      "evidence_ids": [
+        "ADOBE-OFFICIAL-001",
+        "ADOBE-CAREERS-002",
+        "ADOBE-IR-003",
+        "ADOBE-VALUES-004",
+        "ADOBE-HIRING-005",
+        "ADOBE-ALL-006",
+        "ADOBE-DEVBLOG-007",
+        "ADOBE-ABOUT-008"
+      ]
     }
   ]
 }

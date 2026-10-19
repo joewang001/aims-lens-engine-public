@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-08-25",
+  "source_cutoff": "2026-10-19",
   "industries": [
     "consulting",
     "professional services",
@@ -32,6 +32,51 @@
       "confidence": 0.68,
       "evidence_ids": [
         "ACCENTURE-OFFICIAL-001",
+        "ACCENTURE-CAREERS-002"
+      ]
+    },
+    {
+      "name": "360-degree value for all stakeholders",
+      "description": "Accenture publicly frames success as value created for clients, people, shareholders, partners, and communities together, not for one stakeholder alone.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ACCENTURE-ABOUT-003",
+        "ACCENTURE-IR-009"
+      ]
+    },
+    {
+      "name": "Integrity and doing the right thing",
+      "description": "Company messaging repeatedly emphasizes high ethical standards and building trust through transparency, including around AI use.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ACCENTURE-ABOUT-003",
+        "ACCENTURE-OFFICIAL-001"
+      ]
+    },
+    {
+      "name": "Reinvention through technology, talent, and bold thinking",
+      "description": "Innovation is described as an operating mindset that connects technology, people, and ambitious thinking to create lasting client value.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ACCENTURE-ABOUT-003",
+        "ACCENTURE-IR-009"
+      ]
+    },
+    {
+      "name": "Cognitive diversity and inclusion",
+      "description": "Accenture states that varied backgrounds, perspectives, and lived experiences create the cognitive diversity needed for reinvention, with apprenticeships cited as one inclusion pathway.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "ACCENTURE-ABOUT-003",
+        "ACCENTURE-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Continuous learning and credentials",
+      "description": "Careers material highlights external certifications across major cloud and enterprise platforms as part of how employees build in-demand skills.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "ACCENTURE-SWE-007",
         "ACCENTURE-CAREERS-002"
       ]
     }
@@ -69,6 +114,67 @@
         "ACCENTURE-OFFICIAL-001",
         "ACCENTURE-CAREERS-002"
       ]
+    },
+    {
+      "signal": "Structures behavioral answers with situation, task, action, and result rather than a general narrative.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-BEHAVIORAL-005"
+      ]
+    },
+    {
+      "signal": "Shows collaboration, leadership, problem-solving, learning agility, business acumen, and emotional resilience in client-facing scenarios.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution",
+        "growth_mindset"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-BEHAVIORAL-005"
+      ]
+    },
+    {
+      "signal": "Demonstrates role-specific depth and current platform or technology knowledge in a dedicated skills interview.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ACCENTURE-SKILLS-006",
+        "ACCENTURE-SWE-007"
+      ]
+    },
+    {
+      "signal": "Quantifies achievements and explicitly connects prior experience to the target role's requirements.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "ACCENTURE-SKILLS-006",
+        "ACCENTURE-CAREERS-002"
+      ]
+    },
+    {
+      "signal": "Explains technology choices through client outcomes, delivery constraints, and measurable business value.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "ACCENTURE-OFFICIAL-001",
+        "ACCENTURE-SWE-007",
+        "ACCENTURE-IR-009"
+      ]
     }
   ],
   "anti_signals": [
@@ -79,6 +185,31 @@
       "evidence_ids": [
         "ACCENTURE-OFFICIAL-001",
         "ACCENTURE-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Unstructured storytelling that never reaches the actions taken or the result achieved.",
+      "risk_reason": "Accenture's published behavioral guidance explicitly uses STAR and focuses on actions and results; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ACCENTURE-BEHAVIORAL-005"
+      ]
+    },
+    {
+      "anti_signal": "Claiming client impact without describing collaboration, conflict handling, or adaptation to change.",
+      "risk_reason": "The behavioral interview is described as evaluating how candidates manage challenging client situations, not only outcomes.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "ACCENTURE-BEHAVIORAL-005"
+      ]
+    },
+    {
+      "anti_signal": "Generic technology enthusiasm without role-specific expertise or current platform familiarity.",
+      "risk_reason": "Skills interviews are described as a distinct check on role-relevant knowledge; interest alone does not evidence that depth.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "ACCENTURE-SKILLS-006",
+        "ACCENTURE-SWE-007"
       ]
     }
   ],
@@ -97,11 +228,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 2,
-    "official_source_count": 2,
+    "source_count": 9,
+    "official_source_count": 9,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-08-25"
+    "last_reviewed": "2026-10-19"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Accenture hiring standard.",

@@ -29,6 +29,60 @@
         "ACCENTURE-OFFICIAL-001",
         "ACCENTURE-CAREERS-002"
       ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-002",
+      "type": "change_adoption_behavioral",
+      "generated_question": "Tell me about a time you had to adopt a new system, process, or technology that was a major departure from how you previously worked. How did you build your own confidence and bring others along?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names the change, why it mattered, and what was at stake.",
+        "Describes a concrete learning approach rather than passive exposure.",
+        "Addresses resistance or uncertainty among colleagues.",
+        "Shows an outcome and what was learned for the next change."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-OFFICIAL-001",
+        "ACCENTURE-CAREERS-002",
+        "ACCENTURE-ABOUT-003",
+        "ACCENTURE-LEADERSHIP-004",
+        "ACCENTURE-BEHAVIORAL-005",
+        "ACCENTURE-SKILLS-006",
+        "ACCENTURE-SWE-007",
+        "ACCENTURE-STRATEGY-008",
+        "ACCENTURE-IR-009"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-003",
+      "type": "stakeholder_conflict_behavioral",
+      "generated_question": "Describe a situation where you had to work with a difficult client or colleague. What did you do, and what was the result?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "structured_thinking",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Diagnoses the underlying issue rather than labeling the person.",
+        "Adapts communication or approach to the stakeholder.",
+        "Preserves both the relationship and delivery commitments.",
+        "Reflects on what changed in subsequent work."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-OFFICIAL-001",
+        "ACCENTURE-CAREERS-002",
+        "ACCENTURE-ABOUT-003",
+        "ACCENTURE-LEADERSHIP-004",
+        "ACCENTURE-BEHAVIORAL-005",
+        "ACCENTURE-SKILLS-006",
+        "ACCENTURE-SWE-007",
+        "ACCENTURE-STRATEGY-008",
+        "ACCENTURE-IR-009"
+      ]
     }
   ]
 }

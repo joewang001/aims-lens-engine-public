@@ -1,26 +1,17 @@
 {
-  "generated_at": "2026-10-19T03:40:04Z",
-  "run_date": "2026-10-18",
-  "weekday": 6,
-  "week_start": "2026-10-12",
+  "generated_at": "2026-10-19T04:16:21Z",
+  "run_date": "2026-10-19",
+  "weekday": 0,
+  "week_start": "2026-10-19",
   "focus_dimensions": [
-    "company_says",
-    "company_judges",
-    "company_asks",
-    "evidence_valued",
-    "risk_warnings",
-    "role_variation",
-    "honest_unknowns"
+    "weekly_expansion"
   ],
-  "weekly_new_company_targets": [
-    "amd",
-    "intel"
-  ],
+  "weekly_new_company_targets": [],
   "historical_company_targets": [
-    "accenture",
-    "adobe"
+    "amd",
+    "costco"
   ],
-  "open_gap_count": 77,
+  "open_gap_count": 67,
   "rules": {
     "weekly_new_company_target": 2,
     "daily_historical_company_target": 2,

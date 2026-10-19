@@ -1,28 +1,21 @@
 # Public Lens Daily Plan
 
-Generated: `2026-10-19T03:40:04Z`
-Run date: `2026-10-18`
-Week start: `2026-10-12`
+Generated: `2026-10-19T04:16:21Z`
+Run date: `2026-10-19`
+Week start: `2026-10-19`
 
 ## Today's Focus
 
-- `company_says`
-- `company_judges`
-- `company_asks`
-- `evidence_valued`
-- `risk_warnings`
-- `role_variation`
-- `honest_unknowns`
+- `weekly_expansion`
 
 ## This Week's New Companies
 
-- `amd`
-- `intel`
+- No company has an `introduced_at` date in the current week. Record this as an operations exception.
 
 ## Historical Company Targets
 
-- `accenture`
-- `adobe`
+- `amd`
+- `costco`
 
 ## Execution Contract
 
