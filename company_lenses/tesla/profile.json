@@ -84,7 +84,8 @@
       "evidence_ids": [
         "TESLA-OFFICIAL-001",
         "TESLA-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Uses concrete examples to show ownership, learning, and measurable improvement.",
@@ -98,7 +99,8 @@
         "TESLA-OFFICIAL-001",
         "TESLA-CAREERS-002",
         "TESLA-IR-003"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Explains a design from physical or economic first principles rather than analogy to competitors.",
@@ -110,7 +112,8 @@
       "evidence_ids": [
         "TESLA-OFFICIAL-001",
         "TESLA-IR-003"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Shows ownership of a problem that crossed hardware, software, and field operations boundaries.",
@@ -122,7 +125,8 @@
       "evidence_ids": [
         "TESLA-OFFICIAL-001",
         "TESLA-CAREERS-002"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "States how a fast change was validated against safety or reliability requirements before shipping.",
@@ -134,7 +138,8 @@
       "evidence_ids": [
         "TESLA-CAREERS-002",
         "TESLA-IR-003"
-      ]
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -178,6 +183,17 @@
         "impact_results"
       ],
       "confidence": 0.62
+    },
+    {
+      "pattern": "Hiring signals in this lens are derived interview-preparation suggestions: they translate public company positioning into questions a candidate can prepare for, and are not evidence that the company evaluates candidates on them.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "confidence": 0.6
     }
   ],
   "evidence_summary": {

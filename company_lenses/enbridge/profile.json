@@ -84,7 +84,8 @@
       "evidence_ids": [
         "ENBRIDGE-OFFICIAL-001",
         "ENBRIDGE-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Uses concrete examples to show ownership, learning, and measurable improvement.",
@@ -98,7 +99,8 @@
         "ENBRIDGE-OFFICIAL-001",
         "ENBRIDGE-CAREERS-002",
         "ENBRIDGE-IR-003"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Describes a decision where safety, regulatory, or environmental risk changed the technical plan.",
@@ -110,7 +112,8 @@
       "evidence_ids": [
         "ENBRIDGE-OFFICIAL-001",
         "ENBRIDGE-IR-003"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Explains how they protected reliability during a maintenance, outage, or commissioning window.",
@@ -122,7 +125,8 @@
       "evidence_ids": [
         "ENBRIDGE-OFFICIAL-001",
         "ENBRIDGE-CAREERS-002"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Works with regulators, landowners, or Indigenous communities and can describe what changed after that engagement.",
@@ -134,7 +138,8 @@
       "evidence_ids": [
         "ENBRIDGE-IR-003",
         "ENBRIDGE-CAREERS-002"
-      ]
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -178,6 +183,17 @@
         "impact_results"
       ],
       "confidence": 0.62
+    },
+    {
+      "pattern": "Hiring signals in this lens are derived interview-preparation suggestions: they translate public company positioning into questions a candidate can prepare for, and are not evidence that the company evaluates candidates on them.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "confidence": 0.6
     }
   ],
   "evidence_summary": {

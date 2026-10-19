@@ -83,7 +83,8 @@
       "evidence_ids": [
         "DELOITTE-OFFICIAL-001",
         "DELOITTE-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Uses concrete examples to show ownership, learning, and measurable improvement.",
@@ -96,7 +97,8 @@
       "evidence_ids": [
         "DELOITTE-OFFICIAL-001",
         "DELOITTE-CAREERS-002"
-      ]
+      ],
+      "basis": "generic_public_default"
     },
     {
       "signal": "Raises a quality or integrity concern early and shows how it was resolved without losing the relationship.",
@@ -108,7 +110,8 @@
       "evidence_ids": [
         "DELOITTE-ABOUT-003",
         "DELOITTE-CAREERS-002"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Delivers a deadline-bound piece of work while making dependencies and review points explicit.",
@@ -120,7 +123,8 @@
       "evidence_ids": [
         "DELOITTE-CAREERS-002",
         "DELOITTE-OFFICIAL-001"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Works effectively across disciplines and states what each function needed from the others.",
@@ -132,7 +136,8 @@
       "evidence_ids": [
         "DELOITTE-ABOUT-003",
         "DELOITTE-CAREERS-002"
-      ]
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -174,6 +179,17 @@
         "impact_results"
       ],
       "confidence": 0.62
+    },
+    {
+      "pattern": "Hiring signals in this lens are derived interview-preparation suggestions: they translate public company positioning into questions a candidate can prepare for, and are not evidence that the company evaluates candidates on them.",
+      "role_families": [
+        "all"
+      ],
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "confidence": 0.6
     }
   ],
   "evidence_summary": {
