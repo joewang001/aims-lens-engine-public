@@ -509,6 +509,7 @@ allow_paths:
     - tools/collect_public_lens_sources.py
     - tools/generate_public_lens_patch.py
     - tools/public_lens_operations.py
+    - tools/publish_public_lens.py
     - tools/generate_phase2c_validation_cases.py
     - tools/interview_prep_planner.py
     - tools/llm_scorer.py

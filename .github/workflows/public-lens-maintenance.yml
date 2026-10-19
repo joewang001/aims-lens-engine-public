@@ -54,7 +54,11 @@ jobs:
             tools/prepare_public_lens_refresh.py \
             tools/collect_public_lens_sources.py \
             tools/generate_public_lens_patch.py \
-            tools/public_lens_operations.py
+            tools/public_lens_operations.py \
+            tools/publish_public_lens.py
+
+      - name: Run unit tests before any automated merge
+        run: python -m unittest discover -s tests -v
 
       - name: Scan public boundary
         run: python tools/scan_public_export.py --allowlist
@@ -150,7 +154,7 @@ jobs:
               --head "$BRANCH" \
               --base main \
               --title "Advance daily public lens sourcing" \
-              --body "Automated public-source enrichment from the NAS sourcing agent. At least two source packets and one company lens must change; public-boundary and coverage checks must pass."
+              --body "Public-source updates submitted from the NAS. The exact pushed commit passed unit tests, public-boundary scan and coverage checks before this PR was opened. Gap counts and merged provenance must be verified on main."
             number=$(gh pr list \
               --repo "$GITHUB_REPOSITORY" \
               --head "$BRANCH" \
@@ -162,7 +166,7 @@ jobs:
           gh pr edit "$number" \
             --repo "$GITHUB_REPOSITORY" \
             --add-label automated-refresh,daily-lens-enrichment,public-safe-candidate,auto-merge-eligible || true
-          gh pr merge "$number" --repo "$GITHUB_REPOSITORY" --squash --auto --delete-branch
+          gh pr merge "$number" --repo "$GITHUB_REPOSITORY" --squash --auto --delete-branch --match-head-commit "$GITHUB_SHA"
 
   daily-seven-dimension-enrichment:
     if: >-
