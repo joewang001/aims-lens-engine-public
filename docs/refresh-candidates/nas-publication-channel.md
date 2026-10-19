@@ -37,3 +37,7 @@ be included.
 A documentation-only update on 2026-10-19 exercises the NAS-origin push and
 automation PR path. Its push-run and PR records are the acceptance evidence.
 The verification does not generate or modify company lens content.
+
+A second clean submission verifies the normal path with repository auto-merge
+already enabled. The validation job must finish before the PR job can request
+merge, and the request matches the exact validated head commit.
