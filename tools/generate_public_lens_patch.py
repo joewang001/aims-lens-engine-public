@@ -179,6 +179,7 @@ def create_company_lens(packet: dict[str, Any]) -> list[Path]:
         "lens_status": "LIGHTWEIGHT_SCAN",
         "visibility": "PUBLIC_COMPANY_LENS",
         "version": "0.1.0-public-release-candidate",
+        "introduced_at": cutoff,
         "source_cutoff": cutoff,
         "industries": list(profile_data.get("industries") or []),
         "regions": list(profile_data.get("regions") or ["global"]),
@@ -314,9 +315,35 @@ def write_evidence(path: Path, packet: dict[str, Any], *, create: bool) -> None:
     path.write_text(existing, encoding="utf-8", newline="\n")
 
 
+def merge_mapping_list(
+    current: list[dict[str, Any]],
+    incoming: list[dict[str, Any]],
+    *,
+    identity_key: str,
+) -> list[dict[str, Any]]:
+    merged = [dict(item) for item in current if isinstance(item, dict)]
+    positions = {
+        str(item.get(identity_key, "")).strip(): index
+        for index, item in enumerate(merged)
+        if str(item.get(identity_key, "")).strip()
+    }
+    for item in incoming:
+        if not isinstance(item, dict):
+            continue
+        identity = str(item.get(identity_key, "")).strip()
+        if not identity:
+            continue
+        if identity in positions:
+            merged[positions[identity]] = dict(item)
+        else:
+            positions[identity] = len(merged)
+            merged.append(dict(item))
+    return merged
+
+
 def update_company_lens(packet: dict[str, Any]) -> list[Path]:
     company_dir = COMPANY_LENSES / str(packet["company_slug"])
-    changed = []
+    changed: list[Path] = []
     evidence_path = company_dir / "evidence.md"
     before = evidence_path.read_text(encoding="utf-8") if evidence_path.exists() else ""
     write_evidence(evidence_path, packet, create=not evidence_path.exists())
@@ -324,18 +351,67 @@ def update_company_lens(packet: dict[str, Any]) -> list[Path]:
         changed.append(evidence_path)
 
     profile_path = company_dir / "profile.json"
+    profile_before = profile_path.read_text(encoding="utf-8")
     profile = load_json(profile_path)
     cutoff = source_cutoff(packet)
     profile["source_cutoff"] = max(str(profile.get("source_cutoff", "")), cutoff)
     summary = profile.setdefault("evidence_summary", {})
-    summary["last_reviewed"] = cutoff
+    summary["last_reviewed"] = max(str(summary.get("last_reviewed", "")), cutoff)
     summary["source_count"] = max(int(summary.get("source_count", 0)), count_evidence_rows(evidence_path))
     summary["official_source_count"] = max(
         int(summary.get("official_source_count", 0)),
         sum(1 for item in packet["sources"] if str(item["source_type"]).startswith("official_")),
     )
+    updates = packet.get("lens_updates") if isinstance(packet.get("lens_updates"), dict) else {}
+    profile["culture_principles"] = merge_mapping_list(
+        list(profile.get("culture_principles") or []),
+        list(updates.get("culture_principles") or []),
+        identity_key="name",
+    )
+    profile["hiring_signals"] = merge_mapping_list(
+        list(profile.get("hiring_signals") or []),
+        list(updates.get("hiring_signals") or []),
+        identity_key="signal",
+    )
+    profile["anti_signals"] = merge_mapping_list(
+        list(profile.get("anti_signals") or []),
+        list(updates.get("anti_signals") or []),
+        identity_key="anti_signal",
+    )
     write_json(profile_path, profile)
-    changed.append(profile_path)
+    if profile_path.read_text(encoding="utf-8") != profile_before:
+        changed.append(profile_path)
+
+    question_path = company_dir / "question_bank.json"
+    if question_path.is_file():
+        question_before = question_path.read_text(encoding="utf-8")
+        question_bank = load_json(question_path)
+        current_questions = list(question_bank.get("questions") or [])
+        seen_questions = {
+            str(item.get("generated_question", "")).strip()
+            for item in current_questions
+            if isinstance(item, dict)
+        }
+        for item in updates.get("questions") or []:
+            if not isinstance(item, dict):
+                continue
+            question_text = str(item.get("generated_question", "")).strip()
+            if not question_text or question_text in seen_questions:
+                continue
+            current_questions.append(normalize_question(packet, item, len(current_questions) + 1))
+            seen_questions.add(question_text)
+        question_bank["questions"] = current_questions
+        write_json(question_path, question_bank)
+        if question_path.read_text(encoding="utf-8") != question_before:
+            changed.append(question_path)
+
+    for overlay in updates.get("role_overlays") or []:
+        role_slug = str(overlay.get("role_slug") or "public_role").lower().replace(" ", "_")
+        overlay_path = company_dir / "role_overlays" / f"{role_slug}.json"
+        overlay_before = overlay_path.read_text(encoding="utf-8") if overlay_path.is_file() else ""
+        write_role_overlay(company_dir, packet, overlay)
+        if overlay_path.read_text(encoding="utf-8") != overlay_before:
+            changed.append(overlay_path)
     return changed
 
 

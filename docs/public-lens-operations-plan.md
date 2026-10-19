@@ -35,10 +35,11 @@ standards and must not be treated as company endorsement.
 
 ## Cadence And Quantity
 
-### Weekly Existing-Lens Refresh
+### Daily Existing-Lens Refresh
 
-Every week, automation should select three existing company lenses for refresh
-candidate updates.
+From Tuesday through Sunday, automation selects two historical company lenses
+in addition to this week's new-company cohort. Selection is driven by the
+machine-readable information-gap register, not by a fixed company list.
 
 Selection priority:
 
@@ -48,29 +49,61 @@ Selection priority:
 4. industries with high user demand or weak coverage;
 5. companies with recent public source changes.
 
-Weekly target:
+Daily target:
 
-- 3 existing companies reviewed;
-- at least 1 dimension updated when public evidence supports a change;
+- this week's new companies remain in the work plan until all seven dimensions
+  reach the documented depth target or an explicit gap reason is recorded;
+- 2 historical companies reviewed and advanced each day;
+- at least 1 supported dimension updated when new public evidence is available;
+- every unsupported item retained in the information-gap register with reason,
+  next action, owner queue, and first-detected date;
 - 0 private-source bodies imported;
 - scanner and seven-dimension coverage pass before PR.
 
-### Monthly New-Company Expansion
+The NAS sourcing runner adds two further hard gates: at least 2 distinct source
+packets and at least 1 company lens must change on every Tuesday-through-Sunday
+run. Date-only, formatting-only, and plan-only changes do not satisfy the gate.
 
-Every month, automation should add two new public company lens candidates from
-the approved expansion backlog.
+### Monday New-Company Expansion
 
-Monthly target:
+Every Monday, automation must add two new public company lens candidates from
+the approved expansion catalog. `--allow-empty` is prohibited in this path.
 
-- 2 new `LIGHTWEIGHT_SCAN` company lenses;
+Monday hard target:
+
+- exactly one weekly cohort containing at least 2 new `LIGHTWEIGHT_SCAN`
+  company lenses; the workflow fails before PR creation if this target is not
+  met;
 - each new lens includes `README.md`, `profile.json`, `evidence.md`,
   `question_bank.json`, `rubric.md`, `rewrite_rules.md`, `limits.md`, and
   `validation_report.md`;
 - each new lens includes at least one initial role overlay when official public
   sources are strong enough;
-- at least 3 public source entries per company, preferably including official
-  homepage, careers, and investor or engineering source;
+- at least 2 official public source entries at creation; a third independent
+  official source remains a tracked Tuesday enrichment requirement;
 - every generated question remains original and non-verbatim.
+
+### Tuesday-To-Sunday Seven-Dimension Plan
+
+| Day | New-company focus | Historical-lens work |
+| --- | --- | --- |
+| Tuesday | `company_says`, `evidence_valued` | Select 2 highest-gap existing lenses for the same dimensions |
+| Wednesday | `company_judges`, `company_asks` | Select 2 highest-gap existing lenses for the same dimensions |
+| Thursday | `role_variation` | Add or deepen role-family overlays for 2 existing lenses |
+| Friday | `risk_warnings` | Add evidence-bounded risks, anti-signals, and limits for 2 existing lenses |
+| Saturday | `honest_unknowns` | Record unresolved evidence and validation limits for 2 existing lenses |
+| Sunday | all seven dimensions | Run completeness audit, validation, and queue rollover |
+
+The daily workflow applies any new public-safe source packets first, then
+regenerates the plan and gap register. It must not invent content simply to
+clear a gap.
+
+Operational outputs:
+
+- `docs/refresh-candidates/public-lens-daily-plan.json`;
+- `docs/refresh-candidates/public-lens-daily-plan.md`;
+- `docs/refresh-candidates/public-lens-information-gaps.csv`;
+- `docs/refresh-candidates/public-lens-information-gaps.md`.
 
 ### Quarterly Coverage Expansion
 
@@ -176,6 +209,18 @@ Normal low-risk PRs can be auto-merged when:
 - PR touches at most 3 existing lenses or adds at most 2 approved-backlog
   `LIGHTWEIGHT_SCAN` company lenses.
 
+The reference NAS runners live in `ops/openclaw/`. `daily-source-agent.sh`
+uses a repository-scoped deploy key, pushes only
+`automation/public-lens-source-agent`, and leaves PR creation and auto-merge to
+GitHub Actions. `weekly-growth-monitor.sh` independently fails if the current
+week has fewer than 2 introduced companies or fewer than 8 unused catalog
+candidates remain.
+
+The hardened Jobace Shadow container is read-only and runs as a non-root user.
+`ops/openclaw/Dockerfile.ssh-client` therefore extends the pinned OpenClaw image
+with only `openssh-client`; the runtime keeps its existing read-only filesystem,
+dropped capabilities, and non-root user.
+
 ## Human Review Exceptions
 
 Require maintainer review for:
@@ -199,7 +244,7 @@ risk.
 The first expansion backlog should prioritize industries where the current
 public library is thin.
 
-| Wave | Industry | Target companies | Monthly quantity | Automation default |
+| Wave | Industry | Target companies | Weekly quantity | Automation default |
 | --- | --- | --- | ---: | --- |
 | 1 | AI infrastructure and semiconductors | NVIDIA, AMD, Intel, TSMC | 2 | auto PR if official-source only |
 | 2 | Consulting and professional services | Accenture, Deloitte, BCG, Bain | 2 | auto PR if official-source only |
@@ -217,15 +262,15 @@ Promotion to `FULLY_DISTILLED` still requires explicit validation gates.
 
 Monthly operating targets:
 
-- Existing lens refresh: 12 company checks per month.
-- New company expansion: 2 new company lenses per month.
+- Existing lens refresh: at least 48 historical-company checks per month.
+- New company expansion: at least 8 new company lenses per four-week month.
 - Role overlay expansion: at least 2 new role overlays per month.
 - Validation cases: at least 4 new validation cases per month.
 - Public scanner outcome: 0 blockers and 0 review findings.
 
 Quarterly operating targets:
 
-- 6 to 8 new company lenses.
+- 24 to 26 new company lenses, subject to the public-safe catalog reserve.
 - 3 or more industries improved.
 - 1 public release note summarizing source, coverage, and validation changes.
 - backlog re-ranked using public evidence quality and contributor demand.
@@ -276,10 +321,21 @@ tools/generate_public_lens_patch.py
 
 Those tools create real lens updates only from approved public sources, then
 rely on the existing scanner, coverage validator, and PR rules before merge.
-The default cadence is up to two new public company lenses per weekly scheduled
-or manual workflow run, selected from companies that are present in the approved
-catalog but not yet present under `company_lenses/`.
+The Monday cadence is at least two new public company lenses per scheduled or
+manual weekly-expansion run. Tuesday through Sunday generates a seven-dimension
+plan, applies available source packets, refreshes historical priorities, and
+updates the information-gap register. The approved catalog is extended through
+`config/public_lens_expansion_catalog.json`; the workflow raises an operations
+gap before its unused reserve falls below eight companies.
 
 The agent-to-patch interface is defined in
 `docs/public-lens-sourcing-agent-contract.md` and
 `schemas/public_lens_source_packet.schema.json`.
+
+Reference production timing in `America/Toronto`:
+
+- Monday 10:30: verify the GitHub Monday expansion has added at least 2
+  companies and the catalog reserve remains at least 8.
+- Tuesday through Sunday 09:30: research the daily targets, update at least 2
+  source packets, generate lens patches, validate, and push the fixed sourcing
+  branch for automatic PR creation.

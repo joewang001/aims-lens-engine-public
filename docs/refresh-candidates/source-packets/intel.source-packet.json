@@ -1,0 +1,87 @@
+{
+  "company_slug": "intel",
+  "company": "Intel",
+  "collected_at": "2026-10-19T03:40:03Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "technology",
+      "semiconductors",
+      "manufacturing",
+      "ai infrastructure"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public semiconductor and manufacturing company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Intel company overview",
+      "url": "https://www.intel.com/content/www/us/en/company-overview/company-overview.html",
+      "confidence": 0.82,
+      "public_safe_signal": "Intel publicly describes its role in semiconductor design, manufacturing, computing platforms, and technologies spanning cloud, edge, client, and AI systems.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "INTEL-OFFICIAL-001",
+      "date_accessed": "2026-10-18"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Intel careers",
+      "url": "https://jobs.intel.com/",
+      "confidence": 0.78,
+      "public_safe_signal": "Intel careers material highlights technical problem solving, collaboration, learning, inclusion, and impact across engineering, manufacturing, and business roles.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "INTEL-CAREERS-002",
+      "date_accessed": "2026-10-18"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "behavioral",
+        "generated_question": "Tell me about a time you solved a difficult silicon engineering and manufacturing problem and connected your decisions to a measurable stakeholder result.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the problem, stakeholders, and constraints clearly.",
+          "Explains evidence, tradeoffs, and personal ownership.",
+          "Connects execution to a measurable result.",
+          "Shows learning from feedback or changed conditions."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "silicon_and_manufacturing",
+        "role_family": "Silicon engineering and manufacturing",
+        "signals": [
+          "Shows disciplined reasoning across design, process, quality, yield, reliability, and delivery constraints.",
+          "Connects technical decisions to platform, customer, manufacturing, or ecosystem outcomes."
+        ]
+      }
+    ]
+  }
+}

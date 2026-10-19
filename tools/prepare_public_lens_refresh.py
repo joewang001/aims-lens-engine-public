@@ -18,13 +18,19 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 
+try:
+    from tools.collect_public_lens_sources import CATALOG
+except ModuleNotFoundError:  # Direct execution from tools/.
+    from collect_public_lens_sources import CATALOG
+
 
 ROOT = Path(__file__).resolve().parents[1]
 COMPANY_LENSES = ROOT / "company_lenses"
 DEFAULT_OUTPUT = ROOT / "docs" / "refresh-candidates" / "public-lens-refresh-candidate.md"
 
 
-EXPANSION_CANDIDATES = [
+# Historical first-wave snapshot retained for release traceability only.
+LEGACY_EXPANSION_CANDIDATES = [
     {
         "company": "NVIDIA",
         "industry": "AI infrastructure and semiconductors",
@@ -103,6 +109,18 @@ EXPANSION_CANDIDATES = [
         "reason": "Adds a creative software and digital-experience benchmark with product, design, engineering, sales, and customer roles.",
         "review": "new_company",
     },
+]
+
+# The executable catalog is authoritative. The legacy rows above remain only
+# to preserve review history for the first expansion wave.
+EXPANSION_CANDIDATES = [
+    {
+        "company": spec["company"],
+        "industry": spec.get("industry") or ", ".join(spec.get("industries") or []),
+        "reason": spec.get("reason") or "Approved public-source expansion candidate.",
+        "review": spec.get("review") or "new_company",
+    }
+    for spec in CATALOG.values()
 ]
 
 

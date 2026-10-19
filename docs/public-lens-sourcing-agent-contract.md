@@ -74,20 +74,58 @@ Minimum packet shape:
 
 ## Normal Automation Path
 
-1. Select existing lens refresh targets or approved-backlog expansion targets.
-2. Collect public source metadata.
-3. Produce one source packet per company.
-4. Validate packet structure and public-safety flags.
-5. Generate lens patches.
-6. Run:
+1. Read `docs/refresh-candidates/public-lens-daily-plan.json` and
+   `docs/refresh-candidates/public-lens-information-gaps.csv`.
+2. Select the weekly new-company cohort first, then the listed historical-lens
+   targets and focus dimensions.
+3. For every selected gap, either collect supporting public evidence or leave
+   the gap open with a precise reason. Never invent a signal to close a row.
+4. Select approved-catalog expansion targets only during the Monday expansion
+   path.
+5. Collect public source metadata.
+6. Produce one source packet per company.
+7. Validate packet structure and public-safety flags.
+8. Generate lens patches. Existing-lens packets merge supported culture
+   principles, hiring signals, anti-signals, original questions, and role
+   overlays by stable identity keys.
+9. Regenerate the information-gap register so resolved rows disappear and
+   unresolved rows retain their first-detected date.
+10. Run:
 
    ```bash
    python tools/scan_public_export.py --allowlist
    python tools/validate_public_lens_coverage.py --min-companies 12
    ```
 
-7. Open a PR with source packet summary, changed files, validation output, and
+11. Open a PR with source packet summary, changed files, validation output, and
    auto-merge eligibility.
+
+## Daily Service Level
+
+- Monday: at least 2 new approved-catalog companies or the workflow fails.
+- Tuesday through Saturday: cover the assigned dimension group for this week's
+  new companies and at least 2 historical companies.
+- Sunday: audit all seven dimensions and roll unresolved rows into the next
+  week with reasons intact.
+- Candidate reserve: add new approved candidates before fewer than 8 unused
+  entries remain.
+- Every Tuesday-through-Sunday agent run must change at least 2 distinct source
+  packets and at least 1 generated company lens; otherwise the run fails and
+  no branch is pushed.
+
+## Reference OpenClaw Runner
+
+`ops/openclaw/daily-source-agent.sh` implements the downstream worker contract.
+It reads the daily plan and gap register, invokes an isolated sourcing turn,
+applies packets, regenerates operational reports, validates the public
+boundary, and pushes `automation/public-lens-source-agent` through a
+repository-scoped SSH deploy key. The workflow then opens or updates the PR and
+enables auto-merge after checks pass.
+
+The agent has no authority to commit directly to `main`, change credentials,
+contact people, or publish outside the repository. Missing or unsupported
+information stays in the gap register with its reason, next action, owner
+queue, and first-detected date.
 
 ## Auto-Merge Eligibility
 

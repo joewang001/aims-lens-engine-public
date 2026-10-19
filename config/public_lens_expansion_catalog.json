@@ -1,0 +1,551 @@
+{
+  "version": 1,
+  "weekly_new_company_target": 2,
+  "minimum_unused_candidate_reserve": 8,
+  "candidates": [
+    {
+      "slug": "amd",
+      "company": "AMD",
+      "industries": ["technology", "semiconductors", "ai infrastructure", "high performance computing"],
+      "regions": ["north_america", "global"],
+      "stage": "large public semiconductor and computing company",
+      "industry": "semiconductors and AI infrastructure",
+      "reason": "Broadens accelerated-computing coverage beyond NVIDIA with a major CPU, GPU, and adaptive-computing employer.",
+      "review": "new_company",
+      "role_slug": "semiconductor_and_ai_engineering",
+      "role_family": "Semiconductor and AI engineering",
+      "role_signals": [
+        "Explains system tradeoffs across compute, software, performance, power, cost, and reliability.",
+        "Connects technical execution to developer, data-center, embedded, or end-user outcomes."
+      ],
+      "sources": [
+        {
+          "source_type": "official_investor_relations",
+          "title": "AMD investor relations",
+          "url": "https://ir.amd.com/",
+          "confidence": 0.82,
+          "public_safe_signal": "AMD publicly positions its work around high-performance and adaptive computing across data center, AI, client, gaming, and embedded markets.",
+          "dimensions": ["company_says", "evidence_valued", "risk_warnings"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "AMD careers",
+          "url": "https://careers.amd.com/",
+          "confidence": 0.78,
+          "public_safe_signal": "AMD careers material emphasizes innovation, collaboration, inclusion, learning, and engineering impact across global computing products.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "intel",
+      "company": "Intel",
+      "industries": ["technology", "semiconductors", "manufacturing", "ai infrastructure"],
+      "regions": ["north_america", "global"],
+      "stage": "large public semiconductor and manufacturing company",
+      "industry": "semiconductors and advanced manufacturing",
+      "reason": "Adds a major semiconductor design and manufacturing benchmark with broad engineering and operations hiring relevance.",
+      "review": "new_company",
+      "role_slug": "silicon_and_manufacturing",
+      "role_family": "Silicon engineering and manufacturing",
+      "role_signals": [
+        "Shows disciplined reasoning across design, process, quality, yield, reliability, and delivery constraints.",
+        "Connects technical decisions to platform, customer, manufacturing, or ecosystem outcomes."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "Intel company overview",
+          "url": "https://www.intel.com/content/www/us/en/company-overview/company-overview.html",
+          "confidence": 0.82,
+          "public_safe_signal": "Intel publicly describes its role in semiconductor design, manufacturing, computing platforms, and technologies spanning cloud, edge, client, and AI systems.",
+          "dimensions": ["company_says", "evidence_valued", "risk_warnings"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "Intel careers",
+          "url": "https://jobs.intel.com/",
+          "confidence": 0.78,
+          "public_safe_signal": "Intel careers material highlights technical problem solving, collaboration, learning, inclusion, and impact across engineering, manufacturing, and business roles.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "bcg",
+      "company": "Boston Consulting Group",
+      "industries": ["consulting", "strategy consulting", "professional services", "digital consulting"],
+      "regions": ["north_america", "global"],
+      "stage": "large global management consulting firm",
+      "industry": "strategy consulting and professional services",
+      "reason": "Deepens consulting coverage with a major strategy, transformation, technology, and analytics employer.",
+      "review": "new_company",
+      "role_slug": "strategy_and_transformation_consulting",
+      "role_family": "Strategy and transformation consulting",
+      "role_signals": [
+        "Structures ambiguous client problems into evidence-backed choices and practical workstreams.",
+        "Balances analytical depth, stakeholder alignment, communication, and implementation impact."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "BCG company homepage",
+          "url": "https://www.bcg.com/",
+          "confidence": 0.8,
+          "public_safe_signal": "BCG publicly describes work across strategy, transformation, technology, design, digital ventures, and measurable client impact.",
+          "dimensions": ["company_says", "evidence_valued"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "BCG careers",
+          "url": "https://careers.bcg.com/",
+          "confidence": 0.78,
+          "public_safe_signal": "BCG careers material emphasizes problem solving, curiosity, collaboration, learning, diverse perspectives, and impact with clients and communities.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "bain",
+      "company": "Bain & Company",
+      "industries": ["consulting", "strategy consulting", "professional services"],
+      "regions": ["north_america", "global"],
+      "stage": "large global management consulting firm",
+      "industry": "strategy consulting and professional services",
+      "reason": "Adds another leading consulting benchmark centered on results, client outcomes, and team-based problem solving.",
+      "review": "new_company",
+      "role_slug": "results_oriented_consulting",
+      "role_family": "Results-oriented consulting",
+      "role_signals": [
+        "Turns analysis into clear recommendations, aligned stakeholders, and measurable results.",
+        "Shows practical teamwork, ownership, and adaptation as evidence changes."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "Bain company homepage",
+          "url": "https://www.bain.com/",
+          "confidence": 0.8,
+          "public_safe_signal": "Bain publicly frames its consulting work around client results, strategy, transformation, operations, technology, and sustained value creation.",
+          "dimensions": ["company_says", "evidence_valued"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "Bain careers",
+          "url": "https://www.bain.com/careers/",
+          "confidence": 0.78,
+          "public_safe_signal": "Bain careers material emphasizes collaboration, problem solving, learning, responsibility, and helping clients achieve practical results.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "servicenow",
+      "company": "ServiceNow",
+      "industries": ["technology", "enterprise software", "cloud", "workflow automation", "ai"],
+      "regions": ["north_america", "global"],
+      "stage": "large public enterprise software company",
+      "industry": "enterprise workflow software and AI",
+      "reason": "Adds a leading enterprise workflow platform with strong product, engineering, sales, and customer-success relevance.",
+      "review": "new_company",
+      "role_slug": "enterprise_workflow_platform",
+      "role_family": "Enterprise workflow platform roles",
+      "role_signals": [
+        "Connects platform or process choices to customer workflows, adoption, reliability, and measurable value.",
+        "Balances product, technical, commercial, and change-management constraints."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "ServiceNow company overview",
+          "url": "https://www.servicenow.com/company.html",
+          "confidence": 0.81,
+          "public_safe_signal": "ServiceNow publicly positions its cloud platform around enterprise workflows, automation, AI, productivity, and improved experiences for employees and customers.",
+          "dimensions": ["company_says", "evidence_valued"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "ServiceNow careers",
+          "url": "https://careers.servicenow.com/",
+          "confidence": 0.77,
+          "public_safe_signal": "ServiceNow careers material highlights customer impact, innovation, teamwork, inclusion, learning, and building technology that improves work.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "sap",
+      "company": "SAP",
+      "industries": ["technology", "enterprise software", "cloud", "business applications"],
+      "regions": ["north_america", "europe", "global"],
+      "stage": "large public enterprise software company",
+      "industry": "enterprise applications and cloud",
+      "reason": "Broadens enterprise software coverage with a major business-process, data, cloud, and customer-transformation employer.",
+      "review": "new_company",
+      "role_slug": "enterprise_applications_and_cloud",
+      "role_family": "Enterprise applications and cloud",
+      "role_signals": [
+        "Explains how technology choices improve end-to-end business processes and customer outcomes.",
+        "Shows stakeholder alignment across implementation, data, adoption, reliability, and change."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "SAP company overview",
+          "url": "https://www.sap.com/about/company.html",
+          "confidence": 0.81,
+          "public_safe_signal": "SAP publicly describes enterprise applications and business AI that connect data and processes across finance, supply chain, people, procurement, and customer functions.",
+          "dimensions": ["company_says", "evidence_valued"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "SAP careers",
+          "url": "https://jobs.sap.com/",
+          "confidence": 0.77,
+          "public_safe_signal": "SAP careers material emphasizes innovation, customer value, collaboration, inclusion, continuous learning, and global business impact.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "roche",
+      "company": "Roche",
+      "industries": ["healthcare", "pharma", "diagnostics", "biotechnology", "life sciences"],
+      "regions": ["north_america", "europe", "global"],
+      "stage": "large public healthcare and life-sciences company",
+      "industry": "pharmaceuticals and diagnostics",
+      "reason": "Adds a global healthcare leader spanning pharmaceuticals, diagnostics, data, and personalized healthcare.",
+      "review": "new_company",
+      "role_slug": "pharma_and_diagnostics",
+      "role_family": "Pharmaceutical and diagnostics roles",
+      "role_signals": [
+        "Balances scientific evidence, patient outcomes, quality, safety, regulation, and delivery.",
+        "Connects cross-functional decisions to measurable healthcare or operational outcomes."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "Roche company overview",
+          "url": "https://www.roche.com/about",
+          "confidence": 0.82,
+          "public_safe_signal": "Roche publicly describes its work across pharmaceuticals and diagnostics with a focus on science, personalized healthcare, and better outcomes for patients.",
+          "dimensions": ["company_says", "evidence_valued", "risk_warnings"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "Roche careers",
+          "url": "https://careers.roche.com/global/en",
+          "confidence": 0.77,
+          "public_safe_signal": "Roche careers material emphasizes patient impact, scientific curiosity, collaboration, learning, inclusion, and responsible work in regulated healthcare settings.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "novartis",
+      "company": "Novartis",
+      "industries": ["healthcare", "pharma", "biotechnology", "life sciences"],
+      "regions": ["north_america", "europe", "global"],
+      "stage": "large public pharmaceutical company",
+      "industry": "innovative medicines and life sciences",
+      "reason": "Deepens regulated healthcare coverage with a major innovative-medicines employer.",
+      "review": "new_company",
+      "role_slug": "innovative_medicines",
+      "role_family": "Innovative medicines roles",
+      "role_signals": [
+        "Uses scientific and operational evidence while protecting patient safety, quality, and compliance.",
+        "Connects decisions to patient, clinician, access, research, or delivery outcomes."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "Novartis company overview",
+          "url": "https://www.novartis.com/about",
+          "confidence": 0.82,
+          "public_safe_signal": "Novartis publicly focuses on innovative medicines, science, technology, and improving or extending patients' lives across major disease areas.",
+          "dimensions": ["company_says", "evidence_valued", "risk_warnings"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "Novartis careers",
+          "url": "https://www.novartis.com/careers",
+          "confidence": 0.77,
+          "public_safe_signal": "Novartis careers material emphasizes purpose, curiosity, collaboration, inclusion, learning, and responsible execution in science and healthcare.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "shell",
+      "company": "Shell",
+      "industries": ["energy", "oil and gas", "lng", "chemicals", "low carbon energy"],
+      "regions": ["north_america", "europe", "global"],
+      "stage": "large public integrated energy company",
+      "industry": "integrated energy and energy transition",
+      "reason": "Adds a global integrated-energy benchmark with safety, operations, trading, engineering, and transition relevance.",
+      "review": "new_company",
+      "role_slug": "energy_operations_and_transition",
+      "role_family": "Energy operations and transition roles",
+      "role_signals": [
+        "Balances safety, reliability, economics, regulation, environmental impact, and long-term transition choices.",
+        "Shows disciplined operational judgment and clear accountability for stakeholders and outcomes."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "Shell company overview",
+          "url": "https://www.shell.com/about-us.html",
+          "confidence": 0.81,
+          "public_safe_signal": "Shell publicly describes an integrated energy business spanning upstream, LNG, chemicals, trading, customer energy products, and lower-carbon solutions.",
+          "dimensions": ["company_says", "evidence_valued", "risk_warnings"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "Shell careers",
+          "url": "https://www.shell.com/careers.html",
+          "confidence": 0.77,
+          "public_safe_signal": "Shell careers material highlights safety, technical and commercial problem solving, collaboration, learning, and work across a changing energy system.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "nextera-energy",
+      "company": "NextEra Energy",
+      "industries": ["energy", "utilities", "renewable energy", "infrastructure"],
+      "regions": ["north_america"],
+      "stage": "large public electric power and energy infrastructure company",
+      "industry": "utilities and renewable energy infrastructure",
+      "reason": "Broadens energy coverage with a major utility and renewable-generation benchmark.",
+      "review": "new_company",
+      "role_slug": "utility_and_clean_energy",
+      "role_family": "Utility and clean-energy roles",
+      "role_signals": [
+        "Balances reliability, safety, affordability, regulation, capital delivery, and environmental outcomes.",
+        "Connects operational or investment choices to customers, communities, and long-term system performance."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "NextEra Energy company overview",
+          "url": "https://www.nexteraenergy.com/company.html",
+          "confidence": 0.81,
+          "public_safe_signal": "NextEra Energy publicly describes electric utility, renewable generation, energy infrastructure, reliability, and long-term investment in cleaner energy systems.",
+          "dimensions": ["company_says", "evidence_valued", "risk_warnings"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "NextEra Energy careers",
+          "url": "https://jobs.nexteraenergy.com/",
+          "confidence": 0.76,
+          "public_safe_signal": "NextEra Energy careers material emphasizes safety, customer service, operational excellence, innovation, teamwork, and energy-sector impact.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "ups",
+      "company": "UPS",
+      "industries": ["logistics", "transportation", "supply chain", "ecommerce"],
+      "regions": ["north_america", "global"],
+      "stage": "large public logistics and transportation company",
+      "industry": "logistics, transportation, and supply chain",
+      "reason": "Adds a global logistics leader with frontline, operations, technology, engineering, and customer-service relevance.",
+      "review": "new_industry",
+      "role_slug": "logistics_and_network_operations",
+      "role_family": "Logistics and network operations",
+      "role_signals": [
+        "Uses data and operational judgment to improve safety, service, capacity, reliability, and cost.",
+        "Connects local execution to end-to-end network and customer outcomes."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "UPS company overview",
+          "url": "https://about.ups.com/us/en/our-company.html",
+          "confidence": 0.81,
+          "public_safe_signal": "UPS publicly describes a global package delivery and supply-chain network serving customers through transportation, logistics, technology, and operational execution.",
+          "dimensions": ["company_says", "evidence_valued", "risk_warnings"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "UPS careers",
+          "url": "https://www.jobs-ups.com/",
+          "confidence": 0.77,
+          "public_safe_signal": "UPS careers material spans frontline, operations, engineering, technology, sales, and corporate work with emphasis on safety, service, teamwork, and reliability.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "airbnb",
+      "company": "Airbnb",
+      "industries": ["technology", "travel", "marketplace", "consumer services", "payments"],
+      "regions": ["north_america", "global"],
+      "stage": "large public travel marketplace company",
+      "industry": "travel marketplace and consumer technology",
+      "reason": "Adds a two-sided marketplace benchmark with product, trust, operations, design, data, and community relevance.",
+      "review": "new_company",
+      "role_slug": "marketplace_product_and_trust",
+      "role_family": "Marketplace product and trust roles",
+      "role_signals": [
+        "Balances guest, host, community, trust, safety, product, and marketplace incentives.",
+        "Uses experiments and qualitative evidence to improve end-to-end customer experience."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "Airbnb about us",
+          "url": "https://www.airbnb.com/about/about-us",
+          "confidence": 0.81,
+          "public_safe_signal": "Airbnb publicly describes a global marketplace connecting hosts and guests through travel experiences, community participation, technology, and trust mechanisms.",
+          "dimensions": ["company_says", "evidence_valued", "risk_warnings"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "Airbnb careers",
+          "url": "https://careers.airbnb.com/",
+          "confidence": 0.77,
+          "public_safe_signal": "Airbnb careers material emphasizes belonging, creativity, collaboration, responsibility, and building products and operations for a global community.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "boeing",
+      "company": "Boeing",
+      "industries": ["aerospace", "defense", "manufacturing", "engineering", "services"],
+      "regions": ["north_america", "global"],
+      "stage": "large public aerospace and defense company",
+      "industry": "aerospace, defense, and advanced manufacturing",
+      "reason": "Opens aerospace coverage with a major safety-critical engineering, manufacturing, and services employer.",
+      "review": "new_industry",
+      "role_slug": "aerospace_engineering_and_quality",
+      "role_family": "Aerospace engineering and quality",
+      "role_signals": [
+        "Prioritizes safety, quality, traceability, systems thinking, and evidence-based escalation.",
+        "Connects technical and operational decisions to customers, regulators, users, and long-life product outcomes."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "Boeing company overview",
+          "url": "https://www.boeing.com/company",
+          "confidence": 0.81,
+          "public_safe_signal": "Boeing publicly describes commercial airplanes, defense, space, services, engineering, manufacturing, safety, quality, and global customer support.",
+          "dimensions": ["company_says", "evidence_valued", "risk_warnings"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "Boeing careers",
+          "url": "https://jobs.boeing.com/",
+          "confidence": 0.77,
+          "public_safe_signal": "Boeing careers material spans engineering, manufacturing, quality, digital, business, and services roles in safety-sensitive and mission-critical environments.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "siemens",
+      "company": "Siemens",
+      "industries": ["industrial technology", "automation", "manufacturing", "infrastructure", "software"],
+      "regions": ["north_america", "europe", "global"],
+      "stage": "large public industrial technology company",
+      "industry": "industrial technology, automation, and infrastructure",
+      "reason": "Adds an industrial technology leader spanning automation, software, mobility, buildings, and infrastructure.",
+      "review": "new_industry",
+      "role_slug": "industrial_digitalization",
+      "role_family": "Industrial digitalization roles",
+      "role_signals": [
+        "Connects software, automation, hardware, operations, and lifecycle constraints to customer value.",
+        "Balances safety, reliability, sustainability, productivity, and implementation complexity."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "Siemens company overview",
+          "url": "https://www.siemens.com/global/en/company/about.html",
+          "confidence": 0.81,
+          "public_safe_signal": "Siemens publicly focuses on industrial digitalization, automation, infrastructure, mobility, software, and technologies that improve productivity and sustainability.",
+          "dimensions": ["company_says", "evidence_valued", "risk_warnings"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "Siemens careers",
+          "url": "https://jobs.siemens.com/careers",
+          "confidence": 0.77,
+          "public_safe_signal": "Siemens careers material highlights engineering, technology, customer problem solving, collaboration, learning, and impact across industrial and infrastructure systems.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "manulife",
+      "company": "Manulife",
+      "industries": ["financial services", "insurance", "wealth", "asset management"],
+      "regions": ["canada", "north_america", "asia", "global"],
+      "stage": "large public insurance and financial-services company",
+      "industry": "insurance, wealth, and asset management",
+      "reason": "Adds a Canadian anchor employer with broad insurance, wealth, technology, analytics, operations, and customer roles.",
+      "review": "new_company",
+      "role_slug": "insurance_and_wealth",
+      "role_family": "Insurance and wealth roles",
+      "role_signals": [
+        "Balances customer outcomes, risk, regulation, data, long-term value, and operational reliability.",
+        "Explains decisions clearly across customers, advisors, regulators, and internal partners."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "Manulife company overview",
+          "url": "https://www.manulife.com/en/about.html",
+          "confidence": 0.81,
+          "public_safe_signal": "Manulife publicly describes insurance, wealth, and asset-management businesses that help customers make financial decisions and improve long-term outcomes.",
+          "dimensions": ["company_says", "evidence_valued", "risk_warnings"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "Manulife careers",
+          "url": "https://careers.manulife.com/",
+          "confidence": 0.77,
+          "public_safe_signal": "Manulife careers material highlights customer focus, collaboration, inclusion, learning, digital capability, and responsible work across global financial services.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    },
+    {
+      "slug": "sun-life",
+      "company": "Sun Life",
+      "industries": ["financial services", "insurance", "wealth", "asset management", "health benefits"],
+      "regions": ["canada", "north_america", "asia", "global"],
+      "stage": "large public insurance and financial-services company",
+      "industry": "insurance, wealth, benefits, and asset management",
+      "reason": "Broadens Canadian financial-services coverage with insurance, benefits, wealth, technology, and client-experience roles.",
+      "review": "new_company",
+      "role_slug": "client_financial_and_health_outcomes",
+      "role_family": "Client financial and health outcomes roles",
+      "role_signals": [
+        "Connects decisions to client outcomes, trust, risk, regulation, accessibility, and long-term value.",
+        "Shows collaboration across product, operations, technology, advisors, and service teams."
+      ],
+      "sources": [
+        {
+          "source_type": "official_company",
+          "title": "Sun Life company overview",
+          "url": "https://www.sunlife.com/en/about-us/",
+          "confidence": 0.81,
+          "public_safe_signal": "Sun Life publicly describes insurance, wealth, asset management, benefits, and health-related services focused on client financial security and well-being.",
+          "dimensions": ["company_says", "evidence_valued", "risk_warnings"]
+        },
+        {
+          "source_type": "official_careers",
+          "title": "Sun Life careers",
+          "url": "https://www.sunlife.com/en/careers/",
+          "confidence": 0.78,
+          "public_safe_signal": "Sun Life careers material emphasizes client and colleague experience, purpose, collaboration, learning, inclusion, flexibility, and individual growth.",
+          "dimensions": ["company_judges", "company_asks", "role_variation"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-10-19T03:40:04Z",
+  "run_date": "2026-10-18",
+  "weekday": 6,
+  "week_start": "2026-10-12",
+  "focus_dimensions": [
+    "company_says",
+    "company_judges",
+    "company_asks",
+    "evidence_valued",
+    "risk_warnings",
+    "role_variation",
+    "honest_unknowns"
+  ],
+  "weekly_new_company_targets": [
+    "amd",
+    "intel"
+  ],
+  "historical_company_targets": [
+    "accenture",
+    "adobe"
+  ],
+  "open_gap_count": 77,
+  "rules": {
+    "weekly_new_company_target": 2,
+    "daily_historical_company_target": 2,
+    "public_safe_only": true,
+    "unresolved_items_enter_gap_register": true
+  }
+}
