@@ -1,8 +1,11 @@
 import argparse
+import csv
 import json
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
+from unittest.mock import patch
 
 from tools import collect_public_lens_sources
 from tools import generate_public_lens_patch
@@ -106,6 +109,75 @@ class DailyOperationsTests(unittest.TestCase):
             self.assertTrue(row["owner_queue"])
             self.assertEqual(row["resolution_status"], "open")
 
+    def test_resolved_gap_is_appended_once_to_history(self):
+        prior = public_lens_operations.build_gap_rows(reserve_target=8)[0]
+        prior["first_detected"] = "2026-10-01"
+        prior["last_checked"] = "2026-10-18"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            history_csv = root / "history.csv"
+            history_md = root / "history.md"
+            added = public_lens_operations.write_resolution_history(
+                prior_rows=[prior],
+                current_rows=[],
+                csv_path=history_csv,
+                md_path=history_md,
+                resolved_on="2026-10-19",
+            )
+            self.assertEqual(added, 1)
+            with history_csv.open("r", encoding="utf-8", newline="") as handle:
+                rows = list(csv.DictReader(handle))
+            self.assertEqual(len(rows), 1)
+            self.assertEqual(rows[0]["resolution_status"], "resolved")
+            self.assertEqual(rows[0]["resolved_at"], "2026-10-19")
+            self.assertTrue(rows[0]["resolution_basis"])
+
+            added = public_lens_operations.write_resolution_history(
+                prior_rows=[prior],
+                current_rows=[],
+                csv_path=history_csv,
+                md_path=history_md,
+                resolved_on="2026-10-19",
+            )
+            self.assertEqual(added, 0)
+            with history_csv.open("r", encoding="utf-8", newline="") as handle:
+                self.assertEqual(len(list(csv.DictReader(handle))), 1)
+
+    def test_resolution_provenance_supports_github_merge_titles(self):
+        subjects = (
+            ("Track resolved gaps (#27)", "27"),
+            ("Merge pull request #28 from automation/gaps", "28"),
+        )
+        for subject, expected_pr in subjects:
+            with self.subTest(subject=subject), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                history_path = root / "history.csv"
+                rows = [
+                    {
+                        "resolution_record_id": "record-id",
+                        "resolution_commit": "pending:first_commit_containing_record",
+                        "resolution_pr": "pending:merge_pr",
+                    }
+                ]
+                completed = SimpleNamespace(
+                    stdout=f"{'a' * 40}\t{subject}\n",
+                )
+                with (
+                    patch.object(public_lens_operations, "ROOT", root),
+                    patch.object(
+                        public_lens_operations.subprocess,
+                        "run",
+                        return_value=completed,
+                    ) as run,
+                ):
+                    public_lens_operations.reconcile_resolution_provenance(
+                        rows,
+                        history_path,
+                    )
+                self.assertEqual(rows[0]["resolution_commit"], "a" * 40)
+                self.assertTrue(rows[0]["resolution_pr"].endswith(f"/{expected_pr}"))
+                self.assertIn("--first-parent", run.call_args.args[0])
+
     def test_workflow_has_separate_weekly_and_daily_schedules(self):
         workflow = (
             public_lens_operations.ROOT
@@ -131,6 +203,7 @@ class DailyOperationsTests(unittest.TestCase):
         self.assertIn('if [ "$PACKET_COUNT" -lt 2 ]', runner)
         self.assertIn('if [ "$LENS_COUNT" -lt 1 ]', runner)
         self.assertIn("git push --force-with-lease", runner)
+        self.assertIn("public-lens-gap-resolution-history.csv", runner)
 
 
 if __name__ == "__main__":

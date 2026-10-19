@@ -1,0 +1,21 @@
+# Public Lens Gap Resolution History
+
+Generated: `2026-10-19T04:58:03Z`
+
+This append-only operational view records gaps that disappeared after a lens passed its automated threshold. The first Git commit containing each record is the authoritative resolution change; commit and PR fields are backfilled on a later audit.
+
+- Resolved records: `10`
+- Added in this audit: `10`
+
+| Company | Dimension | First detected | Resolved | Basis | Evidence refs | Commit | PR |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Accenture | `company_asks` | `2026-10-18` | `2026-10-19` | Current lens passed the automated `company_asks` threshold: original questions=3. | `ACCENTURE-ABOUT-003;ACCENTURE-BEHAVIORAL-005;ACCENTURE-CAREERS-002;ACCENTURE-IR-009;ACCENTURE-LEADERSHIP-004;ACCENTURE-OFFICIAL-001;ACCENTURE-SKILLS-006;ACCENTURE-STRATEGY-008;ACCENTURE-SWE-007` | `pending:first_commit_containing_record` | pending:merge_pr |
+| Accenture | `company_judges` | `2026-10-18` | `2026-10-19` | Current lens passed the automated `company_judges` threshold: hiring signals=7, rubric=true. | `ACCENTURE-ABOUT-003;ACCENTURE-BEHAVIORAL-005;ACCENTURE-CAREERS-002;ACCENTURE-IR-009;ACCENTURE-LEADERSHIP-004;ACCENTURE-OFFICIAL-001;ACCENTURE-SKILLS-006;ACCENTURE-STRATEGY-008;ACCENTURE-SWE-007` | `pending:first_commit_containing_record` | pending:merge_pr |
+| Accenture | `company_says` | `2026-10-18` | `2026-10-19` | Current lens passed the automated `company_says` threshold: culture principles=7, evidence rows=9. | `ACCENTURE-ABOUT-003;ACCENTURE-BEHAVIORAL-005;ACCENTURE-CAREERS-002;ACCENTURE-IR-009;ACCENTURE-LEADERSHIP-004;ACCENTURE-OFFICIAL-001;ACCENTURE-SKILLS-006;ACCENTURE-STRATEGY-008;ACCENTURE-SWE-007` | `pending:first_commit_containing_record` | pending:merge_pr |
+| Accenture | `risk_warnings` | `2026-10-18` | `2026-10-19` | Current lens passed the automated `risk_warnings` threshold: anti-signals=4, limits=true. | `ACCENTURE-ABOUT-003;ACCENTURE-BEHAVIORAL-005;ACCENTURE-CAREERS-002;ACCENTURE-IR-009;ACCENTURE-LEADERSHIP-004;ACCENTURE-OFFICIAL-001;ACCENTURE-SKILLS-006;ACCENTURE-STRATEGY-008;ACCENTURE-SWE-007` | `pending:first_commit_containing_record` | pending:merge_pr |
+| Accenture | `role_variation` | `2026-10-18` | `2026-10-19` | Current lens passed the automated `role_variation` threshold: role overlays=2. | `ACCENTURE-ABOUT-003;ACCENTURE-BEHAVIORAL-005;ACCENTURE-CAREERS-002;ACCENTURE-IR-009;ACCENTURE-LEADERSHIP-004;ACCENTURE-OFFICIAL-001;ACCENTURE-SKILLS-006;ACCENTURE-STRATEGY-008;ACCENTURE-SWE-007` | `pending:first_commit_containing_record` | pending:merge_pr |
+| Adobe | `company_asks` | `2026-10-18` | `2026-10-19` | Current lens passed the automated `company_asks` threshold: original questions=3. | `ADOBE-ABOUT-008;ADOBE-ALL-006;ADOBE-CAREERS-002;ADOBE-DEVBLOG-007;ADOBE-HIRING-005;ADOBE-IR-003;ADOBE-OFFICIAL-001;ADOBE-VALUES-004` | `pending:first_commit_containing_record` | pending:merge_pr |
+| Adobe | `company_judges` | `2026-10-18` | `2026-10-19` | Current lens passed the automated `company_judges` threshold: hiring signals=7, rubric=true. | `ADOBE-ABOUT-008;ADOBE-ALL-006;ADOBE-CAREERS-002;ADOBE-DEVBLOG-007;ADOBE-HIRING-005;ADOBE-IR-003;ADOBE-OFFICIAL-001;ADOBE-VALUES-004` | `pending:first_commit_containing_record` | pending:merge_pr |
+| Adobe | `company_says` | `2026-10-18` | `2026-10-19` | Current lens passed the automated `company_says` threshold: culture principles=7, evidence rows=8. | `ADOBE-ABOUT-008;ADOBE-ALL-006;ADOBE-CAREERS-002;ADOBE-DEVBLOG-007;ADOBE-HIRING-005;ADOBE-IR-003;ADOBE-OFFICIAL-001;ADOBE-VALUES-004` | `pending:first_commit_containing_record` | pending:merge_pr |
+| Adobe | `risk_warnings` | `2026-10-18` | `2026-10-19` | Current lens passed the automated `risk_warnings` threshold: anti-signals=4, limits=true. | `ADOBE-ABOUT-008;ADOBE-ALL-006;ADOBE-CAREERS-002;ADOBE-DEVBLOG-007;ADOBE-HIRING-005;ADOBE-IR-003;ADOBE-OFFICIAL-001;ADOBE-VALUES-004` | `pending:first_commit_containing_record` | pending:merge_pr |
+| Adobe | `role_variation` | `2026-10-18` | `2026-10-19` | Current lens passed the automated `role_variation` threshold: role overlays=2. | `ADOBE-ABOUT-008;ADOBE-ALL-006;ADOBE-CAREERS-002;ADOBE-DEVBLOG-007;ADOBE-HIRING-005;ADOBE-IR-003;ADOBE-OFFICIAL-001;ADOBE-VALUES-004` | `pending:first_commit_containing_record` | pending:merge_pr |
