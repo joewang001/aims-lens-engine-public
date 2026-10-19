@@ -31,3 +31,9 @@ actual main commit and PR; publish generated provenance updates through the
 same checked channel if needed. No private sources, candidate/tenant data,
 copied job bodies, paywalled text, credentials or production configuration may
 be included.
+
+## Live channel verification
+
+A documentation-only update on 2026-10-19 exercises the NAS-origin push and
+automation PR path. Its push-run and PR records are the acceptance evidence.
+The verification does not generate or modify company lens content.
