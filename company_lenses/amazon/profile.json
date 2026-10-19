@@ -148,7 +148,7 @@
         "AMZ-MED-005",
         "AMZ-PRIV-002"
       ],
-      "basis": "stated_by_company"
+      "basis": "derived_public_inference"
     },
     {
       "signal": "For BIE and analytics roles, defines metrics clearly, validates data, communicates uncertainty, and converts analysis into a decision.",
@@ -177,7 +177,7 @@
       "evidence_ids": [
         "AMZ-PRIV-004"
       ],
-      "basis": "stated_by_company"
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Acknowledges trust, safety, consent, and transparency risks when optimizing growth, speed, or productivity.",
@@ -191,7 +191,7 @@
         "AMZ-RISK-001",
         "AMZ-RISK-002"
       ],
-      "basis": "stated_by_company"
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
