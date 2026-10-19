@@ -1,0 +1,86 @@
+{
+  "company_slug": "bcg",
+  "company": "Boston Consulting Group",
+  "collected_at": "2026-10-19T16:29:24Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "consulting",
+      "strategy consulting",
+      "professional services",
+      "digital consulting"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large global management consulting firm"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "BCG company homepage",
+      "url": "https://www.bcg.com/",
+      "confidence": 0.8,
+      "public_safe_signal": "BCG publicly describes work across strategy, transformation, technology, design, digital ventures, and measurable client impact.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "BCG-OFFICIAL-001",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "BCG careers",
+      "url": "https://careers.bcg.com/",
+      "confidence": 0.78,
+      "public_safe_signal": "BCG careers material emphasizes problem solving, curiosity, collaboration, learning, diverse perspectives, and impact with clients and communities.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "BCG-CAREERS-002",
+      "date_accessed": "2026-10-19"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "behavioral",
+        "generated_question": "Tell me about a time you solved a difficult strategy and transformation consulting problem and connected your decisions to a measurable stakeholder result.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the problem, stakeholders, and constraints clearly.",
+          "Explains evidence, tradeoffs, and personal ownership.",
+          "Connects execution to a measurable result.",
+          "Shows learning from feedback or changed conditions."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "strategy_and_transformation_consulting",
+        "role_family": "Strategy and transformation consulting",
+        "signals": [
+          "Structures ambiguous client problems into evidence-backed choices and practical workstreams.",
+          "Balances analytical depth, stakeholder alignment, communication, and implementation impact."
+        ]
+      }
+    ]
+  }
+}

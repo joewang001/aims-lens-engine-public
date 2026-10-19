@@ -1,0 +1,20 @@
+{
+  "company": "Boston Consulting Group",
+  "role_family": "Strategy and transformation consulting",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Structures ambiguous client problems into evidence-backed choices and practical workstreams.",
+    "Balances analytical depth, stakeholder alignment, communication, and implementation impact."
+  ],
+  "evidence_ids": [
+    "BCG-OFFICIAL-001",
+    "BCG-CAREERS-002"
+  ]
+}
