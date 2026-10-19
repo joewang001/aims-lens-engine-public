@@ -111,7 +111,7 @@
         "MCK-PRIV-002",
         "MCK-BOOK-001"
       ],
-      "basis": "stated_by_company"
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Balances client impact with dissent, integrity, and willingness to speak up.",

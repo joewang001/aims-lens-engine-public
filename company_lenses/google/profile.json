@@ -87,7 +87,7 @@
       "evidence_ids": [
         "GOOG-PRIV-002"
       ],
-      "basis": "stated_by_company"
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Shows collaboration, humility, conflict handling, and influence without relying on formal authority.",
@@ -143,7 +143,7 @@
       "evidence_ids": [
         "GOOG-PRIV-004"
       ],
-      "basis": "stated_by_company"
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [

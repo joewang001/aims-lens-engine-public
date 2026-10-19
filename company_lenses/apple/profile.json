@@ -106,7 +106,7 @@
         "APL-PRIV-002",
         "APL-PRIV-003"
       ],
-      "basis": "stated_by_company"
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Can collaborate across disciplines without lowering product-quality standards.",
