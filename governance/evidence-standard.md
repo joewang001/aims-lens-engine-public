@@ -70,8 +70,9 @@ guidance article that is summarised rather than quoted is still direct support, 
 company stated the criterion; the summary only limits how much text is stored.
 
 The five bank entries were re-checked against the banks' own careers sites on 2026-10-20. BMO,
-CIBC and Scotiabank publish a page that states the behavioural-evidence expectation outright,
-so their signals now cite that page and are direct support.
+CIBC, RBC and Scotiabank each have a company-issued page stating the behavioural-evidence
+expectation outright, so their signals now cite that page and are direct support. RBC's page was
+recovered from the Wayback Machine because the live document no longer resolves.
 
 Weak support is a statement about **how the claim is supported**, not about whether the source
 belongs to the company. A distillation of material harvested from the company's own site has a
@@ -89,7 +90,14 @@ the upgrade is visible without re-reading every lens.
 | --- | --- | --- |
 | BMO | jobs.bmo.com careers blog, "How to Ace Your Interviews with a C.A.R.T. Story" | Most recruiters use behavioural interviewing techniques, including at BMO, to learn about past behaviour in situations similar to the target role |
 | CIBC | cibc.com hiring process, "Tips for the interview process" | Demonstrate impact with specific examples of past contribution, covering Situation, Task, Action and Results |
+| RBC | rbc.com careers interview pack, "What to expect in an RBC interview" (archived) | Recruiters use behavioural interviewing and ask how the candidate behaved in specific past situations; answers should be framed Situation > Action > Result |
 | Scotiabank | scotiabank.com careers blog, "Talent Tip - 5 Tips to Mastering the Interview Process" | Interviewers may ask behavioural questions to assess how well a candidate handled specific past situations |
+
+RBC's page was found on 2026-10-20 in the Wayback Machine rather than live: the whole
+`www.rbc.com/careers/docs/` tree, including the "Candidate FAQ" link that jobs.rbc.com still
+carries, returns 404. The archived copy is an RBC-issued document and states the criterion
+outright, so it is direct support; the archive URL is cited in the lens because the live URL
+no longer resolves.
 
 ### Owner-Confirmed Company Source
 
@@ -99,12 +107,17 @@ settled; the article-level URLs are deliberately not committed, in line with the
 that private source URLs are not published. They are `stated_by_company` on provenance grounds,
 not weak support: the open item is a public citation, not doubt about who issued the material.
 
+The table is currently empty. RBC held the one row, and it moved to Confirmed Direct Support on
+2026-10-20 when the company's own interview pack was located. The classification itself stays
+available for a future lens whose only company-issued basis is an uncitable official-site
+distillation, and it stays subject to the same evidence that the collection channel is the
+company's own site.
+
 Do not move a row here to make a weak source look stronger. A row qualifies only when the
 company's own site is the recorded collection channel and the lens carries that attestation.
 
 | Company | Signal | Recorded channel | Open item |
 | --- | --- | --- | --- |
-| RBC | Uses concrete behavioral evidence rather than generic banking or brand interest | De-identified distillation from RBC's own official site (owner-confirmed 2026-10-20); the lens also cites RBC's purpose/values page and candidate FAQ | RBC publishes no page stating the behavioural-specificity criterion, so the signal rests on the distilled official-site material; article-level URLs are withheld by policy |
 
 ### Weak-Support Register
 

@@ -199,11 +199,13 @@ class WeakSupportRegisterTests(unittest.TestCase):
 
         Owner-confirmed is a claim that the company's own site is the collection channel, so the
         lens has to record that confirmation. Without this guard the section becomes a place to
-        park anything that needs a better source.
+        park anything that needs a better source. The section may legitimately hold no rows: a
+        lens that gets a citable company page moves to Confirmed Direct Support, and the last
+        such lens did exactly that on 2026-10-20.
         """
         weak = {row[0] for row in self.register_rows()}
         owner_confirmed = self.section_rows("### Owner-Confirmed Company Source")
-        self.assertTrue(owner_confirmed, "owner-confirmed section disappeared")
+        self.assertIsInstance(owner_confirmed, list, "owner-confirmed section disappeared")
 
         for cells in owner_confirmed:
             company, signal = cells[0], cells[1]
