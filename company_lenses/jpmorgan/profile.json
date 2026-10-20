@@ -96,7 +96,8 @@
       "confidence": 0.7,
       "evidence_ids": [
         "JPMC-PRIV-001",
-        "JPMC-HIRE-001"
+        "JPMC-HIRE-001",
+        "JPMC-HIRE-002"
       ],
       "basis": "stated_by_company"
     }

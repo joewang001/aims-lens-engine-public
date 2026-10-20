@@ -15,6 +15,7 @@ Status: v0.1 synthesized.
 | BMO-RISK-002 | risk_context | Private evidence scarcity risk | n/a | 2026-05-04 | 0.50 | Only one private interview item; avoid overfitting. |
 | BMO-PUBLIC-COMMUNITY-001 | public_interview_experience | Public interview-experience aggregate: BMO | n/a | 2026-05-04 | 0.64 | Public interview evidence points to medium-difficulty, average processes with behavior-focused interviews, technical skill reviews for some roles, customer-service experience, teamwork, problem solving, accomplishments, and career-goal themes. |
 | BMO-PUBLIC-COMMUNITY-002 | employee_review | Public employee-review/community aggregate: BMO | n/a | 2026-05-04 | 0.57 | Public employee/community signals are mixed: supportive teams, learning, and benefits appear alongside sales pressure, micromanagement, under-staffing, technology/process friction, and client-suitability concerns. |
+| BMO-HIRE-002 | official_careers | How to Ace Your Interviews with a C.A.R.T. Story (BMO careers blog) | 2026-10-20 | 0.88 | BMO careers blog states that most recruiters use behavioural interviewing techniques, including at BMO, and that this is how BMO learns about a candidate's past behaviour in situations similar to the target role; it prescribes a Challenge/Action/Result/Tie-in story structure with quantified results. |
 
 ## Notes
 
@@ -22,7 +23,8 @@ Private materials are included only as aggregate distilled patterns. Raw article
 
 ## Public Source URLs
 
+- https://jobs.bmo.com/ca/en/blogarticle/one-key-way-to-ace-your-interview
 - https://www.bmo.com/en-ca/main/about-bmo/
 - https://jobs.bmo.com/ca/en
 
-The private-material distillations in this lens were harvested from BMO's own official website (owner-confirmed 2026-10-20). Only the official domains are recorded here; article-level URLs are not committed, and no article text, copied questions, or author details are stored.
+The private-material distillations in this lens were harvested from BMO's own official website (owner-confirmed 2026-10-20); article-level URLs for that private material are not committed. Publicly published guidance pages that state the interview expectation are cited above by URL, with no copied question text or author details stored.

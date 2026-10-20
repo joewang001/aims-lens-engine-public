@@ -16,6 +16,7 @@ Status: v0.1 synthesized.
 | CIBC-RISK-002 | risk_context | Limited private interview volume risk | n/a | 2026-05-04 | 0.50 | Only three private entries; process claims remain bounded. |
 | CIBC-PUBLIC-COMMUNITY-001 | public_interview_experience | Public interview-experience aggregate: CIBC | n/a | 2026-05-04 | 0.65 | Public interview evidence points to medium-difficulty, generally favorable processes with virtual or face-to-face interviews, customer-service scenarios, sales role-play for retail roles, stress tolerance, and role-specific technical expectations. |
 | CIBC-PUBLIC-COMMUNITY-002 | employee_review | Public employee-review/community aggregate: CIBC | n/a | 2026-05-04 | 0.6 | Public employee-review signals are mixed: supportive environment, inclusion, and appreciation appear alongside sales targets, micromanagement, approval/process bureaucracy, and compensation pressure. |
+| CIBC-HIRE-002 | official_careers | CIBC hiring process and interview tips | 2026-10-20 | 0.88 | CIBC hiring-process page tells candidates to demonstrate impact with specific examples of their contribution in past roles and to cover each element of the STAR acronym (Situation, Task, Action, Results). |
 
 ## Notes
 
@@ -23,7 +24,8 @@ Private materials are included only as aggregate distilled patterns. Raw article
 
 ## Public Source URLs
 
+- https://www.cibc.com/en/about-cibc/careers/hiring-process.html
 - https://www.cibc.com/en/about-cibc.html
 - https://www.cibc.com/en/about-cibc/careers.html
 
-The private-material distillations in this lens were harvested from CIBC's own official website (owner-confirmed 2026-10-20). Only the official domains are recorded here; article-level URLs are not committed, and no article text, copied questions, or author details are stored.
+The private-material distillations in this lens were harvested from CIBC's own official website (owner-confirmed 2026-10-20); article-level URLs for that private material are not committed. Publicly published guidance pages that state the interview expectation are cited above by URL, with no copied question text or author details stored.

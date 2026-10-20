@@ -20,6 +20,7 @@ Status: v0.1 synthesized.
 | RBC-JD-002 | recruiting_material | RBC careers job posting aggregate - risk, audit, control, and compliance demand | 2026-05-09 | 2026-05-09 | 0.76 | Risk, compliance, controls, regulation, audit, and governance signals appear prominently, especially in internal audit, financial control, project, and operations postings. |
 | RBC-JD-003 | recruiting_material | RBC careers job posting aggregate - wealth, banking operations, and client-account administration demand | 2026-05-09 | 2026-05-09 | 0.74 | Wealth management, client experience, branch, account administration, relationship management, and operations postings emphasize trusted client service, documentation discipline, time management, and stakeholder coordination. |
 | RBC-JD-004 | recruiting_material | RBC careers job posting aggregate - process ownership, transformation, finance/control, and project execution demand | 2026-05-09 | 2026-05-09 | 0.72 | Process owner, project control, business analyst, financial control, product control, and operations postings emphasize process improvement, controls, stakeholder management, and execution discipline. |
+| RBC-HIRE-002 | official_careers | RBC candidate FAQ (application and assessment process) | 2026-10-20 | 0.7 | RBC candidate FAQ covers application, assessment and interview logistics but does not state what interviewers look for; no RBC page stating a behavioural-evidence criterion was found. |
 
 ## Notes
 
@@ -29,7 +30,8 @@ RBC job posting evidence is included only as aggregate hiring-demand signal. Raw
 
 ## Public Source URLs
 
+- https://www.rbc.com/careers/docs/search-for-careers-help.pdf
 - https://www.rbc.com/about-rbc.html
 - https://jobs.rbc.com/ca/en
 
-The private-material distillations in this lens were harvested from RBC's own official website (owner-confirmed 2026-10-20). Only the official domains are recorded here; article-level URLs are not committed, and no article text, copied questions, or author details are stored.
+The private-material distillations in this lens were harvested from RBC's own official website (owner-confirmed 2026-10-20); article-level URLs for that private material are not committed. Publicly published guidance pages that state the interview expectation are cited above by URL, with no copied question text or author details stored.
