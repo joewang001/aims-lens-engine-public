@@ -32,4 +32,10 @@ Public community materials are included only as aggregate signals. Public snippe
 - https://www.jpmorganchase.com/about
 - https://www.jpmorganchase.com/careers
 
-The private-material distillations in this lens were harvested from JPMorgan Chase's own official website (owner-confirmed 2026-10-20); article-level URLs for that private material are not committed. Publicly published guidance pages that state the interview expectation are cited above by URL, with no copied question text or author details stored.
+The private-material distillations in this lens are recorded in the table above as a Medium
+aggregate (JPMC-PRIV-001 to JPMC-PRIV-003). An earlier note in this file described them as harvested from JPMorgan Chase's own
+official website (owner-confirmed 2026-10-20); that attestation is withdrawn because the
+collection channel could not be confirmed. The sets are treated as third-party material and are
+not company-issued at any support strength, so no signal may rest on them alone for a
+`stated_by_company` basis. If the official-site channel is later confirmed, restore the
+attestation and re-classify rather than leaving both claims in the file.
