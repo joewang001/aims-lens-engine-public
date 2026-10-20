@@ -140,6 +140,22 @@ def default_hiring_signals(packet: dict[str, Any]) -> list[dict[str, Any]]:
     ]
 
 
+def merge_hiring_signals(current: list[dict[str, Any]], incoming: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Retain reviewed provenance only for an unchanged claim and evidence set."""
+    known = {item["signal"]: item for item in current}
+    prepared = []
+    for item in incoming:
+        item = dict(item)
+        previous = known.get(item.get("signal"), {})
+        if "basis" not in item and set(item.get("evidence_ids", [])) == set(previous.get("evidence_ids", [])):
+            if previous.get("basis"):
+                item["basis"] = previous["basis"]
+        if item.get("basis") not in {"stated_by_company", "derived_public_inference", "generic_public_default"}:
+            raise ValueError(f"Hiring signal requires explicit basis before applying packet: {item.get('signal')}")
+        prepared.append(item)
+    return merge_mapping_list(current, prepared, identity_key="signal")
+
+
 def default_anti_signals(packet: dict[str, Any]) -> list[dict[str, Any]]:
     ids = evidence_ids(packet)
     return [
@@ -170,6 +186,7 @@ def create_company_lens(packet: dict[str, Any]) -> list[Path]:
     if company_dir.exists():
         return update_company_lens(packet)
 
+    incoming_signals = merge_hiring_signals([], list(packet["lens_updates"].get("hiring_signals") or default_hiring_signals(packet)))
     company_dir.mkdir(parents=True)
     cutoff = source_cutoff(packet)
     profile_data = packet.get("company_profile") if isinstance(packet.get("company_profile"), dict) else {}
@@ -188,7 +205,7 @@ def create_company_lens(packet: dict[str, Any]) -> list[Path]:
         "company_stage": str(profile_data.get("company_stage") or "public company"),
         "culture_principles": list(updates.get("culture_principles") or default_culture_principles(packet)),
         "aims_weighting": dict(AIMS_WEIGHTING),
-        "hiring_signals": list(updates.get("hiring_signals") or default_hiring_signals(packet)),
+        "hiring_signals": incoming_signals,
         "anti_signals": list(updates.get("anti_signals") or default_anti_signals(packet)),
         "interview_patterns": [
             {
@@ -349,6 +366,9 @@ def merge_mapping_list(
 
 def update_company_lens(packet: dict[str, Any]) -> list[Path]:
     company_dir = COMPANY_LENSES / str(packet["company_slug"])
+    original = load_json(company_dir / "profile.json")
+    updates = packet.get("lens_updates") or {}
+    incoming_signals = merge_hiring_signals(list(original.get("hiring_signals") or []), list(updates.get("hiring_signals") or []))
     changed: list[Path] = []
     evidence_path = company_dir / "evidence.md"
     before = evidence_path.read_text(encoding="utf-8") if evidence_path.exists() else ""
@@ -374,11 +394,7 @@ def update_company_lens(packet: dict[str, Any]) -> list[Path]:
         list(updates.get("culture_principles") or []),
         identity_key="name",
     )
-    profile["hiring_signals"] = merge_mapping_list(
-        list(profile.get("hiring_signals") or []),
-        list(updates.get("hiring_signals") or []),
-        identity_key="signal",
-    )
+    profile["hiring_signals"] = incoming_signals
     profile["anti_signals"] = merge_mapping_list(
         list(profile.get("anti_signals") or []),
         list(updates.get("anti_signals") or []),

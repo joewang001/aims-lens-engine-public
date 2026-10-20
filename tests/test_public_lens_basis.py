@@ -66,6 +66,15 @@ class HiringSignalBasisTests(unittest.TestCase):
                         f"{path.name} claims a company-stated signal with no company-issued source: {cited}",
                     )
 
+    def test_packet_replay_preserves_basis_only_with_unchanged_evidence(self):
+        reviewed = {"signal": "A reviewed claim", "evidence_ids": ["FIX-001"], "basis": "stated_by_company"}
+        legacy = {key: value for key, value in reviewed.items() if key != "basis"}
+        self.assertEqual(generator.merge_hiring_signals([reviewed], [legacy]), [reviewed])
+        for incoming in [dict(legacy, evidence_ids=["FIX-002"]), dict(legacy, signal="A new claim"), dict(legacy, basis="invalid")]:
+            with self.subTest(incoming=incoming), self.assertRaisesRegex(ValueError, "explicit basis"):
+                generator.merge_hiring_signals([reviewed], [incoming])
+
+
 
 class PublicInferredDisclosureTests(unittest.TestCase):
     def test_every_public_lens_discloses_it_is_not_official(self):
