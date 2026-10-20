@@ -194,6 +194,44 @@ class WeakSupportRegisterTests(unittest.TestCase):
                     f"{company} claims confirmed direct support without citing an official careers page",
                 )
 
+    def test_owner_confirmed_rows_carry_the_attestation(self):
+        """Provenance-settled signals stay out of the weak register, but only with a real attestation.
+
+        Owner-confirmed is a claim that the company's own site is the collection channel, so the
+        lens has to record that confirmation. Without this guard the section becomes a place to
+        park anything that needs a better source.
+        """
+        weak = {row[0] for row in self.register_rows()}
+        owner_confirmed = self.section_rows("### Owner-Confirmed Company Source")
+        self.assertTrue(owner_confirmed, "owner-confirmed section disappeared")
+
+        for cells in owner_confirmed:
+            company, signal = cells[0], cells[1]
+            with self.subTest(company=company):
+                self.assertNotIn(
+                    company, weak, f"{company} is listed as both owner-confirmed and weak support"
+                )
+                path = next(
+                    (p for p in lens_dirs()
+                     if json.loads((p / "profile.json").read_text(encoding="utf-8")).get("company") == company),
+                    None,
+                )
+                self.assertIsNotNone(path, f"{company} has no lens")
+                profile = json.loads((path / "profile.json").read_text(encoding="utf-8"))
+                match = [
+                    item for item in profile.get("hiring_signals", [])
+                    if item.get("signal", "").startswith(signal[:40])
+                ]
+                self.assertTrue(match, f"{company} has no signal starting with {signal[:40]!r}")
+                self.assertEqual(match[0].get("basis"), "stated_by_company")
+
+                evidence = (path / "evidence.md").read_text(encoding="utf-8")
+                self.assertIn(
+                    "owner-confirmed",
+                    evidence,
+                    f"{company} is listed as owner-confirmed without recording the attestation in evidence.md",
+                )
+
 
 
 if __name__ == "__main__":

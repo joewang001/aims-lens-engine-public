@@ -71,9 +71,13 @@ company stated the criterion; the summary only limits how much text is stored.
 
 The five bank entries were re-checked against the banks' own careers sites on 2026-10-20. BMO,
 CIBC and Scotiabank publish a page that states the behavioural-evidence expectation outright,
-so their signals now cite that page and are direct support. JPMorgan Chase and RBC publish
-interview-process material without stating a behavioural-specificity criterion, so they stay
-in the register.
+so their signals now cite that page and are direct support.
+
+Weak support is a statement about **how the claim is supported**, not about whether the source
+belongs to the company. A distillation of material harvested from the company's own site has a
+settled source identity even when the repository cannot cite an article URL, so it is not weak
+on provenance grounds. It is recorded under Owner-Confirmed Company Source instead, where the
+missing piece is a public citation rather than certainty about the source.
 
 ### Confirmed Direct Support
 
@@ -87,17 +91,32 @@ the upgrade is visible without re-reading every lens.
 | CIBC | cibc.com hiring process, "Tips for the interview process" | Demonstrate impact with specific examples of past contribution, covering Situation, Task, Action and Results |
 | Scotiabank | scotiabank.com careers blog, "Talent Tip - 5 Tips to Mastering the Interview Process" | Interviewers may ask behavioural questions to assess how well a candidate handled specific past situations |
 
+### Owner-Confirmed Company Source
+
+These signals derive from de-identified distillation of material published on the company's own
+official website. The owner confirmed the collection channel on 2026-10-20, so source identity is
+settled; the article-level URLs are deliberately not committed, in line with the standing rule
+that private source URLs are not published. They are `stated_by_company` on provenance grounds,
+not weak support: the open item is a public citation, not doubt about who issued the material.
+
+Do not move a row here to make a weak source look stronger. A row qualifies only when the
+company's own site is the recorded collection channel and the lens carries that attestation.
+
+| Company | Signal | Recorded channel | Open item |
+| --- | --- | --- | --- |
+| RBC | Uses concrete behavioral evidence rather than generic banking or brand interest | De-identified distillation from RBC's own official site (owner-confirmed 2026-10-20); the lens also cites RBC's purpose/values page and candidate FAQ | RBC publishes no page stating the behavioural-specificity criterion, so the signal rests on the distilled official-site material; article-level URLs are withheld by policy |
+
 ### Weak-Support Register
 
 Reviewed against their cited evidence on 2026-10-20, and re-reviewed after the three upgrades
-above. These signals rest on positioning material, or on process material that stops short of
-stating a criterion, and are retained as `stated_by_company` under the Support Strength Rule.
-Record additions here when a review finds the same pattern.
+and the RBC reclassification above. The remaining rows rest on positioning material, or on
+process material that stops short of stating a criterion, and are retained as
+`stated_by_company` under the Support Strength Rule. Record additions here when a review finds
+the same pattern.
 
 | Company | Signal | Company-issued source | Why it is weak |
 | --- | --- | --- | --- |
-| JPMorgan Chase | Uses concrete behavioral evidence rather than generic banking or brand interest | how-we-hire page; interview preparation material | Describes interview rounds and recorded interviews, and advises being yourself; no statement about behavioural specificity |
-| RBC | Uses concrete behavioral evidence rather than generic banking or brand interest | RBC Purpose, Vision and Values; candidate FAQ | Values page states purpose and the FAQ covers process logistics; neither states what interviewers look for |
+| JPMorgan Chase | Uses concrete behavioral evidence rather than generic banking or brand interest | how-we-hire page; interview preparation material | Its public pages describe interview rounds and recorded interviews and advise being yourself, with no statement about behavioural specificity. Source identity of the distilled material is owner-confirmed, so this row is about the missing public citation rather than provenance; it is held here pending an explicit classification decision instead of being moved unilaterally |
 | Accenture | Explains technology choices through client outcomes, delivery constraints, and measurable business value | Homepage, software engineering careers, investor relations | Business positioning implies client-outcome focus; no stated interview criterion |
 | Adobe | Connects product or craft decisions to customer workflows and business outcomes | Homepage, investor relations, about page | Customer-outcome positioning, not a stated evaluation standard |
 | Amazon | For BIE and analytics roles, defines metrics clearly, validates data, communicates uncertainty, and converts analysis into decisions | Product Manager interview prep (with candidate-reported and private sources) | Role-adjacent preparation guidance; the specific analytical bar is inferred |
