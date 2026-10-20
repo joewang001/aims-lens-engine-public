@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-19",
+  "source_cutoff": "2026-10-20",
   "industries": [
     "technology",
     "creative software",
@@ -39,10 +39,10 @@
     },
     {
       "name": "Create the future",
-      "description": "Adobe frames innovation as relentless customer centricity: anticipating unmet or unknown needs and inventing beyond the current product category.",
+      "description": "Adobe frames generative AI as assisting and amplifying human ingenuity, with responsible development and respect for creator rights, extending its customer-centric innovation stance.",
       "confidence": 0.8,
       "evidence_ids": [
-        "ADOBE-VALUES-004",
+        "ADOBE-AI-010",
         "ADOBE-ABOUT-008"
       ]
     },
@@ -73,11 +73,37 @@
     },
     {
       "name": "Creativity as a company-wide capability",
-      "description": "Adobe states that everyone is creative and that great ideas can come from anywhere in the organization, not only from designated creative roles.",
-      "confidence": 0.7,
+      "description": "Adobe for All states that great ideas can come from anywhere and that respected, included people are more creative, innovative, and successful.",
+      "confidence": 0.78,
       "evidence_ids": [
-        "ADOBE-CAREERS-002",
+        "ADOBE-CSR-011",
         "ADOBE-ALL-006"
+      ]
+    },
+    {
+      "name": "Responsible technology as a product commitment",
+      "description": "Adobe connects responsible technology to AI ethics, security, privacy, trust, accessibility, and sustainability, not only to legal compliance.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ADOBE-CSR-011",
+        "ADOBE-ABOUT-008"
+      ]
+    },
+    {
+      "name": "Creativity for all",
+      "description": "Adobe describes supporting creators of all ages, backgrounds, and skill levels so they can express themselves and build careers.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ADOBE-CSR-011"
+      ]
+    },
+    {
+      "name": "Scale across diversified customer workflows",
+      "description": "Adobe presents itself as a diversified software company serving creators, businesses, and enterprises across creativity, productivity, and personalization.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ADOBE-IR-009",
+        "ADOBE-OFFICIAL-001"
       ]
     }
   ],
@@ -127,8 +153,7 @@
       "confidence": 0.8,
       "evidence_ids": [
         "ADOBE-HIRING-005"
-      ],
-      "basis": "stated_by_company"
+      ]
     },
     {
       "signal": "Prepares specific examples with measurable impact and asks thoughtful questions about the role's impact and team dynamics.",
@@ -139,8 +164,7 @@
       "confidence": 0.8,
       "evidence_ids": [
         "ADOBE-HIRING-005"
-      ],
-      "basis": "stated_by_company"
+      ]
     },
     {
       "signal": "Demonstrates problem-solving in the format the role uses, such as coding and system design, creative briefs and design thinking, or scenario-based discussion.",
@@ -152,8 +176,7 @@
       "evidence_ids": [
         "ADOBE-HIRING-005",
         "ADOBE-DEVBLOG-007"
-      ],
-      "basis": "stated_by_company"
+      ]
     },
     {
       "signal": "Shows eagerness to learn and apply AI within the craft as tools and workflows evolve.",
@@ -165,8 +188,7 @@
       "evidence_ids": [
         "ADOBE-HIRING-005",
         "ADOBE-ABOUT-008"
-      ],
-      "basis": "stated_by_company"
+      ]
     },
     {
       "signal": "Connects product or craft decisions to customer workflows and business outcomes.",
@@ -179,8 +201,43 @@
         "ADOBE-OFFICIAL-001",
         "ADOBE-IR-003",
         "ADOBE-ABOUT-008"
+      ]
+    },
+    {
+      "signal": "Shows how AI or platform work improved a real customer workflow, including quality, trust, or adoption evidence.",
+      "aims_dimensions": [
+        "impact_results",
+        "analytical_problem_solving"
       ],
-      "basis": "stated_by_company"
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ADOBE-AI-010",
+        "ADOBE-ABOUT-008"
+      ]
+    },
+    {
+      "signal": "Explains governance or trust tradeoffs in product decisions, such as privacy, content authenticity, or responsible AI.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ADOBE-CSR-011",
+        "ADOBE-ABOUT-008"
+      ]
+    },
+    {
+      "signal": "Shows inclusive collaboration by inviting ideas from people outside their discipline or level.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ADOBE-CSR-011",
+        "ADOBE-ALL-006"
+      ]
     }
   ],
   "anti_signals": [
@@ -218,6 +275,32 @@
         "ADOBE-HIRING-005",
         "ADOBE-ABOUT-008"
       ]
+    },
+    {
+      "anti_signal": "Framing AI only as a way to replace human craft rather than extend it.",
+      "risk_reason": "Adobe publicly frames AI as assisting and amplifying human ingenuity; this is a culture-fit signal, not an official disqualifier.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "ADOBE-AI-010"
+      ]
+    },
+    {
+      "anti_signal": "Treating trust, privacy, or content provenance as someone else's problem in product work.",
+      "risk_reason": "Adobe ties responsible technology to AI ethics, privacy, trust, and content authenticity across its product work.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ADOBE-CSR-011",
+        "ADOBE-ABOUT-008"
+      ]
+    },
+    {
+      "anti_signal": "Crediting only a single creative genius for outcomes that required cross-functional adoption.",
+      "risk_reason": "Adobe states that great ideas come from anywhere and emphasizes inclusive, cross-functional creativity.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "ADOBE-CSR-011",
+        "ADOBE-ALL-006"
+      ]
     }
   ],
   "interview_patterns": [
@@ -235,11 +318,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 8,
-    "official_source_count": 8,
+    "source_count": 11,
+    "official_source_count": 11,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-19"
+    "last_reviewed": "2026-10-20"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Adobe hiring standard.",

@@ -1,7 +1,7 @@
 {
   "company_slug": "adobe",
   "company": "Adobe",
-  "collected_at": "2026-10-19T04:20:00Z",
+  "collected_at": "2026-10-20T13:33:41Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -132,16 +132,56 @@
       ],
       "evidence_id": "ADOBE-ABOUT-008",
       "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_investor_relations",
+      "title": "Adobe Investor Relations",
+      "url": "https://www.adobe.com/investor-relations.html",
+      "confidence": 0.8,
+      "public_safe_signal": "Adobe's investor page describes a diversified software company with more than 30,000 employees and fiscal 2025 revenue of $23.77 billion, positioned around creativity, productivity, and personalized customer experiences.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "ADOBE-IR-009",
+      "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_company",
+      "title": "Adobe AI Overview",
+      "url": "https://www.adobe.com/ai/overview.html",
+      "confidence": 0.76,
+      "public_safe_signal": "Adobe's AI overview says generative AI should assist and amplify human ingenuity and commits to responsible development with respect for creator rights.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "ADOBE-AI-010",
+      "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_company",
+      "title": "Corporate Social Responsibility at Adobe",
+      "url": "https://www.adobe.com/corporate-responsibility.html",
+      "confidence": 0.76,
+      "public_safe_signal": "Adobe's responsibility page ties Adobe for All to the belief that great ideas come from anywhere and that respected, included people are more creative; it links responsible technology to AI ethics, security, privacy, trust, accessibility, and sustainability.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "ADOBE-CSR-011",
+      "date_accessed": "2026-10-20"
     }
   ],
   "lens_updates": {
     "culture_principles": [
       {
         "name": "Create the future",
-        "description": "Adobe frames innovation as relentless customer centricity: anticipating unmet or unknown needs and inventing beyond the current product category.",
+        "description": "Adobe frames generative AI as assisting and amplifying human ingenuity, with responsible development and respect for creator rights, extending its customer-centric innovation stance.",
         "confidence": 0.8,
         "evidence_ids": [
-          "ADOBE-VALUES-004",
+          "ADOBE-AI-010",
           "ADOBE-ABOUT-008"
         ]
       },
@@ -172,11 +212,37 @@
       },
       {
         "name": "Creativity as a company-wide capability",
-        "description": "Adobe states that everyone is creative and that great ideas can come from anywhere in the organization, not only from designated creative roles.",
-        "confidence": 0.7,
+        "description": "Adobe for All states that great ideas can come from anywhere and that respected, included people are more creative, innovative, and successful.",
+        "confidence": 0.78,
         "evidence_ids": [
-          "ADOBE-CAREERS-002",
+          "ADOBE-CSR-011",
           "ADOBE-ALL-006"
+        ]
+      },
+      {
+        "name": "Responsible technology as a product commitment",
+        "description": "Adobe connects responsible technology to AI ethics, security, privacy, trust, accessibility, and sustainability, not only to legal compliance.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ADOBE-CSR-011",
+          "ADOBE-ABOUT-008"
+        ]
+      },
+      {
+        "name": "Creativity for all",
+        "description": "Adobe describes supporting creators of all ages, backgrounds, and skill levels so they can express themselves and build careers.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ADOBE-CSR-011"
+        ]
+      },
+      {
+        "name": "Scale across diversified customer workflows",
+        "description": "Adobe presents itself as a diversified software company serving creators, businesses, and enterprises across creativity, productivity, and personalization.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ADOBE-IR-009",
+          "ADOBE-OFFICIAL-001"
         ]
       }
     ],
@@ -239,6 +305,42 @@
           "ADOBE-IR-003",
           "ADOBE-ABOUT-008"
         ]
+      },
+      {
+        "signal": "Shows how AI or platform work improved a real customer workflow, including quality, trust, or adoption evidence.",
+        "aims_dimensions": [
+          "impact_results",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ADOBE-AI-010",
+          "ADOBE-ABOUT-008"
+        ]
+      },
+      {
+        "signal": "Explains governance or trust tradeoffs in product decisions, such as privacy, content authenticity, or responsible AI.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication"
+        ],
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ADOBE-CSR-011",
+          "ADOBE-ABOUT-008"
+        ]
+      },
+      {
+        "signal": "Shows inclusive collaboration by inviting ideas from people outside their discipline or level.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ADOBE-CSR-011",
+          "ADOBE-ALL-006"
+        ]
       }
     ],
     "anti_signals": [
@@ -265,6 +367,32 @@
         "evidence_ids": [
           "ADOBE-HIRING-005",
           "ADOBE-ABOUT-008"
+        ]
+      },
+      {
+        "anti_signal": "Framing AI only as a way to replace human craft rather than extend it.",
+        "risk_reason": "Adobe publicly frames AI as assisting and amplifying human ingenuity; this is a culture-fit signal, not an official disqualifier.",
+        "confidence": 0.68,
+        "evidence_ids": [
+          "ADOBE-AI-010"
+        ]
+      },
+      {
+        "anti_signal": "Treating trust, privacy, or content provenance as someone else's problem in product work.",
+        "risk_reason": "Adobe ties responsible technology to AI ethics, privacy, trust, and content authenticity across its product work.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ADOBE-CSR-011",
+          "ADOBE-ABOUT-008"
+        ]
+      },
+      {
+        "anti_signal": "Crediting only a single creative genius for outcomes that required cross-functional adoption.",
+        "risk_reason": "Adobe states that great ideas come from anywhere and emphasizes inclusive, cross-functional creativity.",
+        "confidence": 0.68,
+        "evidence_ids": [
+          "ADOBE-CSR-011",
+          "ADOBE-ALL-006"
         ]
       }
     ],
@@ -313,6 +441,44 @@
           "Describes the change and adoption path.",
           "Reflects on what the result revealed about the next opportunity."
         ]
+      },
+      {
+        "type": "responsible_ai_behavioral",
+        "generated_question": "Describe a product decision where you had to balance AI capability with creator trust, provenance, or privacy. What did you decide?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names the specific trust or rights issue at stake.",
+          "Explains the evidence and stakeholders considered.",
+          "Describes the tradeoff and how it was communicated.",
+          "Shows the outcome and any residual risk."
+        ],
+        "evidence_ids": [
+          "ADOBE-AI-010",
+          "ADOBE-CSR-011"
+        ]
+      },
+      {
+        "type": "workflow_impact_behavioral",
+        "generated_question": "Tell me about a time you improved a creator or business workflow and could show adoption, not just launch.",
+        "aims_dimensions": [
+          "impact_results",
+          "analytical_problem_solving",
+          "growth_mindset"
+        ],
+        "strong_answer_signals": [
+          "Defines the workflow and customer segment clearly.",
+          "Explains the evidence used to prioritize the change.",
+          "Describes adoption work across teams or users.",
+          "Quantifies quality, efficiency, or business impact."
+        ],
+        "evidence_ids": [
+          "ADOBE-IR-009",
+          "ADOBE-HIRING-005"
+        ]
       }
     ],
     "role_overlays": [
@@ -331,6 +497,18 @@
           "Builds or migrates extensibility platforms with attention to security, architecture, and backward compatibility.",
           "Demonstrates depth through coding challenges, system design, and code or portfolio evidence.",
           "Works across product teams, third-party developers, and partner ecosystems."
+        ]
+      },
+      {
+        "role_slug": "responsible_ai_and_trust",
+        "role_family": "AI, trust, and content authenticity roles",
+        "signals": [
+          "Connects model or product choices to creator rights, provenance, privacy, and customer trust.",
+          "Shows how responsible-AI commitments survive real delivery constraints."
+        ],
+        "evidence_ids": [
+          "ADOBE-AI-010",
+          "ADOBE-CSR-011"
         ]
       }
     ]

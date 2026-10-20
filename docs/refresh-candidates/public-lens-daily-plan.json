@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-10-19T04:16:21Z",
-  "run_date": "2026-10-19",
-  "weekday": 0,
+  "generated_at": "2026-10-20T13:35:27Z",
+  "run_date": "2026-10-20",
+  "weekday": 1,
   "week_start": "2026-10-19",
   "focus_dimensions": [
-    "weekly_expansion"
+    "company_says",
+    "evidence_valued"
   ],
-  "weekly_new_company_targets": [],
+  "weekly_new_company_targets": [
+    "bain",
+    "bcg"
+  ],
   "historical_company_targets": [
-    "amd",
-    "costco"
+    "accenture",
+    "adobe"
   ],
-  "open_gap_count": 67,
+  "open_gap_count": 0,
   "rules": {
     "weekly_new_company_target": 2,
     "daily_historical_company_target": 2,

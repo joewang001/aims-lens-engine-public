@@ -82,6 +82,46 @@
         "ADOBE-DEVBLOG-007",
         "ADOBE-ABOUT-008"
       ]
+    },
+    {
+      "question_id": "ADOBE-Q-004",
+      "type": "responsible_ai_behavioral",
+      "generated_question": "Describe a product decision where you had to balance AI capability with creator trust, provenance, or privacy. What did you decide?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names the specific trust or rights issue at stake.",
+        "Explains the evidence and stakeholders considered.",
+        "Describes the tradeoff and how it was communicated.",
+        "Shows the outcome and any residual risk."
+      ],
+      "evidence_ids": [
+        "ADOBE-AI-010",
+        "ADOBE-CSR-011"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-005",
+      "type": "workflow_impact_behavioral",
+      "generated_question": "Tell me about a time you improved a creator or business workflow and could show adoption, not just launch.",
+      "aims_dimensions": [
+        "impact_results",
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Defines the workflow and customer segment clearly.",
+        "Explains the evidence used to prioritize the change.",
+        "Describes adoption work across teams or users.",
+        "Quantifies quality, efficiency, or business impact."
+      ],
+      "evidence_ids": [
+        "ADOBE-IR-009",
+        "ADOBE-HIRING-005"
+      ]
     }
   ]
 }

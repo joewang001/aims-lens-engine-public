@@ -1,7 +1,7 @@
 {
   "company_slug": "bain",
   "company": "Bain & Company",
-  "collected_at": "2026-10-19T16:29:24Z",
+  "collected_at": "2026-10-20T13:33:41Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -48,12 +48,191 @@
       ],
       "evidence_id": "BAIN-CAREERS-002",
       "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_company",
+      "title": "About Bain & Company",
+      "url": "https://www.bain.com/about/",
+      "confidence": 0.78,
+      "public_safe_signal": "Bain publicly describes itself around candor, collaboration, and results that last, working alongside clients on strategy, technology, and large-scale transformation across a global office network.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "BAIN-ABOUT-003",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Our Hiring Process",
+      "url": "https://www.bain.com/careers/hiring-process/",
+      "confidence": 0.8,
+      "public_safe_signal": "Bain's hiring process page says each step exists for a purpose, feedback uses an objective scoring system, interviews are tailored to the role, may include behavioral or case interviews, and candidates learn how each interview went.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "evidence_valued"
+      ],
+      "evidence_id": "BAIN-HIRING-004",
+      "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Supporting Your Growth",
+      "url": "https://www.bain.com/careers/life-at-bain/supporting-your-growth/",
+      "confidence": 0.78,
+      "public_safe_signal": "Bain describes a coaching and apprenticeship culture with formal training, career guidance, wellbeing resources, inclusive leadership training, affinity groups, and separate consulting, client-delivery expert, and functional career tracks.",
+      "dimensions": [
+        "company_says",
+        "role_variation"
+      ],
+      "evidence_id": "BAIN-GROWTH-005",
+      "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_company",
+      "title": "Our People",
+      "url": "https://www.bain.com/about/our-people/",
+      "confidence": 0.76,
+      "public_safe_signal": "Bain's people page emphasizes teamwork, trust, and tolerance for diverging opinions, and describes partners and office teams as client-first and collaborative.",
+      "dimensions": [
+        "company_says",
+        "company_judges"
+      ],
+      "evidence_id": "BAIN-PEOPLE-006",
+      "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_company",
+      "title": "About Bain",
+      "url": "https://www.bain.com/about/",
+      "confidence": 0.82,
+      "public_safe_signal": "Bain's About page frames the firm around candor that fuels collaboration, technology paired with judgment, and work alongside clients on strategy, engineering, and change leadership. It says success is measured by clients' success and client advocacy.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "BAIN-ABOUT-007",
+      "date_accessed": "2026-10-20"
     }
   ],
   "lens_updates": {
-    "culture_principles": [],
-    "hiring_signals": [],
-    "anti_signals": [],
+    "culture_principles": [
+      {
+        "name": "Candor as a working norm",
+        "description": "Bain presents candor as the basis of collaboration and pairs teamwork and trust with tolerance for diverging opinions, so direct feedback and open disagreement are expected parts of the work.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "BAIN-ABOUT-007",
+          "BAIN-PEOPLE-006"
+        ]
+      },
+      {
+        "name": "Technology judgment paired with hands-on build",
+        "description": "Bain describes combining strategy with engineering and change leadership, and staffs teams that include engineers, AI experts, data scientists, and designers alongside strategists.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BAIN-ABOUT-007"
+        ]
+      },
+      {
+        "name": "Results that hold after the engagement",
+        "description": "Bain says it measures success by clients' success and points to client advocacy, so the lens treats adoption and durable client outcomes as the result rather than the deliverable.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "BAIN-ABOUT-007"
+        ]
+      },
+      {
+        "name": "Apprenticeship through generalist problem solving",
+        "description": "Bain describes a coaching and apprenticeship culture with personal champions, formal training, career guidance, and separate consulting, client-delivery expert, and functional tracks.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BAIN-GROWTH-005",
+          "BAIN-CAREERS-002"
+        ]
+      }
+    ],
+    "hiring_signals": [
+      {
+        "signal": "Explains the problem structure, the evidence gathered, and why alternative options were rejected, rather than only naming a framework.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BAIN-HIRING-004",
+          "BAIN-ABOUT-007"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Shows how direct feedback or a conflicting viewpoint changed their approach, consistent with Bain's stated tolerance for diverging opinions.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "confidence": 0.74,
+        "evidence_ids": [
+          "BAIN-PEOPLE-006",
+          "BAIN-GROWTH-005"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Connects a recommendation to implementation choices, organizational constraints, and whether the client actually adopted the change.",
+        "aims_dimensions": [
+          "impact_results",
+          "ownership_execution"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BAIN-ABOUT-007",
+          "BAIN-HIRING-004"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Works through a case-style problem step by step, states assumptions, and updates the answer when new data arrives.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "BAIN-HIRING-004"
+        ],
+        "basis": "derived_public_inference"
+      }
+    ],
+    "anti_signals": [
+      {
+        "anti_signal": "Describing impact only as a deliverable or slide deck, without evidence of client adoption or lasting change.",
+        "risk_reason": "Bain frames results that last and client advocacy, not output volume; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "BAIN-ABOUT-007"
+        ]
+      },
+      {
+        "anti_signal": "Presenting a polished recommendation while unable to explain the alternatives considered or what evidence would change it.",
+        "risk_reason": "Bain's hiring process points to objective scoring and case-style problem solving, which reward visible reasoning over a memorized answer.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "BAIN-HIRING-004",
+          "BAIN-ABOUT-007"
+        ]
+      },
+      {
+        "anti_signal": "Treating disagreement as a relationship problem rather than a source of better thinking.",
+        "risk_reason": "Bain publicly pairs teamwork and trust with tolerance for diverging opinions.",
+        "confidence": 0.68,
+        "evidence_ids": [
+          "BAIN-PEOPLE-006"
+        ]
+      }
+    ],
     "questions": [
       {
         "type": "behavioral",
@@ -69,6 +248,44 @@
           "Connects execution to a measurable result.",
           "Shows learning from feedback or changed conditions."
         ]
+      },
+      {
+        "type": "evidence_update_behavioral",
+        "generated_question": "Tell me about a time you changed a recommendation after new evidence or a dissenting view. What changed, and what happened?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "growth_mindset",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names the original recommendation and the evidence or view that challenged it.",
+          "Explains the reasoning used to decide what to change.",
+          "Shows how the change was communicated and adopted.",
+          "Reflects on what the episode changed in later work."
+        ],
+        "evidence_ids": [
+          "BAIN-HIRING-004",
+          "BAIN-PEOPLE-006"
+        ]
+      },
+      {
+        "type": "adoption_behavioral",
+        "generated_question": "Describe a piece of work where the stakeholder had to adopt the change for it to count. How did you make adoption happen?",
+        "aims_dimensions": [
+          "impact_results",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Distinguishes the recommendation from the adoption outcome.",
+          "Names the stakeholders and the constraints that made adoption difficult.",
+          "Describes concrete implementation and change-leadership actions.",
+          "Provides evidence that the change held after the engagement."
+        ],
+        "evidence_ids": [
+          "BAIN-ABOUT-007",
+          "BAIN-HIRING-004"
+        ]
       }
     ],
     "role_overlays": [
@@ -78,6 +295,18 @@
         "signals": [
           "Turns analysis into clear recommendations, aligned stakeholders, and measurable results.",
           "Shows practical teamwork, ownership, and adaptation as evidence changes."
+        ]
+      },
+      {
+        "role_slug": "ai_and_engineering_delivery",
+        "role_family": "AI, engineering, and delivery roles",
+        "signals": [
+          "Frames AI or engineering choices through the client's operating constraints, change leadership, and durable adoption.",
+          "Shows hands-on build evidence alongside strategic judgment rather than strategy alone."
+        ],
+        "evidence_ids": [
+          "BAIN-ABOUT-007",
+          "BAIN-GROWTH-005"
         ]
       }
     ]

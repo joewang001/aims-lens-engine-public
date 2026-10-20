@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-19",
-  "source_cutoff": "2026-10-19",
+  "source_cutoff": "2026-10-20",
   "industries": [
     "consulting",
     "strategy consulting",
@@ -48,11 +48,11 @@
     },
     {
       "name": "Strategy carried through to build",
-      "description": "The firm describes pairing strategy with engineering and delivery, which favors candidates who can move from recommendation to implementation detail.",
-      "confidence": 0.7,
+      "description": "BCG describes its people as practitioners with a bias for action and combines strategic insight with BCG X technology, design, and delivery, so strategy is expected to reach build and adoption.",
+      "confidence": 0.78,
       "evidence_ids": [
-        "BCG-ABOUT-003",
-        "BCG-OFFICIAL-001"
+        "BCG-ABOUT-007",
+        "BCG-WORK-006"
       ]
     },
     {
@@ -62,6 +62,40 @@
       "evidence_ids": [
         "BCG-CAREERS-002",
         "BCG-ABOUT-003"
+      ]
+    },
+    {
+      "name": "Bring insight to light",
+      "description": "BCG says it challenges traditional thinking and ways of operating and brings new perspectives to difficult problems.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BCG-ABOUT-007"
+      ]
+    },
+    {
+      "name": "Drive inspired impact beyond the next deadline",
+      "description": "BCG frames impact on a longer horizon and ties it to energizing client organizations, not just completing an engagement.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BCG-ABOUT-007"
+      ]
+    },
+    {
+      "name": "Lead with integrity and candor",
+      "description": "BCG says it confronts hard issues, stays true to its values, and states its views candidly and directly.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BCG-ABOUT-007",
+        "BCG-INTERVIEW-004"
+      ]
+    },
+    {
+      "name": "Grow by growing others",
+      "description": "BCG describes enabling clients, colleagues, and the broader community to build success and reach their potential.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BCG-ABOUT-007",
+        "BCG-WORK-006"
       ]
     }
   ],
@@ -139,6 +173,69 @@
         "BCG-ABOUT-003"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Structures a case answer explicitly, states assumptions, and adjusts the approach when the interviewer provides new data.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BCG-CASE-005"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Shows intellectual curiosity by asking questions that sharpen the problem rather than jumping straight to a solution.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BCG-INTERVIEW-004",
+        "BCG-CASE-005"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Demonstrates collaborative problem solving by building on hints and bringing the interviewer or client along the reasoning.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "structured_thinking"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BCG-INTERVIEW-004",
+        "BCG-CASE-005"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Backs claims with concrete achievements and explains the reasoning behind a recommendation, not only the conclusion.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BCG-INTERVIEW-004",
+        "BCG-ABOUT-007"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Connects the work to durable impact beyond the immediate deliverable and names who had to adopt it.",
+      "aims_dimensions": [
+        "impact_results",
+        "ownership_execution"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BCG-ABOUT-007"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -166,6 +263,31 @@
       "evidence_ids": [
         "BCG-ABOUT-003",
         "BCG-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Jumping to a framework or answer before clarifying the objective, constraints, and assumptions.",
+      "risk_reason": "BCG's case guidance asks candidates to structure the approach and clarify assumptions before analyzing; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BCG-CASE-005"
+      ]
+    },
+    {
+      "anti_signal": "Presenting a single right answer with no acknowledgment of tradeoffs or alternative hypotheses.",
+      "risk_reason": "BCG states that case interviews do not always have one right answer and that the quality of reasoning matters.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "BCG-CASE-005",
+        "BCG-ABOUT-007"
+      ]
+    },
+    {
+      "anti_signal": "Claiming impact without naming who adopted it or what changed durably.",
+      "risk_reason": "BCG's purpose language ties impact to lasting change for clients and communities.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "BCG-ABOUT-007"
       ]
     }
   ],
@@ -195,11 +317,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 3,
-    "official_source_count": 3,
+    "source_count": 7,
+    "official_source_count": 7,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-19"
+    "last_reviewed": "2026-10-20"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Boston Consulting Group hiring standard.",

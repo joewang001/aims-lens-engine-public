@@ -84,6 +84,45 @@
         "BCG-CAREERS-002",
         "BCG-ABOUT-003"
       ]
+    },
+    {
+      "question_id": "BCG-Q-005",
+      "type": "case_reasoning_behavioral",
+      "generated_question": "Walk me through a complex problem where you had to structure the analysis before you had all the data. How did you decide what mattered?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "States the objective, scope, and assumptions before analysis.",
+        "Explains how the problem was broken into testable parts.",
+        "Describes what data was used and what remained uncertain.",
+        "Updates the conclusion when evidence contradicted the initial hypothesis."
+      ],
+      "evidence_ids": [
+        "BCG-CASE-005",
+        "BCG-INTERVIEW-004"
+      ]
+    },
+    {
+      "question_id": "BCG-Q-006",
+      "type": "durable_impact_behavioral",
+      "generated_question": "Describe a recommendation you made that only counted if someone else adopted it. How did you make the change stick?",
+      "aims_dimensions": [
+        "impact_results",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Separates the recommendation from the adoption outcome.",
+        "Identifies the stakeholders and incentives involved.",
+        "Describes how the change was implemented and reinforced.",
+        "Provides evidence that the impact lasted."
+      ],
+      "evidence_ids": [
+        "BCG-ABOUT-007"
+      ]
     }
   ]
 }

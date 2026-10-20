@@ -1,7 +1,7 @@
 {
   "company_slug": "bcg",
   "company": "Boston Consulting Group",
-  "collected_at": "2026-10-19T16:29:24Z",
+  "collected_at": "2026-10-20T13:33:41Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -49,12 +49,212 @@
       ],
       "evidence_id": "BCG-CAREERS-002",
       "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_company",
+      "title": "About BCG",
+      "url": "https://www.bcg.com/about/overview",
+      "confidence": 0.76,
+      "public_safe_signal": "BCG publicly frames its work around strategic clarity and applied AI, organized through case teams and specialist practices that pair strategy with build and delivery.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "BCG-ABOUT-003",
+      "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Interview Process",
+      "url": "https://careers.bcg.com/global/en/interview-process",
+      "confidence": 0.82,
+      "public_safe_signal": "BCG's interview page describes a multi-step process with skills, case, and team interviews, and names integrity, intellectual curiosity, creative thinking, collaborative mindset, and drive as qualities it looks for.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "evidence_valued"
+      ],
+      "evidence_id": "BCG-INTERVIEW-004",
+      "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Case Interview Preparation",
+      "url": "https://careers.bcg.com/global/en/case-interview-preparation",
+      "confidence": 0.8,
+      "public_safe_signal": "BCG's case guidance asks candidates to structure the problem, ask thoughtful questions, analyze data, calculate, clarify assumptions, communicate reasoning, and adapt. It says there is not always one right answer and emphasizes the quality of reasoning.",
+      "dimensions": [
+        "company_asks",
+        "evidence_valued"
+      ],
+      "evidence_id": "BCG-CASE-005",
+      "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Working at BCG",
+      "url": "https://careers.bcg.com/global/en/work-at-bcg",
+      "confidence": 0.76,
+      "public_safe_signal": "BCG's working-here page describes 32,000 people in 100+ cities, strategic insight combined with BCG X technology and design, flexible working and wellbeing support, and a 42,000+ alumni network.",
+      "dimensions": [
+        "company_says",
+        "role_variation"
+      ],
+      "evidence_id": "BCG-WORK-006",
+      "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_company",
+      "title": "Our Purpose and People",
+      "url": "https://www.bcg.com/about/purpose-people",
+      "confidence": 0.82,
+      "public_safe_signal": "BCG's purpose page lists five principles: bring insight to light, drive inspired impact, conquer complexity, lead with integrity, and grow by growing others. It reports 33.5k employees and 25% tech specialists.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "BCG-ABOUT-007",
+      "date_accessed": "2026-10-20"
     }
   ],
   "lens_updates": {
-    "culture_principles": [],
-    "hiring_signals": [],
-    "anti_signals": [],
+    "culture_principles": [
+      {
+        "name": "Bring insight to light",
+        "description": "BCG says it challenges traditional thinking and ways of operating and brings new perspectives to difficult problems.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "BCG-ABOUT-007"
+        ]
+      },
+      {
+        "name": "Drive inspired impact beyond the next deadline",
+        "description": "BCG frames impact on a longer horizon and ties it to energizing client organizations, not just completing an engagement.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BCG-ABOUT-007"
+        ]
+      },
+      {
+        "name": "Lead with integrity and candor",
+        "description": "BCG says it confronts hard issues, stays true to its values, and states its views candidly and directly.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "BCG-ABOUT-007",
+          "BCG-INTERVIEW-004"
+        ]
+      },
+      {
+        "name": "Grow by growing others",
+        "description": "BCG describes enabling clients, colleagues, and the broader community to build success and reach their potential.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BCG-ABOUT-007",
+          "BCG-WORK-006"
+        ]
+      },
+      {
+        "name": "Strategy carried through to build",
+        "description": "BCG describes its people as practitioners with a bias for action and combines strategic insight with BCG X technology, design, and delivery, so strategy is expected to reach build and adoption.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BCG-ABOUT-007",
+          "BCG-WORK-006"
+        ]
+      }
+    ],
+    "hiring_signals": [
+      {
+        "signal": "Structures a case answer explicitly, states assumptions, and adjusts the approach when the interviewer provides new data.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "BCG-CASE-005"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Shows intellectual curiosity by asking questions that sharpen the problem rather than jumping straight to a solution.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BCG-INTERVIEW-004",
+          "BCG-CASE-005"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Demonstrates collaborative problem solving by building on hints and bringing the interviewer or client along the reasoning.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "structured_thinking"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BCG-INTERVIEW-004",
+          "BCG-CASE-005"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Backs claims with concrete achievements and explains the reasoning behind a recommendation, not only the conclusion.",
+        "aims_dimensions": [
+          "impact_results",
+          "structured_thinking"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BCG-INTERVIEW-004",
+          "BCG-ABOUT-007"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Connects the work to durable impact beyond the immediate deliverable and names who had to adopt it.",
+        "aims_dimensions": [
+          "impact_results",
+          "ownership_execution"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BCG-ABOUT-007"
+        ],
+        "basis": "derived_public_inference"
+      }
+    ],
+    "anti_signals": [
+      {
+        "anti_signal": "Jumping to a framework or answer before clarifying the objective, constraints, and assumptions.",
+        "risk_reason": "BCG's case guidance asks candidates to structure the approach and clarify assumptions before analyzing; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BCG-CASE-005"
+        ]
+      },
+      {
+        "anti_signal": "Presenting a single right answer with no acknowledgment of tradeoffs or alternative hypotheses.",
+        "risk_reason": "BCG states that case interviews do not always have one right answer and that the quality of reasoning matters.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "BCG-CASE-005",
+          "BCG-ABOUT-007"
+        ]
+      },
+      {
+        "anti_signal": "Claiming impact without naming who adopted it or what changed durably.",
+        "risk_reason": "BCG's purpose language ties impact to lasting change for clients and communities.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "BCG-ABOUT-007"
+        ]
+      }
+    ],
     "questions": [
       {
         "type": "behavioral",
@@ -70,6 +270,43 @@
           "Connects execution to a measurable result.",
           "Shows learning from feedback or changed conditions."
         ]
+      },
+      {
+        "type": "case_reasoning_behavioral",
+        "generated_question": "Walk me through a complex problem where you had to structure the analysis before you had all the data. How did you decide what mattered?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "growth_mindset"
+        ],
+        "strong_answer_signals": [
+          "States the objective, scope, and assumptions before analysis.",
+          "Explains how the problem was broken into testable parts.",
+          "Describes what data was used and what remained uncertain.",
+          "Updates the conclusion when evidence contradicted the initial hypothesis."
+        ],
+        "evidence_ids": [
+          "BCG-CASE-005",
+          "BCG-INTERVIEW-004"
+        ]
+      },
+      {
+        "type": "durable_impact_behavioral",
+        "generated_question": "Describe a recommendation you made that only counted if someone else adopted it. How did you make the change stick?",
+        "aims_dimensions": [
+          "impact_results",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Separates the recommendation from the adoption outcome.",
+          "Identifies the stakeholders and incentives involved.",
+          "Describes how the change was implemented and reinforced.",
+          "Provides evidence that the impact lasted."
+        ],
+        "evidence_ids": [
+          "BCG-ABOUT-007"
+        ]
       }
     ],
     "role_overlays": [
@@ -79,6 +316,18 @@
         "signals": [
           "Structures ambiguous client problems into evidence-backed choices and practical workstreams.",
           "Balances analytical depth, stakeholder alignment, communication, and implementation impact."
+        ]
+      },
+      {
+        "role_slug": "applied_ai_and_technology_build",
+        "role_family": "Applied AI and technology build roles",
+        "signals": [
+          "Combines strategic clarity with hands-on build in AI, data, design, or digital ventures.",
+          "Tests whether the candidate can move from prototype to adoption inside a real organization."
+        ],
+        "evidence_ids": [
+          "BCG-ABOUT-007",
+          "BCG-WORK-006"
         ]
       }
     ]

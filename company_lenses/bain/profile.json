@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-19",
-  "source_cutoff": "2026-10-19",
+  "source_cutoff": "2026-10-20",
   "industries": [
     "consulting",
     "strategy consulting",
@@ -38,29 +38,36 @@
     },
     {
       "name": "Candor as a working norm",
-      "description": "Public material puts candor alongside collaboration, implying that direct feedback and disagreement are expected parts of teamwork rather than exceptions.",
-      "confidence": 0.72,
+      "description": "Bain presents candor as the basis of collaboration and pairs teamwork and trust with tolerance for diverging opinions, so direct feedback and open disagreement are expected parts of the work.",
+      "confidence": 0.8,
       "evidence_ids": [
-        "BAIN-ABOUT-003",
-        "BAIN-OFFICIAL-001"
+        "BAIN-ABOUT-007",
+        "BAIN-PEOPLE-006"
       ]
     },
     {
       "name": "Results that hold after the engagement",
-      "description": "Success is framed around durable client outcomes and client advocacy, so answers that stop at recommendations without adoption are weak signals.",
-      "confidence": 0.7,
+      "description": "Bain says it measures success by clients' success and points to client advocacy, so the lens treats adoption and durable client outcomes as the result rather than the deliverable.",
+      "confidence": 0.8,
       "evidence_ids": [
-        "BAIN-ABOUT-003",
-        "BAIN-OFFICIAL-001"
+        "BAIN-ABOUT-007"
       ]
     },
     {
       "name": "Apprenticeship through generalist problem solving",
-      "description": "The firm presents itself as a place where consultants build judgment across industries and problems, which favors learning velocity over narrow specialization early on.",
-      "confidence": 0.64,
+      "description": "Bain describes a coaching and apprenticeship culture with personal champions, formal training, career guidance, and separate consulting, client-delivery expert, and functional tracks.",
+      "confidence": 0.76,
       "evidence_ids": [
-        "BAIN-CAREERS-002",
-        "BAIN-ABOUT-003"
+        "BAIN-GROWTH-005",
+        "BAIN-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Technology judgment paired with hands-on build",
+      "description": "Bain describes combining strategy with engineering and change leadership, and staffs teams that include engineers, AI experts, data scientists, and designers alongside strategists.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BAIN-ABOUT-007"
       ]
     }
   ],
@@ -138,6 +145,57 @@
         "BAIN-ABOUT-003"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Explains the problem structure, the evidence gathered, and why alternative options were rejected, rather than only naming a framework.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BAIN-HIRING-004",
+        "BAIN-ABOUT-007"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Shows how direct feedback or a conflicting viewpoint changed their approach, consistent with Bain's stated tolerance for diverging opinions.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "BAIN-PEOPLE-006",
+        "BAIN-GROWTH-005"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Connects a recommendation to implementation choices, organizational constraints, and whether the client actually adopted the change.",
+      "aims_dimensions": [
+        "impact_results",
+        "ownership_execution"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BAIN-ABOUT-007",
+        "BAIN-HIRING-004"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Works through a case-style problem step by step, states assumptions, and updates the answer when new data arrives.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BAIN-HIRING-004"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -164,6 +222,31 @@
       "confidence": 0.74,
       "evidence_ids": [
         "BAIN-ABOUT-003"
+      ]
+    },
+    {
+      "anti_signal": "Describing impact only as a deliverable or slide deck, without evidence of client adoption or lasting change.",
+      "risk_reason": "Bain frames results that last and client advocacy, not output volume; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "BAIN-ABOUT-007"
+      ]
+    },
+    {
+      "anti_signal": "Presenting a polished recommendation while unable to explain the alternatives considered or what evidence would change it.",
+      "risk_reason": "Bain's hiring process points to objective scoring and case-style problem solving, which reward visible reasoning over a memorized answer.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "BAIN-HIRING-004",
+        "BAIN-ABOUT-007"
+      ]
+    },
+    {
+      "anti_signal": "Treating disagreement as a relationship problem rather than a source of better thinking.",
+      "risk_reason": "Bain publicly pairs teamwork and trust with tolerance for diverging opinions.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "BAIN-PEOPLE-006"
       ]
     }
   ],
@@ -193,11 +276,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 3,
-    "official_source_count": 3,
+    "source_count": 7,
+    "official_source_count": 7,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-19"
+    "last_reviewed": "2026-10-20"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Bain & Company hiring standard.",
