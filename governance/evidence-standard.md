@@ -65,6 +65,14 @@ weight in a hiring decision. Weak support is not a licence to overstate: if the 
 direct source to be defensible and none exists, drop the signal instead of leaning on
 positioning.
 
+Distillation depth is a separate axis from support strength. A company-published interview
+guidance article that is summarised rather than quoted is still direct support, because the
+company stated the criterion; the summary only limits how much text is stored. The five bank
+entries below were harvested from the banks' own official websites, so their article-level
+statements may qualify as direct support even though the extracted signals are distilled.
+They stay registered until someone reviews the articles themselves, because the repository
+records only the official domains and not the article URLs.
+
 ### Weak-Support Register
 
 Reviewed against their cited evidence on 2026-10-20. These signals rest on positioning
@@ -73,11 +81,11 @@ Support Strength Rule. Record additions here when a review finds the same patter
 
 | Company | Signal | Company-issued source | Why it is weak |
 | --- | --- | --- | --- |
-| BMO | Uses concrete behavioral evidence rather than generic banking or brand interest | BMO purpose and values | Values page describes conduct; it does not state an interview evidence standard |
-| CIBC | Uses concrete behavioral evidence rather than generic banking or brand interest | CIBC Careers | Careers page describes culture; no stated evaluation criterion |
-| JPMorgan Chase | Uses concrete behavioral evidence rather than generic banking or brand interest | Interview preparation page | Preparation guidance, not a stated bar for behavioural specificity |
-| RBC | Uses concrete behavioral evidence rather than generic banking or brand interest | RBC Purpose, Vision and Values | Values page; no stated interview evidence standard |
-| Scotiabank | Uses concrete behavioral evidence rather than generic banking or brand interest | Scotiabank Careers / Why Scotiabank | Careers positioning; no stated evaluation criterion |
+| BMO | Uses concrete behavioral evidence rather than generic banking or brand interest | BMO purpose and values; official-site interview distillation | Values page states conduct; the interview-specific bar comes from distilled official-site material whose article URLs are not recorded |
+| CIBC | Uses concrete behavioral evidence rather than generic banking or brand interest | CIBC Careers; official-site interview distillation | Careers page describes culture; the interview-specific bar comes from distilled official-site material whose article URLs are not recorded |
+| JPMorgan Chase | Uses concrete behavioral evidence rather than generic banking or brand interest | Interview preparation page; official-site interview distillation | Preparation guidance; the specificity bar is stated at article level, which is distilled rather than quoted |
+| RBC | Uses concrete behavioral evidence rather than generic banking or brand interest | RBC Purpose, Vision and Values; official-site interview distillation | Values page states purpose; the interview-specific bar comes from distilled official-site material whose article URLs are not recorded |
+| Scotiabank | Uses concrete behavioral evidence rather than generic banking or brand interest | Scotiabank Careers / Why Scotiabank; official-site interview distillation | Careers positioning; the interview-specific bar comes from distilled official-site material whose article URLs are not recorded |
 | Accenture | Explains technology choices through client outcomes, delivery constraints, and measurable business value | Homepage, software engineering careers, investor relations | Business positioning implies client-outcome focus; no stated interview criterion |
 | Adobe | Connects product or craft decisions to customer workflows and business outcomes | Homepage, investor relations, about page | Customer-outcome positioning, not a stated evaluation standard |
 | Amazon | For BIE and analytics roles, defines metrics clearly, validates data, communicates uncertainty, and converts analysis into decisions | Product Manager interview prep (with candidate-reported and private sources) | Role-adjacent preparation guidance; the specific analytical bar is inferred |
