@@ -1,7 +1,7 @@
 {
   "company_slug": "accenture",
   "company": "Accenture",
-  "collected_at": "2026-10-20T13:33:41Z",
+  "collected_at": "2026-10-20T14:00:28Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -183,6 +183,19 @@
       ],
       "evidence_id": "ACCENTURE-LEARNING-012",
       "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_company",
+      "title": "AI and Data Services",
+      "url": "https://www.accenture.com/en/services/ai-data",
+      "confidence": 0.78,
+      "public_safe_signal": "Accenture's AI and data services page argues data readiness gates AI value, citing executive survey statistics on gen AI transformation, data quality, and revenue growth, and describes Industrial AI, responsible AI, and AI Refinery as connected scaling paths.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "ACCENTURE-AIDATA-013",
+      "date_accessed": "2026-10-20"
     }
   ],
   "lens_updates": {
@@ -255,6 +268,22 @@
         "confidence": 0.76,
         "evidence_ids": [
           "ACCENTURE-AI-011"
+        ]
+      },
+      {
+        "name": "Data readiness before AI scale",
+        "description": "Accenture frames data quality and readiness as the gating factor for generative AI value, connecting data services, responsible AI, and its AI Refinery platform as one scaling path.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-AIDATA-013"
+        ]
+      },
+      {
+        "name": "Industrial AI ties models to operations",
+        "description": "Accenture describes Industrial AI as blending engineering, data science, and AI to unify operations and produce measurable outcomes in real time.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ACCENTURE-AIDATA-013"
         ]
       }
     ],
@@ -349,6 +378,19 @@
           "ACCENTURE-AI-011"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Separates AI ambition from readiness: can discuss data quality, scaling barriers, and the path from pilot to enterprise deployment.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "structured_thinking",
+          "impact_results"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-AIDATA-013"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -400,6 +442,14 @@
         "confidence": 0.72,
         "evidence_ids": [
           "ACCENTURE-AI-011"
+        ]
+      },
+      {
+        "anti_signal": "Repeating AI adoption statistics without translating them into a specific delivery decision or constraint.",
+        "risk_reason": "Accenture's AI services page uses survey statistics to argue for data readiness and scaling work; the lens treats statistics without a delivery mechanism as weak evidence.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ACCENTURE-AIDATA-013"
         ]
       }
     ],
@@ -485,6 +535,24 @@
           "ACCENTURE-AI-011",
           "ACCENTURE-IR-009"
         ]
+      },
+      {
+        "type": "data_readiness_behavioral",
+        "generated_question": "Describe an AI use case where the data was not ready. How did you decide whether to fix the data, change the use case, or stop?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names the specific data-quality or readiness gap.",
+          "Explains the decision criteria and who was involved.",
+          "Describes the tradeoff between fixing data and changing scope.",
+          "Shows the outcome and what would have changed the decision."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-AIDATA-013"
+        ]
       }
     ],
     "role_overlays": [
@@ -514,6 +582,17 @@
         ],
         "evidence_ids": [
           "ACCENTURE-AI-011"
+        ]
+      },
+      {
+        "role_slug": "industrial_ai_operations",
+        "role_family": "Industrial AI and operations roles",
+        "signals": [
+          "Connects models to real-time operational workflows and measurable outcomes.",
+          "Works across engineering, data science, and operations constraints."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-AIDATA-013"
         ]
       }
     ]

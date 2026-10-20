@@ -4,6 +4,7 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ACCENTURE-AIDATA-013 | official_company | AI and Data Services | 2026-10-20 | 0.78 | Accenture's AI and data services page argues data readiness gates AI value, citing executive survey statistics on gen AI transformation, data quality, and revenue growth, and describes Industrial AI, responsible AI, and AI Refinery as connected scaling paths. |
 | ACCENTURE-CAREERS-010 | official_careers | Accenture Careers | 2026-10-20 | 0.80 | Accenture's careers page reports 814,000 people, offices in 200+ cities across 52 countries, and 9,000+ clients in more than 120 countries. It groups roles across AI and data, consulting, engineering, operations, software, strategy, and technology. |
 | ACCENTURE-AI-011 | official_careers | AI and Data Science Careers at Accenture | 2026-10-20 | 0.80 | Accenture's AI and data careers page cites $3B invested in AI and data, 85,000+ professionals, 11,000+ production systems across 40+ industries, an AI adoption maturity model co-authored with Carnegie Mellon SEI, and responsible AI embedded from advisory through deployment. |
 | ACCENTURE-LEARNING-012 | official_careers | Learning and Development at Accenture | 2026-10-20 | 0.72 | Accenture's learning page describes earning external credentials and certifications across Microsoft, Azure, Google, AWS, SAP, Salesforce, ServiceNow, and other platforms. |
@@ -35,3 +36,4 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://investor.accenture.com/
 - https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/ai-data-science-careers
 - https://www.accenture.com/us-en/careers/life-at-accenture/learning-development
+- https://www.accenture.com/en/services/ai-data

@@ -105,6 +105,14 @@
         "ADOBE-IR-009",
         "ADOBE-OFFICIAL-001"
       ]
+    },
+    {
+      "name": "Trust as a product foundation",
+      "description": "Adobe's Trust Center frames security, privacy, availability, content moderation, and transparency as commitments that make customer experiences trustworthy, not as back-office compliance.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ADOBE-TRUST-012"
+      ]
     }
   ],
   "aims_weighting": {
@@ -246,6 +254,20 @@
         "ADOBE-ALL-006"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Describes concrete security, privacy, or content-moderation controls they shipped, not only the policies they endorsed.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ADOBE-TRUST-012",
+        "ADOBE-CSR-011"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -309,6 +331,14 @@
         "ADOBE-CSR-011",
         "ADOBE-ALL-006"
       ]
+    },
+    {
+      "anti_signal": "Treating trust, security, or content moderation as a compliance page rather than a product requirement.",
+      "risk_reason": "Adobe's Trust Center ties these areas to product and data protection commitments; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "ADOBE-TRUST-012"
+      ]
     }
   ],
   "interview_patterns": [
@@ -326,8 +356,8 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 11,
-    "official_source_count": 11,
+    "source_count": 12,
+    "official_source_count": 12,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
     "last_reviewed": "2026-10-20"

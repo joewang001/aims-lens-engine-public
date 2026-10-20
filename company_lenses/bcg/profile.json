@@ -97,6 +97,22 @@
         "BCG-ABOUT-007",
         "BCG-WORK-006"
       ]
+    },
+    {
+      "name": "Societal impact at scale",
+      "description": "BCG commits $500 million by 2030 to apply AI to social impact and publishes an annual sustainability report and code of conduct, tying purpose to explicit commitments.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BCG-COMMIT-008"
+      ]
+    },
+    {
+      "name": "Builder culture inside BCG X",
+      "description": "BCG X describes a unit of technologists, designers, and entrepreneurial talent that builds and launches products and ventures, not only strategy.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BCG-X-009"
+      ]
     }
   ],
   "aims_weighting": {
@@ -236,6 +252,32 @@
         "BCG-ABOUT-007"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Shows a builder's bias: takes an idea through design, prototype, and launch with users rather than stopping at a strategy deck.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BCG-X-009",
+        "BCG-ABOUT-007"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Can explain how they would handle a responsible-conduct or integrity tradeoff, not only a commercial one.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "BCG-COMMIT-008"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -289,6 +331,14 @@
       "evidence_ids": [
         "BCG-ABOUT-007"
       ]
+    },
+    {
+      "anti_signal": "Presenting social impact or sustainability as a communications theme without a measurable commitment or owner.",
+      "risk_reason": "BCG publishes specific dollar and reporting commitments, so the lens treats unowned impact claims as weak evidence.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "BCG-COMMIT-008"
+      ]
     }
   ],
   "interview_patterns": [
@@ -317,8 +367,8 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 7,
-    "official_source_count": 7,
+    "source_count": 9,
+    "official_source_count": 9,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
     "last_reviewed": "2026-10-20"

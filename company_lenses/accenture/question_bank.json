@@ -122,6 +122,25 @@
         "ACCENTURE-AI-011",
         "ACCENTURE-IR-009"
       ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-006",
+      "type": "data_readiness_behavioral",
+      "generated_question": "Describe an AI use case where the data was not ready. How did you decide whether to fix the data, change the use case, or stop?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names the specific data-quality or readiness gap.",
+        "Explains the decision criteria and who was involved.",
+        "Describes the tradeoff between fixing data and changing scope.",
+        "Shows the outcome and what would have changed the decision."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-AIDATA-013"
+      ]
     }
   ]
 }

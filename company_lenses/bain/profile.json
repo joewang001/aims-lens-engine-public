@@ -69,6 +69,14 @@
       "evidence_ids": [
         "BAIN-ABOUT-007"
       ]
+    },
+    {
+      "name": "Social impact at consulting scale",
+      "description": "Bain extends its consulting model into pro bono work, committing $2 billion by 2035 after a prior 10-year, $1.1 billion provision, focused on climate, food systems, education, racial equity, and economic development.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BAIN-SOCIAL-008"
+      ]
     }
   ],
   "aims_weighting": {
@@ -196,6 +204,18 @@
         "BAIN-HIRING-004"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Connects professional craft to a social-impact outcome and can explain the constraints of nonprofit, public-sector, or community stakeholders.",
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "BAIN-SOCIAL-008"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -248,6 +268,14 @@
       "evidence_ids": [
         "BAIN-PEOPLE-006"
       ]
+    },
+    {
+      "anti_signal": "Treating social-impact work as goodwill storytelling without a measurable outcome for the recipient organization.",
+      "risk_reason": "Bain frames its pro bono commitment around helping organizations maximize impact; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "BAIN-SOCIAL-008"
+      ]
     }
   ],
   "interview_patterns": [
@@ -276,8 +304,8 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 7,
-    "official_source_count": 7,
+    "source_count": 8,
+    "official_source_count": 8,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
     "last_reviewed": "2026-10-20"

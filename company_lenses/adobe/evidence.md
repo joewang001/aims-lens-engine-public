@@ -4,6 +4,7 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ADOBE-TRUST-012 | official_company | Adobe Trust Center | 2026-10-20 | 0.78 | Adobe's Trust Center commits to protecting the security, privacy, and availability of products, systems, and data, and points to content moderation policies, government-request transparency, and public trust reports. |
 | ADOBE-IR-009 | official_investor_relations | Adobe Investor Relations | 2026-10-20 | 0.80 | Adobe's investor page describes a diversified software company with more than 30,000 employees and fiscal 2025 revenue of $23.77 billion, positioned around creativity, productivity, and personalized customer experiences. |
 | ADOBE-AI-010 | official_company | Adobe AI Overview | 2026-10-20 | 0.76 | Adobe's AI overview says generative AI should assist and amplify human ingenuity and commits to responsible development with respect for creator rights. |
 | ADOBE-CSR-011 | official_company | Corporate Social Responsibility at Adobe | 2026-10-20 | 0.76 | Adobe's responsibility page ties Adobe for All to the belief that great ideas come from anywhere and that respected, included people are more creative; it links responsible technology to AI ethics, security, privacy, trust, accessibility, and sustainability. |
@@ -33,3 +34,4 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.adobe.com/about-adobe.html
 - https://www.adobe.com/ai/overview.html
 - https://www.adobe.com/corporate-responsibility.html
+- https://www.adobe.com/trust.html

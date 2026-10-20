@@ -4,6 +4,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| BCG-COMMIT-008 | official_company | Our Commitments | 2026-10-20 | 0.80 | BCG's commitments page describes a $500 million commitment by 2030 to apply AI to social impact, an annual sustainability report, a code of conduct covering employee and supplier behavior, and a human rights statement. |
+| BCG-X-009 | official_company | BCG X | 2026-10-20 | 0.78 | BCG X presents itself as BCG's tech, design, and entrepreneurial unit, uniting 3,000+ tech builders, designers, and entrepreneurs to build and launch new products, services, and businesses rather than analysis alone. |
 | BCG-INTERVIEW-004 | official_careers | Interview Process | 2026-10-20 | 0.82 | BCG's interview page describes a multi-step process with skills, case, and team interviews, and names integrity, intellectual curiosity, creative thinking, collaborative mindset, and drive as qualities it looks for. |
 | BCG-CASE-005 | official_careers | Case Interview Preparation | 2026-10-20 | 0.80 | BCG's case guidance asks candidates to structure the problem, ask thoughtful questions, analyze data, calculate, clarify assumptions, communicate reasoning, and adapt. It says there is not always one right answer and emphasizes the quality of reasoning. |
 | BCG-WORK-006 | official_careers | Working at BCG | 2026-10-20 | 0.76 | BCG's working-here page describes 32,000 people in 100+ cities, strategic insight combined with BCG X technology and design, flexible working and wellbeing support, and a 42,000+ alumni network. |
@@ -26,3 +28,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://careers.bcg.com/global/en/case-interview-preparation
 - https://careers.bcg.com/global/en/work-at-bcg
 - https://www.bcg.com/about/purpose-people
+- https://www.bcg.com/about/commitments
+- https://www.bcg.com/x
