@@ -20,7 +20,8 @@ Status: v0.1 synthesized.
 | RBC-JD-002 | recruiting_material | RBC careers job posting aggregate - risk, audit, control, and compliance demand | 2026-05-09 | 2026-05-09 | 0.76 | Risk, compliance, controls, regulation, audit, and governance signals appear prominently, especially in internal audit, financial control, project, and operations postings. |
 | RBC-JD-003 | recruiting_material | RBC careers job posting aggregate - wealth, banking operations, and client-account administration demand | 2026-05-09 | 2026-05-09 | 0.74 | Wealth management, client experience, branch, account administration, relationship management, and operations postings emphasize trusted client service, documentation discipline, time management, and stakeholder coordination. |
 | RBC-JD-004 | recruiting_material | RBC careers job posting aggregate - process ownership, transformation, finance/control, and project execution demand | 2026-05-09 | 2026-05-09 | 0.72 | Process owner, project control, business analyst, financial control, product control, and operations postings emphasize process improvement, controls, stakeholder management, and execution discipline. |
-| RBC-HIRE-002 | official_careers | RBC candidate FAQ (application and assessment process) | 2026-10-20 | 0.7 | RBC candidate FAQ covers application, assessment and interview logistics but does not state what interviewers look for; no RBC page stating a behavioural-evidence criterion was found. |
+| RBC-HIRE-002 | official_careers | RBC careers footer "Candidate FAQ" link (search-for-careers-help.pdf) | n/a | 2026-10-20 | 0.50 | The FAQ link still carried by jobs.rbc.com points at a broken browser-support document: the live URL returns 404 and the archived 2013 copy covers browser, screen and operating-system settings only. It states no interview criterion and supports no hiring signal. |
+| RBC-HIRE-003 | official_careers | RBC careers interview pack, "What to expect in an RBC interview" (archived copy) | 2017-06-11 | 2026-10-20 | 0.82 | RBC states that its recruiters use behavioural interviewing and ask how a candidate behaved in specific past situations, that answers should be framed as Situation > Action > Result, and that interviews also assess technical capability and fit with the organization. |
 
 ## Notes
 
@@ -35,3 +36,18 @@ RBC job posting evidence is included only as aggregate hiring-demand signal. Raw
 - https://jobs.rbc.com/ca/en
 
 The private-material distillations in this lens were harvested from RBC's own official website (owner-confirmed 2026-10-20); article-level URLs for that private material are not committed. Publicly published guidance pages that state the interview expectation are cited above by URL, with no copied question text or author details stored.
+
+Open item: the evidence table records the private set above as a Medium aggregate (RBC-PRIV-001,
+RBC-PRIV-002), while this note records an official-site collection channel. Both cannot be true.
+The conflict is flagged for owner resolution and has not been settled in either direction here.
+It no longer carries the behavioural-evidence signal, which now rests on RBC-HIRE-003.
+
+Archive note: both RBC careers documents cited here are archived-only. The live URLs under
+www.rbc.com/careers/docs/ return 404 as of 2026-10-20, so the citations resolve through the
+Wayback Machine snapshots listed below. Only short summaries are stored; the interview pack's
+example questions are deliberately not reproduced.
+
+## Archived Source URLs
+
+- https://web.archive.org/web/20170611010018/http://www.rbc.com/careers/docs/PDFInterviewPack.pdf
+- https://web.archive.org/web/20130206203357/http://www.rbc.com/careers/docs/search-for-careers-help.pdf
