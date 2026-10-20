@@ -31,16 +31,21 @@ RBC job posting evidence is included only as aggregate hiring-demand signal. Raw
 
 ## Public Source URLs
 
-- https://www.rbc.com/careers/docs/search-for-careers-help.pdf
+- https://www.rbc.com/careers/docs/search-for-careers-help.pdf (returns 404; retained only because jobs.rbc.com still links to it)
 - https://www.rbc.com/about-rbc.html
 - https://jobs.rbc.com/ca/en
 
-The private-material distillations in this lens were harvested from RBC's own official website (owner-confirmed 2026-10-20); article-level URLs for that private material are not committed. Publicly published guidance pages that state the interview expectation are cited above by URL, with no copied question text or author details stored.
+The private-material distillations in this lens are recorded in the table above as a Medium
+aggregate (RBC-PRIV-001, RBC-PRIV-002). An earlier note in this file described them as harvested from RBC's own
+official website (owner-confirmed 2026-10-20); that attestation is withdrawn because the
+collection channel could not be confirmed. The sets are treated as third-party material and are
+not company-issued at any support strength, so no signal may rest on them alone for a
+`stated_by_company` basis. If the official-site channel is later confirmed, restore the
+attestation and re-classify rather than leaving both claims in the file.
 
-Open item: the evidence table records the private set above as a Medium aggregate (RBC-PRIV-001,
-RBC-PRIV-002), while this note records an official-site collection channel. Both cannot be true.
-The conflict is flagged for owner resolution and has not been settled in either direction here.
-It no longer carries the behavioural-evidence signal, which now rests on RBC-HIRE-003.
+Resolved 2026-10-20: the private set is recorded as a Medium aggregate and the official-site
+attestation is withdrawn per owner decision, so the behavioural-evidence signal now rests on
+RBC-HIRE-003 alone. Revisit if RBC's own site is confirmed as the collection channel.
 
 Archive note: both RBC careers documents cited here are archived-only. The live URLs under
 www.rbc.com/careers/docs/ return 404 as of 2026-10-20, so the citations resolve through the
