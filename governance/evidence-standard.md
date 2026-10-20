@@ -51,6 +51,20 @@ Do not store large copied interview question banks from copyrighted sources. Sto
 - AIMS dimensions
 - generated variants
 
+Summarizing is not derivation. When a company discloses its own interview questions,
+process, or evaluation guidance, the resulting de-identified summary still traces to that
+company-issued source and is recorded as `basis: stated_by_company`. The Copyright Rule
+governs how much text is stored, not who the source is.
+
+Use `basis: derived_public_inference` only when no company-issued source supports the claim,
+for example when it is synthesized from public business positioning, candidate-reported
+interview accounts, third-party case material, or external criticism. Use
+`basis: generic_public_default` for generator boilerplate that is not specific to the company.
+
+Every signal in `hiring_signals` must declare one of these three `basis` values; the field is
+required for lenses published after this standard was amended, and a signal whose provenance
+cannot be established must be left out rather than labelled by guess.
+
 ## Disclosure Rule
 
 Public inferred lenses must include:

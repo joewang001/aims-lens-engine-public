@@ -124,12 +124,14 @@ def default_hiring_signals(packet: dict[str, Any]) -> list[dict[str, Any]]:
     ids = evidence_ids(packet)
     return [
         {
+            "basis": "generic_public_default",
             "signal": "Connects decisions to the users, customers, products, or markets named in public company sources.",
             "aims_dimensions": ["impact_results", "structured_thinking"],
             "confidence": 0.7,
             "evidence_ids": ids[:2],
         },
         {
+            "basis": "generic_public_default",
             "signal": "Uses concrete examples to show ownership, learning, and measurable improvement.",
             "aims_dimensions": ["ownership_execution", "analytical_problem_solving", "growth_mindset"],
             "confidence": 0.68,
@@ -246,7 +248,11 @@ def create_company_lens(packet: dict[str, Any]) -> list[Path]:
 
     (company_dir / "README.md").write_text(f"# {packet['company']} Public Lens\n\nStatus: `LIGHTWEIGHT_SCAN`\n\nThis lens is generated from public source packets and should be improved through evidence-backed pull requests.\n", encoding="utf-8", newline="\n")
     write_evidence(company_dir / "evidence.md", packet, create=True)
-    (company_dir / "limits.md").write_text(f"# {packet['company']} Lens Limits\n\n- This is a `LIGHTWEIGHT_SCAN` based on public-safe source packets.\n- It does not include private interview reports, paid source bodies, candidate data, tenant data, or user-submitted job postings.\n- It should be used for interview preparation and public lens validation, not for official hiring decisions.\n- The lens should be promoted only after multi-source evidence review, role-specific validation, and answer backtesting.\n", encoding="utf-8", newline="\n")
+    disclosure = (
+        f"This lens is inferred from public sources and does not represent an official {packet['company']} hiring standard; "
+        "derived hiring signals are interview-preparation suggestions, not company-stated evaluation criteria."
+    )
+    (company_dir / "limits.md").write_text(f"# {packet['company']} Lens Limits\n\n{disclosure}\n\n- This is a `LIGHTWEIGHT_SCAN` based on public-safe source packets.\n- It does not include private interview reports, paid source bodies, candidate data, tenant data, or user-submitted job postings.\n- It should be used for interview preparation and public lens validation, not for official hiring decisions.\n- The lens should be promoted only after multi-source evidence review, role-specific validation, and answer backtesting.\n", encoding="utf-8", newline="\n")
     write_json(company_dir / "profile.json", profile)
     write_json(
         company_dir / "question_bank.json",
