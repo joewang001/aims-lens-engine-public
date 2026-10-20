@@ -100,11 +100,11 @@
         "growth_mindset",
         "collaboration_communication"
       ],
-      "confidence": 0.7,
+      "confidence": 0.8,
       "evidence_ids": [
+        "RBC-HIRE-003",
         "RBC-PRIV-001",
-        "RBC-OFFICIAL-001",
-        "RBC-HIRE-002"
+        "RBC-OFFICIAL-001"
       ],
       "basis": "stated_by_company"
     },
