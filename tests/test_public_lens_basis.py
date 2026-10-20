@@ -9,6 +9,9 @@ from __future__ import annotations
 
 import json
 import unittest
+import tempfile
+from unittest.mock import patch
+from tools import generate_public_lens_patch as generator
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -78,8 +81,29 @@ class PublicInferredDisclosureTests(unittest.TestCase):
                 )
 
     def test_generator_template_emits_the_disclosure(self):
-        source = (ROOT / "tools" / "generate_public_lens_patch.py").read_text(encoding="utf-8")
-        self.assertIn("does not represent an official", source)
+        packet = {
+            "company_slug": "fixture", "company": "Fixture Company",
+            "lens_updates": {},
+            "sources": [{
+                "evidence_id": "FIX-001", "source_type": "official_careers",
+                "title": "Fixture careers", "date_accessed": "2026-10-19",
+                "confidence": 0.8, "public_safe_signal": "Public fixture for generation testing.",
+                "url": "https://example.com/careers",
+            }],
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            with patch.object(generator, "COMPANY_LENSES", root), patch.object(
+                generator, "update_manifest_for_company"
+            ):
+                generator.create_company_lens(packet)
+            text = (root / "fixture" / "limits.md").read_text(encoding="utf-8")
+            self.assertIn("does not represent an official Fixture Company hiring standard", text)
+            profile = json.loads((root / "fixture" / "profile.json").read_text(encoding="utf-8"))
+            self.assertEqual(len(profile["hiring_signals"]), 2)
+            for signal in profile["hiring_signals"]:
+                self.assertEqual(signal["basis"], "generic_public_default")
+
 
 
 if __name__ == "__main__":

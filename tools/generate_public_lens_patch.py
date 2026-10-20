@@ -124,12 +124,14 @@ def default_hiring_signals(packet: dict[str, Any]) -> list[dict[str, Any]]:
     ids = evidence_ids(packet)
     return [
         {
+            "basis": "generic_public_default",
             "signal": "Connects decisions to the users, customers, products, or markets named in public company sources.",
             "aims_dimensions": ["impact_results", "structured_thinking"],
             "confidence": 0.7,
             "evidence_ids": ids[:2],
         },
         {
+            "basis": "generic_public_default",
             "signal": "Uses concrete examples to show ownership, learning, and measurable improvement.",
             "aims_dimensions": ["ownership_execution", "analytical_problem_solving", "growth_mindset"],
             "confidence": 0.68,
