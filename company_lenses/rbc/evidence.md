@@ -26,3 +26,10 @@ Status: v0.1 synthesized.
 Private materials are included only as aggregate distilled patterns. Raw article text, copied interview questions, private URLs, and author-specific personal details must not be committed.
 
 RBC job posting evidence is included only as aggregate hiring-demand signal. Raw JD bodies remain private and should not be exposed in public repository or product output.
+
+## Public Source URLs
+
+- https://www.rbc.com/about-rbc.html
+- https://jobs.rbc.com/ca/en
+
+The private-material distillations in this lens were harvested from RBC's own official website (owner-confirmed 2026-10-20). Only the official domains are recorded here; article-level URLs are not committed, and no article text, copied questions, or author details are stored.

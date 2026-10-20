@@ -24,3 +24,10 @@ Status: v0.1 synthesized.
 Private materials are included only as aggregate distilled patterns. Raw article text, copied interview questions, private URLs, and author-specific personal details must not be committed.
 
 Public community materials are included only as aggregate signals. Public snippets/posts must not be copied as raw text or treated as official hiring standards.
+
+## Public Source URLs
+
+- https://www.jpmorganchase.com/about
+- https://www.jpmorganchase.com/careers
+
+The private-material distillations in this lens were harvested from JPMorgan Chase's own official website (owner-confirmed 2026-10-20). Only the official domains are recorded here; article-level URLs are not committed, and no article text, copied questions, or author details are stored.
