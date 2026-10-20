@@ -67,25 +67,37 @@ positioning.
 
 Distillation depth is a separate axis from support strength. A company-published interview
 guidance article that is summarised rather than quoted is still direct support, because the
-company stated the criterion; the summary only limits how much text is stored. The five bank
-entries below were harvested from the banks' own official websites, so their article-level
-statements may qualify as direct support even though the extracted signals are distilled.
-They stay registered until someone reviews the articles themselves, because the repository
-records only the official domains and not the article URLs.
+company stated the criterion; the summary only limits how much text is stored.
+
+The five bank entries were re-checked against the banks' own careers sites on 2026-10-20. BMO,
+CIBC and Scotiabank publish a page that states the behavioural-evidence expectation outright,
+so their signals now cite that page and are direct support. JPMorgan Chase and RBC publish
+interview-process material without stating a behavioural-specificity criterion, so they stay
+in the register.
+
+### Confirmed Direct Support
+
+Replacing a weak source with a company page that states the criterion is the preferred fix.
+The page is recorded as its own evidence row and cited by the signal; the row below exists so
+the upgrade is visible without re-reading every lens.
+
+| Company | Page found | What the company states |
+| --- | --- | --- |
+| BMO | jobs.bmo.com careers blog, "How to Ace Your Interviews with a C.A.R.T. Story" | Most recruiters use behavioural interviewing techniques, including at BMO, to learn about past behaviour in situations similar to the target role |
+| CIBC | cibc.com hiring process, "Tips for the interview process" | Demonstrate impact with specific examples of past contribution, covering Situation, Task, Action and Results |
+| Scotiabank | scotiabank.com careers blog, "Talent Tip - 5 Tips to Mastering the Interview Process" | Interviewers may ask behavioural questions to assess how well a candidate handled specific past situations |
 
 ### Weak-Support Register
 
-Reviewed against their cited evidence on 2026-10-20. These signals rest on positioning
-material rather than a stated criterion, and are retained as `stated_by_company` under the
-Support Strength Rule. Record additions here when a review finds the same pattern.
+Reviewed against their cited evidence on 2026-10-20, and re-reviewed after the three upgrades
+above. These signals rest on positioning material, or on process material that stops short of
+stating a criterion, and are retained as `stated_by_company` under the Support Strength Rule.
+Record additions here when a review finds the same pattern.
 
 | Company | Signal | Company-issued source | Why it is weak |
 | --- | --- | --- | --- |
-| BMO | Uses concrete behavioral evidence rather than generic banking or brand interest | BMO purpose and values; official-site interview distillation | Values page states conduct; the interview-specific bar comes from distilled official-site material whose article URLs are not recorded |
-| CIBC | Uses concrete behavioral evidence rather than generic banking or brand interest | CIBC Careers; official-site interview distillation | Careers page describes culture; the interview-specific bar comes from distilled official-site material whose article URLs are not recorded |
-| JPMorgan Chase | Uses concrete behavioral evidence rather than generic banking or brand interest | Interview preparation page; official-site interview distillation | Preparation guidance; the specificity bar is stated at article level, which is distilled rather than quoted |
-| RBC | Uses concrete behavioral evidence rather than generic banking or brand interest | RBC Purpose, Vision and Values; official-site interview distillation | Values page states purpose; the interview-specific bar comes from distilled official-site material whose article URLs are not recorded |
-| Scotiabank | Uses concrete behavioral evidence rather than generic banking or brand interest | Scotiabank Careers / Why Scotiabank; official-site interview distillation | Careers positioning; the interview-specific bar comes from distilled official-site material whose article URLs are not recorded |
+| JPMorgan Chase | Uses concrete behavioral evidence rather than generic banking or brand interest | how-we-hire page; interview preparation material | Describes interview rounds and recorded interviews, and advises being yourself; no statement about behavioural specificity |
+| RBC | Uses concrete behavioral evidence rather than generic banking or brand interest | RBC Purpose, Vision and Values; candidate FAQ | Values page states purpose and the FAQ covers process logistics; neither states what interviewers look for |
 | Accenture | Explains technology choices through client outcomes, delivery constraints, and measurable business value | Homepage, software engineering careers, investor relations | Business positioning implies client-outcome focus; no stated interview criterion |
 | Adobe | Connects product or craft decisions to customer workflows and business outcomes | Homepage, investor relations, about page | Customer-outcome positioning, not a stated evaluation standard |
 | Amazon | For BIE and analytics roles, defines metrics clearly, validates data, communicates uncertainty, and converts analysis into decisions | Product Manager interview prep (with candidate-reported and private sources) | Role-adjacent preparation guidance; the specific analytical bar is inferred |

@@ -8,6 +8,7 @@ or while it omits the disclosure that governance/evidence-standard.md requires.
 from __future__ import annotations
 
 import json
+import re
 import unittest
 import tempfile
 from unittest.mock import patch
@@ -141,6 +142,57 @@ class WeakSupportRegisterTests(unittest.TestCase):
                 match = [item for item in signals if item.get("signal", "").startswith(signal[:40])]
                 self.assertTrue(match, f"{company} has no signal starting with {signal[:40]!r}")
                 self.assertEqual(match[0].get("basis"), "stated_by_company")
+
+    def section_rows(self, heading: str) -> list[list[str]]:
+        text = (ROOT / "governance" / "evidence-standard.md").read_text(encoding="utf-8")
+        self.assertIn(heading, text, f"missing section {heading!r}")
+        section = text.split(heading, 1)[1].split("\n### ", 1)[0]
+        rows: list[list[str]] = []
+        for line in section.splitlines():
+            if not line.startswith("|"):
+                continue
+            cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+            if not cells or cells[0] in ("Company", "---") or set(cells[0]) == {"-"}:
+                continue
+            rows.append(cells)
+        return rows
+
+    def test_confirmed_direct_support_cites_a_careers_page(self):
+        weak = {row[0] for row in self.register_rows()}
+        confirmed = self.section_rows("### Confirmed Direct Support")
+        self.assertTrue(confirmed)
+
+        for cells in confirmed:
+            company = cells[0]
+            with self.subTest(company=company):
+                self.assertNotIn(company, weak, f"{company} is listed as both direct and weak support")
+                path = next(
+                    (p for p in lens_dirs()
+                     if json.loads((p / "profile.json").read_text(encoding="utf-8")).get("company") == company),
+                    None,
+                )
+                self.assertIsNotNone(path, f"{company} has no lens")
+                profile = json.loads((path / "profile.json").read_text(encoding="utf-8"))
+                evidence = (path / "evidence.md").read_text(encoding="utf-8")
+                types = {}
+                for line in evidence.splitlines():
+                    if not line.startswith("|"):
+                        continue
+                    cols = [c.strip() for c in line.strip().strip("|").split("|")]
+                    if len(cols) >= 2 and re.match(r"^[A-Z0-9]+-", cols[0]):
+                        types[cols[0]] = cols[1]
+
+                cited = [
+                    types.get(eid, "")
+                    for signal in profile.get("hiring_signals", [])
+                    if "concrete behavioral" in signal.get("signal", "")
+                    for eid in signal.get("evidence_ids", [])
+                ]
+                self.assertIn(
+                    "official_careers",
+                    cited,
+                    f"{company} claims confirmed direct support without citing an official careers page",
+                )
 
 
 
