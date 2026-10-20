@@ -105,6 +105,44 @@ class PublicInferredDisclosureTests(unittest.TestCase):
                 self.assertEqual(signal["basis"], "generic_public_default")
 
 
+class WeakSupportRegisterTests(unittest.TestCase):
+    """The register in governance/evidence-standard.md must describe real lenses.
+
+    Weak support is legitimate, but a register that drifts out of sync with the
+    lenses silently becomes decoration, so each row is checked against the data.
+    """
+
+    def register_rows(self) -> list[tuple[str, str]]:
+        text = (ROOT / "governance" / "evidence-standard.md").read_text(encoding="utf-8")
+        marker = "### Weak-Support Register"
+        self.assertIn(marker, text)
+        section = text.split(marker, 1)[1]
+        rows: list[tuple[str, str]] = []
+        for line in section.splitlines():
+            if not line.startswith("|"):
+                continue
+            cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+            if len(cells) < 2 or cells[0] in ("Company", "---") or set(cells[0]) == {"-"}:
+                continue
+            rows.append((cells[0], cells[1]))
+        self.assertTrue(rows)
+        return rows
+
+    def test_register_rows_match_a_lens_signal(self):
+        by_company = {}
+        for path in lens_dirs():
+            profile = json.loads((path / "profile.json").read_text(encoding="utf-8"))
+            by_company[profile.get("company")] = profile
+
+        for company, signal in self.register_rows():
+            with self.subTest(company=company, signal=signal[:60]):
+                self.assertIn(company, by_company, f"{company} has no lens")
+                signals = by_company[company].get("hiring_signals", [])
+                match = [item for item in signals if item.get("signal", "").startswith(signal[:40])]
+                self.assertTrue(match, f"{company} has no signal starting with {signal[:40]!r}")
+                self.assertEqual(match[0].get("basis"), "stated_by_company")
+
+
 
 if __name__ == "__main__":
     unittest.main()
