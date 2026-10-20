@@ -153,7 +153,8 @@
       "confidence": 0.8,
       "evidence_ids": [
         "ADOBE-HIRING-005"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Prepares specific examples with measurable impact and asks thoughtful questions about the role's impact and team dynamics.",
@@ -164,7 +165,8 @@
       "confidence": 0.8,
       "evidence_ids": [
         "ADOBE-HIRING-005"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Demonstrates problem-solving in the format the role uses, such as coding and system design, creative briefs and design thinking, or scenario-based discussion.",
@@ -176,7 +178,8 @@
       "evidence_ids": [
         "ADOBE-HIRING-005",
         "ADOBE-DEVBLOG-007"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Shows eagerness to learn and apply AI within the craft as tools and workflows evolve.",
@@ -188,7 +191,8 @@
       "evidence_ids": [
         "ADOBE-HIRING-005",
         "ADOBE-ABOUT-008"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Connects product or craft decisions to customer workflows and business outcomes.",
@@ -201,7 +205,8 @@
         "ADOBE-OFFICIAL-001",
         "ADOBE-IR-003",
         "ADOBE-ABOUT-008"
-      ]
+      ],
+      "basis": "stated_by_company"
     },
     {
       "signal": "Shows how AI or platform work improved a real customer workflow, including quality, trust, or adoption evidence.",
@@ -213,7 +218,8 @@
       "evidence_ids": [
         "ADOBE-AI-010",
         "ADOBE-ABOUT-008"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Explains governance or trust tradeoffs in product decisions, such as privacy, content authenticity, or responsible AI.",
@@ -225,7 +231,8 @@
       "evidence_ids": [
         "ADOBE-CSR-011",
         "ADOBE-ABOUT-008"
-      ]
+      ],
+      "basis": "derived_public_inference"
     },
     {
       "signal": "Shows inclusive collaboration by inviting ideas from people outside their discipline or level.",
@@ -237,7 +244,8 @@
       "evidence_ids": [
         "ADOBE-CSR-011",
         "ADOBE-ALL-006"
-      ]
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [

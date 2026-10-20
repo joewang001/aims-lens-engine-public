@@ -269,7 +269,8 @@
         "confidence": 0.78,
         "evidence_ids": [
           "ACCENTURE-BEHAVIORAL-005"
-        ]
+        ],
+        "basis": "stated_by_company"
       },
       {
         "signal": "Shows collaboration, leadership, problem-solving, learning agility, business acumen, and emotional resilience in client-facing scenarios.",
@@ -281,7 +282,8 @@
         "confidence": 0.78,
         "evidence_ids": [
           "ACCENTURE-BEHAVIORAL-005"
-        ]
+        ],
+        "basis": "stated_by_company"
       },
       {
         "signal": "Demonstrates role-specific depth and current platform or technology knowledge in a dedicated skills interview.",
@@ -293,7 +295,8 @@
         "evidence_ids": [
           "ACCENTURE-SKILLS-006",
           "ACCENTURE-SWE-007"
-        ]
+        ],
+        "basis": "stated_by_company"
       },
       {
         "signal": "Quantifies achievements and explicitly connects prior experience to the target role's requirements.",
@@ -305,7 +308,8 @@
         "evidence_ids": [
           "ACCENTURE-SKILLS-006",
           "ACCENTURE-CAREERS-002"
-        ]
+        ],
+        "basis": "stated_by_company"
       },
       {
         "signal": "Explains technology choices through client outcomes, delivery constraints, and measurable business value.",
@@ -318,7 +322,8 @@
           "ACCENTURE-OFFICIAL-001",
           "ACCENTURE-SWE-007",
           "ACCENTURE-IR-009"
-        ]
+        ],
+        "basis": "stated_by_company"
       },
       {
         "signal": "Explains how an AI or technology solution moved from prototype to production, including data, legacy, regulatory, and adoption constraints.",
@@ -330,7 +335,8 @@
         "confidence": 0.8,
         "evidence_ids": [
           "ACCENTURE-AI-011"
-        ]
+        ],
+        "basis": "derived_public_inference"
       },
       {
         "signal": "Connects AI work to governance, trust, and responsible deployment rather than model performance alone.",
@@ -341,7 +347,8 @@
         "confidence": 0.76,
         "evidence_ids": [
           "ACCENTURE-AI-011"
-        ]
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
