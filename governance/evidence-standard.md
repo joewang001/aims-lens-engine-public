@@ -75,10 +75,13 @@ expectation outright, so their signals now cite that page and are direct support
 recovered from the Wayback Machine because the live document no longer resolves.
 
 Weak support is a statement about **how the claim is supported**, not about whether the source
-belongs to the company. A distillation of material harvested from the company's own site has a
-settled source identity even when the repository cannot cite an article URL, so it is not weak
-on provenance grounds. It is recorded under Owner-Confirmed Company Source instead, where the
-missing piece is a public citation rather than certainty about the source.
+belongs to the company. A distillation of material from a company's own site would not be weak on
+provenance grounds, because the source identity is settled even without an article URL; it would
+be recorded under Owner-Confirmed Company Source instead, where the missing piece is a public
+citation. That channel was tested on 2026-10-20 and the test failed: five bank lenses claimed it
+while their own evidence tables described the material as Medium aggregates, and the conflict
+could not be resolved. The conservative reading now applies until a collection channel is
+confirmed.
 
 ### Confirmed Direct Support
 
@@ -101,20 +104,29 @@ no longer resolves.
 
 ### Owner-Confirmed Company Source
 
-These signals derive from de-identified distillation of material published on the company's own
-official website. The owner confirmed the collection channel on 2026-10-20, so source identity is
-settled; the article-level URLs are deliberately not committed, in line with the standing rule
-that private source URLs are not published. They are `stated_by_company` on provenance grounds,
-not weak support: the open item is a public citation, not doubt about who issued the material.
+This classification was written for signals that derive from de-identified distillation of
+material published on the company's own official website, where source identity is settled but no
+public citation can be committed under the rule that private source URLs are not published. Such
+a signal is `stated_by_company` on provenance grounds, not weak support: the open item is a public
+citation, not doubt about who issued the material.
 
-The table is currently empty. RBC held the one row, and it moved to Confirmed Direct Support on
-2026-10-20 when the company's own interview pack was located. The classification itself stays
-available for a future lens whose only company-issued basis is an uncitable official-site
-distillation, and it stays subject to the same evidence that the collection channel is the
-company's own site.
+The table holds no rows. It was populated on 2026-10-20 by the five bank lens distillations, whose
+evidence tables described the same material as Medium aggregates. When the collection channel
+could not be confirmed, the owner directed the conservative reading: the sets are recorded as
+Medium aggregates, the official-site attestations are withdrawn, and the signals that had relied
+on them were re-checked against company-issued pages instead. Every one of those signals already
+cited a company page, so none changed basis. Restore a row here only when the company's own site is
+confirmed as the collection channel, and re-check each affected signal at that point rather than
+asserting both readings at once.
+
+A Medium aggregate is third-party material at any distillation depth. It is not company-issued,
+so it cannot carry a `stated_by_company` basis on its own, and a signal that reads only from such
+an aggregate belongs under `derived_public_inference`.
 
 Do not move a row here to make a weak source look stronger. A row qualifies only when the
-company's own site is the recorded collection channel and the lens carries that attestation.
+company's own site is the recorded collection channel and the lens carries that attestation. An
+attestation that turns out to be unconfirmed is withdrawn, not quietly kept alongside a
+contradicting evidence row; the five bank rows were withdrawn on 2026-10-20 on exactly that basis.
 
 | Company | Signal | Recorded channel | Open item |
 | --- | --- | --- | --- |
