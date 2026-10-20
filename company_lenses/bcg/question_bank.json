@@ -123,6 +123,25 @@
       "evidence_ids": [
         "BCG-ABOUT-007"
       ]
+    },
+    {
+      "question_id": "BCG-Q-007",
+      "type": "build_and_launch_behavioral",
+      "generated_question": "Tell me about a time you took an idea from concept to a working product or venture. What did you build, and who used it?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Defines the user problem and the initial hypothesis.",
+        "Describes design, build, and iteration choices.",
+        "Shows evidence of launch, usage, or adoption.",
+        "Explains what changed after contact with real users."
+      ],
+      "evidence_ids": [
+        "BCG-X-009"
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "company_slug": "bain",
   "company": "Bain & Company",
-  "collected_at": "2026-10-20T13:33:41Z",
+  "collected_at": "2026-10-20T14:00:28Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -114,6 +114,19 @@
       ],
       "evidence_id": "BAIN-ABOUT-007",
       "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_company",
+      "title": "Our Social Impact",
+      "url": "https://www.bain.com/about/further/our-social-impact/",
+      "confidence": 0.8,
+      "public_safe_signal": "Bain says it is extending its pro bono consulting commitment to $2 billion by 2035 after a prior 10-year, $1.1 billion provision, with focus areas including climate and energy, food systems, education, racial equity, and economic development.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "BAIN-SOCIAL-008",
+      "date_accessed": "2026-10-20"
     }
   ],
   "lens_updates": {
@@ -150,6 +163,14 @@
         "evidence_ids": [
           "BAIN-GROWTH-005",
           "BAIN-CAREERS-002"
+        ]
+      },
+      {
+        "name": "Social impact at consulting scale",
+        "description": "Bain extends its consulting model into pro bono work, committing $2 billion by 2035 after a prior 10-year, $1.1 billion provision, focused on climate, food systems, education, racial equity, and economic development.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "BAIN-SOCIAL-008"
         ]
       }
     ],
@@ -204,6 +225,18 @@
           "BAIN-HIRING-004"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Connects professional craft to a social-impact outcome and can explain the constraints of nonprofit, public-sector, or community stakeholders.",
+        "aims_dimensions": [
+          "impact_results",
+          "collaboration_communication"
+        ],
+        "confidence": 0.7,
+        "evidence_ids": [
+          "BAIN-SOCIAL-008"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -230,6 +263,14 @@
         "confidence": 0.68,
         "evidence_ids": [
           "BAIN-PEOPLE-006"
+        ]
+      },
+      {
+        "anti_signal": "Treating social-impact work as goodwill storytelling without a measurable outcome for the recipient organization.",
+        "risk_reason": "Bain frames its pro bono commitment around helping organizations maximize impact; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.68,
+        "evidence_ids": [
+          "BAIN-SOCIAL-008"
         ]
       }
     ],
@@ -286,6 +327,24 @@
           "BAIN-ABOUT-007",
           "BAIN-HIRING-004"
         ]
+      },
+      {
+        "type": "social_impact_behavioral",
+        "generated_question": "Tell me about a time you used your professional skills on a pro bono or community problem. What changed for the organization?",
+        "aims_dimensions": [
+          "impact_results",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names the organization, its constraint, and why the work mattered.",
+          "Explains how commercial methods were adapted rather than copied.",
+          "Describes the recipient's role in owning the change.",
+          "Measures capacity, adoption, or durable outcome rather than output."
+        ],
+        "evidence_ids": [
+          "BAIN-SOCIAL-008"
+        ]
       }
     ],
     "role_overlays": [
@@ -307,6 +366,17 @@
         "evidence_ids": [
           "BAIN-ABOUT-007",
           "BAIN-GROWTH-005"
+        ]
+      },
+      {
+        "role_slug": "social_impact_consulting",
+        "role_family": "Social impact and nonprofit consulting",
+        "signals": [
+          "Translates commercial consulting methods to resource-constrained nonprofit or public-sector settings.",
+          "Measures success by recipient capacity and durable outcomes, not engagement output."
+        ],
+        "evidence_ids": [
+          "BAIN-SOCIAL-008"
         ]
       }
     ]

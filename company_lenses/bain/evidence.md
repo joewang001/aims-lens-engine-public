@@ -4,6 +4,7 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| BAIN-SOCIAL-008 | official_company | Our Social Impact | 2026-10-20 | 0.80 | Bain says it is extending its pro bono consulting commitment to $2 billion by 2035 after a prior 10-year, $1.1 billion provision, with focus areas including climate and energy, food systems, education, racial equity, and economic development. |
 | BAIN-HIRING-004 | official_careers | Our Hiring Process | 2026-10-20 | 0.80 | Bain's hiring process page says each step exists for a purpose, feedback uses an objective scoring system, interviews are tailored to the role, may include behavioral or case interviews, and candidates learn how each interview went. |
 | BAIN-GROWTH-005 | official_careers | Supporting Your Growth | 2026-10-20 | 0.78 | Bain describes a coaching and apprenticeship culture with formal training, career guidance, wellbeing resources, inclusive leadership training, affinity groups, and separate consulting, client-delivery expert, and functional career tracks. |
 | BAIN-PEOPLE-006 | official_company | Our People | 2026-10-20 | 0.76 | Bain's people page emphasizes teamwork, trust, and tolerance for diverging opinions, and describes partners and office teams as client-first and collaborative. |
@@ -25,3 +26,4 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.bain.com/careers/hiring-process/
 - https://www.bain.com/careers/life-at-bain/supporting-your-growth/
 - https://www.bain.com/about/our-people/
+- https://www.bain.com/about/further/our-social-impact/

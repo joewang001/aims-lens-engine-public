@@ -1,0 +1,26 @@
+{
+  "company": "Bain & Company",
+  "role_family": "Social impact and nonprofit consulting",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Translates commercial consulting methods to resource-constrained nonprofit or public-sector settings.",
+    "Measures success by recipient capacity and durable outcomes, not engagement output."
+  ],
+  "evidence_ids": [
+    "BAIN-OFFICIAL-001",
+    "BAIN-CAREERS-002",
+    "BAIN-ABOUT-003",
+    "BAIN-HIRING-004",
+    "BAIN-GROWTH-005",
+    "BAIN-PEOPLE-006",
+    "BAIN-ABOUT-007",
+    "BAIN-SOCIAL-008"
+  ]
+}

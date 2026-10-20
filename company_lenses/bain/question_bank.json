@@ -124,6 +124,25 @@
         "BAIN-ABOUT-007",
         "BAIN-HIRING-004"
       ]
+    },
+    {
+      "question_id": "BAIN-Q-007",
+      "type": "social_impact_behavioral",
+      "generated_question": "Tell me about a time you used your professional skills on a pro bono or community problem. What changed for the organization?",
+      "aims_dimensions": [
+        "impact_results",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names the organization, its constraint, and why the work mattered.",
+        "Explains how commercial methods were adapted rather than copied.",
+        "Describes the recipient's role in owning the change.",
+        "Measures capacity, adoption, or durable outcome rather than output."
+      ],
+      "evidence_ids": [
+        "BAIN-SOCIAL-008"
+      ]
     }
   ]
 }

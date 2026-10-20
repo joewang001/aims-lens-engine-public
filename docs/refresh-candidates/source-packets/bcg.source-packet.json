@@ -1,7 +1,7 @@
 {
   "company_slug": "bcg",
   "company": "Boston Consulting Group",
-  "collected_at": "2026-10-20T13:33:41Z",
+  "collected_at": "2026-10-20T14:00:28Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -115,6 +115,34 @@
       ],
       "evidence_id": "BCG-ABOUT-007",
       "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_company",
+      "title": "Our Commitments",
+      "url": "https://www.bcg.com/about/commitments",
+      "confidence": 0.8,
+      "public_safe_signal": "BCG's commitments page describes a $500 million commitment by 2030 to apply AI to social impact, an annual sustainability report, a code of conduct covering employee and supplier behavior, and a human rights statement.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "BCG-COMMIT-008",
+      "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_company",
+      "title": "BCG X",
+      "url": "https://www.bcg.com/x",
+      "confidence": 0.78,
+      "public_safe_signal": "BCG X presents itself as BCG's tech, design, and entrepreneurial unit, uniting 3,000+ tech builders, designers, and entrepreneurs to build and launch new products, services, and businesses rather than analysis alone.",
+      "dimensions": [
+        "company_says",
+        "role_variation",
+        "evidence_valued"
+      ],
+      "evidence_id": "BCG-X-009",
+      "date_accessed": "2026-10-20"
     }
   ],
   "lens_updates": {
@@ -160,6 +188,22 @@
         "evidence_ids": [
           "BCG-ABOUT-007",
           "BCG-WORK-006"
+        ]
+      },
+      {
+        "name": "Societal impact at scale",
+        "description": "BCG commits $500 million by 2030 to apply AI to social impact and publishes an annual sustainability report and code of conduct, tying purpose to explicit commitments.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "BCG-COMMIT-008"
+        ]
+      },
+      {
+        "name": "Builder culture inside BCG X",
+        "description": "BCG X describes a unit of technologists, designers, and entrepreneurial talent that builds and launches products and ventures, not only strategy.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BCG-X-009"
         ]
       }
     ],
@@ -226,6 +270,32 @@
           "BCG-ABOUT-007"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Shows a builder's bias: takes an idea through design, prototype, and launch with users rather than stopping at a strategy deck.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "impact_results",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BCG-X-009",
+          "BCG-ABOUT-007"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Can explain how they would handle a responsible-conduct or integrity tradeoff, not only a commercial one.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "BCG-COMMIT-008"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -252,6 +322,14 @@
         "confidence": 0.7,
         "evidence_ids": [
           "BCG-ABOUT-007"
+        ]
+      },
+      {
+        "anti_signal": "Presenting social impact or sustainability as a communications theme without a measurable commitment or owner.",
+        "risk_reason": "BCG publishes specific dollar and reporting commitments, so the lens treats unowned impact claims as weak evidence.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "BCG-COMMIT-008"
         ]
       }
     ],
@@ -307,6 +385,24 @@
         "evidence_ids": [
           "BCG-ABOUT-007"
         ]
+      },
+      {
+        "type": "build_and_launch_behavioral",
+        "generated_question": "Tell me about a time you took an idea from concept to a working product or venture. What did you build, and who used it?",
+        "aims_dimensions": [
+          "ownership_execution",
+          "impact_results",
+          "analytical_problem_solving"
+        ],
+        "strong_answer_signals": [
+          "Defines the user problem and the initial hypothesis.",
+          "Describes design, build, and iteration choices.",
+          "Shows evidence of launch, usage, or adoption.",
+          "Explains what changed after contact with real users."
+        ],
+        "evidence_ids": [
+          "BCG-X-009"
+        ]
       }
     ],
     "role_overlays": [
@@ -328,6 +424,17 @@
         "evidence_ids": [
           "BCG-ABOUT-007",
           "BCG-WORK-006"
+        ]
+      },
+      {
+        "role_slug": "bcg_x_product_and_venture_build",
+        "role_family": "Product, design, and venture build roles",
+        "signals": [
+          "Combines technology, design, and entrepreneurial judgment to launch new products or businesses.",
+          "Shows evidence from build and adoption, not only analysis."
+        ],
+        "evidence_ids": [
+          "BCG-X-009"
         ]
       }
     ]
