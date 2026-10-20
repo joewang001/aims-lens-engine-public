@@ -1,7 +1,7 @@
 {
   "company_slug": "accenture",
   "company": "Accenture",
-  "collected_at": "2026-10-19T04:20:00Z",
+  "collected_at": "2026-10-20T13:33:41Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -142,6 +142,47 @@
       ],
       "evidence_id": "ACCENTURE-IR-009",
       "date_accessed": "2026-10-19"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Accenture Careers",
+      "url": "https://www.accenture.com/us-en/careers",
+      "confidence": 0.8,
+      "public_safe_signal": "Accenture's careers page reports 814,000 people, offices in 200+ cities across 52 countries, and 9,000+ clients in more than 120 countries. It groups roles across AI and data, consulting, engineering, operations, software, strategy, and technology.",
+      "dimensions": [
+        "company_says",
+        "role_variation",
+        "evidence_valued"
+      ],
+      "evidence_id": "ACCENTURE-CAREERS-010",
+      "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "AI and Data Science Careers at Accenture",
+      "url": "https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/ai-data-science-careers",
+      "confidence": 0.8,
+      "public_safe_signal": "Accenture's AI and data careers page cites $3B invested in AI and data, 85,000+ professionals, 11,000+ production systems across 40+ industries, an AI adoption maturity model co-authored with Carnegie Mellon SEI, and responsible AI embedded from advisory through deployment.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "role_variation"
+      ],
+      "evidence_id": "ACCENTURE-AI-011",
+      "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Learning and Development at Accenture",
+      "url": "https://www.accenture.com/us-en/careers/life-at-accenture/learning-development",
+      "confidence": 0.72,
+      "public_safe_signal": "Accenture's learning page describes earning external credentials and certifications across Microsoft, Azure, Google, AWS, SAP, Salesforce, ServiceNow, and other platforms.",
+      "dimensions": [
+        "evidence_valued",
+        "company_says"
+      ],
+      "evidence_id": "ACCENTURE-LEARNING-012",
+      "date_accessed": "2026-10-20"
     }
   ],
   "lens_updates": {
@@ -166,10 +207,10 @@
       },
       {
         "name": "Reinvention through technology, talent, and bold thinking",
-        "description": "Innovation is described as an operating mindset that connects technology, people, and ambitious thinking to create lasting client value.",
-        "confidence": 0.74,
+        "description": "Accenture backs its reinvention positioning with public scale claims: $3B invested in AI and data, 85,000+ AI professionals, 11,000+ production systems, and 40+ industries, tied to client reinvention.",
+        "confidence": 0.8,
         "evidence_ids": [
-          "ACCENTURE-ABOUT-003",
+          "ACCENTURE-AI-011",
           "ACCENTURE-IR-009"
         ]
       },
@@ -184,11 +225,36 @@
       },
       {
         "name": "Continuous learning and credentials",
-        "description": "Careers material highlights external certifications across major cloud and enterprise platforms as part of how employees build in-demand skills.",
-        "confidence": 0.68,
+        "description": "Accenture highlights external certifications across Microsoft, Azure, Google, AWS, SAP, Salesforce, ServiceNow, and other platforms as part of building role-relevant depth.",
+        "confidence": 0.76,
         "evidence_ids": [
-          "ACCENTURE-SWE-007",
-          "ACCENTURE-CAREERS-002"
+          "ACCENTURE-LEARNING-012",
+          "ACCENTURE-SWE-007"
+        ]
+      },
+      {
+        "name": "Responsible AI from advice to deployment",
+        "description": "Accenture says responsible AI is embedded from the first advisory conversation through final deployment, tying governance and trust to delivery rather than a separate review.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ACCENTURE-AI-011"
+        ]
+      },
+      {
+        "name": "Breadth with delivery proof",
+        "description": "Accenture pairs a very large global workforce and client base with claims about systems actually running in production, emphasizing execution at scale over pure strategy.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-CAREERS-010",
+          "ACCENTURE-AI-011"
+        ]
+      },
+      {
+        "name": "Stay through delivery",
+        "description": "Accenture says its people advise senior leaders and then stay to shape and scale the business, so ideas are expected to survive past the strategy phase.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ACCENTURE-AI-011"
         ]
       }
     ],
@@ -203,7 +269,8 @@
         "confidence": 0.78,
         "evidence_ids": [
           "ACCENTURE-BEHAVIORAL-005"
-        ]
+        ],
+        "basis": "stated_by_company"
       },
       {
         "signal": "Shows collaboration, leadership, problem-solving, learning agility, business acumen, and emotional resilience in client-facing scenarios.",
@@ -215,7 +282,8 @@
         "confidence": 0.78,
         "evidence_ids": [
           "ACCENTURE-BEHAVIORAL-005"
-        ]
+        ],
+        "basis": "stated_by_company"
       },
       {
         "signal": "Demonstrates role-specific depth and current platform or technology knowledge in a dedicated skills interview.",
@@ -227,7 +295,8 @@
         "evidence_ids": [
           "ACCENTURE-SKILLS-006",
           "ACCENTURE-SWE-007"
-        ]
+        ],
+        "basis": "stated_by_company"
       },
       {
         "signal": "Quantifies achievements and explicitly connects prior experience to the target role's requirements.",
@@ -239,7 +308,8 @@
         "evidence_ids": [
           "ACCENTURE-SKILLS-006",
           "ACCENTURE-CAREERS-002"
-        ]
+        ],
+        "basis": "stated_by_company"
       },
       {
         "signal": "Explains technology choices through client outcomes, delivery constraints, and measurable business value.",
@@ -252,7 +322,33 @@
           "ACCENTURE-OFFICIAL-001",
           "ACCENTURE-SWE-007",
           "ACCENTURE-IR-009"
-        ]
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Explains how an AI or technology solution moved from prototype to production, including data, legacy, regulatory, and adoption constraints.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ACCENTURE-AI-011"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Connects AI work to governance, trust, and responsible deployment rather than model performance alone.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "collaboration_communication"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ACCENTURE-AI-011"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -279,6 +375,31 @@
         "evidence_ids": [
           "ACCENTURE-SKILLS-006",
           "ACCENTURE-SWE-007"
+        ]
+      },
+      {
+        "anti_signal": "Describing AI work only as a proof of concept or model, with no path to production or adoption.",
+        "risk_reason": "Accenture's AI careers material emphasizes systems in production and staying through delivery; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ACCENTURE-AI-011"
+        ]
+      },
+      {
+        "anti_signal": "Citing certifications without being able to explain a delivery decision or tradeoff.",
+        "risk_reason": "Accenture presents certifications alongside role-specific expertise and client delivery, not as a substitute for judgment.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ACCENTURE-LEARNING-012",
+          "ACCENTURE-SKILLS-006"
+        ]
+      },
+      {
+        "anti_signal": "Treating responsible AI as a compliance afterthought rather than part of design and delivery.",
+        "risk_reason": "Accenture states that responsible AI is embedded from advisory through deployment.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ACCENTURE-AI-011"
         ]
       }
     ],
@@ -327,6 +448,43 @@
           "Preserves both the relationship and delivery commitments.",
           "Reflects on what changed in subsequent work."
         ]
+      },
+      {
+        "type": "production_ai_behavioral",
+        "generated_question": "Tell me about an AI or data solution you took from prototype into production. What broke, and how did you make it reliable?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Describes the gap between prototype and production conditions.",
+          "Names data, legacy, regulatory, or adoption constraints.",
+          "Explains monitoring, governance, or reliability work.",
+          "Quantifies the resulting scale or business outcome."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-AI-011"
+        ]
+      },
+      {
+        "type": "responsible_ai_behavioral",
+        "generated_question": "Describe a decision where delivery speed conflicted with responsible AI, privacy, or trust. How did you resolve it?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names the specific tension and affected stakeholders.",
+          "Explains the governance or risk reasoning used.",
+          "Describes the tradeoff made and who was involved.",
+          "Shows the outcome without hiding residual risk."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-AI-011",
+          "ACCENTURE-IR-009"
+        ]
       }
     ],
     "role_overlays": [
@@ -345,6 +503,17 @@
           "Solves business problems with pragmatic, creative engineering and agile delivery.",
           "Shows depth through certifications and hands-on use of major cloud and enterprise platforms.",
           "Collaborates within a large engineering community and client delivery teams."
+        ]
+      },
+      {
+        "role_slug": "ai_and_data_science",
+        "role_family": "AI and data science roles",
+        "signals": [
+          "Builds LLM platforms, ML pipelines, or knowledge graphs under legacy, regulated, and global-scale constraints.",
+          "Can take a model from proof of concept into a governed production system."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-AI-011"
         ]
       }
     ]

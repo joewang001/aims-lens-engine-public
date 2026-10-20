@@ -83,6 +83,45 @@
         "ACCENTURE-STRATEGY-008",
         "ACCENTURE-IR-009"
       ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-004",
+      "type": "production_ai_behavioral",
+      "generated_question": "Tell me about an AI or data solution you took from prototype into production. What broke, and how did you make it reliable?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Describes the gap between prototype and production conditions.",
+        "Names data, legacy, regulatory, or adoption constraints.",
+        "Explains monitoring, governance, or reliability work.",
+        "Quantifies the resulting scale or business outcome."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-AI-011"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-005",
+      "type": "responsible_ai_behavioral",
+      "generated_question": "Describe a decision where delivery speed conflicted with responsible AI, privacy, or trust. How did you resolve it?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names the specific tension and affected stakeholders.",
+        "Explains the governance or risk reasoning used.",
+        "Describes the tradeoff made and who was involved.",
+        "Shows the outcome without hiding residual risk."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-AI-011",
+        "ACCENTURE-IR-009"
+      ]
     }
   ]
 }

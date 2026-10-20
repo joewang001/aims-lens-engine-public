@@ -84,6 +84,46 @@
         "BAIN-OFFICIAL-001",
         "BAIN-ABOUT-003"
       ]
+    },
+    {
+      "question_id": "BAIN-Q-005",
+      "type": "evidence_update_behavioral",
+      "generated_question": "Tell me about a time you changed a recommendation after new evidence or a dissenting view. What changed, and what happened?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names the original recommendation and the evidence or view that challenged it.",
+        "Explains the reasoning used to decide what to change.",
+        "Shows how the change was communicated and adopted.",
+        "Reflects on what the episode changed in later work."
+      ],
+      "evidence_ids": [
+        "BAIN-HIRING-004",
+        "BAIN-PEOPLE-006"
+      ]
+    },
+    {
+      "question_id": "BAIN-Q-006",
+      "type": "adoption_behavioral",
+      "generated_question": "Describe a piece of work where the stakeholder had to adopt the change for it to count. How did you make adoption happen?",
+      "aims_dimensions": [
+        "impact_results",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Distinguishes the recommendation from the adoption outcome.",
+        "Names the stakeholders and the constraints that made adoption difficult.",
+        "Describes concrete implementation and change-leadership actions.",
+        "Provides evidence that the change held after the engagement."
+      ],
+      "evidence_ids": [
+        "BAIN-ABOUT-007",
+        "BAIN-HIRING-004"
+      ]
     }
   ]
 }

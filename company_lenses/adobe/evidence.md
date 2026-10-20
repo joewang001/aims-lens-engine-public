@@ -4,6 +4,9 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ADOBE-IR-009 | official_investor_relations | Adobe Investor Relations | 2026-10-20 | 0.80 | Adobe's investor page describes a diversified software company with more than 30,000 employees and fiscal 2025 revenue of $23.77 billion, positioned around creativity, productivity, and personalized customer experiences. |
+| ADOBE-AI-010 | official_company | Adobe AI Overview | 2026-10-20 | 0.76 | Adobe's AI overview says generative AI should assist and amplify human ingenuity and commits to responsible development with respect for creator rights. |
+| ADOBE-CSR-011 | official_company | Corporate Social Responsibility at Adobe | 2026-10-20 | 0.76 | Adobe's responsibility page ties Adobe for All to the belief that great ideas come from anywhere and that respected, included people are more creative; it links responsible technology to AI ethics, security, privacy, trust, accessibility, and sustainability. |
 | ADOBE-VALUES-004 | official_leadership_letter | Evolving Adobe's Values and Culture (CEO memo) | 2026-10-19 | 0.80 | A CEO memo describes four Adobe values: create the future through customer-centric innovation, own the outcome with a bias to action, raise the bar with intellectual honesty, and be genuine through inclusion and respect. |
 | ADOBE-HIRING-005 | official_careers | How We Hire at Adobe | 2026-10-19 | 0.82 | Adobe outlines a five-step hiring process and asks for evidence of impact and creativity, portfolio or GitHub links, measurable examples, and role-specific exercises such as coding, system design, creative briefs, or scenario discussions. |
 | ADOBE-ALL-006 | official_company | Adobe for All | 2026-10-19 | 0.74 | Adobe for All describes a culture where all employees can make an impact, great ideas can come from anywhere, pay is reviewed twice yearly, and wellbeing benefits support people personally and professionally. |
@@ -28,3 +31,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.adobe.com/adobe-for-all.html
 - https://blog.developer.adobe.com/en/publish/2026/09/investing-in-the-future-of-creative-cloud-extensibility-uxp-comes-to-our-flagship-applications
 - https://www.adobe.com/about-adobe.html
+- https://www.adobe.com/ai/overview.html
+- https://www.adobe.com/corporate-responsibility.html
