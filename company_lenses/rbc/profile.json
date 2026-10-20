@@ -103,7 +103,8 @@
       "confidence": 0.7,
       "evidence_ids": [
         "RBC-PRIV-001",
-        "RBC-OFFICIAL-001"
+        "RBC-OFFICIAL-001",
+        "RBC-HIRE-002"
       ],
       "basis": "stated_by_company"
     },

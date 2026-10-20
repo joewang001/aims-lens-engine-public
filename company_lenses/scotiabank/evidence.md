@@ -16,6 +16,7 @@ Status: v0.1 synthesized.
 | BNS-RISK-002 | risk_context | Limited private evidence risk | n/a | 2026-05-04 | 0.50 | Only two private entries; process claims remain lower confidence. |
 | SCOTIA-PUBLIC-COMMUNITY-001 | public_interview_experience | Public interview-experience aggregate: Scotiabank | n/a | 2026-05-04 | 0.65 | Public interview evidence points to medium-difficulty, generally favorable processes with situational and behavioral questions, customer-experience themes, conversation style, punctuality, technical skills for specialist roles, and one-way video/profile steps in some student processes. |
 | SCOTIA-PUBLIC-COMMUNITY-002 | employee_review | Public employee-review/community aggregate: Scotiabank | n/a | 2026-05-04 | 0.58 | Public employee/community signals are mixed: inclusive environment, learning, benefits, and supportive local teams appear alongside sales-driven culture, team variance, layoff/offshoring anxiety, pay concerns, and internal mobility/process frustration. |
+| BNS-HIRE-002 | official_careers | Talent Tip - 5 Tips to Mastering the Interview Process (Scotiabank careers blog) | 2026-10-20 | 0.86 | Scotiabank careers blog states that interviewers may ask behavioural interview questions to assess how well a candidate handled specific situations in the past, and advises preparing for 'tell me about a time' questions. |
 
 ## Notes
 
@@ -23,7 +24,8 @@ Private materials are included only as aggregate distilled patterns. Raw article
 
 ## Public Source URLs
 
+- https://www.scotiabank.com/careers/en/careers/blogs/posts.talent-tip---5-tips-to-mastering-the-interview-process.html
 - https://www.scotiabank.com/ca/en/about.html
 - https://jobs.scotiabank.com/
 
-The private-material distillations in this lens were harvested from Scotiabank's own official website (owner-confirmed 2026-10-20). Only the official domains are recorded here; article-level URLs are not committed, and no article text, copied questions, or author details are stored.
+The private-material distillations in this lens were harvested from Scotiabank's own official website (owner-confirmed 2026-10-20); article-level URLs for that private material are not committed. Publicly published guidance pages that state the interview expectation are cited above by URL, with no copied question text or author details stored.

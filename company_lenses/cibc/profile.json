@@ -95,6 +95,7 @@
       ],
       "confidence": 0.7,
       "evidence_ids": [
+        "CIBC-HIRE-002",
         "CIBC-PRIV-001",
         "CIBC-OFFICIAL-001"
       ],

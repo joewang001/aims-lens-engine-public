@@ -18,6 +18,7 @@ Status: v0.1 synthesized.
 | JPMC-COMM-003 | public_community_discussion | Reddit JPMorgan technology interview discussions | 2025-12-04/2026-01-06 | 2026-05-04 | 0.52 | Public Reddit technology discussions corroborate coding, system design, domain discussion, and behavioral impact-story preparation for mid/senior or lead roles. |
 | JPMC-RISK-001 | risk_context | Integrity, controls, and conduct boundary | n/a | 2026-05-04 | 0.90 | Do not reward client/business outcomes that undermine conduct, controls, law, or integrity. |
 | JPMC-RISK-002 | risk_context | Role/process variation boundary | n/a | 2026-05-04 | 0.82 | Official careers source notes interview process differs by position; preserve uncertainty. |
+| JPMC-HIRE-002 | official_careers | JPMorgan Chase how we hire | 2026-10-20 | 0.8 | JPMorgan Chase how-we-hire page describes the interview stage, multiple rounds with several interviewers, and structured or recorded interviews for some roles; it does not state a behavioural-specificity criterion. |
 
 ## Notes
 
@@ -27,7 +28,8 @@ Public community materials are included only as aggregate signals. Public snippe
 
 ## Public Source URLs
 
+- https://www.jpmorganchase.com/careers/how-we-hire
 - https://www.jpmorganchase.com/about
 - https://www.jpmorganchase.com/careers
 
-The private-material distillations in this lens were harvested from JPMorgan Chase's own official website (owner-confirmed 2026-10-20). Only the official domains are recorded here; article-level URLs are not committed, and no article text, copied questions, or author details are stored.
+The private-material distillations in this lens were harvested from JPMorgan Chase's own official website (owner-confirmed 2026-10-20); article-level URLs for that private material are not committed. Publicly published guidance pages that state the interview expectation are cited above by URL, with no copied question text or author details stored.
