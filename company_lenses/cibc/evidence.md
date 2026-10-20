@@ -20,3 +20,10 @@ Status: v0.1 synthesized.
 ## Notes
 
 Private materials are included only as aggregate distilled patterns. Raw article text, copied interview questions, private URLs, and author-specific personal details must not be committed.
+
+## Public Source URLs
+
+- https://www.cibc.com/en/about-cibc.html
+- https://www.cibc.com/en/about-cibc/careers.html
+
+The private-material distillations in this lens were harvested from CIBC's own official website (owner-confirmed 2026-10-20). Only the official domains are recorded here; article-level URLs are not committed, and no article text, copied questions, or author details are stored.
