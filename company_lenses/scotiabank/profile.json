@@ -95,6 +95,7 @@
       ],
       "confidence": 0.7,
       "evidence_ids": [
+        "BNS-HIRE-002",
         "BNS-PRIV-001",
         "BNS-OFFICIAL-001"
       ],
