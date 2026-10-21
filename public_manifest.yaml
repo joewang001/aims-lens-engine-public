@@ -126,6 +126,7 @@ initial_public_release:
 allow_paths:
   root_files:
     - README.md
+    - .gitattributes
     - README_ZH.md
     - LICENSE
     - NOTICE
@@ -501,7 +502,13 @@ allow_paths:
     - company_lenses/bcg/validation_report.md
     - company_lenses/bcg/role_overlays/
 
+  public_agent_access:
+    - agent-access/
+
   public_tools:
+    - tools/package_agent_access.py
+    - tests/test_agent_distribution.py
+    - .github/workflows/agent-distribution.yml
     - tools/export_public_release.py
     - tools/scan_public_export.py
     - tools/generate_public_release_audit_report.py

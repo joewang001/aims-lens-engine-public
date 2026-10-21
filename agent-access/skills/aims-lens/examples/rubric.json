@@ -1,0 +1,15 @@
+{
+  "scope": "job_posting",
+  "criteria": [
+    {
+      "criterion_id": "ownership",
+      "text": "States personal responsibility."
+    }
+  ],
+  "scoring": {
+    "scale": "none"
+  },
+  "provenance": {
+    "kind": "employer_provided"
+  }
+}

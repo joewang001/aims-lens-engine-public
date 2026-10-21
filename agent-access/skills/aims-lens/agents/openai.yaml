@@ -1,0 +1,4 @@
+interface:
+  display_name: "AIMS Lens"
+  short_description: "AIMS API contract preview and Lens integration client"
+  default_prompt: "Use $aims-lens to prepare an AIMS request plan from authorized hiring inputs."

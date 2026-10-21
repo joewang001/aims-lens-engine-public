@@ -1,0 +1,9 @@
+{
+  "item_type": "behavioral_question",
+  "prompt": "Describe a service reliability improvement.",
+  "required": true,
+  "editable_by_lens": false,
+  "provenance": {
+    "kind": "employer_provided"
+  }
+}

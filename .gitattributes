@@ -1,0 +1,6 @@
+
+# Reproducible public Agent SDK across Windows and Unix.
+agent-access/** text eol=lf
+agent-access/downloads/*.zip binary
+tools/package_agent_access.py text eol=lf
+tests/test_agent_distribution.py text eol=lf

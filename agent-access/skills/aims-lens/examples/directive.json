@@ -1,0 +1,12 @@
+{
+  "directive_type": "must_validate",
+  "text": "Explain an ownership decision and its tradeoffs.",
+  "priority": "high",
+  "linked_dimensions": [
+    "ownership",
+    "reasoning"
+  ],
+  "provenance": {
+    "kind": "employer_provided"
+  }
+}

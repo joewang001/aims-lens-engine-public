@@ -187,6 +187,14 @@ def is_schema_or_contract(rel_path: str) -> bool:
     return rel_path.startswith("schemas/") or rel_path == "api/openapi.yaml"
 
 
+def is_public_agent_contract(rel_path: str) -> bool:
+    return rel_path in {
+        "agent-access/skills/aims-lens/scripts/aims_client.py",
+        "agent-access/skills/aims-lens/references/openapi.json",
+        "agent-access/skills/aims-lens/references/API_CONTRACT.zh-CN.md",
+    }
+
+
 def is_example(rel_path: str) -> bool:
     return rel_path.startswith("examples/")
 
@@ -261,7 +269,7 @@ def scan_line(rel_path: str, line_no: int, line: str, findings: list[Finding]) -
         add(findings, severity, "private_only_evidence", rel_path, line_no, "private_only", "private_only evidence cannot be exported.")
 
     if any(term in lower for term in ("candidate resume", "candidate_answer", "candidate resume", "resume_text")):
-        severity = "allowed_context" if is_policy_doc(rel_path) or is_schema_or_contract(rel_path) or is_example(rel_path) or is_tool(rel_path) else "blocker"
+        severity = "allowed_context" if is_policy_doc(rel_path) or is_schema_or_contract(rel_path) or is_example(rel_path) or is_tool(rel_path) or is_public_agent_contract(rel_path) else "blocker"
         add(findings, severity, "candidate_data_marker", rel_path, line_no, stripped[:120], "Candidate or resume marker found.")
 
     if "\"tenant_id\"" in line or "tenant_id:" in line:

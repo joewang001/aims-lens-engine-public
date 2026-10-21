@@ -1,5 +1,7 @@
 # AIMS Lens Engine
 
+**Use with your AI agent:** [Request API access, install the Skill, or copy an install prompt](agent-access/README.md) — Codex / DeepSeek Harness / Claude Code.
+
 [中文说明](README_ZH.md) | [Quick Start](#quick-start) | [Contributing](CONTRIBUTING.md)
 
 AIMS Lens Engine turns evidence about companies, roles, and industries into structured, auditable **lenses** for interview preparation and human-reviewed decision support. A lens records contextual priorities, sources, and limitations; it is not an official employer hiring standard.

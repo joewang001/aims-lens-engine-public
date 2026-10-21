@@ -1,0 +1,35 @@
+param(
+    [string]$ProjectRoot = (Get-Location).Path,
+    [ValidateSet('', 'codex', 'deepseek-harness', 'claude-code')][string]$HostName = '',
+    [string]$BaseUrl = 'https://portal.aimslens.com',
+    [switch]$AllowLocalTest,
+    [switch]$InstallOnly,
+    [switch]$NoBrowser,
+    [switch]$Upgrade,
+    [switch]$Reconnect,
+    [int]$WaitSeconds = 120
+)
+$ErrorActionPreference='Stop'
+$pythonRuntime=Get-Command python -CommandType Application -ErrorAction SilentlyContinue | Select-Object -First 1
+if (-not $pythonRuntime) { Write-Output '{"status":"NOT_READY","code":"PYTHON_310_REQUIRED"}'; exit 3 }
+& $pythonRuntime.Source -c 'import sys; sys.exit(0 if sys.version_info >= (3,10) else 3)'
+if ($LASTEXITCODE -ne 0) { Write-Output '{"status":"NOT_READY","code":"PYTHON_310_REQUIRED"}'; exit 3 }
+if (-not $HostName) {
+    if ($env:CODEX_THREAD_ID) { $HostName='codex' }
+    elseif ($env:DSH_PROFILE) { $HostName='deepseek-harness' }
+    elseif (-not [Console]::IsInputRedirected) {
+        $choice=Read-Host 'Install for 1) Codex 2) DeepSeek Harness 3) Claude Code [1]'
+        $HostName=switch ($choice) { '2' {'deepseek-harness'} '3' {'claude-code'} '1' {'codex'} '' {'codex'} default { Write-Output '{"status":"NOT_READY","code":"INVALID_HOST_SELECTION"}'; exit 3 } }
+    } else { Write-Output '{"status":"NOT_READY","code":"SELECT_HOST_WITH_HOSTNAME_OPTION"}'; exit 3 }
+}
+$setupArgs=@('--project-root',$ProjectRoot,'--host',$HostName,'--base-url',$BaseUrl,'--wait',[string]$WaitSeconds)
+if($AllowLocalTest){$setupArgs+='--allow-local-test'}
+if($InstallOnly){$setupArgs+='--install-only'}
+if($NoBrowser){$setupArgs+='--no-browser'}
+if($Upgrade){$setupArgs+='--upgrade'}
+if($Reconnect){$setupArgs+='--reconnect'}
+$bootstrapCode=@'
+@PYTHON@
+'@
+$bootstrapCode | & $pythonRuntime.Source - @setupArgs
+exit $LASTEXITCODE

@@ -1,0 +1,22 @@
+#!/bin/sh
+set -eu
+if ! command -v python3 >/dev/null 2>&1 || ! python3 -c 'import sys; sys.exit(0 if sys.version_info >= (3,10) else 3)'; then
+  printf '%s\n' '{"status":"NOT_READY","code":"PYTHON_310_REQUIRED"}'
+  exit 3
+fi
+has_host=false
+for argument in "$@"; do case "$argument" in --host|--host=*) has_host=true;; esac; done
+if [ "$has_host" = false ]; then
+  if [ -n "${CODEX_THREAD_ID:-}" ]; then set -- --host codex "$@"
+  elif [ -n "${DSH_PROFILE:-}" ]; then set -- --host deepseek-harness "$@"
+  elif [ -t 0 ]; then
+    printf 'Install for 1) Codex 2) DeepSeek Harness 3) Claude Code [1]: '
+    read -r choice
+    case "$choice" in 2) selected_host=deepseek-harness;; 3) selected_host=claude-code;; 1|'') selected_host=codex;; *) printf '%s\n' '{"status":"NOT_READY","code":"INVALID_HOST_SELECTION"}'; exit 3;; esac
+    set -- --host "$selected_host" "$@"
+  else printf '%s\n' '{"status":"NOT_READY","code":"SELECT_HOST_WITH_HOST_OPTION"}'; exit 3
+  fi
+fi
+python3 - "$@" <<'AIMS_BOOTSTRAP_PYTHON'
+@PYTHON@
+AIMS_BOOTSTRAP_PYTHON

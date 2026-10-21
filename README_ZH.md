@@ -1,5 +1,7 @@
 # AIMS Lens Engine 中文说明
 
+**AI Agent 接入：** [申请 API、安装 Skill 和复制提示词](agent-access/README.md)（Codex / DeepSeek Harness / Claude Code）。
+
 [English README](README.md) | [公开版快速开始](#如何运行)
 
 > 面向公开贡献、合作机构与 JobACE 私有实现的公司 Lens 蒸馏、验证与决策增强系统。
