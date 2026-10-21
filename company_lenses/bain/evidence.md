@@ -4,6 +4,11 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| BAIN-INTERVIEWING-009 | official_careers | Interviewing at Bain | 2026-10-21 | 0.84 | Bain says it asks every candidate for a role the same questions to reduce bias, and looks for intellectual curiosity, entrepreneurial drive, comfort with challenge, and ambition to help clients and stakeholders achieve results. Formats include behavioral interviews, portfolio or technical review, case or coding challenges, take-home work, and screening tests. |
+| BAIN-ASSESSMENT-010 | official_careers | Bain Digital Assessment | 2026-10-21 | 0.84 | Bain's consulting applicants may be required to complete a 30-40 minute digital assessment through Sova or TestGorilla as a mandatory step. Bain says it assesses problem solving, communication, and analytical skills and is reviewed alongside the resume and transcript; candidates must work independently and may not use AI, recording, screenshots, or transcription tools. |
+| BAIN-WHATTOEXPECT-011 | official_careers | What to Expect in Bain's Hiring Process | 2026-10-21 | 0.82 | Bain says interview questions focus on competencies that matter for the specific role, that it never asks candidates to memorize and recite material, and that it wants to understand how candidates think. It advises researching interviewers in advance and arriving with prepared questions. |
+| BAIN-CASE-012 | official_careers | Case Interview Preparation | 2026-10-21 | 0.86 | Bain's case interview guidance says there is no single right answer and that interviewers assess how candidates structure problems and build on ideas. It advises clarifying the question, stating a framework, sharing reasoning and calculations, adapting to interviewer cues, and summarizing the key insights. |
+| BAIN-BLOG-STANDOUT-013 | official_careers | How to Stand Out in Bain's Consulting Recruiting Process | 2026-10-21 | 0.78 | A Bain university recruiter says standout candidates pair strong academics with analytical and communication skills and show initiative, leadership, teamwork, and measurable results. She warns against forcing a pre-learned framework and says Bain looks for clear hypotheses, supported reasoning, and potential rather than specific industry experience. |
 | BAIN-SOCIAL-008 | official_company | Our Social Impact | 2026-10-20 | 0.80 | Bain says it is extending its pro bono consulting commitment to $2 billion by 2035 after a prior 10-year, $1.1 billion provision, with focus areas including climate and energy, food systems, education, racial equity, and economic development. |
 | BAIN-HIRING-004 | official_careers | Our Hiring Process | 2026-10-20 | 0.80 | Bain's hiring process page says each step exists for a purpose, feedback uses an objective scoring system, interviews are tailored to the role, may include behavioral or case interviews, and candidates learn how each interview went. |
 | BAIN-GROWTH-005 | official_careers | Supporting Your Growth | 2026-10-20 | 0.78 | Bain describes a coaching and apprenticeship culture with formal training, career guidance, wellbeing resources, inclusive leadership training, affinity groups, and separate consulting, client-delivery expert, and functional career tracks. |
@@ -27,3 +32,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.bain.com/careers/life-at-bain/supporting-your-growth/
 - https://www.bain.com/about/our-people/
 - https://www.bain.com/about/further/our-social-impact/
+- https://www.bain.com/careers/hiring-process/interviewing/
+- https://www.bain.com/careers/hiring-process/digital-assessment/
+- https://www.bain.com/careers/hiring-process/what-to-expect/
+- https://www.bain.com/careers/hiring-process/case-interview/
+- https://www.bain.com/careers/life-at-bain/careers-blog/how-to-stand-out-in-bains-consulting-recruiting-process/

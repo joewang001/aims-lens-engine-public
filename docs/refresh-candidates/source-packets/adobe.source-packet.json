@@ -1,7 +1,7 @@
 {
   "company_slug": "adobe",
   "company": "Adobe",
-  "collected_at": "2026-10-20T14:00:28Z",
+  "collected_at": "2026-10-21T13:45:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -186,6 +186,20 @@
       ],
       "evidence_id": "ADOBE-TRUST-012",
       "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "AI and Your Hiring Experience",
+      "url": "https://careers.adobe.com/us/en/ai-and-your-hiring-experience",
+      "confidence": 0.84,
+      "public_safe_signal": "Adobe asks candidates to show concrete examples of how AI amplified their impact, workflows, or thinking rather than simply listing AI skills. It says human judgment must guide AI, values authenticity and integrity, and prohibits AI recording, live scribing, or prompting tools during hiring conversations unless invited.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "evidence_valued"
+      ],
+      "evidence_id": "ADOBE-AIHIRING-013",
+      "date_accessed": "2026-10-21"
     }
   ],
   "lens_updates": {
@@ -265,6 +279,22 @@
         "confidence": 0.78,
         "evidence_ids": [
           "ADOBE-TRUST-012"
+        ]
+      },
+      {
+        "name": "Human judgment guides AI",
+        "description": "Adobe says tools do not create and people do, so it looks for candidates who pair their own creative capacity with responsible AI use rather than substituting generated output for judgment.",
+        "confidence": 0.82,
+        "evidence_ids": [
+          "ADOBE-AIHIRING-013"
+        ]
+      },
+      {
+        "name": "Authenticity in the hiring conversation",
+        "description": "Adobe asks candidates to lead with their own voice and says being genuine is core to the company, so AI may clarify or organize thinking but must not replace the person's experience or point of view.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-AIHIRING-013"
         ]
       }
     ],
@@ -385,6 +415,42 @@
           "ADOBE-CSR-011"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Shows concrete examples of AI improving a real workflow, decision, or creative outcome rather than listing AI tools or skills.",
+        "aims_dimensions": [
+          "impact_results",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.82,
+        "evidence_ids": [
+          "ADOBE-AIHIRING-013"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Explains where human judgment overrode or corrected AI output, and why.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "growth_mindset"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-AIHIRING-013"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Keeps their own voice and specific experience visible when describing AI-assisted work.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ADOBE-AIHIRING-013"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -445,6 +511,30 @@
         "confidence": 0.7,
         "evidence_ids": [
           "ADOBE-TRUST-012"
+        ]
+      },
+      {
+        "anti_signal": "Listing AI skills or tools without evidence of how they changed the work or its impact.",
+        "risk_reason": "Adobe explicitly asks candidates to show how AI amplified impact rather than simply naming AI skills; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-AIHIRING-013"
+        ]
+      },
+      {
+        "anti_signal": "Using AI recording, live scribing, or prompting tools during a hiring conversation without being invited.",
+        "risk_reason": "Adobe's hiring guidance explicitly prohibits these uses unless the candidate is invited to use them.",
+        "confidence": 0.86,
+        "evidence_ids": [
+          "ADOBE-AIHIRING-013"
+        ]
+      },
+      {
+        "anti_signal": "Presenting AI-generated work or answers that do not reflect the candidate's own experience.",
+        "risk_reason": "Adobe says it wants to meet the person, not an AI-generated version, and that authenticity and integrity are part of how it evaluates contributions.",
+        "confidence": 0.82,
+        "evidence_ids": [
+          "ADOBE-AIHIRING-013"
         ]
       }
     ],
@@ -550,6 +640,42 @@
           "ADOBE-TRUST-012",
           "ADOBE-CSR-011"
         ]
+      },
+      {
+        "type": "ai_impact_behavioral",
+        "generated_question": "Describe a piece of work where AI materially improved the outcome. What did you delegate to the tool, and what did you keep?",
+        "aims_dimensions": [
+          "impact_results",
+          "analytical_problem_solving",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names the workflow and the baseline before AI.",
+          "Explains what the tool did well and where it failed.",
+          "Shows human review or correction.",
+          "Quantifies or concretely describes the improved outcome."
+        ],
+        "evidence_ids": [
+          "ADOBE-AIHIRING-013"
+        ]
+      },
+      {
+        "type": "authenticity_behavioral",
+        "generated_question": "Tell me about a time you changed your point of view after seeing evidence. How did you decide the new view was yours?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Describes the original view and the contrary evidence.",
+          "Explains the reasoning used to update.",
+          "Shows independent judgment rather than deference.",
+          "Describes how the change affected later work."
+        ],
+        "evidence_ids": [
+          "ADOBE-AIHIRING-013"
+        ]
       }
     ],
     "role_overlays": [
@@ -580,6 +706,17 @@
         "evidence_ids": [
           "ADOBE-AI-010",
           "ADOBE-CSR-011"
+        ]
+      },
+      {
+        "role_slug": "ai_augmented_creative_and_technical_roles",
+        "role_family": "AI-augmented creative and technical roles",
+        "signals": [
+          "Demonstrates AI in the craft with evidence of quality, judgment, and review.",
+          "Can explain what was generated, what was edited, and what was rejected."
+        ],
+        "evidence_ids": [
+          "ADOBE-AIHIRING-013"
         ]
       }
     ]

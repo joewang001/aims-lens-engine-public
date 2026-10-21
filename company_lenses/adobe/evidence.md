@@ -4,6 +4,7 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ADOBE-AIHIRING-013 | official_careers | AI and Your Hiring Experience | 2026-10-21 | 0.84 | Adobe asks candidates to show concrete examples of how AI amplified their impact, workflows, or thinking rather than simply listing AI skills. It says human judgment must guide AI, values authenticity and integrity, and prohibits AI recording, live scribing, or prompting tools during hiring conversations unless invited. |
 | ADOBE-TRUST-012 | official_company | Adobe Trust Center | 2026-10-20 | 0.78 | Adobe's Trust Center commits to protecting the security, privacy, and availability of products, systems, and data, and points to content moderation policies, government-request transparency, and public trust reports. |
 | ADOBE-IR-009 | official_investor_relations | Adobe Investor Relations | 2026-10-20 | 0.80 | Adobe's investor page describes a diversified software company with more than 30,000 employees and fiscal 2025 revenue of $23.77 billion, positioned around creativity, productivity, and personalized customer experiences. |
 | ADOBE-AI-010 | official_company | Adobe AI Overview | 2026-10-20 | 0.76 | Adobe's AI overview says generative AI should assist and amplify human ingenuity and commits to responsible development with respect for creator rights. |
@@ -35,3 +36,4 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.adobe.com/ai/overview.html
 - https://www.adobe.com/corporate-responsibility.html
 - https://www.adobe.com/trust.html
+- https://careers.adobe.com/us/en/ai-and-your-hiring-experience

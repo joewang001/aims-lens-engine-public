@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-19",
-  "source_cutoff": "2026-10-20",
+  "source_cutoff": "2026-10-21",
   "industries": [
     "consulting",
     "strategy consulting",
@@ -76,6 +76,23 @@
       "confidence": 0.8,
       "evidence_ids": [
         "BAIN-SOCIAL-008"
+      ]
+    },
+    {
+      "name": "Same questions, assessed against role competencies",
+      "description": "Bain says it gives all candidates for a role the same interview questions to reduce bias and focuses assessment on the competencies the role requires, rather than on a memorized performance.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BAIN-INTERVIEWING-009",
+        "BAIN-WHATTOEXPECT-011"
+      ]
+    },
+    {
+      "name": "Potential over a prescribed pedigree",
+      "description": "Bain's university recruiter says the firm considers all degree types and does not require specific industry experience, looking instead for initiative, leadership, teamwork, and evidence of impact in whatever context candidates have.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BAIN-BLOG-STANDOUT-013"
       ]
     }
   ],
@@ -216,6 +233,69 @@
         "BAIN-SOCIAL-008"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Explains why Bain specifically, connecting the firm's stated approach to their own evidence and career reasoning.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BAIN-INTERVIEWING-009",
+        "BAIN-BLOG-STANDOUT-013"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Solves an unfamiliar problem independently under time pressure, without leaning on templates, transcription, or AI assistance.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BAIN-ASSESSMENT-010"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Shows initiative and leadership through extracurricular, volunteer, sport, or work examples and states what changed because of their involvement.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BAIN-BLOG-STANDOUT-013"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Adapts the case structure to the specific business problem and revises it when new information appears, rather than forcing a memorized framework.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BAIN-CASE-012",
+        "BAIN-BLOG-STANDOUT-013"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Prepares role-specific evidence for the format the role uses, such as a portfolio walkthrough, technical screen, take-home exercise, or case.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "BAIN-INTERVIEWING-009"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -276,6 +356,33 @@
       "evidence_ids": [
         "BAIN-SOCIAL-008"
       ]
+    },
+    {
+      "anti_signal": "Reciting a memorized framework or script instead of engaging the specific business problem.",
+      "risk_reason": "Bain states that it is not looking for a memorized framework and that interviewers assess how candidates adapt their thinking to the context; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BAIN-CASE-012",
+        "BAIN-BLOG-STANDOUT-013",
+        "BAIN-WHATTOEXPECT-011"
+      ]
+    },
+    {
+      "anti_signal": "Using AI tools, recording, screenshots, or transcription during a timed digital assessment.",
+      "risk_reason": "Bain's digital assessment guidance says these uses are strictly prohibited and that candidates must complete the assessment independently.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "BAIN-ASSESSMENT-010"
+      ]
+    },
+    {
+      "anti_signal": "Giving a generic answer about consulting prestige with no specific reason for Bain or the role.",
+      "risk_reason": "Bain says it looks for people who can explain why they want to join Bain specifically and advises researching interviewers and the role.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "BAIN-INTERVIEWING-009",
+        "BAIN-BLOG-STANDOUT-013"
+      ]
     }
   ],
   "interview_patterns": [
@@ -304,11 +411,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 8,
-    "official_source_count": 8,
+    "source_count": 13,
+    "official_source_count": 13,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-20"
+    "last_reviewed": "2026-10-21"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Bain & Company hiring standard.",

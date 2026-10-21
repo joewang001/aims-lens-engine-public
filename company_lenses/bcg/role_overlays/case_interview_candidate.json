@@ -1,0 +1,31 @@
+{
+  "company": "Boston Consulting Group",
+  "role_family": "Consulting case interview candidates",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Practices clarifying, structuring, quantifying, and synthesizing out loud.",
+    "Can adapt the structure when the interviewer introduces new information."
+  ],
+  "evidence_ids": [
+    "BCG-OFFICIAL-001",
+    "BCG-CAREERS-002",
+    "BCG-ABOUT-003",
+    "BCG-INTERVIEW-004",
+    "BCG-CASE-005",
+    "BCG-WORK-006",
+    "BCG-ABOUT-007",
+    "BCG-COMMIT-008",
+    "BCG-X-009",
+    "BCG-FAQ-010",
+    "BCG-AI-011",
+    "BCG-BLOG-EXPECT-012",
+    "BCG-BLOG-CASE-013"
+  ]
+}

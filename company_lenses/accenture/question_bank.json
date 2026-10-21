@@ -141,6 +141,60 @@
       "evidence_ids": [
         "ACCENTURE-AIDATA-013"
       ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-007",
+      "type": "success_definition_behavioral",
+      "generated_question": "Tell me about a time you had to define success for a vague project before you could plan the work. How did you do it?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Describes who was involved in defining success.",
+        "Separates outcome from output.",
+        "Explains assumptions and open questions.",
+        "Shows how the definition changed the plan."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-CASE-014"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-008",
+      "type": "application_tailoring_behavioral",
+      "generated_question": "Walk me through how you tailored an application, proposal, or pitch to a specific audience. What did you change, and why?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Identifies the audience's priorities.",
+        "Names concrete language or evidence choices.",
+        "Explains what was removed.",
+        "Describes the response or outcome."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-RESUME-015"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-009",
+      "type": "cross_domain_reframe_behavioral",
+      "generated_question": "Describe a time you used experience from outside the discipline to reframe a problem. What did others miss?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Names the outside experience and the analogy.",
+        "Explains the insight it produced.",
+        "Shows how the insight was tested.",
+        "Describes the effect on the decision."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-CASE-014"
+      ]
     }
   ]
 }
