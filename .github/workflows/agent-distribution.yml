@@ -4,7 +4,7 @@ on:
     paths: ['agent-access/**', 'tools/package_agent_access.py', 'tests/test_agent_distribution.py', 'public_manifest.yaml', 'tools/scan_public_export.py', '.github/workflows/agent-distribution.yml']
   push:
     branches: [main, "codex/**"]
-    paths: ['agent-access/**', 'tools/package_agent_access.py', 'tests/test_agent_distribution.py']
+    paths: ['agent-access/**', 'tools/package_agent_access.py', 'tests/test_agent_distribution.py', '.github/workflows/agent-distribution.yml']
 permissions:
   contents: read
 jobs:
