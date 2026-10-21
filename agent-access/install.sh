@@ -35,7 +35,7 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 try:
     with urllib.request.build_opener(NoRedirect).open('https://raw.githubusercontent.com/joewang001/aims-lens-engine-public/main/agent-access/downloads/aims-lens-agent-access-0.1.0.zip',timeout=30) as response:
         data=response.read(2*1024*1024+1)
-    if len(data)>2*1024*1024 or hashlib.sha256(data).hexdigest()!='b285118dc8ecc59f228d76de5de87a201912972762b4790b11bfb10e22f569f8':
+    if len(data)>2*1024*1024 or hashlib.sha256(data).hexdigest()!='9b6cb569d879cec2d7fa0b11797f3bca6aba6a3069b142614ce21cf8ba71c499':
         raise ValueError('bundle integrity')
     with tempfile.TemporaryDirectory(prefix='aims-setup-') as folder:
         root=pathlib.Path(folder)

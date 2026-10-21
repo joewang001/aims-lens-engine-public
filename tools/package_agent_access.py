@@ -17,9 +17,9 @@ def artifacts():
     manifest=''.join(sha(value)+'  '+name+'\n' for name,value in sorted(entries.items())).encode()
     entries['MANIFEST.sha256']=manifest
     out=io.BytesIO()
-    with zipfile.ZipFile(out,'w',compression=zipfile.ZIP_DEFLATED) as archive:
+    with zipfile.ZipFile(out,'w',compression=zipfile.ZIP_STORED) as archive:
         for name,value in sorted(entries.items()):
-            info=zipfile.ZipInfo('aims-lens-skills/'+name,date_time=(2026,10,21,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16;archive.writestr(info,value)
+            info=zipfile.ZipInfo('aims-lens-skills/'+name,date_time=(2026,10,21,0,0,0));info.create_system=3;info.compress_type=zipfile.ZIP_STORED;info.external_attr=0o100644<<16;archive.writestr(info,value)
     bundle=out.getvalue()
     code=(BASE/'bootstrap/download.py.in').read_text().replace('@BUNDLE@',NAME).replace('@SHA256@',sha(bundle))
     result={'downloads/'+NAME:bundle,'PACKAGE.sha256':manifest}

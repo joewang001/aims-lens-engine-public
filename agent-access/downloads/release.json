@@ -2,9 +2,9 @@
   "sdk_version": "0.1.0",
   "contract_version": "0.1.0-draft.2",
   "files": {
-    "downloads/aims-lens-agent-access-0.1.0.zip": "b285118dc8ecc59f228d76de5de87a201912972762b4790b11bfb10e22f569f8",
+    "downloads/aims-lens-agent-access-0.1.0.zip": "9b6cb569d879cec2d7fa0b11797f3bca6aba6a3069b142614ce21cf8ba71c499",
     "PACKAGE.sha256": "18d32cec55769254eb63ae739f18055ef3e5c78f396947a67dfe038de9613b91",
-    "install.sh": "80865c6af8828aeb1d85fe0157b4b49bdff289b74edf7a2ae13e28e9a502f002",
-    "install.ps1": "52a3ea78a68d99be8586eee854b2370e1f403e74de4deac99445f6b24bd0d7f8"
+    "install.sh": "4d9c66f2a9c24622cae2145a5d12afb069335256a3487ea8b7ce3903703aaa78",
+    "install.ps1": "65fe2c8659831890fac31b5181f2a53b170ed4157956fbaef481ae3be8164acc"
   }
 }
