@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-20T17:38:17Z",
-  "run_date": "2026-10-20",
-  "weekday": 1,
+  "generated_at": "2026-10-21T13:34:38Z",
+  "run_date": "2026-10-21",
+  "weekday": 2,
   "week_start": "2026-10-19",
   "focus_dimensions": [
-    "company_says",
-    "evidence_valued"
+    "company_judges",
+    "company_asks"
   ],
   "weekly_new_company_targets": [
     "bain",

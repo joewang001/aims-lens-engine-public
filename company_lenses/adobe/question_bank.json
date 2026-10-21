@@ -142,6 +142,44 @@
         "ADOBE-TRUST-012",
         "ADOBE-CSR-011"
       ]
+    },
+    {
+      "question_id": "ADOBE-Q-007",
+      "type": "ai_impact_behavioral",
+      "generated_question": "Describe a piece of work where AI materially improved the outcome. What did you delegate to the tool, and what did you keep?",
+      "aims_dimensions": [
+        "impact_results",
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names the workflow and the baseline before AI.",
+        "Explains what the tool did well and where it failed.",
+        "Shows human review or correction.",
+        "Quantifies or concretely describes the improved outcome."
+      ],
+      "evidence_ids": [
+        "ADOBE-AIHIRING-013"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-008",
+      "type": "authenticity_behavioral",
+      "generated_question": "Tell me about a time you changed your point of view after seeing evidence. How did you decide the new view was yours?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Describes the original view and the contrary evidence.",
+        "Explains the reasoning used to update.",
+        "Shows independent judgment rather than deference.",
+        "Describes how the change affected later work."
+      ],
+      "evidence_ids": [
+        "ADOBE-AIHIRING-013"
+      ]
     }
   ]
 }

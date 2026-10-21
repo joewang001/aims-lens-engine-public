@@ -143,6 +143,64 @@
       "evidence_ids": [
         "BAIN-SOCIAL-008"
       ]
+    },
+    {
+      "question_id": "BAIN-Q-008",
+      "type": "assessment_judgment_behavioral",
+      "generated_question": "Describe a time you had to solve an unfamiliar problem under time pressure without expert help. How did you decide what to prioritize?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "States what was known, unknown, and time-bound.",
+        "Explains the prioritization rule used.",
+        "Shows independent judgment rather than borrowed templates.",
+        "Reflects on what they would do differently."
+      ],
+      "evidence_ids": [
+        "BAIN-ASSESSMENT-010"
+      ]
+    },
+    {
+      "question_id": "BAIN-Q-009",
+      "type": "portfolio_evidence_behavioral",
+      "generated_question": "Walk me through a piece of work you would present to a Bain interviewer. What was the problem, what did you do, and what changed?",
+      "aims_dimensions": [
+        "impact_results",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Frames the problem and the stakeholders.",
+        "Distinguishes personal contribution from team output.",
+        "Quantifies or concretely describes the change.",
+        "Explains tradeoffs and what they learned."
+      ],
+      "evidence_ids": [
+        "BAIN-INTERVIEWING-009",
+        "BAIN-BLOG-STANDOUT-013"
+      ]
+    },
+    {
+      "question_id": "BAIN-Q-010",
+      "type": "initiative_behavioral",
+      "generated_question": "Tell me about an initiative you started where no one assigned you the work. What did you change, and who benefited?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Names the unmet need and why they acted.",
+        "Describes how they enrolled others.",
+        "Shows a concrete result or changed condition.",
+        "Acknowledges what did not work."
+      ],
+      "evidence_ids": [
+        "BAIN-BLOG-STANDOUT-013"
+      ]
     }
   ]
 }

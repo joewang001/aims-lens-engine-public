@@ -142,6 +142,81 @@
       "evidence_ids": [
         "BCG-X-009"
       ]
+    },
+    {
+      "question_id": "BCG-Q-008",
+      "type": "evidence_update_behavioral",
+      "generated_question": "Tell me about a time you changed your structure or recommendation mid-analysis because a new fact changed the picture. What changed, and why?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "growth_mindset",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Names the original hypothesis and the contrary evidence.",
+        "Explains the decision rule for changing course.",
+        "Shows how the revised logic was communicated.",
+        "States the outcome and what they learned."
+      ],
+      "evidence_ids": [
+        "BCG-BLOG-CASE-013"
+      ]
+    },
+    {
+      "question_id": "BCG-Q-009",
+      "type": "prioritization_behavioral",
+      "generated_question": "How do you decide which two or three factors matter most in an ambiguous client problem? Walk me through a real example.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Separates the objective from the available data.",
+        "States explicit prioritization criteria.",
+        "Explains what was deliberately deprioritized.",
+        "Connects the choice to a decision or result."
+      ],
+      "evidence_ids": [
+        "BCG-BLOG-CASE-013",
+        "BCG-FAQ-010"
+      ]
+    },
+    {
+      "question_id": "BCG-Q-010",
+      "type": "ai_judgment_behavioral",
+      "generated_question": "Tell me about a time you used AI to speed up your work. What did you keep, what did you reject, and how did you verify it?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Describes the task and why AI helped.",
+        "Shows verification against a source or reality.",
+        "Names what AI got wrong or what was rejected.",
+        "Takes personal responsibility for the final output."
+      ],
+      "evidence_ids": [
+        "BCG-AI-011"
+      ]
+    },
+    {
+      "question_id": "BCG-Q-011",
+      "type": "stakeholder_rapport_behavioral",
+      "generated_question": "Describe a time you had to build rapport with a skeptical stakeholder while still pushing your own view.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Describes the stakeholder's concern without caricature.",
+        "Shows how trust was built.",
+        "Explains how the view was advanced.",
+        "Reports the outcome and relationship afterward."
+      ],
+      "evidence_ids": [
+        "BCG-BLOG-EXPECT-012"
+      ]
     }
   ]
 }

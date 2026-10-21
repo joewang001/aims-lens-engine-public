@@ -4,6 +4,10 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ACCENTURE-CASE-014 | official_careers | Secrets to a Successful Case-Study Interview | 2026-10-21 | 0.80 | Accenture's careers blog advises case-study candidates to talk through the problem, ask the interviewer to define success and clarify details, explain assumptions, sketch on paper, and draw on their own experience. It says interviewers want candidates to succeed and that seemingly minor case details often signal real constraints. |
+| ACCENTURE-RESUME-015 | official_careers | What Happens to a Resume After You Submit | 2026-10-21 | 0.80 | An Accenture recruiter describes a human review of the cover letter and resume before an initial screening interview. The advice is to mirror the job description's language, make work experience the core, use standard formatting without photos, and proofread, while noting that recruiters also look for core attributes beyond an exact fit. |
+| ACCENTURE-TIPS-016 | official_careers | 5 Tips for Interview Success | 2026-10-21 | 0.78 | Accenture interview advice asks candidates to research products, press releases, people, and market position, prepare a short personal pitch and several STAR examples, keep speaking roughly balanced with the interviewer, ask one or two thoughtful questions, and follow up concisely. |
+| ACCENTURE-FAQ-017 | official_careers | Answers to Top Questions About Accenture Careers | 2026-10-21 | 0.76 | Accenture recruiters say the process starts with the application and then varies by role, with the recruiter explaining each step. They say candidates should hear within about a week, that feedback comes through the recruiter, and that regular real-time feedback is part of the culture. |
 | ACCENTURE-AIDATA-013 | official_company | AI and Data Services | 2026-10-20 | 0.78 | Accenture's AI and data services page argues data readiness gates AI value, citing executive survey statistics on gen AI transformation, data quality, and revenue growth, and describes Industrial AI, responsible AI, and AI Refinery as connected scaling paths. |
 | ACCENTURE-CAREERS-010 | official_careers | Accenture Careers | 2026-10-20 | 0.80 | Accenture's careers page reports 814,000 people, offices in 200+ cities across 52 countries, and 9,000+ clients in more than 120 countries. It groups roles across AI and data, consulting, engineering, operations, software, strategy, and technology. |
 | ACCENTURE-AI-011 | official_careers | AI and Data Science Careers at Accenture | 2026-10-20 | 0.80 | Accenture's AI and data careers page cites $3B invested in AI and data, 85,000+ professionals, 11,000+ production systems across 40+ industries, an AI adoption maturity model co-authored with Carnegie Mellon SEI, and responsible AI embedded from advisory through deployment. |
@@ -37,3 +41,7 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/ai-data-science-careers
 - https://www.accenture.com/us-en/careers/life-at-accenture/learning-development
 - https://www.accenture.com/en/services/ai-data
+- https://www.accenture.com/us-en/blogs/blogs-careers/secrets-to-a-successful-case-study-interview
+- https://www.accenture.com/us-en/blogs/blogs-careers/what-happens-to-a-resume-after-you-click-submit
+- https://www.accenture.com/us-en/blogs/blogs-careers/5-tips-for-interview-success
+- https://www.accenture.com/us-en/blogs/blogs-careers/get-answers-to-your-top-questions-about-accenture-careers

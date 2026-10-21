@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-19",
-  "source_cutoff": "2026-10-20",
+  "source_cutoff": "2026-10-21",
   "industries": [
     "consulting",
     "strategy consulting",
@@ -112,6 +112,23 @@
       "confidence": 0.76,
       "evidence_ids": [
         "BCG-X-009"
+      ]
+    },
+    {
+      "name": "Collaborative case work with individual ownership",
+      "description": "BCG describes interviews as close to real case-team work, where the interviewer is a resource and thinking is built together, while the candidate is still expected to own the answer and set direction.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BCG-BLOG-EXPECT-012",
+        "BCG-BLOG-CASE-013"
+      ]
+    },
+    {
+      "name": "Authenticity over AI-generated polish",
+      "description": "BCG allows AI as a preparation aid but states that authenticity is non-negotiable and that fabricated or unverifiable AI output will backfire, so the candidate's own judgment must remain visible.",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "BCG-AI-011"
       ]
     }
   ],
@@ -278,6 +295,79 @@
         "BCG-COMMIT-008"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Makes reasoning visible step by step and treats interviewer challenge as a way to improve the answer.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "structured_thinking"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BCG-BLOG-EXPECT-012",
+        "BCG-BLOG-CASE-013"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Clarifies the objective and key context before proposing a structure.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BCG-BLOG-CASE-013"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Connects each analysis to the overall client question and closes with recommendations, next steps, and risks.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BCG-BLOG-CASE-013"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Shows empathy and teamwork alongside analytical strength when explaining client or stakeholder situations.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BCG-FAQ-010"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Uses AI only as a preparation aid and can explain and defend every claim personally.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "confidence": 0.82,
+      "evidence_ids": [
+        "BCG-AI-011"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Shows sustained academic and professional impact rather than a single credential or title.",
+      "aims_dimensions": [
+        "impact_results",
+        "growth_mindset"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "BCG-FAQ-010"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -339,6 +429,39 @@
       "evidence_ids": [
         "BCG-COMMIT-008"
       ]
+    },
+    {
+      "anti_signal": "Presenting AI-generated content the candidate cannot explain, verify, or defend.",
+      "risk_reason": "BCG says authenticity is non-negotiable and that fabricated content will backfire; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "BCG-AI-011"
+      ]
+    },
+    {
+      "anti_signal": "Treating the case interviewer as an adversary or pure grader rather than a collaborator.",
+      "risk_reason": "BCG describes the case as a collaborative problem-solving conversation that mirrors case-team work.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "BCG-BLOG-EXPECT-012",
+        "BCG-BLOG-CASE-013"
+      ]
+    },
+    {
+      "anti_signal": "Applying broadly across many roles or offices without a focused rationale.",
+      "risk_reason": "BCG encourages experienced hires to apply for one position at a time to show focus and commitment, and caps student applications at four, so scattered applications create avoidable friction.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "BCG-FAQ-010"
+      ]
+    },
+    {
+      "anti_signal": "Rigidly applying a framework after new information contradicts it.",
+      "risk_reason": "BCG's case guidance emphasizes adapting the structure while keeping the thinking clear.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BCG-BLOG-CASE-013"
+      ]
     }
   ],
   "interview_patterns": [
@@ -367,11 +490,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 9,
-    "official_source_count": 9,
+    "source_count": 13,
+    "official_source_count": 13,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-20"
+    "last_reviewed": "2026-10-21"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Boston Consulting Group hiring standard.",

@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-20",
+  "source_cutoff": "2026-10-21",
   "industries": [
     "consulting",
     "professional services",
@@ -119,6 +119,22 @@
       "confidence": 0.76,
       "evidence_ids": [
         "ACCENTURE-AIDATA-013"
+      ]
+    },
+    {
+      "name": "Recruiter-led first review",
+      "description": "Accenture describes a recruiter reviewing the cover letter and resume before an initial screening conversation, so the application is treated as a human-judged argument for fit rather than an automated keyword match.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ACCENTURE-RESUME-015"
+      ]
+    },
+    {
+      "name": "The interviewer is an ally in case work",
+      "description": "Accenture's case-study guidance says the interviewer wants the candidate to do well and holds information the candidate needs, so candidates are expected to ask for definitions, confirm details, and treat the interviewer as a resource.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-CASE-014"
       ]
     }
   ],
@@ -261,6 +277,66 @@
         "ACCENTURE-AIDATA-013"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Tailors resume language and examples to the specific job description instead of sending a generic application.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-RESUME-015"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Clarifies what success means before solving a case, and states assumptions out loud.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ACCENTURE-CASE-014"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Balances talking time and asks questions that show research into products, people, and market position.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ACCENTURE-TIPS-016"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Prepares several distinct STAR examples rather than repeating one story across questions.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "impact_results"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ACCENTURE-TIPS-016"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Uses domain experience from outside consulting to interpret case details and constraints.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "growth_mindset"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ACCENTURE-CASE-014"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -330,6 +406,38 @@
       "evidence_ids": [
         "ACCENTURE-AIDATA-013"
       ]
+    },
+    {
+      "anti_signal": "Sending the same untailored resume to every role.",
+      "risk_reason": "Accenture's recruiter says applicants should edit the resume for each role and mirror the job description's language; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ACCENTURE-RESUME-015"
+      ]
+    },
+    {
+      "anti_signal": "Guessing at an answer instead of asking the interviewer to clarify a term or confirm a detail.",
+      "risk_reason": "Accenture's case guidance explicitly invites candidates to ask for definitions and confirmation.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ACCENTURE-CASE-014"
+      ]
+    },
+    {
+      "anti_signal": "Dominating the conversation or treating the interview as a one-way performance.",
+      "risk_reason": "Accenture advises roughly balanced speaking time and 1-2 thoughtful questions from the candidate.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "ACCENTURE-TIPS-016"
+      ]
+    },
+    {
+      "anti_signal": "Ignoring small case details that signal constraints.",
+      "risk_reason": "Accenture says seemingly extraneous details in a case usually carry meaning about what is and is not possible.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ACCENTURE-CASE-014"
+      ]
     }
   ],
   "interview_patterns": [
@@ -347,11 +455,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 13,
-    "official_source_count": 13,
+    "source_count": 17,
+    "official_source_count": 17,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-20"
+    "last_reviewed": "2026-10-21"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Accenture hiring standard.",

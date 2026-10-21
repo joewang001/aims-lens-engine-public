@@ -1,0 +1,31 @@
+{
+  "company": "Bain & Company",
+  "role_family": "Experienced professional and specialist roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Prepares a portfolio or work sample for the role's technical or delivery format.",
+    "Can explain a take-home exercise and present the result to a panel."
+  ],
+  "evidence_ids": [
+    "BAIN-OFFICIAL-001",
+    "BAIN-CAREERS-002",
+    "BAIN-ABOUT-003",
+    "BAIN-HIRING-004",
+    "BAIN-GROWTH-005",
+    "BAIN-PEOPLE-006",
+    "BAIN-ABOUT-007",
+    "BAIN-SOCIAL-008",
+    "BAIN-INTERVIEWING-009",
+    "BAIN-ASSESSMENT-010",
+    "BAIN-WHATTOEXPECT-011",
+    "BAIN-CASE-012",
+    "BAIN-BLOG-STANDOUT-013"
+  ]
+}

@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-20",
+  "source_cutoff": "2026-10-21",
   "industries": [
     "technology",
     "creative software",
@@ -112,6 +112,22 @@
       "confidence": 0.78,
       "evidence_ids": [
         "ADOBE-TRUST-012"
+      ]
+    },
+    {
+      "name": "Human judgment guides AI",
+      "description": "Adobe says tools do not create and people do, so it looks for candidates who pair their own creative capacity with responsible AI use rather than substituting generated output for judgment.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ADOBE-AIHIRING-013"
+      ]
+    },
+    {
+      "name": "Authenticity in the hiring conversation",
+      "description": "Adobe asks candidates to lead with their own voice and says being genuine is core to the company, so AI may clarify or organize thinking but must not replace the person's experience or point of view.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-AIHIRING-013"
       ]
     }
   ],
@@ -268,6 +284,42 @@
         "ADOBE-CSR-011"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Shows concrete examples of AI improving a real workflow, decision, or creative outcome rather than listing AI tools or skills.",
+      "aims_dimensions": [
+        "impact_results",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ADOBE-AIHIRING-013"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Explains where human judgment overrode or corrected AI output, and why.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "growth_mindset"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-AIHIRING-013"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Keeps their own voice and specific experience visible when describing AI-assisted work.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ADOBE-AIHIRING-013"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -339,6 +391,30 @@
       "evidence_ids": [
         "ADOBE-TRUST-012"
       ]
+    },
+    {
+      "anti_signal": "Listing AI skills or tools without evidence of how they changed the work or its impact.",
+      "risk_reason": "Adobe explicitly asks candidates to show how AI amplified impact rather than simply naming AI skills; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-AIHIRING-013"
+      ]
+    },
+    {
+      "anti_signal": "Using AI recording, live scribing, or prompting tools during a hiring conversation without being invited.",
+      "risk_reason": "Adobe's hiring guidance explicitly prohibits these uses unless the candidate is invited to use them.",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ADOBE-AIHIRING-013"
+      ]
+    },
+    {
+      "anti_signal": "Presenting AI-generated work or answers that do not reflect the candidate's own experience.",
+      "risk_reason": "Adobe says it wants to meet the person, not an AI-generated version, and that authenticity and integrity are part of how it evaluates contributions.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ADOBE-AIHIRING-013"
+      ]
     }
   ],
   "interview_patterns": [
@@ -356,11 +432,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 12,
-    "official_source_count": 12,
+    "source_count": 13,
+    "official_source_count": 13,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-20"
+    "last_reviewed": "2026-10-21"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Adobe hiring standard.",

@@ -1,7 +1,7 @@
 {
   "company_slug": "accenture",
   "company": "Accenture",
-  "collected_at": "2026-10-20T14:00:28Z",
+  "collected_at": "2026-10-21T13:45:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -196,6 +196,58 @@
       ],
       "evidence_id": "ACCENTURE-AIDATA-013",
       "date_accessed": "2026-10-20"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Secrets to a Successful Case-Study Interview",
+      "url": "https://www.accenture.com/us-en/blogs/blogs-careers/secrets-to-a-successful-case-study-interview",
+      "confidence": 0.8,
+      "public_safe_signal": "Accenture's careers blog advises case-study candidates to talk through the problem, ask the interviewer to define success and clarify details, explain assumptions, sketch on paper, and draw on their own experience. It says interviewers want candidates to succeed and that seemingly minor case details often signal real constraints.",
+      "dimensions": [
+        "company_asks",
+        "company_judges"
+      ],
+      "evidence_id": "ACCENTURE-CASE-014",
+      "date_accessed": "2026-10-21"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "What Happens to a Resume After You Submit",
+      "url": "https://www.accenture.com/us-en/blogs/blogs-careers/what-happens-to-a-resume-after-you-click-submit",
+      "confidence": 0.8,
+      "public_safe_signal": "An Accenture recruiter describes a human review of the cover letter and resume before an initial screening interview. The advice is to mirror the job description's language, make work experience the core, use standard formatting without photos, and proofread, while noting that recruiters also look for core attributes beyond an exact fit.",
+      "dimensions": [
+        "company_asks",
+        "company_judges"
+      ],
+      "evidence_id": "ACCENTURE-RESUME-015",
+      "date_accessed": "2026-10-21"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "5 Tips for Interview Success",
+      "url": "https://www.accenture.com/us-en/blogs/blogs-careers/5-tips-for-interview-success",
+      "confidence": 0.78,
+      "public_safe_signal": "Accenture interview advice asks candidates to research products, press releases, people, and market position, prepare a short personal pitch and several STAR examples, keep speaking roughly balanced with the interviewer, ask one or two thoughtful questions, and follow up concisely.",
+      "dimensions": [
+        "company_asks",
+        "company_judges"
+      ],
+      "evidence_id": "ACCENTURE-TIPS-016",
+      "date_accessed": "2026-10-21"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Answers to Top Questions About Accenture Careers",
+      "url": "https://www.accenture.com/us-en/blogs/blogs-careers/get-answers-to-your-top-questions-about-accenture-careers",
+      "confidence": 0.76,
+      "public_safe_signal": "Accenture recruiters say the process starts with the application and then varies by role, with the recruiter explaining each step. They say candidates should hear within about a week, that feedback comes through the recruiter, and that regular real-time feedback is part of the culture.",
+      "dimensions": [
+        "company_asks",
+        "company_judges"
+      ],
+      "evidence_id": "ACCENTURE-FAQ-017",
+      "date_accessed": "2026-10-21"
     }
   ],
   "lens_updates": {
@@ -284,6 +336,22 @@
         "confidence": 0.76,
         "evidence_ids": [
           "ACCENTURE-AIDATA-013"
+        ]
+      },
+      {
+        "name": "Recruiter-led first review",
+        "description": "Accenture describes a recruiter reviewing the cover letter and resume before an initial screening conversation, so the application is treated as a human-judged argument for fit rather than an automated keyword match.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ACCENTURE-RESUME-015"
+        ]
+      },
+      {
+        "name": "The interviewer is an ally in case work",
+        "description": "Accenture's case-study guidance says the interviewer wants the candidate to do well and holds information the candidate needs, so candidates are expected to ask for definitions, confirm details, and treat the interviewer as a resource.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-CASE-014"
         ]
       }
     ],
@@ -391,6 +459,66 @@
           "ACCENTURE-AIDATA-013"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Tailors resume language and examples to the specific job description instead of sending a generic application.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-RESUME-015"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Clarifies what success means before solving a case, and states assumptions out loud.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ACCENTURE-CASE-014"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Balances talking time and asks questions that show research into products, people, and market position.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ACCENTURE-TIPS-016"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Prepares several distinct STAR examples rather than repeating one story across questions.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "impact_results"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ACCENTURE-TIPS-016"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Uses domain experience from outside consulting to interpret case details and constraints.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "growth_mindset"
+        ],
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ACCENTURE-CASE-014"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -450,6 +578,38 @@
         "confidence": 0.7,
         "evidence_ids": [
           "ACCENTURE-AIDATA-013"
+        ]
+      },
+      {
+        "anti_signal": "Sending the same untailored resume to every role.",
+        "risk_reason": "Accenture's recruiter says applicants should edit the resume for each role and mirror the job description's language; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ACCENTURE-RESUME-015"
+        ]
+      },
+      {
+        "anti_signal": "Guessing at an answer instead of asking the interviewer to clarify a term or confirm a detail.",
+        "risk_reason": "Accenture's case guidance explicitly invites candidates to ask for definitions and confirmation.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ACCENTURE-CASE-014"
+        ]
+      },
+      {
+        "anti_signal": "Dominating the conversation or treating the interview as a one-way performance.",
+        "risk_reason": "Accenture advises roughly balanced speaking time and 1-2 thoughtful questions from the candidate.",
+        "confidence": 0.68,
+        "evidence_ids": [
+          "ACCENTURE-TIPS-016"
+        ]
+      },
+      {
+        "anti_signal": "Ignoring small case details that signal constraints.",
+        "risk_reason": "Accenture says seemingly extraneous details in a case usually carry meaning about what is and is not possible.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ACCENTURE-CASE-014"
         ]
       }
     ],
@@ -553,6 +713,57 @@
         "evidence_ids": [
           "ACCENTURE-AIDATA-013"
         ]
+      },
+      {
+        "type": "success_definition_behavioral",
+        "generated_question": "Tell me about a time you had to define success for a vague project before you could plan the work. How did you do it?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Describes who was involved in defining success.",
+          "Separates outcome from output.",
+          "Explains assumptions and open questions.",
+          "Shows how the definition changed the plan."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-CASE-014"
+        ]
+      },
+      {
+        "type": "application_tailoring_behavioral",
+        "generated_question": "Walk me through how you tailored an application, proposal, or pitch to a specific audience. What did you change, and why?",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Identifies the audience's priorities.",
+          "Names concrete language or evidence choices.",
+          "Explains what was removed.",
+          "Describes the response or outcome."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-RESUME-015"
+        ]
+      },
+      {
+        "type": "cross_domain_reframe_behavioral",
+        "generated_question": "Describe a time you used experience from outside the discipline to reframe a problem. What did others miss?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "growth_mindset"
+        ],
+        "strong_answer_signals": [
+          "Names the outside experience and the analogy.",
+          "Explains the insight it produced.",
+          "Shows how the insight was tested.",
+          "Describes the effect on the decision."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-CASE-014"
+        ]
       }
     ],
     "role_overlays": [
@@ -593,6 +804,17 @@
         ],
         "evidence_ids": [
           "ACCENTURE-AIDATA-013"
+        ]
+      },
+      {
+        "role_slug": "case_study_interview_candidate",
+        "role_family": "Consulting and case-study interview candidates",
+        "signals": [
+          "Practices clarifying success criteria, stating assumptions, and narrating the problem out loud.",
+          "Uses pen and paper to structure thinking and stays flexible when the interviewer changes direction."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-CASE-014"
         ]
       }
     ]
