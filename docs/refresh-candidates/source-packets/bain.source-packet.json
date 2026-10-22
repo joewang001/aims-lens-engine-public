@@ -1,7 +1,7 @@
 {
   "company_slug": "bain",
   "company": "Bain & Company",
-  "collected_at": "2026-10-21T13:45:00Z",
+  "collected_at": "2026-10-22T13:45:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -194,6 +194,86 @@
       ],
       "evidence_id": "BAIN-BLOG-STANDOUT-013",
       "date_accessed": "2026-10-21"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Our Work Areas",
+      "url": "https://www.bain.com/careers/work-with-us/our-work-areas/",
+      "confidence": 0.82,
+      "public_safe_signal": "Bain lists eight career work areas, including management consulting, technology and engineering, analytics/data/research, product management and innovation, business operations, design, marketing, and talent/HR, and frames candidates as choosing a path by specialty rather than a single consulting track.",
+      "dimensions": [
+        "role_variation",
+        "company_says"
+      ],
+      "evidence_id": "BAIN-WORKAREAS-014",
+      "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Technology & Engineering work area",
+      "url": "https://www.bain.com/careers/work-with-us/our-work-areas/technology-engineering/",
+      "confidence": 0.82,
+      "public_safe_signal": "Bain's technology and engineering area describes shipping AI-native products and platforms from day one on shared teams of data scientists, ML engineers, designers, product managers, and industry experts, with capabilities spanning digital transformation, engineering excellence, technical innovation, and advanced analysis.",
+      "dimensions": [
+        "role_variation",
+        "company_judges",
+        "evidence_valued"
+      ],
+      "evidence_id": "BAIN-TECHENG-015",
+      "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Management Consulting work area",
+      "url": "https://www.bain.com/careers/work-with-us/our-work-areas/management-consulting/",
+      "confidence": 0.82,
+      "public_safe_signal": "Bain's management consulting area describes a generalist path with a published ladder from intern to partner, where consultants build a broad skill set before specializing and assemble internal experts in pricing, procurement, or marketing analytics for client work.",
+      "dimensions": [
+        "role_variation",
+        "company_asks"
+      ],
+      "evidence_id": "BAIN-MGMT-016",
+      "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Analytics, Data & Research work area",
+      "url": "https://www.bain.com/careers/work-with-us/our-work-areas/analytics-data-research/",
+      "confidence": 0.82,
+      "public_safe_signal": "Bain's analytics, data, and research area is a distinct track supporting case teams, expecting comfort with cloud stacks, coding practices, and tools such as SQL, Python, R, Scala, Julia, or Spark, with deeper specialization in forecasting, NLP, computer vision, or social research.",
+      "dimensions": [
+        "role_variation",
+        "evidence_valued",
+        "company_judges"
+      ],
+      "evidence_id": "BAIN-ANALYTICS-017",
+      "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Integrated Teams",
+      "url": "https://www.bain.com/careers/work-with-us/integrated-teams/",
+      "confidence": 0.82,
+      "public_safe_signal": "Bain groups its teams into client-facing general consulting, specialized advisory units such as AI Insights & Solutions, Bain Capability Network, Enterprise Technology, Expert Consulting, and FRWD, plus internal business functions, and states that all three areas are equally important.",
+      "dimensions": [
+        "role_variation",
+        "company_says"
+      ],
+      "evidence_id": "BAIN-TEAMS-018",
+      "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "NextGen Software Solutions",
+      "url": "https://www.bain.com/careers/work-with-us/integrated-teams/nextgen-software-solutions/",
+      "confidence": 0.8,
+      "public_safe_signal": "Bain's NextGen Software Solutions team takes internal software products from zero to scale and separates product management, architecture and engineering, product and data-visualization design, user support, and strategy/operations responsibilities.",
+      "dimensions": [
+        "role_variation",
+        "company_judges"
+      ],
+      "evidence_id": "BAIN-NEXTGEN-019",
+      "date_accessed": "2026-10-22"
     }
   ],
   "lens_updates": {
@@ -255,6 +335,15 @@
         "confidence": 0.76,
         "evidence_ids": [
           "BAIN-BLOG-STANDOUT-013"
+        ]
+      },
+      {
+        "name": "Specialist and generalist paths treated as equally valid",
+        "description": "Bain describes general consultants, specialized advisers, and business-function teams as equally important, and its work-area structure treats technology, analytics, product, design, and marketing as career paths rather than side functions.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "BAIN-TEAMS-018",
+          "BAIN-WORKAREAS-014"
         ]
       }
     ],
@@ -384,6 +473,55 @@
           "BAIN-INTERVIEWING-009"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Maps their evidence to the specific Bain work area or team they are applying to, rather than presenting every role as generalist consulting.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BAIN-WORKAREAS-014",
+          "BAIN-TEAMS-018"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For technology and engineering roles, shows shipped software or AI product work and explains how the team divided product, data, design, and engineering responsibilities.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BAIN-TECHENG-015"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For analytics, data, or research roles, demonstrates a real analytical stack and explains how the analysis changed a decision rather than only describing the method.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "impact_results"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BAIN-ANALYTICS-017"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For internal product roles, shows discovery, prioritization, and adoption with internal or enterprise users, including how success was measured after launch.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "impact_results"
+        ],
+        "confidence": 0.75,
+        "evidence_ids": [
+          "BAIN-NEXTGEN-019"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -445,6 +583,24 @@
         "evidence_ids": [
           "BAIN-INTERVIEWING-009",
           "BAIN-BLOG-STANDOUT-013"
+        ]
+      },
+      {
+        "anti_signal": "Applying to Bain without being able to name the work area or team and the kind of work they want to do there.",
+        "risk_reason": "Bain's careers structure separates consulting, technology, analytics, product, design, and business functions, so a generic consulting rationale only fits one of several tracks.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BAIN-WORKAREAS-014",
+          "BAIN-TEAMS-018"
+        ]
+      },
+      {
+        "anti_signal": "Describing technology or analytics work only as advising others, with no example of building, shipping, or analyzing something directly.",
+        "risk_reason": "Bain's technology, analytics, and NextGen pages describe hands-on builders and analysts with specific tools and delivery responsibilities, not advisory-only work.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "BAIN-TECHENG-015",
+          "BAIN-ANALYTICS-017"
         ]
       }
     ],
@@ -574,6 +730,43 @@
         "evidence_ids": [
           "BAIN-BLOG-STANDOUT-013"
         ]
+      },
+      {
+        "type": "role_variation",
+        "generated_question": "Which Bain work area or integrated team are you targeting, and what have you done that shows you can operate in that track rather than as a generalist consultant?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names a specific work area or team and what that track actually does.",
+          "Connects past evidence to the craft of that track, not only to consulting interest.",
+          "Explains why the track fits better than adjacent Bain tracks.",
+          "Is honest about which parts of the track they have not yet done."
+        ],
+        "evidence_ids": [
+          "BAIN-WORKAREAS-014",
+          "BAIN-TEAMS-018"
+        ]
+      },
+      {
+        "type": "technical_build_behavioral",
+        "generated_question": "Walk me through something you shipped with a mixed team of engineers, data scientists, and designers. What did you own, and how did the team handle handoffs?",
+        "aims_dimensions": [
+          "ownership_execution",
+          "collaboration_communication",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Describes the product or system and the user problem it addressed.",
+          "States their own scope separately from teammates' scope.",
+          "Explains handoffs, interfaces, and review between disciplines.",
+          "Reports what shipped and what changed for users or the business."
+        ],
+        "evidence_ids": [
+          "BAIN-TECHENG-015"
+        ]
       }
     ],
     "role_overlays": [
@@ -628,6 +821,42 @@
         ],
         "evidence_ids": [
           "BAIN-INTERVIEWING-009"
+        ]
+      },
+      {
+        "role_slug": "technology_and_engineering_build",
+        "role_family": "Technology and engineering build roles",
+        "signals": [
+          "Shows hands-on delivery of AI-native products or platforms, from architecture through production.",
+          "Works on mixed teams of data scientists, ML engineers, designers, product managers, and industry experts.",
+          "Can describe engineering excellence and technical innovation work with clients, not only internal tooling."
+        ],
+        "evidence_ids": [
+          "BAIN-TECHENG-015",
+          "BAIN-TEAMS-018"
+        ]
+      },
+      {
+        "role_slug": "analytics_data_research",
+        "role_family": "Analytics, data, and research roles",
+        "signals": [
+          "Demonstrates a working analytical stack across SQL, Python, R, or Spark and explains why a method fit the question.",
+          "Translates unstructured data into insights that case teams or clients can act on.",
+          "Shows depth in an area such as forecasting, NLP, computer vision, or social research."
+        ],
+        "evidence_ids": [
+          "BAIN-ANALYTICS-017"
+        ]
+      },
+      {
+        "role_slug": "product_management_and_innovation",
+        "role_family": "Product management and internal software roles",
+        "signals": [
+          "Shows product discovery, roadmap tradeoffs, and adoption evidence for software used by internal or enterprise users.",
+          "Works with engineering, design, and support to take a product from prototype to scale."
+        ],
+        "evidence_ids": [
+          "BAIN-NEXTGEN-019"
         ]
       }
     ]

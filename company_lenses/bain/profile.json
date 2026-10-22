@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-19",
-  "source_cutoff": "2026-10-21",
+  "source_cutoff": "2026-10-22",
   "industries": [
     "consulting",
     "strategy consulting",
@@ -93,6 +93,15 @@
       "confidence": 0.76,
       "evidence_ids": [
         "BAIN-BLOG-STANDOUT-013"
+      ]
+    },
+    {
+      "name": "Specialist and generalist paths treated as equally valid",
+      "description": "Bain describes general consultants, specialized advisers, and business-function teams as equally important, and its work-area structure treats technology, analytics, product, design, and marketing as career paths rather than side functions.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BAIN-TEAMS-018",
+        "BAIN-WORKAREAS-014"
       ]
     }
   ],
@@ -296,6 +305,55 @@
         "BAIN-INTERVIEWING-009"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Maps their evidence to the specific Bain work area or team they are applying to, rather than presenting every role as generalist consulting.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BAIN-WORKAREAS-014",
+        "BAIN-TEAMS-018"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For technology and engineering roles, shows shipped software or AI product work and explains how the team divided product, data, design, and engineering responsibilities.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BAIN-TECHENG-015"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For analytics, data, or research roles, demonstrates a real analytical stack and explains how the analysis changed a decision rather than only describing the method.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BAIN-ANALYTICS-017"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For internal product roles, shows discovery, prioritization, and adoption with internal or enterprise users, including how success was measured after launch.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.75,
+      "evidence_ids": [
+        "BAIN-NEXTGEN-019"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -383,6 +441,24 @@
         "BAIN-INTERVIEWING-009",
         "BAIN-BLOG-STANDOUT-013"
       ]
+    },
+    {
+      "anti_signal": "Applying to Bain without being able to name the work area or team and the kind of work they want to do there.",
+      "risk_reason": "Bain's careers structure separates consulting, technology, analytics, product, design, and business functions, so a generic consulting rationale only fits one of several tracks.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BAIN-WORKAREAS-014",
+        "BAIN-TEAMS-018"
+      ]
+    },
+    {
+      "anti_signal": "Describing technology or analytics work only as advising others, with no example of building, shipping, or analyzing something directly.",
+      "risk_reason": "Bain's technology, analytics, and NextGen pages describe hands-on builders and analysts with specific tools and delivery responsibilities, not advisory-only work.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "BAIN-TECHENG-015",
+        "BAIN-ANALYTICS-017"
+      ]
     }
   ],
   "interview_patterns": [
@@ -411,11 +487,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 13,
-    "official_source_count": 13,
+    "source_count": 19,
+    "official_source_count": 19,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-21"
+    "last_reviewed": "2026-10-22"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Bain & Company hiring standard.",

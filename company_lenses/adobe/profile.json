@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-21",
+  "source_cutoff": "2026-10-22",
   "industries": [
     "technology",
     "creative software",
@@ -128,6 +128,22 @@
       "confidence": 0.8,
       "evidence_ids": [
         "ADOBE-AIHIRING-013"
+      ]
+    },
+    {
+      "name": "Design as a cross-functional discipline",
+      "description": "Adobe Design presents design engineering, research and strategy, content strategy, and product management as parts of one design organization, with an annual summit for the whole team.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ADOBE-DESIGN-015"
+      ]
+    },
+    {
+      "name": "Research with a product destination",
+      "description": "Adobe Research pairs academic discovery with transfer into Adobe product features, framing research impact in terms of shipped capabilities rather than publications alone.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-RESEARCH-014"
       ]
     }
   ],
@@ -320,6 +336,54 @@
         "ADOBE-AIHIRING-013"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For research roles, shows research that moved toward a product surface, and can explain the engineering and product constraints it had to satisfy.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-RESEARCH-014"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For design roles, presents portfolio work with the candidate's specific decisions, process, and collaboration across research, content, product, or engineering.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-DESIGN-015"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For design engineering roles, shows both design craft and implementation, not only static mockups.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ADOBE-DESIGN-015"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For research engineering roles, explains how they built or scaled the systems behind research prototypes.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "growth_mindset"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ADOBE-RESEARCH-014"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -415,6 +479,22 @@
       "evidence_ids": [
         "ADOBE-AIHIRING-013"
       ]
+    },
+    {
+      "anti_signal": "Presenting portfolio work without stating what the candidate personally decided, built, or changed.",
+      "risk_reason": "Adobe Design describes a collaborative, cross-disciplinary design organization, so individual contribution has to be separated from team output.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-DESIGN-015"
+      ]
+    },
+    {
+      "anti_signal": "For research roles, listing publications or prototypes without explaining product relevance or constraints.",
+      "risk_reason": "Adobe Research frames its mission around transferring early-stage technology into product features.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ADOBE-RESEARCH-014"
+      ]
     }
   ],
   "interview_patterns": [
@@ -432,11 +512,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 13,
-    "official_source_count": 13,
+    "source_count": 15,
+    "official_source_count": 15,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-21"
+    "last_reviewed": "2026-10-22"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Adobe hiring standard.",

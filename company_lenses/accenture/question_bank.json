@@ -195,6 +195,45 @@
       "evidence_ids": [
         "ACCENTURE-CASE-014"
       ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-010",
+      "type": "role_variation",
+      "generated_question": "Which Accenture track are you targeting - consulting, technology, operations and delivery, or creative and design - and what evidence shows you can do that track's work?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names a specific track and describes its actual work.",
+        "Provides track-specific evidence rather than general enthusiasm.",
+        "Explains how prior experience transfers into that track.",
+        "Acknowledges what they would still need to learn."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-CONSULTING-018",
+        "ACCENTURE-OPS-019",
+        "ACCENTURE-DESIGN-020"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-011",
+      "type": "operations_transformation_behavioral",
+      "generated_question": "Describe an operation or process you transformed with technology. What was the baseline, what did you change, and what measurable result followed?",
+      "aims_dimensions": [
+        "impact_results",
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "States the baseline process and its cost, time, or quality problem.",
+        "Explains the technology and the operating change together.",
+        "Quantifies the result against the baseline.",
+        "Shows how the team was trained or brought along."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-OPS-019"
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "company_slug": "bcg",
   "company": "Boston Consulting Group",
-  "collected_at": "2026-10-21T13:45:00Z",
+  "collected_at": "2026-10-22T13:45:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -198,6 +198,46 @@
       ],
       "evidence_id": "BCG-BLOG-CASE-013",
       "date_accessed": "2026-10-21"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "BCG Platinion Careers",
+      "url": "https://www.bcgplatinion.com/careers",
+      "confidence": 0.82,
+      "public_safe_signal": "BCG Platinion presents itself as the AI tech unit within BCG's tech and digital practice, offering separate AI Tech Architect and AI Tech Consultant tracks and stating that BCG and Platinion provide different career tracks matched to technical depth and ambitions.",
+      "dimensions": [
+        "role_variation",
+        "company_says"
+      ],
+      "evidence_id": "BCG-PLATINION-014",
+      "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "AI Tech Architects role track (BCG Platinion)",
+      "url": "https://www.bcgplatinion.com/careers/roles/ai-tech-architects",
+      "confidence": 0.82,
+      "public_safe_signal": "The AI Tech Architect track centers on end-to-end architecture across applications, platforms, data, and infrastructure, including cloud, GenAI, and agentic systems, with explicit tradeoffs across performance, scalability, resilience, security, cost, and vendor choice.",
+      "dimensions": [
+        "role_variation",
+        "evidence_valued",
+        "company_judges"
+      ],
+      "evidence_id": "BCG-ARCHITECTS-015",
+      "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "AI Tech Consultants role track (BCG Platinion)",
+      "url": "https://www.bcgplatinion.com/careers/roles/ai-tech-consultants",
+      "confidence": 0.82,
+      "public_safe_signal": "The AI Tech Consultant track emphasizes requirements definition, business cases, process digitization, agile delivery, and stakeholder management, with roles from associate to managing director and stated flexibility to move into the architecture track.",
+      "dimensions": [
+        "role_variation",
+        "company_asks"
+      ],
+      "evidence_id": "BCG-CONSULTANTS-016",
+      "date_accessed": "2026-10-22"
     }
   ],
   "lens_updates": {
@@ -276,6 +316,16 @@
         "confidence": 0.84,
         "evidence_ids": [
           "BCG-AI-011"
+        ]
+      },
+      {
+        "name": "Parallel technical and consulting career tracks",
+        "description": "BCG Platinion describes distinct architecture and consulting tracks with their own ladders, and says people can move between them when skills and interests align; BCG X and general consulting add further tracks with different craft expectations.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BCG-PLATINION-014",
+          "BCG-ARCHITECTS-015",
+          "BCG-CONSULTANTS-016"
         ]
       }
     ],
@@ -441,6 +491,54 @@
           "BCG-FAQ-010"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Names the BCG track and office or practice they are targeting, and shows evidence for that track's craft rather than a generic consulting interest.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BCG-PLATINION-014"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For architecture roles, explains tradeoffs across performance, scalability, resilience, security, cost, and vendor choice for a system they designed.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "structured_thinking"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "BCG-ARCHITECTS-015"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For technology consulting roles, shows requirements work, business-case development, and agile delivery with named stakeholders.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "ownership_execution"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BCG-CONSULTANTS-016"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Explains how they moved an AI solution from experiment to production, including APIs, CI/CD, MLOps, observability, and testing.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BCG-ARCHITECTS-015"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -508,6 +606,23 @@
         "confidence": 0.78,
         "evidence_ids": [
           "BCG-BLOG-CASE-013"
+        ]
+      },
+      {
+        "anti_signal": "Applying for a BCG Platinion or BCG X technical role with only strategy or slide-level exposure and no architecture, build, or delivery evidence.",
+        "risk_reason": "BCG Platinion describes its technical tracks as hands-on architecture and implementation work, not advisory-only strategy.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BCG-PLATINION-014",
+          "BCG-ARCHITECTS-015"
+        ]
+      },
+      {
+        "anti_signal": "Treating general consulting, BCG X, and BCG Platinion as interchangeable without explaining which track fits their evidence.",
+        "risk_reason": "BCG publicly separates these tracks and says they suit different technical depth and career ambitions.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BCG-PLATINION-014"
         ]
       }
     ],
@@ -652,6 +767,41 @@
         "evidence_ids": [
           "BCG-BLOG-EXPECT-012"
         ]
+      },
+      {
+        "type": "role_variation",
+        "generated_question": "Which BCG track are you pursuing - general consulting, BCG X, or BCG Platinion - and what evidence shows you can do that track's core work?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names a specific track and what distinguishes its work.",
+          "Provides evidence of the track's core craft, not only interest.",
+          "Explains why adjacent tracks are a weaker fit.",
+          "Is explicit about gaps in the chosen track."
+        ],
+        "evidence_ids": [
+          "BCG-PLATINION-014"
+        ]
+      },
+      {
+        "type": "architecture_tradeoff_behavioral",
+        "generated_question": "Describe an architecture decision you made where performance, security, cost, or vendor constraints conflicted. How did you decide, and what did you give up?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "structured_thinking",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "States the constraints and who imposed them.",
+          "Compares at least two viable options with explicit tradeoffs.",
+          "Names the decision criteria and the sacrifice accepted.",
+          "Shows how the decision held up in production or review."
+        ],
+        "evidence_ids": [
+          "BCG-ARCHITECTS-015"
+        ]
       }
     ],
     "role_overlays": [
@@ -707,6 +857,42 @@
         ],
         "evidence_ids": [
           "BCG-AI-011"
+        ]
+      },
+      {
+        "role_slug": "technology_architecture",
+        "role_family": "AI and enterprise technology architecture roles",
+        "signals": [
+          "Designs end-to-end architectures across applications, platforms, data, and infrastructure.",
+          "Makes explicit tradeoffs across performance, scalability, resilience, security, cost, and vendor choice.",
+          "Moves AI solutions toward production with engineering practices such as CI/CD, MLOps, observability, and testing."
+        ],
+        "evidence_ids": [
+          "BCG-ARCHITECTS-015"
+        ]
+      },
+      {
+        "role_slug": "technology_consulting_and_delivery",
+        "role_family": "Technology consulting and delivery roles",
+        "signals": [
+          "Turns business requirements into IT strategy, business cases, and delivery plans.",
+          "Runs agile delivery with named stakeholders and owns project-level outcomes.",
+          "Can move between architecture and consulting tracks as the work requires."
+        ],
+        "evidence_ids": [
+          "BCG-CONSULTANTS-016",
+          "BCG-PLATINION-014"
+        ]
+      },
+      {
+        "role_slug": "enterprise_platform_and_cyber",
+        "role_family": "Enterprise platform, ERP, and cyber roles",
+        "signals": [
+          "Shows depth in enterprise systems, ERP implementation, or IT cost and value realization.",
+          "Connects cybersecurity and risk governance to delivery decisions."
+        ],
+        "evidence_ids": [
+          "BCG-PLATINION-014"
         ]
       }
     ]

@@ -1,7 +1,7 @@
 {
   "company_slug": "accenture",
   "company": "Accenture",
-  "collected_at": "2026-10-21T13:45:00Z",
+  "collected_at": "2026-10-22T13:45:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -248,6 +248,59 @@
       ],
       "evidence_id": "ACCENTURE-FAQ-017",
       "date_accessed": "2026-10-21"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Consulting Careers",
+      "url": "https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/consulting-careers",
+      "confidence": 0.8,
+      "public_safe_signal": "Accenture's consulting careers page frames consulting as combining the firm's breadth of capabilities across technology transformation, talent, and industry to solve client problems, and cites reach across 40+ industries and 120+ countries.",
+      "dimensions": [
+        "role_variation",
+        "company_says"
+      ],
+      "evidence_id": "ACCENTURE-CONSULTING-018",
+      "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Operations & Delivery Careers",
+      "url": "https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/operations-delivery-careers",
+      "confidence": 0.8,
+      "public_safe_signal": "Accenture's operations and delivery careers page positions the work as high-value transformation beyond business process outsourcing, citing AI and machine learning in finance and front-office work plus upskilling designed specifically for operations professionals.",
+      "dimensions": [
+        "role_variation",
+        "evidence_valued",
+        "company_judges"
+      ],
+      "evidence_id": "ACCENTURE-OPS-019",
+      "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Creative & Design Careers",
+      "url": "https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/creative-design-careers",
+      "confidence": 0.8,
+      "public_safe_signal": "Accenture's creative and design careers page describes a tech-powered creative group where strategists, writers, and designers work on brand, product, service, and experience design intended to create both human experience and business value.",
+      "dimensions": [
+        "role_variation",
+        "company_says"
+      ],
+      "evidence_id": "ACCENTURE-DESIGN-020",
+      "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Technology Careers",
+      "url": "https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/technology-careers",
+      "confidence": 0.76,
+      "public_safe_signal": "Accenture's technology careers page illustrates technology roles through client R&D work that combines digital twins, AI, semantic modelling, edge analytics, and robotics to test changes before they affect production.",
+      "dimensions": [
+        "role_variation",
+        "company_says"
+      ],
+      "evidence_id": "ACCENTURE-TECH-021",
+      "date_accessed": "2026-10-22"
     }
   ],
   "lens_updates": {
@@ -352,6 +405,22 @@
         "confidence": 0.78,
         "evidence_ids": [
           "ACCENTURE-CASE-014"
+        ]
+      },
+      {
+        "name": "Transformation beyond transaction in operations",
+        "description": "Accenture's operations and delivery careers page explicitly distinguishes its roles from business process outsourcing and describes using AI to move people toward more strategic work.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ACCENTURE-OPS-019"
+        ]
+      },
+      {
+        "name": "Capability breadth as a consulting method",
+        "description": "Accenture's consulting page presents breadth across technology transformation, talent, and industry as the mechanism consultants use, rather than a single functional specialty.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-CONSULTING-018"
         ]
       }
     ],
@@ -519,6 +588,54 @@
           "ACCENTURE-CASE-014"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For operations and delivery roles, shows a process transformation with automation or AI and quantifies the change in cycle time, cost, quality, or capacity.",
+        "aims_dimensions": [
+          "impact_results",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ACCENTURE-OPS-019"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For creative and design roles, connects craft decisions to human experience and business value, and shows collaboration with strategists, writers, and designers.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "impact_results"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-DESIGN-020"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For consulting roles, shows how they assembled capabilities from more than one function, such as technology, operations, and talent, to solve a client problem.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-CONSULTING-018"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For technology roles, explains how an emerging technology was tested against an operational or physical constraint before deployment.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ACCENTURE-TECH-021"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -610,6 +727,24 @@
         "confidence": 0.72,
         "evidence_ids": [
           "ACCENTURE-CASE-014"
+        ]
+      },
+      {
+        "anti_signal": "Assuming Accenture's consulting, technology, operations, and creative roles are interchangeable, with no role-specific evidence for the track applied to.",
+        "risk_reason": "Accenture publishes distinct work, expectations, and skill language for each of these tracks.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-CONSULTING-018",
+          "ACCENTURE-OPS-019",
+          "ACCENTURE-DESIGN-020"
+        ]
+      },
+      {
+        "anti_signal": "Describing operations work as routine business process outsourcing without transformation, technology, or measurable improvement.",
+        "risk_reason": "Accenture explicitly positions operations and delivery roles as transformation beyond BPO.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-OPS-019"
         ]
       }
     ],
@@ -764,6 +899,43 @@
         "evidence_ids": [
           "ACCENTURE-CASE-014"
         ]
+      },
+      {
+        "type": "role_variation",
+        "generated_question": "Which Accenture track are you targeting - consulting, technology, operations and delivery, or creative and design - and what evidence shows you can do that track's work?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names a specific track and describes its actual work.",
+          "Provides track-specific evidence rather than general enthusiasm.",
+          "Explains how prior experience transfers into that track.",
+          "Acknowledges what they would still need to learn."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-CONSULTING-018",
+          "ACCENTURE-OPS-019",
+          "ACCENTURE-DESIGN-020"
+        ]
+      },
+      {
+        "type": "operations_transformation_behavioral",
+        "generated_question": "Describe an operation or process you transformed with technology. What was the baseline, what did you change, and what measurable result followed?",
+        "aims_dimensions": [
+          "impact_results",
+          "analytical_problem_solving",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "States the baseline process and its cost, time, or quality problem.",
+          "Explains the technology and the operating change together.",
+          "Quantifies the result against the baseline.",
+          "Shows how the team was trained or brought along."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-OPS-019"
+        ]
       }
     ],
     "role_overlays": [
@@ -815,6 +987,51 @@
         ],
         "evidence_ids": [
           "ACCENTURE-CASE-014"
+        ]
+      },
+      {
+        "role_slug": "management_consulting",
+        "role_family": "Management and strategy consulting roles",
+        "signals": [
+          "Connects a client problem to a combination of technology, operations, and talent capabilities.",
+          "Works across industries and brings the right specialists in rather than solving alone."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-CONSULTING-018"
+        ]
+      },
+      {
+        "role_slug": "operations_and_delivery_transformation",
+        "role_family": "Operations and delivery transformation roles",
+        "signals": [
+          "Treats operations as transformation, not transaction, and looks beyond business process outsourcing.",
+          "Uses AI or machine learning to improve a finance, front-office, or industry process and measures the result.",
+          "Shows upskilling or change adoption with the operations team, not only a tool rollout."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-OPS-019"
+        ]
+      },
+      {
+        "role_slug": "creative_and_design",
+        "role_family": "Creative and experience design roles",
+        "signals": [
+          "Connects brand, product, service, or experience design to human experience and business value.",
+          "Collaborates with strategists, writers, and designers across disciplines."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-DESIGN-020"
+        ]
+      },
+      {
+        "role_slug": "emerging_technology_and_rd",
+        "role_family": "Emerging technology and R&D roles",
+        "signals": [
+          "Tests emerging technology such as digital twins, edge analytics, or robotics against a real operational constraint.",
+          "Moves an emerging-technology concept toward deployment rather than stopping at a demonstration."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-TECH-021"
         ]
       }
     ]

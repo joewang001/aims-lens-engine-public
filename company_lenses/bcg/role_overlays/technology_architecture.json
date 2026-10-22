@@ -1,0 +1,35 @@
+{
+  "company": "Boston Consulting Group",
+  "role_family": "AI and enterprise technology architecture roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Designs end-to-end architectures across applications, platforms, data, and infrastructure.",
+    "Makes explicit tradeoffs across performance, scalability, resilience, security, cost, and vendor choice.",
+    "Moves AI solutions toward production with engineering practices such as CI/CD, MLOps, observability, and testing."
+  ],
+  "evidence_ids": [
+    "BCG-OFFICIAL-001",
+    "BCG-CAREERS-002",
+    "BCG-ABOUT-003",
+    "BCG-INTERVIEW-004",
+    "BCG-CASE-005",
+    "BCG-WORK-006",
+    "BCG-ABOUT-007",
+    "BCG-COMMIT-008",
+    "BCG-X-009",
+    "BCG-FAQ-010",
+    "BCG-AI-011",
+    "BCG-BLOG-EXPECT-012",
+    "BCG-BLOG-CASE-013",
+    "BCG-PLATINION-014",
+    "BCG-ARCHITECTS-015",
+    "BCG-CONSULTANTS-016"
+  ]
+}
