@@ -201,6 +201,45 @@
       "evidence_ids": [
         "BAIN-BLOG-STANDOUT-013"
       ]
+    },
+    {
+      "question_id": "BAIN-Q-011",
+      "type": "role_variation",
+      "generated_question": "Which Bain work area or integrated team are you targeting, and what have you done that shows you can operate in that track rather than as a generalist consultant?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names a specific work area or team and what that track actually does.",
+        "Connects past evidence to the craft of that track, not only to consulting interest.",
+        "Explains why the track fits better than adjacent Bain tracks.",
+        "Is honest about which parts of the track they have not yet done."
+      ],
+      "evidence_ids": [
+        "BAIN-WORKAREAS-014",
+        "BAIN-TEAMS-018"
+      ]
+    },
+    {
+      "question_id": "BAIN-Q-012",
+      "type": "technical_build_behavioral",
+      "generated_question": "Walk me through something you shipped with a mixed team of engineers, data scientists, and designers. What did you own, and how did the team handle handoffs?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Describes the product or system and the user problem it addressed.",
+        "States their own scope separately from teammates' scope.",
+        "Explains handoffs, interfaces, and review between disciplines.",
+        "Reports what shipped and what changed for users or the business."
+      ],
+      "evidence_ids": [
+        "BAIN-TECHENG-015"
+      ]
     }
   ]
 }

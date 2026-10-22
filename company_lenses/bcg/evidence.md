@@ -4,6 +4,9 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| BCG-PLATINION-014 | official_careers | BCG Platinion Careers | 2026-10-22 | 0.82 | BCG Platinion presents itself as the AI tech unit within BCG's tech and digital practice, offering separate AI Tech Architect and AI Tech Consultant tracks and stating that BCG and Platinion provide different career tracks matched to technical depth and ambitions. |
+| BCG-ARCHITECTS-015 | official_careers | AI Tech Architects role track (BCG Platinion) | 2026-10-22 | 0.82 | The AI Tech Architect track centers on end-to-end architecture across applications, platforms, data, and infrastructure, including cloud, GenAI, and agentic systems, with explicit tradeoffs across performance, scalability, resilience, security, cost, and vendor choice. |
+| BCG-CONSULTANTS-016 | official_careers | AI Tech Consultants role track (BCG Platinion) | 2026-10-22 | 0.82 | The AI Tech Consultant track emphasizes requirements definition, business cases, process digitization, agile delivery, and stakeholder management, with roles from associate to managing director and stated flexibility to move into the architecture track. |
 | BCG-FAQ-010 | official_careers | BCG Careers Frequently Asked Questions | 2026-10-21 | 0.84 | BCG's careers FAQ says there is no single candidate profile and that it seeks ethical, results-driven, curious problem solvers who combine analytical thinking with empathy and teamwork. It looks for evidence of academic performance and career impact, expects strong communication, encourages experienced hires to focus on one application, and caps student applications at four. |
 | BCG-AI-011 | official_careers | Using AI in Your Application Process | 2026-10-21 | 0.86 | BCG permits generative AI to help structure a resume and practice interviews but says it must not replace the candidate's own voice, judgment, or experience. BCG asks candidates to validate AI output, be transparent, and avoid fabricated content, stating that authenticity is non-negotiable. |
 | BCG-BLOG-EXPECT-012 | official_careers | What to Expect During Your Consulting Interviews | 2026-10-21 | 0.80 | BCG's talent acquisition director says interviews mirror case-team work: collaborative and interactive, with the interviewer as a resource, while candidates still own their answers and set direction. He advises treating every touchpoint as a two-way evaluation of growth, colleagues, problem types, and location. |
@@ -38,3 +41,6 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://careers.bcg.com/global/en/careers-in-ai/using-ai-application-process
 - https://careers.bcg.com/global/en/blogarticle/what-to-expect-during-your-consulting-interviews
 - https://careers.bcg.com/global/en/blogarticle/tips-for-case-interviewing-what-bcg-looks-for
+- https://www.bcgplatinion.com/careers
+- https://www.bcgplatinion.com/careers/roles/ai-tech-architects
+- https://www.bcgplatinion.com/careers/roles/ai-tech-consultants

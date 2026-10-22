@@ -180,6 +180,44 @@
       "evidence_ids": [
         "ADOBE-AIHIRING-013"
       ]
+    },
+    {
+      "question_id": "ADOBE-Q-009",
+      "type": "research_to_product_behavioral",
+      "generated_question": "Tell me about a research idea or prototype you moved toward a product. What had to change to make it usable, and who did you work with?",
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Describes the original research contribution and its limits.",
+        "Names the product, engineering, or design constraints that forced changes.",
+        "Explains who they worked with and how decisions were made.",
+        "Shows what reached users and what did not."
+      ],
+      "evidence_ids": [
+        "ADOBE-RESEARCH-014"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-010",
+      "type": "design_process_behavioral",
+      "generated_question": "Walk me through one portfolio piece: what you decided, what you rejected, and how research, content, or engineering changed the outcome.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Separates their own decisions from teammates' contributions.",
+        "Explains rejected alternatives and why they were rejected.",
+        "Shows how input from another discipline changed the work.",
+        "Connects the final design to a user or business outcome."
+      ],
+      "evidence_ids": [
+        "ADOBE-DESIGN-015"
+      ]
     }
   ]
 }

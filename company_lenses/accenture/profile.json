@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-21",
+  "source_cutoff": "2026-10-22",
   "industries": [
     "consulting",
     "professional services",
@@ -135,6 +135,22 @@
       "confidence": 0.78,
       "evidence_ids": [
         "ACCENTURE-CASE-014"
+      ]
+    },
+    {
+      "name": "Transformation beyond transaction in operations",
+      "description": "Accenture's operations and delivery careers page explicitly distinguishes its roles from business process outsourcing and describes using AI to move people toward more strategic work.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ACCENTURE-OPS-019"
+      ]
+    },
+    {
+      "name": "Capability breadth as a consulting method",
+      "description": "Accenture's consulting page presents breadth across technology transformation, talent, and industry as the mechanism consultants use, rather than a single functional specialty.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-CONSULTING-018"
       ]
     }
   ],
@@ -337,6 +353,54 @@
         "ACCENTURE-CASE-014"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For operations and delivery roles, shows a process transformation with automation or AI and quantifies the change in cycle time, cost, quality, or capacity.",
+      "aims_dimensions": [
+        "impact_results",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ACCENTURE-OPS-019"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For creative and design roles, connects craft decisions to human experience and business value, and shows collaboration with strategists, writers, and designers.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-DESIGN-020"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For consulting roles, shows how they assembled capabilities from more than one function, such as technology, operations, and talent, to solve a client problem.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-CONSULTING-018"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For technology roles, explains how an emerging technology was tested against an operational or physical constraint before deployment.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ACCENTURE-TECH-021"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -438,6 +502,24 @@
       "evidence_ids": [
         "ACCENTURE-CASE-014"
       ]
+    },
+    {
+      "anti_signal": "Assuming Accenture's consulting, technology, operations, and creative roles are interchangeable, with no role-specific evidence for the track applied to.",
+      "risk_reason": "Accenture publishes distinct work, expectations, and skill language for each of these tracks.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-CONSULTING-018",
+        "ACCENTURE-OPS-019",
+        "ACCENTURE-DESIGN-020"
+      ]
+    },
+    {
+      "anti_signal": "Describing operations work as routine business process outsourcing without transformation, technology, or measurable improvement.",
+      "risk_reason": "Accenture explicitly positions operations and delivery roles as transformation beyond BPO.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-OPS-019"
+      ]
     }
   ],
   "interview_patterns": [
@@ -455,11 +537,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 17,
-    "official_source_count": 17,
+    "source_count": 21,
+    "official_source_count": 21,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-21"
+    "last_reviewed": "2026-10-22"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Accenture hiring standard.",

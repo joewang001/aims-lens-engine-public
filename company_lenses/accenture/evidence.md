@@ -4,6 +4,10 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ACCENTURE-CONSULTING-018 | official_careers | Consulting Careers | 2026-10-22 | 0.80 | Accenture's consulting careers page frames consulting as combining the firm's breadth of capabilities across technology transformation, talent, and industry to solve client problems, and cites reach across 40+ industries and 120+ countries. |
+| ACCENTURE-OPS-019 | official_careers | Operations & Delivery Careers | 2026-10-22 | 0.80 | Accenture's operations and delivery careers page positions the work as high-value transformation beyond business process outsourcing, citing AI and machine learning in finance and front-office work plus upskilling designed specifically for operations professionals. |
+| ACCENTURE-DESIGN-020 | official_careers | Creative & Design Careers | 2026-10-22 | 0.80 | Accenture's creative and design careers page describes a tech-powered creative group where strategists, writers, and designers work on brand, product, service, and experience design intended to create both human experience and business value. |
+| ACCENTURE-TECH-021 | official_careers | Technology Careers | 2026-10-22 | 0.76 | Accenture's technology careers page illustrates technology roles through client R&D work that combines digital twins, AI, semantic modelling, edge analytics, and robotics to test changes before they affect production. |
 | ACCENTURE-CASE-014 | official_careers | Secrets to a Successful Case-Study Interview | 2026-10-21 | 0.80 | Accenture's careers blog advises case-study candidates to talk through the problem, ask the interviewer to define success and clarify details, explain assumptions, sketch on paper, and draw on their own experience. It says interviewers want candidates to succeed and that seemingly minor case details often signal real constraints. |
 | ACCENTURE-RESUME-015 | official_careers | What Happens to a Resume After You Submit | 2026-10-21 | 0.80 | An Accenture recruiter describes a human review of the cover letter and resume before an initial screening interview. The advice is to mirror the job description's language, make work experience the core, use standard formatting without photos, and proofread, while noting that recruiters also look for core attributes beyond an exact fit. |
 | ACCENTURE-TIPS-016 | official_careers | 5 Tips for Interview Success | 2026-10-21 | 0.78 | Accenture interview advice asks candidates to research products, press releases, people, and market position, prepare a short personal pitch and several STAR examples, keep speaking roughly balanced with the interviewer, ask one or two thoughtful questions, and follow up concisely. |
@@ -45,3 +49,7 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.accenture.com/us-en/blogs/blogs-careers/what-happens-to-a-resume-after-you-click-submit
 - https://www.accenture.com/us-en/blogs/blogs-careers/5-tips-for-interview-success
 - https://www.accenture.com/us-en/blogs/blogs-careers/get-answers-to-your-top-questions-about-accenture-careers
+- https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/consulting-careers
+- https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/operations-delivery-careers
+- https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/creative-design-careers
+- https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/technology-careers

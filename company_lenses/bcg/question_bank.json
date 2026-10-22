@@ -217,6 +217,43 @@
       "evidence_ids": [
         "BCG-BLOG-EXPECT-012"
       ]
+    },
+    {
+      "question_id": "BCG-Q-012",
+      "type": "role_variation",
+      "generated_question": "Which BCG track are you pursuing - general consulting, BCG X, or BCG Platinion - and what evidence shows you can do that track's core work?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names a specific track and what distinguishes its work.",
+        "Provides evidence of the track's core craft, not only interest.",
+        "Explains why adjacent tracks are a weaker fit.",
+        "Is explicit about gaps in the chosen track."
+      ],
+      "evidence_ids": [
+        "BCG-PLATINION-014"
+      ]
+    },
+    {
+      "question_id": "BCG-Q-013",
+      "type": "architecture_tradeoff_behavioral",
+      "generated_question": "Describe an architecture decision you made where performance, security, cost, or vendor constraints conflicted. How did you decide, and what did you give up?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "States the constraints and who imposed them.",
+        "Compares at least two viable options with explicit tradeoffs.",
+        "Names the decision criteria and the sacrifice accepted.",
+        "Shows how the decision held up in production or review."
+      ],
+      "evidence_ids": [
+        "BCG-ARCHITECTS-015"
+      ]
     }
   ]
 }

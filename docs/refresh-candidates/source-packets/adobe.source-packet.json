@@ -1,7 +1,7 @@
 {
   "company_slug": "adobe",
   "company": "Adobe",
-  "collected_at": "2026-10-21T13:45:00Z",
+  "collected_at": "2026-10-22T13:45:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -200,6 +200,33 @@
       ],
       "evidence_id": "ADOBE-AIHIRING-013",
       "date_accessed": "2026-10-21"
+    },
+    {
+      "source_type": "official_company",
+      "title": "Adobe Research Careers",
+      "url": "https://research.adobe.com/careers/",
+      "confidence": 0.82,
+      "public_safe_signal": "Adobe Research describes a team of research scientists, engineers, artists, and designers combining academic discovery with product impact, hiring full-time research scientists, research engineers, and interns in the US, London, and Bangalore, and moving early-stage technology into Adobe products.",
+      "dimensions": [
+        "role_variation",
+        "evidence_valued",
+        "company_judges"
+      ],
+      "evidence_id": "ADOBE-RESEARCH-014",
+      "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Adobe Design Careers",
+      "url": "https://adobe.design/careers/",
+      "confidence": 0.8,
+      "public_safe_signal": "Adobe Design lists disciplines including brand, product, content, visual, motion, and design engineering alongside product management, program management, research and strategy, and content strategy, and describes mentorship, internal mobility, and an annual design summit.",
+      "dimensions": [
+        "role_variation",
+        "company_says"
+      ],
+      "evidence_id": "ADOBE-DESIGN-015",
+      "date_accessed": "2026-10-22"
     }
   ],
   "lens_updates": {
@@ -295,6 +322,22 @@
         "confidence": 0.8,
         "evidence_ids": [
           "ADOBE-AIHIRING-013"
+        ]
+      },
+      {
+        "name": "Design as a cross-functional discipline",
+        "description": "Adobe Design presents design engineering, research and strategy, content strategy, and product management as parts of one design organization, with an annual summit for the whole team.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ADOBE-DESIGN-015"
+        ]
+      },
+      {
+        "name": "Research with a product destination",
+        "description": "Adobe Research pairs academic discovery with transfer into Adobe product features, framing research impact in terms of shipped capabilities rather than publications alone.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-RESEARCH-014"
         ]
       }
     ],
@@ -451,6 +494,54 @@
           "ADOBE-AIHIRING-013"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For research roles, shows research that moved toward a product surface, and can explain the engineering and product constraints it had to satisfy.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "impact_results"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-RESEARCH-014"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For design roles, presents portfolio work with the candidate's specific decisions, process, and collaboration across research, content, product, or engineering.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-DESIGN-015"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For design engineering roles, shows both design craft and implementation, not only static mockups.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ADOBE-DESIGN-015"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For research engineering roles, explains how they built or scaled the systems behind research prototypes.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "growth_mindset"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ADOBE-RESEARCH-014"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -535,6 +626,22 @@
         "confidence": 0.82,
         "evidence_ids": [
           "ADOBE-AIHIRING-013"
+        ]
+      },
+      {
+        "anti_signal": "Presenting portfolio work without stating what the candidate personally decided, built, or changed.",
+        "risk_reason": "Adobe Design describes a collaborative, cross-disciplinary design organization, so individual contribution has to be separated from team output.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-DESIGN-015"
+        ]
+      },
+      {
+        "anti_signal": "For research roles, listing publications or prototypes without explaining product relevance or constraints.",
+        "risk_reason": "Adobe Research frames its mission around transferring early-stage technology into product features.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ADOBE-RESEARCH-014"
         ]
       }
     ],
@@ -676,6 +783,42 @@
         "evidence_ids": [
           "ADOBE-AIHIRING-013"
         ]
+      },
+      {
+        "type": "research_to_product_behavioral",
+        "generated_question": "Tell me about a research idea or prototype you moved toward a product. What had to change to make it usable, and who did you work with?",
+        "aims_dimensions": [
+          "impact_results",
+          "collaboration_communication",
+          "analytical_problem_solving"
+        ],
+        "strong_answer_signals": [
+          "Describes the original research contribution and its limits.",
+          "Names the product, engineering, or design constraints that forced changes.",
+          "Explains who they worked with and how decisions were made.",
+          "Shows what reached users and what did not."
+        ],
+        "evidence_ids": [
+          "ADOBE-RESEARCH-014"
+        ]
+      },
+      {
+        "type": "design_process_behavioral",
+        "generated_question": "Walk me through one portfolio piece: what you decided, what you rejected, and how research, content, or engineering changed the outcome.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "structured_thinking",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Separates their own decisions from teammates' contributions.",
+          "Explains rejected alternatives and why they were rejected.",
+          "Shows how input from another discipline changed the work.",
+          "Connects the final design to a user or business outcome."
+        ],
+        "evidence_ids": [
+          "ADOBE-DESIGN-015"
+        ]
       }
     ],
     "role_overlays": [
@@ -717,6 +860,30 @@
         ],
         "evidence_ids": [
           "ADOBE-AIHIRING-013"
+        ]
+      },
+      {
+        "role_slug": "research_science_and_engineering",
+        "role_family": "Research science and research engineering roles",
+        "signals": [
+          "Combines academic discovery with applied work intended for product use.",
+          "Can explain the path from prototype or publication to a shipped feature.",
+          "Works with product engineers and designers rather than in isolation."
+        ],
+        "evidence_ids": [
+          "ADOBE-RESEARCH-014"
+        ]
+      },
+      {
+        "role_slug": "product_design_and_design_engineering",
+        "role_family": "Product design and design engineering roles",
+        "signals": [
+          "Shows a portfolio with explicit decisions, tradeoffs, and rejected alternatives.",
+          "Works across brand, product, content, visual, motion, or design engineering disciplines.",
+          "Collaborates with research, content strategy, product management, and engineering."
+        ],
+        "evidence_ids": [
+          "ADOBE-DESIGN-015"
         ]
       }
     ]

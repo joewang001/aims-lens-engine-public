@@ -4,6 +4,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ADOBE-RESEARCH-014 | official_company | Adobe Research Careers | 2026-10-22 | 0.82 | Adobe Research describes a team of research scientists, engineers, artists, and designers combining academic discovery with product impact, hiring full-time research scientists, research engineers, and interns in the US, London, and Bangalore, and moving early-stage technology into Adobe products. |
+| ADOBE-DESIGN-015 | official_careers | Adobe Design Careers | 2026-10-22 | 0.80 | Adobe Design lists disciplines including brand, product, content, visual, motion, and design engineering alongside product management, program management, research and strategy, and content strategy, and describes mentorship, internal mobility, and an annual design summit. |
 | ADOBE-AIHIRING-013 | official_careers | AI and Your Hiring Experience | 2026-10-21 | 0.84 | Adobe asks candidates to show concrete examples of how AI amplified their impact, workflows, or thinking rather than simply listing AI skills. It says human judgment must guide AI, values authenticity and integrity, and prohibits AI recording, live scribing, or prompting tools during hiring conversations unless invited. |
 | ADOBE-TRUST-012 | official_company | Adobe Trust Center | 2026-10-20 | 0.78 | Adobe's Trust Center commits to protecting the security, privacy, and availability of products, systems, and data, and points to content moderation policies, government-request transparency, and public trust reports. |
 | ADOBE-IR-009 | official_investor_relations | Adobe Investor Relations | 2026-10-20 | 0.80 | Adobe's investor page describes a diversified software company with more than 30,000 employees and fiscal 2025 revenue of $23.77 billion, positioned around creativity, productivity, and personalized customer experiences. |
@@ -37,3 +39,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.adobe.com/corporate-responsibility.html
 - https://www.adobe.com/trust.html
 - https://careers.adobe.com/us/en/ai-and-your-hiring-experience
+- https://research.adobe.com/careers/
+- https://adobe.design/careers/
