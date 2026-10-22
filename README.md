@@ -1,6 +1,14 @@
 # AIMS Lens Engine
 
-**Use with your AI agent:** [Request API access, install the Skill, or copy an install prompt](agent-access/README.md) — Codex / DeepSeek Harness / Claude Code.
+## Install with your agent
+
+First [request API access](https://portal.aimslens.com) in **API & Skills**. Once approved, send this to your agent:
+
+```text
+Install the AIMS Lens Skill from https://github.com/joewang001/aims-lens-engine-public
+```
+
+[Install guide and downloads](agent-access/README.md) · [Agent installation instructions](agent-access/INSTALL.md#for-the-installing-agent)
 
 [中文说明](README_ZH.md) | [Quick Start](#quick-start) | [Contributing](CONTRIBUTING.md)
 

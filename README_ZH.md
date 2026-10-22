@@ -1,6 +1,14 @@
 # AIMS Lens Engine 中文说明
 
-**AI Agent 接入：** [申请 API、安装 Skill 和复制提示词](agent-access/README.md)（Codex / DeepSeek Harness / Claude Code）。
+## 让 Agent 安装
+
+先在 [Portal](https://portal.aimslens.com) 的 **API & Skills** 申请 API。获批后，把这一句话发给 Codex / DeepSeek Harness：
+
+```text
+从 https://github.com/joewang001/aims-lens-engine-public 安装 AIMS Lens Skill。
+```
+
+[安装指南与下载](agent-access/README.md) · [供 Agent 读取的安装步骤](agent-access/INSTALL.md#for-the-installing-agent)
 
 [English README](README.md) | [公开版快速开始](#如何运行)
 

@@ -1,24 +1,28 @@
-# Copy this into your agent / 复制给你的 Agent
+# Install AIMS Lens Skill
 
-Run your agent in the existing project where the Skill should be installed. This prompt works with Codex or DeepSeek Harness; the agent should choose its actual host name. AIMS API approval must precede connection.
-
-```text
-请读取 https://raw.githubusercontent.com/joewang001/aims-lens-engine-public/main/agent-access/README.md 和同目录 downloads/release.json。
-先检查 https://portal.aimslens.com/v1/public-config 的 agent_onboarding_enabled 是否为 true。
-如果尚未启用，可以仅安装 Skill，明确报告 API 连接尚不可用；不要尝试生成或提交凭证。
-服务启用后，先让我在 Portal 的 API & Skills 申请并获得机构 API 许可。
-为当前宿主（Codex 或 DeepSeek Harness）下载官方 install.ps1 或 install.sh，核对发布清单的 SHA-256，然后在当前项目执行。
-保留现有配置，不关闭沙箱、不改变执行策略、不安装全局依赖。
-需要设备授权时打开本机浏览器让我核对机构、权限和设备码；不要索取、打印或在聊天中传递 API Key。
-最后只运行 capabilities 和 whoami，依据实际响应报告连接状态。安装期间不要上传或自动收集工作目录。
-```
-
-For English-speaking agents:
+先在 [Portal](https://portal.aimslens.com) 的 **API & Skills** 申请 API。获批后，把这一句话发给你的 Agent：
 
 ```text
-Read https://raw.githubusercontent.com/joewang001/aims-lens-engine-public/main/agent-access/README.md and its downloads/release.json.
-Check the Portal public-config agent_onboarding_enabled flag. If disabled, install-only is allowed; report that API connection is unavailable and do not enroll.
-After Portal institution approval, download the official native installer, verify its published SHA-256, and install for this host in the current existing project.
-Preserve configuration and host sandbox/execution policy. Open the local browser for my explicit device consent. Never ask for, print or paste an API key.
-Validate capabilities and whoami only, report actual results, and do not upload workspace files during installation.
+从 https://github.com/joewang001/aims-lens-engine-public 安装 AIMS Lens Skill。
 ```
+
+First request API access in Portal → **API & Skills**. Once approved, send your agent:
+
+```text
+Install the AIMS Lens Skill from https://github.com/joewang001/aims-lens-engine-public
+```
+
+安装后按浏览器提示授权设备即可。 / Follow the browser prompt to authorize your device.
+
+## For the installing agent
+
+These are the steps for the agent, not a prompt the user needs to copy. Use the official native installer in the user's current existing project.
+
+1. Read [the access guide](README.md) and [release manifest](downloads/release.json). Identify the actual host (`codex`, `deepseek-harness`, or `claude-code`) and operating system. Preserve the existing project, provider configuration and host sandbox/execution policy.
+2. Check `https://portal.aimslens.com/v1/public-config`: `agent_onboarding_enabled` must be true before enrollment. If disabled, offer install-only and report that the API is unavailable; do not generate or submit credentials.
+3. API approval precedes connection. If the user has not yet obtained institution approval, direct them to Portal → **API & Skills** and pause connection until approved. Do not ask them to repeat approval already established in the conversation.
+4. Download [install.ps1](install.ps1) for Windows or [install.sh](install.sh) for macOS/Linux from this official repository. Verify its SHA-256 against the release manifest, then run it with the actual host in the current project. Python 3.10+ is required. Do not pipe a network response into a shell or install global dependencies. See the access guide for host compatibility and protected credential-store requirements.
+5. For device consent, open the local browser and let the user confirm the institution, permissions and device code. Never request, print or paste an API key. Credentials are generated locally and protected by the OS store; no plaintext fallback.
+6. Validate only capabilities and whoami using the installed setup flow. Report READY only after actual authenticated responses. Do not collect or upload workspace files during installation. If enrollment is pending, report it and resume with the same installer command.
+
+Manual download and installer commands: [access guide](README.md).

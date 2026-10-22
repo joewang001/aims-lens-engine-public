@@ -4,9 +4,30 @@
 
 Connect Codex, DeepSeek Harness or Claude Code to the hosted AIMS Lens Builder through one portable Skill. Python 3.10+ is required. The hosted API is separate from the public core; installing this Skill does not enable a hosted account.
 
+## 安装 / Install
+
+先在 [Portal](https://portal.aimslens.com) 的 **API & Skills** 申请 API。获批后，把下面这一句话发给 Codex / DeepSeek Harness：
+
+```text
+从 https://github.com/joewang001/aims-lens-engine-public 安装 AIMS Lens Skill。
+```
+
+First request API access in Portal → **API & Skills**. Once approved, send your agent:
+
+```text
+Install the AIMS Lens Skill from https://github.com/joewang001/aims-lens-engine-public
+```
+
+Agent 会安装 Skill，并引导你在浏览器确认机构、权限和设备码。连接验证通过后显示 READY；安装期间不上传工作目录。
+
+**For the installing agent:** follow [the installation instructions](INSTALL.md#for-the-installing-agent).
+
+<details>
+<summary>手动安装、下载及连接说明 / Manual installation and downloads</summary>
+
 ## 三步接入
 
-1. **申请 API**：打开 [Portal](https://portal.aimslens.com)，以已验证的机构管理员账号登录，在 **API & Skills** 填写一句话用途。审批后查看岗位范围与有效期。如果菜单尚未出现，表示生产接入尚未激活。
+1. **申请 API**：打开 [Portal](https://portal.aimslens.com)，以已验证的机构管理员账号登录，在 **API & Skills** 填写一句话用途。审批后查看岗位范围与有效期。
 2. **安装 Skill**：把 [安装提示词](INSTALL.md) 复制给 Codex / DSH，或下载一个安装文件： [Windows](https://raw.githubusercontent.com/joewang001/aims-lens-engine-public/main/agent-access/install.ps1) · [macOS / Linux](https://raw.githubusercontent.com/joewang001/aims-lens-engine-public/main/agent-access/install.sh) · [Skill ZIP](https://github.com/joewang001/aims-lens-engine-public/raw/refs/heads/main/agent-access/downloads/aims-lens-agent-access-0.1.0.zip)。在已有项目目录运行。
 3. **确认连接**：核对浏览器显示的机构、权限和设备码后授权。安装器取得 capabilities / whoami 的实际响应后才显示 READY。安装期间不上传工作目录。
 
@@ -27,6 +48,8 @@ sh install.sh --host codex
 ```
 
 Download files first; do not pipe network responses into a shell. Compare SHA-256 with [the download manifest](downloads/SHA256SUMS.txt). Optional `--install-only` / `-InstallOnly` installs without connecting. A disabled hosted service reports SERVICE_NOT_ENABLED, never READY. Re-run the same command to resume an authorization request. Explicit upgrades use --upgrade / -Upgrade and preserve a backup outside host discovery.
+
+</details>
 
 ## Current compatibility
 
