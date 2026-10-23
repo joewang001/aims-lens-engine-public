@@ -1,6 +1,6 @@
 # Public Lens Information Gaps
 
-Generated: `2026-10-22T17:44:44Z`
+Generated: `2026-10-23T13:35:02Z`
 
 This register records information that automation could not responsibly infer. The downstream sourcing and distillation teams own resolution using public-safe evidence.
 

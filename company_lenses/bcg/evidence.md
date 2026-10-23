@@ -4,6 +4,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| BCG-RESPAI-017 | official_careers | How BCG Uses Responsible AI in Hiring | 2026-10-23 | 0.88 | BCG says AI supports but never decides hiring: experienced recruiters review every application and people make the final decisions, while AI may draft interview questions or suggest roles. BCG tells candidates that AI is acceptable for brainstorming, clarity checks, and practice, but fully AI-written applications can feel generic and may create inconsistencies when interview answers are compared with the written submission. |
+| BCG-APPFAQ-018 | official_careers | Candidate & Application FAQs | 2026-10-23 | 0.84 | BCG's candidate FAQ says student-portal applicants may submit up to four applications at a time, should align office preferences with the role's location, and should not change those preferences across applications in the same period. It also states that a submitted application cannot be edited, each role can be applied to only once, and technical issues should go through the candidate help channel. |
 | BCG-PLATINION-014 | official_careers | BCG Platinion Careers | 2026-10-22 | 0.82 | BCG Platinion presents itself as the AI tech unit within BCG's tech and digital practice, offering separate AI Tech Architect and AI Tech Consultant tracks and stating that BCG and Platinion provide different career tracks matched to technical depth and ambitions. |
 | BCG-ARCHITECTS-015 | official_careers | AI Tech Architects role track (BCG Platinion) | 2026-10-22 | 0.82 | The AI Tech Architect track centers on end-to-end architecture across applications, platforms, data, and infrastructure, including cloud, GenAI, and agentic systems, with explicit tradeoffs across performance, scalability, resilience, security, cost, and vendor choice. |
 | BCG-CONSULTANTS-016 | official_careers | AI Tech Consultants role track (BCG Platinion) | 2026-10-22 | 0.82 | The AI Tech Consultant track emphasizes requirements definition, business cases, process digitization, agile delivery, and stakeholder management, with roles from associate to managing director and stated flexibility to move into the architecture track. |
@@ -44,3 +46,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.bcgplatinion.com/careers
 - https://www.bcgplatinion.com/careers/roles/ai-tech-architects
 - https://www.bcgplatinion.com/careers/roles/ai-tech-consultants
+- https://careers.bcg.com/global/en/careers-in-ai/responsible-ai-in-hiring
+- https://careers.bcg.com/global/en/interview-process/application-faqs

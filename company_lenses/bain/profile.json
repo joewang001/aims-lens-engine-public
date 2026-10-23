@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-19",
-  "source_cutoff": "2026-10-22",
+  "source_cutoff": "2026-10-23",
   "industries": [
     "consulting",
     "strategy consulting",
@@ -459,6 +459,30 @@
         "BAIN-TECHENG-015",
         "BAIN-ANALYTICS-017"
       ]
+    },
+    {
+      "anti_signal": "Sharing personal or financial information with a supposed Bain contact who is not using an @bain.com address.",
+      "risk_reason": "Bain's fraud warning says it requests personally identifiable information only through its own site, never asks for financial information, and sends email only from @bain.com.",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "BAIN-FRAUD-020"
+      ]
+    },
+    {
+      "anti_signal": "Holding employment or confidential conversations with a purported Bain representative on Telegram, WhatsApp, or Signal.",
+      "risk_reason": "Bain states it will not communicate employment-related or confidential matters on those messaging platforms and warns that impostors use them.",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "BAIN-FRAUD-020"
+      ]
+    },
+    {
+      "anti_signal": "Accepting an interview or offer from a purported Bain office without checking it against Bain's published global office list.",
+      "risk_reason": "Bain says only locations on its global office list are authorized and warns that impostors spoof calls, websites, and social profiles.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BAIN-FRAUD-020"
+      ]
     }
   ],
   "interview_patterns": [
@@ -487,11 +511,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 19,
-    "official_source_count": 19,
+    "source_count": 20,
+    "official_source_count": 20,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-22"
+    "last_reviewed": "2026-10-23"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Bain & Company hiring standard.",

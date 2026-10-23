@@ -1,7 +1,7 @@
 {
   "company_slug": "adobe",
   "company": "Adobe",
-  "collected_at": "2026-10-22T13:45:00Z",
+  "collected_at": "2026-10-23T13:33:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -227,6 +227,18 @@
       ],
       "evidence_id": "ADOBE-DESIGN-015",
       "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Recruiting Scams",
+      "url": "https://careers.adobe.com/us/en/recruiting-scams",
+      "confidence": 0.9,
+      "public_safe_signal": "Adobe's recruiting-scam page limits legitimate recruiting email to a defined set of Adobe domains, says Adobe never requests bank details, Social Security numbers, or similar sensitive data during recruiting or offers, never charges application or equipment fees, and keeps applications and offer letters in secure platforms.",
+      "dimensions": [
+        "risk_warnings"
+      ],
+      "evidence_id": "ADOBE-SCAM-016",
+      "date_accessed": "2026-10-23"
     }
   ],
   "lens_updates": {
@@ -642,6 +654,38 @@
         "confidence": 0.76,
         "evidence_ids": [
           "ADOBE-RESEARCH-014"
+        ]
+      },
+      {
+        "anti_signal": "Replying to a recruiting message from a domain outside Adobe's published recruiting domains.",
+        "risk_reason": "Adobe lists the only email domains its recruiting communications can come from and warns that other contacts may be fraudulent.",
+        "confidence": 0.84,
+        "evidence_ids": [
+          "ADOBE-SCAM-016"
+        ]
+      },
+      {
+        "anti_signal": "Providing bank account, Social Security, or similar sensitive personal data during an Adobe interview or offer process.",
+        "risk_reason": "Adobe says it does not request that information during recruiting, interviews, or offers, and that its process runs through secure platforms.",
+        "confidence": 0.86,
+        "evidence_ids": [
+          "ADOBE-SCAM-016"
+        ]
+      },
+      {
+        "anti_signal": "Paying an application or equipment fee to secure an Adobe role.",
+        "risk_reason": "Adobe says it never requests money to participate in its hiring process.",
+        "confidence": 0.84,
+        "evidence_ids": [
+          "ADOBE-SCAM-016"
+        ]
+      },
+      {
+        "anti_signal": "Treating an offer as verified without confirming it came through Adobe's secure application or offer platform.",
+        "risk_reason": "Adobe says its application process and offer letters are managed through secure platforms and not over email or instant messaging.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-SCAM-016"
         ]
       }
     ],
