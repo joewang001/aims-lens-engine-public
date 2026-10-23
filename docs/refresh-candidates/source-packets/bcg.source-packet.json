@@ -1,7 +1,7 @@
 {
   "company_slug": "bcg",
   "company": "Boston Consulting Group",
-  "collected_at": "2026-10-22T13:45:00Z",
+  "collected_at": "2026-10-23T13:33:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -238,6 +238,32 @@
       ],
       "evidence_id": "BCG-CONSULTANTS-016",
       "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "How BCG Uses Responsible AI in Hiring",
+      "url": "https://careers.bcg.com/global/en/careers-in-ai/responsible-ai-in-hiring",
+      "confidence": 0.88,
+      "public_safe_signal": "BCG says AI supports but never decides hiring: experienced recruiters review every application and people make the final decisions, while AI may draft interview questions or suggest roles. BCG tells candidates that AI is acceptable for brainstorming, clarity checks, and practice, but fully AI-written applications can feel generic and may create inconsistencies when interview answers are compared with the written submission.",
+      "dimensions": [
+        "risk_warnings",
+        "company_says"
+      ],
+      "evidence_id": "BCG-RESPAI-017",
+      "date_accessed": "2026-10-23"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Candidate & Application FAQs",
+      "url": "https://careers.bcg.com/global/en/interview-process/application-faqs",
+      "confidence": 0.84,
+      "public_safe_signal": "BCG's candidate FAQ says student-portal applicants may submit up to four applications at a time, should align office preferences with the role's location, and should not change those preferences across applications in the same period. It also states that a submitted application cannot be edited, each role can be applied to only once, and technical issues should go through the candidate help channel.",
+      "dimensions": [
+        "risk_warnings",
+        "role_variation"
+      ],
+      "evidence_id": "BCG-APPFAQ-018",
+      "date_accessed": "2026-10-23"
     }
   ],
   "lens_updates": {
@@ -623,6 +649,30 @@
         "confidence": 0.76,
         "evidence_ids": [
           "BCG-PLATINION-014"
+        ]
+      },
+      {
+        "anti_signal": "Submitting an AI-drafted application that sounds polished but cannot be reconciled with the candidate's live interview answers.",
+        "risk_reason": "BCG says AI may support preparation but warns that overuse can make an application generic and create inconsistencies during interviews; hiring decisions remain human-led.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "BCG-RESPAI-017"
+        ]
+      },
+      {
+        "anti_signal": "Applying to multiple BCG roles or offices at once without a consistent location rationale.",
+        "risk_reason": "BCG's candidate FAQ asks candidates to keep office preferences aligned with the role location and not to change them across applications in the same period; it also caps student-portal submissions at four at a time.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BCG-APPFAQ-018"
+        ]
+      },
+      {
+        "anti_signal": "Treating a submitted BCG application as editable or assuming the same role can be applied to again.",
+        "risk_reason": "BCG's FAQ says applications cannot be edited after submission and each role can be applied to only once.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "BCG-APPFAQ-018"
         ]
       }
     ],

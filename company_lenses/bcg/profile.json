@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-19",
-  "source_cutoff": "2026-10-22",
+  "source_cutoff": "2026-10-23",
   "industries": [
     "consulting",
     "strategy consulting",
@@ -537,6 +537,30 @@
       "evidence_ids": [
         "BCG-PLATINION-014"
       ]
+    },
+    {
+      "anti_signal": "Submitting an AI-drafted application that sounds polished but cannot be reconciled with the candidate's live interview answers.",
+      "risk_reason": "BCG says AI may support preparation but warns that overuse can make an application generic and create inconsistencies during interviews; hiring decisions remain human-led.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BCG-RESPAI-017"
+      ]
+    },
+    {
+      "anti_signal": "Applying to multiple BCG roles or offices at once without a consistent location rationale.",
+      "risk_reason": "BCG's candidate FAQ asks candidates to keep office preferences aligned with the role location and not to change them across applications in the same period; it also caps student-portal submissions at four at a time.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BCG-APPFAQ-018"
+      ]
+    },
+    {
+      "anti_signal": "Treating a submitted BCG application as editable or assuming the same role can be applied to again.",
+      "risk_reason": "BCG's FAQ says applications cannot be edited after submission and each role can be applied to only once.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "BCG-APPFAQ-018"
+      ]
     }
   ],
   "interview_patterns": [
@@ -565,11 +589,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 16,
-    "official_source_count": 16,
+    "source_count": 18,
+    "official_source_count": 18,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-22"
+    "last_reviewed": "2026-10-23"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Boston Consulting Group hiring standard.",

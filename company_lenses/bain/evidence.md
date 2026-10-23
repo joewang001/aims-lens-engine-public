@@ -4,6 +4,7 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| BAIN-FRAUD-020 | official_company | Fraudulent Activity Warning | 2026-10-23 | 0.88 | Bain's fraud warning says criminals impersonate its staff and offices through fake sites, social profiles, spoofed calls, and email, including job interviews and offers. Bain says it requests personal data only through its own site, never asks for financial information, emails only from @bain.com, and does not discuss employment or confidential matters on Telegram, WhatsApp, or Signal. |
 | BAIN-WORKAREAS-014 | official_careers | Our Work Areas | 2026-10-22 | 0.82 | Bain lists eight career work areas, including management consulting, technology and engineering, analytics/data/research, product management and innovation, business operations, design, marketing, and talent/HR, and frames candidates as choosing a path by specialty rather than a single consulting track. |
 | BAIN-TECHENG-015 | official_careers | Technology & Engineering work area | 2026-10-22 | 0.82 | Bain's technology and engineering area describes shipping AI-native products and platforms from day one on shared teams of data scientists, ML engineers, designers, product managers, and industry experts, with capabilities spanning digital transformation, engineering excellence, technical innovation, and advanced analysis. |
 | BAIN-MGMT-016 | official_careers | Management Consulting work area | 2026-10-22 | 0.82 | Bain's management consulting area describes a generalist path with a published ladder from intern to partner, where consultants build a broad skill set before specializing and assemble internal experts in pricing, procurement, or marketing analytics for client work. |
@@ -49,3 +50,4 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.bain.com/careers/work-with-us/our-work-areas/analytics-data-research/
 - https://www.bain.com/careers/work-with-us/integrated-teams/
 - https://www.bain.com/careers/work-with-us/integrated-teams/nextgen-software-solutions/
+- https://www.bain.com/about/fraudulent-activity-warning/

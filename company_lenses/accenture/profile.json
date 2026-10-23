@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-22",
+  "source_cutoff": "2026-10-23",
   "industries": [
     "consulting",
     "professional services",
@@ -520,6 +520,40 @@
       "evidence_ids": [
         "ACCENTURE-OPS-019"
       ]
+    },
+    {
+      "anti_signal": "Paying any application, interview, training, or equipment fee to someone promising an Accenture job.",
+      "risk_reason": "Accenture says it never asks for payment to invest, interview, or work, and its India notice says no agency is authorized to collect money for a job.",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ACCENTURE-SCAM-022",
+        "ACCENTURE-SCAM-IN-023"
+      ]
+    },
+    {
+      "anti_signal": "Sharing financial details or scheduling an interview through an informal chat account or a non-Accenture domain.",
+      "risk_reason": "Accenture warns that scams arrive through WhatsApp, Telegram, Signal, social platforms, and fake email domains, and says it does business only through valid Accenture domains, not outside chat.",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ACCENTURE-SCAM-022"
+      ]
+    },
+    {
+      "anti_signal": "Doing unpaid work for a supposed Accenture recruiter before any verified offer.",
+      "risk_reason": "Accenture's scam alert describes fake work opportunities where the person completes work and is never paid.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ACCENTURE-SCAM-022"
+      ]
+    },
+    {
+      "anti_signal": "Treating an Accenture offer as genuine without verifying that the documents came from an official Accenture careers domain.",
+      "risk_reason": "Accenture's India notice says offer letters and related documents can only be downloaded from its India careers domain; the global alert says communications occur only through valid Accenture domains.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ACCENTURE-SCAM-IN-023",
+        "ACCENTURE-SCAM-022"
+      ]
     }
   ],
   "interview_patterns": [
@@ -537,11 +571,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 21,
-    "official_source_count": 21,
+    "source_count": 23,
+    "official_source_count": 23,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-22"
+    "last_reviewed": "2026-10-23"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Accenture hiring standard.",

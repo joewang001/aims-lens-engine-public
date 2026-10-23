@@ -1,7 +1,7 @@
 {
   "company_slug": "accenture",
   "company": "Accenture",
-  "collected_at": "2026-10-22T13:45:00Z",
+  "collected_at": "2026-10-23T13:33:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -301,6 +301,31 @@
       ],
       "evidence_id": "ACCENTURE-TECH-021",
       "date_accessed": "2026-10-22"
+    },
+    {
+      "source_type": "official_company",
+      "title": "Employment and Investment Scam Alert",
+      "url": "https://www.accenture.com/en/support/email-employment-investment-scam-alert",
+      "confidence": 0.88,
+      "public_safe_signal": "Accenture warns that criminals impersonate its name and staff on WhatsApp, Telegram, Signal, LinkedIn, TikTok, and fake email domains to solicit investment, fake interviews, translation work, or recruitment payments. Accenture says it never asks for payment to invest, interview, or work, uses only valid Accenture domains, and does not conduct company business through outside chat messages.",
+      "dimensions": [
+        "risk_warnings"
+      ],
+      "evidence_id": "ACCENTURE-SCAM-022",
+      "date_accessed": "2026-10-23"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Employment Scam Alert (India)",
+      "url": "https://www.accenture.com/in-en/careers/support/important-notice",
+      "confidence": 0.82,
+      "public_safe_signal": "Accenture's India careers notice says no agency or individual is authorized to collect money for an Accenture job, hiring is merit-based with no fee at any stage, and offer documents can only be downloaded from the India careers domain. The notice is India-specific, so its domain and reporting details should not be generalized to other countries.",
+      "dimensions": [
+        "risk_warnings",
+        "honest_unknowns"
+      ],
+      "evidence_id": "ACCENTURE-SCAM-IN-023",
+      "date_accessed": "2026-10-23"
     }
   ],
   "lens_updates": {
@@ -745,6 +770,40 @@
         "confidence": 0.78,
         "evidence_ids": [
           "ACCENTURE-OPS-019"
+        ]
+      },
+      {
+        "anti_signal": "Paying any application, interview, training, or equipment fee to someone promising an Accenture job.",
+        "risk_reason": "Accenture says it never asks for payment to invest, interview, or work, and its India notice says no agency is authorized to collect money for a job.",
+        "confidence": 0.86,
+        "evidence_ids": [
+          "ACCENTURE-SCAM-022",
+          "ACCENTURE-SCAM-IN-023"
+        ]
+      },
+      {
+        "anti_signal": "Sharing financial details or scheduling an interview through an informal chat account or a non-Accenture domain.",
+        "risk_reason": "Accenture warns that scams arrive through WhatsApp, Telegram, Signal, social platforms, and fake email domains, and says it does business only through valid Accenture domains, not outside chat.",
+        "confidence": 0.84,
+        "evidence_ids": [
+          "ACCENTURE-SCAM-022"
+        ]
+      },
+      {
+        "anti_signal": "Doing unpaid work for a supposed Accenture recruiter before any verified offer.",
+        "risk_reason": "Accenture's scam alert describes fake work opportunities where the person completes work and is never paid.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ACCENTURE-SCAM-022"
+        ]
+      },
+      {
+        "anti_signal": "Treating an Accenture offer as genuine without verifying that the documents came from an official Accenture careers domain.",
+        "risk_reason": "Accenture's India notice says offer letters and related documents can only be downloaded from its India careers domain; the global alert says communications occur only through valid Accenture domains.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ACCENTURE-SCAM-IN-023",
+          "ACCENTURE-SCAM-022"
         ]
       }
     ],

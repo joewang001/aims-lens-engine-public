@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-22",
+  "source_cutoff": "2026-10-23",
   "industries": [
     "technology",
     "creative software",
@@ -495,6 +495,38 @@
       "evidence_ids": [
         "ADOBE-RESEARCH-014"
       ]
+    },
+    {
+      "anti_signal": "Replying to a recruiting message from a domain outside Adobe's published recruiting domains.",
+      "risk_reason": "Adobe lists the only email domains its recruiting communications can come from and warns that other contacts may be fraudulent.",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ADOBE-SCAM-016"
+      ]
+    },
+    {
+      "anti_signal": "Providing bank account, Social Security, or similar sensitive personal data during an Adobe interview or offer process.",
+      "risk_reason": "Adobe says it does not request that information during recruiting, interviews, or offers, and that its process runs through secure platforms.",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ADOBE-SCAM-016"
+      ]
+    },
+    {
+      "anti_signal": "Paying an application or equipment fee to secure an Adobe role.",
+      "risk_reason": "Adobe says it never requests money to participate in its hiring process.",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ADOBE-SCAM-016"
+      ]
+    },
+    {
+      "anti_signal": "Treating an offer as verified without confirming it came through Adobe's secure application or offer platform.",
+      "risk_reason": "Adobe says its application process and offer letters are managed through secure platforms and not over email or instant messaging.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-SCAM-016"
+      ]
     }
   ],
   "interview_patterns": [
@@ -512,11 +544,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 15,
-    "official_source_count": 15,
+    "source_count": 16,
+    "official_source_count": 16,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-22"
+    "last_reviewed": "2026-10-23"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Adobe hiring standard.",
