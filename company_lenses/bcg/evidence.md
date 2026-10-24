@@ -4,6 +4,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| BCG-GENAI-TA-019 | official_careers | Integrating GenAI in talent acquisition at BCG | 2026-10-24 | 0.70 | A BCG talent-acquisition specialist describes GenAI use in recruiting as still early-stage, stresses human review of AI outputs, and says candidate screenings in the Paris office are conducted by humans; the account is office-specific and self-reported. |
+| BCG-FAQ-DACH-020 | official_careers | BCG application FAQs (Germany and Austria) | 2026-10-24 | 0.75 | BCG's Germany/Austria FAQ says consulting experience is not required, weighs academic performance plus relevant practical and international experience, and gives non-business hires a foundation course before standard intake training; the guidance is region-specific. |
 | BCG-RESPAI-017 | official_careers | How BCG Uses Responsible AI in Hiring | 2026-10-23 | 0.88 | BCG says AI supports but never decides hiring: experienced recruiters review every application and people make the final decisions, while AI may draft interview questions or suggest roles. BCG tells candidates that AI is acceptable for brainstorming, clarity checks, and practice, but fully AI-written applications can feel generic and may create inconsistencies when interview answers are compared with the written submission. |
 | BCG-APPFAQ-018 | official_careers | Candidate & Application FAQs | 2026-10-23 | 0.84 | BCG's candidate FAQ says student-portal applicants may submit up to four applications at a time, should align office preferences with the role's location, and should not change those preferences across applications in the same period. It also states that a submitted application cannot be edited, each role can be applied to only once, and technical issues should go through the candidate help channel. |
 | BCG-PLATINION-014 | official_careers | BCG Platinion Careers | 2026-10-22 | 0.82 | BCG Platinion presents itself as the AI tech unit within BCG's tech and digital practice, offering separate AI Tech Architect and AI Tech Consultant tracks and stating that BCG and Platinion provide different career tracks matched to technical depth and ambitions. |
@@ -48,3 +50,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.bcgplatinion.com/careers/roles/ai-tech-consultants
 - https://careers.bcg.com/global/en/careers-in-ai/responsible-ai-in-hiring
 - https://careers.bcg.com/global/en/interview-process/application-faqs
+- https://careers.bcg.com/global/en/blogarticle/integrating-genai-in-talent-acquisition-at-bcg
+- https://careers.bcg.com/global/en/faq-germany-austria

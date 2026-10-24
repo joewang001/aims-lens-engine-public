@@ -1,7 +1,7 @@
 {
   "company_slug": "bain",
   "company": "Bain & Company",
-  "collected_at": "2026-10-23T13:33:00Z",
+  "collected_at": "2026-10-24T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -286,6 +286,35 @@
       ],
       "evidence_id": "BAIN-FRAUD-020",
       "date_accessed": "2026-10-23"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Hiring process: consultant",
+      "url": "https://www.bain.com/careers/hiring-process/consultant/",
+      "confidence": 0.8,
+      "public_safe_signal": "Bain's consultant application page lists resume, education, work experience, and relevant test scores as baseline inputs, then directs candidates to office-specific requirements, indicating that eligibility and process differ by location.",
+      "dimensions": [
+        "company_asks",
+        "honest_unknowns",
+        "role_variation"
+      ],
+      "evidence_id": "BAIN-CONSULTANT-021",
+      "date_accessed": "2026-10-24"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Five myths about being a consultant at Bain",
+      "url": "https://www.bain.com/careers/life-at-bain/careers-blog/five-myths-about-being-a-consultant-at-bain/",
+      "confidence": 0.78,
+      "public_safe_signal": "A Bain careers blog post corrects five common assumptions: a business degree is not required, home-office affiliation does not mean local-only work, consultants usually start as generalists before specializing, travel depends on case needs, and teams mix generalists with deep experts.",
+      "dimensions": [
+        "honest_unknowns",
+        "company_says",
+        "role_variation",
+        "company_judges"
+      ],
+      "evidence_id": "BAIN-MYTHS-022",
+      "date_accessed": "2026-10-24"
     }
   ],
   "lens_updates": {
@@ -356,6 +385,14 @@
         "evidence_ids": [
           "BAIN-TEAMS-018",
           "BAIN-WORKAREAS-014"
+        ]
+      },
+      {
+        "name": "Diverse academic backgrounds and generalist starts",
+        "description": "Bain states that consultants join from many degree backgrounds and typically begin as generalists, with specialization built over time and earlier specialization possible for those with relevant experience.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BAIN-MYTHS-022"
         ]
       }
     ],
@@ -534,6 +571,33 @@
           "BAIN-NEXTGEN-019"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Explains how a non-business academic background or unusual path built transferable problem-solving evidence rather than apologizing for it.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "growth_mindset",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BAIN-MYTHS-022"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Describes realistic expectations about travel, office staffing, and specialization timing, and asks clarifying questions where the role's local requirements are unclear.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "growth_mindset",
+          "ownership_execution"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "BAIN-MYTHS-022",
+          "BAIN-CONSULTANT-021"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -637,6 +701,22 @@
         "confidence": 0.8,
         "evidence_ids": [
           "BAIN-FRAUD-020"
+        ]
+      },
+      {
+        "anti_signal": "Assuming that only business majors are viable or that a single office and weekly travel define the role, without checking the cited public guidance.",
+        "risk_reason": "Bain's own careers material explicitly rebuts these assumptions, so repeating them signals weak research rather than a disqualifying trait; this is preparation guidance, not an official screen.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "BAIN-MYTHS-022"
+        ]
+      },
+      {
+        "anti_signal": "Presenting a fixed specialization plan with no openness to Bain's generalist-first staffing model.",
+        "risk_reason": "Bain states most consultants start broad and specialize later, though earlier specialization is possible with relevant experience; rigidity is a fit risk, not an official disqualifier.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "BAIN-MYTHS-022"
         ]
       }
     ],
@@ -803,6 +883,25 @@
         "evidence_ids": [
           "BAIN-TECHENG-015"
         ]
+      },
+      {
+        "type": "unknowns_probe",
+        "generated_question": "Which assumptions about consulting at Bain have you already tested, and what remains genuinely uncertain about the role, office, or staffing model?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "structured_thinking",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Separates verified facts from assumptions and names the source of each.",
+          "Identifies a specific uncertainty such as office-specific requirements, travel, or specialization timing.",
+          "Describes a concrete step to resolve the uncertainty, such as asking a recruiter or current consultant.",
+          "Avoids presenting confidence as knowledge."
+        ],
+        "evidence_ids": [
+          "BAIN-MYTHS-022",
+          "BAIN-CONSULTANT-021"
+        ]
       }
     ],
     "role_overlays": [
@@ -893,6 +992,17 @@
         ],
         "evidence_ids": [
           "BAIN-NEXTGEN-019"
+        ]
+      },
+      {
+        "role_slug": "non_business_background",
+        "role_family": "Consulting candidates from non-business backgrounds",
+        "signals": [
+          "Frames transferable analytical and collaborative evidence from another discipline.",
+          "Shows awareness that Bain trains for consulting skills and starts most consultants as generalists."
+        ],
+        "evidence_ids": [
+          "BAIN-MYTHS-022"
         ]
       }
     ]

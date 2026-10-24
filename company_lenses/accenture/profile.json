@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-23",
+  "source_cutoff": "2026-10-24",
   "industries": [
     "consulting",
     "professional services",
@@ -151,6 +151,14 @@
       "confidence": 0.78,
       "evidence_ids": [
         "ACCENTURE-CONSULTING-018"
+      ]
+    },
+    {
+      "name": "Disclosed AI use with candidate choice",
+      "description": "Accenture publishes where AI may be used in its hiring workflow, offers candidates a consent choice for AI-assisted evaluation, and states that human recruiters remain accountable for decisions.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ACCENTURE-AI-HIRING-024"
       ]
     }
   ],
@@ -401,6 +409,31 @@
         "ACCENTURE-TECH-021"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Describes how they use AI tools transparently, including what they verify and where human judgment overrides the tool.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ACCENTURE-AI-HIRING-024"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Can explain the boundary between permitted AI assistance and misrepresentation in an application or interview.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ACCENTURE-AI-HIRING-024"
+      ],
+      "basis": "stated_by_company"
     }
   ],
   "anti_signals": [
@@ -554,6 +587,22 @@
         "ACCENTURE-SCAM-IN-023",
         "ACCENTURE-SCAM-022"
       ]
+    },
+    {
+      "anti_signal": "Using AI to generate interview answers, complete assessments, or create a false profile where the employer prohibits it.",
+      "risk_reason": "Accenture states these uses violate its responsible-AI principles, can lead to disqualification, and are detected through proctoring and AI-detection methods.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ACCENTURE-AI-HIRING-024"
+      ]
+    },
+    {
+      "anti_signal": "Assuming the hiring process is fully automated or fully human without asking where AI is used.",
+      "risk_reason": "Accenture discloses specific AI-assisted steps and a consent choice, so an all-or-nothing assumption misreads the process; this is preparation guidance.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ACCENTURE-AI-HIRING-024"
+      ]
     }
   ],
   "interview_patterns": [
@@ -571,11 +620,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 23,
-    "official_source_count": 23,
+    "source_count": 24,
+    "official_source_count": 24,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-23"
+    "last_reviewed": "2026-10-24"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Accenture hiring standard.",

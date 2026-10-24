@@ -1,0 +1,40 @@
+{
+  "company": "Bain & Company",
+  "role_family": "Consulting candidates from non-business backgrounds",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Frames transferable analytical and collaborative evidence from another discipline.",
+    "Shows awareness that Bain trains for consulting skills and starts most consultants as generalists."
+  ],
+  "evidence_ids": [
+    "BAIN-OFFICIAL-001",
+    "BAIN-CAREERS-002",
+    "BAIN-ABOUT-003",
+    "BAIN-HIRING-004",
+    "BAIN-GROWTH-005",
+    "BAIN-PEOPLE-006",
+    "BAIN-ABOUT-007",
+    "BAIN-SOCIAL-008",
+    "BAIN-INTERVIEWING-009",
+    "BAIN-ASSESSMENT-010",
+    "BAIN-WHATTOEXPECT-011",
+    "BAIN-CASE-012",
+    "BAIN-BLOG-STANDOUT-013",
+    "BAIN-WORKAREAS-014",
+    "BAIN-TECHENG-015",
+    "BAIN-MGMT-016",
+    "BAIN-ANALYTICS-017",
+    "BAIN-TEAMS-018",
+    "BAIN-NEXTGEN-019",
+    "BAIN-FRAUD-020",
+    "BAIN-CONSULTANT-021",
+    "BAIN-MYTHS-022"
+  ]
+}

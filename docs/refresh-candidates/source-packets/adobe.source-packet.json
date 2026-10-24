@@ -1,7 +1,7 @@
 {
   "company_slug": "adobe",
   "company": "Adobe",
-  "collected_at": "2026-10-23T13:33:00Z",
+  "collected_at": "2026-10-24T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -239,6 +239,33 @@
       ],
       "evidence_id": "ADOBE-SCAM-016",
       "date_accessed": "2026-10-23"
+    },
+    {
+      "source_type": "official_company",
+      "title": "Adobe applicant privacy policy",
+      "url": "https://www.adobe.com/privacy/applicant-privacy.html",
+      "confidence": 0.8,
+      "public_safe_signal": "Adobe's applicant privacy policy lists the candidate data it collects and states that automated systems using machine-learning techniques may analyze application information to select and retain candidates where consent is not required.",
+      "dimensions": [
+        "honest_unknowns",
+        "risk_warnings",
+        "company_says"
+      ],
+      "evidence_id": "ADOBE-PRIVACY-017",
+      "date_accessed": "2026-10-24"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Career site personal information requests",
+      "url": "https://careers.adobe.com/us/en/personal-information",
+      "confidence": 0.78,
+      "public_safe_signal": "Adobe's careers site says deletion requests are reviewed and answered within 30 days, that deleting data withdraws active applications and job-alert subscriptions, and that some information may be retained as legally required.",
+      "dimensions": [
+        "honest_unknowns",
+        "company_asks"
+      ],
+      "evidence_id": "ADOBE-PERSONAL-INFO-018",
+      "date_accessed": "2026-10-24"
     }
   ],
   "lens_updates": {
@@ -350,6 +377,15 @@
         "confidence": 0.8,
         "evidence_ids": [
           "ADOBE-RESEARCH-014"
+        ]
+      },
+      {
+        "name": "Published limits on candidate data use",
+        "description": "Adobe discloses the categories of applicant data it collects, that machine-learning systems may analyze applications where consent is not required, and how deletion requests affect active applications and retention.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ADOBE-PRIVACY-017",
+          "ADOBE-PERSONAL-INFO-018"
         ]
       }
     ],
@@ -554,6 +590,19 @@
           "ADOBE-RESEARCH-014"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Asks informed questions about how application data and automated analysis are used, rather than assuming either a fully manual or fully automated process.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ADOBE-PRIVACY-017"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -686,6 +735,14 @@
         "confidence": 0.8,
         "evidence_ids": [
           "ADOBE-SCAM-016"
+        ]
+      },
+      {
+        "anti_signal": "Assuming rejected-application data is deleted immediately or that a deletion request has no effect on active applications.",
+        "risk_reason": "Adobe's careers site states a 30-day response window, withdrawal from active consideration, and legally required retention, so the assumption is factually wrong; this is process guidance, not an official screen.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ADOBE-PERSONAL-INFO-018"
         ]
       }
     ],
@@ -862,6 +919,24 @@
         ],
         "evidence_ids": [
           "ADOBE-DESIGN-015"
+        ]
+      },
+      {
+        "type": "unknowns_probe",
+        "generated_question": "What would you want to confirm about how your application data is stored, used, or deleted before you apply?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names a specific data or process question.",
+          "Cites the published policy rather than speculation.",
+          "Describes how to exercise a documented option or ask the recruiter.",
+          "Distinguishes what Adobe states from what remains unclear."
+        ],
+        "evidence_ids": [
+          "ADOBE-PRIVACY-017",
+          "ADOBE-PERSONAL-INFO-018"
         ]
       }
     ],
