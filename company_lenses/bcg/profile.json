@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-19",
-  "source_cutoff": "2026-10-23",
+  "source_cutoff": "2026-10-24",
   "industries": [
     "consulting",
     "strategy consulting",
@@ -139,6 +139,14 @@
         "BCG-PLATINION-014",
         "BCG-ARCHITECTS-015",
         "BCG-CONSULTANTS-016"
+      ]
+    },
+    {
+      "name": "Human accountability for AI-assisted hiring",
+      "description": "BCG publicly frames GenAI in recruitment as an early-stage support tool that requires human review, and one office states that candidate screenings are conducted by people rather than automated decisions.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "BCG-GENAI-TA-019"
       ]
     }
   ],
@@ -426,6 +434,32 @@
         "BCG-ARCHITECTS-015"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Shows strong academic performance together with practical or international experience, and does not assume prior consulting experience is required.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "BCG-FAQ-DACH-020"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Can explain how they would check or validate an AI-generated analysis before relying on it.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "BCG-GENAI-TA-019"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -561,6 +595,22 @@
       "evidence_ids": [
         "BCG-APPFAQ-018"
       ]
+    },
+    {
+      "anti_signal": "Treating a non-business degree or lack of consulting experience as disqualifying without checking BCG's stated requirements.",
+      "risk_reason": "BCG's regional FAQ explicitly says consulting experience is not a prerequisite and describes foundation training for non-business hires; this is preparation guidance, not an official screen.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "BCG-FAQ-DACH-020"
+      ]
+    },
+    {
+      "anti_signal": "Presenting AI-generated analysis as verified fact without describing human review or checks.",
+      "risk_reason": "BCG's own recruitment account emphasizes validating AI outputs and retaining human accountability, so unreviewed output is a judgment risk.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "BCG-GENAI-TA-019"
+      ]
     }
   ],
   "interview_patterns": [
@@ -589,11 +639,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 18,
-    "official_source_count": 18,
+    "source_count": 20,
+    "official_source_count": 20,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-23"
+    "last_reviewed": "2026-10-24"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Boston Consulting Group hiring standard.",

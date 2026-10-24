@@ -234,6 +234,44 @@
       "evidence_ids": [
         "ACCENTURE-OPS-019"
       ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-012",
+      "type": "ai_use_disclosure_behavioral",
+      "generated_question": "Tell me about a time you used an AI tool in work that mattered. What did you disclose, what did you verify, and where did you keep human judgment in control?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names the task, tool, and why AI was appropriate.",
+        "Explains disclosure or consent where relevant.",
+        "Describes verification and corrections made.",
+        "Shows accountability for the final decision."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-AI-HIRING-024"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-013",
+      "type": "unknowns_probe",
+      "generated_question": "What parts of Accenture's application or interview process are still unclear to you, and how would you resolve them?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Names a specific process uncertainty such as assessment format or AI use.",
+        "Cites official guidance already checked.",
+        "Describes a realistic next step to confirm.",
+        "Avoids guessing and states the limit of what is known."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-AI-HIRING-024",
+        "ACCENTURE-FAQ-017"
+      ]
     }
   ]
 }

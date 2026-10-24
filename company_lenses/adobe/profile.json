@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-23",
+  "source_cutoff": "2026-10-24",
   "industries": [
     "technology",
     "creative software",
@@ -144,6 +144,15 @@
       "confidence": 0.8,
       "evidence_ids": [
         "ADOBE-RESEARCH-014"
+      ]
+    },
+    {
+      "name": "Published limits on candidate data use",
+      "description": "Adobe discloses the categories of applicant data it collects, that machine-learning systems may analyze applications where consent is not required, and how deletion requests affect active applications and retention.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ADOBE-PRIVACY-017",
+        "ADOBE-PERSONAL-INFO-018"
       ]
     }
   ],
@@ -384,6 +393,19 @@
         "ADOBE-RESEARCH-014"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Asks informed questions about how application data and automated analysis are used, rather than assuming either a fully manual or fully automated process.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ADOBE-PRIVACY-017"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -527,6 +549,14 @@
       "evidence_ids": [
         "ADOBE-SCAM-016"
       ]
+    },
+    {
+      "anti_signal": "Assuming rejected-application data is deleted immediately or that a deletion request has no effect on active applications.",
+      "risk_reason": "Adobe's careers site states a 30-day response window, withdrawal from active consideration, and legally required retention, so the assumption is factually wrong; this is process guidance, not an official screen.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ADOBE-PERSONAL-INFO-018"
+      ]
     }
   ],
   "interview_patterns": [
@@ -544,11 +574,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 16,
-    "official_source_count": 16,
+    "source_count": 18,
+    "official_source_count": 18,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-23"
+    "last_reviewed": "2026-10-24"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Adobe hiring standard.",

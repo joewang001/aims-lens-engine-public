@@ -4,6 +4,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ADOBE-PRIVACY-017 | official_company | Adobe applicant privacy policy | 2026-10-24 | 0.80 | Adobe's applicant privacy policy lists the candidate data it collects and states that automated systems using machine-learning techniques may analyze application information to select and retain candidates where consent is not required. |
+| ADOBE-PERSONAL-INFO-018 | official_careers | Career site personal information requests | 2026-10-24 | 0.78 | Adobe's careers site says deletion requests are reviewed and answered within 30 days, that deleting data withdraws active applications and job-alert subscriptions, and that some information may be retained as legally required. |
 | ADOBE-SCAM-016 | official_careers | Recruiting Scams | 2026-10-23 | 0.90 | Adobe's recruiting-scam page limits legitimate recruiting email to a defined set of Adobe domains, says Adobe never requests bank details, Social Security numbers, or similar sensitive data during recruiting or offers, never charges application or equipment fees, and keeps applications and offer letters in secure platforms. |
 | ADOBE-RESEARCH-014 | official_company | Adobe Research Careers | 2026-10-22 | 0.82 | Adobe Research describes a team of research scientists, engineers, artists, and designers combining academic discovery with product impact, hiring full-time research scientists, research engineers, and interns in the US, London, and Bangalore, and moving early-stage technology into Adobe products. |
 | ADOBE-DESIGN-015 | official_careers | Adobe Design Careers | 2026-10-22 | 0.80 | Adobe Design lists disciplines including brand, product, content, visual, motion, and design engineering alongside product management, program management, research and strategy, and content strategy, and describes mentorship, internal mobility, and an annual design summit. |
@@ -43,3 +45,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://research.adobe.com/careers/
 - https://adobe.design/careers/
 - https://careers.adobe.com/us/en/recruiting-scams
+- https://www.adobe.com/privacy/applicant-privacy.html
+- https://careers.adobe.com/us/en/personal-information

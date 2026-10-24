@@ -254,6 +254,45 @@
       "evidence_ids": [
         "BCG-ARCHITECTS-015"
       ]
+    },
+    {
+      "question_id": "BCG-Q-014",
+      "type": "unknowns_probe",
+      "generated_question": "What don't you know yet about the BCG role or office you are targeting, and how would you find out before an interview?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names a specific uncertainty about role scope, office process, or staffing.",
+        "Distinguishes public guidance from assumption.",
+        "Describes a credible way to verify, such as recruiter contact, events, or current practitioners.",
+        "Shows comfort saying 'I don't know' without inventing detail."
+      ],
+      "evidence_ids": [
+        "BCG-FAQ-DACH-020",
+        "BCG-APPFAQ-018"
+      ]
+    },
+    {
+      "question_id": "BCG-Q-015",
+      "type": "ai_judgment_behavioral",
+      "generated_question": "Describe a time you used an AI tool in analysis or drafting. How did you verify its output, and what did you decide not to trust?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "States the task and why AI was appropriate.",
+        "Describes concrete verification steps and known limitations.",
+        "Names what was rejected or corrected.",
+        "Takes accountability for the final output."
+      ],
+      "evidence_ids": [
+        "BCG-GENAI-TA-019"
+      ]
     }
   ]
 }

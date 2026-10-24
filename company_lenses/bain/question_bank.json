@@ -240,6 +240,26 @@
       "evidence_ids": [
         "BAIN-TECHENG-015"
       ]
+    },
+    {
+      "question_id": "BAIN-Q-013",
+      "type": "unknowns_probe",
+      "generated_question": "Which assumptions about consulting at Bain have you already tested, and what remains genuinely uncertain about the role, office, or staffing model?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Separates verified facts from assumptions and names the source of each.",
+        "Identifies a specific uncertainty such as office-specific requirements, travel, or specialization timing.",
+        "Describes a concrete step to resolve the uncertainty, such as asking a recruiter or current consultant.",
+        "Avoids presenting confidence as knowledge."
+      ],
+      "evidence_ids": [
+        "BAIN-MYTHS-022",
+        "BAIN-CONSULTANT-021"
+      ]
     }
   ]
 }

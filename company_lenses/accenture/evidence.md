@@ -4,6 +4,7 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ACCENTURE-AI-HIRING-024 | official_careers | Hiring powered by responsible AI | 2026-10-24 | 0.82 | Accenture's candidate page discloses where AI may support hiring (job descriptions, matching, form autofill, resume screening, assessments, scheduling), says candidates can choose whether to consent to AI in evaluation, bans AI-generated interview answers and deepfakes, and states humans oversee decisions. |
 | ACCENTURE-SCAM-022 | official_company | Employment and Investment Scam Alert | 2026-10-23 | 0.88 | Accenture warns that criminals impersonate its name and staff on WhatsApp, Telegram, Signal, LinkedIn, TikTok, and fake email domains to solicit investment, fake interviews, translation work, or recruitment payments. Accenture says it never asks for payment to invest, interview, or work, uses only valid Accenture domains, and does not conduct company business through outside chat messages. |
 | ACCENTURE-SCAM-IN-023 | official_careers | Employment Scam Alert (India) | 2026-10-23 | 0.82 | Accenture's India careers notice says no agency or individual is authorized to collect money for an Accenture job, hiring is merit-based with no fee at any stage, and offer documents can only be downloaded from the India careers domain. The notice is India-specific, so its domain and reporting details should not be generalized to other countries. |
 | ACCENTURE-CONSULTING-018 | official_careers | Consulting Careers | 2026-10-22 | 0.80 | Accenture's consulting careers page frames consulting as combining the firm's breadth of capabilities across technology transformation, talent, and industry to solve client problems, and cites reach across 40+ industries and 120+ countries. |
@@ -57,3 +58,4 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/technology-careers
 - https://www.accenture.com/en/support/email-employment-investment-scam-alert
 - https://www.accenture.com/in-en/careers/support/important-notice
+- https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/ai-usage-job-search

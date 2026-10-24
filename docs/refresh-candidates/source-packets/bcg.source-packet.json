@@ -1,7 +1,7 @@
 {
   "company_slug": "bcg",
   "company": "Boston Consulting Group",
-  "collected_at": "2026-10-23T13:33:00Z",
+  "collected_at": "2026-10-24T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -264,6 +264,34 @@
       ],
       "evidence_id": "BCG-APPFAQ-018",
       "date_accessed": "2026-10-23"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Integrating GenAI in talent acquisition at BCG",
+      "url": "https://careers.bcg.com/global/en/blogarticle/integrating-genai-in-talent-acquisition-at-bcg",
+      "confidence": 0.7,
+      "public_safe_signal": "A BCG talent-acquisition specialist describes GenAI use in recruiting as still early-stage, stresses human review of AI outputs, and says candidate screenings in the Paris office are conducted by humans; the account is office-specific and self-reported.",
+      "dimensions": [
+        "honest_unknowns",
+        "company_says",
+        "risk_warnings"
+      ],
+      "evidence_id": "BCG-GENAI-TA-019",
+      "date_accessed": "2026-10-24"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "BCG application FAQs (Germany and Austria)",
+      "url": "https://careers.bcg.com/global/en/faq-germany-austria",
+      "confidence": 0.75,
+      "public_safe_signal": "BCG's Germany/Austria FAQ says consulting experience is not required, weighs academic performance plus relevant practical and international experience, and gives non-business hires a foundation course before standard intake training; the guidance is region-specific.",
+      "dimensions": [
+        "company_asks",
+        "honest_unknowns",
+        "role_variation"
+      ],
+      "evidence_id": "BCG-FAQ-DACH-020",
+      "date_accessed": "2026-10-24"
     }
   ],
   "lens_updates": {
@@ -352,6 +380,14 @@
           "BCG-PLATINION-014",
           "BCG-ARCHITECTS-015",
           "BCG-CONSULTANTS-016"
+        ]
+      },
+      {
+        "name": "Human accountability for AI-assisted hiring",
+        "description": "BCG publicly frames GenAI in recruitment as an early-stage support tool that requires human review, and one office states that candidate screenings are conducted by people rather than automated decisions.",
+        "confidence": 0.68,
+        "evidence_ids": [
+          "BCG-GENAI-TA-019"
         ]
       }
     ],
@@ -565,6 +601,32 @@
           "BCG-ARCHITECTS-015"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Shows strong academic performance together with practical or international experience, and does not assume prior consulting experience is required.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.74,
+        "evidence_ids": [
+          "BCG-FAQ-DACH-020"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Can explain how they would check or validate an AI-generated analysis before relying on it.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution"
+        ],
+        "confidence": 0.7,
+        "evidence_ids": [
+          "BCG-GENAI-TA-019"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -673,6 +735,22 @@
         "confidence": 0.8,
         "evidence_ids": [
           "BCG-APPFAQ-018"
+        ]
+      },
+      {
+        "anti_signal": "Treating a non-business degree or lack of consulting experience as disqualifying without checking BCG's stated requirements.",
+        "risk_reason": "BCG's regional FAQ explicitly says consulting experience is not a prerequisite and describes foundation training for non-business hires; this is preparation guidance, not an official screen.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "BCG-FAQ-DACH-020"
+        ]
+      },
+      {
+        "anti_signal": "Presenting AI-generated analysis as verified fact without describing human review or checks.",
+        "risk_reason": "BCG's own recruitment account emphasizes validating AI outputs and retaining human accountability, so unreviewed output is a judgment risk.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "BCG-GENAI-TA-019"
         ]
       }
     ],
@@ -852,6 +930,43 @@
         "evidence_ids": [
           "BCG-ARCHITECTS-015"
         ]
+      },
+      {
+        "type": "unknowns_probe",
+        "generated_question": "What don't you know yet about the BCG role or office you are targeting, and how would you find out before an interview?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "growth_mindset",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names a specific uncertainty about role scope, office process, or staffing.",
+          "Distinguishes public guidance from assumption.",
+          "Describes a credible way to verify, such as recruiter contact, events, or current practitioners.",
+          "Shows comfort saying 'I don't know' without inventing detail."
+        ],
+        "evidence_ids": [
+          "BCG-FAQ-DACH-020",
+          "BCG-APPFAQ-018"
+        ]
+      },
+      {
+        "type": "ai_judgment_behavioral",
+        "generated_question": "Describe a time you used an AI tool in analysis or drafting. How did you verify its output, and what did you decide not to trust?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "structured_thinking"
+        ],
+        "strong_answer_signals": [
+          "States the task and why AI was appropriate.",
+          "Describes concrete verification steps and known limitations.",
+          "Names what was rejected or corrected.",
+          "Takes accountability for the final output."
+        ],
+        "evidence_ids": [
+          "BCG-GENAI-TA-019"
+        ]
       }
     ],
     "role_overlays": [
@@ -943,6 +1058,17 @@
         ],
         "evidence_ids": [
           "BCG-PLATINION-014"
+        ]
+      },
+      {
+        "role_slug": "non_business_background",
+        "role_family": "Consulting candidates without a business degree",
+        "signals": [
+          "Shows quantitative and structured reasoning developed outside business curricula.",
+          "Frames readiness for BCG's foundation training rather than claiming existing consulting expertise."
+        ],
+        "evidence_ids": [
+          "BCG-FAQ-DACH-020"
         ]
       }
     ]

@@ -218,6 +218,25 @@
       "evidence_ids": [
         "ADOBE-DESIGN-015"
       ]
+    },
+    {
+      "question_id": "ADOBE-Q-011",
+      "type": "unknowns_probe",
+      "generated_question": "What would you want to confirm about how your application data is stored, used, or deleted before you apply?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names a specific data or process question.",
+        "Cites the published policy rather than speculation.",
+        "Describes how to exercise a documented option or ask the recruiter.",
+        "Distinguishes what Adobe states from what remains unclear."
+      ],
+      "evidence_ids": [
+        "ADOBE-PRIVACY-017",
+        "ADOBE-PERSONAL-INFO-018"
+      ]
     }
   ]
 }
