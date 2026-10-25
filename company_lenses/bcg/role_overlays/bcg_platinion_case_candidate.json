@@ -1,0 +1,42 @@
+{
+  "company": "Boston Consulting Group",
+  "role_family": "BCG Platinion interview candidate",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Prepares for a business case and an IT case rather than only one format.",
+    "Can narrate a project list with role, technical problem, and outcome.",
+    "Expects regional variation in documents, logic tests, and interview rounds."
+  ],
+  "evidence_ids": [
+    "BCG-OFFICIAL-001",
+    "BCG-CAREERS-002",
+    "BCG-ABOUT-003",
+    "BCG-INTERVIEW-004",
+    "BCG-CASE-005",
+    "BCG-WORK-006",
+    "BCG-ABOUT-007",
+    "BCG-COMMIT-008",
+    "BCG-X-009",
+    "BCG-FAQ-010",
+    "BCG-AI-011",
+    "BCG-BLOG-EXPECT-012",
+    "BCG-BLOG-CASE-013",
+    "BCG-PLATINION-014",
+    "BCG-ARCHITECTS-015",
+    "BCG-CONSULTANTS-016",
+    "BCG-RESPAI-017",
+    "BCG-APPFAQ-018",
+    "BCG-GENAI-TA-019",
+    "BCG-FAQ-DACH-020",
+    "BCG-PLATINION-CULTURE-021",
+    "BCG-PLATINION-PROCESS-022",
+    "BCG-PLATINION-CYBER-023"
+  ]
+}

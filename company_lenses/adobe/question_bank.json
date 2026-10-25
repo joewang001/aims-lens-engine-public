@@ -237,6 +237,42 @@
         "ADOBE-PRIVACY-017",
         "ADOBE-PERSONAL-INFO-018"
       ]
+    },
+    {
+      "question_id": "ADOBE-Q-012",
+      "type": "behavioral",
+      "generated_question": "Tell me about a time you changed how you work after feedback. What did you change, and how did you know it worked?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names the feedback and who gave it.",
+        "Describes a specific change in approach.",
+        "Shows evidence that the change improved the work.",
+        "Explains how they continued the feedback loop."
+      ],
+      "evidence_ids": [
+        "ADOBE-CHECKIN-019"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-013",
+      "type": "behavioral",
+      "generated_question": "What would you want to learn in your first year at Adobe, and how would you use feedback to steer that growth?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names a specific capability tied to the role.",
+        "Describes how they would seek and use feedback.",
+        "Connects growth to team or product outcomes.",
+        "Shows realistic awareness of the learning curve."
+      ],
+      "evidence_ids": [
+        "ADOBE-CHECKIN-019"
+      ]
     }
   ]
 }

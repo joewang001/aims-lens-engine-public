@@ -293,6 +293,61 @@
       "evidence_ids": [
         "BCG-GENAI-TA-019"
       ]
+    },
+    {
+      "question_id": "BCG-Q-016",
+      "type": "behavioral",
+      "generated_question": "Walk me through a project on your CV: what problem were you solving, what did you personally decide, and what changed for the client?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "structured_thinking",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Separates personal decisions from team contributions.",
+        "Explains the technical or analytical choice and its constraints.",
+        "Names a concrete outcome or change in client practice.",
+        "Shows what they would do differently with more evidence."
+      ],
+      "evidence_ids": [
+        "BCG-PLATINION-PROCESS-022"
+      ]
+    },
+    {
+      "question_id": "BCG-Q-017",
+      "type": "case",
+      "generated_question": "How would you structure a case that combines a business constraint and a technical architecture constraint? What would you test first, and what would you leave open?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Clarifies the objective and decision owner before structuring.",
+        "Separates commercial and technical constraints.",
+        "States hypotheses and the evidence needed to test them.",
+        "Names tradeoffs and what would change the recommendation."
+      ],
+      "evidence_ids": [
+        "BCG-PLATINION-PROCESS-022"
+      ]
+    },
+    {
+      "question_id": "BCG-Q-018",
+      "type": "technical",
+      "generated_question": "For a cybersecurity assessment, what would you examine first, and how would you turn findings into a prioritized roadmap?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Starts from business context and critical assets.",
+        "Assesses current controls and architecture rather than only tools.",
+        "Prioritizes by risk and implementation feasibility.",
+        "Connects the roadmap to measurable risk reduction."
+      ],
+      "evidence_ids": [
+        "BCG-PLATINION-CYBER-023"
+      ]
     }
   ]
 }

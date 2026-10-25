@@ -1,7 +1,7 @@
 {
   "company_slug": "adobe",
   "company": "Adobe",
-  "collected_at": "2026-10-24T13:30:00Z",
+  "collected_at": "2026-10-25T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -266,6 +266,34 @@
       ],
       "evidence_id": "ADOBE-PERSONAL-INFO-018",
       "date_accessed": "2026-10-24"
+    },
+    {
+      "evidence_id": "ADOBE-CHECKIN-019",
+      "source_type": "official_company",
+      "title": "How Adobe continues to inspire great performance and support career growth",
+      "url": "https://www.adobe.com/check-in.html",
+      "date_accessed": "2026-10-25",
+      "confidence": 0.82,
+      "public_safe_signal": "Adobe's Check-in page says Adobe replaced annual performance reviews and ratings in 2012 with ongoing two-way conversations, now holds quarterly check-ins, uses documented goals and stakeholder feedback, has no formal rating or ranking, lets managers set salary and equity from performance, and offers a Career Discovery tool for internal mobility; the page does not state when this description was last updated.",
+      "dimensions": [
+        "company_judges",
+        "evidence_valued",
+        "company_says",
+        "honest_unknowns"
+      ]
+    },
+    {
+      "evidence_id": "ADOBE-TEAMS-020",
+      "source_type": "official_careers",
+      "title": "Teams at Adobe",
+      "url": "https://careers.adobe.com/us/en/teams",
+      "date_accessed": "2026-10-25",
+      "confidence": 0.78,
+      "public_safe_signal": "Adobe's teams page lists distinct career areas including Engineering and Product, Design, Research, Sales, Global Marketing, Finance and Operations, Information Technology, Customer Experience, Legal and Government Relations, and Employee Experience, each with a short description of its mission.",
+      "dimensions": [
+        "role_variation",
+        "company_says"
+      ]
     }
   ],
   "lens_updates": {
@@ -386,6 +414,22 @@
         "evidence_ids": [
           "ADOBE-PRIVACY-017",
           "ADOBE-PERSONAL-INFO-018"
+        ]
+      },
+      {
+        "name": "Ongoing feedback instead of annual ratings",
+        "description": "Adobe says it replaced annual reviews and ratings with Check-in, an ongoing two-way conversation supported by quarterly check-ins, documented goals, and stakeholder feedback, with no formal rating or ranking.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-CHECKIN-019"
+        ]
+      },
+      {
+        "name": "Internal mobility as part of growth",
+        "description": "Adobe describes a Career Discovery tool that shows employees where people in similar roles have moved inside the company and lets them set alerts for target roles, making internal movement a visible part of career development.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ADOBE-CHECKIN-019"
         ]
       }
     ],
@@ -603,6 +647,42 @@
           "ADOBE-PRIVACY-017"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Shows a pattern of seeking feedback regularly and changing their work before a formal review cycle, consistent with Adobe's described Check-in model.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "collaboration_communication"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ADOBE-CHECKIN-019"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Can explain what they want to learn next and how a move inside the company would build on their current role, rather than treating career growth as only external.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ADOBE-CHECKIN-019"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For corporate or customer-facing roles, connects their experience to a specific Adobe function such as IT, finance and operations, customer experience, legal and government relations, or employee experience.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ADOBE-TEAMS-020"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -743,6 +823,22 @@
         "confidence": 0.74,
         "evidence_ids": [
           "ADOBE-PERSONAL-INFO-018"
+        ]
+      },
+      {
+        "anti_signal": "Assuming Adobe uses a traditional annual rating or stack-ranking process; Adobe's published Check-in description says there is no formal rating or ranking.",
+        "risk_reason": "A candidate who builds an answer around ratings, ranking, or annual review politics may be using a model Adobe says it replaced.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ADOBE-CHECKIN-019"
+        ]
+      },
+      {
+        "anti_signal": "Treating Adobe as a single product or creative role when its career site separates engineering and product, design, research, sales, marketing, finance and operations, IT, customer experience, legal, and employee experience.",
+        "risk_reason": "Adobe's teams page describes distinct functions with different missions, so role fit should be argued at the function level.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ADOBE-TEAMS-020"
         ]
       }
     ],
@@ -938,6 +1034,40 @@
           "ADOBE-PRIVACY-017",
           "ADOBE-PERSONAL-INFO-018"
         ]
+      },
+      {
+        "type": "behavioral",
+        "generated_question": "Tell me about a time you changed how you work after feedback. What did you change, and how did you know it worked?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names the feedback and who gave it.",
+          "Describes a specific change in approach.",
+          "Shows evidence that the change improved the work.",
+          "Explains how they continued the feedback loop."
+        ],
+        "evidence_ids": [
+          "ADOBE-CHECKIN-019"
+        ]
+      },
+      {
+        "type": "behavioral",
+        "generated_question": "What would you want to learn in your first year at Adobe, and how would you use feedback to steer that growth?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names a specific capability tied to the role.",
+          "Describes how they would seek and use feedback.",
+          "Connects growth to team or product outcomes.",
+          "Shows realistic awareness of the learning curve."
+        ],
+        "evidence_ids": [
+          "ADOBE-CHECKIN-019"
+        ]
       }
     ],
     "role_overlays": [
@@ -1003,6 +1133,18 @@
         ],
         "evidence_ids": [
           "ADOBE-DESIGN-015"
+        ]
+      },
+      {
+        "role_slug": "corporate_and_customer_functions",
+        "role_family": "Corporate and customer-facing functions at Adobe",
+        "signals": [
+          "Maps experience to a specific function such as IT, finance and operations, customer experience, legal and government relations, or employee experience.",
+          "Explains that function's mission in Adobe's own terms rather than as generic back-office work.",
+          "Shows cross-functional collaboration with product, design, research, sales, or marketing."
+        ],
+        "evidence_ids": [
+          "ADOBE-TEAMS-020"
         ]
       }
     ]

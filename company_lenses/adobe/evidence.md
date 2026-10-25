@@ -4,6 +4,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ADOBE-CHECKIN-019 | official_company | How Adobe continues to inspire great performance and support career growth | 2026-10-25 | 0.82 | Adobe's Check-in page says Adobe replaced annual performance reviews and ratings in 2012 with ongoing two-way conversations, now holds quarterly check-ins, uses documented goals and stakeholder feedback, has no formal rating or ranking, lets managers set salary and equity from performance, and offers a Career Discovery tool for internal mobility; the page does not state when this description was last updated. |
+| ADOBE-TEAMS-020 | official_careers | Teams at Adobe | 2026-10-25 | 0.78 | Adobe's teams page lists distinct career areas including Engineering and Product, Design, Research, Sales, Global Marketing, Finance and Operations, Information Technology, Customer Experience, Legal and Government Relations, and Employee Experience, each with a short description of its mission. |
 | ADOBE-PRIVACY-017 | official_company | Adobe applicant privacy policy | 2026-10-24 | 0.80 | Adobe's applicant privacy policy lists the candidate data it collects and states that automated systems using machine-learning techniques may analyze application information to select and retain candidates where consent is not required. |
 | ADOBE-PERSONAL-INFO-018 | official_careers | Career site personal information requests | 2026-10-24 | 0.78 | Adobe's careers site says deletion requests are reviewed and answered within 30 days, that deleting data withdraws active applications and job-alert subscriptions, and that some information may be retained as legally required. |
 | ADOBE-SCAM-016 | official_careers | Recruiting Scams | 2026-10-23 | 0.90 | Adobe's recruiting-scam page limits legitimate recruiting email to a defined set of Adobe domains, says Adobe never requests bank details, Social Security numbers, or similar sensitive data during recruiting or offers, never charges application or equipment fees, and keeps applications and offer letters in secure platforms. |
@@ -47,3 +49,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://careers.adobe.com/us/en/recruiting-scams
 - https://www.adobe.com/privacy/applicant-privacy.html
 - https://careers.adobe.com/us/en/personal-information
+- https://www.adobe.com/check-in.html
+- https://careers.adobe.com/us/en/teams

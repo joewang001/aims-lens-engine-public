@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-19",
-  "source_cutoff": "2026-10-24",
+  "source_cutoff": "2026-10-25",
   "industries": [
     "consulting",
     "strategy consulting",
@@ -147,6 +147,22 @@
       "confidence": 0.68,
       "evidence_ids": [
         "BCG-GENAI-TA-019"
+      ]
+    },
+    {
+      "name": "Constructive challenge of accepted norms",
+      "description": "BCG Platinion says colleagues consistently challenge one another, give constructive feedback, and question accepted norms and the status quo to reach better solutions, making respectful challenge part of the expected working style.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BCG-PLATINION-CULTURE-021"
+      ]
+    },
+    {
+      "name": "Iterative, hypothesis-led delivery",
+      "description": "BCG Platinion describes approaching projects with hypotheses and scenarios, using proven concepts iteratively and refining solutions step by step until they meet its quality bar, rather than presenting a single fixed plan.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BCG-PLATINION-CULTURE-021"
       ]
     }
   ],
@@ -460,6 +476,42 @@
         "BCG-GENAI-TA-019"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Prepares for both a business case and an IT case, and can explain how commercial constraints and technical architecture decisions interact.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BCG-PLATINION-PROCESS-022"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Presents a project list that lets a recruiter see the candidate's role, the technical problem, and the delivered outcome, rather than a list of employers and titles.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BCG-PLATINION-PROCESS-022"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For cybersecurity roles, can discuss a security assessment or roadmap in terms of business requirements, existing technology, prioritized remediation, and measurable risk reduction.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "confidence": 0.75,
+      "evidence_ids": [
+        "BCG-PLATINION-CYBER-023"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -611,6 +663,22 @@
       "evidence_ids": [
         "BCG-GENAI-TA-019"
       ]
+    },
+    {
+      "anti_signal": "Assuming a single BCG or BCG Platinion application process: BCG Platinion states that required documents, logic tests, and interview rounds vary by region and role.",
+      "risk_reason": "The published process is explicitly variable, so a candidate who prepares only one office's format may miss a required step.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BCG-PLATINION-PROCESS-022"
+      ]
+    },
+    {
+      "anti_signal": "Describing cybersecurity work only as tooling or certifications, without explaining how a security architecture or roadmap changed a client's risk posture.",
+      "risk_reason": "BCG Platinion frames the cybersecurity role around assessments, strategy, architecture, and implementation roadmaps rather than tool familiarity alone.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "BCG-PLATINION-CYBER-023"
+      ]
     }
   ],
   "interview_patterns": [
@@ -639,11 +707,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 20,
-    "official_source_count": 20,
+    "source_count": 23,
+    "official_source_count": 23,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-24"
+    "last_reviewed": "2026-10-25"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Boston Consulting Group hiring standard.",
