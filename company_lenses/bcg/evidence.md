@@ -4,6 +4,9 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| BCG-PLATINION-CULTURE-021 | official_careers | Culture, Values and Inclusion (BCG Platinion) | 2026-10-25 | 0.80 | BCG Platinion describes values of on-the-job passion, diversity, commitment to excellence, constructive challenge of accepted norms, mutual trust and responsibility to teammates and clients, and social impact; it also describes an iterative, hypothesis- and scenario-based project approach with interdisciplinary global teams. |
+| BCG-PLATINION-PROCESS-022 | official_careers | Application process (BCG Platinion) | 2026-10-25 | 0.82 | BCG Platinion's application page describes a CV screen and introduction call, at least two interview rounds with case studies, a possible logic test in some regions, and a second round combining a BCG business case with a Platinion IT case; it states that documents, tests, and rounds vary by region and role and that extra interviews may be required. |
+| BCG-PLATINION-CYBER-023 | official_careers | AI Tech Consultants - Cybersecurity (BCG Platinion) | 2026-10-25 | 0.78 | BCG Platinion's cybersecurity consultant role page describes security maturity assessments, cyber strategy and roadmaps, cloud and infrastructure evaluation, SOC transformation, and managed-security-provider selection, with progression from consultant to director and flexibility to move between consulting and architecture tracks. |
 | BCG-GENAI-TA-019 | official_careers | Integrating GenAI in talent acquisition at BCG | 2026-10-24 | 0.70 | A BCG talent-acquisition specialist describes GenAI use in recruiting as still early-stage, stresses human review of AI outputs, and says candidate screenings in the Paris office are conducted by humans; the account is office-specific and self-reported. |
 | BCG-FAQ-DACH-020 | official_careers | BCG application FAQs (Germany and Austria) | 2026-10-24 | 0.75 | BCG's Germany/Austria FAQ says consulting experience is not required, weighs academic performance plus relevant practical and international experience, and gives non-business hires a foundation course before standard intake training; the guidance is region-specific. |
 | BCG-RESPAI-017 | official_careers | How BCG Uses Responsible AI in Hiring | 2026-10-23 | 0.88 | BCG says AI supports but never decides hiring: experienced recruiters review every application and people make the final decisions, while AI may draft interview questions or suggest roles. BCG tells candidates that AI is acceptable for brainstorming, clarity checks, and practice, but fully AI-written applications can feel generic and may create inconsistencies when interview answers are compared with the written submission. |
@@ -52,3 +55,6 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://careers.bcg.com/global/en/interview-process/application-faqs
 - https://careers.bcg.com/global/en/blogarticle/integrating-genai-in-talent-acquisition-at-bcg
 - https://careers.bcg.com/global/en/faq-germany-austria
+- https://www.bcgplatinion.com/careers/culture-values-and-inclusion
+- https://www.bcgplatinion.com/careers/application-process
+- https://www.bcgplatinion.com/careers/roles/ai-tech-consultants-cybersecurity

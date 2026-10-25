@@ -1,7 +1,7 @@
 {
   "company_slug": "bain",
   "company": "Bain & Company",
-  "collected_at": "2026-10-24T13:30:00Z",
+  "collected_at": "2026-10-25T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -315,6 +315,49 @@
       ],
       "evidence_id": "BAIN-MYTHS-022",
       "date_accessed": "2026-10-24"
+    },
+    {
+      "evidence_id": "BAIN-LIFE-023",
+      "source_type": "official_careers",
+      "title": "Life at Bain",
+      "url": "https://www.bain.com/careers/life-at-bain/",
+      "date_accessed": "2026-10-25",
+      "confidence": 0.8,
+      "public_safe_signal": "Bain's Life at Bain page describes one-team support, affinity groups, coaching and mentorship, performance measured and used for recognition, and a 19,000-strong alumni community.",
+      "dimensions": [
+        "company_says",
+        "company_judges",
+        "evidence_valued"
+      ]
+    },
+    {
+      "evidence_id": "BAIN-TORONTO-024",
+      "source_type": "official_company",
+      "title": "Bain Toronto office",
+      "url": "https://www.bain.com/offices/toronto/",
+      "date_accessed": "2026-10-25",
+      "confidence": 0.78,
+      "public_safe_signal": "Bain's Toronto office page says the office has served Canadian and international clients since 1989, mixes Fortune 500, international, and nonprofit clients, and measures performance by client results; it also describes local Bain Gives, Special Olympics Canada, Social Impact Day, affinity groups, recruiting events, and internships.",
+      "dimensions": [
+        "company_says",
+        "role_variation",
+        "evidence_valued",
+        "company_judges"
+      ]
+    },
+    {
+      "evidence_id": "BAIN-AWARDS-025",
+      "source_type": "official_company",
+      "title": "Awards & Recognition",
+      "url": "https://www.bain.com/about/awards-recognition/",
+      "date_accessed": "2026-10-25",
+      "confidence": 0.72,
+      "public_safe_signal": "Bain's awards page lists 2026 recognition including Glassdoor Best Places to Work, Fortune 100 Best Companies to Work For, Great Place To Work certification, a perfect HRC Corporate Equality Index score, and Vault #1 rankings in North America, Asia-Pacific, and EMEA; the page is Bain's own summary of third-party lists.",
+      "dimensions": [
+        "company_judges",
+        "company_says",
+        "risk_warnings"
+      ]
     }
   ],
   "lens_updates": {
@@ -393,6 +436,22 @@
         "confidence": 0.78,
         "evidence_ids": [
           "BAIN-MYTHS-022"
+        ]
+      },
+      {
+        "name": "Coaching, feedback, and recognition as stated commitments",
+        "description": "Bain tells new hires they will receive coaching and mentorship, that expectations are set and performance is measured, and that measurement is used to recognize contributions, so candidates should expect an explicit feedback and recognition loop rather than an informal one.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BAIN-LIFE-023"
+        ]
+      },
+      {
+        "name": "Office-level community engagement",
+        "description": "Bain's Toronto office describes recurring local engagement through Bain Gives, a long-running Special Olympics Canada relationship, Social Impact Day, and affinity groups, indicating that community involvement can be office-specific rather than only a global program.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BAIN-TORONTO-024"
         ]
       }
     ],
@@ -598,6 +657,30 @@
           "BAIN-CONSULTANT-021"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For a Toronto or Canada-based role, explains which local client mix and practice area they are targeting, including exposure to nonprofit or international clients where relevant.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "confidence": 0.7,
+        "evidence_ids": [
+          "BAIN-TORONTO-024"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Shows a habit of seeking coaching and acting on feedback, and can name what changed in their work after a specific piece of feedback.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "collaboration_communication"
+        ],
+        "confidence": 0.74,
+        "evidence_ids": [
+          "BAIN-LIFE-023"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -717,6 +800,22 @@
         "confidence": 0.7,
         "evidence_ids": [
           "BAIN-MYTHS-022"
+        ]
+      },
+      {
+        "anti_signal": "Citing Bain's external awards or rankings as evidence of personal fit without connecting them to the office, team, or role they are applying to.",
+        "risk_reason": "Bain's awards page is a company-curated summary of third-party recognition; it describes the firm's reputation, not a candidate's role-specific evidence.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "BAIN-AWARDS-025"
+        ]
+      },
+      {
+        "anti_signal": "Assuming every Bain office offers the same client mix, community programs, or recruiting calendar; the Toronto page describes office-specific clients, events, and internships.",
+        "risk_reason": "Bain publishes office-level pages, so office-specific claims should be checked rather than generalized from the global site.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "BAIN-TORONTO-024"
         ]
       }
     ],
@@ -902,6 +1001,40 @@
           "BAIN-MYTHS-022",
           "BAIN-CONSULTANT-021"
         ]
+      },
+      {
+        "type": "role_variation",
+        "generated_question": "Which Bain office and work area are you targeting, and what have you learned about that office's client mix, staffing model, and local programs?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names a specific office and work area.",
+          "Cites public evidence about that office rather than only the global firm.",
+          "Distinguishes local client mix from the firm's overall positioning.",
+          "Explains why that mix fits their own experience."
+        ],
+        "evidence_ids": [
+          "BAIN-TORONTO-024"
+        ]
+      },
+      {
+        "type": "evidence_update_behavioral",
+        "generated_question": "Tell me about a time you asked for feedback and changed how you worked. What did you change, and what happened next?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names who gave the feedback and what it challenged.",
+          "Describes a concrete change in approach.",
+          "Shows the effect of the change on the work or the team.",
+          "Explains how they continued to check whether it worked."
+        ],
+        "evidence_ids": [
+          "BAIN-LIFE-023"
+        ]
       }
     ],
     "role_overlays": [
@@ -1003,6 +1136,18 @@
         ],
         "evidence_ids": [
           "BAIN-MYTHS-022"
+        ]
+      },
+      {
+        "role_slug": "canada_toronto_office",
+        "role_family": "Canada / Toronto office roles",
+        "signals": [
+          "Connects experience to Bain Toronto's stated mix of Fortune 500, international, and nonprofit clients.",
+          "Shows awareness that recruiting events, internships, and community programs are office-specific.",
+          "Explains interest in the Toronto office without assuming it mirrors other Bain offices."
+        ],
+        "evidence_ids": [
+          "BAIN-TORONTO-024"
         ]
       }
     ]

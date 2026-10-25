@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-24",
+  "source_cutoff": "2026-10-25",
   "industries": [
     "technology",
     "creative software",
@@ -153,6 +153,22 @@
       "evidence_ids": [
         "ADOBE-PRIVACY-017",
         "ADOBE-PERSONAL-INFO-018"
+      ]
+    },
+    {
+      "name": "Ongoing feedback instead of annual ratings",
+      "description": "Adobe says it replaced annual reviews and ratings with Check-in, an ongoing two-way conversation supported by quarterly check-ins, documented goals, and stakeholder feedback, with no formal rating or ranking.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-CHECKIN-019"
+      ]
+    },
+    {
+      "name": "Internal mobility as part of growth",
+      "description": "Adobe describes a Career Discovery tool that shows employees where people in similar roles have moved inside the company and lets them set alerts for target roles, making internal movement a visible part of career development.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ADOBE-CHECKIN-019"
       ]
     }
   ],
@@ -406,6 +422,42 @@
         "ADOBE-PRIVACY-017"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Shows a pattern of seeking feedback regularly and changing their work before a formal review cycle, consistent with Adobe's described Check-in model.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ADOBE-CHECKIN-019"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Can explain what they want to learn next and how a move inside the company would build on their current role, rather than treating career growth as only external.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ADOBE-CHECKIN-019"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For corporate or customer-facing roles, connects their experience to a specific Adobe function such as IT, finance and operations, customer experience, legal and government relations, or employee experience.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ADOBE-TEAMS-020"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -557,6 +609,22 @@
       "evidence_ids": [
         "ADOBE-PERSONAL-INFO-018"
       ]
+    },
+    {
+      "anti_signal": "Assuming Adobe uses a traditional annual rating or stack-ranking process; Adobe's published Check-in description says there is no formal rating or ranking.",
+      "risk_reason": "A candidate who builds an answer around ratings, ranking, or annual review politics may be using a model Adobe says it replaced.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ADOBE-CHECKIN-019"
+      ]
+    },
+    {
+      "anti_signal": "Treating Adobe as a single product or creative role when its career site separates engineering and product, design, research, sales, marketing, finance and operations, IT, customer experience, legal, and employee experience.",
+      "risk_reason": "Adobe's teams page describes distinct functions with different missions, so role fit should be argued at the function level.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ADOBE-TEAMS-020"
+      ]
     }
   ],
   "interview_patterns": [
@@ -574,11 +642,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 18,
-    "official_source_count": 18,
+    "source_count": 20,
+    "official_source_count": 20,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-24"
+    "last_reviewed": "2026-10-25"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Adobe hiring standard.",

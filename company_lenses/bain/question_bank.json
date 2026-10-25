@@ -260,6 +260,42 @@
         "BAIN-MYTHS-022",
         "BAIN-CONSULTANT-021"
       ]
+    },
+    {
+      "question_id": "BAIN-Q-014",
+      "type": "role_variation",
+      "generated_question": "Which Bain office and work area are you targeting, and what have you learned about that office's client mix, staffing model, and local programs?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names a specific office and work area.",
+        "Cites public evidence about that office rather than only the global firm.",
+        "Distinguishes local client mix from the firm's overall positioning.",
+        "Explains why that mix fits their own experience."
+      ],
+      "evidence_ids": [
+        "BAIN-TORONTO-024"
+      ]
+    },
+    {
+      "question_id": "BAIN-Q-015",
+      "type": "evidence_update_behavioral",
+      "generated_question": "Tell me about a time you asked for feedback and changed how you worked. What did you change, and what happened next?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names who gave the feedback and what it challenged.",
+        "Describes a concrete change in approach.",
+        "Shows the effect of the change on the work or the team.",
+        "Explains how they continued to check whether it worked."
+      ],
+      "evidence_ids": [
+        "BAIN-LIFE-023"
+      ]
     }
   ]
 }

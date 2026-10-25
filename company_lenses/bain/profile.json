@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-19",
-  "source_cutoff": "2026-10-24",
+  "source_cutoff": "2026-10-25",
   "industries": [
     "consulting",
     "strategy consulting",
@@ -110,6 +110,22 @@
       "confidence": 0.78,
       "evidence_ids": [
         "BAIN-MYTHS-022"
+      ]
+    },
+    {
+      "name": "Coaching, feedback, and recognition as stated commitments",
+      "description": "Bain tells new hires they will receive coaching and mentorship, that expectations are set and performance is measured, and that measurement is used to recognize contributions, so candidates should expect an explicit feedback and recognition loop rather than an informal one.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "BAIN-LIFE-023"
+      ]
+    },
+    {
+      "name": "Office-level community engagement",
+      "description": "Bain's Toronto office describes recurring local engagement through Bain Gives, a long-running Special Olympics Canada relationship, Social Impact Day, and affinity groups, indicating that community involvement can be office-specific rather than only a global program.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "BAIN-TORONTO-024"
       ]
     }
   ],
@@ -389,6 +405,30 @@
         "BAIN-CONSULTANT-021"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For a Toronto or Canada-based role, explains which local client mix and practice area they are targeting, including exposure to nonprofit or international clients where relevant.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "BAIN-TORONTO-024"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Shows a habit of seeking coaching and acting on feedback, and can name what changed in their work after a specific piece of feedback.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "BAIN-LIFE-023"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -534,6 +574,22 @@
       "evidence_ids": [
         "BAIN-MYTHS-022"
       ]
+    },
+    {
+      "anti_signal": "Citing Bain's external awards or rankings as evidence of personal fit without connecting them to the office, team, or role they are applying to.",
+      "risk_reason": "Bain's awards page is a company-curated summary of third-party recognition; it describes the firm's reputation, not a candidate's role-specific evidence.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "BAIN-AWARDS-025"
+      ]
+    },
+    {
+      "anti_signal": "Assuming every Bain office offers the same client mix, community programs, or recruiting calendar; the Toronto page describes office-specific clients, events, and internships.",
+      "risk_reason": "Bain publishes office-level pages, so office-specific claims should be checked rather than generalized from the global site.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "BAIN-TORONTO-024"
+      ]
     }
   ],
   "interview_patterns": [
@@ -562,11 +618,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 22,
-    "official_source_count": 22,
+    "source_count": 25,
+    "official_source_count": 25,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-24"
+    "last_reviewed": "2026-10-25"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Bain & Company hiring standard.",

@@ -1,7 +1,7 @@
 {
   "company_slug": "accenture",
   "company": "Accenture",
-  "collected_at": "2026-10-24T13:30:00Z",
+  "collected_at": "2026-10-25T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -341,6 +341,34 @@
       ],
       "evidence_id": "ACCENTURE-AI-HIRING-024",
       "date_accessed": "2026-10-24"
+    },
+    {
+      "evidence_id": "ACCENTURE-CA-CAREERS-025",
+      "source_type": "official_careers",
+      "title": "Accenture Canada careers",
+      "url": "https://www.accenture.com/ca-en/careers",
+      "date_accessed": "2026-10-25",
+      "confidence": 0.8,
+      "public_safe_signal": "Accenture's Canada careers page describes career areas including AI and data science, consulting, engineering and manufacturing, operations and delivery, software engineering, technology, strategy, customer care, SAP, and cybersecurity, plus student, apprenticeship, early-career, experienced, and executive entry paths; it also states company scale of about 814,000 people, 200+ cities in 52 countries, and 9,000+ clients.",
+      "dimensions": [
+        "role_variation",
+        "company_says",
+        "company_asks"
+      ]
+    },
+    {
+      "evidence_id": "ACCENTURE-INCLUSION-026",
+      "source_type": "official_company",
+      "title": "Inclusion and Diversity in the Workplace",
+      "url": "https://www.accenture.com/en/about/inclusion-diversity-index",
+      "date_accessed": "2026-10-25",
+      "confidence": 0.78,
+      "public_safe_signal": "Accenture describes its talent strategy as central to being a reinvention partner and an AI-enabled employer, says it is a meritocracy, and expects leaders to foster belonging and embody core values so people can create 360-degree value for all stakeholders.",
+      "dimensions": [
+        "company_says",
+        "company_judges",
+        "risk_warnings"
+      ]
     }
   ],
   "lens_updates": {
@@ -469,6 +497,14 @@
         "confidence": 0.8,
         "evidence_ids": [
           "ACCENTURE-AI-HIRING-024"
+        ]
+      },
+      {
+        "name": "Meritocracy paired with belonging",
+        "description": "Accenture states that it is a meritocracy and at the same time commits to a workplace free from bias where people feel they belong, are respected, and are empowered to do their best work; leaders are expected to model this culture.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ACCENTURE-INCLUSION-026"
         ]
       }
     ],
@@ -709,6 +745,30 @@
           "ACCENTURE-AI-HIRING-024"
         ],
         "basis": "stated_by_company"
+      },
+      {
+        "signal": "For Canada roles, names the specific Accenture career area and entry path they fit, such as software engineering, cybersecurity, SAP, engineering and manufacturing, operations and delivery, or customer care, rather than treating technology as one track.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ACCENTURE-CA-CAREERS-025"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Shows how they have learned and progressed through a structured early-career, apprenticeship, or reskilling route, and can explain what they can now do that they could not before.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ACCENTURE-CA-CAREERS-025"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -868,6 +928,22 @@
         "confidence": 0.72,
         "evidence_ids": [
           "ACCENTURE-AI-HIRING-024"
+        ]
+      },
+      {
+        "anti_signal": "Treating Accenture's consulting, technology, software engineering, cybersecurity, SAP, and operations roles as interchangeable, with no evidence for the specific career area applied to.",
+        "risk_reason": "Accenture's Canada careers page lists these as distinct career areas with different work, so a generic technology pitch does not show role fit.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ACCENTURE-CA-CAREERS-025"
+        ]
+      },
+      {
+        "anti_signal": "Claiming a meritocratic fit while giving no evidence of outcomes, growth, or the specific capabilities Accenture says it rewards.",
+        "risk_reason": "Accenture describes itself as a meritocracy and ties talent to business reinvention, so claims should be backed by demonstrated capability and results.",
+        "confidence": 0.68,
+        "evidence_ids": [
+          "ACCENTURE-INCLUSION-026"
         ]
       }
     ],
@@ -1095,6 +1171,41 @@
           "ACCENTURE-AI-HIRING-024",
           "ACCENTURE-FAQ-017"
         ]
+      },
+      {
+        "type": "role_variation",
+        "generated_question": "Which Accenture career area and entry path are you targeting in Canada, and what evidence shows you can do that area's core work?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names a specific career area and entry path.",
+          "Distinguishes it from adjacent Accenture career areas.",
+          "Gives role-specific evidence rather than generic technology enthusiasm.",
+          "Explains why the Canada market or office is the right setting."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-CA-CAREERS-025"
+        ]
+      },
+      {
+        "type": "behavioral",
+        "generated_question": "Tell me about a time you had to earn credibility in a merit-based environment. What did you deliver, and how did you know it was recognized?",
+        "aims_dimensions": [
+          "impact_results",
+          "ownership_execution",
+          "growth_mindset"
+        ],
+        "strong_answer_signals": [
+          "Describes a concrete outcome and personal contribution.",
+          "Explains how the work was judged or recognized.",
+          "Shows how they responded to feedback or competition.",
+          "Reflects on what they learned about earning trust."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-INCLUSION-026"
+        ]
       }
     ],
     "role_overlays": [
@@ -1191,6 +1302,18 @@
         ],
         "evidence_ids": [
           "ACCENTURE-TECH-021"
+        ]
+      },
+      {
+        "role_slug": "canada_career_tracks",
+        "role_family": "Accenture Canada career areas and entry paths",
+        "signals": [
+          "Maps experience to a specific area such as AI and data science, consulting, engineering and manufacturing, operations and delivery, software engineering, technology, strategy, customer care, SAP, or cybersecurity.",
+          "Explains the relevant entry path: student, apprenticeship, early-career, experienced, or executive.",
+          "Shows awareness that Accenture Canada hires across a broad set of functions rather than only consulting."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-CA-CAREERS-025"
         ]
       }
     ]

@@ -272,6 +272,43 @@
         "ACCENTURE-AI-HIRING-024",
         "ACCENTURE-FAQ-017"
       ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-014",
+      "type": "role_variation",
+      "generated_question": "Which Accenture career area and entry path are you targeting in Canada, and what evidence shows you can do that area's core work?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names a specific career area and entry path.",
+        "Distinguishes it from adjacent Accenture career areas.",
+        "Gives role-specific evidence rather than generic technology enthusiasm.",
+        "Explains why the Canada market or office is the right setting."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-CA-CAREERS-025"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-015",
+      "type": "behavioral",
+      "generated_question": "Tell me about a time you had to earn credibility in a merit-based environment. What did you deliver, and how did you know it was recognized?",
+      "aims_dimensions": [
+        "impact_results",
+        "ownership_execution",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Describes a concrete outcome and personal contribution.",
+        "Explains how the work was judged or recognized.",
+        "Shows how they responded to feedback or competition.",
+        "Reflects on what they learned about earning trust."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-INCLUSION-026"
+      ]
     }
   ]
 }

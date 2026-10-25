@@ -4,6 +4,9 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| BAIN-LIFE-023 | official_careers | Life at Bain | 2026-10-25 | 0.80 | Bain's Life at Bain page describes one-team support, affinity groups, coaching and mentorship, performance measured and used for recognition, and a 19,000-strong alumni community. |
+| BAIN-TORONTO-024 | official_company | Bain Toronto office | 2026-10-25 | 0.78 | Bain's Toronto office page says the office has served Canadian and international clients since 1989, mixes Fortune 500, international, and nonprofit clients, and measures performance by client results; it also describes local Bain Gives, Special Olympics Canada, Social Impact Day, affinity groups, recruiting events, and internships. |
+| BAIN-AWARDS-025 | official_company | Awards & Recognition | 2026-10-25 | 0.72 | Bain's awards page lists 2026 recognition including Glassdoor Best Places to Work, Fortune 100 Best Companies to Work For, Great Place To Work certification, a perfect HRC Corporate Equality Index score, and Vault #1 rankings in North America, Asia-Pacific, and EMEA; the page is Bain's own summary of third-party lists. |
 | BAIN-CONSULTANT-021 | official_careers | Hiring process: consultant | 2026-10-24 | 0.80 | Bain's consultant application page lists resume, education, work experience, and relevant test scores as baseline inputs, then directs candidates to office-specific requirements, indicating that eligibility and process differ by location. |
 | BAIN-MYTHS-022 | official_careers | Five myths about being a consultant at Bain | 2026-10-24 | 0.78 | A Bain careers blog post corrects five common assumptions: a business degree is not required, home-office affiliation does not mean local-only work, consultants usually start as generalists before specializing, travel depends on case needs, and teams mix generalists with deep experts. |
 | BAIN-FRAUD-020 | official_company | Fraudulent Activity Warning | 2026-10-23 | 0.88 | Bain's fraud warning says criminals impersonate its staff and offices through fake sites, social profiles, spoofed calls, and email, including job interviews and offers. Bain says it requests personal data only through its own site, never asks for financial information, emails only from @bain.com, and does not discuss employment or confidential matters on Telegram, WhatsApp, or Signal. |
@@ -55,3 +58,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.bain.com/about/fraudulent-activity-warning/
 - https://www.bain.com/careers/hiring-process/consultant/
 - https://www.bain.com/careers/life-at-bain/careers-blog/five-myths-about-being-a-consultant-at-bain/
+- https://www.bain.com/offices/toronto/
+- https://www.bain.com/about/awards-recognition/

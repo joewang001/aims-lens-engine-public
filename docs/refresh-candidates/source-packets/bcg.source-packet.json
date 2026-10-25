@@ -1,7 +1,7 @@
 {
   "company_slug": "bcg",
   "company": "Boston Consulting Group",
-  "collected_at": "2026-10-24T13:30:00Z",
+  "collected_at": "2026-10-25T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -292,6 +292,50 @@
       ],
       "evidence_id": "BCG-FAQ-DACH-020",
       "date_accessed": "2026-10-24"
+    },
+    {
+      "evidence_id": "BCG-PLATINION-CULTURE-021",
+      "source_type": "official_careers",
+      "title": "Culture, Values and Inclusion (BCG Platinion)",
+      "url": "https://www.bcgplatinion.com/careers/culture-values-and-inclusion",
+      "date_accessed": "2026-10-25",
+      "confidence": 0.8,
+      "public_safe_signal": "BCG Platinion describes values of on-the-job passion, diversity, commitment to excellence, constructive challenge of accepted norms, mutual trust and responsibility to teammates and clients, and social impact; it also describes an iterative, hypothesis- and scenario-based project approach with interdisciplinary global teams.",
+      "dimensions": [
+        "company_says",
+        "company_judges",
+        "evidence_valued"
+      ]
+    },
+    {
+      "evidence_id": "BCG-PLATINION-PROCESS-022",
+      "source_type": "official_careers",
+      "title": "Application process (BCG Platinion)",
+      "url": "https://www.bcgplatinion.com/careers/application-process",
+      "date_accessed": "2026-10-25",
+      "confidence": 0.82,
+      "public_safe_signal": "BCG Platinion's application page describes a CV screen and introduction call, at least two interview rounds with case studies, a possible logic test in some regions, and a second round combining a BCG business case with a Platinion IT case; it states that documents, tests, and rounds vary by region and role and that extra interviews may be required.",
+      "dimensions": [
+        "company_asks",
+        "evidence_valued",
+        "honest_unknowns",
+        "role_variation",
+        "risk_warnings"
+      ]
+    },
+    {
+      "evidence_id": "BCG-PLATINION-CYBER-023",
+      "source_type": "official_careers",
+      "title": "AI Tech Consultants - Cybersecurity (BCG Platinion)",
+      "url": "https://www.bcgplatinion.com/careers/roles/ai-tech-consultants-cybersecurity",
+      "date_accessed": "2026-10-25",
+      "confidence": 0.78,
+      "public_safe_signal": "BCG Platinion's cybersecurity consultant role page describes security maturity assessments, cyber strategy and roadmaps, cloud and infrastructure evaluation, SOC transformation, and managed-security-provider selection, with progression from consultant to director and flexibility to move between consulting and architecture tracks.",
+      "dimensions": [
+        "role_variation",
+        "company_asks",
+        "company_says"
+      ]
     }
   ],
   "lens_updates": {
@@ -388,6 +432,22 @@
         "confidence": 0.68,
         "evidence_ids": [
           "BCG-GENAI-TA-019"
+        ]
+      },
+      {
+        "name": "Constructive challenge of accepted norms",
+        "description": "BCG Platinion says colleagues consistently challenge one another, give constructive feedback, and question accepted norms and the status quo to reach better solutions, making respectful challenge part of the expected working style.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BCG-PLATINION-CULTURE-021"
+        ]
+      },
+      {
+        "name": "Iterative, hypothesis-led delivery",
+        "description": "BCG Platinion describes approaching projects with hypotheses and scenarios, using proven concepts iteratively and refining solutions step by step until they meet its quality bar, rather than presenting a single fixed plan.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BCG-PLATINION-CULTURE-021"
         ]
       }
     ],
@@ -627,6 +687,42 @@
           "BCG-GENAI-TA-019"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Prepares for both a business case and an IT case, and can explain how commercial constraints and technical architecture decisions interact.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "structured_thinking"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "BCG-PLATINION-PROCESS-022"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Presents a project list that lets a recruiter see the candidate's role, the technical problem, and the delivered outcome, rather than a list of employers and titles.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "impact_results"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BCG-PLATINION-PROCESS-022"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For cybersecurity roles, can discuss a security assessment or roadmap in terms of business requirements, existing technology, prioritized remediation, and measurable risk reduction.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution"
+        ],
+        "confidence": 0.75,
+        "evidence_ids": [
+          "BCG-PLATINION-CYBER-023"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -751,6 +847,22 @@
         "confidence": 0.7,
         "evidence_ids": [
           "BCG-GENAI-TA-019"
+        ]
+      },
+      {
+        "anti_signal": "Assuming a single BCG or BCG Platinion application process: BCG Platinion states that required documents, logic tests, and interview rounds vary by region and role.",
+        "risk_reason": "The published process is explicitly variable, so a candidate who prepares only one office's format may miss a required step.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "BCG-PLATINION-PROCESS-022"
+        ]
+      },
+      {
+        "anti_signal": "Describing cybersecurity work only as tooling or certifications, without explaining how a security architecture or roadmap changed a client's risk posture.",
+        "risk_reason": "BCG Platinion frames the cybersecurity role around assessments, strategy, architecture, and implementation roadmaps rather than tool familiarity alone.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "BCG-PLATINION-CYBER-023"
         ]
       }
     ],
@@ -967,6 +1079,58 @@
         "evidence_ids": [
           "BCG-GENAI-TA-019"
         ]
+      },
+      {
+        "type": "behavioral",
+        "generated_question": "Walk me through a project on your CV: what problem were you solving, what did you personally decide, and what changed for the client?",
+        "aims_dimensions": [
+          "ownership_execution",
+          "structured_thinking",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Separates personal decisions from team contributions.",
+          "Explains the technical or analytical choice and its constraints.",
+          "Names a concrete outcome or change in client practice.",
+          "Shows what they would do differently with more evidence."
+        ],
+        "evidence_ids": [
+          "BCG-PLATINION-PROCESS-022"
+        ]
+      },
+      {
+        "type": "case",
+        "generated_question": "How would you structure a case that combines a business constraint and a technical architecture constraint? What would you test first, and what would you leave open?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "structured_thinking"
+        ],
+        "strong_answer_signals": [
+          "Clarifies the objective and decision owner before structuring.",
+          "Separates commercial and technical constraints.",
+          "States hypotheses and the evidence needed to test them.",
+          "Names tradeoffs and what would change the recommendation."
+        ],
+        "evidence_ids": [
+          "BCG-PLATINION-PROCESS-022"
+        ]
+      },
+      {
+        "type": "technical",
+        "generated_question": "For a cybersecurity assessment, what would you examine first, and how would you turn findings into a prioritized roadmap?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Starts from business context and critical assets.",
+          "Assesses current controls and architecture rather than only tools.",
+          "Prioritizes by risk and implementation feasibility.",
+          "Connects the roadmap to measurable risk reduction."
+        ],
+        "evidence_ids": [
+          "BCG-PLATINION-CYBER-023"
+        ]
       }
     ],
     "role_overlays": [
@@ -1069,6 +1233,31 @@
         ],
         "evidence_ids": [
           "BCG-FAQ-DACH-020"
+        ]
+      },
+      {
+        "role_slug": "bcg_platinion_cybersecurity",
+        "role_family": "BCG Platinion cybersecurity consulting",
+        "signals": [
+          "Frames security work through maturity assessment, strategy, architecture, and a prioritized implementation roadmap.",
+          "Shows familiarity with cloud, infrastructure, SOC transformation, or managed security service decisions.",
+          "Communicates technical risk to business stakeholders and can move between consulting and architecture tracks."
+        ],
+        "evidence_ids": [
+          "BCG-PLATINION-CYBER-023",
+          "BCG-PLATINION-CULTURE-021"
+        ]
+      },
+      {
+        "role_slug": "bcg_platinion_case_candidate",
+        "role_family": "BCG Platinion interview candidate",
+        "signals": [
+          "Prepares for a business case and an IT case rather than only one format.",
+          "Can narrate a project list with role, technical problem, and outcome.",
+          "Expects regional variation in documents, logic tests, and interview rounds."
+        ],
+        "evidence_ids": [
+          "BCG-PLATINION-PROCESS-022"
         ]
       }
     ]
