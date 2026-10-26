@@ -1,6 +1,6 @@
 # Public Lens Gap Resolution History
 
-Generated: `2026-10-25T16:54:44Z`
+Generated: `2026-10-26T13:10:03Z`
 
 This append-only operational view records gaps that disappeared after a lens passed its automated threshold. The first Git commit containing each record is the authoritative resolution change; commit and PR fields are backfilled on a later audit.
 
