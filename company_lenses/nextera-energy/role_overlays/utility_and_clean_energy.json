@@ -1,0 +1,20 @@
+{
+  "company": "NextEra Energy",
+  "role_family": "Utility and clean-energy roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Balances reliability, safety, affordability, regulation, capital delivery, and environmental outcomes.",
+    "Connects operational or investment choices to customers, communities, and long-term system performance."
+  ],
+  "evidence_ids": [
+    "NEXTERA_ENERGY-OFFICIAL-001",
+    "NEXTERA_ENERGY-CAREERS-002"
+  ]
+}

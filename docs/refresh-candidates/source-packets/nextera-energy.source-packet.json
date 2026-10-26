@@ -1,0 +1,86 @@
+{
+  "company_slug": "nextera-energy",
+  "company": "NextEra Energy",
+  "collected_at": "2026-10-26T13:10:02Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "energy",
+      "utilities",
+      "renewable energy",
+      "infrastructure"
+    ],
+    "regions": [
+      "north_america"
+    ],
+    "company_stage": "large public electric power and energy infrastructure company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "NextEra Energy company overview",
+      "url": "https://www.nexteraenergy.com/company.html",
+      "confidence": 0.81,
+      "public_safe_signal": "NextEra Energy publicly describes electric utility, renewable generation, energy infrastructure, reliability, and long-term investment in cleaner energy systems.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "NEXTERA_ENERGY-OFFICIAL-001",
+      "date_accessed": "2026-10-26"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "NextEra Energy careers",
+      "url": "https://jobs.nexteraenergy.com/",
+      "confidence": 0.76,
+      "public_safe_signal": "NextEra Energy careers material emphasizes safety, customer service, operational excellence, innovation, teamwork, and energy-sector impact.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "NEXTERA_ENERGY-CAREERS-002",
+      "date_accessed": "2026-10-26"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "behavioral",
+        "generated_question": "Tell me about a time you solved a difficult utility and clean-energy roles problem and connected your decisions to a measurable stakeholder result.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the problem, stakeholders, and constraints clearly.",
+          "Explains evidence, tradeoffs, and personal ownership.",
+          "Connects execution to a measurable result.",
+          "Shows learning from feedback or changed conditions."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "utility_and_clean_energy",
+        "role_family": "Utility and clean-energy roles",
+        "signals": [
+          "Balances reliability, safety, affordability, regulation, capital delivery, and environmental outcomes.",
+          "Connects operational or investment choices to customers, communities, and long-term system performance."
+        ]
+      }
+    ]
+  }
+}

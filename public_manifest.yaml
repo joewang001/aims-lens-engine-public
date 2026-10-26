@@ -122,6 +122,12 @@ initial_public_release:
     - slug: bcg
       path: company_lenses/bcg/
       status: existing_candidate
+    - slug: nextera-energy
+      path: company_lenses/nextera-energy/
+      status: existing_candidate
+    - slug: servicenow
+      path: company_lenses/servicenow/
+      status: existing_candidate
 
 allow_paths:
   root_files:
@@ -504,6 +510,24 @@ allow_paths:
 
   public_agent_access:
     - agent-access/
+    - company_lenses/nextera-energy/README.md
+    - company_lenses/nextera-energy/profile.json
+    - company_lenses/nextera-energy/evidence.md
+    - company_lenses/nextera-energy/rubric.md
+    - company_lenses/nextera-energy/question_bank.json
+    - company_lenses/nextera-energy/rewrite_rules.md
+    - company_lenses/nextera-energy/limits.md
+    - company_lenses/nextera-energy/validation_report.md
+    - company_lenses/nextera-energy/role_overlays/
+    - company_lenses/servicenow/README.md
+    - company_lenses/servicenow/profile.json
+    - company_lenses/servicenow/evidence.md
+    - company_lenses/servicenow/rubric.md
+    - company_lenses/servicenow/question_bank.json
+    - company_lenses/servicenow/rewrite_rules.md
+    - company_lenses/servicenow/limits.md
+    - company_lenses/servicenow/validation_report.md
+    - company_lenses/servicenow/role_overlays/
 
   public_tools:
     - tools/package_agent_access.py

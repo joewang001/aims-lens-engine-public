@@ -1,0 +1,87 @@
+{
+  "company_slug": "servicenow",
+  "company": "ServiceNow",
+  "collected_at": "2026-10-26T13:10:02Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "technology",
+      "enterprise software",
+      "cloud",
+      "workflow automation",
+      "ai"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public enterprise software company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "ServiceNow company overview",
+      "url": "https://www.servicenow.com/company.html",
+      "confidence": 0.81,
+      "public_safe_signal": "ServiceNow publicly positions its cloud platform around enterprise workflows, automation, AI, productivity, and improved experiences for employees and customers.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "SERVICENOW-OFFICIAL-001",
+      "date_accessed": "2026-10-26"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "ServiceNow careers",
+      "url": "https://careers.servicenow.com/",
+      "confidence": 0.77,
+      "public_safe_signal": "ServiceNow careers material highlights customer impact, innovation, teamwork, inclusion, learning, and building technology that improves work.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "SERVICENOW-CAREERS-002",
+      "date_accessed": "2026-10-26"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "behavioral",
+        "generated_question": "Tell me about a time you solved a difficult enterprise workflow platform roles problem and connected your decisions to a measurable stakeholder result.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the problem, stakeholders, and constraints clearly.",
+          "Explains evidence, tradeoffs, and personal ownership.",
+          "Connects execution to a measurable result.",
+          "Shows learning from feedback or changed conditions."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "enterprise_workflow_platform",
+        "role_family": "Enterprise workflow platform roles",
+        "signals": [
+          "Connects platform or process choices to customer workflows, adoption, reliability, and measurable value.",
+          "Balances product, technical, commercial, and change-management constraints."
+        ]
+      }
+    ]
+  }
+}
