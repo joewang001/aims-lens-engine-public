@@ -29,6 +29,102 @@
         "SERVICENOW-OFFICIAL-001",
         "SERVICENOW-CAREERS-002"
       ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-002",
+      "type": "responsible_ai_behavioral",
+      "generated_question": "Describe a time you shipped an AI or automation capability where human oversight mattered. How did you decide what the system should and should not do?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names the failure modes and who could be affected.",
+        "Explains where human review, escalation, or limits were built in.",
+        "Describes how the decision was documented and communicated.",
+        "Shows the measured outcome and what was changed after launch."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-OFFICIAL-001",
+        "SERVICENOW-CAREERS-002",
+        "SERVICENOW-ETHICS-003",
+        "SERVICENOW-AI-004",
+        "SERVICENOW-IMPACT-005",
+        "SERVICENOW-LEADERSHIP-006"
+      ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-003",
+      "type": "trust_and_transparency_behavioral",
+      "generated_question": "Tell me about a time you had to report inconvenient or incomplete results to a stakeholder. How did you keep the account accurate without losing trust?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Separates what is known from what is uncertain.",
+        "Takes responsibility for the gap rather than deflecting.",
+        "Explains the corrective action and follow-up.",
+        "Preserves the relationship while staying accurate."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-OFFICIAL-001",
+        "SERVICENOW-CAREERS-002",
+        "SERVICENOW-ETHICS-003",
+        "SERVICENOW-AI-004",
+        "SERVICENOW-IMPACT-005",
+        "SERVICENOW-LEADERSHIP-006"
+      ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-004",
+      "type": "speak_up_behavioral",
+      "generated_question": "Tell me about a time you raised a concern that was uncomfortable to surface. What happened, and what did you learn about how escalation works?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "States the concern and the risk of not raising it.",
+        "Chooses an appropriate channel and timing.",
+        "Engages with the response rather than assuming the worst.",
+        "Shows a concrete change or lesson from the outcome."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-OFFICIAL-001",
+        "SERVICENOW-CAREERS-002",
+        "SERVICENOW-ETHICS-003",
+        "SERVICENOW-AI-004",
+        "SERVICENOW-IMPACT-005",
+        "SERVICENOW-LEADERSHIP-006"
+      ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-005",
+      "type": "impact_measurement_behavioral",
+      "generated_question": "Walk me through a workflow or platform improvement you made. How did you define the metric, and what did the evidence show?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "impact_results",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Defines a baseline and a specific success measure before building.",
+        "Distinguishes adoption from actual outcome improvement.",
+        "Explains confounders or limits in the measurement.",
+        "Describes the next decision the data enabled."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-OFFICIAL-001",
+        "SERVICENOW-CAREERS-002",
+        "SERVICENOW-ETHICS-003",
+        "SERVICENOW-AI-004",
+        "SERVICENOW-IMPACT-005",
+        "SERVICENOW-LEADERSHIP-006"
+      ]
     }
   ]
 }

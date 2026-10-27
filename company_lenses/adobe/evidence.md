@@ -4,6 +4,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ADOBE-DEVBLOG-021 | official_engineering_blog | Build-time Wasm module splitting for faster startup (Adobe Developers Blog) | 2026-10-27 | 0.84 | Adobe engineers describe replacing profile-guided WebAssembly splitting with a build-time call-graph and debug-info analysis, trading profiling effort for repeatable builds, and they document limitations and rule maintenance costs. |
+| ADOBE-DEVBLOG-022 | official_engineering_blog | Adobe Developers Live 2026 recap: CEP to UXP migration and ecosystem roadmap | 2026-10-27 | 0.82 | Adobe's developer recap describes a multi-year extensibility transition, stating that legacy CEP plugins keep working through 2029 while UXP becomes the future, alongside new APIs, community tooling, and open roundtable discussion. |
 | ADOBE-CHECKIN-019 | official_company | How Adobe continues to inspire great performance and support career growth | 2026-10-25 | 0.82 | Adobe's Check-in page says Adobe replaced annual performance reviews and ratings in 2012 with ongoing two-way conversations, now holds quarterly check-ins, uses documented goals and stakeholder feedback, has no formal rating or ranking, lets managers set salary and equity from performance, and offers a Career Discovery tool for internal mobility; the page does not state when this description was last updated. |
 | ADOBE-TEAMS-020 | official_careers | Teams at Adobe | 2026-10-25 | 0.78 | Adobe's teams page lists distinct career areas including Engineering and Product, Design, Research, Sales, Global Marketing, Finance and Operations, Information Technology, Customer Experience, Legal and Government Relations, and Employee Experience, each with a short description of its mission. |
 | ADOBE-PRIVACY-017 | official_company | Adobe applicant privacy policy | 2026-10-24 | 0.80 | Adobe's applicant privacy policy lists the candidate data it collects and states that automated systems using machine-learning techniques may analyze application information to select and retain candidates where consent is not required. |
@@ -51,3 +53,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://careers.adobe.com/us/en/personal-information
 - https://www.adobe.com/check-in.html
 - https://careers.adobe.com/us/en/teams
+- https://blog.developer.adobe.com/en/publish/2026/10/build-time-wasm-module-splitting-ship-more-features-without-growing-your-startup-bundle
+- https://blog.developer.adobe.com/en/publish/2026/10/adobe-developers-live-2026-recap-cep-to-uxp-migration-express-connectors-and-what-we-publish-next

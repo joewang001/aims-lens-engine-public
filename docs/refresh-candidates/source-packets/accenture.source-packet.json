@@ -1,7 +1,7 @@
 {
   "company_slug": "accenture",
   "company": "Accenture",
-  "collected_at": "2026-10-25T13:30:00Z",
+  "collected_at": "2026-10-27T13:35:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -369,6 +369,35 @@
         "company_judges",
         "risk_warnings"
       ]
+    },
+    {
+      "source_type": "official_investor_relations",
+      "title": "Accenture investor relations: FY2026 performance and company overview",
+      "url": "https://investor.accenture.com/",
+      "confidence": 0.86,
+      "public_safe_signal": "Accenture's investor page reports fiscal 2026 revenue of about $74.2 billion, a 15.8% adjusted operating margin, $6.9 billion invested in acquisitions, R&D, and learning, and an ambition to lead safe, widespread AI adoption as a client-focused employer.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "ACCENTURE-IR-027",
+      "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Accenture apprenticeships (Canada and US)",
+      "url": "https://www.accenture.com/ca-en/careers/life-at-accenture/apprenticeships",
+      "confidence": 0.8,
+      "public_safe_signal": "Accenture's apprenticeship page says apprentices learn while earning with coaching, mentorship, and on-the-job training, seeks applicants without a four-year degree in project management, programming, data analysis, or graphic design, and notes apprenticeships may lead to full-time roles.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "role_variation",
+        "honest_unknowns"
+      ],
+      "evidence_id": "ACCENTURE-APPRENTICE-028",
+      "date_accessed": "2026-10-27"
     }
   ],
   "lens_updates": {
@@ -505,6 +534,22 @@
         "confidence": 0.76,
         "evidence_ids": [
           "ACCENTURE-INCLUSION-026"
+        ]
+      },
+      {
+        "name": "Skills-first pathways beyond degree requirements",
+        "description": "Accenture's apprenticeship material explicitly recruits people without a four-year degree, offers paid learning with mentorship, and says the pathway can lead to full-time employment.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ACCENTURE-APPRENTICE-028"
+        ]
+      },
+      {
+        "name": "Invest at scale through cycles",
+        "description": "Accenture frames its financial approach as growing faster than the market and expanding margin while continuing to invest heavily in acquisitions, R&D, and learning, with a stated multi-billion-dollar annual investment.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ACCENTURE-IR-027"
         ]
       }
     ],
@@ -769,6 +814,32 @@
           "ACCENTURE-CA-CAREERS-025"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For apprenticeship or skills-first roles, shows foundational capability in one area and coachability through on-the-job learning.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-APPRENTICE-028"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Explains how a proposed AI or technology investment would be sequenced, measured, and adjusted rather than treated as a single bet.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "impact_results",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ACCENTURE-IR-027"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -944,6 +1015,22 @@
         "confidence": 0.68,
         "evidence_ids": [
           "ACCENTURE-INCLUSION-026"
+        ]
+      },
+      {
+        "anti_signal": "Assuming a four-year degree is required for every Accenture pathway or dismissing apprenticeship routes as secondary.",
+        "risk_reason": "Accenture publishes apprenticeship eligibility that actively seeks applicants without a four-year degree; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ACCENTURE-APPRENTICE-028"
+        ]
+      },
+      {
+        "anti_signal": "Presenting growth or AI investment as a single dramatic bet with no sequencing, margin discipline, or measurement.",
+        "risk_reason": "Accenture's investor messaging pairs growth with margin expansion, disciplined capital allocation, and continued investment at scale.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ACCENTURE-IR-027"
         ]
       }
     ],
@@ -1206,6 +1293,36 @@
         "evidence_ids": [
           "ACCENTURE-INCLUSION-026"
         ]
+      },
+      {
+        "type": "skills_first_learning_behavioral",
+        "generated_question": "Tell me about a time you learned a new domain primarily on the job, with coaching rather than formal credentials. How did you get productive quickly?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names the specific skill gap and how it was closed.",
+          "Shows how they used coaching, feedback, or shadowing.",
+          "Describes a concrete contribution made while still learning.",
+          "Reflects on what they would learn differently next time."
+        ]
+      },
+      {
+        "type": "investment_sequencing_behavioral",
+        "generated_question": "Describe a program where you had to invest limited resources across several competing priorities. How did you sequence the work and decide when to stop or scale?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "impact_results",
+          "analytical_problem_solving"
+        ],
+        "strong_answer_signals": [
+          "Defines the portfolio and the criteria for allocating resources.",
+          "Explains stage gates or evidence used to continue or stop.",
+          "Balances short-term delivery with capability building.",
+          "Quantifies the outcome and the opportunity cost."
+        ]
       }
     ],
     "role_overlays": [
@@ -1314,6 +1431,18 @@
         ],
         "evidence_ids": [
           "ACCENTURE-CA-CAREERS-025"
+        ]
+      },
+      {
+        "role_slug": "apprenticeship_and_skills_first",
+        "role_family": "Apprenticeship and skills-first early-career roles",
+        "signals": [
+          "Shows foundational ability in project management, programming, data analysis, or design rather than credentials alone.",
+          "Demonstrates coachability, teamwork, and communication in a learning environment.",
+          "Connects on-the-job training to a concrete contribution and future full-time potential."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-APPRENTICE-028"
         ]
       }
     ]

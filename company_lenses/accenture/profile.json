@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-25",
+  "source_cutoff": "2026-10-27",
   "industries": [
     "consulting",
     "professional services",
@@ -167,6 +167,22 @@
       "confidence": 0.76,
       "evidence_ids": [
         "ACCENTURE-INCLUSION-026"
+      ]
+    },
+    {
+      "name": "Skills-first pathways beyond degree requirements",
+      "description": "Accenture's apprenticeship material explicitly recruits people without a four-year degree, offers paid learning with mentorship, and says the pathway can lead to full-time employment.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ACCENTURE-APPRENTICE-028"
+      ]
+    },
+    {
+      "name": "Invest at scale through cycles",
+      "description": "Accenture frames its financial approach as growing faster than the market and expanding margin while continuing to invest heavily in acquisitions, R&D, and learning, with a stated multi-billion-dollar annual investment.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ACCENTURE-IR-027"
       ]
     }
   ],
@@ -466,6 +482,32 @@
         "ACCENTURE-CA-CAREERS-025"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For apprenticeship or skills-first roles, shows foundational capability in one area and coachability through on-the-job learning.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-APPRENTICE-028"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Explains how a proposed AI or technology investment would be sequenced, measured, and adjusted rather than treated as a single bet.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "impact_results",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ACCENTURE-IR-027"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -651,6 +693,22 @@
       "evidence_ids": [
         "ACCENTURE-INCLUSION-026"
       ]
+    },
+    {
+      "anti_signal": "Assuming a four-year degree is required for every Accenture pathway or dismissing apprenticeship routes as secondary.",
+      "risk_reason": "Accenture publishes apprenticeship eligibility that actively seeks applicants without a four-year degree; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ACCENTURE-APPRENTICE-028"
+      ]
+    },
+    {
+      "anti_signal": "Presenting growth or AI investment as a single dramatic bet with no sequencing, margin discipline, or measurement.",
+      "risk_reason": "Accenture's investor messaging pairs growth with margin expansion, disciplined capital allocation, and continued investment at scale.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ACCENTURE-IR-027"
+      ]
     }
   ],
   "interview_patterns": [
@@ -668,11 +726,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 26,
-    "official_source_count": 26,
+    "source_count": 28,
+    "official_source_count": 28,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-25"
+    "last_reviewed": "2026-10-27"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Accenture hiring standard.",

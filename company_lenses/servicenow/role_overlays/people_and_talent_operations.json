@@ -1,0 +1,25 @@
+{
+  "company": "ServiceNow",
+  "role_family": "People, learning, and workforce innovation roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Connects talent development and learning to how the business adopts new technology.",
+    "Uses workforce data and measurement to evaluate program impact.",
+    "Designs enablement that respects employee experience and inclusion."
+  ],
+  "evidence_ids": [
+    "SERVICENOW-OFFICIAL-001",
+    "SERVICENOW-CAREERS-002",
+    "SERVICENOW-ETHICS-003",
+    "SERVICENOW-AI-004",
+    "SERVICENOW-IMPACT-005",
+    "SERVICENOW-LEADERSHIP-006"
+  ]
+}

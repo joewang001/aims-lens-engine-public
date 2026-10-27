@@ -29,6 +29,114 @@
         "NEXTERA_ENERGY-OFFICIAL-001",
         "NEXTERA_ENERGY-CAREERS-002"
       ]
+    },
+    {
+      "question_id": "NEXTERA_ENERGY-Q-002",
+      "type": "reliability_tradeoff_behavioral",
+      "generated_question": "Describe a time you had to balance a reliability or safety requirement against cost, schedule, or environmental pressure. How did you decide and who did you bring along?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names the competing constraints and the stakeholders affected.",
+        "Explains the evidence or standards used to make the call.",
+        "Shows how the decision was communicated and documented.",
+        "Reflects on the operational outcome and what changed afterward."
+      ],
+      "evidence_ids": [
+        "NEXTERA_ENERGY-OFFICIAL-001",
+        "NEXTERA_ENERGY-CAREERS-002",
+        "NEXTERA_ENERGY-ABOUT-003",
+        "NEXTERA_ENERGY-CULTURE-004",
+        "NEXTERA_ENERGY-INNOVATION-005",
+        "NEXTERA_ENERGY-HIRING-006",
+        "NEXTERA_ENERGY-TEST-007",
+        "NEXTERA_ENERGY-CORPORATE-008",
+        "NEXTERA_ENERGY-FIELD-009"
+      ]
+    },
+    {
+      "question_id": "NEXTERA_ENERGY-Q-003",
+      "type": "operational_incident_behavioral",
+      "generated_question": "Tell me about an operational problem you diagnosed under time pressure, such as an outage, equipment fault, or service disruption. How did you isolate cause and restore service?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Separates symptoms from root cause using a clear diagnostic sequence.",
+        "Describes safety and escalation decisions explicitly.",
+        "Coordinates with field, engineering, or customer teams.",
+        "Quantifies restoration time, avoided impact, or preventive follow-up."
+      ],
+      "evidence_ids": [
+        "NEXTERA_ENERGY-OFFICIAL-001",
+        "NEXTERA_ENERGY-CAREERS-002",
+        "NEXTERA_ENERGY-ABOUT-003",
+        "NEXTERA_ENERGY-CULTURE-004",
+        "NEXTERA_ENERGY-INNOVATION-005",
+        "NEXTERA_ENERGY-HIRING-006",
+        "NEXTERA_ENERGY-TEST-007",
+        "NEXTERA_ENERGY-CORPORATE-008",
+        "NEXTERA_ENERGY-FIELD-009"
+      ]
+    },
+    {
+      "question_id": "NEXTERA_ENERGY-Q-004",
+      "type": "continuous_improvement_behavioral",
+      "generated_question": "Tell me about an idea you improved or scaled beyond your assigned work. What evidence convinced others to adopt it?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Distinguishes the original task from the improvement opportunity.",
+        "Tests the idea with data or a small pilot before scaling.",
+        "Addresses adoption barriers with colleagues or leaders.",
+        "Shows a durable process change rather than a one-off effort."
+      ],
+      "evidence_ids": [
+        "NEXTERA_ENERGY-OFFICIAL-001",
+        "NEXTERA_ENERGY-CAREERS-002",
+        "NEXTERA_ENERGY-ABOUT-003",
+        "NEXTERA_ENERGY-CULTURE-004",
+        "NEXTERA_ENERGY-INNOVATION-005",
+        "NEXTERA_ENERGY-HIRING-006",
+        "NEXTERA_ENERGY-TEST-007",
+        "NEXTERA_ENERGY-CORPORATE-008",
+        "NEXTERA_ENERGY-FIELD-009"
+      ]
+    },
+    {
+      "question_id": "NEXTERA_ENERGY-Q-005",
+      "type": "stakeholder_translation_behavioral",
+      "generated_question": "Describe a time you explained a technical or operational constraint to a non-technical stakeholder with a different priority. How did you make the tradeoff clear?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "structured_thinking",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Adapts the explanation to the stakeholder's decision context.",
+        "Uses concrete consequences rather than jargon.",
+        "Surfaces the tradeoff honestly, including what cannot be done.",
+        "Shows the decision and relationship outcome."
+      ],
+      "evidence_ids": [
+        "NEXTERA_ENERGY-OFFICIAL-001",
+        "NEXTERA_ENERGY-CAREERS-002",
+        "NEXTERA_ENERGY-ABOUT-003",
+        "NEXTERA_ENERGY-CULTURE-004",
+        "NEXTERA_ENERGY-INNOVATION-005",
+        "NEXTERA_ENERGY-HIRING-006",
+        "NEXTERA_ENERGY-TEST-007",
+        "NEXTERA_ENERGY-CORPORATE-008",
+        "NEXTERA_ENERGY-FIELD-009"
+      ]
     }
   ]
 }

@@ -4,6 +4,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ACCENTURE-IR-027 | official_investor_relations | Accenture investor relations: FY2026 performance and company overview | 2026-10-27 | 0.86 | Accenture's investor page reports fiscal 2026 revenue of about $74.2 billion, a 15.8% adjusted operating margin, $6.9 billion invested in acquisitions, R&D, and learning, and an ambition to lead safe, widespread AI adoption as a client-focused employer. |
+| ACCENTURE-APPRENTICE-028 | official_careers | Accenture apprenticeships (Canada and US) | 2026-10-27 | 0.80 | Accenture's apprenticeship page says apprentices learn while earning with coaching, mentorship, and on-the-job training, seeks applicants without a four-year degree in project management, programming, data analysis, or graphic design, and notes apprenticeships may lead to full-time roles. |
 | ACCENTURE-CA-CAREERS-025 | official_careers | Accenture Canada careers | 2026-10-25 | 0.80 | Accenture's Canada careers page describes career areas including AI and data science, consulting, engineering and manufacturing, operations and delivery, software engineering, technology, strategy, customer care, SAP, and cybersecurity, plus student, apprenticeship, early-career, experienced, and executive entry paths; it also states company scale of about 814,000 people, 200+ cities in 52 countries, and 9,000+ clients. |
 | ACCENTURE-INCLUSION-026 | official_company | Inclusion and Diversity in the Workplace | 2026-10-25 | 0.78 | Accenture describes its talent strategy as central to being a reinvention partner and an AI-enabled employer, says it is a meritocracy, and expects leaders to foster belonging and embody core values so people can create 360-degree value for all stakeholders. |
 | ACCENTURE-AI-HIRING-024 | official_careers | Hiring powered by responsible AI | 2026-10-24 | 0.82 | Accenture's candidate page discloses where AI may support hiring (job descriptions, matching, form autofill, resume screening, assessments, scheduling), says candidates can choose whether to consent to AI in evaluation, bans AI-generated interview answers and deepfakes, and states humans oversee decisions. |
@@ -62,3 +64,4 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.accenture.com/in-en/careers/support/important-notice
 - https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/ai-usage-job-search
 - https://www.accenture.com/en/about/inclusion-diversity-index
+- https://www.accenture.com/ca-en/careers/life-at-accenture/apprenticeships
