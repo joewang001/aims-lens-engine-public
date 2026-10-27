@@ -1,7 +1,7 @@
 {
   "company_slug": "nextera-energy",
   "company": "NextEra Energy",
-  "collected_at": "2026-10-26T13:10:02Z",
+  "collected_at": "2026-10-27T13:35:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -49,12 +49,228 @@
       ],
       "evidence_id": "NEXTERA_ENERGY-CAREERS-002",
       "date_accessed": "2026-10-26"
+    },
+    {
+      "source_type": "official_company",
+      "title": "NextEra Energy about us: leaders and core values",
+      "url": "https://www.nexteraenergy.com/about-us.html",
+      "confidence": 0.84,
+      "public_safe_signal": "NextEra Energy states that its leaders embody core values of excellence, integrity, and respect, and frames its century-long history around innovation, customer value, and reliable energy solutions.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "NEXTERA_ENERGY-ABOUT-003",
+      "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Life at NextEra Energy: culture",
+      "url": "https://www.nexteraenergy.com/careers/life-at-nextera/culture.html",
+      "confidence": 0.8,
+      "public_safe_signal": "NextEra Energy's culture page says success begins with people, describes attracting people with unique perspectives and experiences, commits to respect and an engaged team, and cites 14 employee resource groups as culture advisers.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "role_variation"
+      ],
+      "evidence_id": "NEXTERA_ENERGY-CULTURE-004",
+      "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Life at NextEra Energy: innovation programs",
+      "url": "https://www.nexteraenergy.com/careers/life-at-nextera/innovation.html",
+      "confidence": 0.8,
+      "public_safe_signal": "NextEra Energy describes continuous improvement as central to its identity and lists an annual Hack Week, an in-house startup innovation hub, an innovation summit, and AI-equipped drones used in power restoration.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "role_variation"
+      ],
+      "evidence_id": "NEXTERA_ENERGY-INNOVATION-005",
+      "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Getting hired at NextEra Energy",
+      "url": "https://www.nexteraenergy.com/careers/getting-hired.html",
+      "confidence": 0.79,
+      "public_safe_signal": "NextEra Energy's getting-hired page directs candidates to Edison Electric Institute sample employment tests and groups featured jobs by accounting and finance, engineering, IT, linework, nuclear, power delivery, and power generation.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation",
+        "honest_unknowns"
+      ],
+      "evidence_id": "NEXTERA_ENERGY-HIRING-006",
+      "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Sample employment test and retest policy",
+      "url": "https://www.nexteraenergy.com/careers/getting-hired/sample-employment-test.html",
+      "confidence": 0.82,
+      "public_safe_signal": "NextEra Energy says it uses consistently administered pre-employment tests designed by the Edison Electric Institute for several craft, clerical, and plant roles, and publishes a retest waiting period after unsuccessful attempts.",
+      "dimensions": [
+        "company_judges",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "NEXTERA_ENERGY-TEST-007",
+      "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Corporate jobs at NextEra Energy",
+      "url": "https://www.nexteraenergy.com/careers/join-our-team/corporate-jobs.html",
+      "confidence": 0.78,
+      "public_safe_signal": "NextEra Energy's corporate jobs page seeks bar-raising candidates committed to changing the world, emphasizes continuous learning and development, and describes finance, technology, engineering, customer service, and internship teams.",
+      "dimensions": [
+        "company_judges",
+        "role_variation",
+        "company_says"
+      ],
+      "evidence_id": "NEXTERA_ENERGY-CORPORATE-008",
+      "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Field jobs at NextEra Energy",
+      "url": "https://www.nexteraenergy.com/careers/join-our-team/field-jobs.html",
+      "confidence": 0.78,
+      "public_safe_signal": "NextEra Energy's field jobs page describes lineworkers, cable splicers, power delivery, power generation, and nuclear careers, and ties field work to reliable electricity for more than 12 million Florida customers.",
+      "dimensions": [
+        "role_variation",
+        "company_says",
+        "evidence_valued"
+      ],
+      "evidence_id": "NEXTERA_ENERGY-FIELD-009",
+      "date_accessed": "2026-10-27"
     }
   ],
   "lens_updates": {
-    "culture_principles": [],
-    "hiring_signals": [],
-    "anti_signals": [],
+    "culture_principles": [
+      {
+        "name": "Excellence, integrity, and respect",
+        "description": "NextEra Energy names excellence, integrity, and respect as core values and says its leaders are expected to embody them while building an environment where innovation and people are valued.",
+        "confidence": 0.82,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-ABOUT-003",
+          "NEXTERA_ENERGY-CULTURE-004"
+        ]
+      },
+      {
+        "name": "Big goals with continuous improvement",
+        "description": "Company career material says its culture centers on setting big goals and continuous improvement, reinforced by Hack Week, an innovation summit, and an in-house startup hub.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-INNOVATION-005"
+        ]
+      },
+      {
+        "name": "Different perspectives as an operating input",
+        "description": "NextEra Energy says embracing differences fuels innovation and better decisions, and points to 14 employee resource groups that advise on evolving the culture.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-CULTURE-004"
+        ]
+      },
+      {
+        "name": "Reliability and customer value at scale",
+        "description": "Public pages connect utility and field work to reliable, affordable electricity for millions of customers, framing operational and engineering choices as customer-serving work.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-ABOUT-003",
+          "NEXTERA_ENERGY-FIELD-009"
+        ]
+      }
+    ],
+    "hiring_signals": [
+      {
+        "signal": "Prepares for structured aptitude and job-knowledge testing rather than assuming interviews are only conversational.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "growth_mindset",
+          "structured_thinking"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-HIRING-006",
+          "NEXTERA_ENERGY-TEST-007"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Shows safety-first and reliability-minded judgment when describing operational decisions under time pressure.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "structured_thinking",
+          "impact_results"
+        ],
+        "confidence": 0.74,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-FIELD-009",
+          "NEXTERA_ENERGY-ABOUT-003"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Demonstrates continuous learning and a pattern of raising performance rather than settling on current methods.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-CORPORATE-008",
+          "NEXTERA_ENERGY-INNOVATION-005"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "For technical and field roles, explains practical electrical, mechanical, or plant fundamentals through hands-on examples.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-TEST-007",
+          "NEXTERA_ENERGY-FIELD-009"
+        ],
+        "basis": "derived_public_inference"
+      }
+    ],
+    "anti_signals": [
+      {
+        "anti_signal": "Assuming the process is an unstructured conversation with no assessment or job-knowledge component.",
+        "risk_reason": "NextEra Energy publishes that several roles use consistently administered pre-employment tests, so preparation that ignores assessment steps may misrepresent readiness; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-HIRING-006",
+          "NEXTERA_ENERGY-TEST-007"
+        ]
+      },
+      {
+        "anti_signal": "Clean-energy enthusiasm that never connects to reliability, affordability, regulation, or customer impact.",
+        "risk_reason": "Company material consistently frames energy work through reliability and customer value alongside innovation, so mission-only answers miss the operating context the sources describe.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-ABOUT-003",
+          "NEXTERA_ENERGY-FIELD-009"
+        ]
+      },
+      {
+        "anti_signal": "Treating innovation as novelty without evidence of disciplined execution or continuous improvement.",
+        "risk_reason": "NextEra Energy pairs innovation language with continuous improvement, structured programs, and operational outcomes rather than novelty for its own sake.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-INNOVATION-005",
+          "NEXTERA_ENERGY-CORPORATE-008"
+        ]
+      }
+    ],
     "questions": [
       {
         "type": "behavioral",
@@ -70,6 +286,66 @@
           "Connects execution to a measurable result.",
           "Shows learning from feedback or changed conditions."
         ]
+      },
+      {
+        "type": "reliability_tradeoff_behavioral",
+        "generated_question": "Describe a time you had to balance a reliability or safety requirement against cost, schedule, or environmental pressure. How did you decide and who did you bring along?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names the competing constraints and the stakeholders affected.",
+          "Explains the evidence or standards used to make the call.",
+          "Shows how the decision was communicated and documented.",
+          "Reflects on the operational outcome and what changed afterward."
+        ]
+      },
+      {
+        "type": "operational_incident_behavioral",
+        "generated_question": "Tell me about an operational problem you diagnosed under time pressure, such as an outage, equipment fault, or service disruption. How did you isolate cause and restore service?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Separates symptoms from root cause using a clear diagnostic sequence.",
+          "Describes safety and escalation decisions explicitly.",
+          "Coordinates with field, engineering, or customer teams.",
+          "Quantifies restoration time, avoided impact, or preventive follow-up."
+        ]
+      },
+      {
+        "type": "continuous_improvement_behavioral",
+        "generated_question": "Tell me about an idea you improved or scaled beyond your assigned work. What evidence convinced others to adopt it?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "impact_results",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Distinguishes the original task from the improvement opportunity.",
+          "Tests the idea with data or a small pilot before scaling.",
+          "Addresses adoption barriers with colleagues or leaders.",
+          "Shows a durable process change rather than a one-off effort."
+        ]
+      },
+      {
+        "type": "stakeholder_translation_behavioral",
+        "generated_question": "Describe a time you explained a technical or operational constraint to a non-technical stakeholder with a different priority. How did you make the tradeoff clear?",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "structured_thinking",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Adapts the explanation to the stakeholder's decision context.",
+          "Uses concrete consequences rather than jargon.",
+          "Surfaces the tradeoff honestly, including what cannot be done.",
+          "Shows the decision and relationship outcome."
+        ]
       }
     ],
     "role_overlays": [
@@ -79,6 +355,45 @@
         "signals": [
           "Balances reliability, safety, affordability, regulation, capital delivery, and environmental outcomes.",
           "Connects operational or investment choices to customers, communities, and long-term system performance."
+        ]
+      },
+      {
+        "role_slug": "utility_operations_and_field_services",
+        "role_family": "Utility operations, field services, and craft roles",
+        "signals": [
+          "Prioritizes safety, reliability, and restoration outcomes in live operating environments.",
+          "Shows practical equipment, grid, or plant knowledge and calm escalation under pressure.",
+          "Works across field crews, control rooms, engineering, and customer-facing teams."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-FIELD-009",
+          "NEXTERA_ENERGY-TEST-007"
+        ]
+      },
+      {
+        "role_slug": "energy_infrastructure_engineering",
+        "role_family": "Energy infrastructure and engineering roles",
+        "signals": [
+          "Connects design or project decisions to reliability, cost, schedule, and environmental outcomes.",
+          "Explains technical tradeoffs with evidence and understands construction or operating constraints.",
+          "Shows curiosity about emerging grid, storage, nuclear, or generation technology."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-CORPORATE-008",
+          "NEXTERA_ENERGY-INNOVATION-005"
+        ]
+      },
+      {
+        "role_slug": "corporate_support_functions",
+        "role_family": "Corporate finance, technology, and customer operations",
+        "signals": [
+          "Links functional work to the operating business and customer outcomes rather than treating it as standalone.",
+          "Shows continuous learning and comfort with large-scale systems or regulated processes.",
+          "Collaborates with technical and field teams to make decisions usable in practice."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-CORPORATE-008",
+          "NEXTERA_ENERGY-CULTURE-004"
         ]
       }
     ]

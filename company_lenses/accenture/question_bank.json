@@ -309,6 +309,98 @@
       "evidence_ids": [
         "ACCENTURE-INCLUSION-026"
       ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-016",
+      "type": "skills_first_learning_behavioral",
+      "generated_question": "Tell me about a time you learned a new domain primarily on the job, with coaching rather than formal credentials. How did you get productive quickly?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names the specific skill gap and how it was closed.",
+        "Shows how they used coaching, feedback, or shadowing.",
+        "Describes a concrete contribution made while still learning.",
+        "Reflects on what they would learn differently next time."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-OFFICIAL-001",
+        "ACCENTURE-CAREERS-002",
+        "ACCENTURE-ABOUT-003",
+        "ACCENTURE-LEADERSHIP-004",
+        "ACCENTURE-BEHAVIORAL-005",
+        "ACCENTURE-SKILLS-006",
+        "ACCENTURE-SWE-007",
+        "ACCENTURE-STRATEGY-008",
+        "ACCENTURE-IR-009",
+        "ACCENTURE-CAREERS-010",
+        "ACCENTURE-AI-011",
+        "ACCENTURE-LEARNING-012",
+        "ACCENTURE-AIDATA-013",
+        "ACCENTURE-CASE-014",
+        "ACCENTURE-RESUME-015",
+        "ACCENTURE-TIPS-016",
+        "ACCENTURE-FAQ-017",
+        "ACCENTURE-CONSULTING-018",
+        "ACCENTURE-OPS-019",
+        "ACCENTURE-DESIGN-020",
+        "ACCENTURE-TECH-021",
+        "ACCENTURE-SCAM-022",
+        "ACCENTURE-SCAM-IN-023",
+        "ACCENTURE-AI-HIRING-024",
+        "ACCENTURE-CA-CAREERS-025",
+        "ACCENTURE-INCLUSION-026",
+        "ACCENTURE-IR-027",
+        "ACCENTURE-APPRENTICE-028"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-017",
+      "type": "investment_sequencing_behavioral",
+      "generated_question": "Describe a program where you had to invest limited resources across several competing priorities. How did you sequence the work and decide when to stop or scale?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "impact_results",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Defines the portfolio and the criteria for allocating resources.",
+        "Explains stage gates or evidence used to continue or stop.",
+        "Balances short-term delivery with capability building.",
+        "Quantifies the outcome and the opportunity cost."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-OFFICIAL-001",
+        "ACCENTURE-CAREERS-002",
+        "ACCENTURE-ABOUT-003",
+        "ACCENTURE-LEADERSHIP-004",
+        "ACCENTURE-BEHAVIORAL-005",
+        "ACCENTURE-SKILLS-006",
+        "ACCENTURE-SWE-007",
+        "ACCENTURE-STRATEGY-008",
+        "ACCENTURE-IR-009",
+        "ACCENTURE-CAREERS-010",
+        "ACCENTURE-AI-011",
+        "ACCENTURE-LEARNING-012",
+        "ACCENTURE-AIDATA-013",
+        "ACCENTURE-CASE-014",
+        "ACCENTURE-RESUME-015",
+        "ACCENTURE-TIPS-016",
+        "ACCENTURE-FAQ-017",
+        "ACCENTURE-CONSULTING-018",
+        "ACCENTURE-OPS-019",
+        "ACCENTURE-DESIGN-020",
+        "ACCENTURE-TECH-021",
+        "ACCENTURE-SCAM-022",
+        "ACCENTURE-SCAM-IN-023",
+        "ACCENTURE-AI-HIRING-024",
+        "ACCENTURE-CA-CAREERS-025",
+        "ACCENTURE-INCLUSION-026",
+        "ACCENTURE-IR-027",
+        "ACCENTURE-APPRENTICE-028"
+      ]
     }
   ]
 }

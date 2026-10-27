@@ -1,7 +1,7 @@
 {
   "company_slug": "adobe",
   "company": "Adobe",
-  "collected_at": "2026-10-25T13:30:00Z",
+  "collected_at": "2026-10-27T13:35:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -294,6 +294,35 @@
         "role_variation",
         "company_says"
       ]
+    },
+    {
+      "source_type": "official_engineering_blog",
+      "title": "Build-time Wasm module splitting for faster startup (Adobe Developers Blog)",
+      "url": "https://blog.developer.adobe.com/en/publish/2026/10/build-time-wasm-module-splitting-ship-more-features-without-growing-your-startup-bundle",
+      "confidence": 0.84,
+      "public_safe_signal": "Adobe engineers describe replacing profile-guided WebAssembly splitting with a build-time call-graph and debug-info analysis, trading profiling effort for repeatable builds, and they document limitations and rule maintenance costs.",
+      "dimensions": [
+        "evidence_valued",
+        "role_variation",
+        "risk_warnings"
+      ],
+      "evidence_id": "ADOBE-DEVBLOG-021",
+      "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_engineering_blog",
+      "title": "Adobe Developers Live 2026 recap: CEP to UXP migration and ecosystem roadmap",
+      "url": "https://blog.developer.adobe.com/en/publish/2026/10/adobe-developers-live-2026-recap-cep-to-uxp-migration-express-connectors-and-what-we-publish-next",
+      "confidence": 0.82,
+      "public_safe_signal": "Adobe's developer recap describes a multi-year extensibility transition, stating that legacy CEP plugins keep working through 2029 while UXP becomes the future, alongside new APIs, community tooling, and open roundtable discussion.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "role_variation",
+        "risk_warnings"
+      ],
+      "evidence_id": "ADOBE-DEVBLOG-022",
+      "date_accessed": "2026-10-27"
     }
   ],
   "lens_updates": {
@@ -430,6 +459,22 @@
         "confidence": 0.76,
         "evidence_ids": [
           "ADOBE-CHECKIN-019"
+        ]
+      },
+      {
+        "name": "Migration stewardship over forced cutovers",
+        "description": "Adobe's developer communications pair a UXP roadmap with a stated compatibility window for existing CEP plugins, framing ecosystem transition as a managed, multi-year commitment rather than an abrupt switch.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-DEVBLOG-022"
+        ]
+      },
+      {
+        "name": "Measure the critical path, then redesign the build",
+        "description": "Adobe engineers describe attacking startup performance by changing how the build identifies startup-critical code, and they publish the limits of the approach rather than presenting it as universally applicable.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-DEVBLOG-021"
         ]
       }
     ],
@@ -683,6 +728,45 @@
           "ADOBE-TEAMS-020"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For platform engineering roles, reasons about startup cost, bundle size, and build pipelines with measured tradeoffs rather than intuition alone.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "impact_results",
+          "structured_thinking"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-DEVBLOG-021"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "For ecosystem or developer-facing roles, accounts for backward compatibility, deprecation timelines, and developer communication.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "ownership_execution",
+          "structured_thinking"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ADOBE-DEVBLOG-022"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Describes engineering constraints and failure modes honestly, including where a chosen approach does not generalize.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "analytical_problem_solving",
+          "collaboration_communication"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ADOBE-DEVBLOG-021"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -839,6 +923,22 @@
         "confidence": 0.72,
         "evidence_ids": [
           "ADOBE-TEAMS-020"
+        ]
+      },
+      {
+        "anti_signal": "Proposing an architecture or performance change without a measurement plan or before-and-after evidence.",
+        "risk_reason": "Adobe's engineering post is built around a measured startup bottleneck and a repeatable build-time method, so unmeasured optimization claims are weakly supported; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ADOBE-DEVBLOG-021"
+        ]
+      },
+      {
+        "anti_signal": "Treating a platform migration as a purely technical swap with no compatibility or developer-adoption plan.",
+        "risk_reason": "Adobe publicly commits to a compatibility window and a phased roadmap for its own extensibility migration, which implies migration planning is part of the work.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ADOBE-DEVBLOG-022"
         ]
       }
     ],
@@ -1068,6 +1168,36 @@
         "evidence_ids": [
           "ADOBE-CHECKIN-019"
         ]
+      },
+      {
+        "type": "performance_engineering_behavioral",
+        "generated_question": "Describe a performance problem you fixed in a shipped product. How did you locate the bottleneck, and what evidence showed the fix worked without shifting cost elsewhere?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "impact_results",
+          "structured_thinking"
+        ],
+        "strong_answer_signals": [
+          "Defines the metric and baseline before changing code.",
+          "Shows how the bottleneck was isolated rather than guessed.",
+          "Accounts for tradeoffs such as complexity, build time, or maintainability.",
+          "Reports the measured effect and any remaining limitations."
+        ]
+      },
+      {
+        "type": "platform_migration_behavioral",
+        "generated_question": "Tell me about a migration or deprecation you handled for external developers or dependent teams. How did you protect existing users while moving the platform forward?",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "ownership_execution",
+          "structured_thinking"
+        ],
+        "strong_answer_signals": [
+          "Identifies who depends on the old path and what breaks without support.",
+          "Sets a timeline with compatibility guarantees and clear communication.",
+          "Provides tooling, documentation, or migration assistance.",
+          "Measures adoption and follows through on the cutover."
+        ]
       }
     ],
     "role_overlays": [
@@ -1145,6 +1275,19 @@
         ],
         "evidence_ids": [
           "ADOBE-TEAMS-020"
+        ]
+      },
+      {
+        "role_slug": "developer_platform_and_extensibility",
+        "role_family": "Developer platform, SDK, and extensibility engineering",
+        "signals": [
+          "Designs APIs and extension points with attention to compatibility, security, and long-term maintenance.",
+          "Balances internal architecture goals with external developer adoption and migration cost.",
+          "Uses performance measurement and build-system knowledge to improve the developer experience."
+        ],
+        "evidence_ids": [
+          "ADOBE-DEVBLOG-021",
+          "ADOBE-DEVBLOG-022"
         ]
       }
     ]

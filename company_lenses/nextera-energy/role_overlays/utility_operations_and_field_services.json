@@ -1,0 +1,28 @@
+{
+  "company": "NextEra Energy",
+  "role_family": "Utility operations, field services, and craft roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Prioritizes safety, reliability, and restoration outcomes in live operating environments.",
+    "Shows practical equipment, grid, or plant knowledge and calm escalation under pressure.",
+    "Works across field crews, control rooms, engineering, and customer-facing teams."
+  ],
+  "evidence_ids": [
+    "NEXTERA_ENERGY-OFFICIAL-001",
+    "NEXTERA_ENERGY-CAREERS-002",
+    "NEXTERA_ENERGY-ABOUT-003",
+    "NEXTERA_ENERGY-CULTURE-004",
+    "NEXTERA_ENERGY-INNOVATION-005",
+    "NEXTERA_ENERGY-HIRING-006",
+    "NEXTERA_ENERGY-TEST-007",
+    "NEXTERA_ENERGY-CORPORATE-008",
+    "NEXTERA_ENERGY-FIELD-009"
+  ]
+}

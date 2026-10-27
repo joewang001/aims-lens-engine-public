@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-26",
-  "source_cutoff": "2026-10-26",
+  "source_cutoff": "2026-10-27",
   "industries": [
     "energy",
     "utilities",
@@ -34,6 +34,40 @@
       "evidence_ids": [
         "NEXTERA_ENERGY-OFFICIAL-001",
         "NEXTERA_ENERGY-CAREERS-002"
+      ]
+    },
+    {
+      "name": "Excellence, integrity, and respect",
+      "description": "NextEra Energy names excellence, integrity, and respect as core values and says its leaders are expected to embody them while building an environment where innovation and people are valued.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-ABOUT-003",
+        "NEXTERA_ENERGY-CULTURE-004"
+      ]
+    },
+    {
+      "name": "Big goals with continuous improvement",
+      "description": "Company career material says its culture centers on setting big goals and continuous improvement, reinforced by Hack Week, an innovation summit, and an in-house startup hub.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-INNOVATION-005"
+      ]
+    },
+    {
+      "name": "Different perspectives as an operating input",
+      "description": "NextEra Energy says embracing differences fuels innovation and better decisions, and points to 14 employee resource groups that advise on evolving the culture.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-CULTURE-004"
+      ]
+    },
+    {
+      "name": "Reliability and customer value at scale",
+      "description": "Public pages connect utility and field work to reliable, affordable electricity for millions of customers, framing operational and engineering choices as customer-serving work.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-ABOUT-003",
+        "NEXTERA_ENERGY-FIELD-009"
       ]
     }
   ],
@@ -72,6 +106,60 @@
         "NEXTERA_ENERGY-OFFICIAL-001",
         "NEXTERA_ENERGY-CAREERS-002"
       ]
+    },
+    {
+      "signal": "Prepares for structured aptitude and job-knowledge testing rather than assuming interviews are only conversational.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-HIRING-006",
+        "NEXTERA_ENERGY-TEST-007"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Shows safety-first and reliability-minded judgment when describing operational decisions under time pressure.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "structured_thinking",
+        "impact_results"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-FIELD-009",
+        "NEXTERA_ENERGY-ABOUT-003"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Demonstrates continuous learning and a pattern of raising performance rather than settling on current methods.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-CORPORATE-008",
+        "NEXTERA_ENERGY-INNOVATION-005"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "For technical and field roles, explains practical electrical, mechanical, or plant fundamentals through hands-on examples.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-TEST-007",
+        "NEXTERA_ENERGY-FIELD-009"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -82,6 +170,33 @@
       "evidence_ids": [
         "NEXTERA_ENERGY-OFFICIAL-001",
         "NEXTERA_ENERGY-CAREERS-002"
+      ]
+    },
+    {
+      "anti_signal": "Assuming the process is an unstructured conversation with no assessment or job-knowledge component.",
+      "risk_reason": "NextEra Energy publishes that several roles use consistently administered pre-employment tests, so preparation that ignores assessment steps may misrepresent readiness; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-HIRING-006",
+        "NEXTERA_ENERGY-TEST-007"
+      ]
+    },
+    {
+      "anti_signal": "Clean-energy enthusiasm that never connects to reliability, affordability, regulation, or customer impact.",
+      "risk_reason": "Company material consistently frames energy work through reliability and customer value alongside innovation, so mission-only answers miss the operating context the sources describe.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-ABOUT-003",
+        "NEXTERA_ENERGY-FIELD-009"
+      ]
+    },
+    {
+      "anti_signal": "Treating innovation as novelty without evidence of disciplined execution or continuous improvement.",
+      "risk_reason": "NextEra Energy pairs innovation language with continuous improvement, structured programs, and operational outcomes rather than novelty for its own sake.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-INNOVATION-005",
+        "NEXTERA_ENERGY-CORPORATE-008"
       ]
     }
   ],
@@ -100,11 +215,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 2,
-    "official_source_count": 2,
+    "source_count": 9,
+    "official_source_count": 9,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-26"
+    "last_reviewed": "2026-10-27"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official NextEra Energy hiring standard.",

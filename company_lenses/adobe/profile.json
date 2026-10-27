@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-25",
+  "source_cutoff": "2026-10-27",
   "industries": [
     "technology",
     "creative software",
@@ -169,6 +169,22 @@
       "confidence": 0.76,
       "evidence_ids": [
         "ADOBE-CHECKIN-019"
+      ]
+    },
+    {
+      "name": "Migration stewardship over forced cutovers",
+      "description": "Adobe's developer communications pair a UXP roadmap with a stated compatibility window for existing CEP plugins, framing ecosystem transition as a managed, multi-year commitment rather than an abrupt switch.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-DEVBLOG-022"
+      ]
+    },
+    {
+      "name": "Measure the critical path, then redesign the build",
+      "description": "Adobe engineers describe attacking startup performance by changing how the build identifies startup-critical code, and they publish the limits of the approach rather than presenting it as universally applicable.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-DEVBLOG-021"
       ]
     }
   ],
@@ -458,6 +474,45 @@
         "ADOBE-TEAMS-020"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For platform engineering roles, reasons about startup cost, bundle size, and build pipelines with measured tradeoffs rather than intuition alone.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-DEVBLOG-021"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "For ecosystem or developer-facing roles, accounts for backward compatibility, deprecation timelines, and developer communication.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ADOBE-DEVBLOG-022"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Describes engineering constraints and failure modes honestly, including where a chosen approach does not generalize.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "analytical_problem_solving",
+        "collaboration_communication"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ADOBE-DEVBLOG-021"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -625,6 +680,22 @@
       "evidence_ids": [
         "ADOBE-TEAMS-020"
       ]
+    },
+    {
+      "anti_signal": "Proposing an architecture or performance change without a measurement plan or before-and-after evidence.",
+      "risk_reason": "Adobe's engineering post is built around a measured startup bottleneck and a repeatable build-time method, so unmeasured optimization claims are weakly supported; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ADOBE-DEVBLOG-021"
+      ]
+    },
+    {
+      "anti_signal": "Treating a platform migration as a purely technical swap with no compatibility or developer-adoption plan.",
+      "risk_reason": "Adobe publicly commits to a compatibility window and a phased roadmap for its own extensibility migration, which implies migration planning is part of the work.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ADOBE-DEVBLOG-022"
+      ]
     }
   ],
   "interview_patterns": [
@@ -642,11 +713,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 20,
-    "official_source_count": 20,
+    "source_count": 22,
+    "official_source_count": 22,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-25"
+    "last_reviewed": "2026-10-27"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Adobe hiring standard.",

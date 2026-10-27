@@ -1,0 +1,25 @@
+{
+  "company": "ServiceNow",
+  "role_family": "AI platform, governance, and responsible-AI roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Balances model or agent capability with control, transparency, and accountability mechanisms.",
+    "Explains how AI systems are evaluated, documented, and monitored after deployment.",
+    "Works across product, legal, security, and customer teams to set operating boundaries."
+  ],
+  "evidence_ids": [
+    "SERVICENOW-OFFICIAL-001",
+    "SERVICENOW-CAREERS-002",
+    "SERVICENOW-ETHICS-003",
+    "SERVICENOW-AI-004",
+    "SERVICENOW-IMPACT-005",
+    "SERVICENOW-LEADERSHIP-006"
+  ]
+}

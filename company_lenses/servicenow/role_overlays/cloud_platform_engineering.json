@@ -1,0 +1,25 @@
+{
+  "company": "ServiceNow",
+  "role_family": "Cloud platform and infrastructure engineering",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Designs for reliability, security, and scale in multi-tenant enterprise systems.",
+    "Shows depth in cloud engineering, platform operations, or data infrastructure.",
+    "Connects engineering choices to customer uptime and trust."
+  ],
+  "evidence_ids": [
+    "SERVICENOW-OFFICIAL-001",
+    "SERVICENOW-CAREERS-002",
+    "SERVICENOW-ETHICS-003",
+    "SERVICENOW-AI-004",
+    "SERVICENOW-IMPACT-005",
+    "SERVICENOW-LEADERSHIP-006"
+  ]
+}

@@ -273,6 +273,86 @@
       "evidence_ids": [
         "ADOBE-CHECKIN-019"
       ]
+    },
+    {
+      "question_id": "ADOBE-Q-014",
+      "type": "performance_engineering_behavioral",
+      "generated_question": "Describe a performance problem you fixed in a shipped product. How did you locate the bottleneck, and what evidence showed the fix worked without shifting cost elsewhere?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Defines the metric and baseline before changing code.",
+        "Shows how the bottleneck was isolated rather than guessed.",
+        "Accounts for tradeoffs such as complexity, build time, or maintainability.",
+        "Reports the measured effect and any remaining limitations."
+      ],
+      "evidence_ids": [
+        "ADOBE-OFFICIAL-001",
+        "ADOBE-CAREERS-002",
+        "ADOBE-IR-003",
+        "ADOBE-VALUES-004",
+        "ADOBE-HIRING-005",
+        "ADOBE-ALL-006",
+        "ADOBE-DEVBLOG-007",
+        "ADOBE-ABOUT-008",
+        "ADOBE-IR-009",
+        "ADOBE-AI-010",
+        "ADOBE-CSR-011",
+        "ADOBE-TRUST-012",
+        "ADOBE-AIHIRING-013",
+        "ADOBE-RESEARCH-014",
+        "ADOBE-DESIGN-015",
+        "ADOBE-SCAM-016",
+        "ADOBE-PRIVACY-017",
+        "ADOBE-PERSONAL-INFO-018",
+        "ADOBE-CHECKIN-019",
+        "ADOBE-TEAMS-020",
+        "ADOBE-DEVBLOG-021",
+        "ADOBE-DEVBLOG-022"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-015",
+      "type": "platform_migration_behavioral",
+      "generated_question": "Tell me about a migration or deprecation you handled for external developers or dependent teams. How did you protect existing users while moving the platform forward?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Identifies who depends on the old path and what breaks without support.",
+        "Sets a timeline with compatibility guarantees and clear communication.",
+        "Provides tooling, documentation, or migration assistance.",
+        "Measures adoption and follows through on the cutover."
+      ],
+      "evidence_ids": [
+        "ADOBE-OFFICIAL-001",
+        "ADOBE-CAREERS-002",
+        "ADOBE-IR-003",
+        "ADOBE-VALUES-004",
+        "ADOBE-HIRING-005",
+        "ADOBE-ALL-006",
+        "ADOBE-DEVBLOG-007",
+        "ADOBE-ABOUT-008",
+        "ADOBE-IR-009",
+        "ADOBE-AI-010",
+        "ADOBE-CSR-011",
+        "ADOBE-TRUST-012",
+        "ADOBE-AIHIRING-013",
+        "ADOBE-RESEARCH-014",
+        "ADOBE-DESIGN-015",
+        "ADOBE-SCAM-016",
+        "ADOBE-PRIVACY-017",
+        "ADOBE-PERSONAL-INFO-018",
+        "ADOBE-CHECKIN-019",
+        "ADOBE-TEAMS-020",
+        "ADOBE-DEVBLOG-021",
+        "ADOBE-DEVBLOG-022"
+      ]
     }
   ]
 }

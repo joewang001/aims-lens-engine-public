@@ -1,23 +1,18 @@
 # Public Lens Daily Plan
 
-Generated: `2026-10-25T16:54:44Z`
-Run date: `2026-10-25`
-Week start: `2026-10-19`
+Generated: `2026-10-27T13:35:20Z`
+Run date: `2026-10-27`
+Week start: `2026-10-26`
 
 ## Today's Focus
 
 - `company_says`
-- `company_judges`
-- `company_asks`
 - `evidence_valued`
-- `risk_warnings`
-- `role_variation`
-- `honest_unknowns`
 
 ## This Week's New Companies
 
-- `bain`
-- `bcg`
+- `nextera-energy`
+- `servicenow`
 
 ## Historical Company Targets
 

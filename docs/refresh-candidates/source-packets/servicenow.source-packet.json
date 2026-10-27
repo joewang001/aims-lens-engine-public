@@ -1,7 +1,7 @@
 {
   "company_slug": "servicenow",
   "company": "ServiceNow",
-  "collected_at": "2026-10-26T13:10:02Z",
+  "collected_at": "2026-10-27T13:35:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -50,12 +50,200 @@
       ],
       "evidence_id": "SERVICENOW-CAREERS-002",
       "date_accessed": "2026-10-26"
+    },
+    {
+      "source_type": "official_company",
+      "title": "ServiceNow Code of Ethics and T.R.U.S.T. pillars",
+      "url": "https://www.servicenow.com/company/code-of-ethics.html",
+      "confidence": 0.83,
+      "public_safe_signal": "ServiceNow's Code of Ethics says trust is the foundation of its work and organizes expectations around transparency, responsibility, understanding, supervision, and teamwork, including accurate reporting and speaking up.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "SERVICENOW-ETHICS-003",
+      "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_company",
+      "title": "ServiceNow Responsible AI principles",
+      "url": "https://www.servicenow.com/platform/responsible-ai.html",
+      "confidence": 0.84,
+      "public_safe_signal": "ServiceNow describes four responsible-AI principles: human-centered, inclusive, transparent, and accountable, and states that it achieved ISO/IEC 42001:2023 certification for its AI management system across development and deployment.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "SERVICENOW-AI-004",
+      "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_company",
+      "title": "ServiceNow Global Impact and sustainability reporting",
+      "url": "https://www.servicenow.com/company/global-impact.html",
+      "confidence": 0.8,
+      "public_safe_signal": "ServiceNow reports maintained 100% renewable electricity and carbon-neutral cloud, more than $33 million in total social investment, and a 33% volunteer participation rate, and frames integrity as a driver of trust.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "SERVICENOW-IMPACT-005",
+      "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_company",
+      "title": "ServiceNow executive leadership",
+      "url": "https://www.servicenow.com/company/leadership.html",
+      "confidence": 0.79,
+      "public_safe_signal": "ServiceNow's leadership page lists a chief people and AI enablement officer, a chief learning officer, a chief workforce innovation officer, a global talent acquisition leader, and technology roles spanning cloud engineering, security, and AI engineering.",
+      "dimensions": [
+        "company_says",
+        "role_variation",
+        "evidence_valued"
+      ],
+      "evidence_id": "SERVICENOW-LEADERSHIP-006",
+      "date_accessed": "2026-10-27"
     }
   ],
   "lens_updates": {
-    "culture_principles": [],
-    "hiring_signals": [],
-    "anti_signals": [],
+    "culture_principles": [
+      {
+        "name": "Trust as the foundation",
+        "description": "ServiceNow says trust underpins how it works with customers, people, partners, and communities, and turns that into five expectations covering transparency, responsibility, understanding, supervision, and teamwork.",
+        "confidence": 0.83,
+        "evidence_ids": [
+          "SERVICENOW-ETHICS-003"
+        ]
+      },
+      {
+        "name": "AI that works for people",
+        "description": "The company says its AI products should enhance human abilities and keep users in control, with human-centered, inclusive, transparent, and accountable principles guiding development.",
+        "confidence": 0.84,
+        "evidence_ids": [
+          "SERVICENOW-AI-004"
+        ]
+      },
+      {
+        "name": "Responsibility for the impact of the work",
+        "description": "ServiceNow's ethics material says teams stand behind what they build, compete fairly, reject corruption, and accept responsibility for the impact of their work.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "SERVICENOW-ETHICS-003"
+        ]
+      },
+      {
+        "name": "Measurable impact, not just commitments",
+        "description": "ServiceNow publishes quantified global-impact measures such as renewable electricity, carbon-neutral cloud, social investment, and volunteer participation alongside its commitments.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "SERVICENOW-IMPACT-005"
+        ]
+      },
+      {
+        "name": "Talent and AI enablement are connected",
+        "description": "ServiceNow's executive structure combines people leadership with AI enablement, learning, and workforce innovation, suggesting capability building is treated as part of AI adoption.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "SERVICENOW-LEADERSHIP-006"
+        ]
+      }
+    ],
+    "hiring_signals": [
+      {
+        "signal": "Substantiates claims with accurate, verifiable detail rather than broad assertions.",
+        "aims_dimensions": [
+          "impact_results",
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "SERVICENOW-ETHICS-003"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Explains how AI or automation keeps a human in control and where oversight must remain.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "growth_mindset",
+          "collaboration_communication"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "SERVICENOW-AI-004"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Raises concerns and challenges decisions constructively instead of staying silent.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "ownership_execution",
+          "growth_mindset"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "SERVICENOW-ETHICS-003"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Connects technical or product choices to measurable customer and business outcomes, including how impact will be tracked.",
+        "aims_dimensions": [
+          "impact_results",
+          "structured_thinking"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "SERVICENOW-AI-004",
+          "SERVICENOW-IMPACT-005"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Shows inclusive collaboration, such as using varied perspectives or data sets to reduce bias in a decision.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.74,
+        "evidence_ids": [
+          "SERVICENOW-AI-004"
+        ],
+        "basis": "stated_by_company"
+      }
+    ],
+    "anti_signals": [
+      {
+        "anti_signal": "AI enthusiasm with no account of governance, oversight, or who remains accountable.",
+        "risk_reason": "ServiceNow publicly grounds AI development in human control and accountability, so governance-free AI narratives miss a stated emphasis; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "SERVICENOW-AI-004",
+          "SERVICENOW-ETHICS-003"
+        ]
+      },
+      {
+        "anti_signal": "Citing metrics or outcomes that cannot be traced to a source, method, or verification step.",
+        "risk_reason": "The company's ethics code explicitly ties transparency to honest statements and accurate reporting.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "SERVICENOW-ETHICS-003"
+        ]
+      },
+      {
+        "anti_signal": "Avoiding disagreement or escalation when a concern is material.",
+        "risk_reason": "ServiceNow's ethics framework says speaking up is encouraged and concerns are acted on, with leaders expected to listen.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "SERVICENOW-ETHICS-003"
+        ]
+      }
+    ],
     "questions": [
       {
         "type": "behavioral",
@@ -71,6 +259,66 @@
           "Connects execution to a measurable result.",
           "Shows learning from feedback or changed conditions."
         ]
+      },
+      {
+        "type": "responsible_ai_behavioral",
+        "generated_question": "Describe a time you shipped an AI or automation capability where human oversight mattered. How did you decide what the system should and should not do?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names the failure modes and who could be affected.",
+          "Explains where human review, escalation, or limits were built in.",
+          "Describes how the decision was documented and communicated.",
+          "Shows the measured outcome and what was changed after launch."
+        ]
+      },
+      {
+        "type": "trust_and_transparency_behavioral",
+        "generated_question": "Tell me about a time you had to report inconvenient or incomplete results to a stakeholder. How did you keep the account accurate without losing trust?",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Separates what is known from what is uncertain.",
+          "Takes responsibility for the gap rather than deflecting.",
+          "Explains the corrective action and follow-up.",
+          "Preserves the relationship while staying accurate."
+        ]
+      },
+      {
+        "type": "speak_up_behavioral",
+        "generated_question": "Tell me about a time you raised a concern that was uncomfortable to surface. What happened, and what did you learn about how escalation works?",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "ownership_execution",
+          "growth_mindset"
+        ],
+        "strong_answer_signals": [
+          "States the concern and the risk of not raising it.",
+          "Chooses an appropriate channel and timing.",
+          "Engages with the response rather than assuming the worst.",
+          "Shows a concrete change or lesson from the outcome."
+        ]
+      },
+      {
+        "type": "impact_measurement_behavioral",
+        "generated_question": "Walk me through a workflow or platform improvement you made. How did you define the metric, and what did the evidence show?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "impact_results",
+          "analytical_problem_solving"
+        ],
+        "strong_answer_signals": [
+          "Defines a baseline and a specific success measure before building.",
+          "Distinguishes adoption from actual outcome improvement.",
+          "Explains confounders or limits in the measurement.",
+          "Describes the next decision the data enabled."
+        ]
       }
     ],
     "role_overlays": [
@@ -80,6 +328,45 @@
         "signals": [
           "Connects platform or process choices to customer workflows, adoption, reliability, and measurable value.",
           "Balances product, technical, commercial, and change-management constraints."
+        ]
+      },
+      {
+        "role_slug": "ai_platform_and_governance",
+        "role_family": "AI platform, governance, and responsible-AI roles",
+        "signals": [
+          "Balances model or agent capability with control, transparency, and accountability mechanisms.",
+          "Explains how AI systems are evaluated, documented, and monitored after deployment.",
+          "Works across product, legal, security, and customer teams to set operating boundaries."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-AI-004",
+          "SERVICENOW-ETHICS-003"
+        ]
+      },
+      {
+        "role_slug": "cloud_platform_engineering",
+        "role_family": "Cloud platform and infrastructure engineering",
+        "signals": [
+          "Designs for reliability, security, and scale in multi-tenant enterprise systems.",
+          "Shows depth in cloud engineering, platform operations, or data infrastructure.",
+          "Connects engineering choices to customer uptime and trust."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-LEADERSHIP-006",
+          "SERVICENOW-AI-004"
+        ]
+      },
+      {
+        "role_slug": "people_and_talent_operations",
+        "role_family": "People, learning, and workforce innovation roles",
+        "signals": [
+          "Connects talent development and learning to how the business adopts new technology.",
+          "Uses workforce data and measurement to evaluate program impact.",
+          "Designs enablement that respects employee experience and inclusion."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-LEADERSHIP-006",
+          "SERVICENOW-IMPACT-005"
         ]
       }
     ]
