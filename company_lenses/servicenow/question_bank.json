@@ -125,6 +125,113 @@
         "SERVICENOW-IMPACT-005",
         "SERVICENOW-LEADERSHIP-006"
       ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-006",
+      "type": "structured_evaluation_behavioral",
+      "generated_question": "Describe a piece of work you would be comfortable defending in a panel debrief. What was the problem, what did you build or decide, and how did you know it worked?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "States the problem, constraints, and success measure before describing the solution.",
+        "Explains personal decisions and tradeoffs rather than only team output.",
+        "Shows how the result was verified with evidence, not assertion.",
+        "Anticipates the obvious challenge a reviewer would raise."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-OFFICIAL-001",
+        "SERVICENOW-CAREERS-002",
+        "SERVICENOW-ETHICS-003",
+        "SERVICENOW-AI-004",
+        "SERVICENOW-IMPACT-005",
+        "SERVICENOW-LEADERSHIP-006",
+        "SERVICENOW-HOWWEHIRE-007",
+        "SERVICENOW-AI-HIRING-008",
+        "SERVICENOW-LIFE-009"
+      ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-007",
+      "type": "ai_preparation_behavioral",
+      "generated_question": "Tell me about a time you used AI to prepare for something high-stakes. What did you keep, what did you change, and how did you verify it was accurate?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Separates preparation support from the actual performance.",
+        "Describes a verification step rather than trusting generated output.",
+        "Names a limit or error the tool produced and how it was caught.",
+        "Keeps ownership of the final judgment and voice."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-OFFICIAL-001",
+        "SERVICENOW-CAREERS-002",
+        "SERVICENOW-ETHICS-003",
+        "SERVICENOW-AI-004",
+        "SERVICENOW-IMPACT-005",
+        "SERVICENOW-LEADERSHIP-006",
+        "SERVICENOW-HOWWEHIRE-007",
+        "SERVICENOW-AI-HIRING-008",
+        "SERVICENOW-LIFE-009"
+      ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-008",
+      "type": "transferable_skills_behavioral",
+      "generated_question": "Walk me through a career turn that looked like a detour. What transferred, what did you have to learn, and what outcome proved the transition worked?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names specific transferable capabilities rather than general adaptability.",
+        "Describes the learning method and how quickly it produced usable skill.",
+        "Cites an outcome that depended on the new capability.",
+        "Shows no defensiveness about the non-linear path."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-OFFICIAL-001",
+        "SERVICENOW-CAREERS-002",
+        "SERVICENOW-ETHICS-003",
+        "SERVICENOW-AI-004",
+        "SERVICENOW-IMPACT-005",
+        "SERVICENOW-LEADERSHIP-006",
+        "SERVICENOW-HOWWEHIRE-007",
+        "SERVICENOW-AI-HIRING-008",
+        "SERVICENOW-LIFE-009"
+      ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-009",
+      "type": "values_in_action_behavioral",
+      "generated_question": "Tell me about a time you did the right thing when it was slower or costlier. Who was affected, and what did you decide?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Names the pressure and the cost of the right choice.",
+        "Explains who was affected and how they were informed.",
+        "Shows the decision was deliberate, not accidental.",
+        "Reflects on the consequence and what it changed afterward."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-OFFICIAL-001",
+        "SERVICENOW-CAREERS-002",
+        "SERVICENOW-ETHICS-003",
+        "SERVICENOW-AI-004",
+        "SERVICENOW-IMPACT-005",
+        "SERVICENOW-LEADERSHIP-006",
+        "SERVICENOW-HOWWEHIRE-007",
+        "SERVICENOW-AI-HIRING-008",
+        "SERVICENOW-LIFE-009"
+      ]
     }
   ]
 }

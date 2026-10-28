@@ -137,6 +137,128 @@
         "NEXTERA_ENERGY-CORPORATE-008",
         "NEXTERA_ENERGY-FIELD-009"
       ]
+    },
+    {
+      "question_id": "NEXTERA_ENERGY-Q-006",
+      "type": "early_career_pipeline_behavioral",
+      "generated_question": "Tell me about a short-term role you turned into a longer commitment. What did you learn, and what did you do that made others want to keep you?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Describes work delivered beyond the assigned scope.",
+        "Shows how feedback was used within the short window.",
+        "Names the evidence others used to trust them with more.",
+        "Explains what a longer commitment would require."
+      ],
+      "evidence_ids": [
+        "NEXTERA_ENERGY-OFFICIAL-001",
+        "NEXTERA_ENERGY-CAREERS-002",
+        "NEXTERA_ENERGY-ABOUT-003",
+        "NEXTERA_ENERGY-CULTURE-004",
+        "NEXTERA_ENERGY-INNOVATION-005",
+        "NEXTERA_ENERGY-HIRING-006",
+        "NEXTERA_ENERGY-TEST-007",
+        "NEXTERA_ENERGY-CORPORATE-008",
+        "NEXTERA_ENERGY-FIELD-009",
+        "NEXTERA_ENERGY-INTERNS-010",
+        "NEXTERA_ENERGY-VETERANS-011",
+        "NEXTERA_ENERGY-AWARDS-012",
+        "NEXTERA_ENERGY-SCAM-013"
+      ]
+    },
+    {
+      "question_id": "NEXTERA_ENERGY-Q-007",
+      "type": "military_transition_behavioral",
+      "generated_question": "Describe a responsibility from military or technical service that maps to energy operations. How did you translate the context for a civilian team?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Translates terminology rather than assuming shared context.",
+        "Names the safety and reliability stakes explicitly.",
+        "Shows how authority and escalation actually worked.",
+        "Connects the experience to a civilian operating outcome."
+      ],
+      "evidence_ids": [
+        "NEXTERA_ENERGY-OFFICIAL-001",
+        "NEXTERA_ENERGY-CAREERS-002",
+        "NEXTERA_ENERGY-ABOUT-003",
+        "NEXTERA_ENERGY-CULTURE-004",
+        "NEXTERA_ENERGY-INNOVATION-005",
+        "NEXTERA_ENERGY-HIRING-006",
+        "NEXTERA_ENERGY-TEST-007",
+        "NEXTERA_ENERGY-CORPORATE-008",
+        "NEXTERA_ENERGY-FIELD-009",
+        "NEXTERA_ENERGY-INTERNS-010",
+        "NEXTERA_ENERGY-VETERANS-011",
+        "NEXTERA_ENERGY-AWARDS-012",
+        "NEXTERA_ENERGY-SCAM-013"
+      ]
+    },
+    {
+      "question_id": "NEXTERA_ENERGY-Q-008",
+      "type": "long_term_energy_motivation_behavioral",
+      "generated_question": "What draws you to energy infrastructure over other industries, and how have you tested that interest in practice?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Cites specific exposure such as projects, coursework, or field work.",
+        "Explains the operating reality, not just the mission.",
+        "Connects personal strengths to the demands of the sector.",
+        "Shows a realistic view of timelines and regulated environments."
+      ],
+      "evidence_ids": [
+        "NEXTERA_ENERGY-OFFICIAL-001",
+        "NEXTERA_ENERGY-CAREERS-002",
+        "NEXTERA_ENERGY-ABOUT-003",
+        "NEXTERA_ENERGY-CULTURE-004",
+        "NEXTERA_ENERGY-INNOVATION-005",
+        "NEXTERA_ENERGY-HIRING-006",
+        "NEXTERA_ENERGY-TEST-007",
+        "NEXTERA_ENERGY-CORPORATE-008",
+        "NEXTERA_ENERGY-FIELD-009",
+        "NEXTERA_ENERGY-INTERNS-010",
+        "NEXTERA_ENERGY-VETERANS-011",
+        "NEXTERA_ENERGY-AWARDS-012",
+        "NEXTERA_ENERGY-SCAM-013"
+      ]
+    },
+    {
+      "question_id": "NEXTERA_ENERGY-Q-009",
+      "type": "process_verification_behavioral",
+      "generated_question": "Tell me about a time you paused a promising opportunity to verify the details. What did you check, and what did you learn?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names the specific risk that triggered the pause.",
+        "Describes independent verification through official channels.",
+        "Shows the decision and its cost or benefit.",
+        "Generalizes a rule for future situations."
+      ],
+      "evidence_ids": [
+        "NEXTERA_ENERGY-OFFICIAL-001",
+        "NEXTERA_ENERGY-CAREERS-002",
+        "NEXTERA_ENERGY-ABOUT-003",
+        "NEXTERA_ENERGY-CULTURE-004",
+        "NEXTERA_ENERGY-INNOVATION-005",
+        "NEXTERA_ENERGY-HIRING-006",
+        "NEXTERA_ENERGY-TEST-007",
+        "NEXTERA_ENERGY-CORPORATE-008",
+        "NEXTERA_ENERGY-FIELD-009",
+        "NEXTERA_ENERGY-INTERNS-010",
+        "NEXTERA_ENERGY-VETERANS-011",
+        "NEXTERA_ENERGY-AWARDS-012",
+        "NEXTERA_ENERGY-SCAM-013"
+      ]
     }
   ]
 }

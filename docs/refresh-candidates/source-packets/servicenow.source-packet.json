@@ -1,7 +1,7 @@
 {
   "company_slug": "servicenow",
   "company": "ServiceNow",
-  "collected_at": "2026-10-27T13:35:00Z",
+  "collected_at": "2026-10-28T13:35:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -106,6 +106,50 @@
       ],
       "evidence_id": "SERVICENOW-LEADERSHIP-006",
       "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "How we hire at ServiceNow",
+      "url": "https://careers.servicenow.com/how-we-hire/",
+      "confidence": 0.86,
+      "public_safe_signal": "ServiceNow describes three hiring stages: application with human review, interviews run on a prescriptive process with standard evaluation guides, and a hiring-team debrief; it says some roles include a technical coding assessment or presentation and that rounds vary by position.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation",
+        "honest_unknowns"
+      ],
+      "evidence_id": "SERVICENOW-HOWWEHIRE-007",
+      "date_accessed": "2026-10-28"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Using AI during the hiring process at ServiceNow",
+      "url": "https://careers.servicenow.com/using-ai-during-the-hiring-process/",
+      "confidence": 0.85,
+      "public_safe_signal": "ServiceNow allows AI for preparation such as resume refinement and practice, but requires interviews, online tests, and technical challenges to be completed independently without AI or outside help, prohibits recording interviews, and says violations may lead to disqualification or a rescinded offer.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "risk_warnings",
+        "honest_unknowns"
+      ],
+      "evidence_id": "SERVICENOW-AI-HIRING-008",
+      "date_accessed": "2026-10-28"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Life at ServiceNow: purpose, values, and People Pact",
+      "url": "https://careers.servicenow.com/life-at-servicenow/",
+      "confidence": 0.78,
+      "public_safe_signal": "ServiceNow frames its values as the actions and behaviors that guide employees to do the right thing in service of making the world work better for everyone, and describes a People Pact covering doing your best work, living your best life, and fulfilling the purpose together, supported by learning and mentorship programs.",
+      "dimensions": [
+        "company_says",
+        "company_judges",
+        "role_variation"
+      ],
+      "evidence_id": "SERVICENOW-LIFE-009",
+      "date_accessed": "2026-10-28"
     }
   ],
   "lens_updates": {
@@ -148,6 +192,23 @@
         "confidence": 0.72,
         "evidence_ids": [
           "SERVICENOW-LEADERSHIP-006"
+        ]
+      },
+      {
+        "name": "Values assessed as observable behavior",
+        "description": "ServiceNow says its values are the actions and behaviors expected of employees rather than slogans, and its hiring process evaluates skills and values together using standard evaluation guides.",
+        "confidence": 0.82,
+        "evidence_ids": [
+          "SERVICENOW-LIFE-009",
+          "SERVICENOW-HOWWEHIRE-007"
+        ]
+      },
+      {
+        "name": "Authentic evaluation without tool assistance",
+        "description": "ServiceNow permits AI for preparation but requires interviews, tests, and technical challenges to be completed independently, saying it wants to see the candidate's own reasoning rather than a tool-assisted performance.",
+        "confidence": 0.83,
+        "evidence_ids": [
+          "SERVICENOW-AI-HIRING-008"
         ]
       }
     ],
@@ -215,6 +276,57 @@
           "SERVICENOW-AI-004"
         ],
         "basis": "stated_by_company"
+      },
+      {
+        "signal": "Shows skills and values evidence in a format that survives a structured debrief, such as a coding exercise, presentation, or role walkthrough.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "impact_results"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "SERVICENOW-HOWWEHIRE-007"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Explains their own reasoning without leaning on tools, and can say how AI was used only to prepare and how the output was verified.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "growth_mindset",
+          "ownership_execution"
+        ],
+        "confidence": 0.82,
+        "evidence_ids": [
+          "SERVICENOW-AI-HIRING-008"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Translates a non-linear background into transferable skills the role needs instead of apologizing for an unconventional path.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "collaboration_communication"
+        ],
+        "confidence": 0.74,
+        "evidence_ids": [
+          "SERVICENOW-HOWWEHIRE-007"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Connects daily work to the stated purpose and values with concrete behavior rather than reciting slogans.",
+        "aims_dimensions": [
+          "impact_results",
+          "collaboration_communication"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "SERVICENOW-LIFE-009",
+          "SERVICENOW-HOWWEHIRE-007"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -241,6 +353,31 @@
         "confidence": 0.72,
         "evidence_ids": [
           "SERVICENOW-ETHICS-003"
+        ]
+      },
+      {
+        "anti_signal": "Using AI-generated answers, outside help, or recording during a live evaluation.",
+        "risk_reason": "ServiceNow states that evaluation stages must be completed independently and that violations may lead to disqualification or a rescinded offer; this is a published process rule rather than an inference.",
+        "confidence": 0.84,
+        "evidence_ids": [
+          "SERVICENOW-AI-HIRING-008"
+        ]
+      },
+      {
+        "anti_signal": "A polished narrative with no concrete evidence of values-in-action or role-relevant skill.",
+        "risk_reason": "The process pairs skills with values and relies on standard evaluation guides, so a story without observable behavior gives reviewers little to assess.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "SERVICENOW-HOWWEHIRE-007",
+          "SERVICENOW-LIFE-009"
+        ]
+      },
+      {
+        "anti_signal": "Assuming visa sponsorship or a fixed number of interview rounds.",
+        "risk_reason": "ServiceNow says sponsorship is reviewed case by case for certain roles and that process and rounds vary by position, so candidates should confirm rather than assume.",
+        "confidence": 0.76,
+        "evidence_ids": [
+          "SERVICENOW-HOWWEHIRE-007"
         ]
       }
     ],
@@ -319,6 +456,65 @@
           "Explains confounders or limits in the measurement.",
           "Describes the next decision the data enabled."
         ]
+      },
+      {
+        "type": "structured_evaluation_behavioral",
+        "generated_question": "Describe a piece of work you would be comfortable defending in a panel debrief. What was the problem, what did you build or decide, and how did you know it worked?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "States the problem, constraints, and success measure before describing the solution.",
+          "Explains personal decisions and tradeoffs rather than only team output.",
+          "Shows how the result was verified with evidence, not assertion.",
+          "Anticipates the obvious challenge a reviewer would raise."
+        ]
+      },
+      {
+        "type": "ai_preparation_behavioral",
+        "generated_question": "Tell me about a time you used AI to prepare for something high-stakes. What did you keep, what did you change, and how did you verify it was accurate?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "analytical_problem_solving",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Separates preparation support from the actual performance.",
+          "Describes a verification step rather than trusting generated output.",
+          "Names a limit or error the tool produced and how it was caught.",
+          "Keeps ownership of the final judgment and voice."
+        ]
+      },
+      {
+        "type": "transferable_skills_behavioral",
+        "generated_question": "Walk me through a career turn that looked like a detour. What transferred, what did you have to learn, and what outcome proved the transition worked?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names specific transferable capabilities rather than general adaptability.",
+          "Describes the learning method and how quickly it produced usable skill.",
+          "Cites an outcome that depended on the new capability.",
+          "Shows no defensiveness about the non-linear path."
+        ]
+      },
+      {
+        "type": "values_in_action_behavioral",
+        "generated_question": "Tell me about a time you did the right thing when it was slower or costlier. Who was affected, and what did you decide?",
+        "aims_dimensions": [
+          "ownership_execution",
+          "collaboration_communication",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Names the pressure and the cost of the right choice.",
+          "Explains who was affected and how they were informed.",
+          "Shows the decision was deliberate, not accidental.",
+          "Reflects on the consequence and what it changed afterward."
+        ]
       }
     ],
     "role_overlays": [
@@ -367,6 +563,14 @@
         "evidence_ids": [
           "SERVICENOW-LEADERSHIP-006",
           "SERVICENOW-IMPACT-005"
+        ]
+      },
+      {
+        "role_slug": "technical_and_business_hiring_paths",
+        "role_family": "Engineering versus business and customer-facing hiring paths",
+        "signals": [
+          "Engineering-track candidates should expect a coding assessment; business and customer-facing tracks more often involve presentations or role walkthroughs.",
+          "Both paths are evaluated against the same stated values and use standard evaluation guides."
         ]
       }
     ]

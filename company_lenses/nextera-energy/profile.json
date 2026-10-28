@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-26",
-  "source_cutoff": "2026-10-27",
+  "source_cutoff": "2026-10-28",
   "industries": [
     "energy",
     "utilities",
@@ -68,6 +68,30 @@
       "evidence_ids": [
         "NEXTERA_ENERGY-ABOUT-003",
         "NEXTERA_ENERGY-FIELD-009"
+      ]
+    },
+    {
+      "name": "Interns treated as future employees",
+      "description": "NextEra Energy says it regards every intern as a potential full-time employee and designs the program around developing talent and identifying future hires.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-INTERNS-010"
+      ]
+    },
+    {
+      "name": "Military experience as a capability source",
+      "description": "The company describes veterans as integral to its culture because of discipline, creativity, and technical expertise, and backs that with SkillBridge training and a veteran employee resource group.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-VETERANS-011"
+      ]
+    },
+    {
+      "name": "Candidate protection as part of the employment brand",
+      "description": "NextEra Energy publishes recruitment-fraud guidance, states that it never requests payment from candidates, and directs candidates to verify through official domains.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-SCAM-013"
       ]
     }
   ],
@@ -160,6 +184,55 @@
         "NEXTERA_ENERGY-FIELD-009"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Meets the stated academic and work-authorization baseline and applies early in the fall window for summer internships.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-INTERNS-010"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Connects military or technical service experience to energy operations, safety, and team leadership in civilian terms.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-VETERANS-011"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Shows sustained interest in an energy career rather than a single summer role, consistent with the intern-to-full-time pipeline.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-INTERNS-010",
+        "NEXTERA_ENERGY-CORPORATE-008"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Verifies recruiters, domains, and process steps through official channels before sharing personal data.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-SCAM-013"
+      ],
+      "basis": "stated_by_company"
     }
   ],
   "anti_signals": [
@@ -198,6 +271,30 @@
         "NEXTERA_ENERGY-INNOVATION-005",
         "NEXTERA_ENERGY-CORPORATE-008"
       ]
+    },
+    {
+      "anti_signal": "Treating a chat-only interview, a payment request, or a lookalike email domain as a legitimate NextEra process.",
+      "risk_reason": "NextEra Energy states that it never asks candidates for money or cryptocurrency and lists chat-only interviews and similar domains as fraud indicators.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-SCAM-013"
+      ]
+    },
+    {
+      "anti_signal": "Assuming a summer internship converts automatically or that the hiring timeline is flexible.",
+      "risk_reason": "The company says interns are regarded as potential full-time employees and that it aims to fill summer roles between December and February, which implies a competitive, date-bound process.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-INTERNS-010"
+      ]
+    },
+    {
+      "anti_signal": "Presenting veteran status or mission enthusiasm without operational examples.",
+      "risk_reason": "NextEra Energy frames veteran value in terms of discipline, technical expertise, and on-the-job training rather than identity alone, so examples carry the claim.",
+      "confidence": 0.66,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-VETERANS-011"
+      ]
     }
   ],
   "interview_patterns": [
@@ -215,11 +312,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 9,
-    "official_source_count": 9,
+    "source_count": 13,
+    "official_source_count": 13,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-27"
+    "last_reviewed": "2026-10-28"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official NextEra Energy hiring standard.",

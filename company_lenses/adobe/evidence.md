@@ -4,6 +4,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ADOBE-UNIVERSITY-023 | official_careers | University and early-career programs at Adobe | 2026-10-28 | 0.70 | Adobe's university page says interns and new graduates work on mission-critical products across engineering, sales, and marketing, invites non-technical candidates to bring bold ideas, drive, and a clear voice, and frames early-career growth through Sales Academy and Digital Academy programs under a raise-the-bar message. |
+| ADOBE-SALES-ACADEMY-024 | official_careers | Adobe Sales Academy | 2026-10-28 | 0.72 | Adobe's Sales Academy page says the program's mission is to cultivate emerging sales talent who demonstrate Adobe's core values while contributing measurable pipeline and revenue impact, combining structured training with placement into business development roles. |
 | ADOBE-DEVBLOG-021 | official_engineering_blog | Build-time Wasm module splitting for faster startup (Adobe Developers Blog) | 2026-10-27 | 0.84 | Adobe engineers describe replacing profile-guided WebAssembly splitting with a build-time call-graph and debug-info analysis, trading profiling effort for repeatable builds, and they document limitations and rule maintenance costs. |
 | ADOBE-DEVBLOG-022 | official_engineering_blog | Adobe Developers Live 2026 recap: CEP to UXP migration and ecosystem roadmap | 2026-10-27 | 0.82 | Adobe's developer recap describes a multi-year extensibility transition, stating that legacy CEP plugins keep working through 2029 while UXP becomes the future, alongside new APIs, community tooling, and open roundtable discussion. |
 | ADOBE-CHECKIN-019 | official_company | How Adobe continues to inspire great performance and support career growth | 2026-10-25 | 0.82 | Adobe's Check-in page says Adobe replaced annual performance reviews and ratings in 2012 with ongoing two-way conversations, now holds quarterly check-ins, uses documented goals and stakeholder feedback, has no formal rating or ranking, lets managers set salary and equity from performance, and offers a Career Discovery tool for internal mobility; the page does not state when this description was last updated. |
@@ -55,3 +57,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://careers.adobe.com/us/en/teams
 - https://blog.developer.adobe.com/en/publish/2026/10/build-time-wasm-module-splitting-ship-more-features-without-growing-your-startup-bundle
 - https://blog.developer.adobe.com/en/publish/2026/10/adobe-developers-live-2026-recap-cep-to-uxp-migration-express-connectors-and-what-we-publish-next
+- https://careers.adobe.com/us/en/university
+- https://careers.adobe.com/us/en/sales-academy

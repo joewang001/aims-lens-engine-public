@@ -401,6 +401,147 @@
         "ACCENTURE-IR-027",
         "ACCENTURE-APPRENTICE-028"
       ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-018",
+      "type": "screening_narrative_behavioral",
+      "generated_question": "Give me the two-minute version of your career: why each move happened, and why this role is the next one.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Sequences moves with a reason for each transition.",
+        "Connects the pattern to the role's actual scope.",
+        "Keeps it brief and stops for questions.",
+        "Handles gaps or exits without defensiveness."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-OFFICIAL-001",
+        "ACCENTURE-CAREERS-002",
+        "ACCENTURE-ABOUT-003",
+        "ACCENTURE-LEADERSHIP-004",
+        "ACCENTURE-BEHAVIORAL-005",
+        "ACCENTURE-SKILLS-006",
+        "ACCENTURE-SWE-007",
+        "ACCENTURE-STRATEGY-008",
+        "ACCENTURE-IR-009",
+        "ACCENTURE-CAREERS-010",
+        "ACCENTURE-AI-011",
+        "ACCENTURE-LEARNING-012",
+        "ACCENTURE-AIDATA-013",
+        "ACCENTURE-CASE-014",
+        "ACCENTURE-RESUME-015",
+        "ACCENTURE-TIPS-016",
+        "ACCENTURE-FAQ-017",
+        "ACCENTURE-CONSULTING-018",
+        "ACCENTURE-OPS-019",
+        "ACCENTURE-DESIGN-020",
+        "ACCENTURE-TECH-021",
+        "ACCENTURE-SCAM-022",
+        "ACCENTURE-SCAM-IN-023",
+        "ACCENTURE-AI-HIRING-024",
+        "ACCENTURE-CA-CAREERS-025",
+        "ACCENTURE-INCLUSION-026",
+        "ACCENTURE-IR-027",
+        "ACCENTURE-APPRENTICE-028",
+        "ACCENTURE-SCREENING-029",
+        "ACCENTURE-VIDEO-030"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-019",
+      "type": "virtual_presence_behavioral",
+      "generated_question": "Tell me about a time you had to build credibility through a screen rather than in person. What did you change about how you communicated?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Names the specific disadvantage of the mediated setting.",
+        "Describes deliberate adjustments to structure or pacing.",
+        "Shows how the other party signaled trust or agreement.",
+        "Reflects on what carried into later work."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-OFFICIAL-001",
+        "ACCENTURE-CAREERS-002",
+        "ACCENTURE-ABOUT-003",
+        "ACCENTURE-LEADERSHIP-004",
+        "ACCENTURE-BEHAVIORAL-005",
+        "ACCENTURE-SKILLS-006",
+        "ACCENTURE-SWE-007",
+        "ACCENTURE-STRATEGY-008",
+        "ACCENTURE-IR-009",
+        "ACCENTURE-CAREERS-010",
+        "ACCENTURE-AI-011",
+        "ACCENTURE-LEARNING-012",
+        "ACCENTURE-AIDATA-013",
+        "ACCENTURE-CASE-014",
+        "ACCENTURE-RESUME-015",
+        "ACCENTURE-TIPS-016",
+        "ACCENTURE-FAQ-017",
+        "ACCENTURE-CONSULTING-018",
+        "ACCENTURE-OPS-019",
+        "ACCENTURE-DESIGN-020",
+        "ACCENTURE-TECH-021",
+        "ACCENTURE-SCAM-022",
+        "ACCENTURE-SCAM-IN-023",
+        "ACCENTURE-AI-HIRING-024",
+        "ACCENTURE-CA-CAREERS-025",
+        "ACCENTURE-INCLUSION-026",
+        "ACCENTURE-IR-027",
+        "ACCENTURE-APPRENTICE-028",
+        "ACCENTURE-SCREENING-029",
+        "ACCENTURE-VIDEO-030"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-020",
+      "type": "follow_up_behavioral",
+      "generated_question": "Describe a time you closed a loop after an important conversation. What did you do, and what changed because of it?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Shows a specific, timely follow-up action.",
+        "Connects the follow-up to a decision or next step.",
+        "Avoids treating the note as a formality.",
+        "Notes what happened when the loop was not closed elsewhere."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-OFFICIAL-001",
+        "ACCENTURE-CAREERS-002",
+        "ACCENTURE-ABOUT-003",
+        "ACCENTURE-LEADERSHIP-004",
+        "ACCENTURE-BEHAVIORAL-005",
+        "ACCENTURE-SKILLS-006",
+        "ACCENTURE-SWE-007",
+        "ACCENTURE-STRATEGY-008",
+        "ACCENTURE-IR-009",
+        "ACCENTURE-CAREERS-010",
+        "ACCENTURE-AI-011",
+        "ACCENTURE-LEARNING-012",
+        "ACCENTURE-AIDATA-013",
+        "ACCENTURE-CASE-014",
+        "ACCENTURE-RESUME-015",
+        "ACCENTURE-TIPS-016",
+        "ACCENTURE-FAQ-017",
+        "ACCENTURE-CONSULTING-018",
+        "ACCENTURE-OPS-019",
+        "ACCENTURE-DESIGN-020",
+        "ACCENTURE-TECH-021",
+        "ACCENTURE-SCAM-022",
+        "ACCENTURE-SCAM-IN-023",
+        "ACCENTURE-AI-HIRING-024",
+        "ACCENTURE-CA-CAREERS-025",
+        "ACCENTURE-INCLUSION-026",
+        "ACCENTURE-IR-027",
+        "ACCENTURE-APPRENTICE-028",
+        "ACCENTURE-SCREENING-029",
+        "ACCENTURE-VIDEO-030"
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "company_slug": "nextera-energy",
   "company": "NextEra Energy",
-  "collected_at": "2026-10-27T13:35:00Z",
+  "collected_at": "2026-10-28T13:35:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -147,6 +147,62 @@
       ],
       "evidence_id": "NEXTERA_ENERGY-FIELD-009",
       "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "NextEra Energy internships",
+      "url": "https://www.nexteraenergy.com/careers/join-our-team/internships.html",
+      "confidence": 0.82,
+      "public_safe_signal": "NextEra Energy says most internships last 10 to 12 weeks, treats every intern as a potential full-time employee, requires a 3.00 GPA, full-time enrollment in a bachelor's program or higher, and U.S. work authorization, and posts summer roles from September to November with offers targeted by December to February.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "NEXTERA_ENERGY-INTERNS-010",
+      "date_accessed": "2026-10-28"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Military and veteran careers at NextEra Energy",
+      "url": "https://www.nexteraenergy.com/careers/join-our-team/military-veterans.html",
+      "confidence": 0.76,
+      "public_safe_signal": "NextEra Energy says veterans strengthen its culture through life experience, discipline, creativity, and technical expertise, runs a Department of Defense SkillBridge program with on-the-job industry training, and supports a VETNEXT employee resource group for military families.",
+      "dimensions": [
+        "company_judges",
+        "role_variation",
+        "company_says"
+      ],
+      "evidence_id": "NEXTERA_ENERGY-VETERANS-011",
+      "date_accessed": "2026-10-28"
+    },
+    {
+      "source_type": "official_company",
+      "title": "NextEra Energy awards and recognition",
+      "url": "https://www.nexteraenergy.com/about-us/awards.html",
+      "confidence": 0.7,
+      "public_safe_signal": "NextEra Energy's awards page cites 2026 Forbes America's Best Large Employers, repeated Fortune Most Admired listings, and 2025 HIRE Vets Platinum recognition, presenting external employer and veteran-hiring recognition as evidence of its people proposition; these are company-reported awards.",
+      "dimensions": [
+        "evidence_valued",
+        "company_judges",
+        "honest_unknowns"
+      ],
+      "evidence_id": "NEXTERA_ENERGY-AWARDS-012",
+      "date_accessed": "2026-10-28"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "NextEra Energy employee scam alert",
+      "url": "https://www.nexteraenergy.com/careers/getting-hired/employment-scams.html",
+      "confidence": 0.8,
+      "public_safe_signal": "NextEra Energy warns that criminals impersonate the company and its affiliates in employment scams, states it never asks candidates for money, gift cards, cryptocurrency, or payments, points to official email domains, and lists chat-only interviews as a scam indicator.",
+      "dimensions": [
+        "risk_warnings",
+        "company_asks",
+        "honest_unknowns"
+      ],
+      "evidence_id": "NEXTERA_ENERGY-SCAM-013",
+      "date_accessed": "2026-10-28"
     }
   ],
   "lens_updates": {
@@ -183,6 +239,30 @@
         "evidence_ids": [
           "NEXTERA_ENERGY-ABOUT-003",
           "NEXTERA_ENERGY-FIELD-009"
+        ]
+      },
+      {
+        "name": "Interns treated as future employees",
+        "description": "NextEra Energy says it regards every intern as a potential full-time employee and designs the program around developing talent and identifying future hires.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-INTERNS-010"
+        ]
+      },
+      {
+        "name": "Military experience as a capability source",
+        "description": "The company describes veterans as integral to its culture because of discipline, creativity, and technical expertise, and backs that with SkillBridge training and a veteran employee resource group.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-VETERANS-011"
+        ]
+      },
+      {
+        "name": "Candidate protection as part of the employment brand",
+        "description": "NextEra Energy publishes recruitment-fraud guidance, states that it never requests payment from candidates, and directs candidates to verify through official domains.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-SCAM-013"
         ]
       }
     ],
@@ -240,6 +320,55 @@
           "NEXTERA_ENERGY-FIELD-009"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Meets the stated academic and work-authorization baseline and applies early in the fall window for summer internships.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "structured_thinking"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-INTERNS-010"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Connects military or technical service experience to energy operations, safety, and team leadership in civilian terms.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-VETERANS-011"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Shows sustained interest in an energy career rather than a single summer role, consistent with the intern-to-full-time pipeline.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-INTERNS-010",
+          "NEXTERA_ENERGY-CORPORATE-008"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Verifies recruiters, domains, and process steps through official channels before sharing personal data.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "confidence": 0.74,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-SCAM-013"
+        ],
+        "basis": "stated_by_company"
       }
     ],
     "anti_signals": [
@@ -268,6 +397,30 @@
         "evidence_ids": [
           "NEXTERA_ENERGY-INNOVATION-005",
           "NEXTERA_ENERGY-CORPORATE-008"
+        ]
+      },
+      {
+        "anti_signal": "Treating a chat-only interview, a payment request, or a lookalike email domain as a legitimate NextEra process.",
+        "risk_reason": "NextEra Energy states that it never asks candidates for money or cryptocurrency and lists chat-only interviews and similar domains as fraud indicators.",
+        "confidence": 0.82,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-SCAM-013"
+        ]
+      },
+      {
+        "anti_signal": "Assuming a summer internship converts automatically or that the hiring timeline is flexible.",
+        "risk_reason": "The company says interns are regarded as potential full-time employees and that it aims to fill summer roles between December and February, which implies a competitive, date-bound process.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-INTERNS-010"
+        ]
+      },
+      {
+        "anti_signal": "Presenting veteran status or mission enthusiasm without operational examples.",
+        "risk_reason": "NextEra Energy frames veteran value in terms of discipline, technical expertise, and on-the-job training rather than identity alone, so examples carry the claim.",
+        "confidence": 0.66,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-VETERANS-011"
         ]
       }
     ],
@@ -346,6 +499,64 @@
           "Surfaces the tradeoff honestly, including what cannot be done.",
           "Shows the decision and relationship outcome."
         ]
+      },
+      {
+        "type": "early_career_pipeline_behavioral",
+        "generated_question": "Tell me about a short-term role you turned into a longer commitment. What did you learn, and what did you do that made others want to keep you?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Describes work delivered beyond the assigned scope.",
+          "Shows how feedback was used within the short window.",
+          "Names the evidence others used to trust them with more.",
+          "Explains what a longer commitment would require."
+        ]
+      },
+      {
+        "type": "military_transition_behavioral",
+        "generated_question": "Describe a responsibility from military or technical service that maps to energy operations. How did you translate the context for a civilian team?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Translates terminology rather than assuming shared context.",
+          "Names the safety and reliability stakes explicitly.",
+          "Shows how authority and escalation actually worked.",
+          "Connects the experience to a civilian operating outcome."
+        ]
+      },
+      {
+        "type": "long_term_energy_motivation_behavioral",
+        "generated_question": "What draws you to energy infrastructure over other industries, and how have you tested that interest in practice?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Cites specific exposure such as projects, coursework, or field work.",
+          "Explains the operating reality, not just the mission.",
+          "Connects personal strengths to the demands of the sector.",
+          "Shows a realistic view of timelines and regulated environments."
+        ]
+      },
+      {
+        "type": "process_verification_behavioral",
+        "generated_question": "Tell me about a time you paused a promising opportunity to verify the details. What did you check, and what did you learn?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names the specific risk that triggered the pause.",
+          "Describes independent verification through official channels.",
+          "Shows the decision and its cost or benefit.",
+          "Generalizes a rule for future situations."
+        ]
       }
     ],
     "role_overlays": [
@@ -394,6 +605,24 @@
         "evidence_ids": [
           "NEXTERA_ENERGY-CORPORATE-008",
           "NEXTERA_ENERGY-CULTURE-004"
+        ]
+      },
+      {
+        "role_slug": "early_career_intern_and_graduate",
+        "role_family": "Interns, co-ops, and recent graduates",
+        "signals": [
+          "Meets the published GPA, enrollment, and work-authorization baseline and applies in the fall posting window.",
+          "Treats the internship as a 10-to-12-week audition for full-time employment rather than a summer job.",
+          "Shows curiosity about field, corporate, or generation placements across the business."
+        ]
+      },
+      {
+        "role_slug": "military_and_veteran_transition",
+        "role_family": "Transitioning service members and veterans",
+        "signals": [
+          "Translates military discipline and technical expertise into energy operating language.",
+          "Uses SkillBridge or VETNEXT-style support as a bridge, not as a substitute for role evidence.",
+          "Shows familiarity with safety-critical, shift-based, or field-based work environments."
         ]
       }
     ]

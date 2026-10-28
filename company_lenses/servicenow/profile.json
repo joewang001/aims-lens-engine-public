@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-26",
-  "source_cutoff": "2026-10-27",
+  "source_cutoff": "2026-10-28",
   "industries": [
     "technology",
     "enterprise software",
@@ -76,6 +76,23 @@
       "confidence": 0.72,
       "evidence_ids": [
         "SERVICENOW-LEADERSHIP-006"
+      ]
+    },
+    {
+      "name": "Values assessed as observable behavior",
+      "description": "ServiceNow says its values are the actions and behaviors expected of employees rather than slogans, and its hiring process evaluates skills and values together using standard evaluation guides.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "SERVICENOW-LIFE-009",
+        "SERVICENOW-HOWWEHIRE-007"
+      ]
+    },
+    {
+      "name": "Authentic evaluation without tool assistance",
+      "description": "ServiceNow permits AI for preparation but requires interviews, tests, and technical challenges to be completed independently, saying it wants to see the candidate's own reasoning rather than a tool-assisted performance.",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "SERVICENOW-AI-HIRING-008"
       ]
     }
   ],
@@ -178,6 +195,57 @@
         "SERVICENOW-AI-004"
       ],
       "basis": "stated_by_company"
+    },
+    {
+      "signal": "Shows skills and values evidence in a format that survives a structured debrief, such as a coding exercise, presentation, or role walkthrough.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "SERVICENOW-HOWWEHIRE-007"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Explains their own reasoning without leaning on tools, and can say how AI was used only to prepare and how the output was verified.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "confidence": 0.82,
+      "evidence_ids": [
+        "SERVICENOW-AI-HIRING-008"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Translates a non-linear background into transferable skills the role needs instead of apologizing for an unconventional path.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "SERVICENOW-HOWWEHIRE-007"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Connects daily work to the stated purpose and values with concrete behavior rather than reciting slogans.",
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "SERVICENOW-LIFE-009",
+        "SERVICENOW-HOWWEHIRE-007"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -214,6 +282,31 @@
       "evidence_ids": [
         "SERVICENOW-ETHICS-003"
       ]
+    },
+    {
+      "anti_signal": "Using AI-generated answers, outside help, or recording during a live evaluation.",
+      "risk_reason": "ServiceNow states that evaluation stages must be completed independently and that violations may lead to disqualification or a rescinded offer; this is a published process rule rather than an inference.",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "SERVICENOW-AI-HIRING-008"
+      ]
+    },
+    {
+      "anti_signal": "A polished narrative with no concrete evidence of values-in-action or role-relevant skill.",
+      "risk_reason": "The process pairs skills with values and relies on standard evaluation guides, so a story without observable behavior gives reviewers little to assess.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "SERVICENOW-HOWWEHIRE-007",
+        "SERVICENOW-LIFE-009"
+      ]
+    },
+    {
+      "anti_signal": "Assuming visa sponsorship or a fixed number of interview rounds.",
+      "risk_reason": "ServiceNow says sponsorship is reviewed case by case for certain roles and that process and rounds vary by position, so candidates should confirm rather than assume.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "SERVICENOW-HOWWEHIRE-007"
+      ]
     }
   ],
   "interview_patterns": [
@@ -231,11 +324,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 6,
-    "official_source_count": 6,
+    "source_count": 9,
+    "official_source_count": 9,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-27"
+    "last_reviewed": "2026-10-28"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official ServiceNow hiring standard.",
