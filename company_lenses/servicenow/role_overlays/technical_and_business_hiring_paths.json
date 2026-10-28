@@ -1,0 +1,27 @@
+{
+  "company": "ServiceNow",
+  "role_family": "Engineering versus business and customer-facing hiring paths",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Engineering-track candidates should expect a coding assessment; business and customer-facing tracks more often involve presentations or role walkthroughs.",
+    "Both paths are evaluated against the same stated values and use standard evaluation guides."
+  ],
+  "evidence_ids": [
+    "SERVICENOW-OFFICIAL-001",
+    "SERVICENOW-CAREERS-002",
+    "SERVICENOW-ETHICS-003",
+    "SERVICENOW-AI-004",
+    "SERVICENOW-IMPACT-005",
+    "SERVICENOW-LEADERSHIP-006",
+    "SERVICENOW-HOWWEHIRE-007",
+    "SERVICENOW-AI-HIRING-008",
+    "SERVICENOW-LIFE-009"
+  ]
+}

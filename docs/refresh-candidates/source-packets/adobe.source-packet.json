@@ -1,7 +1,7 @@
 {
   "company_slug": "adobe",
   "company": "Adobe",
-  "collected_at": "2026-10-27T13:35:00Z",
+  "collected_at": "2026-10-28T13:35:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -323,6 +323,34 @@
       ],
       "evidence_id": "ADOBE-DEVBLOG-022",
       "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "University and early-career programs at Adobe",
+      "url": "https://careers.adobe.com/us/en/university",
+      "confidence": 0.7,
+      "public_safe_signal": "Adobe's university page says interns and new graduates work on mission-critical products across engineering, sales, and marketing, invites non-technical candidates to bring bold ideas, drive, and a clear voice, and frames early-career growth through Sales Academy and Digital Academy programs under a raise-the-bar message.",
+      "dimensions": [
+        "company_asks",
+        "role_variation",
+        "company_judges"
+      ],
+      "evidence_id": "ADOBE-UNIVERSITY-023",
+      "date_accessed": "2026-10-28"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Adobe Sales Academy",
+      "url": "https://careers.adobe.com/us/en/sales-academy",
+      "confidence": 0.72,
+      "public_safe_signal": "Adobe's Sales Academy page says the program's mission is to cultivate emerging sales talent who demonstrate Adobe's core values while contributing measurable pipeline and revenue impact, combining structured training with placement into business development roles.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "ADOBE-SALES-ACADEMY-024",
+      "date_accessed": "2026-10-28"
     }
   ],
   "lens_updates": {
@@ -475,6 +503,22 @@
         "confidence": 0.8,
         "evidence_ids": [
           "ADOBE-DEVBLOG-021"
+        ]
+      },
+      {
+        "name": "Early-career ownership, not observation",
+        "description": "Adobe's university page says interns and graduates work on mission-critical products and are expected to contribute real work rather than observe from the sidelines.",
+        "confidence": 0.68,
+        "evidence_ids": [
+          "ADOBE-UNIVERSITY-023"
+        ]
+      },
+      {
+        "name": "Core values measured with commercial impact",
+        "description": "Adobe's Sales Academy states its mission as developing emerging sales talent who demonstrate Adobe's core values while contributing measurable pipeline and revenue impact.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ADOBE-SALES-ACADEMY-024"
         ]
       }
     ],
@@ -767,6 +811,43 @@
           "ADOBE-DEVBLOG-021"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For early-career roles, shows drive and a clear point of view even without a technical background.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ADOBE-UNIVERSITY-023"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Connects values-driven behavior to measurable commercial outcomes such as pipeline or revenue in go-to-market answers.",
+        "aims_dimensions": [
+          "impact_results",
+          "ownership_execution"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ADOBE-SALES-ACADEMY-024"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Uses structured training and feedback as a platform to accelerate rather than waiting for scope to be assigned.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution"
+        ],
+        "confidence": 0.68,
+        "evidence_ids": [
+          "ADOBE-UNIVERSITY-023",
+          "ADOBE-SALES-ACADEMY-024"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -939,6 +1020,22 @@
         "confidence": 0.74,
         "evidence_ids": [
           "ADOBE-DEVBLOG-022"
+        ]
+      },
+      {
+        "anti_signal": "Treating an internship or graduate role as observation rather than mission-critical contribution.",
+        "risk_reason": "Adobe's early-career pages frame interns and graduates as contributors to products used at scale, so passive framing undersells the role's actual expectations.",
+        "confidence": 0.68,
+        "evidence_ids": [
+          "ADOBE-UNIVERSITY-023"
+        ]
+      },
+      {
+        "anti_signal": "Talking about values or creativity without commercial or customer evidence in go-to-market roles.",
+        "risk_reason": "The Sales Academy explicitly pairs core-values demonstration with pipeline and revenue impact, so values language alone is incomplete for sales-track hiring.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ADOBE-SALES-ACADEMY-024"
         ]
       }
     ],
@@ -1198,6 +1295,48 @@
           "Provides tooling, documentation, or migration assistance.",
           "Measures adoption and follows through on the cutover."
         ]
+      },
+      {
+        "type": "early_career_ownership_behavioral",
+        "generated_question": "Tell me about a time you owned real work before you had formal authority. What did you decide, and what happened?",
+        "aims_dimensions": [
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Names the scope and the constraint that made ownership necessary.",
+          "Describes decisions made without escalation.",
+          "Shows the outcome and who relied on it.",
+          "Reflects on what was learned about judgment."
+        ]
+      },
+      {
+        "type": "values_and_commercial_impact_behavioral",
+        "generated_question": "Describe a decision where doing right by a customer or teammate also had to make business sense. How did you balance them?",
+        "aims_dimensions": [
+          "impact_results",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "States both the values and commercial sides concretely.",
+          "Explains the tradeoff rather than claiming there was none.",
+          "Shows who was consulted and how the call was made.",
+          "Reports the outcome on both dimensions."
+        ]
+      },
+      {
+        "type": "nontechnical_influence_behavioral",
+        "generated_question": "Tell me about persuading a technical team to act on an idea you brought from outside their discipline. What made the idea credible?",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "structured_thinking"
+        ],
+        "strong_answer_signals": [
+          "Shows understanding of the technical constraints involved.",
+          "Translates the idea into evidence the team could test.",
+          "Adapts to the team's decision process.",
+          "Credits adoption rather than only the original insight."
+        ]
       }
     ],
     "role_overlays": [
@@ -1288,6 +1427,24 @@
         "evidence_ids": [
           "ADOBE-DEVBLOG-021",
           "ADOBE-DEVBLOG-022"
+        ]
+      },
+      {
+        "role_slug": "university_and_early_career",
+        "role_family": "Interns, new graduates, and university programs",
+        "signals": [
+          "Expects mission-critical contribution within a defined program window.",
+          "Brings a clear point of view and drive, including from non-technical backgrounds.",
+          "Uses structured training, mentorship, and certifications to accelerate."
+        ]
+      },
+      {
+        "role_slug": "sales_academy_and_go_to_market",
+        "role_family": "Emerging sales and go-to-market talent",
+        "signals": [
+          "Demonstrates Adobe's core values alongside measurable pipeline or revenue impact.",
+          "Shows coachability within a structured training program.",
+          "Builds customer-facing credibility early rather than waiting for a territory."
         ]
       }
     ]

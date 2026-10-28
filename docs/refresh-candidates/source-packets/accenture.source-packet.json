@@ -1,7 +1,7 @@
 {
   "company_slug": "accenture",
   "company": "Accenture",
-  "collected_at": "2026-10-27T13:35:00Z",
+  "collected_at": "2026-10-28T13:35:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -398,6 +398,33 @@
       ],
       "evidence_id": "ACCENTURE-APPRENTICE-028",
       "date_accessed": "2026-10-27"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "5 ways to succeed during a screening interview (Accenture Careers blog)",
+      "url": "https://www.accenture.com/us-en/blogs/blogs-careers/5-ways-to-get-past-the-gatekeeper-on-a-phone-interview",
+      "confidence": 0.8,
+      "public_safe_signal": "Accenture's careers blog describes a recruiter screening stage before the hiring manager and advises a concise career history covering prior roles, reasons for leaving, and relevance, plus interview-environment preparation with a backup plan, an energetic conversational tone, questions about next steps, and a short thank-you note.",
+      "dimensions": [
+        "company_judges",
+        "company_asks"
+      ],
+      "evidence_id": "ACCENTURE-SCREENING-029",
+      "date_accessed": "2026-10-28"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "9 ways to perfect your video interview (Accenture Careers blog)",
+      "url": "https://www.accenture.com/us-en/blogs/blogs-careers/9-ways-to-perfect-your-video-interview",
+      "confidence": 0.76,
+      "public_safe_signal": "Accenture's careers blog says video interviews are now the norm and advises neutral backgrounds, lighting, eye-level camera contact, equipment checks, rehearsal, and projecting personality, while noting that unexpected interruptions should not affect the outcome.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "ACCENTURE-VIDEO-030",
+      "date_accessed": "2026-10-28"
     }
   ],
   "lens_updates": {
@@ -550,6 +577,22 @@
         "confidence": 0.8,
         "evidence_ids": [
           "ACCENTURE-IR-027"
+        ]
+      },
+      {
+        "name": "Screening as a real evaluation step",
+        "description": "Accenture's careers guidance frames the recruiter screen as a substantive stage before the hiring manager, where candidates are expected to explain career choices concisely and to ask informed questions about process and fit.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "ACCENTURE-SCREENING-029"
+        ]
+      },
+      {
+        "name": "Composure and preparation in virtual settings",
+        "description": "Accenture treats video interviewing as a standard professional setting, emphasizing environment, equipment, and presence rather than technical novelty.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ACCENTURE-VIDEO-030"
         ]
       }
     ],
@@ -840,6 +883,55 @@
           "ACCENTURE-IR-027"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Gives a concise career narrative that explains transitions, reasons for leaving, and relevance to the applied role.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ACCENTURE-SCREENING-029"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Prepares the interview environment and a contingency plan, treating logistics as evidence of agility and problem solving.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "structured_thinking"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "ACCENTURE-SCREENING-029"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Projects energy and personality in a mediated conversation rather than delivering content flatly.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "impact_results"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ACCENTURE-SCREENING-029",
+          "ACCENTURE-VIDEO-030"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Closes the loop with questions about next steps and a brief thank-you note.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "ownership_execution"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ACCENTURE-SCREENING-029"
+        ],
+        "basis": "stated_by_company"
       }
     ],
     "anti_signals": [
@@ -1031,6 +1123,31 @@
         "confidence": 0.72,
         "evidence_ids": [
           "ACCENTURE-IR-027"
+        ]
+      },
+      {
+        "anti_signal": "A long, unstructured career history that never connects to the role being applied for.",
+        "risk_reason": "Accenture's screening guidance asks for a succinct account of prior roles, reasons for leaving, and relevance, so unedited chronology works against the format the recruiter is using.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ACCENTURE-SCREENING-029"
+        ]
+      },
+      {
+        "anti_signal": "Leaving interview logistics to chance, with no equipment check or fallback plan.",
+        "risk_reason": "Accenture's careers guidance treats environment and equipment preparation as part of demonstrating agility and problem solving in virtual interviews.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "ACCENTURE-VIDEO-030",
+          "ACCENTURE-SCREENING-029"
+        ]
+      },
+      {
+        "anti_signal": "Treating the recruiter screen as an administrative formality.",
+        "risk_reason": "The screening stage precedes the hiring manager and is where career narrative, motivation, and fit questions are tested, so low preparation carries forward.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "ACCENTURE-SCREENING-029"
         ]
       }
     ],
@@ -1323,6 +1440,48 @@
           "Balances short-term delivery with capability building.",
           "Quantifies the outcome and the opportunity cost."
         ]
+      },
+      {
+        "type": "screening_narrative_behavioral",
+        "generated_question": "Give me the two-minute version of your career: why each move happened, and why this role is the next one.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Sequences moves with a reason for each transition.",
+          "Connects the pattern to the role's actual scope.",
+          "Keeps it brief and stops for questions.",
+          "Handles gaps or exits without defensiveness."
+        ]
+      },
+      {
+        "type": "virtual_presence_behavioral",
+        "generated_question": "Tell me about a time you had to build credibility through a screen rather than in person. What did you change about how you communicated?",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Names the specific disadvantage of the mediated setting.",
+          "Describes deliberate adjustments to structure or pacing.",
+          "Shows how the other party signaled trust or agreement.",
+          "Reflects on what carried into later work."
+        ]
+      },
+      {
+        "type": "follow_up_behavioral",
+        "generated_question": "Describe a time you closed a loop after an important conversation. What did you do, and what changed because of it?",
+        "aims_dimensions": [
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Shows a specific, timely follow-up action.",
+          "Connects the follow-up to a decision or next step.",
+          "Avoids treating the note as a formality.",
+          "Notes what happened when the loop was not closed elsewhere."
+        ]
       }
     ],
     "role_overlays": [
@@ -1443,6 +1602,16 @@
         ],
         "evidence_ids": [
           "ACCENTURE-APPRENTICE-028"
+        ]
+      },
+      {
+        "role_slug": "screening_and_video_interview_candidate",
+        "role_family": "Recruiter screen and virtual interview stages",
+        "signals": [
+          "Delivers a concise career narrative and connects it to the role before the hiring-manager stage.",
+          "Manages environment, equipment, and backup plans as part of professional execution.",
+          "Projects energy and personality on camera while staying concise.",
+          "Asks about next steps and follows up briefly afterward."
         ]
       }
     ]

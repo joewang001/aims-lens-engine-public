@@ -4,6 +4,10 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| NEXTERA_ENERGY-INTERNS-010 | official_careers | NextEra Energy internships | 2026-10-28 | 0.82 | NextEra Energy says most internships last 10 to 12 weeks, treats every intern as a potential full-time employee, requires a 3.00 GPA, full-time enrollment in a bachelor's program or higher, and U.S. work authorization, and posts summer roles from September to November with offers targeted by December to February. |
+| NEXTERA_ENERGY-VETERANS-011 | official_careers | Military and veteran careers at NextEra Energy | 2026-10-28 | 0.76 | NextEra Energy says veterans strengthen its culture through life experience, discipline, creativity, and technical expertise, runs a Department of Defense SkillBridge program with on-the-job industry training, and supports a VETNEXT employee resource group for military families. |
+| NEXTERA_ENERGY-AWARDS-012 | official_company | NextEra Energy awards and recognition | 2026-10-28 | 0.70 | NextEra Energy's awards page cites 2026 Forbes America's Best Large Employers, repeated Fortune Most Admired listings, and 2025 HIRE Vets Platinum recognition, presenting external employer and veteran-hiring recognition as evidence of its people proposition; these are company-reported awards. |
+| NEXTERA_ENERGY-SCAM-013 | official_careers | NextEra Energy employee scam alert | 2026-10-28 | 0.80 | NextEra Energy warns that criminals impersonate the company and its affiliates in employment scams, states it never asks candidates for money, gift cards, cryptocurrency, or payments, points to official email domains, and lists chat-only interviews as a scam indicator. |
 | NEXTERA_ENERGY-ABOUT-003 | official_company | NextEra Energy about us: leaders and core values | 2026-10-27 | 0.84 | NextEra Energy states that its leaders embody core values of excellence, integrity, and respect, and frames its century-long history around innovation, customer value, and reliable energy solutions. |
 | NEXTERA_ENERGY-CULTURE-004 | official_careers | Life at NextEra Energy: culture | 2026-10-27 | 0.80 | NextEra Energy's culture page says success begins with people, describes attracting people with unique perspectives and experiences, commits to respect and an engaged team, and cites 14 employee resource groups as culture advisers. |
 | NEXTERA_ENERGY-INNOVATION-005 | official_careers | Life at NextEra Energy: innovation programs | 2026-10-27 | 0.80 | NextEra Energy describes continuous improvement as central to its identity and lists an annual Hack Week, an in-house startup innovation hub, an innovation summit, and AI-equipped drones used in power restoration. |
@@ -30,3 +34,7 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.nexteraenergy.com/careers/getting-hired/sample-employment-test.html
 - https://www.nexteraenergy.com/careers/join-our-team/corporate-jobs.html
 - https://www.nexteraenergy.com/careers/join-our-team/field-jobs.html
+- https://www.nexteraenergy.com/careers/join-our-team/internships.html
+- https://www.nexteraenergy.com/careers/join-our-team/military-veterans.html
+- https://www.nexteraenergy.com/about-us/awards.html
+- https://www.nexteraenergy.com/careers/getting-hired/employment-scams.html

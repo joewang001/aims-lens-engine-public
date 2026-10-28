@@ -353,6 +353,129 @@
         "ADOBE-DEVBLOG-021",
         "ADOBE-DEVBLOG-022"
       ]
+    },
+    {
+      "question_id": "ADOBE-Q-016",
+      "type": "early_career_ownership_behavioral",
+      "generated_question": "Tell me about a time you owned real work before you had formal authority. What did you decide, and what happened?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Names the scope and the constraint that made ownership necessary.",
+        "Describes decisions made without escalation.",
+        "Shows the outcome and who relied on it.",
+        "Reflects on what was learned about judgment."
+      ],
+      "evidence_ids": [
+        "ADOBE-OFFICIAL-001",
+        "ADOBE-CAREERS-002",
+        "ADOBE-IR-003",
+        "ADOBE-VALUES-004",
+        "ADOBE-HIRING-005",
+        "ADOBE-ALL-006",
+        "ADOBE-DEVBLOG-007",
+        "ADOBE-ABOUT-008",
+        "ADOBE-IR-009",
+        "ADOBE-AI-010",
+        "ADOBE-CSR-011",
+        "ADOBE-TRUST-012",
+        "ADOBE-AIHIRING-013",
+        "ADOBE-RESEARCH-014",
+        "ADOBE-DESIGN-015",
+        "ADOBE-SCAM-016",
+        "ADOBE-PRIVACY-017",
+        "ADOBE-PERSONAL-INFO-018",
+        "ADOBE-CHECKIN-019",
+        "ADOBE-TEAMS-020",
+        "ADOBE-DEVBLOG-021",
+        "ADOBE-DEVBLOG-022",
+        "ADOBE-UNIVERSITY-023",
+        "ADOBE-SALES-ACADEMY-024"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-017",
+      "type": "values_and_commercial_impact_behavioral",
+      "generated_question": "Describe a decision where doing right by a customer or teammate also had to make business sense. How did you balance them?",
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "States both the values and commercial sides concretely.",
+        "Explains the tradeoff rather than claiming there was none.",
+        "Shows who was consulted and how the call was made.",
+        "Reports the outcome on both dimensions."
+      ],
+      "evidence_ids": [
+        "ADOBE-OFFICIAL-001",
+        "ADOBE-CAREERS-002",
+        "ADOBE-IR-003",
+        "ADOBE-VALUES-004",
+        "ADOBE-HIRING-005",
+        "ADOBE-ALL-006",
+        "ADOBE-DEVBLOG-007",
+        "ADOBE-ABOUT-008",
+        "ADOBE-IR-009",
+        "ADOBE-AI-010",
+        "ADOBE-CSR-011",
+        "ADOBE-TRUST-012",
+        "ADOBE-AIHIRING-013",
+        "ADOBE-RESEARCH-014",
+        "ADOBE-DESIGN-015",
+        "ADOBE-SCAM-016",
+        "ADOBE-PRIVACY-017",
+        "ADOBE-PERSONAL-INFO-018",
+        "ADOBE-CHECKIN-019",
+        "ADOBE-TEAMS-020",
+        "ADOBE-DEVBLOG-021",
+        "ADOBE-DEVBLOG-022",
+        "ADOBE-UNIVERSITY-023",
+        "ADOBE-SALES-ACADEMY-024"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-018",
+      "type": "nontechnical_influence_behavioral",
+      "generated_question": "Tell me about persuading a technical team to act on an idea you brought from outside their discipline. What made the idea credible?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Shows understanding of the technical constraints involved.",
+        "Translates the idea into evidence the team could test.",
+        "Adapts to the team's decision process.",
+        "Credits adoption rather than only the original insight."
+      ],
+      "evidence_ids": [
+        "ADOBE-OFFICIAL-001",
+        "ADOBE-CAREERS-002",
+        "ADOBE-IR-003",
+        "ADOBE-VALUES-004",
+        "ADOBE-HIRING-005",
+        "ADOBE-ALL-006",
+        "ADOBE-DEVBLOG-007",
+        "ADOBE-ABOUT-008",
+        "ADOBE-IR-009",
+        "ADOBE-AI-010",
+        "ADOBE-CSR-011",
+        "ADOBE-TRUST-012",
+        "ADOBE-AIHIRING-013",
+        "ADOBE-RESEARCH-014",
+        "ADOBE-DESIGN-015",
+        "ADOBE-SCAM-016",
+        "ADOBE-PRIVACY-017",
+        "ADOBE-PERSONAL-INFO-018",
+        "ADOBE-CHECKIN-019",
+        "ADOBE-TEAMS-020",
+        "ADOBE-DEVBLOG-021",
+        "ADOBE-DEVBLOG-022",
+        "ADOBE-UNIVERSITY-023",
+        "ADOBE-SALES-ACADEMY-024"
+      ]
     }
   ]
 }

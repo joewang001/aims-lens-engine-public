@@ -4,6 +4,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ACCENTURE-SCREENING-029 | official_careers | 5 ways to succeed during a screening interview (Accenture Careers blog) | 2026-10-28 | 0.80 | Accenture's careers blog describes a recruiter screening stage before the hiring manager and advises a concise career history covering prior roles, reasons for leaving, and relevance, plus interview-environment preparation with a backup plan, an energetic conversational tone, questions about next steps, and a short thank-you note. |
+| ACCENTURE-VIDEO-030 | official_careers | 9 ways to perfect your video interview (Accenture Careers blog) | 2026-10-28 | 0.76 | Accenture's careers blog says video interviews are now the norm and advises neutral backgrounds, lighting, eye-level camera contact, equipment checks, rehearsal, and projecting personality, while noting that unexpected interruptions should not affect the outcome. |
 | ACCENTURE-IR-027 | official_investor_relations | Accenture investor relations: FY2026 performance and company overview | 2026-10-27 | 0.86 | Accenture's investor page reports fiscal 2026 revenue of about $74.2 billion, a 15.8% adjusted operating margin, $6.9 billion invested in acquisitions, R&D, and learning, and an ambition to lead safe, widespread AI adoption as a client-focused employer. |
 | ACCENTURE-APPRENTICE-028 | official_careers | Accenture apprenticeships (Canada and US) | 2026-10-27 | 0.80 | Accenture's apprenticeship page says apprentices learn while earning with coaching, mentorship, and on-the-job training, seeks applicants without a four-year degree in project management, programming, data analysis, or graphic design, and notes apprenticeships may lead to full-time roles. |
 | ACCENTURE-CA-CAREERS-025 | official_careers | Accenture Canada careers | 2026-10-25 | 0.80 | Accenture's Canada careers page describes career areas including AI and data science, consulting, engineering and manufacturing, operations and delivery, software engineering, technology, strategy, customer care, SAP, and cybersecurity, plus student, apprenticeship, early-career, experienced, and executive entry paths; it also states company scale of about 814,000 people, 200+ cities in 52 countries, and 9,000+ clients. |
@@ -65,3 +67,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/ai-usage-job-search
 - https://www.accenture.com/en/about/inclusion-diversity-index
 - https://www.accenture.com/ca-en/careers/life-at-accenture/apprenticeships
+- https://www.accenture.com/us-en/blogs/blogs-careers/5-ways-to-get-past-the-gatekeeper-on-a-phone-interview
+- https://www.accenture.com/us-en/blogs/blogs-careers/9-ways-to-perfect-your-video-interview

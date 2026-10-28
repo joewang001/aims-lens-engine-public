@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-27",
+  "source_cutoff": "2026-10-28",
   "industries": [
     "technology",
     "creative software",
@@ -185,6 +185,22 @@
       "confidence": 0.8,
       "evidence_ids": [
         "ADOBE-DEVBLOG-021"
+      ]
+    },
+    {
+      "name": "Early-career ownership, not observation",
+      "description": "Adobe's university page says interns and graduates work on mission-critical products and are expected to contribute real work rather than observe from the sidelines.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "ADOBE-UNIVERSITY-023"
+      ]
+    },
+    {
+      "name": "Core values measured with commercial impact",
+      "description": "Adobe's Sales Academy states its mission as developing emerging sales talent who demonstrate Adobe's core values while contributing measurable pipeline and revenue impact.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "ADOBE-SALES-ACADEMY-024"
       ]
     }
   ],
@@ -513,6 +529,43 @@
         "ADOBE-DEVBLOG-021"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For early-career roles, shows drive and a clear point of view even without a technical background.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "ADOBE-UNIVERSITY-023"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Connects values-driven behavior to measurable commercial outcomes such as pipeline or revenue in go-to-market answers.",
+      "aims_dimensions": [
+        "impact_results",
+        "ownership_execution"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ADOBE-SALES-ACADEMY-024"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Uses structured training and feedback as a platform to accelerate rather than waiting for scope to be assigned.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "confidence": 0.68,
+      "evidence_ids": [
+        "ADOBE-UNIVERSITY-023",
+        "ADOBE-SALES-ACADEMY-024"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -696,6 +749,22 @@
       "evidence_ids": [
         "ADOBE-DEVBLOG-022"
       ]
+    },
+    {
+      "anti_signal": "Treating an internship or graduate role as observation rather than mission-critical contribution.",
+      "risk_reason": "Adobe's early-career pages frame interns and graduates as contributors to products used at scale, so passive framing undersells the role's actual expectations.",
+      "confidence": 0.68,
+      "evidence_ids": [
+        "ADOBE-UNIVERSITY-023"
+      ]
+    },
+    {
+      "anti_signal": "Talking about values or creativity without commercial or customer evidence in go-to-market roles.",
+      "risk_reason": "The Sales Academy explicitly pairs core-values demonstration with pipeline and revenue impact, so values language alone is incomplete for sales-track hiring.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "ADOBE-SALES-ACADEMY-024"
+      ]
     }
   ],
   "interview_patterns": [
@@ -713,11 +782,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 22,
-    "official_source_count": 22,
+    "source_count": 24,
+    "official_source_count": 24,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-27"
+    "last_reviewed": "2026-10-28"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Adobe hiring standard.",

@@ -1,0 +1,43 @@
+{
+  "company": "Adobe",
+  "role_family": "Emerging sales and go-to-market talent",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Demonstrates Adobe's core values alongside measurable pipeline or revenue impact.",
+    "Shows coachability within a structured training program.",
+    "Builds customer-facing credibility early rather than waiting for a territory."
+  ],
+  "evidence_ids": [
+    "ADOBE-OFFICIAL-001",
+    "ADOBE-CAREERS-002",
+    "ADOBE-IR-003",
+    "ADOBE-VALUES-004",
+    "ADOBE-HIRING-005",
+    "ADOBE-ALL-006",
+    "ADOBE-DEVBLOG-007",
+    "ADOBE-ABOUT-008",
+    "ADOBE-IR-009",
+    "ADOBE-AI-010",
+    "ADOBE-CSR-011",
+    "ADOBE-TRUST-012",
+    "ADOBE-AIHIRING-013",
+    "ADOBE-RESEARCH-014",
+    "ADOBE-DESIGN-015",
+    "ADOBE-SCAM-016",
+    "ADOBE-PRIVACY-017",
+    "ADOBE-PERSONAL-INFO-018",
+    "ADOBE-CHECKIN-019",
+    "ADOBE-TEAMS-020",
+    "ADOBE-DEVBLOG-021",
+    "ADOBE-DEVBLOG-022",
+    "ADOBE-UNIVERSITY-023",
+    "ADOBE-SALES-ACADEMY-024"
+  ]
+}

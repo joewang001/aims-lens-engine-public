@@ -1,0 +1,32 @@
+{
+  "company": "NextEra Energy",
+  "role_family": "Interns, co-ops, and recent graduates",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Meets the published GPA, enrollment, and work-authorization baseline and applies in the fall posting window.",
+    "Treats the internship as a 10-to-12-week audition for full-time employment rather than a summer job.",
+    "Shows curiosity about field, corporate, or generation placements across the business."
+  ],
+  "evidence_ids": [
+    "NEXTERA_ENERGY-OFFICIAL-001",
+    "NEXTERA_ENERGY-CAREERS-002",
+    "NEXTERA_ENERGY-ABOUT-003",
+    "NEXTERA_ENERGY-CULTURE-004",
+    "NEXTERA_ENERGY-INNOVATION-005",
+    "NEXTERA_ENERGY-HIRING-006",
+    "NEXTERA_ENERGY-TEST-007",
+    "NEXTERA_ENERGY-CORPORATE-008",
+    "NEXTERA_ENERGY-FIELD-009",
+    "NEXTERA_ENERGY-INTERNS-010",
+    "NEXTERA_ENERGY-VETERANS-011",
+    "NEXTERA_ENERGY-AWARDS-012",
+    "NEXTERA_ENERGY-SCAM-013"
+  ]
+}

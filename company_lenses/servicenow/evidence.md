@@ -4,6 +4,9 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| SERVICENOW-HOWWEHIRE-007 | official_careers | How we hire at ServiceNow | 2026-10-28 | 0.86 | ServiceNow describes three hiring stages: application with human review, interviews run on a prescriptive process with standard evaluation guides, and a hiring-team debrief; it says some roles include a technical coding assessment or presentation and that rounds vary by position. |
+| SERVICENOW-AI-HIRING-008 | official_careers | Using AI during the hiring process at ServiceNow | 2026-10-28 | 0.85 | ServiceNow allows AI for preparation such as resume refinement and practice, but requires interviews, online tests, and technical challenges to be completed independently without AI or outside help, prohibits recording interviews, and says violations may lead to disqualification or a rescinded offer. |
+| SERVICENOW-LIFE-009 | official_careers | Life at ServiceNow: purpose, values, and People Pact | 2026-10-28 | 0.78 | ServiceNow frames its values as the actions and behaviors that guide employees to do the right thing in service of making the world work better for everyone, and describes a People Pact covering doing your best work, living your best life, and fulfilling the purpose together, supported by learning and mentorship programs. |
 | SERVICENOW-ETHICS-003 | official_company | ServiceNow Code of Ethics and T.R.U.S.T. pillars | 2026-10-27 | 0.83 | ServiceNow's Code of Ethics says trust is the foundation of its work and organizes expectations around transparency, responsibility, understanding, supervision, and teamwork, including accurate reporting and speaking up. |
 | SERVICENOW-AI-004 | official_company | ServiceNow Responsible AI principles | 2026-10-27 | 0.84 | ServiceNow describes four responsible-AI principles: human-centered, inclusive, transparent, and accountable, and states that it achieved ISO/IEC 42001:2023 certification for its AI management system across development and deployment. |
 | SERVICENOW-IMPACT-005 | official_company | ServiceNow Global Impact and sustainability reporting | 2026-10-27 | 0.80 | ServiceNow reports maintained 100% renewable electricity and carbon-neutral cloud, more than $33 million in total social investment, and a 33% volunteer participation rate, and frames integrity as a driver of trust. |
@@ -24,3 +27,6 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.servicenow.com/platform/responsible-ai.html
 - https://www.servicenow.com/company/global-impact.html
 - https://www.servicenow.com/company/leadership.html
+- https://careers.servicenow.com/how-we-hire/
+- https://careers.servicenow.com/using-ai-during-the-hiring-process/
+- https://careers.servicenow.com/life-at-servicenow/
