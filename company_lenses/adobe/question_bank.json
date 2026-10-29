@@ -476,6 +476,63 @@
         "ADOBE-UNIVERSITY-023",
         "ADOBE-SALES-ACADEMY-024"
       ]
+    },
+    {
+      "question_id": "ADOBE-Q-019",
+      "type": "design_narrative_behavioral",
+      "generated_question": "Walk me through one portfolio project: who was it for, what problem did it solve, what did you personally decide, and what changed because it shipped?",
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Starts with the audience and the problem, not the visuals.",
+        "Separates their own decisions from collaborators' work.",
+        "Explains a tradeoff and a rejected alternative.",
+        "Ends with evidence of impact or learning."
+      ],
+      "evidence_ids": [
+        "ADOBE-DESIGN-INTERVIEW-025"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-020",
+      "type": "design_feedback_behavioral",
+      "generated_question": "What is the hardest piece of feedback you have received on your design work, and what did you do about it?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "States the feedback specifically without deflecting.",
+        "Shows self-awareness about the gap it revealed.",
+        "Describes a concrete change in process or craft.",
+        "Explains how later work reflected the change."
+      ],
+      "evidence_ids": [
+        "ADOBE-DESIGN-INTERVIEW-025"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-021",
+      "type": "design_systems_prioritization_behavioral",
+      "generated_question": "A design-system team serves several product groups with competing needs. How would you decide what to build next, and how would you know it worked?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Describes how requirements are gathered across teams.",
+        "Uses adoption or research evidence to rank options.",
+        "Explains how migration and support are resourced.",
+        "Defines a success measure beyond shipping the component."
+      ],
+      "evidence_ids": [
+        "ADOBE-DESIGN-PM-026"
+      ]
     }
   ]
 }

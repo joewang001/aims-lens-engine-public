@@ -232,6 +232,63 @@
         "SERVICENOW-AI-HIRING-008",
         "SERVICENOW-LIFE-009"
       ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-010",
+      "type": "forward_deployed_engineering_behavioral",
+      "generated_question": "Forward Deployed Engineers embed with customers to prove AI agents in production. Tell me about a time you built something inside a customer's environment under real constraints. How did you scope it, and what did the customer change as a result?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Describes the customer's constraint and why a standard approach did not fit.",
+        "Shows how they scoped a first deliverable quickly.",
+        "Explains what became reusable beyond the one engagement.",
+        "Names the production outcome and who owned it after handover."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-TEAMS-AI-ENG-010"
+      ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-011",
+      "type": "solution_consulting_behavioral",
+      "generated_question": "Describe a complex workflow problem you diagnosed for a customer. How did you separate the stated request from the underlying need, and how did you position a solution across stakeholders?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Shows discovery questions that surfaced the real constraint.",
+        "Distinguishes technical fit from organisational readiness.",
+        "Explains how they handled a sceptical stakeholder.",
+        "Connects the recommendation to a measurable business result."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-TEAMS-SALES-011"
+      ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-012",
+      "type": "early_career_learning_behavioral",
+      "generated_question": "What have you taught yourself on a platform or technology outside your formal coursework, and what did you build with it?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Names the learning source and how they tested understanding.",
+        "Describes something concrete they built or fixed.",
+        "Explains a failure or limit they hit and how they worked around it.",
+        "Connects the learning to a role or team they want to join."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-EARLY-CAREERS-012"
+      ]
     }
   ]
 }

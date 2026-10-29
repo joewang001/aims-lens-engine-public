@@ -542,6 +542,44 @@
         "ACCENTURE-SCREENING-029",
         "ACCENTURE-VIDEO-030"
       ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-021",
+      "type": "creative_business_impact_behavioral",
+      "generated_question": "Describe a creative or design decision you made that had to survive a commercial or technical constraint. How did you protect the idea while making it work for the business?",
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Names the constraint and who imposed it.",
+        "Explains the tradeoff and what was sacrificed deliberately.",
+        "Shows how the work was tested with the audience or client.",
+        "Connects the outcome to a business or brand measure."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-SONG-031"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-022",
+      "type": "security_risk_behavioral",
+      "generated_question": "Tell me about a security risk you identified and had to explain to a non-technical stakeholder. How did you frame the risk and what was decided?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Describes how the risk was discovered and validated.",
+        "Translates likelihood and impact into business terms.",
+        "Explains the recommendation and the stakeholder's decision.",
+        "Shows what monitoring or follow-up was put in place."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-SECURITY-032"
+      ]
     }
   ]
 }

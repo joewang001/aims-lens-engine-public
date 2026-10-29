@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-26",
-  "source_cutoff": "2026-10-28",
+  "source_cutoff": "2026-10-29",
   "industries": [
     "technology",
     "enterprise software",
@@ -93,6 +93,14 @@
       "confidence": 0.83,
       "evidence_ids": [
         "SERVICENOW-AI-HIRING-008"
+      ]
+    },
+    {
+      "name": "Wow our customers",
+      "description": "ServiceNow's sales careers page names customer wow as a core value, describing it as active listening, relationship building, and going further than delivering the product, and ties that behavior to retention and referenceable customers.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "SERVICENOW-TEAMS-SALES-011"
       ]
     }
   ],
@@ -246,6 +254,46 @@
         "SERVICENOW-HOWWEHIRE-007"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For customer-facing technical roles, explains how they turned a customer problem into a configured solution and how adoption was measured.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "impact_results",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "SERVICENOW-TEAMS-AI-ENG-010",
+        "SERVICENOW-TEAMS-SALES-011"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For sales and solution-consulting roles, shows discovery, qualification, and multi-stakeholder work rather than product feature knowledge alone.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "structured_thinking",
+        "impact_results"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "SERVICENOW-TEAMS-SALES-011"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For early-career roles, shows self-directed platform learning through courses, certifications, or projects, and explains what they built or solved with it.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "SERVICENOW-EARLY-CAREERS-012"
+      ],
+      "basis": "stated_by_company"
     }
   ],
   "anti_signals": [
@@ -307,6 +355,22 @@
       "evidence_ids": [
         "SERVICENOW-HOWWEHIRE-007"
       ]
+    },
+    {
+      "anti_signal": "Assuming a technical role at a platform company has no customer, support, or adoption dimension.",
+      "risk_reason": "ServiceNow's engineering organization publicly includes Forward Deployed Engineering and Global Customer Support teams that work directly with customers, so a purely back-end framing misses part of the role landscape; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "SERVICENOW-TEAMS-AI-ENG-010"
+      ]
+    },
+    {
+      "anti_signal": "Treating sales as only quota-carrying account executives and ignoring solution consulting, customer success, renewals, or digital sales paths.",
+      "risk_reason": "The sales careers page separates five distinct customer-facing role types with different remits.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "SERVICENOW-TEAMS-SALES-011"
+      ]
     }
   ],
   "interview_patterns": [
@@ -324,11 +388,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 9,
-    "official_source_count": 9,
+    "source_count": 12,
+    "official_source_count": 12,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-28"
+    "last_reviewed": "2026-10-29"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official ServiceNow hiring standard.",

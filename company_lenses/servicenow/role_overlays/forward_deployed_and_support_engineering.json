@@ -1,0 +1,31 @@
+{
+  "company": "ServiceNow",
+  "role_family": "Forward-deployed and customer support engineering",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Builds in the customer's environment and can explain what became reusable across engagements.",
+    "Balances speed of proof with production reliability and handover.",
+    "Treats support conversations as input to product quality rather than as a separate function."
+  ],
+  "evidence_ids": [
+    "SERVICENOW-OFFICIAL-001",
+    "SERVICENOW-CAREERS-002",
+    "SERVICENOW-ETHICS-003",
+    "SERVICENOW-AI-004",
+    "SERVICENOW-IMPACT-005",
+    "SERVICENOW-LEADERSHIP-006",
+    "SERVICENOW-HOWWEHIRE-007",
+    "SERVICENOW-AI-HIRING-008",
+    "SERVICENOW-LIFE-009",
+    "SERVICENOW-TEAMS-AI-ENG-010",
+    "SERVICENOW-TEAMS-SALES-011",
+    "SERVICENOW-EARLY-CAREERS-012"
+  ]
+}

@@ -259,6 +259,45 @@
         "NEXTERA_ENERGY-AWARDS-012",
         "NEXTERA_ENERGY-SCAM-013"
       ]
+    },
+    {
+      "question_id": "NEXTERA_ENERGY-Q-010",
+      "type": "early_career_rotation_behavioral",
+      "generated_question": "NextEra's early-career digital and finance programs rotate across teams and six-month assignments. Describe a time you joined an unfamiliar team or technology. How did you get productive, and what did you deliver by the end?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names what was unfamiliar and how they closed the gap.",
+        "Shows a deliberate learning plan rather than passive onboarding.",
+        "Describes a concrete deliverable and who used it.",
+        "Explains what they would repeat or change in the next rotation."
+      ],
+      "evidence_ids": [
+        "NEXTERA_ENERGY-IGNITE-015",
+        "NEXTERA_ENERGY-RECENTGRADS-014"
+      ]
+    },
+    {
+      "question_id": "NEXTERA_ENERGY-Q-011",
+      "type": "data_portfolio_behavioral",
+      "generated_question": "Walk me through one analytics project end to end: the question, the data, the method, and what changed because of your result.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "States the decision the analysis was meant to inform.",
+        "Explains data quality limits and assumptions.",
+        "Shows the method and why it fit the question.",
+        "Connects the result to an action or measured outcome."
+      ],
+      "evidence_ids": [
+        "NEXTERA_ENERGY-IGNITE-015"
+      ]
     }
   ]
 }

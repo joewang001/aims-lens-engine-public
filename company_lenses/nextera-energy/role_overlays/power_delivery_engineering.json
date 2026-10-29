@@ -1,0 +1,34 @@
+{
+  "company": "NextEra Energy",
+  "role_family": "Power delivery and engineering graduate roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Connects engineering coursework or internships to grid, transmission, distribution, or generation work.",
+    "Shows awareness that the Associate Engineer track targets graduates within five years of an accredited engineering program.",
+    "Balances technical analysis with the reliability and safety constraints of operating assets."
+  ],
+  "evidence_ids": [
+    "NEXTERA_ENERGY-OFFICIAL-001",
+    "NEXTERA_ENERGY-CAREERS-002",
+    "NEXTERA_ENERGY-ABOUT-003",
+    "NEXTERA_ENERGY-CULTURE-004",
+    "NEXTERA_ENERGY-INNOVATION-005",
+    "NEXTERA_ENERGY-HIRING-006",
+    "NEXTERA_ENERGY-TEST-007",
+    "NEXTERA_ENERGY-CORPORATE-008",
+    "NEXTERA_ENERGY-FIELD-009",
+    "NEXTERA_ENERGY-INTERNS-010",
+    "NEXTERA_ENERGY-VETERANS-011",
+    "NEXTERA_ENERGY-AWARDS-012",
+    "NEXTERA_ENERGY-SCAM-013",
+    "NEXTERA_ENERGY-RECENTGRADS-014",
+    "NEXTERA_ENERGY-IGNITE-015"
+  ]
+}
