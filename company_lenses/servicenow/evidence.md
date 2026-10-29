@@ -4,6 +4,9 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| SERVICENOW-TEAMS-AI-ENG-010 | official_careers | AI, Engineering, and Product teams | 2026-10-29 | 0.84 | ServiceNow's AI, Engineering and Product careers page separates Forward Deployed Engineering, Platform and AI Engineering, Product Engineering, Developer Productivity, Global Cloud Services, Product Management, Quality Engineering and Global Customer Support, each with a distinct remit. |
+| SERVICENOW-TEAMS-SALES-011 | official_careers | Sales teams and customer-facing roles | 2026-10-29 | 0.82 | The sales careers page distinguishes account executives, customer excellence covering expert services, customer success and renewals, digital sales, solution consultants and strategic alliances, and names customer wow as a core value alongside Fortune 500 reach and high renewal rates. |
+| SERVICENOW-EARLY-CAREERS-012 | official_careers | Early careers, Launchpad Academy, and ServiceNow University | 2026-10-29 | 0.83 | ServiceNow's early careers page covers internships and co-ops, full-time early-career roles, a year-long Launchpad Academy for new hires, a Discover ServiceNow exploration program, free ServiceNow University courses and certifications, and platform careers across partner and customer organizations through RiseUp. |
 | SERVICENOW-HOWWEHIRE-007 | official_careers | How we hire at ServiceNow | 2026-10-28 | 0.86 | ServiceNow describes three hiring stages: application with human review, interviews run on a prescriptive process with standard evaluation guides, and a hiring-team debrief; it says some roles include a technical coding assessment or presentation and that rounds vary by position. |
 | SERVICENOW-AI-HIRING-008 | official_careers | Using AI during the hiring process at ServiceNow | 2026-10-28 | 0.85 | ServiceNow allows AI for preparation such as resume refinement and practice, but requires interviews, online tests, and technical challenges to be completed independently without AI or outside help, prohibits recording interviews, and says violations may lead to disqualification or a rescinded offer. |
 | SERVICENOW-LIFE-009 | official_careers | Life at ServiceNow: purpose, values, and People Pact | 2026-10-28 | 0.78 | ServiceNow frames its values as the actions and behaviors that guide employees to do the right thing in service of making the world work better for everyone, and describes a People Pact covering doing your best work, living your best life, and fulfilling the purpose together, supported by learning and mentorship programs. |
@@ -30,3 +33,6 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://careers.servicenow.com/how-we-hire/
 - https://careers.servicenow.com/using-ai-during-the-hiring-process/
 - https://careers.servicenow.com/life-at-servicenow/
+- https://careers.servicenow.com/teams/ai-engineering-product/
+- https://careers.servicenow.com/teams/sales/
+- https://careers.servicenow.com/early-careers/

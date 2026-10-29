@@ -11,7 +11,9 @@
   },
   "focus_signals": [
     "Engineering-track candidates should expect a coding assessment; business and customer-facing tracks more often involve presentations or role walkthroughs.",
-    "Both paths are evaluated against the same stated values and use standard evaluation guides."
+    "Both paths are evaluated against the same stated values and use standard evaluation guides.",
+    "Within engineering, candidates can distinguish platform, product, forward-deployed, quality, cloud, and developer-productivity work.",
+    "Within customer-facing work, candidates can distinguish account executive, solution consulting, customer success, renewals, and digital sales paths."
   ],
   "evidence_ids": [
     "SERVICENOW-OFFICIAL-001",
@@ -22,6 +24,9 @@
     "SERVICENOW-LEADERSHIP-006",
     "SERVICENOW-HOWWEHIRE-007",
     "SERVICENOW-AI-HIRING-008",
-    "SERVICENOW-LIFE-009"
+    "SERVICENOW-LIFE-009",
+    "SERVICENOW-TEAMS-AI-ENG-010",
+    "SERVICENOW-TEAMS-SALES-011",
+    "SERVICENOW-EARLY-CAREERS-012"
   ]
 }

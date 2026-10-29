@@ -1,0 +1,51 @@
+{
+  "company": "Accenture",
+  "role_family": "Marketing, creative, and Accenture Song roles",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Shows creative work grounded in audience insight and brand relevance.",
+    "Can move between craft, strategy, and delivery conversations.",
+    "Explains how technology or data shaped the creative outcome."
+  ],
+  "evidence_ids": [
+    "ACCENTURE-OFFICIAL-001",
+    "ACCENTURE-CAREERS-002",
+    "ACCENTURE-ABOUT-003",
+    "ACCENTURE-LEADERSHIP-004",
+    "ACCENTURE-BEHAVIORAL-005",
+    "ACCENTURE-SKILLS-006",
+    "ACCENTURE-SWE-007",
+    "ACCENTURE-STRATEGY-008",
+    "ACCENTURE-IR-009",
+    "ACCENTURE-CAREERS-010",
+    "ACCENTURE-AI-011",
+    "ACCENTURE-LEARNING-012",
+    "ACCENTURE-AIDATA-013",
+    "ACCENTURE-CASE-014",
+    "ACCENTURE-RESUME-015",
+    "ACCENTURE-TIPS-016",
+    "ACCENTURE-FAQ-017",
+    "ACCENTURE-CONSULTING-018",
+    "ACCENTURE-OPS-019",
+    "ACCENTURE-DESIGN-020",
+    "ACCENTURE-TECH-021",
+    "ACCENTURE-SCAM-022",
+    "ACCENTURE-SCAM-IN-023",
+    "ACCENTURE-AI-HIRING-024",
+    "ACCENTURE-CA-CAREERS-025",
+    "ACCENTURE-INCLUSION-026",
+    "ACCENTURE-IR-027",
+    "ACCENTURE-APPRENTICE-028",
+    "ACCENTURE-SCREENING-029",
+    "ACCENTURE-VIDEO-030",
+    "ACCENTURE-SONG-031",
+    "ACCENTURE-SECURITY-032"
+  ]
+}

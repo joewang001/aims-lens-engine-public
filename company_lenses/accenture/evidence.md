@@ -4,6 +4,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ACCENTURE-SONG-031 | official_careers | Accenture Song creative and design careers | 2026-10-29 | 0.80 | Accenture Song's careers page frames a creative and design career area inside what it calls the world's largest tech-powered creative group, describing strategists, writers and designers who work on brand, product and experience problems with routes into creative strategy, consulting and leadership. |
+| ACCENTURE-SECURITY-032 | official_careers | Accenture security careers | 2026-10-29 | 0.82 | Accenture's security careers page describes a security practice of more than 19,000 people spanning strategy, implementation and client management, with 17 security operating centers, support for market-relevant certifications, and programs for people starting a security career. |
 | ACCENTURE-SCREENING-029 | official_careers | 5 ways to succeed during a screening interview (Accenture Careers blog) | 2026-10-28 | 0.80 | Accenture's careers blog describes a recruiter screening stage before the hiring manager and advises a concise career history covering prior roles, reasons for leaving, and relevance, plus interview-environment preparation with a backup plan, an energetic conversational tone, questions about next steps, and a short thank-you note. |
 | ACCENTURE-VIDEO-030 | official_careers | 9 ways to perfect your video interview (Accenture Careers blog) | 2026-10-28 | 0.76 | Accenture's careers blog says video interviews are now the norm and advises neutral backgrounds, lighting, eye-level camera contact, equipment checks, rehearsal, and projecting personality, while noting that unexpected interruptions should not affect the outcome. |
 | ACCENTURE-IR-027 | official_investor_relations | Accenture investor relations: FY2026 performance and company overview | 2026-10-27 | 0.86 | Accenture's investor page reports fiscal 2026 revenue of about $74.2 billion, a 15.8% adjusted operating margin, $6.9 billion invested in acquisitions, R&D, and learning, and an ambition to lead safe, widespread AI adoption as a client-focused employer. |
@@ -69,3 +71,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.accenture.com/ca-en/careers/life-at-accenture/apprenticeships
 - https://www.accenture.com/us-en/blogs/blogs-careers/5-ways-to-get-past-the-gatekeeper-on-a-phone-interview
 - https://www.accenture.com/us-en/blogs/blogs-careers/9-ways-to-perfect-your-video-interview
+- https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/song-careers
+- https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/security-careers

@@ -4,6 +4,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ADOBE-DESIGN-INTERVIEW-025 | official_company | Ask Adobe Design: how applicants stand out in design interviews | 2026-10-29 | 0.80 | In an Adobe Design article, eight design managers describe what makes candidates stand out: crediting collaborators while stating one's own contribution, telling the story of why the work mattered and who it served, earning cross-functional buy-in, showing humility and self-awareness, and explaining how they handled mistakes or hard feedback. |
+| ADOBE-DESIGN-PM-026 | official_company | What a design system product manager does at Adobe | 2026-10-29 | 0.78 | An Adobe Design role profile describes a design-system product manager who sets vision and strategy with product and platform teams, gathers requirements across Express, Creative Cloud and Document Cloud, prioritises roadmap work, and uses research and adoption data to guide decisions. |
 | ADOBE-UNIVERSITY-023 | official_careers | University and early-career programs at Adobe | 2026-10-28 | 0.70 | Adobe's university page says interns and new graduates work on mission-critical products across engineering, sales, and marketing, invites non-technical candidates to bring bold ideas, drive, and a clear voice, and frames early-career growth through Sales Academy and Digital Academy programs under a raise-the-bar message. |
 | ADOBE-SALES-ACADEMY-024 | official_careers | Adobe Sales Academy | 2026-10-28 | 0.72 | Adobe's Sales Academy page says the program's mission is to cultivate emerging sales talent who demonstrate Adobe's core values while contributing measurable pipeline and revenue impact, combining structured training with placement into business development roles. |
 | ADOBE-DEVBLOG-021 | official_engineering_blog | Build-time Wasm module splitting for faster startup (Adobe Developers Blog) | 2026-10-27 | 0.84 | Adobe engineers describe replacing profile-guided WebAssembly splitting with a build-time call-graph and debug-info analysis, trading profiling effort for repeatable builds, and they document limitations and rule maintenance costs. |
@@ -59,3 +61,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://blog.developer.adobe.com/en/publish/2026/10/adobe-developers-live-2026-recap-cep-to-uxp-migration-express-connectors-and-what-we-publish-next
 - https://careers.adobe.com/us/en/university
 - https://careers.adobe.com/us/en/sales-academy
+- https://adobe.design/ideas/ask-adobe-design-how-can-applicants-stand-out-when-interviewing-for-design-jobs
+- https://adobe.design/ideas/what-does-a-design-system-product-manager-do-veda-rosier

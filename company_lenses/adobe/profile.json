@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-28",
+  "source_cutoff": "2026-10-29",
   "industries": [
     "technology",
     "creative software",
@@ -566,6 +566,56 @@
         "ADOBE-SALES-ACADEMY-024"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For design roles, names collaborators and separates their own contribution from the team's when presenting work.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-DESIGN-INTERVIEW-025"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "For design roles, tells the story of why the work mattered, who it served, and what changed, rather than walking through screens.",
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication",
+        "structured_thinking"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-DESIGN-INTERVIEW-025"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "For design roles, describes the hardest feedback or mistake they owned and what they changed in how they work.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ADOBE-DESIGN-INTERVIEW-025"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "For design-system or platform design roles, shows prioritisation across several product teams using requirements, research, and adoption evidence.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "collaboration_communication"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ADOBE-DESIGN-PM-026"
+      ],
+      "basis": "stated_by_company"
     }
   ],
   "anti_signals": [
@@ -765,6 +815,22 @@
       "evidence_ids": [
         "ADOBE-SALES-ACADEMY-024"
       ]
+    },
+    {
+      "anti_signal": "Presenting design work as a solo achievement without acknowledging product, engineering, or research partners.",
+      "risk_reason": "Adobe Design managers say they listen for accurate credit-sharing and a clear view of the candidate's unique contribution; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ADOBE-DESIGN-INTERVIEW-025"
+      ]
+    },
+    {
+      "anti_signal": "Walking through final screens without explaining the problem, the audience, or the outcome.",
+      "risk_reason": "Adobe Design interviewers describe wanting the reason the work mattered and who it impacted before visual detail.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ADOBE-DESIGN-INTERVIEW-025"
+      ]
     }
   ],
   "interview_patterns": [
@@ -782,11 +848,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 24,
-    "official_source_count": 24,
+    "source_count": 26,
+    "official_source_count": 26,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-28"
+    "last_reviewed": "2026-10-29"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Adobe hiring standard.",

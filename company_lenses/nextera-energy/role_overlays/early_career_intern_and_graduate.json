@@ -12,7 +12,8 @@
   "focus_signals": [
     "Meets the published GPA, enrollment, and work-authorization baseline and applies in the fall posting window.",
     "Treats the internship as a 10-to-12-week audition for full-time employment rather than a summer job.",
-    "Shows curiosity about field, corporate, or generation placements across the business."
+    "Shows curiosity about field, corporate, or generation placements across the business.",
+    "Can name which early-career route fits them: Associate Engineer, Ignite Digital rotation, Ignite Data Analytics, or a finance leadership program."
   ],
   "evidence_ids": [
     "NEXTERA_ENERGY-OFFICIAL-001",
@@ -27,6 +28,8 @@
     "NEXTERA_ENERGY-INTERNS-010",
     "NEXTERA_ENERGY-VETERANS-011",
     "NEXTERA_ENERGY-AWARDS-012",
-    "NEXTERA_ENERGY-SCAM-013"
+    "NEXTERA_ENERGY-SCAM-013",
+    "NEXTERA_ENERGY-RECENTGRADS-014",
+    "NEXTERA_ENERGY-IGNITE-015"
   ]
 }

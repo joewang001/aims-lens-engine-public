@@ -1,7 +1,7 @@
 {
   "company_slug": "nextera-energy",
   "company": "NextEra Energy",
-  "collected_at": "2026-10-28T13:35:00Z",
+  "collected_at": "2026-10-29T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -203,6 +203,35 @@
       ],
       "evidence_id": "NEXTERA_ENERGY-SCAM-013",
       "date_accessed": "2026-10-28"
+    },
+    {
+      "evidence_id": "NEXTERA_ENERGY-RECENTGRADS-014",
+      "source_type": "official_careers",
+      "title": "NextEra Energy careers for recent graduates",
+      "url": "https://www.nexteraenergy.com/careers/join-our-team/recent-grads.html",
+      "date_accessed": "2026-10-29",
+      "confidence": 0.82,
+      "public_safe_signal": "NextEra's recent-graduate page separates entry paths: an Associate Engineer track for engineering graduates within the last five years, IT rotation programs, and a three-year finance and accounting leadership development program, each linked to its own job search.",
+      "dimensions": [
+        "role_variation",
+        "company_asks",
+        "honest_unknowns"
+      ]
+    },
+    {
+      "evidence_id": "NEXTERA_ENERGY-IGNITE-015",
+      "source_type": "official_careers",
+      "title": "Ignite digital and data analytics programs",
+      "url": "https://www.nexteraenergy.com/careers/join-our-team/recent-grads/emerging-leaders.html",
+      "date_accessed": "2026-10-29",
+      "confidence": 0.84,
+      "public_safe_signal": "NextEra describes an Ignite Digital program of two years and four six-month rotations across application development, cloud, agile delivery, cybersecurity, data analytics, DevOps and infrastructure, plus a 12-month Ignite Data Analytics program requiring coding and a sample project portfolio, with two intakes a year.",
+      "dimensions": [
+        "role_variation",
+        "company_asks",
+        "evidence_valued",
+        "company_judges"
+      ]
     }
   ],
   "lens_updates": {
@@ -263,6 +292,15 @@
         "confidence": 0.74,
         "evidence_ids": [
           "NEXTERA_ENERGY-SCAM-013"
+        ]
+      },
+      {
+        "name": "Rotation as a development method",
+        "description": "NextEra frames several early-career paths as multi-year rotations across teams and work groups, presenting breadth as the way new graduates choose a direction rather than committing to one specialty immediately.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-RECENTGRADS-014",
+          "NEXTERA_ENERGY-IGNITE-015"
         ]
       }
     ],
@@ -369,6 +407,45 @@
           "NEXTERA_ENERGY-SCAM-013"
         ],
         "basis": "stated_by_company"
+      },
+      {
+        "signal": "For data-analytics early-career roles, points to concrete analytics projects and the tools used, such as Python, SQL, or R, rather than coursework alone.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-IGNITE-015"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Explains how they became productive in an unfamiliar team, technology, or shift pattern, and what they delivered during that rotation.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "collaboration_communication",
+          "ownership_execution"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-RECENTGRADS-014",
+          "NEXTERA_ENERGY-IGNITE-015"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For engineering early-career roles, connects academic or internship work to power delivery, grid, or generation problems rather than to energy interest in general.",
+        "aims_dimensions": [
+          "impact_results",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.74,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-RECENTGRADS-014"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -421,6 +498,23 @@
         "confidence": 0.66,
         "evidence_ids": [
           "NEXTERA_ENERGY-VETERANS-011"
+        ]
+      },
+      {
+        "anti_signal": "Treating an early-career program as a single fixed team or specialty from day one.",
+        "risk_reason": "NextEra describes its digital and finance early-career programs as rotations across work groups, so a fixed-specialty expectation may not match how those programs are structured; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-RECENTGRADS-014",
+          "NEXTERA_ENERGY-IGNITE-015"
+        ]
+      },
+      {
+        "anti_signal": "Describing data or analytics interest without any example project, tool, or result.",
+        "risk_reason": "The Ignite Data Analytics program explicitly asks for coding ability and a portfolio of sample projects that demonstrate analytic acumen.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-IGNITE-015"
         ]
       }
     ],
@@ -557,6 +651,43 @@
           "Shows the decision and its cost or benefit.",
           "Generalizes a rule for future situations."
         ]
+      },
+      {
+        "type": "early_career_rotation_behavioral",
+        "generated_question": "NextEra's early-career digital and finance programs rotate across teams and six-month assignments. Describe a time you joined an unfamiliar team or technology. How did you get productive, and what did you deliver by the end?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names what was unfamiliar and how they closed the gap.",
+          "Shows a deliberate learning plan rather than passive onboarding.",
+          "Describes a concrete deliverable and who used it.",
+          "Explains what they would repeat or change in the next rotation."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-IGNITE-015",
+          "NEXTERA_ENERGY-RECENTGRADS-014"
+        ]
+      },
+      {
+        "type": "data_portfolio_behavioral",
+        "generated_question": "Walk me through one analytics project end to end: the question, the data, the method, and what changed because of your result.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "impact_results",
+          "structured_thinking"
+        ],
+        "strong_answer_signals": [
+          "States the decision the analysis was meant to inform.",
+          "Explains data quality limits and assumptions.",
+          "Shows the method and why it fit the question.",
+          "Connects the result to an action or measured outcome."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-IGNITE-015"
+        ]
       }
     ],
     "role_overlays": [
@@ -613,7 +744,12 @@
         "signals": [
           "Meets the published GPA, enrollment, and work-authorization baseline and applies in the fall posting window.",
           "Treats the internship as a 10-to-12-week audition for full-time employment rather than a summer job.",
-          "Shows curiosity about field, corporate, or generation placements across the business."
+          "Shows curiosity about field, corporate, or generation placements across the business.",
+          "Can name which early-career route fits them: Associate Engineer, Ignite Digital rotation, Ignite Data Analytics, or a finance leadership program."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-RECENTGRADS-014",
+          "NEXTERA_ENERGY-IGNITE-015"
         ]
       },
       {
@@ -623,6 +759,31 @@
           "Translates military discipline and technical expertise into energy operating language.",
           "Uses SkillBridge or VETNEXT-style support as a bridge, not as a substitute for role evidence.",
           "Shows familiarity with safety-critical, shift-based, or field-based work environments."
+        ]
+      },
+      {
+        "role_slug": "technology_and_data_rotational_programs",
+        "role_family": "Digital, data, and technology rotational programs",
+        "signals": [
+          "Shows breadth across application development, cloud, cybersecurity, data, or DevOps rather than a single stack.",
+          "For the data program, brings a portfolio of analytics projects and working knowledge of Python, SQL, or R.",
+          "Explains how rotation exposure would inform their choice of a permanent data science or analytics role."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-IGNITE-015"
+        ]
+      },
+      {
+        "role_slug": "power_delivery_engineering",
+        "role_family": "Power delivery and engineering graduate roles",
+        "signals": [
+          "Connects engineering coursework or internships to grid, transmission, distribution, or generation work.",
+          "Shows awareness that the Associate Engineer track targets graduates within five years of an accredited engineering program.",
+          "Balances technical analysis with the reliability and safety constraints of operating assets."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-RECENTGRADS-014",
+          "NEXTERA_ENERGY-FIELD-009"
         ]
       }
     ]

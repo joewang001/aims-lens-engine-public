@@ -1,11 +1,10 @@
 {
-  "generated_at": "2026-10-28T18:35:00Z",
-  "run_date": "2026-10-28",
-  "weekday": 2,
+  "generated_at": "2026-10-29T13:35:35Z",
+  "run_date": "2026-10-29",
+  "weekday": 3,
   "week_start": "2026-10-26",
   "focus_dimensions": [
-    "company_judges",
-    "company_asks"
+    "role_variation"
   ],
   "weekly_new_company_targets": [
     "nextera-energy",

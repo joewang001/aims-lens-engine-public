@@ -12,7 +12,9 @@
   "focus_signals": [
     "Shows a portfolio with explicit decisions, tradeoffs, and rejected alternatives.",
     "Works across brand, product, content, visual, motion, or design engineering disciplines.",
-    "Collaborates with research, content strategy, product management, and engineering."
+    "Collaborates with research, content strategy, product management, and engineering.",
+    "Credits collaborators accurately while making their own contribution unmistakable.",
+    "Explains why the work mattered to the people it served, not only how it looked."
   ],
   "evidence_ids": [
     "ADOBE-OFFICIAL-001",
@@ -38,6 +40,8 @@
     "ADOBE-DEVBLOG-021",
     "ADOBE-DEVBLOG-022",
     "ADOBE-UNIVERSITY-023",
-    "ADOBE-SALES-ACADEMY-024"
+    "ADOBE-SALES-ACADEMY-024",
+    "ADOBE-DESIGN-INTERVIEW-025",
+    "ADOBE-DESIGN-PM-026"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "company_slug": "servicenow",
   "company": "ServiceNow",
-  "collected_at": "2026-10-28T13:35:00Z",
+  "collected_at": "2026-10-29T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -150,6 +150,48 @@
       ],
       "evidence_id": "SERVICENOW-LIFE-009",
       "date_accessed": "2026-10-28"
+    },
+    {
+      "evidence_id": "SERVICENOW-TEAMS-AI-ENG-010",
+      "source_type": "official_careers",
+      "title": "AI, Engineering, and Product teams",
+      "url": "https://careers.servicenow.com/teams/ai-engineering-product/",
+      "date_accessed": "2026-10-29",
+      "confidence": 0.84,
+      "public_safe_signal": "ServiceNow's AI, Engineering and Product careers page separates Forward Deployed Engineering, Platform and AI Engineering, Product Engineering, Developer Productivity, Global Cloud Services, Product Management, Quality Engineering and Global Customer Support, each with a distinct remit.",
+      "dimensions": [
+        "role_variation",
+        "company_says",
+        "company_asks"
+      ]
+    },
+    {
+      "evidence_id": "SERVICENOW-TEAMS-SALES-011",
+      "source_type": "official_careers",
+      "title": "Sales teams and customer-facing roles",
+      "url": "https://careers.servicenow.com/teams/sales/",
+      "date_accessed": "2026-10-29",
+      "confidence": 0.82,
+      "public_safe_signal": "The sales careers page distinguishes account executives, customer excellence covering expert services, customer success and renewals, digital sales, solution consultants and strategic alliances, and names customer wow as a core value alongside Fortune 500 reach and high renewal rates.",
+      "dimensions": [
+        "role_variation",
+        "company_judges",
+        "company_says"
+      ]
+    },
+    {
+      "evidence_id": "SERVICENOW-EARLY-CAREERS-012",
+      "source_type": "official_careers",
+      "title": "Early careers, Launchpad Academy, and ServiceNow University",
+      "url": "https://careers.servicenow.com/early-careers/",
+      "date_accessed": "2026-10-29",
+      "confidence": 0.83,
+      "public_safe_signal": "ServiceNow's early careers page covers internships and co-ops, full-time early-career roles, a year-long Launchpad Academy for new hires, a Discover ServiceNow exploration program, free ServiceNow University courses and certifications, and platform careers across partner and customer organizations through RiseUp.",
+      "dimensions": [
+        "role_variation",
+        "company_asks",
+        "honest_unknowns"
+      ]
     }
   ],
   "lens_updates": {
@@ -209,6 +251,14 @@
         "confidence": 0.83,
         "evidence_ids": [
           "SERVICENOW-AI-HIRING-008"
+        ]
+      },
+      {
+        "name": "Wow our customers",
+        "description": "ServiceNow's sales careers page names customer wow as a core value, describing it as active listening, relationship building, and going further than delivering the product, and ties that behavior to retention and referenceable customers.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "SERVICENOW-TEAMS-SALES-011"
         ]
       }
     ],
@@ -327,6 +377,46 @@
           "SERVICENOW-HOWWEHIRE-007"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For customer-facing technical roles, explains how they turned a customer problem into a configured solution and how adoption was measured.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "impact_results",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "SERVICENOW-TEAMS-AI-ENG-010",
+          "SERVICENOW-TEAMS-SALES-011"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For sales and solution-consulting roles, shows discovery, qualification, and multi-stakeholder work rather than product feature knowledge alone.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "structured_thinking",
+          "impact_results"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "SERVICENOW-TEAMS-SALES-011"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For early-career roles, shows self-directed platform learning through courses, certifications, or projects, and explains what they built or solved with it.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution",
+          "analytical_problem_solving"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "SERVICENOW-EARLY-CAREERS-012"
+        ],
+        "basis": "stated_by_company"
       }
     ],
     "anti_signals": [
@@ -378,6 +468,22 @@
         "confidence": 0.76,
         "evidence_ids": [
           "SERVICENOW-HOWWEHIRE-007"
+        ]
+      },
+      {
+        "anti_signal": "Assuming a technical role at a platform company has no customer, support, or adoption dimension.",
+        "risk_reason": "ServiceNow's engineering organization publicly includes Forward Deployed Engineering and Global Customer Support teams that work directly with customers, so a purely back-end framing misses part of the role landscape; this is a preparation signal, not an official disqualifier.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "SERVICENOW-TEAMS-AI-ENG-010"
+        ]
+      },
+      {
+        "anti_signal": "Treating sales as only quota-carrying account executives and ignoring solution consulting, customer success, renewals, or digital sales paths.",
+        "risk_reason": "The sales careers page separates five distinct customer-facing role types with different remits.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "SERVICENOW-TEAMS-SALES-011"
         ]
       }
     ],
@@ -515,6 +621,60 @@
           "Shows the decision was deliberate, not accidental.",
           "Reflects on the consequence and what it changed afterward."
         ]
+      },
+      {
+        "type": "forward_deployed_engineering_behavioral",
+        "generated_question": "Forward Deployed Engineers embed with customers to prove AI agents in production. Tell me about a time you built something inside a customer's environment under real constraints. How did you scope it, and what did the customer change as a result?",
+        "aims_dimensions": [
+          "ownership_execution",
+          "collaboration_communication",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Describes the customer's constraint and why a standard approach did not fit.",
+          "Shows how they scoped a first deliverable quickly.",
+          "Explains what became reusable beyond the one engagement.",
+          "Names the production outcome and who owned it after handover."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-TEAMS-AI-ENG-010"
+        ]
+      },
+      {
+        "type": "solution_consulting_behavioral",
+        "generated_question": "Describe a complex workflow problem you diagnosed for a customer. How did you separate the stated request from the underlying need, and how did you position a solution across stakeholders?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication",
+          "analytical_problem_solving"
+        ],
+        "strong_answer_signals": [
+          "Shows discovery questions that surfaced the real constraint.",
+          "Distinguishes technical fit from organisational readiness.",
+          "Explains how they handled a sceptical stakeholder.",
+          "Connects the recommendation to a measurable business result."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-TEAMS-SALES-011"
+        ]
+      },
+      {
+        "type": "early_career_learning_behavioral",
+        "generated_question": "What have you taught yourself on a platform or technology outside your formal coursework, and what did you build with it?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution",
+          "analytical_problem_solving"
+        ],
+        "strong_answer_signals": [
+          "Names the learning source and how they tested understanding.",
+          "Describes something concrete they built or fixed.",
+          "Explains a failure or limit they hit and how they worked around it.",
+          "Connects the learning to a role or team they want to join."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-EARLY-CAREERS-012"
+        ]
       }
     ],
     "role_overlays": [
@@ -524,7 +684,8 @@
         "signals": [
           "Connects platform or process choices to customer workflows, adoption, reliability, and measurable value.",
           "Balances product, technical, commercial, and change-management constraints."
-        ]
+        ],
+        "evidence_ids": []
       },
       {
         "role_slug": "ai_platform_and_governance",
@@ -570,7 +731,50 @@
         "role_family": "Engineering versus business and customer-facing hiring paths",
         "signals": [
           "Engineering-track candidates should expect a coding assessment; business and customer-facing tracks more often involve presentations or role walkthroughs.",
-          "Both paths are evaluated against the same stated values and use standard evaluation guides."
+          "Both paths are evaluated against the same stated values and use standard evaluation guides.",
+          "Within engineering, candidates can distinguish platform, product, forward-deployed, quality, cloud, and developer-productivity work.",
+          "Within customer-facing work, candidates can distinguish account executive, solution consulting, customer success, renewals, and digital sales paths."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-TEAMS-AI-ENG-010",
+          "SERVICENOW-TEAMS-SALES-011",
+          "SERVICENOW-HOWWEHIRE-007"
+        ]
+      },
+      {
+        "role_slug": "forward_deployed_and_support_engineering",
+        "role_family": "Forward-deployed and customer support engineering",
+        "signals": [
+          "Builds in the customer's environment and can explain what became reusable across engagements.",
+          "Balances speed of proof with production reliability and handover.",
+          "Treats support conversations as input to product quality rather than as a separate function."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-TEAMS-AI-ENG-010"
+        ]
+      },
+      {
+        "role_slug": "sales_and_solution_consulting",
+        "role_family": "Sales, solution consulting, and customer success",
+        "signals": [
+          "Shows discovery and qualification discipline rather than feature pitching.",
+          "Explains complex workflow solutions in business terms across multiple stakeholders.",
+          "Connects adoption and renewal outcomes to the customer's original problem."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-TEAMS-SALES-011"
+        ]
+      },
+      {
+        "role_slug": "early_career_and_ecosystem_learning",
+        "role_family": "Early-career and platform-ecosystem pathways",
+        "signals": [
+          "Uses ServiceNow University courses or certifications to build demonstrable platform skill.",
+          "Can describe a project or lab where that learning was applied.",
+          "Understands that platform careers also exist across partner and customer organizations, not only inside ServiceNow."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-EARLY-CAREERS-012"
         ]
       }
     ]

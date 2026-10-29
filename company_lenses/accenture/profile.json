@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-28",
+  "source_cutoff": "2026-10-29",
   "industries": [
     "consulting",
     "professional services",
@@ -199,6 +199,14 @@
       "confidence": 0.7,
       "evidence_ids": [
         "ACCENTURE-VIDEO-030"
+      ]
+    },
+    {
+      "name": "Creative work as a tech-powered discipline",
+      "description": "Accenture Song presents creative and design work as inseparable from technology and business relevance, describing its people as a culturally connected mix of creative professionals who solve brand, product, and experience problems at scale.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ACCENTURE-SONG-031"
       ]
     }
   ],
@@ -573,6 +581,44 @@
         "ACCENTURE-SCREENING-029"
       ],
       "basis": "stated_by_company"
+    },
+    {
+      "signal": "For creative and design roles, connects craft choices to brand relevance and measurable business value rather than aesthetics alone.",
+      "aims_dimensions": [
+        "impact_results",
+        "collaboration_communication",
+        "structured_thinking"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-SONG-031"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For security roles, shows depth in one domain and explains how it was applied from strategy through implementation for a client.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-SECURITY-032"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For security roles, points to current certifications or hands-on operating-centre or lab work alongside conceptual knowledge.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "analytical_problem_solving"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ACCENTURE-SECURITY-032"
+      ],
+      "basis": "stated_by_company"
     }
   ],
   "anti_signals": [
@@ -799,6 +845,22 @@
       "evidence_ids": [
         "ACCENTURE-SCREENING-029"
       ]
+    },
+    {
+      "anti_signal": "Treating an Accenture creative role as pure art direction with no commercial, technology, or client dimension.",
+      "risk_reason": "Accenture Song describes creative work as tech-powered and tied to brand relevance and business value; this is a preparation signal, not an official disqualifier.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ACCENTURE-SONG-031"
+      ]
+    },
+    {
+      "anti_signal": "Presenting security interest as tool familiarity only, with no threat, risk, or client-context reasoning.",
+      "risk_reason": "Accenture frames security work as spanning strategy, implementation, and client management across a large operating-centre network.",
+      "confidence": 0.73,
+      "evidence_ids": [
+        "ACCENTURE-SECURITY-032"
+      ]
     }
   ],
   "interview_patterns": [
@@ -816,11 +878,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 30,
-    "official_source_count": 30,
+    "source_count": 32,
+    "official_source_count": 32,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-28"
+    "last_reviewed": "2026-10-29"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Accenture hiring standard.",

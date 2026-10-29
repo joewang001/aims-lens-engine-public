@@ -4,6 +4,8 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| NEXTERA_ENERGY-RECENTGRADS-014 | official_careers | NextEra Energy careers for recent graduates | 2026-10-29 | 0.82 | NextEra's recent-graduate page separates entry paths: an Associate Engineer track for engineering graduates within the last five years, IT rotation programs, and a three-year finance and accounting leadership development program, each linked to its own job search. |
+| NEXTERA_ENERGY-IGNITE-015 | official_careers | Ignite digital and data analytics programs | 2026-10-29 | 0.84 | NextEra describes an Ignite Digital program of two years and four six-month rotations across application development, cloud, agile delivery, cybersecurity, data analytics, DevOps and infrastructure, plus a 12-month Ignite Data Analytics program requiring coding and a sample project portfolio, with two intakes a year. |
 | NEXTERA_ENERGY-INTERNS-010 | official_careers | NextEra Energy internships | 2026-10-28 | 0.82 | NextEra Energy says most internships last 10 to 12 weeks, treats every intern as a potential full-time employee, requires a 3.00 GPA, full-time enrollment in a bachelor's program or higher, and U.S. work authorization, and posts summer roles from September to November with offers targeted by December to February. |
 | NEXTERA_ENERGY-VETERANS-011 | official_careers | Military and veteran careers at NextEra Energy | 2026-10-28 | 0.76 | NextEra Energy says veterans strengthen its culture through life experience, discipline, creativity, and technical expertise, runs a Department of Defense SkillBridge program with on-the-job industry training, and supports a VETNEXT employee resource group for military families. |
 | NEXTERA_ENERGY-AWARDS-012 | official_company | NextEra Energy awards and recognition | 2026-10-28 | 0.70 | NextEra Energy's awards page cites 2026 Forbes America's Best Large Employers, repeated Fortune Most Admired listings, and 2025 HIRE Vets Platinum recognition, presenting external employer and veteran-hiring recognition as evidence of its people proposition; these are company-reported awards. |
@@ -38,3 +40,5 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.nexteraenergy.com/careers/join-our-team/military-veterans.html
 - https://www.nexteraenergy.com/about-us/awards.html
 - https://www.nexteraenergy.com/careers/getting-hired/employment-scams.html
+- https://www.nexteraenergy.com/careers/join-our-team/recent-grads.html
+- https://www.nexteraenergy.com/careers/join-our-team/recent-grads/emerging-leaders.html
