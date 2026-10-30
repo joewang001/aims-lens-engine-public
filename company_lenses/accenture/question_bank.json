@@ -580,6 +580,46 @@
       "evidence_ids": [
         "ACCENTURE-SECURITY-032"
       ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-023",
+      "type": "ai_value_realization_behavioral",
+      "generated_question": "Describe an AI program you worked on where adoption was high but value was unclear. What did you change in the process, roles, or measurement to test whether it was actually working?",
+      "aims_dimensions": [
+        "impact_results",
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Separates usage from value and defines the outcome before scaling.",
+        "Names the process or role change that had to accompany the tool.",
+        "Explains what was measured and what the baseline was.",
+        "Describes a decision to stop, narrow, or redesign the program.",
+        "Accounts for review load, adoption cost, or change fatigue."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-PULSE-033"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-024",
+      "type": "ai_review_capacity_behavioral",
+      "generated_question": "Tell me about a time you introduced a tool that increased the pace of work or the review burden. How did you keep quality and sustainability while people adapted?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Acknowledges the added review or learning load rather than hiding it.",
+        "Changes the workflow, staffing, or quality checks to absorb it.",
+        "Uses feedback from the people doing the work.",
+        "Measures whether the pace increase was sustainable.",
+        "Explains what was deliberately not automated."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-PULSE-033"
+      ]
     }
   ]
 }

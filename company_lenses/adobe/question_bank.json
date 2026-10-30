@@ -533,6 +533,46 @@
       "evidence_ids": [
         "ADOBE-DESIGN-PM-026"
       ]
+    },
+    {
+      "question_id": "ADOBE-Q-022",
+      "type": "security_remediation_behavioral",
+      "generated_question": "Describe a critical vulnerability you had to manage before a full fix was available. How did you reduce exposure, and what did you verify before calling it contained?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Defines the actual exposure, not just the vulnerability label.",
+        "Explains the compensating controls used and their limits.",
+        "Names how coverage was verified rather than assumed.",
+        "Communicates risk and status to affected owners.",
+        "Describes what changed after the fix shipped."
+      ],
+      "evidence_ids": [
+        "ADOBE-SECBLOG-027"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-023",
+      "type": "supply_chain_security_behavioral",
+      "generated_question": "Tell me about a third-party or open-source dependency that created risk for something you owned. How did you find it, prioritize it, and decide what to change?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Shows how the dependency was discovered and inventoried.",
+        "Prioritizes by reachability and business impact, not only by score.",
+        "Describes mitigation while waiting for an upstream fix.",
+        "Names the owner and the monitoring that continued afterward.",
+        "Explains the tradeoff between removing, isolating, and accepting the dependency."
+      ],
+      "evidence_ids": [
+        "ADOBE-SECBLOG-027"
+      ]
     }
   ]
 }

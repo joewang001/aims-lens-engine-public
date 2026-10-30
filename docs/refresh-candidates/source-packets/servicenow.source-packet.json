@@ -1,7 +1,7 @@
 {
   "company_slug": "servicenow",
   "company": "ServiceNow",
-  "collected_at": "2026-10-29T13:30:00Z",
+  "collected_at": "2026-10-30T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -192,6 +192,21 @@
         "company_asks",
         "honest_unknowns"
       ]
+    },
+    {
+      "evidence_id": "SERVICENOW-TRUST-013",
+      "source_type": "official_company",
+      "title": "ServiceNow Trust FAQ: shared responsibility, audit rights, and sub-processors",
+      "url": "https://www.servicenow.com/company/trust/faq.html",
+      "date_accessed": "2026-10-30",
+      "confidence": 0.85,
+      "public_safe_signal": "ServiceNow's trust FAQ says customers are data controllers who must judge whether its data-agnostic security program fits their data, and that ServiceNow does not review customer content in ordinary operations. Customers can request audit materials covering ISO 27001/27018 and SOC 1/SOC 2 Type 2; new sub-processors come with an objection right; incident notices go to the support-portal contact.",
+      "dimensions": [
+        "risk_warnings",
+        "company_judges",
+        "role_variation",
+        "honest_unknowns"
+      ]
     }
   ],
   "lens_updates": {
@@ -259,6 +274,14 @@
         "confidence": 0.78,
         "evidence_ids": [
           "SERVICENOW-TEAMS-SALES-011"
+        ]
+      },
+      {
+        "name": "Clarity about the platform's responsibility boundary",
+        "description": "ServiceNow's trust material separates what the provider controls from what the customer must own: customers are treated as data controllers, are expected to assess whether the security program fits their data, and are responsible for keeping notification contacts current. The company presents this boundary as part of transparency rather than as an exception.",
+        "confidence": 0.82,
+        "evidence_ids": [
+          "SERVICENOW-TRUST-013"
         ]
       }
     ],
@@ -417,6 +440,19 @@
           "SERVICENOW-EARLY-CAREERS-012"
         ],
         "basis": "stated_by_company"
+      },
+      {
+        "signal": "Separates provider-owned controls from customer-owned controls when discussing security, privacy, or compliance.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "confidence": 0.82,
+        "evidence_ids": [
+          "SERVICENOW-TRUST-013"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -484,6 +520,30 @@
         "confidence": 0.72,
         "evidence_ids": [
           "SERVICENOW-TEAMS-SALES-011"
+        ]
+      },
+      {
+        "anti_signal": "Describing cloud security as wholly the provider's responsibility, with no account of customer configuration, data classification, or shared-responsibility boundaries.",
+        "risk_reason": "ServiceNow's trust FAQ assigns controller duties and the sufficiency assessment to customers, and says the company does not review customer content in ordinary operations. Provider controls do not cover customer-side choices.",
+        "confidence": 0.85,
+        "evidence_ids": [
+          "SERVICENOW-TRUST-013"
+        ]
+      },
+      {
+        "anti_signal": "Treating an audit report or compliance badge as proof that a specific deployment is secure.",
+        "risk_reason": "The FAQ presents audit materials as inputs for the customer's own review of whether the security program is sufficient. Certification scope and the customer's configuration still determine what the evidence covers.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "SERVICENOW-TRUST-013"
+        ]
+      },
+      {
+        "anti_signal": "Assuming a security-incident notice will reach anyone at the customer automatically.",
+        "risk_reason": "The FAQ says notices go to the contact recorded in the customer's support portal, which makes maintaining that contact a customer responsibility.",
+        "confidence": 0.86,
+        "evidence_ids": [
+          "SERVICENOW-TRUST-013"
         ]
       }
     ],
@@ -675,6 +735,44 @@
         "evidence_ids": [
           "SERVICENOW-EARLY-CAREERS-012"
         ]
+      },
+      {
+        "type": "shared_responsibility_behavioral",
+        "generated_question": "ServiceNow's trust material says customers remain responsible for judging whether its security program fits their data. Describe a time you relied on a platform or vendor you did not control. How did you divide responsibility, and what did you verify yourself?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Names which controls belonged to the provider and which to the customer.",
+          "Explains the evidence used, such as audit scope, configuration review, or testing.",
+          "Identifies residual risk that could not be transferred.",
+          "Describes escalation and notification paths, including who receives them.",
+          "Shows a decision that changed because of what the evidence did not cover."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-TRUST-013"
+        ]
+      },
+      {
+        "type": "third_party_change_behavioral",
+        "generated_question": "Tell me about a time a vendor added a sub-processor, changed a dependency, or altered terms in a way that affected your service. How did you assess the change and decide whether to accept, mitigate, or object?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Identifies what changed and which data, systems, or customers were affected.",
+          "Separates contractual rights from practical controls.",
+          "Names the evidence used to judge the change rather than relying on the vendor's assurance.",
+          "Describes who was consulted and how the decision was recorded.",
+          "Explains what would trigger escalation or exit."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-TRUST-013"
+        ]
       }
     ],
     "role_overlays": [
@@ -775,6 +873,19 @@
         ],
         "evidence_ids": [
           "SERVICENOW-EARLY-CAREERS-012"
+        ]
+      },
+      {
+        "role_slug": "platform_security_and_compliance",
+        "role_family": "Platform security, privacy, and compliance roles",
+        "signals": [
+          "Maps shared-responsibility boundaries across provider, customer, and sub-processor controls.",
+          "Reads audit scope and certification coverage rather than treating a badge as proof.",
+          "Maintains notification paths and tests whether incident information reaches the right owner.",
+          "Assesses sub-processor and dependency changes for data, continuity, and exit risk."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-TRUST-013"
         ]
       }
     ]

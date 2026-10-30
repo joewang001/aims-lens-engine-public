@@ -1,7 +1,7 @@
 {
   "company_slug": "adobe",
   "company": "Adobe",
-  "collected_at": "2026-10-29T13:30:00Z",
+  "collected_at": "2026-10-30T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -380,6 +380,21 @@
         "company_asks",
         "honest_unknowns"
       ]
+    },
+    {
+      "evidence_id": "ADOBE-SECBLOG-027",
+      "source_type": "official_engineering_blog",
+      "title": "Strengthening infrastructure and supply chain security in an AI-accelerated threat landscape",
+      "url": "https://blog.adobe.com/security/strengthening-infrastructure-and-supply-chain-security-in-an-ai-accelerated-threat-landscape",
+      "date_accessed": "2026-10-30",
+      "confidence": 0.86,
+      "public_safe_signal": "Adobe's security blog says AI accelerates vulnerability discovery and that patching takes time in practice, so Adobe uses AI-assisted exposure detection, virtual patching and layered mitigations during remediation windows, infrastructure inventory and ownership, dependency and open-source monitoring, contextual risk prioritization, and sandboxing or malware analysis. It states that static severity scores alone can misstate real exposure and that upstream fixes may lag.",
+      "dimensions": [
+        "risk_warnings",
+        "evidence_valued",
+        "role_variation",
+        "honest_unknowns"
+      ]
     }
   ],
   "lens_updates": {
@@ -548,6 +563,14 @@
         "confidence": 0.7,
         "evidence_ids": [
           "ADOBE-SALES-ACADEMY-024"
+        ]
+      },
+      {
+        "name": "Security as continuous operational discipline",
+        "description": "Adobe's security writing frames resilience as ongoing work in visibility, ownership, monitoring, layered mitigation, and adaptation across infrastructure and third-party dependencies, not as a one-time patch cycle. It explicitly notes that unknown or unmaintained systems create risk and that fixes can lag.",
+        "confidence": 0.84,
+        "evidence_ids": [
+          "ADOBE-SECBLOG-027"
         ]
       }
     ],
@@ -927,6 +950,19 @@
           "ADOBE-DESIGN-PM-026"
         ],
         "basis": "stated_by_company"
+      },
+      {
+        "signal": "Explains risk in terms of real exposure and compensating controls rather than severity labels alone.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "confidence": 0.84,
+        "evidence_ids": [
+          "ADOBE-SECBLOG-027"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -1131,6 +1167,38 @@
         "confidence": 0.76,
         "evidence_ids": [
           "ADOBE-DESIGN-INTERVIEW-025"
+        ]
+      },
+      {
+        "anti_signal": "Treating a vulnerability as contained once a patch ticket is open, without describing the exposure window or compensating controls.",
+        "risk_reason": "Adobe's blog notes that patching takes time in practice and describes virtual patching and layered mitigations used during remediation windows. A ticket is not evidence that exposure was reduced.",
+        "confidence": 0.86,
+        "evidence_ids": [
+          "ADOBE-SECBLOG-027"
+        ]
+      },
+      {
+        "anti_signal": "Prioritizing remediation by severity score alone, without deployment context, internet reachability, or existing controls.",
+        "risk_reason": "The blog says static severity scores do not always reflect real-world risk and that the same vulnerability can present different exposure depending on architecture and reachability.",
+        "confidence": 0.88,
+        "evidence_ids": [
+          "ADOBE-SECBLOG-027"
+        ]
+      },
+      {
+        "anti_signal": "Assuming unmanaged or forgotten infrastructure is low risk because no team has claimed it.",
+        "risk_reason": "Adobe's blog names abandoned staging environments, decommissioned services with lingering credentials, and unmanaged infrastructure as exposure risks, and argues that organizations cannot protect assets they have not inventoried.",
+        "confidence": 0.87,
+        "evidence_ids": [
+          "ADOBE-SECBLOG-027"
+        ]
+      },
+      {
+        "anti_signal": "Treating third-party or open-source dependency risk as a procurement checkbox rather than a lifecycle control.",
+        "risk_reason": "The blog describes dependency management, continuous monitoring, sandboxing, and malware analysis across the software lifecycle, and notes that upstream fixes may not be immediately available.",
+        "confidence": 0.84,
+        "evidence_ids": [
+          "ADOBE-SECBLOG-027"
         ]
       }
     ],
@@ -1486,6 +1554,44 @@
         "evidence_ids": [
           "ADOBE-DESIGN-PM-026"
         ]
+      },
+      {
+        "type": "security_remediation_behavioral",
+        "generated_question": "Describe a critical vulnerability you had to manage before a full fix was available. How did you reduce exposure, and what did you verify before calling it contained?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the actual exposure, not just the vulnerability label.",
+          "Explains the compensating controls used and their limits.",
+          "Names how coverage was verified rather than assumed.",
+          "Communicates risk and status to affected owners.",
+          "Describes what changed after the fix shipped."
+        ],
+        "evidence_ids": [
+          "ADOBE-SECBLOG-027"
+        ]
+      },
+      {
+        "type": "supply_chain_security_behavioral",
+        "generated_question": "Tell me about a third-party or open-source dependency that created risk for something you owned. How did you find it, prioritize it, and decide what to change?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "analytical_problem_solving",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Shows how the dependency was discovered and inventoried.",
+          "Prioritizes by reachability and business impact, not only by score.",
+          "Describes mitigation while waiting for an upstream fix.",
+          "Names the owner and the monitoring that continued afterward.",
+          "Explains the tradeoff between removing, isolating, and accepting the dependency."
+        ],
+        "evidence_ids": [
+          "ADOBE-SECBLOG-027"
+        ]
       }
     ],
     "role_overlays": [
@@ -1610,6 +1716,20 @@
         "evidence_ids": [
           "ADOBE-DESIGN-PM-026",
           "ADOBE-DESIGN-INTERVIEW-025"
+        ]
+      },
+      {
+        "role_slug": "security_engineering_and_resilience",
+        "role_family": "Security engineering, vulnerability management, and resilience",
+        "signals": [
+          "Prioritizes by real exposure, reachability, and business context rather than severity alone.",
+          "Designs compensating controls for the window before a full fix is available.",
+          "Treats inventory, ownership, and monitoring as prerequisites for security.",
+          "Manages third-party and open-source risk across the software lifecycle.",
+          "Explains residual risk and what would change the decision."
+        ],
+        "evidence_ids": [
+          "ADOBE-SECBLOG-027"
         ]
       }
     ]
