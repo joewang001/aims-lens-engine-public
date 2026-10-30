@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-26",
-  "source_cutoff": "2026-10-29",
+  "source_cutoff": "2026-10-30",
   "industries": [
     "technology",
     "enterprise software",
@@ -101,6 +101,14 @@
       "confidence": 0.78,
       "evidence_ids": [
         "SERVICENOW-TEAMS-SALES-011"
+      ]
+    },
+    {
+      "name": "Clarity about the platform's responsibility boundary",
+      "description": "ServiceNow's trust material separates what the provider controls from what the customer must own: customers are treated as data controllers, are expected to assess whether the security program fits their data, and are responsible for keeping notification contacts current. The company presents this boundary as part of transparency rather than as an exception.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "SERVICENOW-TRUST-013"
       ]
     }
   ],
@@ -294,6 +302,19 @@
         "SERVICENOW-EARLY-CAREERS-012"
       ],
       "basis": "stated_by_company"
+    },
+    {
+      "signal": "Separates provider-owned controls from customer-owned controls when discussing security, privacy, or compliance.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.82,
+      "evidence_ids": [
+        "SERVICENOW-TRUST-013"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -371,6 +392,30 @@
       "evidence_ids": [
         "SERVICENOW-TEAMS-SALES-011"
       ]
+    },
+    {
+      "anti_signal": "Describing cloud security as wholly the provider's responsibility, with no account of customer configuration, data classification, or shared-responsibility boundaries.",
+      "risk_reason": "ServiceNow's trust FAQ assigns controller duties and the sufficiency assessment to customers, and says the company does not review customer content in ordinary operations. Provider controls do not cover customer-side choices.",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "SERVICENOW-TRUST-013"
+      ]
+    },
+    {
+      "anti_signal": "Treating an audit report or compliance badge as proof that a specific deployment is secure.",
+      "risk_reason": "The FAQ presents audit materials as inputs for the customer's own review of whether the security program is sufficient. Certification scope and the customer's configuration still determine what the evidence covers.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "SERVICENOW-TRUST-013"
+      ]
+    },
+    {
+      "anti_signal": "Assuming a security-incident notice will reach anyone at the customer automatically.",
+      "risk_reason": "The FAQ says notices go to the contact recorded in the customer's support portal, which makes maintaining that contact a customer responsibility.",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "SERVICENOW-TRUST-013"
+      ]
     }
   ],
   "interview_patterns": [
@@ -388,11 +433,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 12,
-    "official_source_count": 12,
+    "source_count": 13,
+    "official_source_count": 13,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-29"
+    "last_reviewed": "2026-10-30"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official ServiceNow hiring standard.",

@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-29",
+  "source_cutoff": "2026-10-30",
   "industries": [
     "technology",
     "creative software",
@@ -201,6 +201,14 @@
       "confidence": 0.7,
       "evidence_ids": [
         "ADOBE-SALES-ACADEMY-024"
+      ]
+    },
+    {
+      "name": "Security as continuous operational discipline",
+      "description": "Adobe's security writing frames resilience as ongoing work in visibility, ownership, monitoring, layered mitigation, and adaptation across infrastructure and third-party dependencies, not as a one-time patch cycle. It explicitly notes that unknown or unmaintained systems create risk and that fixes can lag.",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ADOBE-SECBLOG-027"
       ]
     }
   ],
@@ -616,6 +624,19 @@
         "ADOBE-DESIGN-PM-026"
       ],
       "basis": "stated_by_company"
+    },
+    {
+      "signal": "Explains risk in terms of real exposure and compensating controls rather than severity labels alone.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ADOBE-SECBLOG-027"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -831,6 +852,38 @@
       "evidence_ids": [
         "ADOBE-DESIGN-INTERVIEW-025"
       ]
+    },
+    {
+      "anti_signal": "Treating a vulnerability as contained once a patch ticket is open, without describing the exposure window or compensating controls.",
+      "risk_reason": "Adobe's blog notes that patching takes time in practice and describes virtual patching and layered mitigations used during remediation windows. A ticket is not evidence that exposure was reduced.",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ADOBE-SECBLOG-027"
+      ]
+    },
+    {
+      "anti_signal": "Prioritizing remediation by severity score alone, without deployment context, internet reachability, or existing controls.",
+      "risk_reason": "The blog says static severity scores do not always reflect real-world risk and that the same vulnerability can present different exposure depending on architecture and reachability.",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ADOBE-SECBLOG-027"
+      ]
+    },
+    {
+      "anti_signal": "Assuming unmanaged or forgotten infrastructure is low risk because no team has claimed it.",
+      "risk_reason": "Adobe's blog names abandoned staging environments, decommissioned services with lingering credentials, and unmanaged infrastructure as exposure risks, and argues that organizations cannot protect assets they have not inventoried.",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ADOBE-SECBLOG-027"
+      ]
+    },
+    {
+      "anti_signal": "Treating third-party or open-source dependency risk as a procurement checkbox rather than a lifecycle control.",
+      "risk_reason": "The blog describes dependency management, continuous monitoring, sandboxing, and malware analysis across the software lifecycle, and notes that upstream fixes may not be immediately available.",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ADOBE-SECBLOG-027"
+      ]
     }
   ],
   "interview_patterns": [
@@ -848,11 +901,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 26,
-    "official_source_count": 26,
+    "source_count": 27,
+    "official_source_count": 27,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-29"
+    "last_reviewed": "2026-10-30"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Adobe hiring standard.",

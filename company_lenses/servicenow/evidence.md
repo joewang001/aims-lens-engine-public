@@ -4,6 +4,7 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| SERVICENOW-TRUST-013 | official_company | ServiceNow Trust FAQ: shared responsibility, audit rights, and sub-processors | 2026-10-30 | 0.85 | ServiceNow's trust FAQ says customers are data controllers who must judge whether its data-agnostic security program fits their data, and that ServiceNow does not review customer content in ordinary operations. Customers can request audit materials covering ISO 27001/27018 and SOC 1/SOC 2 Type 2; new sub-processors come with an objection right; incident notices go to the support-portal contact. |
 | SERVICENOW-TEAMS-AI-ENG-010 | official_careers | AI, Engineering, and Product teams | 2026-10-29 | 0.84 | ServiceNow's AI, Engineering and Product careers page separates Forward Deployed Engineering, Platform and AI Engineering, Product Engineering, Developer Productivity, Global Cloud Services, Product Management, Quality Engineering and Global Customer Support, each with a distinct remit. |
 | SERVICENOW-TEAMS-SALES-011 | official_careers | Sales teams and customer-facing roles | 2026-10-29 | 0.82 | The sales careers page distinguishes account executives, customer excellence covering expert services, customer success and renewals, digital sales, solution consultants and strategic alliances, and names customer wow as a core value alongside Fortune 500 reach and high renewal rates. |
 | SERVICENOW-EARLY-CAREERS-012 | official_careers | Early careers, Launchpad Academy, and ServiceNow University | 2026-10-29 | 0.83 | ServiceNow's early careers page covers internships and co-ops, full-time early-career roles, a year-long Launchpad Academy for new hires, a Discover ServiceNow exploration program, free ServiceNow University courses and certifications, and platform careers across partner and customer organizations through RiseUp. |
@@ -36,3 +37,4 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://careers.servicenow.com/teams/ai-engineering-product/
 - https://careers.servicenow.com/teams/sales/
 - https://careers.servicenow.com/early-careers/
+- https://www.servicenow.com/company/trust/faq.html

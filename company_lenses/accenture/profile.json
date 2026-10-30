@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-29",
+  "source_cutoff": "2026-10-30",
   "industries": [
     "consulting",
     "professional services",
@@ -207,6 +207,14 @@
       "confidence": 0.76,
       "evidence_ids": [
         "ACCENTURE-SONG-031"
+      ]
+    },
+    {
+      "name": "Adoption is not the same as value",
+      "description": "Accenture's October 2026 Pulse of Change separates widespread AI use from realized value: daily use rose, but only 15% of leaders reported redesigning end-to-end processes, 20% reported actively deploying agents, and 25% reported widespread sustained value. The report frames process and operating-model change as the missing layer rather than more tool adoption.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ACCENTURE-PULSE-033"
       ]
     }
   ],
@@ -619,6 +627,19 @@
         "ACCENTURE-SECURITY-032"
       ],
       "basis": "stated_by_company"
+    },
+    {
+      "signal": "Distinguishes adoption or usage metrics from value metrics and can name the process change behind them.",
+      "aims_dimensions": [
+        "impact_results",
+        "analytical_problem_solving",
+        "structured_thinking"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ACCENTURE-PULSE-033"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -861,6 +882,30 @@
       "evidence_ids": [
         "ACCENTURE-SECURITY-032"
       ]
+    },
+    {
+      "anti_signal": "Presenting an AI program as transformative because adoption is high, without evidence that processes, roles, or measurement changed.",
+      "risk_reason": "Accenture's survey finds rising daily use alongside much lower rates of end-to-end process redesign and sustained value. Adoption alone is not the outcome the report treats as meaningful.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ACCENTURE-PULSE-033"
+      ]
+    },
+    {
+      "anti_signal": "Quoting AI productivity gains without accounting for added review load, pace, or the cost of keeping skills current.",
+      "risk_reason": "The same survey reports that half of employees say AI increased the expected speed of work and the need to review outputs, and 48% say rapid tool change makes it hard to keep current.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ACCENTURE-PULSE-033"
+      ]
+    },
+    {
+      "anti_signal": "Using a market survey of external leaders as evidence of Accenture's own hiring plans.",
+      "risk_reason": "Pulse of Change surveys leaders and employees across many organizations. It is not a disclosure of Accenture headcount or recruiting targets, and treating it as one misstates the source.",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ACCENTURE-PULSE-033"
+      ]
     }
   ],
   "interview_patterns": [
@@ -878,11 +923,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 32,
-    "official_source_count": 32,
+    "source_count": 33,
+    "official_source_count": 33,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-29"
+    "last_reviewed": "2026-10-30"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Accenture hiring standard.",

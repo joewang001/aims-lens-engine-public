@@ -289,6 +289,46 @@
       "evidence_ids": [
         "SERVICENOW-EARLY-CAREERS-012"
       ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-013",
+      "type": "shared_responsibility_behavioral",
+      "generated_question": "ServiceNow's trust material says customers remain responsible for judging whether its security program fits their data. Describe a time you relied on a platform or vendor you did not control. How did you divide responsibility, and what did you verify yourself?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names which controls belonged to the provider and which to the customer.",
+        "Explains the evidence used, such as audit scope, configuration review, or testing.",
+        "Identifies residual risk that could not be transferred.",
+        "Describes escalation and notification paths, including who receives them.",
+        "Shows a decision that changed because of what the evidence did not cover."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-TRUST-013"
+      ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-014",
+      "type": "third_party_change_behavioral",
+      "generated_question": "Tell me about a time a vendor added a sub-processor, changed a dependency, or altered terms in a way that affected your service. How did you assess the change and decide whether to accept, mitigate, or object?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Identifies what changed and which data, systems, or customers were affected.",
+        "Separates contractual rights from practical controls.",
+        "Names the evidence used to judge the change rather than relying on the vendor's assurance.",
+        "Describes who was consulted and how the decision was recorded.",
+        "Explains what would trigger escalation or exit."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-TRUST-013"
+      ]
     }
   ]
 }

@@ -1,0 +1,35 @@
+{
+  "company": "NextEra Energy",
+  "role_family": "Merger integration, regulatory affairs, and corporate development",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Sequences work around approval milestones and distinguishes reversible from irreversible commitments.",
+    "Translates regulatory conditions, employee commitments, and community commitments into operating plans.",
+    "Communicates what is decided, proposed, or unknown to affected teams without encouraging speculation."
+  ],
+  "evidence_ids": [
+    "NEXTERA_ENERGY-OFFICIAL-001",
+    "NEXTERA_ENERGY-CAREERS-002",
+    "NEXTERA_ENERGY-ABOUT-003",
+    "NEXTERA_ENERGY-CULTURE-004",
+    "NEXTERA_ENERGY-INNOVATION-005",
+    "NEXTERA_ENERGY-HIRING-006",
+    "NEXTERA_ENERGY-TEST-007",
+    "NEXTERA_ENERGY-CORPORATE-008",
+    "NEXTERA_ENERGY-FIELD-009",
+    "NEXTERA_ENERGY-INTERNS-010",
+    "NEXTERA_ENERGY-VETERANS-011",
+    "NEXTERA_ENERGY-AWARDS-012",
+    "NEXTERA_ENERGY-SCAM-013",
+    "NEXTERA_ENERGY-RECENTGRADS-014",
+    "NEXTERA_ENERGY-IGNITE-015",
+    "NEXTERA_ENERGY-MERGER-016"
+  ]
+}

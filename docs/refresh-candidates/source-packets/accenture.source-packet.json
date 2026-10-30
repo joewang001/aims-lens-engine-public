@@ -1,7 +1,7 @@
 {
   "company_slug": "accenture",
   "company": "Accenture",
-  "collected_at": "2026-10-29T13:30:00Z",
+  "collected_at": "2026-10-30T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -453,6 +453,22 @@
         "company_asks",
         "evidence_valued"
       ]
+    },
+    {
+      "evidence_id": "ACCENTURE-PULSE-033",
+      "source_type": "official_company",
+      "title": "Accenture Pulse of Change, October 2026",
+      "url": "https://www.accenture.com/en/insights/pulse-of-change",
+      "date_accessed": "2026-10-30",
+      "confidence": 0.8,
+      "public_safe_signal": "Accenture's October 19, 2026 Pulse of Change surveys 3,000 C-suite leaders and 3,000 employees in 19 industries and 21 countries (July-August 2026). It reports 61% of leaders expect hiring to increase, down from 74% in January; 15% redesign end-to-end processes and 20% deploy agents; 25% report sustained AI value; 50% of employees report higher expected speed and review load. It is a market survey, not Accenture's hiring plan.",
+      "dimensions": [
+        "risk_warnings",
+        "company_says",
+        "evidence_valued",
+        "honest_unknowns",
+        "role_variation"
+      ]
     }
   ],
   "lens_updates": {
@@ -629,6 +645,14 @@
         "confidence": 0.76,
         "evidence_ids": [
           "ACCENTURE-SONG-031"
+        ]
+      },
+      {
+        "name": "Adoption is not the same as value",
+        "description": "Accenture's October 2026 Pulse of Change separates widespread AI use from realized value: daily use rose, but only 15% of leaders reported redesigning end-to-end processes, 20% reported actively deploying agents, and 25% reported widespread sustained value. The report frames process and operating-model change as the missing layer rather than more tool adoption.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ACCENTURE-PULSE-033"
         ]
       }
     ],
@@ -1006,6 +1030,19 @@
           "ACCENTURE-SECURITY-032"
         ],
         "basis": "stated_by_company"
+      },
+      {
+        "signal": "Distinguishes adoption or usage metrics from value metrics and can name the process change behind them.",
+        "aims_dimensions": [
+          "impact_results",
+          "analytical_problem_solving",
+          "structured_thinking"
+        ],
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ACCENTURE-PULSE-033"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -1238,6 +1275,30 @@
         "confidence": 0.73,
         "evidence_ids": [
           "ACCENTURE-SECURITY-032"
+        ]
+      },
+      {
+        "anti_signal": "Presenting an AI program as transformative because adoption is high, without evidence that processes, roles, or measurement changed.",
+        "risk_reason": "Accenture's survey finds rising daily use alongside much lower rates of end-to-end process redesign and sustained value. Adoption alone is not the outcome the report treats as meaningful.",
+        "confidence": 0.82,
+        "evidence_ids": [
+          "ACCENTURE-PULSE-033"
+        ]
+      },
+      {
+        "anti_signal": "Quoting AI productivity gains without accounting for added review load, pace, or the cost of keeping skills current.",
+        "risk_reason": "The same survey reports that half of employees say AI increased the expected speed of work and the need to review outputs, and 48% say rapid tool change makes it hard to keep current.",
+        "confidence": 0.82,
+        "evidence_ids": [
+          "ACCENTURE-PULSE-033"
+        ]
+      },
+      {
+        "anti_signal": "Using a market survey of external leaders as evidence of Accenture's own hiring plans.",
+        "risk_reason": "Pulse of Change surveys leaders and employees across many organizations. It is not a disclosure of Accenture headcount or recruiting targets, and treating it as one misstates the source.",
+        "confidence": 0.86,
+        "evidence_ids": [
+          "ACCENTURE-PULSE-033"
         ]
       }
     ],
@@ -1608,6 +1669,44 @@
         "evidence_ids": [
           "ACCENTURE-SECURITY-032"
         ]
+      },
+      {
+        "type": "ai_value_realization_behavioral",
+        "generated_question": "Describe an AI program you worked on where adoption was high but value was unclear. What did you change in the process, roles, or measurement to test whether it was actually working?",
+        "aims_dimensions": [
+          "impact_results",
+          "analytical_problem_solving",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Separates usage from value and defines the outcome before scaling.",
+          "Names the process or role change that had to accompany the tool.",
+          "Explains what was measured and what the baseline was.",
+          "Describes a decision to stop, narrow, or redesign the program.",
+          "Accounts for review load, adoption cost, or change fatigue."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-PULSE-033"
+        ]
+      },
+      {
+        "type": "ai_review_capacity_behavioral",
+        "generated_question": "Tell me about a time you introduced a tool that increased the pace of work or the review burden. How did you keep quality and sustainability while people adapted?",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "ownership_execution",
+          "growth_mindset"
+        ],
+        "strong_answer_signals": [
+          "Acknowledges the added review or learning load rather than hiding it.",
+          "Changes the workflow, staffing, or quality checks to absorb it.",
+          "Uses feedback from the people doing the work.",
+          "Measures whether the pace increase was sustainable.",
+          "Explains what was deliberately not automated."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-PULSE-033"
+        ]
       }
     ],
     "role_overlays": [
@@ -1762,6 +1861,20 @@
         ],
         "evidence_ids": [
           "ACCENTURE-SECURITY-032"
+        ]
+      },
+      {
+        "role_slug": "ai_transformation_and_value_realization",
+        "role_family": "AI transformation, operating-model change, and value realization",
+        "signals": [
+          "Connects AI adoption to process redesign, role change, and measurable value.",
+          "Separates usage metrics from outcome metrics and states the baseline.",
+          "Accounts for review capacity, change fatigue, and the cost of keeping skills current.",
+          "Uses market evidence with its scope and limitations intact.",
+          "Knows when to stop or narrow a program that is not producing sustained value."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-PULSE-033"
         ]
       }
     ]

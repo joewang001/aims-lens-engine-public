@@ -1,7 +1,7 @@
 {
   "company_slug": "nextera-energy",
   "company": "NextEra Energy",
-  "collected_at": "2026-10-29T13:30:00Z",
+  "collected_at": "2026-10-30T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -232,6 +232,21 @@
         "evidence_valued",
         "company_judges"
       ]
+    },
+    {
+      "evidence_id": "NEXTERA_ENERGY-MERGER-016",
+      "source_type": "official_company",
+      "title": "NextEra Energy and Dominion Energy proposed combination announcement",
+      "url": "https://newsroom.nexteraenergy.com/2026-05-18-NextEra-Energy-and-Dominion-Energy-to-Combine,-Creating-the-Worlds-Largest-Regulated-Electric-Utility-Business-and-North-Americas-Premier-Energy-Infrastructure-Platform-Benefiting-Customers?l=12",
+      "date_accessed": "2026-10-30",
+      "confidence": 0.87,
+      "public_safe_signal": "NextEra Energy's May 18, 2026 release describes an all-stock agreement to combine with Dominion Energy, expected to close in 12 to 18 months subject to shareholder votes, HSR review, and other regulatory approvals. It lists approval delays, failure to realize expected benefits, management distraction, and difficulty hiring or retaining employees as risks, and states post-close job, pay, and benefits protection for Dominion employees.",
+      "dimensions": [
+        "risk_warnings",
+        "company_says",
+        "role_variation",
+        "honest_unknowns"
+      ]
     }
   ],
   "lens_updates": {
@@ -301,6 +316,14 @@
         "evidence_ids": [
           "NEXTERA_ENERGY-RECENTGRADS-014",
           "NEXTERA_ENERGY-IGNITE-015"
+        ]
+      },
+      {
+        "name": "Commitments made during major change",
+        "description": "In announcing the proposed combination with Dominion Energy, NextEra Energy described post-close job, compensation, and benefits protection for Dominion Energy employees, continued local leadership and teams in Virginia, North Carolina, and South Carolina, and increased community giving. The commitments are public; how they would apply to specific teams or to NextEra Energy employees is not specified in the release.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-MERGER-016"
         ]
       }
     ],
@@ -446,6 +469,19 @@
           "NEXTERA_ENERGY-RECENTGRADS-014"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Shows how they have delivered through approvals, integration uncertainty, or organizational change without overstating what was settled.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "structured_thinking",
+          "collaboration_communication"
+        ],
+        "confidence": 0.82,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-MERGER-016"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -515,6 +551,30 @@
         "confidence": 0.74,
         "evidence_ids": [
           "NEXTERA_ENERGY-IGNITE-015"
+        ]
+      },
+      {
+        "anti_signal": "Speaking about the NextEra Energy-Dominion Energy combination as a completed merger with known team, role, or location outcomes.",
+        "risk_reason": "The companies describe a proposed combination expected to close in 12 to 18 months, subject to shareholder and regulatory approvals. The cited release does not specify how most teams or roles would be combined, so treating the deal as settled overstates what is public.",
+        "confidence": 0.86,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-MERGER-016"
+        ]
+      },
+      {
+        "anti_signal": "Assuming transaction-related job protections or leadership continuity apply the same way across both companies.",
+        "risk_reason": "The release states job, compensation, and benefits protection for Dominion Energy employees and names leaders for the combined company, but it does not describe equivalent protections or reporting lines for NextEra Energy employees. The asymmetry is a reason to ask, not a conclusion.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-MERGER-016"
+        ]
+      },
+      {
+        "anti_signal": "Presenting growth plans tied to the combination without acknowledging approval, integration, or retention risk.",
+        "risk_reason": "The release's own forward-looking risk language names approval delays or conditions, failure to realize expected benefits, management distraction, and difficulty hiring or retaining employees. A plan that assumes a clean, on-time close is not evidence-based.",
+        "confidence": 0.85,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-MERGER-016"
         ]
       }
     ],
@@ -688,6 +748,25 @@
         "evidence_ids": [
           "NEXTERA_ENERGY-IGNITE-015"
         ]
+      },
+      {
+        "type": "pending_transaction_behavioral",
+        "generated_question": "NextEra Energy's proposed combination with Dominion Energy is expected to close in 12 to 18 months, subject to shareholder and regulatory approvals. Tell me about a time you had to deliver results while a major decision about your organization was still pending. How did you keep the work moving without assuming the outcome?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "collaboration_communication"
+        ],
+        "strong_answer_signals": [
+          "Separates what is decided, what is proposed, and what is still unknown.",
+          "Names the stakeholders affected by the uncertainty and how they were kept informed.",
+          "Makes reversible decisions and avoids premature commitments.",
+          "Describes a concrete result delivered during the waiting period.",
+          "Shows how the approach would adapt if the decision went the other way."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-MERGER-016"
+        ]
       }
     ],
     "role_overlays": [
@@ -784,6 +863,18 @@
         "evidence_ids": [
           "NEXTERA_ENERGY-RECENTGRADS-014",
           "NEXTERA_ENERGY-FIELD-009"
+        ]
+      },
+      {
+        "role_slug": "merger_integration_and_regulatory_affairs",
+        "role_family": "Merger integration, regulatory affairs, and corporate development",
+        "signals": [
+          "Sequences work around approval milestones and distinguishes reversible from irreversible commitments.",
+          "Translates regulatory conditions, employee commitments, and community commitments into operating plans.",
+          "Communicates what is decided, proposed, or unknown to affected teams without encouraging speculation."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-MERGER-016"
         ]
       }
     ]

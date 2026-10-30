@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-26",
-  "source_cutoff": "2026-10-29",
+  "source_cutoff": "2026-10-30",
   "industries": [
     "energy",
     "utilities",
@@ -101,6 +101,14 @@
       "evidence_ids": [
         "NEXTERA_ENERGY-RECENTGRADS-014",
         "NEXTERA_ENERGY-IGNITE-015"
+      ]
+    },
+    {
+      "name": "Commitments made during major change",
+      "description": "In announcing the proposed combination with Dominion Energy, NextEra Energy described post-close job, compensation, and benefits protection for Dominion Energy employees, continued local leadership and teams in Virginia, North Carolina, and South Carolina, and increased community giving. The commitments are public; how they would apply to specific teams or to NextEra Energy employees is not specified in the release.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-MERGER-016"
       ]
     }
   ],
@@ -281,6 +289,19 @@
         "NEXTERA_ENERGY-RECENTGRADS-014"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Shows how they have delivered through approvals, integration uncertainty, or organizational change without overstating what was settled.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "structured_thinking",
+        "collaboration_communication"
+      ],
+      "confidence": 0.82,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-MERGER-016"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -360,6 +381,30 @@
       "evidence_ids": [
         "NEXTERA_ENERGY-IGNITE-015"
       ]
+    },
+    {
+      "anti_signal": "Speaking about the NextEra Energy-Dominion Energy combination as a completed merger with known team, role, or location outcomes.",
+      "risk_reason": "The companies describe a proposed combination expected to close in 12 to 18 months, subject to shareholder and regulatory approvals. The cited release does not specify how most teams or roles would be combined, so treating the deal as settled overstates what is public.",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-MERGER-016"
+      ]
+    },
+    {
+      "anti_signal": "Assuming transaction-related job protections or leadership continuity apply the same way across both companies.",
+      "risk_reason": "The release states job, compensation, and benefits protection for Dominion Energy employees and names leaders for the combined company, but it does not describe equivalent protections or reporting lines for NextEra Energy employees. The asymmetry is a reason to ask, not a conclusion.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-MERGER-016"
+      ]
+    },
+    {
+      "anti_signal": "Presenting growth plans tied to the combination without acknowledging approval, integration, or retention risk.",
+      "risk_reason": "The release's own forward-looking risk language names approval delays or conditions, failure to realize expected benefits, management distraction, and difficulty hiring or retaining employees. A plan that assumes a clean, on-time close is not evidence-based.",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-MERGER-016"
+      ]
     }
   ],
   "interview_patterns": [
@@ -377,11 +422,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 15,
-    "official_source_count": 15,
+    "source_count": 16,
+    "official_source_count": 16,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-29"
+    "last_reviewed": "2026-10-30"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official NextEra Energy hiring standard.",

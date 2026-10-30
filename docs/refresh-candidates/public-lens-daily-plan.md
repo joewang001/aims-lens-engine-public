@@ -1,12 +1,12 @@
 # Public Lens Daily Plan
 
-Generated: `2026-10-29T18:43:47Z`
-Run date: `2026-10-29`
+Generated: `2026-10-30T13:35:04Z`
+Run date: `2026-10-30`
 Week start: `2026-10-26`
 
 ## Today's Focus
 
-- `role_variation`
+- `risk_warnings`
 
 ## This Week's New Companies
 
