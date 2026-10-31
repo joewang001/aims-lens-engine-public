@@ -1,7 +1,7 @@
 {
   "company_slug": "accenture",
   "company": "Accenture",
-  "collected_at": "2026-10-30T13:30:00Z",
+  "collected_at": "2026-10-31T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -469,6 +469,22 @@
         "honest_unknowns",
         "role_variation"
       ]
+    },
+    {
+      "evidence_id": "ACCENTURE-10K-2026-034",
+      "source_type": "official_investor_relations",
+      "title": "Accenture FY2026 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737326000049/acn-20260831.htm",
+      "date_accessed": "2026-10-31",
+      "confidence": 0.92,
+      "public_safe_signal": "Accenture's FY2026 Form 10-K reports about 814,000 people, 93% utilization, 13% voluntary attrition, roughly 124,000 promotions, and nearly 110,000 AI and data practitioners. It says hiring and involuntary terminations are adjusted as client demand shifts, describes AI-enabled automation as a possible drag on utilization, and cites visa costs, remote-work culture, and rebalancing timing as risks.",
+      "dimensions": [
+        "honest_unknowns",
+        "risk_warnings",
+        "evidence_valued",
+        "company_judges",
+        "role_variation"
+      ]
     }
   ],
   "lens_updates": {
@@ -653,6 +669,22 @@
         "confidence": 0.8,
         "evidence_ids": [
           "ACCENTURE-PULSE-033"
+        ]
+      },
+      {
+        "name": "Workforce balanced to demand",
+        "description": "Accenture reports utilization, attrition, promotions, and AI-skills headcount together, and says it adjusts new hiring and involuntary terminations as client demand changes rather than holding headcount steady.",
+        "confidence": 0.86,
+        "evidence_ids": [
+          "ACCENTURE-10K-2026-034"
+        ]
+      },
+      {
+        "name": "Learning investment measured in hours",
+        "description": "Accenture reports about $1.0 billion and 46 million training hours in fiscal 2026, alongside nearly 110,000 AI and data practitioners, presenting learning as a scaled operating investment rather than a benefit statement.",
+        "confidence": 0.85,
+        "evidence_ids": [
+          "ACCENTURE-10K-2026-034"
         ]
       }
     ],
@@ -1043,6 +1075,32 @@
           "ACCENTURE-PULSE-033"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Frames career progress through utilization, skills demand, and promotion velocity, and can explain how they would respond if demand for their current skill mix fell.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution",
+          "structured_thinking"
+        ],
+        "confidence": 0.81,
+        "evidence_ids": [
+          "ACCENTURE-10K-2026-034"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Shows how they have reskilled into a new capability while continuing to deliver client work, rather than treating learning as separate from utilization.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "impact_results",
+          "ownership_execution"
+        ],
+        "confidence": 0.79,
+        "evidence_ids": [
+          "ACCENTURE-10K-2026-034"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -1299,6 +1357,22 @@
         "confidence": 0.86,
         "evidence_ids": [
           "ACCENTURE-PULSE-033"
+        ]
+      },
+      {
+        "anti_signal": "Assuming headcount growth means stable role scope, when Accenture discloses adjusting hiring and involuntary terminations as demand shifts.",
+        "risk_reason": "Accenture's 10-K ties workforce size to utilization and client demand and says rebalancing timing and cost are uncertain, so a candidate should not present the role as insulated from demand cycles.",
+        "confidence": 0.83,
+        "evidence_ids": [
+          "ACCENTURE-10K-2026-034"
+        ]
+      },
+      {
+        "anti_signal": "Treating AI capability as a certificate count without evidence of delivery, when Accenture reports both practitioner scale and utilization pressure.",
+        "risk_reason": "Accenture quantifies its AI workforce and warns that automation can reduce demand and utilization, so credentials alone do not show that a candidate can convert capability into client outcomes.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ACCENTURE-10K-2026-034"
         ]
       }
     ],
@@ -1707,6 +1781,21 @@
         "evidence_ids": [
           "ACCENTURE-PULSE-033"
         ]
+      },
+      {
+        "type": "workforce_rebalancing_behavioral",
+        "generated_question": "Tell me about a time demand for your skills shifted quickly. How did you decide what to learn, how did you keep delivering in the meantime, and what changed in your utilization or results?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Names the demand shift and its effect on the work.",
+          "Explains the learning choice and why it was relevant.",
+          "Shows how delivery continued during the transition.",
+          "Quantifies the change in utilization, scope, or outcome."
+        ]
       }
     ],
     "role_overlays": [
@@ -1875,6 +1964,18 @@
         ],
         "evidence_ids": [
           "ACCENTURE-PULSE-033"
+        ]
+      },
+      {
+        "role_slug": "ai_data_practitioner_at_scale",
+        "role_family": "AI and data practitioners in global delivery",
+        "signals": [
+          "Combines AI or data depth with delivery constraints, client context, and measurable outcomes.",
+          "Shows continuous reskilling alongside billable or utilization pressure.",
+          "Explains how responsible-AI or safety work changes delivery decisions."
+        ],
+        "evidence_ids": [
+          "ACCENTURE-10K-2026-034"
         ]
       }
     ]

@@ -1,0 +1,37 @@
+{
+  "company": "NextEra Energy",
+  "role_family": "Storm response, grid resilience, and field operations",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Plans pre-positioning, mutual assistance, and restoration sequencing before an event rather than improvising after impact.",
+    "Prioritizes safety and customer restoration while communicating uncertainty about timing and scope.",
+    "Uses restoration metrics and post-event analysis to improve future resilience."
+  ],
+  "evidence_ids": [
+    "NEXTERA_ENERGY-OFFICIAL-001",
+    "NEXTERA_ENERGY-CAREERS-002",
+    "NEXTERA_ENERGY-ABOUT-003",
+    "NEXTERA_ENERGY-CULTURE-004",
+    "NEXTERA_ENERGY-INNOVATION-005",
+    "NEXTERA_ENERGY-HIRING-006",
+    "NEXTERA_ENERGY-TEST-007",
+    "NEXTERA_ENERGY-CORPORATE-008",
+    "NEXTERA_ENERGY-FIELD-009",
+    "NEXTERA_ENERGY-INTERNS-010",
+    "NEXTERA_ENERGY-VETERANS-011",
+    "NEXTERA_ENERGY-AWARDS-012",
+    "NEXTERA_ENERGY-SCAM-013",
+    "NEXTERA_ENERGY-RECENTGRADS-014",
+    "NEXTERA_ENERGY-IGNITE-015",
+    "NEXTERA_ENERGY-MERGER-016",
+    "NEXTERA_ENERGY-Q3-2026-017",
+    "NEXTERA_ENERGY-STORM-018"
+  ]
+}

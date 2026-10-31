@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-26",
-  "source_cutoff": "2026-10-30",
+  "source_cutoff": "2026-10-31",
   "industries": [
     "energy",
     "utilities",
@@ -109,6 +109,14 @@
       "confidence": 0.8,
       "evidence_ids": [
         "NEXTERA_ENERGY-MERGER-016"
+      ]
+    },
+    {
+      "name": "Growth targets with stated assumptions",
+      "description": "NextEra pairs an 8%+ adjusted EPS growth target through 2032, extended to 2035, with a cautionary list naming merger approvals, rate-case outcomes, litigation, policy, weather, and supply-chain assumptions. The framing presents targets as conditional rather than guaranteed.",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-Q3-2026-017"
       ]
     }
   ],
@@ -302,6 +310,33 @@
         "NEXTERA_ENERGY-MERGER-016"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Uses operating evidence, such as backlog additions, restoration speed, or capital employed, to explain how a project created a measurable system outcome rather than describing intent or mission alone.",
+      "aims_dimensions": [
+        "impact_results",
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "confidence": 0.79,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-Q3-2026-017"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "When discussing a role affected by the Dominion combination, distinguishes what is approved, what remains under regulatory review, and what is a post-close commitment.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-Q3-2026-017",
+        "NEXTERA_ENERGY-MERGER-016"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -405,6 +440,22 @@
       "evidence_ids": [
         "NEXTERA_ENERGY-MERGER-016"
       ]
+    },
+    {
+      "anti_signal": "Treating the 36.7 GW backlog or the 8%+ EPS growth target as settled outcomes rather than company targets exposed to approvals, weather, rate decisions, and integration risk.",
+      "risk_reason": "NextEra's own cautionary statements say results depend on regulatory approvals, rate-case outcomes, policy, weather, and integration, so presenting targets as guarantees overstates what the company has committed.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-Q3-2026-017"
+      ]
+    },
+    {
+      "anti_signal": "Describing storm response as a purely heroic surge without naming pre-positioning, mutual assistance, safety sequencing, or restoration measurement.",
+      "risk_reason": "FPL's storm notice describes structured preparation, external crews, and safety guidance, so a hero narrative without operating discipline misses the evidence the company publishes.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-STORM-018"
+      ]
     }
   ],
   "interview_patterns": [
@@ -422,11 +473,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 16,
-    "official_source_count": 16,
+    "source_count": 18,
+    "official_source_count": 18,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-30"
+    "last_reviewed": "2026-10-31"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official NextEra Energy hiring standard.",

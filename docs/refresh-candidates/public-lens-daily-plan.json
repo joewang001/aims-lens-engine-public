@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-30T18:20:57Z",
-  "run_date": "2026-10-30",
-  "weekday": 4,
+  "generated_at": "2026-10-31T13:36:09Z",
+  "run_date": "2026-10-31",
+  "weekday": 5,
   "week_start": "2026-10-26",
   "focus_dimensions": [
-    "risk_warnings"
+    "honest_unknowns"
   ],
   "weekly_new_company_targets": [
     "nextera-energy",

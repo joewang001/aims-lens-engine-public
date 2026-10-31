@@ -1,7 +1,7 @@
 {
   "company_slug": "adobe",
   "company": "Adobe",
-  "collected_at": "2026-10-30T13:30:00Z",
+  "collected_at": "2026-10-31T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -395,6 +395,37 @@
         "role_variation",
         "honest_unknowns"
       ]
+    },
+    {
+      "evidence_id": "ADOBE-10K-2025-028",
+      "source_type": "official_investor_relations",
+      "title": "Adobe FY2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+      "date_accessed": "2026-10-31",
+      "confidence": 0.92,
+      "public_safe_signal": "Adobe's FY2025 Form 10-K reports 31,360 employees, evenly split between the U.S. and international locations, 9.9% attrition, and 78% participation in its engagement survey. It describes a hybrid model in which office-assigned employees spend about half their time in office, a Learning Fund of up to $11,000 a year, and risks from competition for AI and cybersecurity talent and hybrid-work culture challenges.",
+      "dimensions": [
+        "honest_unknowns",
+        "risk_warnings",
+        "evidence_valued",
+        "company_says",
+        "role_variation"
+      ]
+    },
+    {
+      "evidence_id": "ADOBE-10Q-Q3-2026-029",
+      "source_type": "official_investor_relations",
+      "title": "Adobe Q3 FY2026 Form 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000156/adbe-20260828.htm",
+      "date_accessed": "2026-10-31",
+      "confidence": 0.9,
+      "public_safe_signal": "Adobe's Q3 FY2026 Form 10-Q says it closed the Semrush acquisition on April 28, 2026 for $1.87 billion, adding brand-visibility, SEO, generative-engine-optimization, and agentic-search capabilities to Experience Manager. It records $1.251 billion of goodwill attributed to Semrush's assembled workforce and expected synergies, and reports Creative and Marketing Professionals subscription revenue of $4.65 billion, up 13%.",
+      "dimensions": [
+        "role_variation",
+        "company_says",
+        "honest_unknowns",
+        "risk_warnings"
+      ]
     }
   ],
   "lens_updates": {
@@ -571,6 +602,22 @@
         "confidence": 0.84,
         "evidence_ids": [
           "ADOBE-SECBLOG-027"
+        ]
+      },
+      {
+        "name": "Hybrid with intentional presence",
+        "description": "Adobe reports a hybrid model in which office-assigned employees divide time between office and home about evenly, while saying it continues to test and iterate the approach and that time together supports trust and collaboration.",
+        "confidence": 0.85,
+        "evidence_ids": [
+          "ADOBE-10K-2025-028"
+        ]
+      },
+      {
+        "name": "Learning funded as a benefit",
+        "description": "Adobe's Learning Fund offers eligible employees up to $11,000 a year for university and short-term learning, which the 10-K presents alongside internal talent development and career growth.",
+        "confidence": 0.83,
+        "evidence_ids": [
+          "ADOBE-10K-2025-028"
         ]
       }
     ],
@@ -963,6 +1010,32 @@
           "ADOBE-SECBLOG-027"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Shows how they have made hybrid collaboration work across functions and time zones, including what they do in person and how they keep remote colleagues included.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "ownership_execution",
+          "growth_mindset"
+        ],
+        "confidence": 0.79,
+        "evidence_ids": [
+          "ADOBE-10K-2025-028"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For marketing, search, or Experience Manager roles, explains how brand visibility work connects across SEO, generative-engine optimization, and agentic search rather than treating them as separate channels.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "impact_results",
+          "growth_mindset"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "ADOBE-10Q-Q3-2026-029"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -1199,6 +1272,22 @@
         "confidence": 0.84,
         "evidence_ids": [
           "ADOBE-SECBLOG-027"
+        ]
+      },
+      {
+        "anti_signal": "Assuming a fully remote role or a fixed office cadence, when Adobe describes a hybrid model that it continues to test and iterate.",
+        "risk_reason": "Adobe's 10-K states that office-assigned employees can divide work between office and home about half the time and that the approach is still being piloted, so a fixed expectation may not match the role.",
+        "confidence": 0.81,
+        "evidence_ids": [
+          "ADOBE-10K-2025-028"
+        ]
+      },
+      {
+        "anti_signal": "Describing the Semrush acquisition as fully integrated, when Adobe says integration began after the April 2026 close and records goodwill tied to workforce and expected synergies.",
+        "risk_reason": "Adobe's 10-Q states that integration began at closing and that $1.251 billion of goodwill depends on the assembled workforce and expected synergies, so treating the combination as settled overstates what is public.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "ADOBE-10Q-Q3-2026-029"
         ]
       }
     ],
@@ -1592,6 +1681,36 @@
         "evidence_ids": [
           "ADOBE-SECBLOG-027"
         ]
+      },
+      {
+        "type": "hybrid_collaboration_behavioral",
+        "generated_question": "Describe a project you delivered in a hybrid or distributed team. What did you deliberately do in person, what did you do asynchronously, and how did you keep quieter contributors involved?",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Explains the choice of synchronous versus asynchronous work.",
+          "Shows how inclusion was maintained across locations or time zones.",
+          "Names a concrete outcome and what would have been missed without the approach.",
+          "Reflects on what they would change in the next hybrid cycle."
+        ]
+      },
+      {
+        "type": "acquisition_integration_behavioral",
+        "generated_question": "Tell me about a time you joined or integrated two teams, products, or processes after an acquisition or reorganization. How did you decide what to keep, what to change, and how did you protect customer continuity?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Maps the overlap and the customer-facing risks before changing anything.",
+          "Explains sequencing and who was consulted.",
+          "Protects continuity for customers or partners during the transition.",
+          "Measures whether the integration delivered the intended benefit."
+        ]
       }
     ],
     "role_overlays": [
@@ -1730,6 +1849,18 @@
         ],
         "evidence_ids": [
           "ADOBE-SECBLOG-027"
+        ]
+      },
+      {
+        "role_slug": "brand_visibility_and_search_optimization",
+        "role_family": "Brand visibility, SEO, and generative-engine optimization",
+        "signals": [
+          "Connects search visibility work to marketing execution and measurable customer acquisition.",
+          "Works across SEO, generative-engine optimization, and agentic search rather than one channel.",
+          "Understands how acquired tools and data sources are integrated into an existing marketing platform."
+        ],
+        "evidence_ids": [
+          "ADOBE-10Q-Q3-2026-029"
         ]
       }
     ]

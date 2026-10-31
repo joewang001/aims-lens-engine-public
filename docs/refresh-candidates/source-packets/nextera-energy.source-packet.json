@@ -1,7 +1,7 @@
 {
   "company_slug": "nextera-energy",
   "company": "NextEra Energy",
-  "collected_at": "2026-10-30T13:30:00Z",
+  "collected_at": "2026-10-31T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -247,6 +247,37 @@
         "role_variation",
         "honest_unknowns"
       ]
+    },
+    {
+      "evidence_id": "NEXTERA_ENERGY-Q3-2026-017",
+      "source_type": "official_investor_relations",
+      "title": "NextEra Energy third-quarter 2026 earnings release",
+      "url": "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/reports-and-fillings/quarterly-earnings/2026/Q3%202026/2026-1021%20NEEQ32026News%20Release%20vFinal.pdf",
+      "date_accessed": "2026-10-31",
+      "confidence": 0.9,
+      "public_safe_signal": "NextEra's Oct. 21, 2026 results report adjusted EPS of $1.24, up 9.7%, and a renewables and storage backlog of about 36.7 GW after adding 3.7 GW. Shareholders approved the Dominion combination on Sept. 3, state hearings run through early 2027, and closing is expected in the second half of 2027. The release ties 1,000 new Virginia jobs to approval and lists approval, integration, and retention risks.",
+      "dimensions": [
+        "honest_unknowns",
+        "risk_warnings",
+        "evidence_valued",
+        "role_variation",
+        "company_says"
+      ]
+    },
+    {
+      "evidence_id": "NEXTERA_ENERGY-STORM-018",
+      "source_type": "official_company",
+      "title": "FPL emergency response plan for Tropical Storm Isaias",
+      "url": "https://newsroom.nexteraenergy.com/FPL-activates-its-emergency-response-plan-for-Tropical-Storm-Isaias",
+      "date_accessed": "2026-10-31",
+      "confidence": 0.86,
+      "public_safe_signal": "FPL's Oct. 7, 2026 notice says it pre-positioned crews, sought mutual-assistance and contractor support, and monitored the system around the clock as Tropical Storm Isaias approached the Panhandle, warning of outages from rain, wind, flooding, surge, and tornadoes. It describes FPL as serving about 12 million people and cites ReliabilityOne recognition in eight of the last 11 years.",
+      "dimensions": [
+        "role_variation",
+        "risk_warnings",
+        "company_says",
+        "honest_unknowns"
+      ]
     }
   ],
   "lens_updates": {
@@ -324,6 +355,14 @@
         "confidence": 0.8,
         "evidence_ids": [
           "NEXTERA_ENERGY-MERGER-016"
+        ]
+      },
+      {
+        "name": "Growth targets with stated assumptions",
+        "description": "NextEra pairs an 8%+ adjusted EPS growth target through 2032, extended to 2035, with a cautionary list naming merger approvals, rate-case outcomes, litigation, policy, weather, and supply-chain assumptions. The framing presents targets as conditional rather than guaranteed.",
+        "confidence": 0.84,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-Q3-2026-017"
         ]
       }
     ],
@@ -482,6 +521,33 @@
           "NEXTERA_ENERGY-MERGER-016"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Uses operating evidence, such as backlog additions, restoration speed, or capital employed, to explain how a project created a measurable system outcome rather than describing intent or mission alone.",
+        "aims_dimensions": [
+          "impact_results",
+          "analytical_problem_solving",
+          "ownership_execution"
+        ],
+        "confidence": 0.79,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-Q3-2026-017"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "When discussing a role affected by the Dominion combination, distinguishes what is approved, what remains under regulatory review, and what is a post-close commitment.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-Q3-2026-017",
+          "NEXTERA_ENERGY-MERGER-016"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -575,6 +641,22 @@
         "confidence": 0.85,
         "evidence_ids": [
           "NEXTERA_ENERGY-MERGER-016"
+        ]
+      },
+      {
+        "anti_signal": "Treating the 36.7 GW backlog or the 8%+ EPS growth target as settled outcomes rather than company targets exposed to approvals, weather, rate decisions, and integration risk.",
+        "risk_reason": "NextEra's own cautionary statements say results depend on regulatory approvals, rate-case outcomes, policy, weather, and integration, so presenting targets as guarantees overstates what the company has committed.",
+        "confidence": 0.82,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-Q3-2026-017"
+        ]
+      },
+      {
+        "anti_signal": "Describing storm response as a purely heroic surge without naming pre-positioning, mutual assistance, safety sequencing, or restoration measurement.",
+        "risk_reason": "FPL's storm notice describes structured preparation, external crews, and safety guidance, so a hero narrative without operating discipline misses the evidence the company publishes.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-STORM-018"
         ]
       }
     ],
@@ -767,6 +849,36 @@
         "evidence_ids": [
           "NEXTERA_ENERGY-MERGER-016"
         ]
+      },
+      {
+        "type": "contingent_commitment_behavioral",
+        "generated_question": "Tell me about a time you had to plan or staff work while a major approval, deal, or funding decision was still pending. How did you separate what was committed from what was contingent, and what did you tell the people affected?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names the decision, decision-makers, and timeline explicitly.",
+          "Separates committed work from contingent work and avoids overpromising.",
+          "Describes how affected colleagues or stakeholders were kept informed.",
+          "Shows what changed when the decision landed and what was learned."
+        ]
+      },
+      {
+        "type": "storm_response_prioritization_behavioral",
+        "generated_question": "Describe a time you had to restore a critical service under time pressure with limited information. How did you sequence safety, customer impact, and crew or team capacity?",
+        "aims_dimensions": [
+          "ownership_execution",
+          "analytical_problem_solving",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Puts safety and escalation before speed.",
+          "Explains how work was sequenced and resources were pre-positioned.",
+          "Communicates uncertainty about scope and timing honestly.",
+          "Measures restoration or recovery and captures lessons for next time."
+        ]
       }
     ],
     "role_overlays": [
@@ -875,6 +987,19 @@
         ],
         "evidence_ids": [
           "NEXTERA_ENERGY-MERGER-016"
+        ]
+      },
+      {
+        "role_slug": "storm_response_and_grid_resilience",
+        "role_family": "Storm response, grid resilience, and field operations",
+        "signals": [
+          "Plans pre-positioning, mutual assistance, and restoration sequencing before an event rather than improvising after impact.",
+          "Prioritizes safety and customer restoration while communicating uncertainty about timing and scope.",
+          "Uses restoration metrics and post-event analysis to improve future resilience."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-STORM-018",
+          "NEXTERA_ENERGY-Q3-2026-017"
         ]
       }
     ]
