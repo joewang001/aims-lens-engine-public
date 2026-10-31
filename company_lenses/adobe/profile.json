@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-30",
+  "source_cutoff": "2026-10-31",
   "industries": [
     "technology",
     "creative software",
@@ -209,6 +209,22 @@
       "confidence": 0.84,
       "evidence_ids": [
         "ADOBE-SECBLOG-027"
+      ]
+    },
+    {
+      "name": "Hybrid with intentional presence",
+      "description": "Adobe reports a hybrid model in which office-assigned employees divide time between office and home about evenly, while saying it continues to test and iterate the approach and that time together supports trust and collaboration.",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ADOBE-10K-2025-028"
+      ]
+    },
+    {
+      "name": "Learning funded as a benefit",
+      "description": "Adobe's Learning Fund offers eligible employees up to $11,000 a year for university and short-term learning, which the 10-K presents alongside internal talent development and career growth.",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ADOBE-10K-2025-028"
       ]
     }
   ],
@@ -637,6 +653,32 @@
         "ADOBE-SECBLOG-027"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Shows how they have made hybrid collaboration work across functions and time zones, including what they do in person and how they keep remote colleagues included.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution",
+        "growth_mindset"
+      ],
+      "confidence": 0.79,
+      "evidence_ids": [
+        "ADOBE-10K-2025-028"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For marketing, search, or Experience Manager roles, explains how brand visibility work connects across SEO, generative-engine optimization, and agentic search rather than treating them as separate channels.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "impact_results",
+        "growth_mindset"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ADOBE-10Q-Q3-2026-029"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -884,6 +926,22 @@
       "evidence_ids": [
         "ADOBE-SECBLOG-027"
       ]
+    },
+    {
+      "anti_signal": "Assuming a fully remote role or a fixed office cadence, when Adobe describes a hybrid model that it continues to test and iterate.",
+      "risk_reason": "Adobe's 10-K states that office-assigned employees can divide work between office and home about half the time and that the approach is still being piloted, so a fixed expectation may not match the role.",
+      "confidence": 0.81,
+      "evidence_ids": [
+        "ADOBE-10K-2025-028"
+      ]
+    },
+    {
+      "anti_signal": "Describing the Semrush acquisition as fully integrated, when Adobe says integration began after the April 2026 close and records goodwill tied to workforce and expected synergies.",
+      "risk_reason": "Adobe's 10-Q states that integration began at closing and that $1.251 billion of goodwill depends on the assembled workforce and expected synergies, so treating the combination as settled overstates what is public.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-10Q-Q3-2026-029"
+      ]
     }
   ],
   "interview_patterns": [
@@ -901,11 +959,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 27,
-    "official_source_count": 27,
+    "source_count": 29,
+    "official_source_count": 29,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-30"
+    "last_reviewed": "2026-10-31"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Adobe hiring standard.",

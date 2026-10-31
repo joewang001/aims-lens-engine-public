@@ -329,6 +329,72 @@
       "evidence_ids": [
         "SERVICENOW-TRUST-013"
       ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-015",
+      "type": "applicant_data_transparency_behavioral",
+      "generated_question": "What would you want to know about how an employer collects, retains, or analyzes applicant data, and how would you raise a concern if the answer was unclear?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "growth_mindset"
+      ],
+      "strong_answer_signals": [
+        "Names specific data categories, sources, and retention questions.",
+        "Asks whether automation influences decisions and who remains accountable.",
+        "Describes a respectful way to escalate an unresolved privacy concern.",
+        "Connects the answer to the candidate experience, not only legal compliance."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-OFFICIAL-001",
+        "SERVICENOW-CAREERS-002",
+        "SERVICENOW-ETHICS-003",
+        "SERVICENOW-AI-004",
+        "SERVICENOW-IMPACT-005",
+        "SERVICENOW-LEADERSHIP-006",
+        "SERVICENOW-HOWWEHIRE-007",
+        "SERVICENOW-AI-HIRING-008",
+        "SERVICENOW-LIFE-009",
+        "SERVICENOW-TEAMS-AI-ENG-010",
+        "SERVICENOW-TEAMS-SALES-011",
+        "SERVICENOW-EARLY-CAREERS-012",
+        "SERVICENOW-TRUST-013",
+        "SERVICENOW-PRIVACY-014",
+        "SERVICENOW-Q3-2026-015"
+      ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-016",
+      "type": "metric_interpretation_behavioral",
+      "generated_question": "Tell me about a time you had to explain a business metric to a skeptical audience. How did you separate the headline number from what it actually measured?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "collaboration_communication",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Defines the metric and its timing or recognition basis.",
+        "Distinguishes leading indicators from realized outcomes.",
+        "Acknowledges assumptions and what the metric cannot show.",
+        "Adjusts the explanation for the audience's decision."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-OFFICIAL-001",
+        "SERVICENOW-CAREERS-002",
+        "SERVICENOW-ETHICS-003",
+        "SERVICENOW-AI-004",
+        "SERVICENOW-IMPACT-005",
+        "SERVICENOW-LEADERSHIP-006",
+        "SERVICENOW-HOWWEHIRE-007",
+        "SERVICENOW-AI-HIRING-008",
+        "SERVICENOW-LIFE-009",
+        "SERVICENOW-TEAMS-AI-ENG-010",
+        "SERVICENOW-TEAMS-SALES-011",
+        "SERVICENOW-EARLY-CAREERS-012",
+        "SERVICENOW-TRUST-013",
+        "SERVICENOW-PRIVACY-014",
+        "SERVICENOW-Q3-2026-015"
+      ]
     }
   ]
 }

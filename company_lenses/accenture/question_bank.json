@@ -620,6 +620,58 @@
       "evidence_ids": [
         "ACCENTURE-PULSE-033"
       ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-025",
+      "type": "workforce_rebalancing_behavioral",
+      "generated_question": "Tell me about a time demand for your skills shifted quickly. How did you decide what to learn, how did you keep delivering in the meantime, and what changed in your utilization or results?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Names the demand shift and its effect on the work.",
+        "Explains the learning choice and why it was relevant.",
+        "Shows how delivery continued during the transition.",
+        "Quantifies the change in utilization, scope, or outcome."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-OFFICIAL-001",
+        "ACCENTURE-CAREERS-002",
+        "ACCENTURE-ABOUT-003",
+        "ACCENTURE-LEADERSHIP-004",
+        "ACCENTURE-BEHAVIORAL-005",
+        "ACCENTURE-SKILLS-006",
+        "ACCENTURE-SWE-007",
+        "ACCENTURE-STRATEGY-008",
+        "ACCENTURE-IR-009",
+        "ACCENTURE-CAREERS-010",
+        "ACCENTURE-AI-011",
+        "ACCENTURE-LEARNING-012",
+        "ACCENTURE-AIDATA-013",
+        "ACCENTURE-CASE-014",
+        "ACCENTURE-RESUME-015",
+        "ACCENTURE-TIPS-016",
+        "ACCENTURE-FAQ-017",
+        "ACCENTURE-CONSULTING-018",
+        "ACCENTURE-OPS-019",
+        "ACCENTURE-DESIGN-020",
+        "ACCENTURE-TECH-021",
+        "ACCENTURE-SCAM-022",
+        "ACCENTURE-SCAM-IN-023",
+        "ACCENTURE-AI-HIRING-024",
+        "ACCENTURE-CA-CAREERS-025",
+        "ACCENTURE-INCLUSION-026",
+        "ACCENTURE-IR-027",
+        "ACCENTURE-APPRENTICE-028",
+        "ACCENTURE-SCREENING-029",
+        "ACCENTURE-VIDEO-030",
+        "ACCENTURE-SONG-031",
+        "ACCENTURE-SECURITY-032",
+        "ACCENTURE-PULSE-033",
+        "ACCENTURE-10K-2026-034"
+      ]
     }
   ]
 }

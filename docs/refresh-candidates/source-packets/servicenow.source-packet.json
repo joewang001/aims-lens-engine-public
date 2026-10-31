@@ -1,7 +1,7 @@
 {
   "company_slug": "servicenow",
   "company": "ServiceNow",
-  "collected_at": "2026-10-30T13:30:00Z",
+  "collected_at": "2026-10-31T13:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -207,6 +207,36 @@
         "role_variation",
         "honest_unknowns"
       ]
+    },
+    {
+      "evidence_id": "SERVICENOW-PRIVACY-014",
+      "source_type": "official_careers",
+      "title": "Applicant and Candidate Privacy Policy",
+      "url": "https://www.servicenow.com/applicant-privacy.html",
+      "date_accessed": "2026-10-31",
+      "confidence": 0.88,
+      "public_safe_signal": "ServiceNow's applicant privacy statement says it processes identifiers, employment, compensation, assessment, background-check, accommodation, and voluntary demographic data, including from public professional profiles, assessment vendors, and background-check providers. It says machine learning and AI may process applicant data but not for automated decision-making unless applicants are specifically notified, and it sets retention on legitimate need or future-opportunity consent.",
+      "dimensions": [
+        "honest_unknowns",
+        "risk_warnings",
+        "company_asks",
+        "role_variation"
+      ]
+    },
+    {
+      "evidence_id": "SERVICENOW-Q3-2026-015",
+      "source_type": "official_investor_relations",
+      "title": "ServiceNow Q3 2026 earnings release (Form 8-K Exhibit 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000092/erq3fy26.htm",
+      "date_accessed": "2026-10-31",
+      "confidence": 0.9,
+      "public_safe_signal": "ServiceNow's Oct. 28, 2026 results put subscription revenue at $3.988 billion, up 21%, RPO at $29.7 billion, and its 2026 AI ACV target at $1.7 billion. The forward-looking caution cites unknown risks and assumptions that may prove wrong, and names keeping and recruiting key employees and sustaining workplace culture among the factors that could change results.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings",
+        "honest_unknowns"
+      ]
     }
   ],
   "lens_updates": {
@@ -282,6 +312,14 @@
         "confidence": 0.82,
         "evidence_ids": [
           "SERVICENOW-TRUST-013"
+        ]
+      },
+      {
+        "name": "Applicant data practices stated in advance",
+        "description": "ServiceNow's applicant privacy statement discloses what applicant data is collected, which vendor categories and public sources may supply it, how long it may be retained, and that AI or machine learning may process it without automated decision-making unless applicants are specifically notified.",
+        "confidence": 0.85,
+        "evidence_ids": [
+          "SERVICENOW-PRIVACY-014"
         ]
       }
     ],
@@ -453,6 +491,32 @@
           "SERVICENOW-TRUST-013"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Asks which applicant data is collected, who processes it, and whether automated analysis affects the decision, instead of assuming a fully manual or fully automated process.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "confidence": 0.79,
+        "evidence_ids": [
+          "SERVICENOW-PRIVACY-014"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Connects product or engineering work to a named business metric such as subscription revenue, remaining performance obligations, or AI contract value, and explains the mechanism behind the number.",
+        "aims_dimensions": [
+          "impact_results",
+          "analytical_problem_solving",
+          "ownership_execution"
+        ],
+        "confidence": 0.77,
+        "evidence_ids": [
+          "SERVICENOW-Q3-2026-015"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -544,6 +608,22 @@
         "confidence": 0.86,
         "evidence_ids": [
           "SERVICENOW-TRUST-013"
+        ]
+      },
+      {
+        "anti_signal": "Assuming applicant data comes only from the application form, when ServiceNow discloses sourcing from public professional profiles, assessment providers, and background-check vendors.",
+        "risk_reason": "The applicant privacy statement names third-party and public sources, so a candidate who describes a closed process may be unprepared for questions about data accuracy, retention, or correction.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "SERVICENOW-PRIVACY-014"
+        ]
+      },
+      {
+        "anti_signal": "Citing AI momentum without distinguishing contract value, consumption, and revenue recognition, or treating a raised target as realized revenue.",
+        "risk_reason": "ServiceNow reports AI ACV targets, RPO, cRPO, and subscription revenue as separate measures with different timing, so blending them misstates what the results show.",
+        "confidence": 0.78,
+        "evidence_ids": [
+          "SERVICENOW-Q3-2026-015"
         ]
       }
     ],
@@ -773,6 +853,36 @@
         "evidence_ids": [
           "SERVICENOW-TRUST-013"
         ]
+      },
+      {
+        "type": "applicant_data_transparency_behavioral",
+        "generated_question": "What would you want to know about how an employer collects, retains, or analyzes applicant data, and how would you raise a concern if the answer was unclear?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication",
+          "growth_mindset"
+        ],
+        "strong_answer_signals": [
+          "Names specific data categories, sources, and retention questions.",
+          "Asks whether automation influences decisions and who remains accountable.",
+          "Describes a respectful way to escalate an unresolved privacy concern.",
+          "Connects the answer to the candidate experience, not only legal compliance."
+        ]
+      },
+      {
+        "type": "metric_interpretation_behavioral",
+        "generated_question": "Tell me about a time you had to explain a business metric to a skeptical audience. How did you separate the headline number from what it actually measured?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "collaboration_communication",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the metric and its timing or recognition basis.",
+          "Distinguishes leading indicators from realized outcomes.",
+          "Acknowledges assumptions and what the metric cannot show.",
+          "Adjusts the explanation for the audience's decision."
+        ]
       }
     ],
     "role_overlays": [
@@ -886,6 +996,18 @@
         ],
         "evidence_ids": [
           "SERVICENOW-TRUST-013"
+        ]
+      },
+      {
+        "role_slug": "recruiting_operations_and_hiring_technology",
+        "role_family": "Recruiting operations, HR service delivery, and hiring technology",
+        "signals": [
+          "Maps applicant data flows across application, assessment, and background-check vendors.",
+          "Explains how automation supports rather than replaces human hiring decisions.",
+          "Designs retention and correction processes that candidates can actually use."
+        ],
+        "evidence_ids": [
+          "SERVICENOW-PRIVACY-014"
         ]
       }
     ]

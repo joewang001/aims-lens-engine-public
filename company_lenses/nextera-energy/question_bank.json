@@ -318,6 +318,78 @@
       "evidence_ids": [
         "NEXTERA_ENERGY-MERGER-016"
       ]
+    },
+    {
+      "question_id": "NEXTERA_ENERGY-Q-013",
+      "type": "contingent_commitment_behavioral",
+      "generated_question": "Tell me about a time you had to plan or staff work while a major approval, deal, or funding decision was still pending. How did you separate what was committed from what was contingent, and what did you tell the people affected?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names the decision, decision-makers, and timeline explicitly.",
+        "Separates committed work from contingent work and avoids overpromising.",
+        "Describes how affected colleagues or stakeholders were kept informed.",
+        "Shows what changed when the decision landed and what was learned."
+      ],
+      "evidence_ids": [
+        "NEXTERA_ENERGY-OFFICIAL-001",
+        "NEXTERA_ENERGY-CAREERS-002",
+        "NEXTERA_ENERGY-ABOUT-003",
+        "NEXTERA_ENERGY-CULTURE-004",
+        "NEXTERA_ENERGY-INNOVATION-005",
+        "NEXTERA_ENERGY-HIRING-006",
+        "NEXTERA_ENERGY-TEST-007",
+        "NEXTERA_ENERGY-CORPORATE-008",
+        "NEXTERA_ENERGY-FIELD-009",
+        "NEXTERA_ENERGY-INTERNS-010",
+        "NEXTERA_ENERGY-VETERANS-011",
+        "NEXTERA_ENERGY-AWARDS-012",
+        "NEXTERA_ENERGY-SCAM-013",
+        "NEXTERA_ENERGY-RECENTGRADS-014",
+        "NEXTERA_ENERGY-IGNITE-015",
+        "NEXTERA_ENERGY-MERGER-016",
+        "NEXTERA_ENERGY-Q3-2026-017",
+        "NEXTERA_ENERGY-STORM-018"
+      ]
+    },
+    {
+      "question_id": "NEXTERA_ENERGY-Q-014",
+      "type": "storm_response_prioritization_behavioral",
+      "generated_question": "Describe a time you had to restore a critical service under time pressure with limited information. How did you sequence safety, customer impact, and crew or team capacity?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "analytical_problem_solving",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Puts safety and escalation before speed.",
+        "Explains how work was sequenced and resources were pre-positioned.",
+        "Communicates uncertainty about scope and timing honestly.",
+        "Measures restoration or recovery and captures lessons for next time."
+      ],
+      "evidence_ids": [
+        "NEXTERA_ENERGY-OFFICIAL-001",
+        "NEXTERA_ENERGY-CAREERS-002",
+        "NEXTERA_ENERGY-ABOUT-003",
+        "NEXTERA_ENERGY-CULTURE-004",
+        "NEXTERA_ENERGY-INNOVATION-005",
+        "NEXTERA_ENERGY-HIRING-006",
+        "NEXTERA_ENERGY-TEST-007",
+        "NEXTERA_ENERGY-CORPORATE-008",
+        "NEXTERA_ENERGY-FIELD-009",
+        "NEXTERA_ENERGY-INTERNS-010",
+        "NEXTERA_ENERGY-VETERANS-011",
+        "NEXTERA_ENERGY-AWARDS-012",
+        "NEXTERA_ENERGY-SCAM-013",
+        "NEXTERA_ENERGY-RECENTGRADS-014",
+        "NEXTERA_ENERGY-IGNITE-015",
+        "NEXTERA_ENERGY-MERGER-016",
+        "NEXTERA_ENERGY-Q3-2026-017",
+        "NEXTERA_ENERGY-STORM-018"
+      ]
     }
   ]
 }

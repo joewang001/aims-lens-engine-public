@@ -573,6 +573,100 @@
       "evidence_ids": [
         "ADOBE-SECBLOG-027"
       ]
+    },
+    {
+      "question_id": "ADOBE-Q-024",
+      "type": "hybrid_collaboration_behavioral",
+      "generated_question": "Describe a project you delivered in a hybrid or distributed team. What did you deliberately do in person, what did you do asynchronously, and how did you keep quieter contributors involved?",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Explains the choice of synchronous versus asynchronous work.",
+        "Shows how inclusion was maintained across locations or time zones.",
+        "Names a concrete outcome and what would have been missed without the approach.",
+        "Reflects on what they would change in the next hybrid cycle."
+      ],
+      "evidence_ids": [
+        "ADOBE-OFFICIAL-001",
+        "ADOBE-CAREERS-002",
+        "ADOBE-IR-003",
+        "ADOBE-VALUES-004",
+        "ADOBE-HIRING-005",
+        "ADOBE-ALL-006",
+        "ADOBE-DEVBLOG-007",
+        "ADOBE-ABOUT-008",
+        "ADOBE-IR-009",
+        "ADOBE-AI-010",
+        "ADOBE-CSR-011",
+        "ADOBE-TRUST-012",
+        "ADOBE-AIHIRING-013",
+        "ADOBE-RESEARCH-014",
+        "ADOBE-DESIGN-015",
+        "ADOBE-SCAM-016",
+        "ADOBE-PRIVACY-017",
+        "ADOBE-PERSONAL-INFO-018",
+        "ADOBE-CHECKIN-019",
+        "ADOBE-TEAMS-020",
+        "ADOBE-DEVBLOG-021",
+        "ADOBE-DEVBLOG-022",
+        "ADOBE-UNIVERSITY-023",
+        "ADOBE-SALES-ACADEMY-024",
+        "ADOBE-DESIGN-INTERVIEW-025",
+        "ADOBE-DESIGN-PM-026",
+        "ADOBE-SECBLOG-027",
+        "ADOBE-10K-2025-028",
+        "ADOBE-10Q-Q3-2026-029"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-025",
+      "type": "acquisition_integration_behavioral",
+      "generated_question": "Tell me about a time you joined or integrated two teams, products, or processes after an acquisition or reorganization. How did you decide what to keep, what to change, and how did you protect customer continuity?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Maps the overlap and the customer-facing risks before changing anything.",
+        "Explains sequencing and who was consulted.",
+        "Protects continuity for customers or partners during the transition.",
+        "Measures whether the integration delivered the intended benefit."
+      ],
+      "evidence_ids": [
+        "ADOBE-OFFICIAL-001",
+        "ADOBE-CAREERS-002",
+        "ADOBE-IR-003",
+        "ADOBE-VALUES-004",
+        "ADOBE-HIRING-005",
+        "ADOBE-ALL-006",
+        "ADOBE-DEVBLOG-007",
+        "ADOBE-ABOUT-008",
+        "ADOBE-IR-009",
+        "ADOBE-AI-010",
+        "ADOBE-CSR-011",
+        "ADOBE-TRUST-012",
+        "ADOBE-AIHIRING-013",
+        "ADOBE-RESEARCH-014",
+        "ADOBE-DESIGN-015",
+        "ADOBE-SCAM-016",
+        "ADOBE-PRIVACY-017",
+        "ADOBE-PERSONAL-INFO-018",
+        "ADOBE-CHECKIN-019",
+        "ADOBE-TEAMS-020",
+        "ADOBE-DEVBLOG-021",
+        "ADOBE-DEVBLOG-022",
+        "ADOBE-UNIVERSITY-023",
+        "ADOBE-SALES-ACADEMY-024",
+        "ADOBE-DESIGN-INTERVIEW-025",
+        "ADOBE-DESIGN-PM-026",
+        "ADOBE-SECBLOG-027",
+        "ADOBE-10K-2025-028",
+        "ADOBE-10Q-Q3-2026-029"
+      ]
     }
   ]
 }

@@ -1,0 +1,34 @@
+{
+  "company": "ServiceNow",
+  "role_family": "Recruiting operations, HR service delivery, and hiring technology",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Maps applicant data flows across application, assessment, and background-check vendors.",
+    "Explains how automation supports rather than replaces human hiring decisions.",
+    "Designs retention and correction processes that candidates can actually use."
+  ],
+  "evidence_ids": [
+    "SERVICENOW-OFFICIAL-001",
+    "SERVICENOW-CAREERS-002",
+    "SERVICENOW-ETHICS-003",
+    "SERVICENOW-AI-004",
+    "SERVICENOW-IMPACT-005",
+    "SERVICENOW-LEADERSHIP-006",
+    "SERVICENOW-HOWWEHIRE-007",
+    "SERVICENOW-AI-HIRING-008",
+    "SERVICENOW-LIFE-009",
+    "SERVICENOW-TEAMS-AI-ENG-010",
+    "SERVICENOW-TEAMS-SALES-011",
+    "SERVICENOW-EARLY-CAREERS-012",
+    "SERVICENOW-TRUST-013",
+    "SERVICENOW-PRIVACY-014",
+    "SERVICENOW-Q3-2026-015"
+  ]
+}

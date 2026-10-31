@@ -4,6 +4,7 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 
 | Evidence ID | Source Type | Title | Date Accessed | Confidence | Public-Safe Signal |
 | --- | --- | --- | --- | --- | --- |
+| ACCENTURE-10K-2026-034 | official_investor_relations | Accenture FY2026 Form 10-K | 2026-10-31 | 0.92 | Accenture's FY2026 Form 10-K reports about 814,000 people, 93% utilization, 13% voluntary attrition, roughly 124,000 promotions, and nearly 110,000 AI and data practitioners. It says hiring and involuntary terminations are adjusted as client demand shifts, describes AI-enabled automation as a possible drag on utilization, and cites visa costs, remote-work culture, and rebalancing timing as risks. |
 | ACCENTURE-PULSE-033 | official_company | Accenture Pulse of Change, October 2026 | 2026-10-30 | 0.80 | Accenture's October 19, 2026 Pulse of Change surveys 3,000 C-suite leaders and 3,000 employees in 19 industries and 21 countries (July-August 2026). It reports 61% of leaders expect hiring to increase, down from 74% in January; 15% redesign end-to-end processes and 20% deploy agents; 25% report sustained AI value; 50% of employees report higher expected speed and review load. It is a market survey, not Accenture's hiring plan. |
 | ACCENTURE-SONG-031 | official_careers | Accenture Song creative and design careers | 2026-10-29 | 0.80 | Accenture Song's careers page frames a creative and design career area inside what it calls the world's largest tech-powered creative group, describing strategists, writers and designers who work on brand, product and experience problems with routes into creative strategy, consulting and leadership. |
 | ACCENTURE-SECURITY-032 | official_careers | Accenture security careers | 2026-10-29 | 0.82 | Accenture's security careers page describes a security practice of more than 19,000 people spanning strategy, implementation and client management, with 17 security operating centers, support for market-relevant certifications, and programs for people starting a security career. |
@@ -75,3 +76,4 @@ This evidence file is public-safe and contains no private source bodies, paid ar
 - https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/song-careers
 - https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/security-careers
 - https://www.accenture.com/en/insights/pulse-of-change
+- https://www.sec.gov/Archives/edgar/data/1467373/000146737326000049/acn-20260831.htm
