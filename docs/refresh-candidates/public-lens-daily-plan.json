@@ -1,9 +1,15 @@
 {
-  "generated_at": "2026-10-31T17:26:58Z",
-  "run_date": "2026-10-31",
-  "weekday": 5,
+  "generated_at": "2026-11-01T14:35:46Z",
+  "run_date": "2026-11-01",
+  "weekday": 6,
   "week_start": "2026-10-26",
   "focus_dimensions": [
+    "company_says",
+    "company_judges",
+    "company_asks",
+    "evidence_valued",
+    "risk_warnings",
+    "role_variation",
     "honest_unknowns"
   ],
   "weekly_new_company_targets": [

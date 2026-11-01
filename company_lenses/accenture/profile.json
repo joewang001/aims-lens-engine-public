@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-31",
+  "source_cutoff": "2026-11-01",
   "industries": [
     "consulting",
     "professional services",
@@ -231,6 +231,38 @@
       "confidence": 0.85,
       "evidence_ids": [
         "ACCENTURE-10K-2026-034"
+      ]
+    },
+    {
+      "name": "Meritocracy with belonging, stated as a management commitment",
+      "description": "Accenture restates a meritocracy commitment alongside belonging and equal opportunity on its working-here page, tying advancement to opportunity and potential rather than tenure.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ACCENTURE-WORKING-HERE-035"
+      ]
+    },
+    {
+      "name": "External benchmarks named with their year",
+      "description": "The working-here page cites specific rankings and consecutive-year counts, including Great Place To Work, Fortune Most Admired, the Wall Street Journal best-companies list and CDP, rather than general claims of recognition.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-WORKING-HERE-035"
+      ]
+    },
+    {
+      "name": "Entry-level potential read through named traits",
+      "description": "Accenture's careers guidance names the traits it wants entry-level applicants to demonstrate, including openness to feedback, self-awareness, comfort with ambiguity and personal responsibility, and asks for technology interest to be evidenced through action.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ACCENTURE-ENTRY-SKILLS-036"
+      ]
+    },
+    {
+      "name": "Human-plus-AI work allocation as the operating thesis",
+      "description": "Accenture's talent research proposes matching modes of work to sources of value across human, human-plus-machine, automation, generative and agentic workforces, with ethical and imaginative judgment kept human.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ACCENTURE-TALENT-STRATEGY-038"
       ]
     }
   ],
@@ -682,6 +714,67 @@
         "ACCENTURE-10K-2026-034"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For entry-level roles, gives an example of feedback acted on and what changed the second time.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ACCENTURE-ENTRY-SKILLS-036"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Shows self-awareness by naming a strength, a limit, and the conditions where they do their best work.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ACCENTURE-ENTRY-SKILLS-036"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Makes and states an assumption when information is incomplete, then says how they would test it.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-ENTRY-SKILLS-036"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Demonstrates technology interest through courses, self-study, or a project rather than asserting enthusiasm.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ACCENTURE-ENTRY-SKILLS-036"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Divides a task between a person and an AI agent and names who remains accountable for the judgment.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ACCENTURE-TALENT-STRATEGY-038"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -964,6 +1057,30 @@
       "evidence_ids": [
         "ACCENTURE-10K-2026-034"
       ]
+    },
+    {
+      "anti_signal": "Treating feedback as something that happens to you rather than something you act on.",
+      "risk_reason": "Accenture's entry-level guidance frames feedback as a development tool and expects reflection and changed behavior.",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ACCENTURE-ENTRY-SKILLS-036"
+      ]
+    },
+    {
+      "anti_signal": "Asserting AI fluency at tool-name level with no example of where judgment was applied or output verified.",
+      "risk_reason": "Accenture's talent research reserves ethical and imaginative judgment for people, which implies reviewable human judgment rather than tool familiarity.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ACCENTURE-TALENT-STRATEGY-038"
+      ]
+    },
+    {
+      "anti_signal": "Citing an employer ranking as proof of personal fit without connecting it to how you work.",
+      "risk_reason": "The working-here page presents rankings as external validation of the workplace, not as a hiring criterion.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "ACCENTURE-WORKING-HERE-035"
+      ]
     }
   ],
   "interview_patterns": [
@@ -981,11 +1098,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 34,
-    "official_source_count": 34,
+    "source_count": 38,
+    "official_source_count": 38,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-31"
+    "last_reviewed": "2026-11-01"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Accenture hiring standard.",

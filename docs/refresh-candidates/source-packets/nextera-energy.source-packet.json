@@ -1,7 +1,7 @@
 {
   "company_slug": "nextera-energy",
   "company": "NextEra Energy",
-  "collected_at": "2026-10-31T13:30:00Z",
+  "collected_at": "2026-11-01T14:30:00Z",
   "source_policy": {
     "public_safe": true,
     "contains_private_material": false,
@@ -278,6 +278,116 @@
         "company_says",
         "honest_unknowns"
       ]
+    },
+    {
+      "evidence_id": "NEXTERA_ENERGY-BENEFITS-019",
+      "source_type": "official_careers",
+      "title": "Employee benefits at NextEra Energy",
+      "url": "https://www.nexteraenergy.com/careers/life-at-nextera/benefits.html",
+      "date_accessed": "2026-11-01",
+      "confidence": 0.84,
+      "public_safe_signal": "NextEra lists benefits beginning on day one: medical, dental, vision, disability and life insurance; 401(k) match and pension; health savings account; paid parental leave; tuition reimbursement; adoption assistance; employee assistance and well-being programs; and on-site fitness and medical services where available.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued"
+      ]
+    },
+    {
+      "evidence_id": "NEXTERA_ENERGY-GROWTH-020",
+      "source_type": "official_careers",
+      "title": "Career growth at NextEra Energy",
+      "url": "https://www.nexteraenergy.com/careers/life-at-nextera/growth.html",
+      "date_accessed": "2026-11-01",
+      "confidence": 0.82,
+      "public_safe_signal": "NextEra's career-growth page says it invests in development through courses, mentorship and special assignments, offers tuition assistance for undergraduate and master's degrees, and describes NextEra University as more than 1,500 courses open to all employees, including leadership and technical skills.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "role_variation"
+      ]
+    },
+    {
+      "evidence_id": "NEXTERA_ENERGY-ENGINEERING-021",
+      "source_type": "official_careers",
+      "title": "Engineering jobs at NextEra Energy",
+      "url": "https://www.nexteraenergy.com/careers/join-our-team/corporate-jobs/engineering-jobs.html",
+      "date_accessed": "2026-11-01",
+      "confidence": 0.8,
+      "public_safe_signal": "NextEra's engineering careers page says engineers work across wind, solar, battery, nuclear, distribution and transmission. It lists process improvement against operational performance targets, predictive-monitoring and data-analysis applications for power plants, revised operating models, grid hardening, and cybersecurity and infrastructure-integrity troubleshooting.",
+      "dimensions": [
+        "role_variation",
+        "company_asks",
+        "company_judges"
+      ]
+    },
+    {
+      "evidence_id": "NEXTERA_ENERGY-IT-022",
+      "source_type": "official_careers",
+      "title": "Information technology jobs at NextEra Energy",
+      "url": "https://www.nexteraenergy.com/careers/join-our-team/corporate-jobs/information-technology-jobs.html",
+      "date_accessed": "2026-11-01",
+      "confidence": 0.78,
+      "public_safe_signal": "NextEra's technology careers page lists cybersecurity, artificial intelligence, computer science, database and systems management and systems operations. It describes work on cyber defence, robotics and machine-learning solutions, predictive analytics for grid and component health, and customer energy-usage experiences.",
+      "dimensions": [
+        "role_variation",
+        "company_asks"
+      ]
+    },
+    {
+      "evidence_id": "NEXTERA_ENERGY-POWERDELIVERY-023",
+      "source_type": "official_careers",
+      "title": "Power delivery jobs at NextEra Energy",
+      "url": "https://www.nexteraenergy.com/careers/join-our-team/field-jobs/power-delivery-jobs.html",
+      "date_accessed": "2026-11-01",
+      "confidence": 0.8,
+      "public_safe_signal": "NextEra's power-delivery page says the team serves more than 12 million customers across 35,550 square miles and operates more than 880 substations and over 80,000 miles of distribution lines. It frames the work as designing a hardened grid and evaluating system performance and reliability strategy.",
+      "dimensions": [
+        "role_variation",
+        "evidence_valued",
+        "company_judges"
+      ]
+    },
+    {
+      "evidence_id": "NEXTERA_ENERGY-IDAP-024",
+      "source_type": "official_careers",
+      "title": "NextEra data analytics program for recent graduates",
+      "url": "https://www.nexteraenergy.com/careers/join-our-team/recent-grads/idap-data-analytics-program.html",
+      "date_accessed": "2026-11-01",
+      "confidence": 0.76,
+      "public_safe_signal": "NextEra's data-analytics program page describes a 12-month recent-graduate program of several data projects addressing live business opportunities. It says participants become eligible for full-time data science and analytics roles across the enterprise, with cohorts starting in February and August.",
+      "dimensions": [
+        "role_variation",
+        "company_asks",
+        "honest_unknowns"
+      ]
+    },
+    {
+      "evidence_id": "NEXTERA_ENERGY-EEO-025",
+      "source_type": "official_careers",
+      "title": "Equal opportunity employer and accommodation process",
+      "url": "https://www.nexteraenergy.com/careers/equal-opportunity-employer.html",
+      "date_accessed": "2026-11-01",
+      "confidence": 0.82,
+      "public_safe_signal": "NextEra states that employment decisions are based on individual merit, qualifications and competence, references pay-transparency protections, and routes accommodation requests to a named recruiting contact while warning applicants not to use that line for application-status questions.",
+      "dimensions": [
+        "risk_warnings",
+        "company_asks",
+        "honest_unknowns"
+      ]
+    },
+    {
+      "evidence_id": "NEXTERA_ENERGY-LEADERSHIP-026",
+      "source_type": "official_company",
+      "title": "NextEra Energy leadership biographies and recent succession",
+      "url": "https://www.nexteraenergy.com/about-us/leadership.html",
+      "date_accessed": "2026-11-01",
+      "confidence": 0.78,
+      "public_safe_signal": "NextEra's leadership page records recent succession: the CEO since 2022 also chairs FPL and XPLR Infrastructure, a vice chairman was appointed in May 2026, and FPL's CEO moved from president to CEO in May 2026. The published biographies emphasize finance, legal, regulatory-testimony and capital-planning experience.",
+      "dimensions": [
+        "role_variation",
+        "company_says",
+        "evidence_valued"
+      ]
     }
   ],
   "lens_updates": {
@@ -363,6 +473,46 @@
         "confidence": 0.84,
         "evidence_ids": [
           "NEXTERA_ENERGY-Q3-2026-017"
+        ]
+      },
+      {
+        "name": "Learning infrastructure open to everyone",
+        "description": "NextEra describes NextEra University as more than 1,500 courses available to all employees, alongside tuition assistance for degrees, mentorship and special assignments, framing development as an operating investment rather than a perk.",
+        "confidence": 0.82,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-GROWTH-020"
+        ]
+      },
+      {
+        "name": "Support that starts on day one",
+        "description": "Benefits are described as beginning on the first day and cover health, retirement with both 401(k) match and pension, parental leave, tuition, adoption and well-being, with on-site services where available.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-BENEFITS-019"
+        ]
+      },
+      {
+        "name": "Reliability and affordability stated as operating commitments",
+        "description": "The power-delivery material quantifies the system it runs, more than 12 million customers across 35,550 square miles with over 880 substations and 80,000 miles of distribution lines, and ties the work to reliability strategy and a hardened grid.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-POWERDELIVERY-023"
+        ]
+      },
+      {
+        "name": "Succession from inside the operating companies",
+        "description": "Leadership biographies show movement between the parent company, FPL and the resources business, with finance, legal, regulatory-testimony and capital-planning experience recurring across the top roles.",
+        "confidence": 0.72,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-LEADERSHIP-026"
+        ]
+      },
+      {
+        "name": "Accommodation handled through a defined channel",
+        "description": "NextEra separates accommodation requests from application-status questions and states that employment decisions rest on merit, qualifications and competence.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-EEO-025"
         ]
       }
     ],
@@ -548,6 +698,82 @@
           "NEXTERA_ENERGY-MERGER-016"
         ],
         "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Connects engineering or operational work to a published reliability, cost, or customer metric and explains the mechanism behind it.",
+        "aims_dimensions": [
+          "impact_results",
+          "structured_thinking"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-POWERDELIVERY-023",
+          "NEXTERA_ENERGY-ENGINEERING-021"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Explains how monitoring or predictive analytics prevented a failure, including the signal used and the false positives tolerated.",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution"
+        ],
+        "confidence": 0.78,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-ENGINEERING-021",
+          "NEXTERA_ENERGY-IT-022"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "For field or power-delivery roles, shows safety and restoration judgment under real operating constraints rather than equipment familiarity alone.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "structured_thinking"
+        ],
+        "confidence": 0.76,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-POWERDELIVERY-023"
+        ],
+        "basis": "derived_public_inference"
+      },
+      {
+        "signal": "Names what they studied through employer-supported education or internal courses and how it changed their work.",
+        "aims_dimensions": [
+          "growth_mindset",
+          "impact_results"
+        ],
+        "confidence": 0.72,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-GROWTH-020"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "Explains a recent-graduate program project as a real business problem with an owner and a decision, not a training exercise.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "impact_results",
+          "structured_thinking"
+        ],
+        "confidence": 0.74,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-IDAP-024"
+        ],
+        "basis": "stated_by_company"
+      },
+      {
+        "signal": "For leadership-track answers, shows how they handled regulatory scrutiny or defended a decision with cost and customer impact.",
+        "aims_dimensions": [
+          "collaboration_communication",
+          "structured_thinking",
+          "ownership_execution"
+        ],
+        "confidence": 0.7,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-LEADERSHIP-026"
+        ],
+        "basis": "derived_public_inference"
       }
     ],
     "anti_signals": [
@@ -657,6 +883,30 @@
         "confidence": 0.74,
         "evidence_ids": [
           "NEXTERA_ENERGY-STORM-018"
+        ]
+      },
+      {
+        "anti_signal": "Describing reliability or safety only in slogan terms, with no operating metric or failure example.",
+        "risk_reason": "NextEra publishes concrete system scale and reliability framing, so abstraction is weaker than the company's own level of detail.",
+        "confidence": 0.74,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-POWERDELIVERY-023"
+        ]
+      },
+      {
+        "anti_signal": "Treating an internal course catalog or tuition benefit as evidence of capability without showing what was applied.",
+        "risk_reason": "The growth page presents courses and tuition as investment; the implied test is what the learning changed in the work.",
+        "confidence": 0.7,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-GROWTH-020"
+        ]
+      },
+      {
+        "anti_signal": "Sending accommodation or application-status questions to the recruiting line that NextEra says is only for support requests.",
+        "risk_reason": "The equal-opportunity page explicitly separates accommodation requests from status inquiries.",
+        "confidence": 0.8,
+        "evidence_ids": [
+          "NEXTERA_ENERGY-EEO-025"
         ]
       }
     ],
@@ -879,6 +1129,74 @@
           "Communicates uncertainty about scope and timing honestly.",
           "Measures restoration or recovery and captures lessons for next time."
         ]
+      },
+      {
+        "type": "predictive_reliability_behavioral",
+        "generated_question": "Tell me about a time you caught a developing failure from monitoring data. Which signal did you trust, what did you ignore, and what happened?",
+        "aims_dimensions": [
+          "analytical_problem_solving",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Names the signal, threshold and operating context.",
+          "Explains false positives or noise and how they were handled.",
+          "Shows the action taken before failure and the outcome."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-ENGINEERING-021"
+        ]
+      },
+      {
+        "type": "reliability_cost_regulation_tradeoff",
+        "generated_question": "Describe a decision where reliability, cost, and regulatory obligations pulled apart. How did you decide, and who reviewed it?",
+        "aims_dimensions": [
+          "structured_thinking",
+          "collaboration_communication",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names the specific constraints and the affected customers.",
+          "Explains the standard or evidence used to justify the call.",
+          "Shows who reviewed or approved it and what was documented."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-POWERDELIVERY-023",
+          "NEXTERA_ENERGY-LEADERSHIP-026"
+        ]
+      },
+      {
+        "type": "growth_and_learning",
+        "generated_question": "What would you learn in your first year here, and which internal course or tuition-supported program would you use? What would you build with it?",
+        "aims_dimensions": [
+          "growth_mindset",
+          "ownership_execution"
+        ],
+        "strong_answer_signals": [
+          "Names a specific capability gap and a matching program.",
+          "Connects the learning to a deliverable or role outcome.",
+          "Shows how they would measure whether the learning worked."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-GROWTH-020"
+        ]
+      },
+      {
+        "type": "early_career_ownership",
+        "generated_question": "For a recent-graduate program: describe a project where you owned a real analysis, not a classroom exercise.",
+        "aims_dimensions": [
+          "ownership_execution",
+          "impact_results",
+          "structured_thinking"
+        ],
+        "strong_answer_signals": [
+          "Identifies the business owner and the decision the analysis fed.",
+          "Explains data limitations and how they were handled.",
+          "States what changed because of the result."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-IDAP-024"
+        ]
       }
     ],
     "role_overlays": [
@@ -1000,6 +1318,67 @@
         "evidence_ids": [
           "NEXTERA_ENERGY-STORM-018",
           "NEXTERA_ENERGY-Q3-2026-017"
+        ]
+      },
+      {
+        "role_slug": "engineering_and_grid_modernization",
+        "role_family": "Engineering and grid modernization roles",
+        "signals": [
+          "Works across wind, solar, battery, nuclear, distribution and transmission assets.",
+          "Improves processes against operational performance targets and revises operating models.",
+          "Builds predictive monitoring and data analysis for plant and grid health.",
+          "Hardens infrastructure against physical and cyber threats."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-ENGINEERING-021"
+        ]
+      },
+      {
+        "role_slug": "technology_data_and_cybersecurity",
+        "role_family": "Technology, data, and cybersecurity roles",
+        "signals": [
+          "Applies AI, machine learning and analytics to grid and component health.",
+          "Defends operating assets and knowledge against cyber threats.",
+          "Builds customer-facing energy-usage experiences from operational data."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-IT-022"
+        ]
+      },
+      {
+        "role_slug": "power_delivery_and_field_operations",
+        "role_family": "Power delivery and field operations roles",
+        "signals": [
+          "Balances restoration speed with safety and reliability obligations.",
+          "Works at substation and distribution-line scale across a large service territory.",
+          "Evaluates system performance and reliability strategy rather than single-asset fixes."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-POWERDELIVERY-023"
+        ]
+      },
+      {
+        "role_slug": "early_career_data_analytics",
+        "role_family": "Early-career data analytics program roles",
+        "signals": [
+          "Delivers several analytics projects on live business problems within 12 months.",
+          "Targets full-time data science or analytics placement across the enterprise.",
+          "Works to February and August cohort starts."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-IDAP-024"
+        ]
+      },
+      {
+        "role_slug": "corporate_finance_regulatory_leadership",
+        "role_family": "Corporate finance, regulatory, and leadership-track roles",
+        "signals": [
+          "Shows finance, legal or regulatory-testimony depth applied to capital and customer decisions.",
+          "Works across parent-company and operating-company structures.",
+          "Prepares for internal succession rather than external-only mobility."
+        ],
+        "evidence_ids": [
+          "NEXTERA_ENERGY-LEADERSHIP-026"
         ]
       }
     ]

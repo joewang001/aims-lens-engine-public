@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-26",
-  "source_cutoff": "2026-10-31",
+  "source_cutoff": "2026-11-01",
   "industries": [
     "technology",
     "enterprise software",
@@ -117,6 +117,32 @@
       "confidence": 0.85,
       "evidence_ids": [
         "SERVICENOW-PRIVACY-014"
+      ]
+    },
+    {
+      "name": "Measure the value of AI, not its novelty",
+      "description": "ServiceNow publishes how it measures the value of AI, runs IT through a CIO dashboard and operations through a CEO dashboard, and treats clean-core ERP modernization as a discipline. Its own deployment is used as the reference case rather than only a customer story.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "SERVICENOW-NOWONNOW-016"
+      ]
+    },
+    {
+      "name": "Talent pipelines built with partners, not only job postings",
+      "description": "RiseUp, academic partnerships and placement partnerships are described as sources of ServiceNow-skilled entry- and mid-level talent, with certification embedded in partner curricula and a stated time from sourcing to hire-ready.",
+      "confidence": 0.75,
+      "evidence_ids": [
+        "SERVICENOW-SKILLING-017",
+        "SERVICENOW-WORKFORCE-018"
+      ]
+    },
+    {
+      "name": "Compliance stated with its audit boundary",
+      "description": "Certifications are listed with their standard, scope and audit or reporting cycle, and security responsibility is split publicly between provider and customer rather than asserted in summary form.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "SERVICENOW-COMPLIANCE-019",
+        "SERVICENOW-SECURITY-020"
       ]
     }
   ],
@@ -349,6 +375,57 @@
         "SERVICENOW-Q3-2026-015"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Explains how an AI or automation program's value was measured, including the baseline and what the number excludes.",
+      "aims_dimensions": [
+        "impact_results",
+        "analytical_problem_solving",
+        "structured_thinking"
+      ],
+      "confidence": 0.79,
+      "evidence_ids": [
+        "SERVICENOW-NOWONNOW-016"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Describes a compliance or certification claim with its scope and audit period instead of citing the badge alone.",
+      "aims_dimensions": [
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "SERVICENOW-COMPLIANCE-019"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "On a shared platform, states which controls were theirs, which belonged to the provider, and how they verified the boundary.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "SERVICENOW-SECURITY-020"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "For candidates from reskilling or non-traditional routes, names the specific curriculum or certification completed and what they delivered afterward.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "SERVICENOW-SKILLING-017",
+        "SERVICENOW-WORKFORCE-018"
+      ],
+      "basis": "stated_by_company"
     }
   ],
   "anti_signals": [
@@ -466,6 +543,30 @@
       "evidence_ids": [
         "SERVICENOW-Q3-2026-015"
       ]
+    },
+    {
+      "anti_signal": "Citing a certification or compliance badge without its scope, audit period, or who performed the audit.",
+      "risk_reason": "ServiceNow publishes the standard, audit cycle and report timing beside each certification, so a badge-only claim is weaker than the company's own disclosure.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "SERVICENOW-COMPLIANCE-019"
+      ]
+    },
+    {
+      "anti_signal": "Treating platform security as entirely the provider's responsibility, with no view of customer-side configuration or data duties.",
+      "risk_reason": "ServiceNow describes security as shared with defined responsibilities and publishes a shared responsibility model.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "SERVICENOW-SECURITY-020"
+      ]
+    },
+    {
+      "anti_signal": "Presenting an internal AI success story without the measurement method behind it.",
+      "risk_reason": "ServiceNow's own-use material emphasizes value frameworks, operating dashboards and lessons learned rather than headline claims.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "SERVICENOW-NOWONNOW-016"
+      ]
     }
   ],
   "interview_patterns": [
@@ -483,11 +584,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 15,
-    "official_source_count": 15,
+    "source_count": 20,
+    "official_source_count": 20,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-31"
+    "last_reviewed": "2026-11-01"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official ServiceNow hiring standard.",
