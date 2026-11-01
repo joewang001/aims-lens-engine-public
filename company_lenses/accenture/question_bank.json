@@ -672,6 +672,76 @@
         "ACCENTURE-PULSE-033",
         "ACCENTURE-10K-2026-034"
       ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-026",
+      "type": "feedback_growth_behavioral",
+      "generated_question": "Tell me about feedback that was hard to hear. What did you change, and what happened the next time?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "collaboration_communication",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Quotes the substance of the feedback without defensiveness.",
+        "Names a specific behavior change, not a general attitude shift.",
+        "Shows a later result that tested whether the change held."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-ENTRY-SKILLS-036"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-027",
+      "type": "ambiguity_judgment_behavioral",
+      "generated_question": "Describe a decision you made without complete information. What did you assume, and how would you have found out you were wrong?",
+      "aims_dimensions": [
+        "structured_thinking",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "States the assumption explicitly and why it was reasonable.",
+        "Names the cheapest test or signal that would falsify it.",
+        "Explains what was decided before the answer arrived."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-ENTRY-SKILLS-036"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-028",
+      "type": "human_ai_task_split",
+      "generated_question": "How would you split a familiar task between yourself and an AI agent, and where would you keep human judgment?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Matches task type to capability rather than automating uniformly.",
+        "Names the judgment that must stay human and why.",
+        "Explains how the output would be checked."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-TALENT-STRATEGY-038"
+      ]
+    },
+    {
+      "question_id": "ACCENTURE-Q-029",
+      "type": "self_directed_learning",
+      "generated_question": "What have you taught yourself in the past year, and what did you produce that shows it worked?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Names a specific skill and the resources used.",
+        "Shows a produced artifact, project or changed practice.",
+        "Explains what is still weak and what comes next."
+      ],
+      "evidence_ids": [
+        "ACCENTURE-ENTRY-SKILLS-036"
+      ]
     }
   ]
 }

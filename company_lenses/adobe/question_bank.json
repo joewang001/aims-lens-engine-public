@@ -667,6 +667,77 @@
         "ADOBE-10K-2025-028",
         "ADOBE-10Q-Q3-2026-029"
       ]
+    },
+    {
+      "question_id": "ADOBE-Q-026",
+      "type": "iteration_and_reversal_behavioral",
+      "generated_question": "Walk me through a design or product decision you reversed. What did you try, and what told you to abandon it?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "growth_mindset",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Describes the experiment rather than only the outcome.",
+        "Names the evidence that changed their mind.",
+        "Explains what was kept from the abandoned direction."
+      ],
+      "evidence_ids": [
+        "ADOBE-DESIGN-CRAFT-031"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-027",
+      "type": "ai_verification_behavioral",
+      "generated_question": "Tell me about an AI-assisted deliverable you shipped. How did you verify it, and what did you refuse to accept?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "impact_results"
+      ],
+      "strong_answer_signals": [
+        "Names the sources or checks used to verify output.",
+        "Gives an example of output they rejected and why.",
+        "Explains what still required human judgment."
+      ],
+      "evidence_ids": [
+        "ADOBE-ACROBAT-STUDIO-033"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-028",
+      "type": "sustainable_creativity_behavioral",
+      "generated_question": "When delivery pressure rose, what did you change to protect the quality of the work?",
+      "aims_dimensions": [
+        "ownership_execution",
+        "growth_mindset",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Names the specific pressure and its effect on quality.",
+        "Describes a concrete change to pace, scope or working pattern.",
+        "Shows the quality or outcome that was protected."
+      ],
+      "evidence_ids": [
+        "ADOBE-CREATIVE-SPACE-032"
+      ]
+    },
+    {
+      "question_id": "ADOBE-Q-029",
+      "type": "learning_access_measurement",
+      "generated_question": "How would you measure whether a learning or access program actually worked, beyond enrollment?",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking"
+      ],
+      "strong_answer_signals": [
+        "Separates reach, completion and applied outcome.",
+        "Names a comparison or follow-up measure.",
+        "Explains what would count as failure."
+      ],
+      "evidence_ids": [
+        "ADOBE-DIGITAL-ACADEMY-030"
+      ]
     }
   ]
 }

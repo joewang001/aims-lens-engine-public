@@ -5,7 +5,7 @@
   "lens_status": "LIGHTWEIGHT_SCAN",
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
-  "source_cutoff": "2026-10-31",
+  "source_cutoff": "2026-11-01",
   "industries": [
     "technology",
     "creative software",
@@ -225,6 +225,38 @@
       "confidence": 0.83,
       "evidence_ids": [
         "ADOBE-10K-2025-028"
+      ]
+    },
+    {
+      "name": "Craft survives only with a fast feedback loop",
+      "description": "Adobe design leadership argues that creative judgment is discovered through rapid manipulation and iteration, not through describing an intent and waiting, and that tooling should preserve the hand-eye loop.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ADOBE-DESIGN-CRAFT-031"
+      ]
+    },
+    {
+      "name": "Protect attention as part of the work",
+      "description": "Adobe design leadership frames breaks, movement and bounded attention as conditions for original work, arguing that overload degrades output rather than being a neutral cost.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ADOBE-CREATIVE-SPACE-032"
+      ]
+    },
+    {
+      "name": "Citations before confidence in AI output",
+      "description": "Adobe's internal AI deployment is presented around traceability, with answers linked to the exact document, page and evidence, and plausible-but-unsourced output treated as the failure mode.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-ACROBAT-STUDIO-033"
+      ]
+    },
+    {
+      "name": "Skills access with a dated public target",
+      "description": "Adobe Digital Academy publishes a 30-million-learner goal by 2030, a current-year count, and named delivery partners rather than a general commitment to access.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-DIGITAL-ACADEMY-030"
       ]
     }
   ],
@@ -679,6 +711,55 @@
         "ADOBE-10Q-Q3-2026-029"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Walks through a design or product decision as a sequence of experiments, including the option they rejected and why.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "growth_mindset",
+        "impact_results"
+      ],
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-DESIGN-CRAFT-031"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Shows how they verified an AI-assisted output against a cited source instead of accepting a plausible answer.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ADOBE-ACROBAT-STUDIO-033"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Explains what they changed when delivery pressure started degrading the quality of their work.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ADOBE-CREATIVE-SPACE-032"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Connects creative or learning work to an access or adoption measure, not only to output volume.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "ADOBE-DIGITAL-ACADEMY-030"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -942,6 +1023,30 @@
       "evidence_ids": [
         "ADOBE-10Q-Q3-2026-029"
       ]
+    },
+    {
+      "anti_signal": "Presenting a polished artifact with no account of process, iteration, or discarded options.",
+      "risk_reason": "Adobe's design leadership describes creative work as discovered through many small experiments, which a final-only portfolio cannot show.",
+      "confidence": 0.78,
+      "evidence_ids": [
+        "ADOBE-DESIGN-CRAFT-031"
+      ]
+    },
+    {
+      "anti_signal": "Describing AI use as prompt-and-accept, with no verification against a source.",
+      "risk_reason": "Adobe's internal deployment emphasizes citations to document, page and evidence, and treats unsourced plausibility as the risk.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ADOBE-ACROBAT-STUDIO-033"
+      ]
+    },
+    {
+      "anti_signal": "Framing productivity as output volume while ignoring the conditions that sustain quality.",
+      "risk_reason": "Adobe's design leadership argues that overload degrades creative output and that recovery is part of the work.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "ADOBE-CREATIVE-SPACE-032"
+      ]
     }
   ],
   "interview_patterns": [
@@ -959,11 +1064,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 29,
-    "official_source_count": 29,
+    "source_count": 33,
+    "official_source_count": 33,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-31"
+    "last_reviewed": "2026-11-01"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official Adobe hiring standard.",

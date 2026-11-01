@@ -6,7 +6,7 @@
   "visibility": "PUBLIC_COMPANY_LENS",
   "version": "0.1.0-public-release-candidate",
   "introduced_at": "2026-10-26",
-  "source_cutoff": "2026-10-31",
+  "source_cutoff": "2026-11-01",
   "industries": [
     "energy",
     "utilities",
@@ -117,6 +117,46 @@
       "confidence": 0.84,
       "evidence_ids": [
         "NEXTERA_ENERGY-Q3-2026-017"
+      ]
+    },
+    {
+      "name": "Learning infrastructure open to everyone",
+      "description": "NextEra describes NextEra University as more than 1,500 courses available to all employees, alongside tuition assistance for degrees, mentorship and special assignments, framing development as an operating investment rather than a perk.",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-GROWTH-020"
+      ]
+    },
+    {
+      "name": "Support that starts on day one",
+      "description": "Benefits are described as beginning on the first day and cover health, retirement with both 401(k) match and pension, parental leave, tuition, adoption and well-being, with on-site services where available.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-BENEFITS-019"
+      ]
+    },
+    {
+      "name": "Reliability and affordability stated as operating commitments",
+      "description": "The power-delivery material quantifies the system it runs, more than 12 million customers across 35,550 square miles with over 880 substations and 80,000 miles of distribution lines, and ties the work to reliability strategy and a hardened grid.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-POWERDELIVERY-023"
+      ]
+    },
+    {
+      "name": "Succession from inside the operating companies",
+      "description": "Leadership biographies show movement between the parent company, FPL and the resources business, with finance, legal, regulatory-testimony and capital-planning experience recurring across the top roles.",
+      "confidence": 0.72,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-LEADERSHIP-026"
+      ]
+    },
+    {
+      "name": "Accommodation handled through a defined channel",
+      "description": "NextEra separates accommodation requests from application-status questions and states that employment decisions rest on merit, qualifications and competence.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-EEO-025"
       ]
     }
   ],
@@ -337,6 +377,82 @@
         "NEXTERA_ENERGY-MERGER-016"
       ],
       "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Connects engineering or operational work to a published reliability, cost, or customer metric and explains the mechanism behind it.",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-POWERDELIVERY-023",
+        "NEXTERA_ENERGY-ENGINEERING-021"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Explains how monitoring or predictive analytics prevented a failure, including the signal used and the false positives tolerated.",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution"
+      ],
+      "confidence": 0.78,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-ENGINEERING-021",
+        "NEXTERA_ENERGY-IT-022"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "For field or power-delivery roles, shows safety and restoration judgment under real operating constraints rather than equipment familiarity alone.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "structured_thinking"
+      ],
+      "confidence": 0.76,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-POWERDELIVERY-023"
+      ],
+      "basis": "derived_public_inference"
+    },
+    {
+      "signal": "Names what they studied through employer-supported education or internal courses and how it changed their work.",
+      "aims_dimensions": [
+        "growth_mindset",
+        "impact_results"
+      ],
+      "confidence": 0.72,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-GROWTH-020"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "Explains a recent-graduate program project as a real business problem with an owner and a decision, not a training exercise.",
+      "aims_dimensions": [
+        "ownership_execution",
+        "impact_results",
+        "structured_thinking"
+      ],
+      "confidence": 0.74,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-IDAP-024"
+      ],
+      "basis": "stated_by_company"
+    },
+    {
+      "signal": "For leadership-track answers, shows how they handled regulatory scrutiny or defended a decision with cost and customer impact.",
+      "aims_dimensions": [
+        "collaboration_communication",
+        "structured_thinking",
+        "ownership_execution"
+      ],
+      "confidence": 0.7,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-LEADERSHIP-026"
+      ],
+      "basis": "derived_public_inference"
     }
   ],
   "anti_signals": [
@@ -456,6 +572,30 @@
       "evidence_ids": [
         "NEXTERA_ENERGY-STORM-018"
       ]
+    },
+    {
+      "anti_signal": "Describing reliability or safety only in slogan terms, with no operating metric or failure example.",
+      "risk_reason": "NextEra publishes concrete system scale and reliability framing, so abstraction is weaker than the company's own level of detail.",
+      "confidence": 0.74,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-POWERDELIVERY-023"
+      ]
+    },
+    {
+      "anti_signal": "Treating an internal course catalog or tuition benefit as evidence of capability without showing what was applied.",
+      "risk_reason": "The growth page presents courses and tuition as investment; the implied test is what the learning changed in the work.",
+      "confidence": 0.7,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-GROWTH-020"
+      ]
+    },
+    {
+      "anti_signal": "Sending accommodation or application-status questions to the recruiting line that NextEra says is only for support requests.",
+      "risk_reason": "The equal-opportunity page explicitly separates accommodation requests from status inquiries.",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "NEXTERA_ENERGY-EEO-025"
+      ]
     }
   ],
   "interview_patterns": [
@@ -473,11 +613,11 @@
     }
   ],
   "evidence_summary": {
-    "source_count": 18,
-    "official_source_count": 18,
+    "source_count": 26,
+    "official_source_count": 26,
     "interview_source_count": 0,
     "employee_voice_source_count": 0,
-    "last_reviewed": "2026-10-31"
+    "last_reviewed": "2026-11-01"
   },
   "honest_limits": [
     "This is a lightweight public-source lens and does not represent an official NextEra Energy hiring standard.",

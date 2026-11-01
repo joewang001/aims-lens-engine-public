@@ -395,6 +395,62 @@
         "SERVICENOW-PRIVACY-014",
         "SERVICENOW-Q3-2026-015"
       ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-017",
+      "type": "ai_value_behavioral",
+      "generated_question": "Tell me about an AI or automation rollout where you had to prove value. What baseline did you use, what did the metric exclude, and who challenged it?",
+      "aims_dimensions": [
+        "impact_results",
+        "structured_thinking",
+        "analytical_problem_solving"
+      ],
+      "strong_answer_signals": [
+        "Names a baseline, period, and comparison group rather than a single post-launch number.",
+        "Separates adoption or usage from financial or operational value.",
+        "Explains who disputed the measurement and how it was resolved.",
+        "States what the metric could not show."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-NOWONNOW-016"
+      ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-018",
+      "type": "shared_responsibility_security",
+      "generated_question": "Describe a compliance or security requirement you owned on a shared platform. Which controls were yours, which were the provider's, and how did you verify the split?",
+      "aims_dimensions": [
+        "analytical_problem_solving",
+        "ownership_execution",
+        "collaboration_communication"
+      ],
+      "strong_answer_signals": [
+        "Separates provider controls from customer-owned configuration and data duties.",
+        "Cites the standard, audit report or contract clause relied on.",
+        "Explains how the boundary was tested rather than assumed.",
+        "Names residual risk and who accepted it."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-COMPLIANCE-019",
+        "SERVICENOW-SECURITY-020"
+      ]
+    },
+    {
+      "question_id": "SERVICENOW-Q-019",
+      "type": "reskilling_path",
+      "generated_question": "If you entered technical work through a reskilling or certification path, what did you learn first, and what did you ship that proved it?",
+      "aims_dimensions": [
+        "growth_mindset",
+        "ownership_execution"
+      ],
+      "strong_answer_signals": [
+        "Names the specific curriculum or certification and its scope.",
+        "Describes a deliverable produced after the training, not the training itself.",
+        "Explains what was still hard and how support was found."
+      ],
+      "evidence_ids": [
+        "SERVICENOW-SKILLING-017"
+      ]
     }
   ]
 }
