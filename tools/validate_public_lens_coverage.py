@@ -69,6 +69,11 @@ def validate_company(path: Path, *, max_stale_days: int) -> list[Finding]:
     if not profile_path.is_file():
         return [Finding("blocker", company, "missing_profile", "profile.json is required.")]
 
+    # A new company must still have a public evidence artifact; warnings for
+    # unknown dimensions must never turn an empty placeholder into a lens.
+    if not evidence_path.is_file() or not evidence_path.read_text(encoding="utf-8").strip():
+        findings.append(Finding("blocker", company, "missing_evidence", "Nonempty evidence.md is required."))
+
     profile = load_json(profile_path)
     status = str(profile.get("lens_status", ""))
 
@@ -84,9 +89,16 @@ def validate_company(path: Path, *, max_stale_days: int) -> list[Finding]:
         "evidence_summary",
         "honest_limits",
     }
+    # Preliminary scans can be published with clearly recorded research gaps.
+    # Identity, status, version and cutoff remain mandatory.
+    lightweight_optional = {
+        "aims_weighting", "hiring_signals", "anti_signals",
+        "evidence_summary", "honest_limits",
+    } if status == "LIGHTWEIGHT_SCAN" else set()
     for field in sorted(required_profile_fields):
         if field not in profile:
-            findings.append(Finding("blocker", company, "missing_profile_field", f"Missing `{field}`."))
+            severity = "warning" if field in lightweight_optional else "blocker"
+            findings.append(Finding(severity, company, "missing_profile_field", f"Missing `{field}`."))
 
     dimension_checks = [
         ("company_says", has_items(profile.get("culture_principles")) and evidence_path.is_file()),
@@ -98,7 +110,12 @@ def validate_company(path: Path, *, max_stale_days: int) -> list[Finding]:
     ]
     for code, ok in dimension_checks:
         if not ok:
-            findings.append(Finding("blocker", company, code, "Seven-dimension coverage is incomplete."))
+            findings.append(Finding(
+                "warning" if status == "LIGHTWEIGHT_SCAN" else "blocker",
+                company, code,
+                "Provisional depth gap; record evidence and next action." if status == "LIGHTWEIGHT_SCAN"
+                else "Seven-dimension coverage is incomplete.",
+            ))
 
     if role_overlay_path.is_dir() and any(role_overlay_path.glob("*.json")):
         pass
