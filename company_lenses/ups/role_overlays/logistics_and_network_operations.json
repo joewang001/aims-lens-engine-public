@@ -1,0 +1,20 @@
+{
+  "company": "UPS",
+  "role_family": "Logistics and network operations",
+  "lens_status": "LIGHTWEIGHT_SCAN",
+  "visibility": "PUBLIC_COMPANY_LENS",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_user_submitted_job_postings": false
+  },
+  "focus_signals": [
+    "Uses data and operational judgment to improve safety, service, capacity, reliability, and cost.",
+    "Connects local execution to end-to-end network and customer outcomes."
+  ],
+  "evidence_ids": [
+    "UPS-OFFICIAL-001",
+    "UPS-CAREERS-002"
+  ]
+}

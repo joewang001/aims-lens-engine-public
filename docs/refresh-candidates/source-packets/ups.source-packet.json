@@ -1,0 +1,87 @@
+{
+  "company_slug": "ups",
+  "company": "UPS",
+  "collected_at": "2026-11-02T04:51:30Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "logistics",
+      "transportation",
+      "supply chain",
+      "ecommerce"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public logistics and transportation company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "UPS company overview",
+      "url": "https://about.ups.com/us/en/our-company.html",
+      "confidence": 0.81,
+      "public_safe_signal": "UPS publicly describes a global package delivery and supply-chain network serving customers through transportation, logistics, technology, and operational execution.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "UPS-OFFICIAL-001",
+      "date_accessed": "2026-11-02"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "UPS careers",
+      "url": "https://www.jobs-ups.com/",
+      "confidence": 0.77,
+      "public_safe_signal": "UPS careers material spans frontline, operations, engineering, technology, sales, and corporate work with emphasis on safety, service, teamwork, and reliability.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "UPS-CAREERS-002",
+      "date_accessed": "2026-11-02"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "behavioral",
+        "generated_question": "Tell me about a time you solved a difficult logistics and network operations problem and connected your decisions to a measurable stakeholder result.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the problem, stakeholders, and constraints clearly.",
+          "Explains evidence, tradeoffs, and personal ownership.",
+          "Connects execution to a measurable result.",
+          "Shows learning from feedback or changed conditions."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "logistics_and_network_operations",
+        "role_family": "Logistics and network operations",
+        "signals": [
+          "Uses data and operational judgment to improve safety, service, capacity, reliability, and cost.",
+          "Connects local execution to end-to-end network and customer outcomes."
+        ]
+      }
+    ]
+  }
+}

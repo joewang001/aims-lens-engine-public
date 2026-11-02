@@ -1,0 +1,88 @@
+{
+  "company_slug": "airbnb",
+  "company": "Airbnb",
+  "collected_at": "2026-11-02T04:51:31Z",
+  "source_policy": {
+    "public_safe": true,
+    "contains_private_material": false,
+    "contains_candidate_data": false,
+    "contains_raw_job_posting_body": false,
+    "contains_paywalled_text": false
+  },
+  "company_profile": {
+    "industries": [
+      "technology",
+      "travel",
+      "marketplace",
+      "consumer services",
+      "payments"
+    ],
+    "regions": [
+      "north_america",
+      "global"
+    ],
+    "company_stage": "large public travel marketplace company"
+  },
+  "sources": [
+    {
+      "source_type": "official_company",
+      "title": "Airbnb about us",
+      "url": "https://www.airbnb.com/about/about-us",
+      "confidence": 0.81,
+      "public_safe_signal": "Airbnb publicly describes a global marketplace connecting hosts and guests through travel experiences, community participation, technology, and trust mechanisms.",
+      "dimensions": [
+        "company_says",
+        "evidence_valued",
+        "risk_warnings"
+      ],
+      "evidence_id": "AIRBNB-OFFICIAL-001",
+      "date_accessed": "2026-11-02"
+    },
+    {
+      "source_type": "official_careers",
+      "title": "Airbnb careers",
+      "url": "https://careers.airbnb.com/",
+      "confidence": 0.77,
+      "public_safe_signal": "Airbnb careers material emphasizes belonging, creativity, collaboration, responsibility, and building products and operations for a global community.",
+      "dimensions": [
+        "company_judges",
+        "company_asks",
+        "role_variation"
+      ],
+      "evidence_id": "AIRBNB-CAREERS-002",
+      "date_accessed": "2026-11-02"
+    }
+  ],
+  "lens_updates": {
+    "culture_principles": [],
+    "hiring_signals": [],
+    "anti_signals": [],
+    "questions": [
+      {
+        "type": "behavioral",
+        "generated_question": "Tell me about a time you solved a difficult marketplace product and trust roles problem and connected your decisions to a measurable stakeholder result.",
+        "aims_dimensions": [
+          "structured_thinking",
+          "ownership_execution",
+          "impact_results"
+        ],
+        "strong_answer_signals": [
+          "Defines the problem, stakeholders, and constraints clearly.",
+          "Explains evidence, tradeoffs, and personal ownership.",
+          "Connects execution to a measurable result.",
+          "Shows learning from feedback or changed conditions."
+        ]
+      }
+    ],
+    "role_overlays": [
+      {
+        "role_slug": "marketplace_product_and_trust",
+        "role_family": "Marketplace product and trust roles",
+        "signals": [
+          "Balances guest, host, community, trust, safety, product, and marketplace incentives.",
+          "Uses experiments and qualitative evidence to improve end-to-end customer experience."
+        ]
+      }
+    ]
+  }
+}

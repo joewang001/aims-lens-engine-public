@@ -128,6 +128,12 @@ initial_public_release:
     - slug: servicenow
       path: company_lenses/servicenow/
       status: existing_candidate
+    - slug: airbnb
+      path: company_lenses/airbnb/
+      status: existing_candidate
+    - slug: ups
+      path: company_lenses/ups/
+      status: existing_candidate
 
 allow_paths:
   root_files:
@@ -528,6 +534,24 @@ allow_paths:
     - company_lenses/servicenow/limits.md
     - company_lenses/servicenow/validation_report.md
     - company_lenses/servicenow/role_overlays/
+    - company_lenses/airbnb/README.md
+    - company_lenses/airbnb/profile.json
+    - company_lenses/airbnb/evidence.md
+    - company_lenses/airbnb/rubric.md
+    - company_lenses/airbnb/question_bank.json
+    - company_lenses/airbnb/rewrite_rules.md
+    - company_lenses/airbnb/limits.md
+    - company_lenses/airbnb/validation_report.md
+    - company_lenses/airbnb/role_overlays/
+    - company_lenses/ups/README.md
+    - company_lenses/ups/profile.json
+    - company_lenses/ups/evidence.md
+    - company_lenses/ups/rubric.md
+    - company_lenses/ups/question_bank.json
+    - company_lenses/ups/rewrite_rules.md
+    - company_lenses/ups/limits.md
+    - company_lenses/ups/validation_report.md
+    - company_lenses/ups/role_overlays/
 
   public_tools:
     - tools/package_agent_access.py
