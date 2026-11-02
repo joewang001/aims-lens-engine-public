@@ -228,6 +228,11 @@ class DailyOperationsTests(unittest.TestCase):
         ).read_text(encoding="utf-8")
         self.assertIn('cron: "0 13 * * *"', workflow)
         self.assertIn('cron: "0 14 * * *"', workflow)
+        # Both scheduled writers must use the latest main checkout, not a
+        # workflow-dispatch event SHA pinned before a separate cohort merge.
+        self.assertIn("weekly-company-expansion:", workflow)
+        self.assertIn("daily-seven-dimension-enrichment:", workflow)
+        self.assertEqual(workflow.count("          ref: main"), 2)
         self.assertNotIn("--expansion-limit \"$WEEKLY_NEW_COMPANY_TARGET\" --allow-empty", workflow)
         self.assertIn("run_weekly_public_lens_expansion.py", workflow)
         self.assertIn("verify-reserve --min-unused 8", workflow)
