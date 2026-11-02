@@ -28,12 +28,11 @@ class PublicationScopeTests(unittest.TestCase):
             with patch.object(publisher, "ROOT", root), self.assertRaises(ValueError):
                 publisher.validate_paths([str(link.relative_to(root))])
 
-    def test_automation_waits_for_unit_tests_and_matches_the_tested_head(self):
+    def test_public_repository_is_validation_only_and_cannot_auto_publish(self):
         workflow = (publisher.ROOT / ".github/workflows/public-lens-maintenance.yml").read_text()
-        validation = workflow.split("  weekly-company-expansion:")[0]
-        self.assertIn("python -m unittest discover -s tests -v", validation)
-        publication = workflow.split("  open-sourcing-agent-pull-request:")[1].split("  daily-seven-dimension-enrichment:")[0]
-        self.assertIn("needs: validate-public-lens", publication)
-        self.assertIn('--match-head-commit "$GITHUB_SHA"', publication)
-        self.assertIn("MERGEABLE) ready=true", publication)
-        self.assertNotIn("--auto", publication)
+        self.assertIn("python -m unittest discover -s tests -v", workflow)
+        self.assertIn("python tools/scan_public_export.py --allowlist", workflow)
+        self.assertIn("contents: read", workflow)
+        self.assertNotIn("  schedule:", workflow)
+        self.assertNotIn("open-sourcing-agent-pull-request:", workflow)
+        self.assertNotIn("gh pr merge", workflow)
