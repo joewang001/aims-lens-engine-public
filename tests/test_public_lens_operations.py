@@ -219,20 +219,19 @@ class DailyOperationsTests(unittest.TestCase):
                 self.assertTrue(rows[0]["resolution_pr"].endswith(f"/{expected_pr}"))
                 self.assertIn("--first-parent", run.call_args.args[0])
 
-    def test_workflow_has_separate_weekly_and_daily_schedules(self):
+    def test_public_workflow_validates_without_scheduled_company_growth(self):
         workflow = (
             public_lens_operations.ROOT
             / ".github"
             / "workflows"
             / "public-lens-maintenance.yml"
         ).read_text(encoding="utf-8")
-        self.assertIn('cron: "0 13 * * *"', workflow)
-        self.assertIn('cron: "0 14 * * *"', workflow)
-        self.assertNotIn("--expansion-limit \"$WEEKLY_NEW_COMPANY_TARGET\" --allow-empty", workflow)
-        self.assertIn("run_weekly_public_lens_expansion.py", workflow)
-        self.assertIn("verify-reserve --min-unused 8", workflow)
-        self.assertIn("automation/public-lens-source-agent", workflow)
-        self.assertIn("gh pr create", workflow)
+        self.assertNotIn("  schedule:", workflow)
+        self.assertNotIn("weekly-company-expansion:", workflow)
+        self.assertNotIn("daily-seven-dimension-enrichment:", workflow)
+        self.assertNotIn("gh pr create", workflow)
+        self.assertIn("validate-public-lens:", workflow)
+        self.assertIn("contents: read", workflow)
 
     def test_openclaw_runner_enforces_substantive_daily_output(self):
         runner = (
