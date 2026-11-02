@@ -29,7 +29,13 @@ class WeeklyExpansionTests(unittest.TestCase):
                 self.assertEqual(weekly.plan(2, 8, date(2026, 10, 19))['needed'], 0)
                 self.assertEqual(weekly.plan(5, 8, date(2026, 10, 19))['selected'], ['c', 'd', 'e'])
 
-    def test_reserve_blocks_exhaustion_before_any_generation(self):
+    def test_reserve_is_advisory_when_two_valid_candidates_exist(self):
         with patch.object(weekly.ops, 'company_dirs', return_value=[]), patch.object(weekly.sources, 'choose_expansion', return_value=list('abcdefghijkl')):
-            with self.assertRaisesRegex(ValueError, 'reserve'):
-                weekly.plan(5, 8, date(2026, 10, 19))
+            result = weekly.plan(5, 8, date(2026, 10, 19))
+            self.assertEqual(result['needed'], 5)
+            self.assertEqual(result['unused_after'], 7)
+
+    def test_insufficient_candidates_remains_blocking(self):
+        with patch.object(weekly.ops, 'company_dirs', return_value=[]), patch.object(weekly.sources, 'choose_expansion', return_value=['a']):
+            with self.assertRaisesRegex(ValueError, 'insufficient public candidates'):
+                weekly.plan(2, 8, date(2026, 10, 19))

@@ -39,7 +39,8 @@ SEVEN_DIMENSIONS = (
 )
 
 DAILY_FOCUS = {
-    0: ("weekly_expansion",),
+    # Weekly expansion is a separate Monday job; daily enrichment still runs.
+    0: SEVEN_DIMENSIONS,
     1: ("company_says", "evidence_valued"),
     2: ("company_judges", "company_asks"),
     3: ("role_variation",),
@@ -412,6 +413,21 @@ def audit_company(path: Path) -> list[dict[str, str]]:
             code="insufficient_hiring_signals",
             reason=f"Hiring signals={hiring_count}; target is at least 3 with a rubric.",
             action="Collect official careers or hiring-process evidence and add cited evaluation signals without claiming an official standard.",
+        )
+    unclassified_count = sum(
+        1 for signal in (profile.get("hiring_signals") or [])
+        if isinstance(signal, dict) and not signal.get("basis")
+    )
+    if unclassified_count:
+        add_gap(
+            rows,
+            profile=profile,
+            slug=slug,
+            dimension="company_judges",
+            status="thin",
+            code="unclassified_hiring_signal_basis",
+            reason=f"Hiring signals without explicit public provenance classification={unclassified_count}.",
+            action="Review existing evidence and classify each signal as company-stated, public inference, or generic default; never infer company-stated provenance automatically.",
         )
     if questions_count < 3:
         add_gap(

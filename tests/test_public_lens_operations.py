@@ -123,6 +123,22 @@ class DailyOperationsTests(unittest.TestCase):
         }
         self.assertEqual(covered, set(public_lens_operations.SEVEN_DIMENSIONS))
 
+    def test_monday_enrichment_is_not_replaced_by_weekly_expansion(self):
+        self.assertEqual(
+            set(public_lens_operations.DAILY_FOCUS[0]),
+            set(public_lens_operations.SEVEN_DIMENSIONS),
+        )
+
+    def test_unclassified_hiring_basis_is_a_tracked_gap(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = self._thin_lens(directory)
+            profile_path = path / "profile.json"
+            profile = json.loads(profile_path.read_text(encoding="utf-8"))
+            profile["hiring_signals"] = [{"signal": "Legacy uncategorized signal"}]
+            profile_path.write_text(json.dumps(profile), encoding="utf-8")
+            rows = public_lens_operations.audit_company(path)
+            self.assertIn("unclassified_hiring_signal_basis", [row["reason_code"] for row in rows])
+
     def test_gap_audit_records_reason_and_downstream_action(self):
         with tempfile.TemporaryDirectory() as directory:
             rows = public_lens_operations.audit_company(self._thin_lens(directory))
@@ -210,8 +226,8 @@ class DailyOperationsTests(unittest.TestCase):
             / "workflows"
             / "public-lens-maintenance.yml"
         ).read_text(encoding="utf-8")
-        self.assertIn('cron: "0 13 * * 1"', workflow)
-        self.assertIn('cron: "0 13 * * 0,2-6"', workflow)
+        self.assertIn('cron: "0 13 * * *"', workflow)
+        self.assertIn('cron: "0 14 * * *"', workflow)
         self.assertNotIn("--expansion-limit \"$WEEKLY_NEW_COMPANY_TARGET\" --allow-empty", workflow)
         self.assertIn("run_weekly_public_lens_expansion.py", workflow)
         self.assertIn("verify-reserve --min-unused 8", workflow)
