@@ -1,8 +1,8 @@
 # Public Lens Daily Plan
 
-Generated: `2026-11-01T18:12:17Z`
-Run date: `2026-11-01`
-Week start: `2026-10-26`
+Generated: `2026-11-02T04:52:03Z`
+Run date: `2026-11-02`
+Week start: `2026-11-02`
 
 ## Today's Focus
 
@@ -16,8 +16,7 @@ Week start: `2026-10-26`
 
 ## This Week's New Companies
 
-- `nextera-energy`
-- `servicenow`
+- No company has an `introduced_at` date in the current week. Record this as an operations exception.
 
 ## Historical Company Targets
 
