@@ -180,7 +180,6 @@ allow_paths:
     - governance/privacy-and-fairness.md
 
   operations_config:
-    - config/public_lens_expansion_catalog.json
 
   operations_runners:
     - ops/openclaw/
@@ -560,11 +559,6 @@ allow_paths:
     - tools/export_public_release.py
     - tools/scan_public_export.py
     - tools/generate_public_release_audit_report.py
-    - tools/prepare_public_lens_refresh.py
-    - tools/collect_public_lens_sources.py
-    - tools/generate_public_lens_patch.py
-    - tools/public_lens_operations.py
-    - tools/publish_public_lens.py
     - tools/generate_phase2c_validation_cases.py
     - tools/interview_prep_planner.py
     - tools/llm_scorer.py
